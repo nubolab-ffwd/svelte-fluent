@@ -1,21 +1,22 @@
 <script context="module">
   import { getContext } from "svelte";
   import { mapBundleSync } from "@fluent/sequence";
+  import { derived } from "svelte/store";
 
   const CONTEXT_KEY = {};
-  export function getBundle(id) {
-    const { bundles } = getContext(CONTEXT_KEY);
-    return derived(bundles, $bundles => mapBundleSync(bundles, id));
-  }
-  export function formatString(id, args) {
-    const bundle = getBundle(id);
-    return derived(bundle, $bundle => {
-      if ($bundle === null) {
-        return id;
+
+  export function stores() {
+    const ctx = getContext(CONTEXT_KEY);
+    if (!ctx) {
+      console.error("<FluentProvider/> was not found in component hierarchy.");
+      return {
+        getBundle: readable((id) => null)
       }
-      const msg = $bundle.getMessage(id);
-      return $bundle.formatPattern(msg, args);
-    });
+    }
+    const { bundles } = ctx;
+    return {
+      getBundle: derived(bundles, $bundles => id => mapBundleSync($bundles, id)),
+    };
   }
 </script>
 
