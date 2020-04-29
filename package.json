@@ -1,5 +1,6 @@
 {
   "name": "svelte-fluent",
+  "license": "MIT",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
