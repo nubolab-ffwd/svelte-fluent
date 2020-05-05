@@ -1,4 +1,5 @@
 import svelte from 'rollup-plugin-svelte'
+import replace from '@rollup/plugin-replace'
 import resolve from '@rollup/plugin-node-resolve'
 import pkg from './package.json'
 
@@ -14,6 +15,9 @@ export default {
     { file: pkg.main, format: 'umd', name }
   ],
   plugins: [
+    replace({
+      'process.browser': false
+    }),
     svelte(),
     resolve()
   ]

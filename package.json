@@ -1,5 +1,6 @@
 {
   "name": "svelte-fluent",
+  "version": "0.1.0",
   "license": "MIT",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
@@ -7,16 +8,26 @@
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build",
-    "lint": "eslint . --ext js,svelte"
+    "lint": "eslint . --ext js,svelte",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.6",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@fluent/bundle": "^0.15.1",
     "@fluent/dom": "^0.6.0",
+    "@fluent/langneg": "^0.4.0",
     "@fluent/sequence": "^0.5.0",
     "@rollup/plugin-node-resolve": "^6.0.0",
+    "@rollup/plugin-replace": "^2.3.2",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/svelte": "^5.3.18",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.20.2",
@@ -29,7 +40,8 @@
     "lint-staged": "^10.2.0",
     "rollup": "^1.20.0",
     "rollup-plugin-svelte": "^5.0.0",
-    "svelte": "^3.0.0"
+    "svelte": "^3.22.1",
+    "svelte-loader": "^2.13.6"
   },
   "keywords": [
     "svelte"
@@ -48,5 +60,6 @@
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
-  }
+  },
+  "dependencies": {}
 }
