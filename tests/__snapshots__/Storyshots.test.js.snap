@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Localized Attributes 1`] = `
+<section
+  class="storybook-snapshot-container"
+>
+  Do you want to delete all your emails?
+   
+  <button>
+    Yes
+  </button>
+   
+  <button>
+    No
+  </button>
+</section>
+`;
+
+exports[`Storyshots Localized Currency 1`] = `
+<section
+  class="storybook-snapshot-container"
+>
+  Your account balance is ⁨EUR 24.99⁩
+</section>
+`;
+
+exports[`Storyshots Localized Simple 1`] = `
+<section
+  class="storybook-snapshot-container"
+>
+  Hello, world!
+</section>
+`;
+
+exports[`Storyshots Localized Variables 1`] = `
+<section
+  class="storybook-snapshot-container"
+>
+  You have one unread email.
+</section>
+`;
+
+exports[`Storyshots Overlay Simple 1`] = `
+<section
+  class="storybook-snapshot-container"
+>
+  <span>
+    Read the 
+    <a
+      data-l10n-name="link"
+      href="https://example.com/"
+    >
+      documentation
+    </a>
+     for more information.
+  </span>
+</section>
+`;
+
+exports[`Storyshots Overlay Variables 1`] = `
+<section
+  class="storybook-snapshot-container"
+>
+  <span>
+    You can download ⁨Example Product⁩ by clicking
+on the 
+    <strong>
+      Download
+    </strong>
+     button or read
+the 
+    <a
+      data-l10n-name="release-notes"
+      href="https://example.com/"
+      target="_blank"
+    >
+      release notes
+    </a>
+     to learn more.
+  </span>
+</section>
+`;

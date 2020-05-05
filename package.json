@@ -10,7 +10,8 @@
     "prepublishOnly": "npm run build",
     "lint": "eslint . --ext js,svelte",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
@@ -24,8 +25,11 @@
     "@rollup/plugin-replace": "^2.3.2",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-storyshots": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/svelte": "^5.3.18",
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/svelte": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "eslint": "^6.8.0",
@@ -36,6 +40,8 @@
     "eslint-plugin-standard": "^4.0.1",
     "eslint-plugin-svelte3": "^2.7.3",
     "husky": "^4.2.5",
+    "jest": "<26.0.0",
+    "jest-transform-svelte": "^2.1.1",
     "jsdom": "^16.2.2",
     "lint-staged": "^10.2.0",
     "rollup": "^1.20.0",
@@ -60,6 +66,46 @@
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": [
+        "babel-jest",
+        {
+          "presets": [
+            [
+              "@babel/preset-env",
+              {
+                "targets": {
+                  "node": "current"
+                }
+              }
+            ]
+          ]
+        }
+      ],
+      "^.+\\.svelte$": "jest-transform-svelte"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(@fluent/dom)/)"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "svelte",
+      "json"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|scss|stylesheet)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/build/",
+      "/storybook-static/"
+    ]
   },
   "dependencies": {}
 }
