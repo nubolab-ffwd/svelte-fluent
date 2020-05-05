@@ -58,7 +58,9 @@
     }
     return () => {
       observer.disconnect()
-      translatedRoot.parentNode.replaceChild(root, translatedRoot)
+      if (translatedRoot) {
+        translatedRoot.parentNode.replaceChild(root, translatedRoot)
+      }
     }
   })
 </script>
