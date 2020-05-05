@@ -6,17 +6,17 @@ import { stores } from './FluentProvider.svelte'
 
 if (!process.browser) {
   if (Overlay.$$render) {
-    const { JSDOM } = require('jsdom')
+    const { JSDOM } = (0, module.require)('jsdom')
 
     const $$render = Overlay.$$render
     Overlay.$$render = (result, props, bindings, slots) => {
       const html = $$render(result, props, bindings, slots)
       const { getBundle } = stores()
-      const { id, attributes } = props
+      const { id, args } = props
       const $getBundle = get(getBundle)
       const bundle = id ? $getBundle(id) : null
       const msg = bundle ? bundle.getMessage(id) : null
-      const translation = getTranslation(bundle, msg, attributes)
+      const translation = getTranslation(bundle, msg, args)
       const { document } = new JSDOM('<!DOCTYPE html>').window
       const body = document.createElement('body')
       body.innerHTML = html

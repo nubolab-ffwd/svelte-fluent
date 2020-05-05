@@ -1,10 +1,10 @@
 <script context="module">
-  export function getTranslation (bundle, msg, attributes) {
+  export function getTranslation (bundle, msg, args) {
     if (!bundle || !msg) {
       return null
     }
     return {
-      value: bundle.formatPattern(msg.value, attributes)
+      value: bundle.formatPattern(msg.value, args)
     }
   }
 </script>
@@ -16,7 +16,7 @@
 
   // props are also consumed in `../Overlay.js`. Changes made here need to be reflected there
   export let id
-  export let attributes = null
+  export let args = null
 
   let bundle
   let msg
@@ -29,10 +29,10 @@
 
   $: bundle = id ? $getBundle(id) : null
   $: msg = bundle ? bundle.getMessage(id) : null
-  $: translation = msg ? getTranslation(bundle, msg, attributes) : null
-  $: update(translation, id, attributes)
+  $: translation = msg ? getTranslation(bundle, msg, args) : null
+  $: update(translation, id, args)
 
-  function update (translation, id, attributes) {
+  function update (translation, id, args) {
     if (translation && root && translatedRoot) {
       const newRoot = root.cloneNode(true)
       translateElement(newRoot, translation)
@@ -43,7 +43,7 @@
 
   onMount(() => {
     const observer = new MutationObserver(() => {
-      update(translation, id, attributes)
+      update(translation, id, args)
     })
     if (root && translation) {
       translatedRoot = root.cloneNode(true)
@@ -56,7 +56,10 @@
         subtree: true
       })
     }
-    return () => observer.disconnect()
+    return () => {
+      observer.disconnect()
+      translatedRoot.parentNode.replaceChild(root, translatedRoot)
+    }
   })
 </script>
 

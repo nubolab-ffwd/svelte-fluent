@@ -1,7 +1,7 @@
 <script>
   import { stores } from '../FluentProvider.svelte'
   export let id
-  export let attributes = null
+  export let args = null
 
   let bundle
   let msg
@@ -11,7 +11,7 @@
 
   $: bundle = id ? $getBundle(id) : null
   $: msg = bundle ? bundle.getMessage(id) : null
-  $: text = msg ? bundle.formatPattern(msg.value, attributes) : ''
+  $: text = msg ? bundle.formatPattern(msg.value, args) : ''
 
   $: if (!id) console.error('missing id prop in <Localized/>')
 </script>
