@@ -1,7 +1,10 @@
 {
-  "name": "svelte-fluent",
+  "name": "@nubolab-ffwd/svelte-fluent",
   "version": "0.1.0",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
