@@ -4,7 +4,7 @@
 [![svelte-v3](https://img.shields.io/badge/svelte-v3-blueviolet.svg)](https://svelte.dev)
 
 `svelte-fluent` provides [Svelte](https://svelte.dev/) components for easier
-integration of [Fluent](https://projectfluent.org/) localization into Svelte
+integration of [Fluent](https://projectfluent.org/) localization for Svelte/Sapper
 applications.
 
 # Usage
@@ -49,6 +49,35 @@ applications.
 </FluentProvider>
 ```
 
+# Bundler Notes
+
+If you're using Sapper with Rollup based on the [sapper-template](https://github.com/sveltejs/sapper-template) repository everything should work out-of-the-box.
+For regular Svelte applications or Webpack some extra settings are required.
+
+## Rollup
+
+
+For browser builds (no SSR) make sure to include the following configuration for the `@rollup/plugin-replace` plugin
+
+```js
+replace({
+    'process.browser': true
+})
+```
+
+## Webpack
+
+- Add `jsdom` to your `package.json` `"dependencies"` via `yarn add jsdom` or `npm install --save jsdom`
+- Add `jsdom` to the `externals` webpack config for your SSR builds. Not necessary if you're using Sapper based on the
+    `sapper-template` repository because it already adds all `"dependencies"` to `externals`.
+- For browser builds (no SSR) make sure to include the following webpack plugin configuration
+
+    ```
+    new webpack.DefinePlugin({
+        'process.browser': true,
+    })
+    ```
+
 # DOM Overlays (experimental)
 
 This library includes experimental support for DOM overlays via
@@ -62,9 +91,9 @@ In addition to the [limitations listed in the @fluent/dom wiki](https://github.c
 the following limitations apply to DOM Overlays in `svelte-fluent`
 
 - Updates to `<Overlay/>` component props and children cause a high overhead and should be minimized
-- Svelte actions (`<tag use:someaction/>`) may not work correctly for children of the `<Overlay/>` component
-- Svelte transitions/animations (`<tag transition:fade />`) may not work correctly for children of the `<Overlay/>` component
-- Svelte bindings (`<tag bind:clientWidth={something} />`) may not work correctly for children of the `<Overlay/>` component
+- Svelte actions (`<tag use:someaction/>`) won't work correctly for children of the `<Overlay/>` component
+- Svelte transitions/animations (`<tag transition:fade />`) won't work correctly for children of the `<Overlay/>` component
+- Svelte bindings (`<tag bind:clientWidth={something} />`) won't work correctly for children of the `<Overlay/>` component
 - Event handlers (`<tag on:click={handleClick} />`) bound on children of the `<Overlay/>` component will not fire
 
 ## Example
