@@ -6,7 +6,7 @@ import { stores } from './FluentProvider.svelte'
 
 if (!process.browser) {
   if (Overlay.$$render) {
-    const { JSDOM } = (0, module.require)('jsdom')
+    const { JSDOM } = require('jsdom')
 
     const $$render = Overlay.$$render
     Overlay.$$render = (result, props, bindings, slots) => {
