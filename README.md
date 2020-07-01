@@ -13,7 +13,7 @@ applications.
 <script>
     import { negotiateLanguages } from '@fluent/langneg';
     import { FluentBundle, FluentResource } from '@fluent/bundle';
-    import { FluentProvider, Localized } from 'svelte-fluent'
+    import { FluentProvider, Localized } from '@nubolab-ffwd/svelte-fluent'
 
     // Store all translations as a simple object which is available
     // synchronously and bundled with the rest of the code.
