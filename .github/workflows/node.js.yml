@@ -10,8 +10,19 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  lint:
+    runs-on: ubuntu-latest
 
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js 14.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 14.x
+    - run: yarn --frozen-lockfile
+    - run: yarn lint
+
+  build:
     runs-on: ubuntu-latest
 
     strategy:
@@ -25,6 +36,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: yarn --frozen-lockfile
-    - run: yarn lint
     - run: yarn test
     - run: yarn build
