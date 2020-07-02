@@ -65,7 +65,20 @@
     "svelte-loader": "^2.13.6"
   },
   "keywords": [
-    "svelte"
+    "svelte",
+    "localization",
+    "l10n",
+    "internationalization",
+    "i18n",
+    "ftl",
+    "plural",
+    "gender",
+    "locale",
+    "language",
+    "formatting",
+    "translate",
+    "translation",
+    "format"
   ],
   "files": [
     "src",
