@@ -2,6 +2,7 @@
   import { getContext, setContext } from 'svelte'
   import { mapBundleSync } from '@fluent/sequence'
   import { derived, readable } from 'svelte/store'
+  import { CachedSyncIterable } from 'cached-iterable'
 
   const CONTEXT_KEY = {}
 
@@ -24,7 +25,7 @@
   export let bundles = []
 
   setContext(CONTEXT_KEY, {
-    bundles: readable(bundles)
+    bundles: readable(CachedSyncIterable.from(bundles))
   })
 </script>
 
