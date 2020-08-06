@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.1.2...v0.1.3) (2020-08-06)
+
+
+### Bug Fixes
+
+* ensure FluentProvider updates store when bundles change ([697d399](https://github.com/nubolab-ffwd/svelte-fluent/commit/697d39951099c6db4f275cd6190c189ec3e86539))
+* wrap bundles in CachedSyncIterable ([8f356f3](https://github.com/nubolab-ffwd/svelte-fluent/commit/8f356f37153ca8a08c50eef882130f7f46edd5d0))
+
 ### [0.1.2](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.1.1...v0.1.2) (2020-07-02)
 
 ### [0.1.1](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.1.0...v0.1.1) (2020-07-01)
