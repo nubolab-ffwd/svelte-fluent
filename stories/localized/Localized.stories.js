@@ -2,6 +2,7 @@ import LocalizedSimple from './Simple.svelte'
 import LocalizedVariables from './Variables.svelte'
 import LocalizedCurrency from './Currency.svelte'
 import LocalizedAttributes from './Attributes.svelte'
+import LocalizedAttributesWithArgs from './AttributesWithArgs.svelte'
 import { withKnobs, select, number } from '@storybook/addon-knobs'
 
 export default {
@@ -34,6 +35,13 @@ export const Currency = () => ({
 
 export const Attributes = () => ({
   Component: LocalizedAttributes,
+  props: {
+    locale: select('Locale', ['de', 'en'], 'en')
+  }
+})
+
+export const AttributesWithArgs = () => ({
+  Component: LocalizedAttributesWithArgs,
   props: {
     locale: select('Locale', ['de', 'en'], 'en')
   }

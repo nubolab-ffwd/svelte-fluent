@@ -16,6 +16,22 @@ exports[`Storyshots Localized Attributes 1`] = `
 </section>
 `;
 
+exports[`Storyshots Localized Attributes With Args 1`] = `
+<section
+  class="storybook-snapshot-container"
+>
+  Do you want to delete all your emails?
+   
+  <button>
+    Yes, delete all ⁨10,000⁩ emails
+  </button>
+   
+  <button>
+    No
+  </button>
+</section>
+`;
+
 exports[`Storyshots Localized Currency 1`] = `
 <section
   class="storybook-snapshot-container"
