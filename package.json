@@ -61,7 +61,7 @@
     "lint-staged": "^10.2.11",
     "rollup": "^2.18.1",
     "rollup-plugin-svelte": "^5.2.3",
-    "standard-version": "^8.0.0",
+    "standard-version": "^9.0.0",
     "svelte": "^3.23.2",
     "svelte-loader": "^2.13.6"
   },
