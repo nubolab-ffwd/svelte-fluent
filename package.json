@@ -32,7 +32,7 @@
   "devDependencies": {
     "@babel/core": "^7.10.4",
     "@commitlint/cli": "^9.0.1",
-    "@commitlint/config-conventional": "^9.0.1",
+    "@commitlint/config-conventional": "^11.0.0",
     "@fluent/bundle": "^0.15.1",
     "@fluent/dom": "^0.6.0",
     "@fluent/langneg": "^0.4.0",
