@@ -1293,10 +1293,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@fluent/bundle@^0.15.1":
-  version "0.15.1"
-  resolved "https://registry.yarnpkg.com/@fluent/bundle/-/bundle-0.15.1.tgz#95d3b9f836ac138b6ee8480ef8d0547dd59195b1"
-  integrity sha512-uhDGjpEwTMBNxYMSXyjXFBG5LY7dqoNatle6mnghu5lFOrf0JyblY/Y0al2GzDKFuYbtOSbJvUkxzjtYX3odkw==
+"@fluent/bundle@^0.16.0":
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/@fluent/bundle/-/bundle-0.16.0.tgz#e0cab75ba6ce9d9147ace3cb6ec61fd90f31ec1f"
+  integrity sha512-kUEAUePhb/y2BCcNpKOnjCs+WJkDczVpUUAQ+cDl0xvBGqL0Kv0Yog2oHSuv/Ou22c6KdXbvfCl3We0bIZnrmg==
 
 "@fluent/dom@^0.6.0":
   version "0.6.0"
