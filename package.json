@@ -58,7 +58,7 @@
     "husky": "^4.2.5",
     "jest": "25",
     "jest-transform-svelte": "^2.1.1",
-    "lint-staged": "^10.2.11",
+    "lint-staged": "^10.4.0",
     "rollup": "^2.18.1",
     "rollup-plugin-svelte": "^5.2.3",
     "standard-version": "^8.0.1",
