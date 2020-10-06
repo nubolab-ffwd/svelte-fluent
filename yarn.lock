@@ -1483,10 +1483,10 @@
   resolved "https://registry.yarnpkg.com/@fluent/bundle/-/bundle-0.16.0.tgz#e0cab75ba6ce9d9147ace3cb6ec61fd90f31ec1f"
   integrity sha512-kUEAUePhb/y2BCcNpKOnjCs+WJkDczVpUUAQ+cDl0xvBGqL0Kv0Yog2oHSuv/Ou22c6KdXbvfCl3We0bIZnrmg==
 
-"@fluent/dom@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@fluent/dom/-/dom-0.6.0.tgz#64db23405f7196d412938249b435bf2578513a65"
-  integrity sha512-xdRYUMl4mgyFyzWLFlQWmX66j11phqRRmdMNtyfEpse1vHXRuoO6pxzbyXCcj+MqWLNp2jnbgU64IMgva5LNSw==
+"@fluent/dom@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@fluent/dom/-/dom-0.7.0.tgz#caa64383d32bdd3ef61c0876b2dae9fcbba27bde"
+  integrity sha512-LpMaY24YPt/E0tnVitIMNZ4EHXW1k3wD27INvx/hH+An81wwnJmJAWfYaII0dqQrGT55ST/5WMk2PMHkTa5xOQ==
   dependencies:
     cached-iterable "^0.3"
 

@@ -23,7 +23,7 @@
     "release": "standard-version"
   },
   "dependencies": {
-    "@fluent/dom": "^0.6.0",
+    "@fluent/dom": "^0.7.0",
     "@fluent/langneg": "^0.4.0",
     "@fluent/sequence": "^0.6.0",
     "cached-iterable": "^0.3.0",
@@ -34,7 +34,7 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@fluent/bundle": "^0.16.0",
-    "@fluent/dom": "^0.6.0",
+    "@fluent/dom": "^0.7.0",
     "@fluent/langneg": "^0.4.0",
     "@fluent/sequence": "^0.6.0",
     "@rollup/plugin-node-resolve": "^8.1.0",
