@@ -2295,13 +2295,13 @@
     core-js "^3.6.5"
     find-up "^4.1.0"
 
-"@storybook/svelte@^6.1.2":
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/@storybook/svelte/-/svelte-6.1.2.tgz#f1fdc82db0616b5be6f6be9547cb0e075418dbd6"
-  integrity sha512-lJdJZacyCyXYENAGEFQUom7YCB9O/O/llj8rQK05W3FZt8nX0dL1reIVtTfUuFxVpjoFBqiPRUBlv5W8aXlr1Q==
+"@storybook/svelte@^6.1.5":
+  version "6.1.5"
+  resolved "https://registry.yarnpkg.com/@storybook/svelte/-/svelte-6.1.5.tgz#9062d8136b426e07eb8c7402a0f51b2a7d4f5695"
+  integrity sha512-Oir2xIC6HBHce1MO8LvPXG8xx8ZzZZHXu6tc1HuqoehqvTvFppiAVV528FxzYQBj2mfC9Ww0GLpOjxAmjYloBQ==
   dependencies:
-    "@storybook/addons" "6.1.2"
-    "@storybook/core" "6.1.2"
+    "@storybook/addons" "6.1.5"
+    "@storybook/core" "6.1.5"
     core-js "^3.0.1"
     global "^4.3.2"
     react "16.13.1"
