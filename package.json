@@ -43,7 +43,7 @@
     "@storybook/addon-knobs": "^6.1.5",
     "@storybook/addon-storyshots": "^6.1.2",
     "@storybook/addons": "^6.1.4",
-    "@storybook/svelte": "^6.1.2",
+    "@storybook/svelte": "^6.1.5",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/svelte": "^3.0.0",
     "babel-eslint": "^10.1.0",
