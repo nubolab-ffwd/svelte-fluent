@@ -1,14 +1,3 @@
-<script context="module">
-  export function getTranslation (bundle, msg, args) {
-    if (!bundle || !msg) {
-      return null
-    }
-    return {
-      value: bundle.formatPattern(msg.value, args)
-    }
-  }
-</script>
-
 <script>
   import { onMount } from 'svelte'
   import { stores } from '../FluentProvider.svelte'
@@ -18,18 +7,12 @@
   export let id
   export let args = null
 
-  let bundle
-  let msg
-  let translation
-
   let root
   let translatedRoot
 
-  const { getBundle } = stores()
+  const { getTranslation } = stores()
 
-  $: bundle = id ? $getBundle(id) : null
-  $: msg = bundle ? bundle.getMessage(id) : null
-  $: translation = msg ? getTranslation(bundle, msg, args) : null
+  $: translation = $getTranslation(id, args)
   $: update(translation, id, args)
 
   function update (translation, id, args) {
