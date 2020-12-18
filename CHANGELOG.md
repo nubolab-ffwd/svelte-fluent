@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.1.5...v0.2.0) (2020-12-18)
+
+
+### Features
+
+* expose stores for retrieving translations directly from FluentProvider ([12ad13d](https://github.com/nubolab-ffwd/svelte-fluent/commit/12ad13de5141f39a9f3aa1a89555a44f61628fc7))
+
 ### [0.1.5](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.1.4...v0.1.5) (2020-10-14)
 
 ### [0.1.4](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.1.3...v0.1.4) (2020-08-20)
