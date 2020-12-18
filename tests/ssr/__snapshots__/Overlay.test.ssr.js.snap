@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Object {
+  "css": Object {
+    "code": "",
+    "map": null,
+  },
+  "head": "",
+  "html": "<span>You can download ⁨example product⁩ by clicking
+on the <strong>Download</strong> button or read
+the <a data-l10n-name=\\"release-notes\\" href=\\"https://example.com/\\" target=\\"_blank\\">release notes</a> to learn more.</span>",
+}
+`;

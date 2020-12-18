@@ -24,6 +24,12 @@ module.exports = {
         'import/no-duplicates': 'off',
         'import/no-mutable-exports': 'off'
       }
+    },
+    {
+      files: ['tests/**/*.js'],
+      env: {
+        jest: true
+      }
     }
   ],
   ignorePatterns: [
