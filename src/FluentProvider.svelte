@@ -32,7 +32,7 @@
       return { value, attributes }
     })
     const translate = derived(getTranslation, $getTranslation => (id, args) => {
-      return $getTranslation(id, args).text
+      return $getTranslation(id, args).value
     })
     return { getBundle, getTranslation, translate }
   }
