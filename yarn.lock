@@ -2420,10 +2420,10 @@
     lodash "^4.17.15"
     redent "^3.0.0"
 
-"@testing-library/svelte@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/svelte/-/svelte-3.0.0.tgz#cfb9c5e2679b0e90f6a79ffdf4397b92537dd1f2"
-  integrity sha512-0KarnU6czyhNaRECWUI4lpxTGg+9lTgASrsrtnflw9odVSmKk3iRym3ZOg0TOM4GBsX/CR4Un590fEsf6FdTJg==
+"@testing-library/svelte@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@testing-library/svelte/-/svelte-3.0.2.tgz#030dce65eb8242ccddf8cd11c9da867bda3b2fcd"
+  integrity sha512-OjXADFBon4tqujNa81zPaEDdBariI6igFLVer5MjDOGMKQIVoTJbV8Zg7mLdPrAb6dqnJuBFUCHM06O3Ntv9Fw==
   dependencies:
     "@testing-library/dom" "^7.0.3"
 
