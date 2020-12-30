@@ -44,7 +44,7 @@
     "@storybook/addon-storyshots": "^6.1.9",
     "@storybook/addons": "^6.1.9",
     "@storybook/svelte": "^6.1.11",
-    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/svelte": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
