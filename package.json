@@ -26,8 +26,7 @@
     "@fluent/dom": "^0.7.0",
     "@fluent/langneg": "^0.5.0",
     "@fluent/sequence": "^0.6.0",
-    "cached-iterable": "^0.3.0",
-    "jsdom": "^16.4.0"
+    "cached-iterable": "^0.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
@@ -39,7 +38,7 @@
     "@fluent/sequence": "^0.6.0",
     "@rollup/plugin-node-resolve": "^11.0.1",
     "@rollup/plugin-replace": "^2.3.4",
-    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-actions": "^6.1.16",
     "@storybook/addon-knobs": "^6.1.11",
     "@storybook/addon-storyshots": "^6.1.9",
     "@storybook/addons": "^6.1.9",
@@ -95,5 +94,8 @@
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "peerDependencies": {
+    "jsdom": "^16.4.0"
   }
 }
