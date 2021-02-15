@@ -61,7 +61,7 @@
     "rollup": "^2.38.5",
     "rollup-plugin-svelte": "^7.1.0",
     "standard-version": "^9.1.0",
-    "svelte": "^3.32.2",
+    "svelte": "^3.32.3",
     "svelte-loader": "^2.13.6"
   },
   "keywords": [
