@@ -41,7 +41,7 @@
     "@storybook/addon-actions": "^6.1.19",
     "@storybook/addon-knobs": "^6.1.19",
     "@storybook/addon-storyshots": "^6.1.9",
-    "@storybook/addons": "^6.1.9",
+    "@storybook/addons": "^6.1.20",
     "@storybook/svelte": "^6.1.19",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/svelte": "^3.0.3",
