@@ -58,7 +58,7 @@
     "jest": "26",
     "jest-transform-svelte": "^2.1.1",
     "lint-staged": "^10.5.4",
-    "rollup": "^2.43.1",
+    "rollup": "^2.44.0",
     "rollup-plugin-svelte": "^7.1.0",
     "standard-version": "^9.1.1",
     "svelte": "^3.35.0",
