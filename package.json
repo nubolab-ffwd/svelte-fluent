@@ -39,7 +39,7 @@
     "@rollup/plugin-node-resolve": "^11.2.1",
     "@rollup/plugin-replace": "^2.4.2",
     "@storybook/addon-actions": "^6.2.5",
-    "@storybook/addon-knobs": "^6.2.5",
+    "@storybook/addon-knobs": "^6.2.7",
     "@storybook/addon-storyshots": "^6.1.9",
     "@storybook/addons": "^6.2.5",
     "@storybook/svelte": "^6.1.21",
