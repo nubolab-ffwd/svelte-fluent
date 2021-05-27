@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte'
-  import { stores } from '../FluentProvider.svelte'
+  import { stores } from './FluentProvider.svelte'
   import { translateElement } from './utils'
 
   // props are also consumed in `../Overlay.js`. Changes made here need to be reflected there

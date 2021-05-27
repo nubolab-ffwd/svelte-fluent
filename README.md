@@ -58,6 +58,14 @@ npm install --save jsdom
 If you're using Sapper with Rollup based on the [sapper-template](https://github.com/sveltejs/sapper-template) repository everything should work out-of-the-box.
 For regular Svelte applications or Webpack some extra settings are required.
 
+## Vite / SvelteKit
+
+For Vite / SvelteKit support a different import path must be used. All components must be imported from `@nubolab-ffwd/svelte-fluent/src/vite` like this:
+
+```
+import { FluentProvider, Localized, Overlay } from "@nubolab-ffwd/svelte-fluent/src/vite";
+```
+
 ## Rollup
 
 
