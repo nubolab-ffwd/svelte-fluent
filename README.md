@@ -4,6 +4,13 @@
 integration of [Fluent](https://projectfluent.org/) localization for Svelte/Sapper
 applications.
 
+# Installation
+
+```
+npm install --save-dev @nubolab-ffwd/svelte-fluent
+npm install --save jsdom
+```
+
 # Usage
 
 ```svelte
@@ -64,7 +71,6 @@ replace({
 
 ## Webpack
 
-- Add `jsdom` to your `package.json` `"dependencies"` via `yarn add jsdom` or `npm install --save jsdom`
 - Add `jsdom` to the `externals` webpack config for your SSR builds. Not necessary if you're using Sapper based on the
     `sapper-template` repository because it already adds all `"dependencies"` to `externals`.
 - For browser builds (no SSR) make sure to include the following webpack plugin configuration
