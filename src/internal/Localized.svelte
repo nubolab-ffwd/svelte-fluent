@@ -1,5 +1,5 @@
 <script>
-  import { stores } from '../FluentProvider.svelte'
+  import { stores } from './FluentProvider.svelte'
   export let id
   export let args = null
 
