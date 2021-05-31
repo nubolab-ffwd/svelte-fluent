@@ -16,7 +16,10 @@ export default {
   ],
   plugins: [
     replace({
-      'process.browser': false
+      values: {
+        'process.browser': false
+      },
+      preventAssignment: true
     }),
     svelte(),
     resolve()
