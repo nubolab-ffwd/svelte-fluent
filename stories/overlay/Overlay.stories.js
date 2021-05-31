@@ -1,23 +1,24 @@
 import OverlaySimple from './Simple.svelte'
 import OverlayVariables from './Variables.svelte'
-import { withKnobs, select, text } from '@storybook/addon-knobs'
 
 export default {
   title: 'Overlay',
-  decorators: [withKnobs]
+  argTypes: {
+    locale: {
+      options: ['de', 'en'],
+      control: { type: 'select' }
+    }
+  }
 }
 
-export const Simple = () => ({
+export const Simple = (args) => ({
   Component: OverlaySimple,
-  props: {
-    locale: select('Locale', ['de', 'en'], 'en')
-  }
+  props: args
 })
+Simple.args = { locale: 'en' }
 
-export const Variables = () => ({
+export const Variables = (args) => ({
   Component: OverlayVariables,
-  props: {
-    locale: select('Locale', ['de', 'en'], 'en'),
-    productName: text('Product name', 'Example Product')
-  }
+  props: args
 })
+Variables.args = { locale: 'en', productName: 'Example Product' }

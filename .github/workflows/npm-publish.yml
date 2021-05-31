@@ -5,14 +5,34 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
     steps:
     - uses: actions/checkout@v2
-    # Setup .npmrc file to publish to npm
-    - uses: actions/setup-node@v2.1.5
+    - name: Cache pnpm modules
+      uses: actions/cache@v2
+      env:
+        cache-name: cache-pnpm-modules
       with:
-        node-version: '14.x'
+        path: ~/.pnpm-store
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/package.json') }}
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-
+    # Setup .npmrc file to publish to npm
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2.1.5
+      with:
+        node-version: ${{ matrix.node-version }}
         registry-url: 'https://registry.npmjs.org'
-    - run: yarn --frozen-lockfile
-    - run: yarn publish
+    - uses: pnpm/action-setup@v2.0.1
+      with:
+        version: 6.6.2
+        run_install: |
+          - recursive: true
+            args: [--frozen-lockfile, --strict-peer-dependencies]
+    - run: pnpm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -3,8 +3,7 @@ const webpack = require('webpack');
 module.exports = {
   stories: ['../stories/**/*.stories.js'],
   addons: [
-    '@storybook/addon-knobs/register',
-    '@storybook/addon-actions'
+    '@storybook/addon-essentials',
   ],
   webpackFinal: (config) => {
     config.plugins.push(new webpack.DefinePlugin({
