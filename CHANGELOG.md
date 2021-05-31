@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.2.1...v0.3.0) (2021-05-31)
+
+
+### Features
+
+* add support for Vite / SvelteKit ([fa86229](https://github.com/nubolab-ffwd/svelte-fluent/commit/fa862290605f08937ef3945cd201254956d46674))
+
 ### [0.2.1](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.2.0...v0.2.1) (2020-12-18)
 
 
