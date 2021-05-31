@@ -1,4 +1,5 @@
 const commonConfig = {
+  testEnvironment: 'jsdom',
   transform: {
     '^.+\\.js$': [
       'babel-jest',
@@ -18,7 +19,7 @@ const commonConfig = {
     '\\.svelte$': 'jest-transform-svelte'
   },
   transformIgnorePatterns: [
-    'node_modules/(?!(@fluent/dom)/)'
+    'node_modules/(?!\\.pnpm/)(?!(@fluent/dom/|.*\\.svelte$))'
   ],
   moduleFileExtensions: [
     'js',

@@ -3,46 +3,49 @@ import LocalizedVariables from './Variables.svelte'
 import LocalizedCurrency from './Currency.svelte'
 import LocalizedAttributes from './Attributes.svelte'
 import LocalizedAttributesWithArgs from './AttributesWithArgs.svelte'
-import { withKnobs, select, number } from '@storybook/addon-knobs'
 
 export default {
   title: 'Localized',
-  decorators: [withKnobs]
+  argTypes: {
+    locale: {
+      options: ['de', 'en'],
+      control: { type: 'select' }
+    },
+    unreadEmails: {
+      control: { type: 'number', min: 1 }
+    },
+    balance: {
+      control: { type: 'number', min: 1 }
+    }
+  }
 }
 
-export const Simple = () => ({
+export const Simple = (args) => ({
   Component: LocalizedSimple,
-  props: {
-    locale: select('Locale', ['de', 'en', 'fr', 'pl'], 'en')
-  }
+  props: args
 })
+Simple.args = { locale: 'en' }
 
-export const Variables = () => ({
+export const Variables = (args) => ({
   Component: LocalizedVariables,
-  props: {
-    locale: select('Locale', ['de', 'en'], 'en'),
-    unreadEmails: number('Unread emails', 1, { range: true, min: 1 })
-  }
+  props: args
 })
+Variables.args = { locale: 'en', unreadEmails: 1 }
 
-export const Currency = () => ({
+export const Currency = (args) => ({
   Component: LocalizedCurrency,
-  props: {
-    locale: select('Locale', ['de', 'en'], 'en'),
-    balance: number('Account balance', 24.99, { min: 1 })
-  }
+  props: args
 })
+Currency.args = { locale: 'en', balance: 24.99 }
 
-export const Attributes = () => ({
+export const Attributes = (args) => ({
   Component: LocalizedAttributes,
-  props: {
-    locale: select('Locale', ['de', 'en'], 'en')
-  }
+  props: args
 })
+Attributes.args = { locale: 'en' }
 
-export const AttributesWithArgs = () => ({
+export const AttributesWithArgs = (args) => ({
   Component: LocalizedAttributesWithArgs,
-  props: {
-    locale: select('Locale', ['de', 'en'], 'en')
-  }
+  props: args
 })
+AttributesWithArgs.args = { locale: 'en' }
