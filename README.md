@@ -55,15 +55,29 @@ npm install --save jsdom
 
 # Bundler Notes
 
+## Rollup / Sapper
+
 If you're using Sapper with Rollup based on the [sapper-template](https://github.com/sveltejs/sapper-template) repository everything should work out-of-the-box.
 For regular Svelte applications or Webpack some extra settings are required.
 
 ## Vite / SvelteKit
 
-For Vite / SvelteKit support a different import path must be used. All components must be imported from `@nubolab-ffwd/svelte-fluent/src/vite` like this:
+When using Vite (e.g. with SvelteKit) the components must be imported from a different import path.
+All components must be imported from `@nubolab-ffwd/svelte-fluent/src/vite` like this:
 
 ```
 import { FluentProvider, Localized, Overlay } from "@nubolab-ffwd/svelte-fluent/src/vite";
+```
+
+You may also get the error `TypeError: Cannot read property 'SSR' of undefined` when using the dev server.
+To fix it, you must add `@nubolab-ffwd/svelte-fluent` to Vite's configuration property [optimizeDeps.exclude](https://vitejs.dev/config/#dep-optimization-options):
+
+```js
+{
+  optimizeDeps: {
+    exclude: ['@nubolab-ffwd/svelte-fluent']
+  }
+}
 ```
 
 ## Rollup
