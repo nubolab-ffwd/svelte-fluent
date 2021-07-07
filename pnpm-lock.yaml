@@ -28,7 +28,7 @@ specifiers:
   eslint-plugin-promise: 5.1.0
   eslint-plugin-standard: 5.0.0
   eslint-plugin-svelte3: 3.2.0
-  husky: 7.0.0
+  husky: 7.0.1
   jest: 27.0.6
   jest-transform-svelte: 2.1.1
   lint-staged: 11.0.0
@@ -68,7 +68,7 @@ devDependencies:
   eslint-plugin-promise: 5.1.0_eslint@7.30.0
   eslint-plugin-standard: 5.0.0_eslint@7.30.0
   eslint-plugin-svelte3: 3.2.0_eslint@7.30.0+svelte@3.38.3
-  husky: 7.0.0
+  husky: 7.0.1
   jest: 27.0.6
   jest-transform-svelte: 2.1.1_svelte@3.38.3
   lint-staged: 11.0.0
@@ -8248,8 +8248,8 @@ packages:
     engines: {node: '>=10.17.0'}
     dev: true
 
-  /husky/7.0.0:
-    resolution: {integrity: sha512-xK7lO0EtSzfFPiw+oQncQVy/XqV7UVVjxBByc+Iv5iK3yhW9boDoWgvZy3OGo48QKg/hUtZkzz0hi2HXa0kn7w==}
+  /husky/7.0.1:
+    resolution: {integrity: sha512-gceRaITVZ+cJH9sNHqx5tFwbzlLCVxtVZcusME8JYQ8Edy5mpGDOqD8QBCdMhpyo9a+JXddnujQ4rpY2Ff9SJA==}
     engines: {node: '>=12'}
     hasBin: true
     dev: true
