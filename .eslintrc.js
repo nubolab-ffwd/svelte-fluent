@@ -3,17 +3,13 @@ module.exports = {
     browser: true,
     es6: true
   },
-  extends: [
-    'standard'
-  ],
+  extends: ['standard', 'prettier'],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaVersion: 2019,
     sourceType: 'module'
   },
-  plugins: [
-    'svelte3'
-  ],
+  plugins: ['svelte3'],
   overrides: [
     {
       files: ['**/*.svelte'],
@@ -32,8 +28,5 @@ module.exports = {
       }
     }
   ],
-  ignorePatterns: [
-    '/dist/',
-    'storybook-static'
-  ]
+  ignorePatterns: ['/dist/', 'storybook-static']
 }

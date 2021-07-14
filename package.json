@@ -16,7 +16,8 @@
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build",
-    "lint": "eslint . --ext js,svelte",
+    "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "format": "prettier --write --plugin-search-dir=. .",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "test": "jest",
@@ -50,6 +51,7 @@
     "babel-eslint": "10.1.0",
     "babel-loader": "8.2.2",
     "eslint": "7.30.0",
+    "eslint-config-prettier": "^8.3.0",
     "eslint-config-standard": "16.0.3",
     "eslint-plugin-import": "2.23.4",
     "eslint-plugin-node": "11.1.0",
@@ -61,6 +63,9 @@
     "jest-transform-svelte": "2.1.1",
     "lint-staged": "11.0.0",
     "rollup": "2.53.1",
+    "prettier": "^2.3.2",
+    "prettier-config-standard": "^4.0.0",
+    "prettier-plugin-svelte": "^2.3.1",
     "rollup-plugin-svelte": "7.1.0",
     "standard-version": "9.3.0",
     "svelte": "3.38.3",
@@ -87,9 +92,11 @@
     "dist"
   ],
   "lint-staged": {
-    "*.{js,svelte}": [
-      "eslint --fix"
-    ]
+    "*.{cjs,js,ts,svelte}": [
+      "eslint --cache --fix",
+      "prettier --write --plugin-search-dir=."
+    ],
+    "*.{md,json,yaml}": "prettier --write --plugin-search-dir=."
   },
   "peerDependencies": {
     "jsdom": "^16.4.0"
