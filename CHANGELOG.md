@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.3.1...v0.4.0) (2021-07-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* add bundler plugin for conditional SSR entrypint
+
+### Features
+
+* add bundler plugin for conditional SSR entrypint ([2f47cbc](https://github.com/nubolab-ffwd/svelte-fluent/commit/2f47cbcc63da82b5a1b284c106e5fdd8fc74a5b5))
+
 ### [0.3.1](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.3.0...v0.3.1) (2021-05-31)
 
 ## [0.3.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.2.1...v0.3.0) (2021-05-31)
