@@ -5,9 +5,11 @@ import { stores } from './FluentProvider.svelte'
 
 let DOM
 
-export function getOverlayImpl (ssr) {
-  if (!ssr || !Overlay.$$render) { return Overlay }
-  function OverlaySSR (...args) {
+export function getOverlayImpl(ssr) {
+  if (!ssr || !Overlay.$$render) {
+    return Overlay
+  }
+  function OverlaySSR(...args) {
     return new Overlay(...args)
   }
   OverlaySSR.prototype = Overlay
@@ -27,6 +29,6 @@ export function getOverlayImpl (ssr) {
   return OverlaySSR
 }
 
-export function setDOMProvider (provider) {
+export function setDOMProvider(provider) {
   DOM = provider
 }

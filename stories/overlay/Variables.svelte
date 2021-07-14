@@ -25,6 +25,10 @@ download-info =
 
 <FluentProvider {bundles}>
   <Overlay id="download-info" args={{ productName }}>
-    <a data-l10n-name="release-notes" href="https://example.com/" target="_blank"><!-- prevent a11y warning --></a>
+    <a
+      data-l10n-name="release-notes"
+      href="https://example.com/"
+      target="_blank"><!-- prevent a11y warning --></a
+    >
   </Overlay>
 </FluentProvider>

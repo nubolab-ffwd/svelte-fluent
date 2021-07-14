@@ -15,7 +15,7 @@
   $: translation = $getTranslation(id, args)
   $: update(translation, id, args)
 
-  function update (translation, id, args) {
+  function update(translation, id, args) {
     if (translation && root && translatedRoot) {
       const newRoot = root.cloneNode(true)
       translateElement(newRoot, translation)

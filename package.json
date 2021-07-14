@@ -16,7 +16,7 @@
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build",
-    "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "lint": "prettier --check --plugin-search-dir=. . && eslint --cache --ignore-path .gitignore .",
     "format": "prettier --write --plugin-search-dir=. .",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -93,7 +93,7 @@
   ],
   "lint-staged": {
     "*.{cjs,js,ts,svelte}": [
-      "eslint --cache --fix",
+      "eslint --cache --ignore-path .gitignore --fix",
       "prettier --write --plugin-search-dir=."
     ],
     "*.{md,json,yaml}": "prettier --write --plugin-search-dir=."

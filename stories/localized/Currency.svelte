@@ -19,5 +19,8 @@
 <FluentProvider {bundles}>
   <Localized
     id="current-balance"
-    args={{ balance: new FluentNumber(balance, { style: 'currency', currency: 'EUR' }) }} />
+    args={{
+      balance: new FluentNumber(balance, { style: 'currency', currency: 'EUR' })
+    }}
+  />
 </FluentProvider>

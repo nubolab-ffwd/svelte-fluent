@@ -5,15 +5,20 @@
 
   const CONTEXT_KEY = {}
 
-  export function stores () {
+  export function stores() {
     const ctx = getContext(CONTEXT_KEY)
     if (!ctx) {
-      console.error('[svelte-fluent] <FluentProvider/> was not found in component hierarchy.')
+      console.error(
+        '[svelte-fluent] <FluentProvider/> was not found in component hierarchy.'
+      )
       return
     }
     const { bundles, dispatch } = ctx
-    const getBundle = derived(bundles, $bundles => id => mapBundleSync($bundles, id))
-    const getTranslation = derived(bundles, $bundles => (id, args) => {
+    const getBundle = derived(
+      bundles,
+      ($bundles) => (id) => mapBundleSync($bundles, id)
+    )
+    const getTranslation = derived(bundles, ($bundles) => (id, args) => {
       const bundle = mapBundleSync($bundles, id)
       if (bundle === null) {
         dispatch('error', `[svelte-fluent] Translation missing: "${id}"`)
@@ -25,14 +30,20 @@
         return { value: id, attributes: {} }
       }
       const value = bundle.formatPattern(msg.value, args)
-      const attributes = Object.fromEntries(Object.entries(msg.attributes || {}).map(
-        ([name, pattern]) => ([name, bundle.formatPattern(pattern, args)]))
+      const attributes = Object.fromEntries(
+        Object.entries(msg.attributes || {}).map(([name, pattern]) => [
+          name,
+          bundle.formatPattern(pattern, args)
+        ])
       )
       return { value, attributes }
     })
-    const translate = derived(getTranslation, $getTranslation => (id, args) => {
-      return $getTranslation(id, args).value
-    })
+    const translate = derived(
+      getTranslation,
+      ($getTranslation) => (id, args) => {
+        return $getTranslation(id, args).value
+      }
+    )
     return { getBundle, getTranslation, translate }
   }
 </script>

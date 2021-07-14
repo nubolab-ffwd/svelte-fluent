@@ -17,41 +17,41 @@ More examples can be found in the rendered [Storybook](https://nubolab-ffwd.gith
 
 ```svelte
 <script>
-    import { negotiateLanguages } from '@fluent/langneg';
-    import { FluentBundle, FluentResource } from '@fluent/bundle';
-    import { FluentProvider, Localized } from '@nubolab-ffwd/svelte-fluent'
+  import { negotiateLanguages } from '@fluent/langneg'
+  import { FluentBundle, FluentResource } from '@fluent/bundle'
+  import { FluentProvider, Localized } from '@nubolab-ffwd/svelte-fluent'
 
-    // Store all translations as a simple object which is available
-    // synchronously and bundled with the rest of the code.
-    const RESOURCES = {
-        'fr': new FluentResource('hello = Salut le monde !'),
-        'en-US': new FluentResource('hello = Hello, world!'),
-        'pl': new FluentResource('hello = Witaj świecie!'),
-    };
+  // Store all translations as a simple object which is available
+  // synchronously and bundled with the rest of the code.
+  const RESOURCES = {
+    fr: new FluentResource('hello = Salut le monde !'),
+    'en-US': new FluentResource('hello = Hello, world!'),
+    pl: new FluentResource('hello = Witaj świecie!')
+  }
 
-    // A generator function responsible for building the sequence
-    // of FluentBundle instances in the order of user's language
-    // preferences.
-    function* generateBundles(userLocales) {
-        // Choose locales that are best for the user.
-        const currentLocales = negotiateLanguages(
-            userLocales,
-            ['fr', 'en-US', 'pl'],
-            { defaultLocale: 'en-US' }
-        );
+  // A generator function responsible for building the sequence
+  // of FluentBundle instances in the order of user's language
+  // preferences.
+  function* generateBundles(userLocales) {
+    // Choose locales that are best for the user.
+    const currentLocales = negotiateLanguages(
+      userLocales,
+      ['fr', 'en-US', 'pl'],
+      { defaultLocale: 'en-US' }
+    )
 
-        for (const locale of currentLocales) {
-            const bundle = new FluentBundle(locale);
-            bundle.addResource(RESOURCES[locale]);
-            yield bundle;
-        }
+    for (const locale of currentLocales) {
+      const bundle = new FluentBundle(locale)
+      bundle.addResource(RESOURCES[locale])
+      yield bundle
     }
+  }
 </script>
 
 <FluentProvider bundles={generateBundles(navigator.languages)}>
-    <h1>
-        <Localized id="hello" />
-    </h1>
+  <h1>
+    <Localized id="hello" />
+  </h1>
 </FluentProvider>
 ```
 
@@ -84,26 +84,25 @@ To fix it, you must add `@nubolab-ffwd/svelte-fluent` to Vite's configuration pr
 
 ## Rollup
 
-
 For browser builds (no SSR) make sure to include the following configuration for the `@rollup/plugin-replace` plugin
 
 ```js
 replace({
-    'process.browser': true
+  'process.browser': true
 })
 ```
 
 ## Webpack
 
 - Add `jsdom` to the `externals` webpack config for your SSR builds. Not necessary if you're using Sapper based on the
-    `sapper-template` repository because it already adds all `"dependencies"` to `externals`.
+  `sapper-template` repository because it already adds all `"dependencies"` to `externals`.
 - For browser builds (no SSR) make sure to include the following webpack plugin configuration
 
-    ```
-    new webpack.DefinePlugin({
-        'process.browser': true,
-    })
-    ```
+  ```
+  new webpack.DefinePlugin({
+      'process.browser': true,
+  })
+  ```
 
 # DOM Overlays (experimental)
 
@@ -135,14 +134,14 @@ info = Read the <a data-l10n-name="link">documentation</a> for more information.
 
 ```svelte
 <script>
-    import { Overlay } from 'svelte-fluent'
-    const linkHref = 'https://example.com/'
+  import { Overlay } from 'svelte-fluent'
+  const linkHref = 'https://example.com/'
 </script>
 
 <p>
-    <Overlay id="info">
-        <a data-l10n-name="link" href={linkHref} />
-    </Overlay>
+  <Overlay id="info">
+    <a data-l10n-name="link" href={linkHref} />
+  </Overlay>
 </p>
 ```
 
@@ -150,6 +149,8 @@ info = Read the <a data-l10n-name="link">documentation</a> for more information.
 
 ```html
 <p>
-    Read the <a data-l10n-name="link" href="https://example.com/">documentation</a> for more information.
+  Read the
+  <a data-l10n-name="link" href="https://example.com/">documentation</a> for
+  more information.
 </p>
 ```
