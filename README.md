@@ -95,6 +95,10 @@ export default {
 
 The rollup plugin is vite-aware and will automatically detect if SSR processing is needed. Don't pass `{ssr: true}` in the plugin options.
 
+### Upgrade notes
+
+- If you're upgrading from `svelte-fluent@0.3.1`, you also need to change your imports from `@nubolab-ffwd/svelte-fluent/src/vite` to `@nubolab-ffwd/svelte-fluent`.
+
 ## Webpack
 
 Currently there is no `svelte-fluent` bundler plugin for Webpack. You can still use the `<Localized>` component but `<Overlay>` should be considered unsupported unless you're not using SSR.
