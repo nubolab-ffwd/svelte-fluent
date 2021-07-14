@@ -13,6 +13,18 @@
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./rollup-plugin": {
+      "import": "./dist/rollup-plugin.mjs",
+      "require": "./dist/rollup-plugin.js"
+    },
+    "./src/*": "./src/*.js"
+  },
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build",
@@ -28,7 +40,8 @@
     "@fluent/dom": "^0.7.0",
     "@fluent/langneg": "^0.5.2",
     "@fluent/sequence": "^0.6.0",
-    "cached-iterable": "^0.3.0"
+    "cached-iterable": "^0.3.0",
+    "jsdom": "^16.6.0"
   },
   "devDependencies": {
     "@babel/core": "7.14.6",

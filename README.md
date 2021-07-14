@@ -1,7 +1,7 @@
 # Svelte Fluent [![Docs](https://img.shields.io/badge/docs-Storybook-blue)](https://nubolab-ffwd.github.io/svelte-fluent/) ![CI](https://github.com/nubolab-ffwd/svelte-fluent/workflows/CI/badge.svg) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com) [![svelte-v3](https://img.shields.io/badge/svelte-v3-blueviolet.svg)](https://svelte.dev)
 
 `svelte-fluent` provides [Svelte](https://svelte.dev/) components for easy
-integration of [Fluent](https://projectfluent.org/) localization for Svelte/Sapper
+integration of [Fluent](https://projectfluent.org/) localization for Svelte / Sapper / SvelteKit
 applications. Inspired by [@fluent/react](https://www.npmjs.com/package/@fluent/react).
 
 # Installation
@@ -57,54 +57,53 @@ More examples can be found in the rendered [Storybook](https://nubolab-ffwd.gith
 
 # Bundler Notes
 
+If you're not using DOM Overlays or not using SSR rendering everything should work out-of-the-box. Without bundler support DOM Overlays
+will not get transformed during SSR rendering and will therefore show some visual flicker on page load. To address this `svelte-fluent` provides bundler plugins to enhance the SSR rendering.
+
 ## Rollup / Sapper
 
-If you're using Sapper with Rollup based on the [sapper-template](https://github.com/sveltejs/sapper-template) repository everything should work out-of-the-box.
-For regular Svelte applications or Webpack some extra settings are required.
-
-## Vite / SvelteKit
-
-When using Vite (e.g. with SvelteKit) the components must be imported from a different import path.
-All components must be imported from `@nubolab-ffwd/svelte-fluent/src/vite` like this:
-
-```
-import { FluentProvider, Localized, Overlay } from "@nubolab-ffwd/svelte-fluent/src/vite";
-```
-
-You may also get the error `TypeError: Cannot read property 'SSR' of undefined` when using the dev server.
-To fix it, you must add `@nubolab-ffwd/svelte-fluent` to Vite's configuration property [optimizeDeps.exclude](https://vitejs.dev/config/#dep-optimization-options):
+Add the `svelte-fluent/rollup-plugin` to your `rollup.config.js`. For example in sapper it should look like this:
 
 ```js
-{
-  optimizeDeps: {
-    exclude: ['@nubolab-ffwd/svelte-fluent']
+import svelteFluent from '@nubolab-ffwd/svelte-fluent/rollup-plugin'
+
+export default {
+  client: {
+    plugins: [svelteFluent()]
+  },
+  server: {
+    plugins: [svelteFluent({ ssr: true })]
   }
 }
 ```
 
-## Rollup
+## Vite / SvelteKit
 
-For browser builds (no SSR) make sure to include the following configuration for the `@rollup/plugin-replace` plugin
+Add the `svelte-fluent/rollup-plugin` to your plugin list in `vite.config.js` or `svelte.config.js`. For example in SvelteKit it should look like this:
 
 ```js
-replace({
-  'process.browser': true
-})
+import svelteFluent from '@nubolab-ffwd/svelte-fluent/rollup-plugin'
+
+export default {
+  kit: {
+    vite: {
+      plugins: [svelteFluent()]
+    }
+  }
+}
 ```
+
+The rollup plugin is vite-aware and will automatically detect if SSR processing is needed. Don't pass `{ssr: true}` in the plugin options.
 
 ## Webpack
 
-- Add `jsdom` to the `externals` webpack config for your SSR builds. Not necessary if you're using Sapper based on the
-  `sapper-template` repository because it already adds all `"dependencies"` to `externals`.
-- For browser builds (no SSR) make sure to include the following webpack plugin configuration
+Currently there is no `svelte-fluent` bundler plugin for Webpack. You can still use the `<Localized>` component but `<Overlay>` should be considered unsupported unless you're not using SSR.
 
-  ```
-  new webpack.DefinePlugin({
-      'process.browser': true,
-  })
-  ```
+Contributions of a Webpack loader that replicates the Rollup plugin in `src/rollup-plugin.js` would be welcome.
 
 # DOM Overlays (experimental)
+
+**Important:** for proper SSR support of DOM Overlays some bundler support is needed. Please check the [Bundler Notes](#bundler-notes).
 
 This library includes experimental support for DOM overlays via
 [@fluent/dom](https://www.npmjs.com/package/@fluent/dom). For a detailed

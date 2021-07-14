@@ -1,5 +1,5 @@
 <script>
-  import { FluentProvider, Overlay } from '../../src'
+  import { FluentProvider, Overlay } from '@nubolab-ffwd/svelte-fluent'
   import { generateBundles } from '../utils'
   export let locale
   export let productName

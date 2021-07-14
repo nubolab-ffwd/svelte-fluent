@@ -27,6 +27,5 @@ module.exports = {
         jest: true
       }
     }
-  ],
-  ignorePatterns: ['/dist/', 'storybook-static']
+  ]
 }

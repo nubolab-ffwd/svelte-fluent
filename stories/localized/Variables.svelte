@@ -1,5 +1,5 @@
 <script>
-  import { FluentProvider, Localized } from '../../src'
+  import { FluentProvider, Localized } from '@nubolab-ffwd/svelte-fluent'
   import { generateBundles } from '../utils'
   export let locale
   export let unreadEmails = 0

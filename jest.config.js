@@ -38,7 +38,11 @@ const domConfig = {
     ...commonConfig.transform,
     '\\.svelte$': 'jest-transform-svelte'
   },
-  testMatch: ['**/*.test.js']
+  testMatch: ['**/*.test.js'],
+  moduleNameMapper: {
+    ...commonConfig.moduleNameMapper,
+    '^@nubolab-ffwd/svelte-fluent$': '<rootDir>/src/index.js'
+  }
 }
 
 const ssrConfig = {
@@ -55,7 +59,11 @@ const ssrConfig = {
       }
     ]
   },
-  testMatch: ['**/*.test.ssr.js']
+  testMatch: ['**/*.test.ssr.js'],
+  moduleNameMapper: {
+    ...commonConfig.moduleNameMapper,
+    '^@nubolab-ffwd/svelte-fluent$': '<rootDir>/src/ssr.js'
+  }
 }
 
 module.exports = {
