@@ -51,7 +51,7 @@
     "@fluent/dom": "0.7.0",
     "@fluent/langneg": "0.5.2",
     "@fluent/sequence": "0.6.0",
-    "@rollup/plugin-node-resolve": "13.0.0",
+    "@rollup/plugin-node-resolve": "13.0.2",
     "@rollup/plugin-replace": "2.4.2",
     "@storybook/addon-actions": "6.3.4",
     "@storybook/addon-essentials": "6.3.4",
