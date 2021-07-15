@@ -39,7 +39,7 @@ specifiers:
   prettier-plugin-svelte: 2.3.1
   rollup: 2.53.2
   rollup-plugin-svelte: 7.1.0
-  standard-version: 9.3.0
+  standard-version: 9.3.1
   svelte: 3.38.3
   svelte-loader: 3.1.2
 
@@ -84,7 +84,7 @@ devDependencies:
   prettier-plugin-svelte: 2.3.1_prettier@2.3.2+svelte@3.38.3
   rollup: 2.53.2
   rollup-plugin-svelte: 7.1.0_rollup@2.53.2+svelte@3.38.3
-  standard-version: 9.3.0
+  standard-version: 9.3.1
   svelte: 3.38.3
   svelte-loader: 3.1.2_svelte@3.38.3
 
@@ -12687,8 +12687,8 @@ packages:
       escape-string-regexp: 2.0.0
     dev: true
 
-  /standard-version/9.3.0:
-    resolution: {integrity: sha512-cYxxKXhYfI3S9+CA84HmrJa9B88H56V5FQ302iFF2TNwJukJCNoU8FgWt+11YtwKFXRkQQFpepC2QOF7aDq2Ow==}
+  /standard-version/9.3.1:
+    resolution: {integrity: sha512-5qMxXw/FxLouC5nANyx/5RY1kiorJx9BppUso8gN07MG64q2uLRmrPb4KfXp3Ql4s/gxjZwZ89e0FwxeLubGww==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
