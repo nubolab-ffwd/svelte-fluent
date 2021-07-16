@@ -8,7 +8,7 @@ specifiers:
   '@fluent/dom': ^0.7.0
   '@fluent/langneg': ^0.5.2
   '@fluent/sequence': ^0.6.0
-  '@rollup/plugin-node-resolve': 13.0.0
+  '@rollup/plugin-node-resolve': 13.0.2
   '@rollup/plugin-replace': 2.4.2
   '@storybook/addon-actions': 6.3.4
   '@storybook/addon-essentials': 6.3.4
@@ -55,7 +55,7 @@ devDependencies:
   '@commitlint/cli': 12.1.4
   '@commitlint/config-conventional': 12.1.4
   '@fluent/bundle': 0.16.1
-  '@rollup/plugin-node-resolve': 13.0.0_rollup@2.53.2
+  '@rollup/plugin-node-resolve': 13.0.2_rollup@2.53.2
   '@rollup/plugin-replace': 2.4.2_rollup@2.53.2
   '@storybook/addon-actions': 6.3.4
   '@storybook/addon-essentials': 6.3.4_306f8cda7c1fa62c8f7a3979d332d0cd
@@ -2123,8 +2123,8 @@ packages:
       react-lifecycles-compat: 3.0.4
     dev: true
 
-  /@rollup/plugin-node-resolve/13.0.0_rollup@2.53.2:
-    resolution: {integrity: sha512-41X411HJ3oikIDivT5OKe9EZ6ud6DXudtfNrGbC4nniaxx2esiWjkLOzgnZsWq1IM8YIeL2rzRGLZLBjlhnZtQ==}
+  /@rollup/plugin-node-resolve/13.0.2_rollup@2.53.2:
+    resolution: {integrity: sha512-hv+eAMcA2hQ7qvPVcXbtIyc0dtue4jMyA2sCW4IMkrmh+SeDDEHg1MXTv65VPpKdtjvWzN3+4mHAEl4rT+zgzQ==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
       rollup: ^2.42.0
