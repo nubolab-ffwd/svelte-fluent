@@ -33,7 +33,7 @@ specifiers:
   jest: 27.0.6
   jest-transform-svelte: 2.1.1
   jsdom: ^16.6.0
-  lint-staged: 11.0.1
+  lint-staged: 11.1.0
   prettier: 2.3.2
   prettier-config-standard: 4.0.0
   prettier-plugin-svelte: 2.3.1
@@ -78,7 +78,7 @@ devDependencies:
   husky: 7.0.1
   jest: 27.0.6
   jest-transform-svelte: 2.1.1_svelte@3.39.0
-  lint-staged: 11.0.1
+  lint-staged: 11.1.0
   prettier: 2.3.2
   prettier-config-standard: 4.0.0
   prettier-plugin-svelte: 2.3.1_prettier@2.3.2+svelte@3.39.0
@@ -10758,8 +10758,8 @@ packages:
     resolution: {integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=}
     dev: true
 
-  /lint-staged/11.0.1:
-    resolution: {integrity: sha512-RkTA1ulE6jAGFskxpGAwxfVRXjHp7D9gFg/+KMARUWMPiVFP0t28Em2u0gL8sA0w3/ck3TC57F2v2RNeQ5XPnw==}
+  /lint-staged/11.1.0:
+    resolution: {integrity: sha512-pzwEf+NKbTauAlk7gPPwTfulRXESEPZCSFXYfg20F220UOObebxu5uL5mkr9csQLNOM2Ydfrt3DJXakzAL7aaQ==}
     hasBin: true
     dependencies:
       chalk: 4.1.1
