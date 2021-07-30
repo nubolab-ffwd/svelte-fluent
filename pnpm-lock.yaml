@@ -21,7 +21,7 @@ specifiers:
   babel-eslint: 10.1.0
   babel-loader: 8.2.2
   cached-iterable: ^0.3.0
-  eslint: 7.31.0
+  eslint: 7.32.0
   eslint-config-prettier: 8.3.0
   eslint-config-standard: 16.0.3
   eslint-plugin-import: 2.23.4
@@ -65,16 +65,16 @@ devDependencies:
   '@storybook/svelte': 6.3.6_70e072c103fbbd359185078c7c25c2d1
   '@testing-library/jest-dom': 5.14.1
   '@testing-library/svelte': 3.0.3_svelte@3.41.0
-  babel-eslint: 10.1.0_eslint@7.31.0
+  babel-eslint: 10.1.0_eslint@7.32.0
   babel-loader: 8.2.2_@babel+core@7.14.8
-  eslint: 7.31.0
-  eslint-config-prettier: 8.3.0_eslint@7.31.0
-  eslint-config-standard: 16.0.3_ebdb84fef5122eacd2d98bd9212a56af
-  eslint-plugin-import: 2.23.4_eslint@7.31.0
-  eslint-plugin-node: 11.1.0_eslint@7.31.0
-  eslint-plugin-promise: 5.1.0_eslint@7.31.0
-  eslint-plugin-standard: 5.0.0_eslint@7.31.0
-  eslint-plugin-svelte3: 3.2.0_eslint@7.31.0+svelte@3.41.0
+  eslint: 7.32.0
+  eslint-config-prettier: 8.3.0_eslint@7.32.0
+  eslint-config-standard: 16.0.3_3062fa9fac81ca2e86f20e6f3c8ea22d
+  eslint-plugin-import: 2.23.4_eslint@7.32.0
+  eslint-plugin-node: 11.1.0_eslint@7.32.0
+  eslint-plugin-promise: 5.1.0_eslint@7.32.0
+  eslint-plugin-standard: 5.0.0_eslint@7.32.0
+  eslint-plugin-svelte3: 3.2.0_eslint@7.32.0+svelte@3.41.0
   husky: 7.0.1
   jest: 27.0.6
   jest-transform-svelte: 2.1.1_svelte@3.41.0
@@ -4925,7 +4925,7 @@ packages:
       postcss-value-parser: 4.1.0
     dev: true
 
-  /babel-eslint/10.1.0_eslint@7.31.0:
+  /babel-eslint/10.1.0_eslint@7.32.0:
     resolution: {integrity: sha512-ifWaTHQ0ce+448CYop8AdrQiBsGrnC+bMgfyKFdi6EsPLTAWG+QfyDeM6OH+FmWnKvEq5NnBMLvlBUPKQZoDSg==}
     engines: {node: '>=6'}
     deprecated: babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.
@@ -4936,7 +4936,7 @@ packages:
       '@babel/parser': 7.14.7
       '@babel/traverse': 7.14.7
       '@babel/types': 7.14.5
-      eslint: 7.31.0
+      eslint: 7.32.0
       eslint-visitor-keys: 1.3.0
       resolve: 1.20.0
     transitivePeerDependencies:
@@ -7009,16 +7009,16 @@ packages:
     optionalDependencies:
       source-map: 0.6.1
 
-  /eslint-config-prettier/8.3.0_eslint@7.31.0:
+  /eslint-config-prettier/8.3.0_eslint@7.32.0:
     resolution: {integrity: sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
-      eslint: 7.31.0
+      eslint: 7.32.0
     dev: true
 
-  /eslint-config-standard/16.0.3_ebdb84fef5122eacd2d98bd9212a56af:
+  /eslint-config-standard/16.0.3_3062fa9fac81ca2e86f20e6f3c8ea22d:
     resolution: {integrity: sha512-x4fmJL5hGqNJKGHSjnLdgA6U6h1YW/G2dW9fA+cyVur4SK6lyue8+UgNKWlZtUDTXvgKDD/Oa3GQjmB5kjtVvg==}
     peerDependencies:
       eslint: ^7.12.1
@@ -7026,10 +7026,10 @@ packages:
       eslint-plugin-node: ^11.1.0
       eslint-plugin-promise: ^4.2.1 || ^5.0.0
     dependencies:
-      eslint: 7.31.0
-      eslint-plugin-import: 2.23.4_eslint@7.31.0
-      eslint-plugin-node: 11.1.0_eslint@7.31.0
-      eslint-plugin-promise: 5.1.0_eslint@7.31.0
+      eslint: 7.32.0
+      eslint-plugin-import: 2.23.4_eslint@7.32.0
+      eslint-plugin-node: 11.1.0_eslint@7.32.0
+      eslint-plugin-promise: 5.1.0_eslint@7.32.0
     dev: true
 
   /eslint-import-resolver-node/0.3.4:
@@ -7047,18 +7047,18 @@ packages:
       pkg-dir: 2.0.0
     dev: true
 
-  /eslint-plugin-es/3.0.1_eslint@7.31.0:
+  /eslint-plugin-es/3.0.1_eslint@7.32.0:
     resolution: {integrity: sha512-GUmAsJaN4Fc7Gbtl8uOBlayo2DqhwWvEzykMHSCZHU3XdJ+NSzzZcVhXh3VxX5icqQ+oQdIEawXX8xkR3mIFmQ==}
     engines: {node: '>=8.10.0'}
     peerDependencies:
       eslint: '>=4.19.1'
     dependencies:
-      eslint: 7.31.0
+      eslint: 7.32.0
       eslint-utils: 2.1.0
       regexpp: 3.1.0
     dev: true
 
-  /eslint-plugin-import/2.23.4_eslint@7.31.0:
+  /eslint-plugin-import/2.23.4_eslint@7.32.0:
     resolution: {integrity: sha512-6/wP8zZRsnQFiR3iaPFgh5ImVRM1WN5NUWfTIRqwOdeiGJlBcSk82o1FEVq8yXmy4lkIzTo7YhHCIxlU/2HyEQ==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -7068,7 +7068,7 @@ packages:
       array.prototype.flat: 1.2.4
       debug: 2.6.9
       doctrine: 2.1.0
-      eslint: 7.31.0
+      eslint: 7.32.0
       eslint-import-resolver-node: 0.3.4
       eslint-module-utils: 2.6.1
       find-up: 2.1.0
@@ -7082,14 +7082,14 @@ packages:
       tsconfig-paths: 3.9.0
     dev: true
 
-  /eslint-plugin-node/11.1.0_eslint@7.31.0:
+  /eslint-plugin-node/11.1.0_eslint@7.32.0:
     resolution: {integrity: sha512-oUwtPJ1W0SKD0Tr+wqu92c5xuCeQqB3hSCHasn/ZgjFdA9iDGNkNf2Zi9ztY7X+hNuMib23LNGRm6+uN+KLE3g==}
     engines: {node: '>=8.10.0'}
     peerDependencies:
       eslint: '>=5.16.0'
     dependencies:
-      eslint: 7.31.0
-      eslint-plugin-es: 3.0.1_eslint@7.31.0
+      eslint: 7.32.0
+      eslint-plugin-es: 3.0.1_eslint@7.32.0
       eslint-utils: 2.1.0
       ignore: 5.1.8
       minimatch: 3.0.4
@@ -7097,32 +7097,32 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-plugin-promise/5.1.0_eslint@7.31.0:
+  /eslint-plugin-promise/5.1.0_eslint@7.32.0:
     resolution: {integrity: sha512-NGmI6BH5L12pl7ScQHbg7tvtk4wPxxj8yPHH47NvSmMtFneC077PSeY3huFj06ZWZvtbfxSPt3RuOQD5XcR4ng==}
     engines: {node: ^10.12.0 || >=12.0.0}
     peerDependencies:
       eslint: ^7.0.0
     dependencies:
-      eslint: 7.31.0
+      eslint: 7.32.0
     dev: true
 
-  /eslint-plugin-standard/5.0.0_eslint@7.31.0:
+  /eslint-plugin-standard/5.0.0_eslint@7.32.0:
     resolution: {integrity: sha512-eSIXPc9wBM4BrniMzJRBm2uoVuXz2EPa+NXPk2+itrVt+r5SbKFERx/IgrK/HmfjddyKVz2f+j+7gBRvu19xLg==}
     deprecated: 'standard 16.0.0 and eslint-config-standard 16.0.0 no longer require the eslint-plugin-standard package. You can remove it from your dependencies with ''npm rm eslint-plugin-standard''. More info here: https://github.com/standard/standard/issues/1316'
     peerDependencies:
       eslint: '>=5.0.0'
     dependencies:
-      eslint: 7.31.0
+      eslint: 7.32.0
     dev: true
 
-  /eslint-plugin-svelte3/3.2.0_eslint@7.31.0+svelte@3.41.0:
+  /eslint-plugin-svelte3/3.2.0_eslint@7.32.0+svelte@3.41.0:
     resolution: {integrity: sha512-qdWB1QN21dEozsJFdR8XlEhMnsS6aKHjsXWuNmchYwxoet5I6QdCr1Xcq62++IzRBMCNCeH4waXqSOAdqrZzgA==}
     engines: {node: '>=10'}
     peerDependencies:
       eslint: '>=6.0.0'
       svelte: ^3.2.0
     dependencies:
-      eslint: 7.31.0
+      eslint: 7.32.0
       svelte: 3.41.0
     dev: true
 
@@ -7159,8 +7159,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint/7.31.0:
-    resolution: {integrity: sha512-vafgJpSh2ia8tnTkNUkwxGmnumgckLh5aAbLa1xRmIn9+owi8qBNGKL+B881kNKNTy7FFqTEkpNkUvmw0n6PkA==}
+  /eslint/7.32.0:
+    resolution: {integrity: sha512-VHZ8gX+EDfz+97jGcgyGCyRia/dPOd6Xh9yPv8Bl1+SoaIwD+a/vlrOmGRUyOYu7MwUhc7CxqeaDZU13S4+EpA==}
     engines: {node: ^10.12.0 || >=12.0.0}
     hasBin: true
     dependencies:
