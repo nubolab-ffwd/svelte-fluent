@@ -13,7 +13,7 @@ npm install --save jsdom
 
 # Usage
 
-More examples can be found in the rendered [Storybook](https://nubolab-ffwd.github.io/svelte-fluent/) and the related stories in the `stories/` directory.
+This example showcases the most basic usage of `svelte-fluent`. Check the rendered [Storybook](https://nubolab-ffwd.github.io/svelte-fluent/) and the related stories in the `stories/` directory for more advanced usecases.
 
 ```svelte
 <script>
