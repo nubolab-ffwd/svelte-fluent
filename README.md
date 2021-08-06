@@ -1,7 +1,7 @@
 # Svelte Fluent [![Docs](https://img.shields.io/badge/docs-Storybook-blue)](https://nubolab-ffwd.github.io/svelte-fluent/) ![CI](https://github.com/nubolab-ffwd/svelte-fluent/workflows/CI/badge.svg) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com) [![svelte-v3](https://img.shields.io/badge/svelte-v3-blueviolet.svg)](https://svelte.dev)
 
 `svelte-fluent` provides [Svelte](https://svelte.dev/) components for easy
-integration of [Fluent](https://projectfluent.org/) localization for Svelte / Sapper / SvelteKit
+integration of [Fluent](https://projectfluent.org/) localization in Svelte / Sapper / SvelteKit
 applications. Inspired by [@fluent/react](https://www.npmjs.com/package/@fluent/react).
 
 # Installation
