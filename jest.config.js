@@ -1,5 +1,4 @@
 const commonConfig = {
-  testEnvironment: 'jsdom',
   transform: {
     '^.+\\.js$': [
       'babel-jest',
@@ -32,6 +31,7 @@ const commonConfig = {
 }
 
 const domConfig = {
+  testEnvironment: 'jsdom',
   name: 'svelte-fluent DOM',
   ...commonConfig,
   transform: {
@@ -46,6 +46,7 @@ const domConfig = {
 }
 
 const ssrConfig = {
+  testEnvironment: 'node',
   name: 'svelte-fluent SSR',
   ...commonConfig,
   transform: {
