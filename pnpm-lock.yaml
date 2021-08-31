@@ -36,7 +36,7 @@ specifiers:
   lint-staged: 11.1.2
   prettier: 2.3.2
   prettier-config-standard: 4.0.0
-  prettier-plugin-svelte: 2.3.1
+  prettier-plugin-svelte: 2.4.0
   rollup: 2.56.3
   rollup-plugin-svelte: 7.1.0
   standard-version: 9.3.1
@@ -81,7 +81,7 @@ devDependencies:
   lint-staged: 11.1.2
   prettier: 2.3.2
   prettier-config-standard: 4.0.0
-  prettier-plugin-svelte: 2.3.1_prettier@2.3.2+svelte@3.42.4
+  prettier-plugin-svelte: 2.4.0_prettier@2.3.2+svelte@3.42.4
   rollup: 2.56.3
   rollup-plugin-svelte: 7.1.0_rollup@2.56.3+svelte@3.42.4
   standard-version: 9.3.1
@@ -11529,8 +11529,8 @@ packages:
     resolution: {integrity: sha512-K5J34NKeGyJvVVHUg4cAWDhtVYzT7UIRE9GbFyqHNZd61Pr0DHNTMsgoID7IVDmKc0QaLswYwKaNR2apbUJvkg==}
     dev: true
 
-  /prettier-plugin-svelte/2.3.1_prettier@2.3.2+svelte@3.42.4:
-    resolution: {integrity: sha512-F1/r6OYoBq8Zgurhs1MN25tdrhPw0JW5JjioPRqpxbYdmrZ3gY/DzHGs0B6zwd4DLyRsfGB2gqhxUCbHt/D1fw==}
+  /prettier-plugin-svelte/2.4.0_prettier@2.3.2+svelte@3.42.4:
+    resolution: {integrity: sha512-JwJ9bOz4XHLQtiLnX4mTSSDUdhu12WH8sTwy/XTDCSyPlah6IcV7NWeYBZscPEcceu2YnW8Y9sJCP40Z2UH9GA==}
     peerDependencies:
       prettier: ^1.16.4 || ^2.0.0
       svelte: ^3.2.0
