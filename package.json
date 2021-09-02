@@ -44,7 +44,7 @@
     "jsdom": "^17.0.0"
   },
   "devDependencies": {
-    "@babel/core": "7.15.0",
+    "@babel/core": "7.15.4",
     "@commitlint/cli": "13.1.0",
     "@commitlint/config-conventional": "13.1.0",
     "@fluent/bundle": "0.16.1",
