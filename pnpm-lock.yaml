@@ -12,7 +12,7 @@ specifiers:
   '@rollup/plugin-replace': 3.0.0
   '@storybook/addon-actions': 6.3.8
   '@storybook/addon-essentials': 6.3.8
-  '@storybook/addon-knobs': 6.3.0
+  '@storybook/addon-knobs': 6.3.1
   '@storybook/addon-storyshots': 6.3.8
   '@storybook/addons': 6.3.8
   '@storybook/svelte': 6.3.8
@@ -59,7 +59,7 @@ devDependencies:
   '@rollup/plugin-replace': 3.0.0_rollup@2.56.3
   '@storybook/addon-actions': 6.3.8
   '@storybook/addon-essentials': 6.3.8_b15a1d2016c2087721ed1db24afff37d
-  '@storybook/addon-knobs': 6.3.0_@storybook+addons@6.3.8
+  '@storybook/addon-knobs': 6.3.1_@storybook+addons@6.3.8
   '@storybook/addon-storyshots': 6.3.8_23d2a9469dc9bac5cc666294b0281ab0
   '@storybook/addons': 6.3.8
   '@storybook/svelte': 6.3.8_738309e3b4e58f4d487bda5436c10248
@@ -2742,9 +2742,8 @@ packages:
       - webpack-command
     dev: true
 
-  /@storybook/addon-knobs/6.3.0_@storybook+addons@6.3.8:
-    resolution: {integrity: sha512-wsZZ1t38KHdaxzrc9oPyiIJDihJnjHRRabrENQbylktJwETEjb2z3eX0iBRJGiz/YCHO+tGd0ItyZArOdijT6g==}
-    deprecated: deprecating knobs in favor of @storybook/addon-controls
+  /@storybook/addon-knobs/6.3.1_@storybook+addons@6.3.8:
+    resolution: {integrity: sha512-2GGGnQSPXXUhHHYv4IW6pkyQlCPYXKYiyGzfhV7Zhs95M2Ban08OA6KLmliMptWCt7U9tqTO8dB5u0C2cWmCTw==}
     peerDependencies:
       '@storybook/addons': ^6.3.0
       '@storybook/api': ^6.3.0
@@ -2760,6 +2759,7 @@ packages:
         optional: true
     dependencies:
       '@storybook/addons': 6.3.8
+      copy-to-clipboard: 3.3.1
       core-js: 3.15.2
       escape-html: 1.0.3
       fast-deep-equal: 3.1.3
