@@ -37,7 +37,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@fluent/dom": "^0.7.0",
+    "@fluent/dom": "^0.8.0",
     "@fluent/langneg": "^0.5.2",
     "@fluent/sequence": "^0.6.0",
     "cached-iterable": "^0.3.0",
@@ -48,7 +48,7 @@
     "@commitlint/cli": "13.1.0",
     "@commitlint/config-conventional": "13.1.0",
     "@fluent/bundle": "0.16.1",
-    "@fluent/dom": "0.7.0",
+    "@fluent/dom": "0.8.0",
     "@fluent/langneg": "0.5.2",
     "@fluent/sequence": "0.6.0",
     "@rollup/plugin-node-resolve": "13.0.4",
