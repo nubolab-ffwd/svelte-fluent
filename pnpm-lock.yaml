@@ -40,7 +40,7 @@ specifiers:
   rollup: 2.56.3
   rollup-plugin-svelte: 7.1.0
   standard-version: 9.3.1
-  svelte: 3.42.4
+  svelte: 3.42.5
   svelte-loader: 3.1.2
 
 dependencies:
@@ -58,13 +58,13 @@ devDependencies:
   '@rollup/plugin-node-resolve': 13.0.4_rollup@2.56.3
   '@rollup/plugin-replace': 3.0.0_rollup@2.56.3
   '@storybook/addon-actions': 6.3.8
-  '@storybook/addon-essentials': 6.3.8_b15a1d2016c2087721ed1db24afff37d
+  '@storybook/addon-essentials': 6.3.8_eceee2ca8c6f649af1e586a6393374b7
   '@storybook/addon-knobs': 6.3.1_@storybook+addons@6.3.8
-  '@storybook/addon-storyshots': 6.3.8_cb7d9c248e8b1c0a3892b496b3a3a7a9
+  '@storybook/addon-storyshots': 6.3.8_ff45a1b19694ce199bc46483ef211a0d
   '@storybook/addons': 6.3.8
-  '@storybook/svelte': 6.3.8_738309e3b4e58f4d487bda5436c10248
+  '@storybook/svelte': 6.3.8_60c4f504dee1ae57183eed5f72051989
   '@testing-library/jest-dom': 5.14.1
-  '@testing-library/svelte': 3.0.3_svelte@3.42.4
+  '@testing-library/svelte': 3.0.3_svelte@3.42.5
   babel-eslint: 10.1.0_eslint@7.32.0
   babel-loader: 8.2.2_@babel+core@7.15.5
   eslint: 7.32.0
@@ -74,19 +74,19 @@ devDependencies:
   eslint-plugin-node: 11.1.0_eslint@7.32.0
   eslint-plugin-promise: 5.1.0_eslint@7.32.0
   eslint-plugin-standard: 5.0.0_eslint@7.32.0
-  eslint-plugin-svelte3: 3.2.0_eslint@7.32.0+svelte@3.42.4
+  eslint-plugin-svelte3: 3.2.0_eslint@7.32.0+svelte@3.42.5
   husky: 7.0.2
   jest: 27.1.1
-  jest-transform-svelte: 2.1.1_svelte@3.42.4
+  jest-transform-svelte: 2.1.1_svelte@3.42.5
   lint-staged: 11.1.2
   prettier: 2.4.0
   prettier-config-standard: 4.0.0
-  prettier-plugin-svelte: 2.4.0_prettier@2.4.0+svelte@3.42.4
+  prettier-plugin-svelte: 2.4.0_prettier@2.4.0+svelte@3.42.5
   rollup: 2.56.3
-  rollup-plugin-svelte: 7.1.0_rollup@2.56.3+svelte@3.42.4
+  rollup-plugin-svelte: 7.1.0_rollup@2.56.3+svelte@3.42.5
   standard-version: 9.3.1
-  svelte: 3.42.4
-  svelte-loader: 3.1.2_svelte@3.42.4
+  svelte: 3.42.5
+  svelte-loader: 3.1.2_svelte@3.42.5
 
 packages:
 
@@ -2358,7 +2358,7 @@ packages:
       - '@types/react'
     dev: true
 
-  /@storybook/addon-docs/6.3.8_svelte@3.42.4:
+  /@storybook/addon-docs/6.3.8_svelte@3.42.5:
     resolution: {integrity: sha512-STm2dkX3Cx5w7GMKImujluqXfQxkXnta7TbOzuf49sd04rWpKWiG6KnDFPa6lPvUT8xus3oZedyX3lN2Q2x8bA==}
     peerDependencies:
       '@storybook/angular': 6.3.8
@@ -2441,7 +2441,7 @@ packages:
       regenerator-runtime: 0.13.7
       remark-external-links: 8.0.0
       remark-slug: 6.0.0
-      svelte: 3.42.4
+      svelte: 3.42.5
       ts-dedent: 2.1.1
       util-deprecate: 1.0.2
     transitivePeerDependencies:
@@ -2454,7 +2454,7 @@ packages:
       - webpack-command
     dev: true
 
-  /@storybook/addon-essentials/6.3.8_b15a1d2016c2087721ed1db24afff37d:
+  /@storybook/addon-essentials/6.3.8_eceee2ca8c6f649af1e586a6393374b7:
     resolution: {integrity: sha512-8PuXH289gjR0MuRKVfSz38i4kYKSZB3p5z1a+IBqqZBXM6Hujlu4zQE0r9u5qOo7KHT5C/SKWCkn9ZBU9+lSUA==}
     peerDependencies:
       '@babel/core': ^7.9.6
@@ -2483,7 +2483,7 @@ packages:
       '@storybook/addon-actions': 6.3.8
       '@storybook/addon-backgrounds': 6.3.8
       '@storybook/addon-controls': 6.3.8
-      '@storybook/addon-docs': 6.3.8_svelte@3.42.4
+      '@storybook/addon-docs': 6.3.8_svelte@3.42.5
       '@storybook/addon-measure': 2.0.0_11fae26941fbdefcaccf2729f36e7836
       '@storybook/addon-toolbars': 6.3.8
       '@storybook/addon-viewport': 6.3.8
@@ -2564,7 +2564,7 @@ packages:
       '@storybook/api': 6.3.8
     dev: true
 
-  /@storybook/addon-storyshots/6.3.8_cb7d9c248e8b1c0a3892b496b3a3a7a9:
+  /@storybook/addon-storyshots/6.3.8_ff45a1b19694ce199bc46483ef211a0d:
     resolution: {integrity: sha512-YPPWsyvDiJok1DWMz5Cf8OQBSDepYk1Stq+Y4iCeGYuXx/w718Iik2fy2ZpFPh8qu5/5TNt/8bCP7PadQo2wvQ==}
     peerDependencies:
       '@angular/core': '>=6.0.0'
@@ -2634,7 +2634,7 @@ packages:
       react-test-renderer: 17.0.2
       read-pkg-up: 7.0.1
       regenerator-runtime: 0.13.7
-      svelte: 3.42.4
+      svelte: 3.42.5
       ts-dedent: 2.1.1
     transitivePeerDependencies:
       - '@babel/core'
@@ -3776,7 +3776,7 @@ packages:
       regenerator-runtime: 0.13.7
     dev: true
 
-  /@storybook/svelte/6.3.8_738309e3b4e58f4d487bda5436c10248:
+  /@storybook/svelte/6.3.8_60c4f504dee1ae57183eed5f72051989:
     resolution: {integrity: sha512-DYqkbIUKlbUTGuqzx74LPepCovqH2mqcMfjkclR7umAsPaGp+3fF17WI0nTk44K9IBLDZ0aVl3GfNIHDhpuvOQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
@@ -3795,8 +3795,8 @@ packages:
       react-dom: 16.14.0_react@16.14.0
       read-pkg-up: 7.0.1
       regenerator-runtime: 0.13.7
-      svelte: 3.42.4
-      svelte-loader: 3.1.2_svelte@3.42.4
+      svelte: 3.42.5
+      svelte-loader: 3.1.2_svelte@3.42.5
       sveltedoc-parser: 4.1.0
       ts-dedent: 2.1.1
     transitivePeerDependencies:
@@ -3961,14 +3961,14 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/svelte/3.0.3_svelte@3.42.4:
+  /@testing-library/svelte/3.0.3_svelte@3.42.5:
     resolution: {integrity: sha512-GxafAllShGM2nkntFGURZ7fYVlUYwv7K62lqv1aFqtTYzzeZ2Cu8zTVhtE/Qt3bk2zMl6+FPKP03wjLip/G8mA==}
     engines: {node: '>= 8'}
     peerDependencies:
       svelte: 3.x
     dependencies:
       '@testing-library/dom': 7.31.0
-      svelte: 3.42.4
+      svelte: 3.42.5
     dev: true
 
   /@tootallnate/once/1.1.2:
@@ -7015,7 +7015,7 @@ packages:
       eslint: 7.32.0
     dev: true
 
-  /eslint-plugin-svelte3/3.2.0_eslint@7.32.0+svelte@3.42.4:
+  /eslint-plugin-svelte3/3.2.0_eslint@7.32.0+svelte@3.42.5:
     resolution: {integrity: sha512-qdWB1QN21dEozsJFdR8XlEhMnsS6aKHjsXWuNmchYwxoet5I6QdCr1Xcq62++IzRBMCNCeH4waXqSOAdqrZzgA==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -7023,7 +7023,7 @@ packages:
       svelte: ^3.2.0
     dependencies:
       eslint: 7.32.0
-      svelte: 3.42.4
+      svelte: 3.42.5
     dev: true
 
   /eslint-scope/4.0.3:
@@ -9541,13 +9541,13 @@ packages:
       jest-snapshot: 26.6.2
     dev: true
 
-  /jest-transform-svelte/2.1.1_svelte@3.42.4:
+  /jest-transform-svelte/2.1.1_svelte@3.42.5:
     resolution: {integrity: sha512-hdOB+HeIufvOjGH3o1oz72ORacmVJzkhvGglqmOllXDu3+m2lIeBo6UpCdJ1yCIAkdNztiFUm0WRpCVATI9rhw==}
     peerDependencies:
       svelte: '>= 3'
     dependencies:
       deasync: 0.1.21
-      svelte: 3.42.4
+      svelte: 3.42.5
     dev: true
 
   /jest-util/26.6.2:
@@ -11347,14 +11347,14 @@ packages:
     resolution: {integrity: sha512-K5J34NKeGyJvVVHUg4cAWDhtVYzT7UIRE9GbFyqHNZd61Pr0DHNTMsgoID7IVDmKc0QaLswYwKaNR2apbUJvkg==}
     dev: true
 
-  /prettier-plugin-svelte/2.4.0_prettier@2.4.0+svelte@3.42.4:
+  /prettier-plugin-svelte/2.4.0_prettier@2.4.0+svelte@3.42.5:
     resolution: {integrity: sha512-JwJ9bOz4XHLQtiLnX4mTSSDUdhu12WH8sTwy/XTDCSyPlah6IcV7NWeYBZscPEcceu2YnW8Y9sJCP40Z2UH9GA==}
     peerDependencies:
       prettier: ^1.16.4 || ^2.0.0
       svelte: ^3.2.0
     dependencies:
       prettier: 2.4.0
-      svelte: 3.42.4
+      svelte: 3.42.5
     dev: true
 
   /prettier/2.2.1:
@@ -12340,7 +12340,7 @@ packages:
       inherits: 2.0.4
     dev: true
 
-  /rollup-plugin-svelte/7.1.0_rollup@2.56.3+svelte@3.42.4:
+  /rollup-plugin-svelte/7.1.0_rollup@2.56.3+svelte@3.42.5:
     resolution: {integrity: sha512-vopCUq3G+25sKjwF5VilIbiY6KCuMNHP1PFvx2Vr3REBNMDllKHFZN2B9jwwC+MqNc3UPKkjXnceLPEjTjXGXg==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -12350,7 +12350,7 @@ packages:
       require-relative: 0.8.7
       rollup: 2.56.3
       rollup-pluginutils: 2.8.2
-      svelte: 3.42.4
+      svelte: 3.42.5
     dev: true
 
   /rollup-pluginutils/2.8.2:
@@ -13175,27 +13175,27 @@ packages:
     resolution: {integrity: sha1-fRh9tcbNu9ZNdaMvkbiZi94yc8M=}
     dev: true
 
-  /svelte-hmr/0.14.4_svelte@3.42.4:
+  /svelte-hmr/0.14.4_svelte@3.42.5:
     resolution: {integrity: sha512-kItFF7vqzStckSigoFmMnxJpTOdB9TWnQAW6Js+yAB4277tLbJIIE5KBlGHNmJNpA7MguqidsPB27Uw5UzQPCA==}
     peerDependencies:
       svelte: '>=3.19.0'
     dependencies:
-      svelte: 3.42.4
+      svelte: 3.42.5
     dev: true
 
-  /svelte-loader/3.1.2_svelte@3.42.4:
+  /svelte-loader/3.1.2_svelte@3.42.5:
     resolution: {integrity: sha512-RhVIvitb+mtIwKNyvNQoDQ0EhXg2KH8LhQiiqeJh8u6vqJyGWoMoFcYCar69TT+1iaK5IYe0wPNYJ6TILcsurw==}
     peerDependencies:
       svelte: '>3.0.0'
     dependencies:
       loader-utils: 2.0.0
-      svelte: 3.42.4
+      svelte: 3.42.5
       svelte-dev-helper: 1.1.9
-      svelte-hmr: 0.14.4_svelte@3.42.4
+      svelte-hmr: 0.14.4_svelte@3.42.5
     dev: true
 
-  /svelte/3.42.4:
-    resolution: {integrity: sha512-DqC0AmDdBrrbIA+Kzl3yhBb6qCn4vZOAfxye2pTnIpinLegyagC5sLI8Pe9GPlXu9VpHBXIwpDDedpMfu++epA==}
+  /svelte/3.42.5:
+    resolution: {integrity: sha512-+y9ivcwMojAb0e87W7vR/UP7go44zc/3gtEciIMb8CUoIkUx6UJmPloBvVuO9MDXoGkUZM5SHr5PbLze9fJQVw==}
     engines: {node: '>= 8'}
     dev: true
 
