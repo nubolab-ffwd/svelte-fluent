@@ -73,7 +73,8 @@
     "rollup": "2.56.3",
     "rollup-plugin-svelte": "7.1.0",
     "standard-version": "9.3.1",
-    "svelte": "3.42.5"
+    "svelte": "3.42.5",
+    "svelte-loader": "3.1.2"
   },
   "keywords": [
     "svelte",
