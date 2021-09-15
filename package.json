@@ -39,7 +39,7 @@
   "dependencies": {
     "@fluent/dom": "^0.7.0",
     "@fluent/langneg": "^0.5.2",
-    "@fluent/sequence": "^0.6.0",
+    "@fluent/sequence": "^0.7.0",
     "cached-iterable": "^0.3.0",
     "jsdom": "^17.0.0"
   },
@@ -50,7 +50,7 @@
     "@fluent/bundle": "0.16.1",
     "@fluent/dom": "0.7.0",
     "@fluent/langneg": "0.5.2",
-    "@fluent/sequence": "0.6.0",
+    "@fluent/sequence": "0.7.0",
     "@rollup/plugin-node-resolve": "13.0.4",
     "@rollup/plugin-replace": "3.0.0",
     "@storybook/addon-actions": "6.3.8",
