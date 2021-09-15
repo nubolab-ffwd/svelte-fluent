@@ -4,7 +4,7 @@ specifiers:
   '@babel/core': 7.15.5
   '@commitlint/cli': 13.1.0
   '@commitlint/config-conventional': 13.1.0
-  '@fluent/bundle': 0.16.1
+  '@fluent/bundle': 0.17.0
   '@fluent/dom': ^0.8.0
   '@fluent/langneg': ^0.6.0
   '@fluent/sequence': ^0.7.0
@@ -46,7 +46,7 @@ specifiers:
 dependencies:
   '@fluent/dom': 0.8.0
   '@fluent/langneg': 0.6.0
-  '@fluent/sequence': 0.7.0_@fluent+bundle@0.16.1
+  '@fluent/sequence': 0.7.0_@fluent+bundle@0.17.0
   cached-iterable: 0.3.0
   jsdom: 17.0.0
 
@@ -54,7 +54,7 @@ devDependencies:
   '@babel/core': 7.15.5
   '@commitlint/cli': 13.1.0
   '@commitlint/config-conventional': 13.1.0
-  '@fluent/bundle': 0.16.1
+  '@fluent/bundle': 0.17.0
   '@rollup/plugin-node-resolve': 13.0.4_rollup@2.56.3
   '@rollup/plugin-replace': 3.0.0_rollup@2.56.3
   '@storybook/addon-actions': 6.3.8
@@ -1826,9 +1826,9 @@ packages:
       - supports-color
     dev: true
 
-  /@fluent/bundle/0.16.1:
-    resolution: {integrity: sha512-l/y8uvAC1vAIEGXfbt97g36s9gJ6wdEFRWCJo4vtoxD1e210MxBAXfLhU+wfzaatlxwh+HjJ15G41ee6V8Y4ww==}
-    engines: {node: '>=10.0.0'}
+  /@fluent/bundle/0.17.0:
+    resolution: {integrity: sha512-G/9wDCTKGPyHgw4ON3vBlLUIBBGG7vq8ytExqh4uwTfoeOfQ5VU5Xr6F+UV8B72k9P9S72GqFTXvqjS48pBVpg==}
+    engines: {node: '>=12.0.0', npm: '>=7.0.0'}
     dev: true
 
   /@fluent/dom/0.8.0:
@@ -1843,13 +1843,13 @@ packages:
     engines: {node: '>=12.0.0', npm: '>=7.0.0'}
     dev: false
 
-  /@fluent/sequence/0.7.0_@fluent+bundle@0.16.1:
+  /@fluent/sequence/0.7.0_@fluent+bundle@0.17.0:
     resolution: {integrity: sha512-aH1xMwX8DFvKOQSKUKpB3zMsnJ2rRKt7MajLNnx/r3V3DWDo2nzEfm21d7UyOgwEckPIjPmhxdW1MEmsGUxYIw==}
     engines: {node: '>=12.0.0', npm: '>=7.0.0'}
     peerDependencies:
       '@fluent/bundle': '>= 0.13.0'
     dependencies:
-      '@fluent/bundle': 0.16.1
+      '@fluent/bundle': 0.17.0
     dev: false
 
   /@humanwhocodes/config-array/0.5.0:
