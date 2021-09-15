@@ -5,7 +5,7 @@ specifiers:
   '@commitlint/cli': 13.1.0
   '@commitlint/config-conventional': 13.1.0
   '@fluent/bundle': 0.16.1
-  '@fluent/dom': ^0.7.0
+  '@fluent/dom': ^0.8.0
   '@fluent/langneg': ^0.5.2
   '@fluent/sequence': ^0.7.0
   '@rollup/plugin-node-resolve': 13.0.4
@@ -44,7 +44,7 @@ specifiers:
   svelte-loader: 3.1.2
 
 dependencies:
-  '@fluent/dom': 0.7.0
+  '@fluent/dom': 0.8.0
   '@fluent/langneg': 0.5.2
   '@fluent/sequence': 0.7.0_@fluent+bundle@0.16.1
   cached-iterable: 0.3.0
@@ -1831,9 +1831,9 @@ packages:
     engines: {node: '>=10.0.0'}
     dev: true
 
-  /@fluent/dom/0.7.0:
-    resolution: {integrity: sha512-LpMaY24YPt/E0tnVitIMNZ4EHXW1k3wD27INvx/hH+An81wwnJmJAWfYaII0dqQrGT55ST/5WMk2PMHkTa5xOQ==}
-    engines: {node: '>=10.0.0'}
+  /@fluent/dom/0.8.0:
+    resolution: {integrity: sha512-rtnLUTHtFuPF5H9yfZXfsidbLLXGMbOsyNUOQ5cvOjrP6v406AjDSHnpcA9T81uhWt8J57rdVVIJLx0d4ekXMA==}
+    engines: {node: '>=12.0.0', npm: '>=7.0.0'}
     dependencies:
       cached-iterable: 0.3.0
     dev: false
