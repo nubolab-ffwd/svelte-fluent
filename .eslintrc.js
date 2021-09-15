@@ -4,10 +4,11 @@ module.exports = {
     es6: true
   },
   extends: ['standard', 'prettier'],
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2019,
-    sourceType: 'module'
+    sourceType: 'module',
+    requireConfigFile: false
   },
   plugins: ['svelte3'],
   overrides: [
