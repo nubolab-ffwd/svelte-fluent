@@ -32,7 +32,7 @@ specifiers:
   prettier: 2.4.1
   prettier-config-standard: 4.0.0
   prettier-plugin-svelte: 2.4.0
-  rollup: 2.57.0
+  rollup: 2.58.0
   rollup-plugin-svelte: 7.1.0
   standard-version: 9.3.1
   svelte: 3.43.1
@@ -50,8 +50,8 @@ devDependencies:
   '@commitlint/config-conventional': 13.2.0
   '@fluent/bundle': 0.17.0
   '@fluent/langneg': 0.6.0
-  '@rollup/plugin-node-resolve': 13.0.5_rollup@2.57.0
-  '@rollup/plugin-replace': 3.0.0_rollup@2.57.0
+  '@rollup/plugin-node-resolve': 13.0.5_rollup@2.58.0
+  '@rollup/plugin-replace': 3.0.0_rollup@2.58.0
   '@storybook/addon-essentials': 6.3.8_svelte@3.43.1
   '@storybook/addon-storyshots': 6.3.8_jest@27.2.2+svelte@3.43.1
   '@storybook/addons': 6.3.8
@@ -72,8 +72,8 @@ devDependencies:
   prettier: 2.4.1
   prettier-config-standard: 4.0.0
   prettier-plugin-svelte: 2.4.0_prettier@2.4.1+svelte@3.43.1
-  rollup: 2.57.0
-  rollup-plugin-svelte: 7.1.0_rollup@2.57.0+svelte@3.43.1
+  rollup: 2.58.0
+  rollup-plugin-svelte: 7.1.0_rollup@2.58.0+svelte@3.43.1
   standard-version: 9.3.1
   svelte: 3.43.1
   svelte-loader: 3.1.2_svelte@3.43.1
@@ -2889,32 +2889,32 @@ packages:
       react-lifecycles-compat: 3.0.4
     dev: true
 
-  /@rollup/plugin-node-resolve/13.0.5_rollup@2.57.0:
+  /@rollup/plugin-node-resolve/13.0.5_rollup@2.58.0:
     resolution: {integrity: sha512-mVaw6uxtvuGx/XCI4qBQXsDZJUfyx5vp39iE0J/7Hd6wDhEbjHr6aES7Nr9yWbuE0BY+oKp6N7Bq6jX5NCGNmQ==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
       rollup: ^2.42.0
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.57.0
+      '@rollup/pluginutils': 3.1.0_rollup@2.58.0
       '@types/resolve': 1.17.1
       builtin-modules: 3.2.0
       deepmerge: 4.2.2
       is-module: 1.0.0
       resolve: 1.20.0
-      rollup: 2.57.0
+      rollup: 2.58.0
     dev: true
 
-  /@rollup/plugin-replace/3.0.0_rollup@2.57.0:
+  /@rollup/plugin-replace/3.0.0_rollup@2.58.0:
     resolution: {integrity: sha512-3c7JCbMuYXM4PbPWT4+m/4Y6U60SgsnDT/cCyAyUKwFHg7pTSfsSQzIpETha3a3ig6OdOKzZz87D9ZXIK3qsDg==}
     peerDependencies:
       rollup: ^1.20.0 || ^2.0.0
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.57.0
+      '@rollup/pluginutils': 3.1.0_rollup@2.58.0
       magic-string: 0.25.7
-      rollup: 2.57.0
+      rollup: 2.58.0
     dev: true
 
-  /@rollup/pluginutils/3.1.0_rollup@2.57.0:
+  /@rollup/pluginutils/3.1.0_rollup@2.58.0:
     resolution: {integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
@@ -2923,7 +2923,7 @@ packages:
       '@types/estree': 0.0.39
       estree-walker: 1.0.1
       picomatch: 2.3.0
-      rollup: 2.57.0
+      rollup: 2.58.0
     dev: true
 
   /@sinonjs/commons/1.8.3:
@@ -13050,7 +13050,7 @@ packages:
       inherits: 2.0.4
     dev: true
 
-  /rollup-plugin-svelte/7.1.0_rollup@2.57.0+svelte@3.43.1:
+  /rollup-plugin-svelte/7.1.0_rollup@2.58.0+svelte@3.43.1:
     resolution: {integrity: sha512-vopCUq3G+25sKjwF5VilIbiY6KCuMNHP1PFvx2Vr3REBNMDllKHFZN2B9jwwC+MqNc3UPKkjXnceLPEjTjXGXg==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -13058,7 +13058,7 @@ packages:
       svelte: '>=3.5.0'
     dependencies:
       require-relative: 0.8.7
-      rollup: 2.57.0
+      rollup: 2.58.0
       rollup-pluginutils: 2.8.2
       svelte: 3.43.1
     dev: true
@@ -13069,8 +13069,8 @@ packages:
       estree-walker: 0.6.1
     dev: true
 
-  /rollup/2.57.0:
-    resolution: {integrity: sha512-bKQIh1rWKofRee6mv8SrF2HdP6pea5QkwBZSMImJysFj39gQuiV8MEPBjXOCpzk3wSYp63M2v2wkWBmFC8O/rg==}
+  /rollup/2.58.0:
+    resolution: {integrity: sha512-NOXpusKnaRpbS7ZVSzcEXqxcLDOagN6iFS8p45RkoiMqPHDLwJm758UF05KlMoCRbLBTZsPOIa887gZJ1AiXvw==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
