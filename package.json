@@ -43,7 +43,7 @@
     "jsdom": "17.0.0"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "7.15.7",
+    "@babel/eslint-parser": "7.15.8",
     "@commitlint/cli": "13.2.0",
     "@commitlint/config-conventional": "13.2.0",
     "@fluent/bundle": "0.17.0",
