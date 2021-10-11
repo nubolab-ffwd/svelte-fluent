@@ -13,9 +13,9 @@
 	const { getTranslation } = stores();
 
 	$: translation = $getTranslation(id, args);
-	$: update(translation, id, args);
+	$: update(translation);
 
-	function update(translation, id, args) {
+	function update(translation) {
 		if (translation && root && translatedRoot) {
 			const newRoot = root.cloneNode(true);
 			translateElement(newRoot, translation);
@@ -26,7 +26,7 @@
 
 	onMount(() => {
 		const observer = new MutationObserver(() => {
-			update(translation, id, args);
+			update(translation);
 		});
 		if (root && translation) {
 			translatedRoot = root.cloneNode(true);
