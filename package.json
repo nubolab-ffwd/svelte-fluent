@@ -56,8 +56,8 @@
 		"@storybook/svelte": "6.3.10",
 		"@testing-library/jest-dom": "5.14.1",
 		"@testing-library/svelte": "3.0.3",
-		"@typescript-eslint/eslint-plugin": "^4.33.0",
-		"@typescript-eslint/parser": "^4.33.0",
+		"@typescript-eslint/eslint-plugin": "4.33.0",
+		"@typescript-eslint/parser": "4.33.0",
 		"eslint": "7.32.0",
 		"eslint-config-prettier": "8.3.0",
 		"eslint-plugin-import": "2.24.2",
@@ -75,7 +75,7 @@
 		"standard-version": "9.3.1",
 		"svelte": "3.43.1",
 		"svelte-loader": "3.1.2",
-		"typescript": "^4.4.3"
+		"typescript": "4.4.3"
 	},
 	"keywords": [
 		"svelte",
