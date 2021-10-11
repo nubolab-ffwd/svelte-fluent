@@ -20,36 +20,3 @@ export default [
 		plugins: [resolve()]
 	}
 ];
-
-// export default [
-//   {
-//     input: ['src/index.js', 'src/rollup-plugin.js', 'src/ssr.js'],
-//     output: [
-//       {
-//         dir: 'dist/esm',
-//         format: 'esm',
-//         entryFileNames: '[name].mjs',
-//         chunkFileNames: 'chunks/[name].mjs'
-//       },
-//       {
-//         dir: 'dist/cjs',
-//         format: 'cjs',
-//         entryFileNames: '[name].js',
-//         exports: 'auto',
-//         chunkFileNames: 'chunks/[name].js'
-//       }
-//     ],
-//     external: ['jsdom'],
-//     plugins: [svelte(), resolve()]
-//   },
-//   {
-//     input: 'src/index.js',
-//     output: {
-//       file: 'dist/umd/index.js',
-//       format: 'umd',
-//       name: 'SvelteFluent'
-//     },
-//     external: ['jsdom'],
-//     plugins: [svelte(), resolve()]
-//   }
-// ]
