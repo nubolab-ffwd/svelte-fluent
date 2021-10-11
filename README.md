@@ -1,4 +1,4 @@
-# Svelte Fluent [![Docs](https://img.shields.io/badge/docs-Storybook-blue)](https://nubolab-ffwd.github.io/svelte-fluent/) ![CI](https://github.com/nubolab-ffwd/svelte-fluent/workflows/CI/badge.svg) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com) [![svelte-v3](https://img.shields.io/badge/svelte-v3-blueviolet.svg)](https://svelte.dev)
+# Svelte Fluent [![Docs](https://img.shields.io/badge/docs-Storybook-blue)](https://nubolab-ffwd.github.io/svelte-fluent/) ![CI](https://github.com/nubolab-ffwd/svelte-fluent/workflows/CI/badge.svg) [![svelte-v3](https://img.shields.io/badge/svelte-v3-blueviolet.svg)](https://svelte.dev)
 
 `svelte-fluent` provides [Svelte](https://svelte.dev/) components for easy
 integration of [Fluent](https://projectfluent.org/) localization in Svelte / Sapper / SvelteKit
@@ -17,41 +17,39 @@ This example showcases the most basic usage of `svelte-fluent`. Check the render
 
 ```svelte
 <script>
-  import { negotiateLanguages } from '@fluent/langneg'
-  import { FluentBundle, FluentResource } from '@fluent/bundle'
-  import { FluentProvider, Localized } from '@nubolab-ffwd/svelte-fluent'
+	import { negotiateLanguages } from '@fluent/langneg';
+	import { FluentBundle, FluentResource } from '@fluent/bundle';
+	import { FluentProvider, Localized } from '@nubolab-ffwd/svelte-fluent';
 
-  // Store all translations as a simple object which is available
-  // synchronously and bundled with the rest of the code.
-  const RESOURCES = {
-    fr: new FluentResource('hello = Salut le monde !'),
-    'en-US': new FluentResource('hello = Hello, world!'),
-    pl: new FluentResource('hello = Witaj świecie!')
-  }
+	// Store all translations as a simple object which is available
+	// synchronously and bundled with the rest of the code.
+	const RESOURCES = {
+		fr: new FluentResource('hello = Salut le monde !'),
+		'en-US': new FluentResource('hello = Hello, world!'),
+		pl: new FluentResource('hello = Witaj świecie!')
+	};
 
-  // A generator function responsible for building the sequence
-  // of FluentBundle instances in the order of user's language
-  // preferences.
-  function* generateBundles(userLocales) {
-    // Choose locales that are best for the user.
-    const currentLocales = negotiateLanguages(
-      userLocales,
-      ['fr', 'en-US', 'pl'],
-      { defaultLocale: 'en-US' }
-    )
+	// A generator function responsible for building the sequence
+	// of FluentBundle instances in the order of user's language
+	// preferences.
+	function* generateBundles(userLocales) {
+		// Choose locales that are best for the user.
+		const currentLocales = negotiateLanguages(userLocales, ['fr', 'en-US', 'pl'], {
+			defaultLocale: 'en-US'
+		});
 
-    for (const locale of currentLocales) {
-      const bundle = new FluentBundle(locale)
-      bundle.addResource(RESOURCES[locale])
-      yield bundle
-    }
-  }
+		for (const locale of currentLocales) {
+			const bundle = new FluentBundle(locale);
+			bundle.addResource(RESOURCES[locale]);
+			yield bundle;
+		}
+	}
 </script>
 
 <FluentProvider bundles={generateBundles(navigator.languages)}>
-  <h1>
-    <Localized id="hello" />
-  </h1>
+	<h1>
+		<Localized id="hello" />
+	</h1>
 </FluentProvider>
 ```
 
@@ -65,16 +63,16 @@ will not get transformed during SSR rendering and will therefore show some visua
 Add the `svelte-fluent/rollup-plugin` to your `rollup.config.js`. For example in sapper it should look like this:
 
 ```js
-import svelteFluent from '@nubolab-ffwd/svelte-fluent/rollup-plugin'
+import svelteFluent from '@nubolab-ffwd/svelte-fluent/rollup-plugin';
 
 export default {
-  client: {
-    plugins: [svelteFluent()]
-  },
-  server: {
-    plugins: [svelteFluent({ ssr: true })]
-  }
-}
+	client: {
+		plugins: [svelteFluent()]
+	},
+	server: {
+		plugins: [svelteFluent({ ssr: true })]
+	}
+};
 ```
 
 ## Vite / SvelteKit
@@ -82,15 +80,15 @@ export default {
 Add the `svelte-fluent/rollup-plugin` to your plugin list in `vite.config.js` or `svelte.config.js`. For example in SvelteKit it should look like this:
 
 ```js
-import svelteFluent from '@nubolab-ffwd/svelte-fluent/rollup-plugin'
+import svelteFluent from '@nubolab-ffwd/svelte-fluent/rollup-plugin';
 
 export default {
-  kit: {
-    vite: {
-      plugins: [svelteFluent()]
-    }
-  }
-}
+	kit: {
+		vite: {
+			plugins: [svelteFluent()]
+		}
+	}
+};
 ```
 
 The rollup plugin is vite-aware and will automatically detect if SSR processing is needed. Don't pass `{ssr: true}` in the plugin options.
@@ -137,14 +135,14 @@ info = Read the <a data-l10n-name="link">documentation</a> for more information.
 
 ```svelte
 <script>
-  import { Overlay } from 'svelte-fluent'
-  const linkHref = 'https://example.com/'
+	import { Overlay } from 'svelte-fluent';
+	const linkHref = 'https://example.com/';
 </script>
 
 <p>
-  <Overlay id="info">
-    <a data-l10n-name="link" href={linkHref} />
-  </Overlay>
+	<Overlay id="info">
+		<a data-l10n-name="link" href={linkHref} />
+	</Overlay>
 </p>
 ```
 
@@ -152,8 +150,7 @@ info = Read the <a data-l10n-name="link">documentation</a> for more information.
 
 ```html
 <p>
-  Read the
-  <a data-l10n-name="link" href="https://example.com/">documentation</a> for
-  more information.
+	Read the
+	<a data-l10n-name="link" href="https://example.com/">documentation</a> for more information.
 </p>
 ```

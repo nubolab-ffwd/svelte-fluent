@@ -1,109 +1,110 @@
 {
-  "name": "@nubolab-ffwd/svelte-fluent",
-  "version": "0.4.1",
-  "license": "MIT",
-  "homepage": "https://github.com/nubolab-ffwd/svelte-fluent",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/nubolab-ffwd/svelte-fluent.git"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "svelte": "src/index.js",
-  "module": "dist/index.mjs",
-  "main": "dist/index.js",
-  "exports": {
-    "./package.json": "./package.json",
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
-    },
-    "./rollup-plugin": {
-      "import": "./dist/rollup-plugin.mjs",
-      "require": "./dist/rollup-plugin.js"
-    },
-    "./src/*": "./src/*.js"
-  },
-  "scripts": {
-    "build": "rollup -c",
-    "prepublishOnly": "npm run build",
-    "lint": "prettier --check --plugin-search-dir=. . && eslint --cache --ignore-path .gitignore .",
-    "format": "prettier --write --plugin-search-dir=. .",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "test": "jest",
-    "release": "standard-version",
-    "prepare": "husky install"
-  },
-  "dependencies": {
-    "@fluent/dom": "0.8.0",
-    "@fluent/sequence": "0.7.0",
-    "cached-iterable": "0.3.0",
-    "jsdom": "17.0.0"
-  },
-  "devDependencies": {
-    "@babel/eslint-parser": "7.15.8",
-    "@commitlint/cli": "13.2.1",
-    "@commitlint/config-conventional": "13.2.0",
-    "@fluent/bundle": "0.17.0",
-    "@fluent/langneg": "0.6.0",
-    "@rollup/plugin-node-resolve": "13.0.5",
-    "@rollup/plugin-replace": "3.0.0",
-    "@storybook/addon-essentials": "6.3.10",
-    "@storybook/addon-storyshots": "6.3.10",
-    "@storybook/addons": "6.3.10",
-    "@storybook/svelte": "6.3.10",
-    "@testing-library/jest-dom": "5.14.1",
-    "@testing-library/svelte": "3.0.3",
-    "eslint": "7.32.0",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-config-standard": "16.0.3",
-    "eslint-plugin-import": "2.24.2",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-promise": "5.1.0",
-    "eslint-plugin-svelte3": "3.2.1",
-    "husky": "7.0.2",
-    "jest": "27.2.5",
-    "jest-transform-svelte": "2.1.1",
-    "lint-staged": "11.2.3",
-    "prettier": "2.4.1",
-    "prettier-config-standard": "4.0.0",
-    "prettier-plugin-svelte": "2.4.0",
-    "rollup": "2.58.0",
-    "rollup-plugin-svelte": "7.1.0",
-    "standard-version": "9.3.1",
-    "svelte": "3.43.1",
-    "svelte-loader": "3.1.2"
-  },
-  "keywords": [
-    "svelte",
-    "localization",
-    "l10n",
-    "internationalization",
-    "i18n",
-    "ftl",
-    "plural",
-    "gender",
-    "locale",
-    "language",
-    "formatting",
-    "translate",
-    "translation",
-    "format"
-  ],
-  "files": [
-    "src",
-    "dist"
-  ],
-  "lint-staged": {
-    "*.{cjs,js,ts,svelte}": [
-      "eslint --cache --ignore-path .gitignore --fix",
-      "prettier --write --plugin-search-dir=."
-    ],
-    "*.{md,json,yaml}": "prettier --write --plugin-search-dir=."
-  },
-  "peerDependencies": {
-    "jsdom": "^16.4.0 || ^17.0.0"
-  }
+	"name": "@nubolab-ffwd/svelte-fluent",
+	"version": "0.4.1",
+	"license": "MIT",
+	"homepage": "https://github.com/nubolab-ffwd/svelte-fluent",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nubolab-ffwd/svelte-fluent.git"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"svelte": "src/index.js",
+	"module": "dist/index.mjs",
+	"main": "dist/index.js",
+	"exports": {
+		"./package.json": "./package.json",
+		".": {
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
+		},
+		"./rollup-plugin": {
+			"import": "./dist/rollup-plugin.mjs",
+			"require": "./dist/rollup-plugin.js"
+		},
+		"./src/*": "./src/*.js"
+	},
+	"scripts": {
+		"build": "rollup -c",
+		"prepublishOnly": "npm run build",
+		"lint": "prettier --check --plugin-search-dir=. . && eslint --cache --ignore-path .gitignore .",
+		"format": "prettier --write --plugin-search-dir=. .",
+		"storybook": "start-storybook -p 6006",
+		"build-storybook": "build-storybook",
+		"test": "jest",
+		"release": "standard-version",
+		"prepare": "husky install"
+	},
+	"dependencies": {
+		"@fluent/dom": "0.8.0",
+		"@fluent/sequence": "0.7.0",
+		"cached-iterable": "0.3.0",
+		"jsdom": "17.0.0"
+	},
+	"devDependencies": {
+		"@babel/eslint-parser": "7.15.8",
+		"@commitlint/cli": "13.2.1",
+		"@commitlint/config-conventional": "13.2.0",
+		"@fluent/bundle": "0.17.0",
+		"@fluent/langneg": "0.6.0",
+		"@rollup/plugin-node-resolve": "13.0.5",
+		"@rollup/plugin-replace": "3.0.0",
+		"@storybook/addon-essentials": "6.3.10",
+		"@storybook/addon-storyshots": "6.3.10",
+		"@storybook/addons": "6.3.10",
+		"@storybook/svelte": "6.3.10",
+		"@testing-library/jest-dom": "5.14.1",
+		"@testing-library/svelte": "3.0.3",
+		"@typescript-eslint/eslint-plugin": "^4.33.0",
+		"@typescript-eslint/parser": "^4.33.0",
+		"eslint": "7.32.0",
+		"eslint-config-prettier": "8.3.0",
+		"eslint-plugin-import": "2.24.2",
+		"eslint-plugin-node": "11.1.0",
+		"eslint-plugin-promise": "5.1.0",
+		"eslint-plugin-svelte3": "3.2.1",
+		"husky": "7.0.2",
+		"jest": "27.2.5",
+		"jest-transform-svelte": "2.1.1",
+		"lint-staged": "11.2.3",
+		"prettier": "2.4.1",
+		"prettier-plugin-svelte": "2.4.0",
+		"rollup": "2.58.0",
+		"rollup-plugin-svelte": "7.1.0",
+		"standard-version": "9.3.1",
+		"svelte": "3.43.1",
+		"svelte-loader": "3.1.2",
+		"typescript": "^4.4.3"
+	},
+	"keywords": [
+		"svelte",
+		"localization",
+		"l10n",
+		"internationalization",
+		"i18n",
+		"ftl",
+		"plural",
+		"gender",
+		"locale",
+		"language",
+		"formatting",
+		"translate",
+		"translation",
+		"format"
+	],
+	"files": [
+		"src",
+		"dist"
+	],
+	"lint-staged": {
+		"*.{cjs,js,ts,svelte}": [
+			"eslint --cache --ignore-path .gitignore --fix",
+			"prettier --write --plugin-search-dir=."
+		],
+		"*.{md,json,yaml}": "prettier --write --plugin-search-dir=."
+	},
+	"peerDependencies": {
+		"jsdom": "^16.4.0 || ^17.0.0"
+	}
 }
