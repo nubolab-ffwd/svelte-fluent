@@ -67,7 +67,7 @@
 		"lint-staged": "11.2.3",
 		"prettier": "2.4.1",
 		"prettier-plugin-svelte": "2.4.0",
-		"rollup": "2.58.0",
+		"rollup": "2.58.3",
 		"rollup-plugin-svelte": "7.1.0",
 		"standard-version": "9.3.2",
 		"svelte": "3.44.0",
