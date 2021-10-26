@@ -26,7 +26,7 @@ specifiers:
   jest: 27.3.1
   jest-transform-svelte: 2.1.1
   jsdom: 18.0.0
-  lint-staged: 11.2.3
+  lint-staged: 11.2.5
   prettier: 2.4.1
   prettier-plugin-svelte: 2.4.0
   rollup: 2.58.0
@@ -64,7 +64,7 @@ devDependencies:
   husky: 7.0.4
   jest: 27.3.1
   jest-transform-svelte: 2.1.1_svelte@3.44.0
-  lint-staged: 11.2.3
+  lint-staged: 11.2.5
   prettier: 2.4.1
   prettier-plugin-svelte: 2.4.0_prettier@2.4.1+svelte@3.44.0
   rollup: 2.58.0
@@ -10762,21 +10762,27 @@ packages:
       type-check: 0.4.0
     dev: true
 
+  /lilconfig/2.0.3:
+    resolution: {integrity: sha512-EHKqr/+ZvdKCifpNrJCKxBTgk5XupZA3y/aCPY9mxfgBzmgh93Mt/WqjjQ38oMxXuvDokaKiM3lAgvSH2sjtHg==}
+    engines: {node: '>=10'}
+    dev: true
+
   /lines-and-columns/1.1.6:
     resolution: {integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=}
     dev: true
 
-  /lint-staged/11.2.3:
-    resolution: {integrity: sha512-Tfmhk8O2XFMD25EswHPv+OYhUjsijy5D7liTdxeXvhG2rsadmOLFtyj8lmlfoFFXY8oXWAIOKpoI+lJe1DB1mw==}
+  /lint-staged/11.2.5:
+    resolution: {integrity: sha512-bD6FeKyRtMA3jXcNg/J0fuJmwDN8yaoTdqliFcEl8pFTHiP9NYwQCeZwBoZ8FEXx4lj/pli3oFehr86XYvMNEA==}
     hasBin: true
     dependencies:
       cli-truncate: 2.1.0
       colorette: 1.4.0
       commander: 8.2.0
-      cosmiconfig: 7.0.1
       debug: 4.3.2_supports-color@8.1.1
       enquirer: 2.3.6
       execa: 5.1.1
+      js-yaml: 4.1.0
+      lilconfig: 2.0.3
       listr2: 3.12.2_enquirer@2.3.6
       micromatch: 4.0.4
       normalize-path: 3.0.0
