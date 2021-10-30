@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@babel/eslint-parser': 7.15.8
+  '@babel/eslint-parser': 7.16.0
   '@commitlint/cli': 13.2.1
   '@commitlint/config-conventional': 13.2.0
   '@fluent/bundle': 0.17.0
@@ -43,7 +43,7 @@ dependencies:
   jsdom: 18.0.0
 
 devDependencies:
-  '@babel/eslint-parser': 7.15.8_eslint@8.1.0
+  '@babel/eslint-parser': 7.16.0_eslint@8.1.0
   '@commitlint/cli': 13.2.1
   '@commitlint/config-conventional': 13.2.0
   '@fluent/bundle': 0.17.0
@@ -141,12 +141,12 @@ packages:
       - supports-color
     dev: true
 
-  /@babel/eslint-parser/7.15.8_eslint@8.1.0:
-    resolution: {integrity: sha512-fYP7QFngCvgxjUuw8O057SVH5jCXsbFFOoE77CFDcvzwBVgTOkMD/L4mIC5Ud1xf8chK/no2fRbSSn1wvNmKuQ==}
+  /@babel/eslint-parser/7.16.0_eslint@8.1.0:
+    resolution: {integrity: sha512-c+AsYOHjI+FgCa+ifLd8sDXp4U4mjkfFgL9NdQWhuA731kAUJs0WdJIXET4A14EJAR9Jv9FFF/MzPWJfV9Oirw==}
     engines: {node: ^10.13.0 || ^12.13.0 || >=14.0.0}
     peerDependencies:
       '@babel/core': '>=7.11.0'
-      eslint: '>=7.5.0'
+      eslint: ^7.5.0 || ^8.0.0
     dependencies:
       eslint: 8.1.0
       eslint-scope: 5.1.1
