@@ -40,7 +40,7 @@
 		"@fluent/dom": "0.8.0",
 		"@fluent/sequence": "0.7.0",
 		"cached-iterable": "0.3.0",
-		"jsdom": "18.0.0"
+		"jsdom": "18.0.1"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "14.1.0",
