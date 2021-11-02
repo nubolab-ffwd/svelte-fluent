@@ -24,7 +24,7 @@ specifiers:
   husky: 7.0.4
   jest: 27.3.1
   jest-transform-svelte: 2.1.1
-  jsdom: 18.0.0
+  jsdom: 18.0.1
   lint-staged: 11.2.6
   prettier: 2.4.1
   prettier-plugin-svelte: 2.4.0
@@ -39,7 +39,7 @@ dependencies:
   '@fluent/dom': 0.8.0
   '@fluent/sequence': 0.7.0_@fluent+bundle@0.17.0
   cached-iterable: 0.3.0
-  jsdom: 18.0.0
+  jsdom: 18.0.1
 
 devDependencies:
   '@commitlint/cli': 14.1.0
@@ -10555,8 +10555,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /jsdom/18.0.0:
-    resolution: {integrity: sha512-HVLuBcFmwdWulStv5U+J59b1AyzXhM92KXlM8HQ3ecYtRM2OQEUCPMa4oNuDeCBmtRcC7tJvb0Xz5OeFXMOKTA==}
+  /jsdom/18.0.1:
+    resolution: {integrity: sha512-mgVzrYP4IJiJKVqXkAdBn+jg+nQgPusBxTJulz3m1Y/1RIrkk8aDoNaQE5BNbHwe72WwiwE7k3Av2THXDpvzPQ==}
     engines: {node: '>=12'}
     peerDependencies:
       canvas: ^2.5.0
