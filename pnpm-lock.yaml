@@ -13,7 +13,7 @@ specifiers:
   '@storybook/addon-storyshots': 6.3.12
   '@storybook/addons': 6.3.12
   '@storybook/svelte': 6.3.12
-  '@testing-library/jest-dom': 5.14.1
+  '@testing-library/jest-dom': 5.15.0
   '@testing-library/svelte': 3.0.3
   '@typescript-eslint/eslint-plugin': 5.3.0
   '@typescript-eslint/parser': 5.3.0
@@ -52,7 +52,7 @@ devDependencies:
   '@storybook/addon-storyshots': 6.3.12_9aa84d10d8ca3b021ca7c56661c9dac9
   '@storybook/addons': 6.3.12
   '@storybook/svelte': 6.3.12_0bf30b2e92c8a09e4e81dbeb271165bc
-  '@testing-library/jest-dom': 5.14.1
+  '@testing-library/jest-dom': 5.15.0
   '@testing-library/svelte': 3.0.3_svelte@3.44.1
   '@typescript-eslint/eslint-plugin': 5.3.0_f8873316f48f7781ccc3e081fc76e214
   '@typescript-eslint/parser': 5.3.0_eslint@8.1.0+typescript@4.4.4
@@ -2077,12 +2077,6 @@ packages:
     resolution: {integrity: sha512-0R0HTZWHLk6G8jIk0FtoX+AatCtKnswS98VhXwGImFc759PJRp4Tru0PQYZofyijTFUr+gT8Mu7sgXVJLQ0ceg==}
     dependencies:
       core-js-pure: 3.13.0
-      regenerator-runtime: 0.13.7
-    dev: true
-
-  /@babel/runtime/7.14.0:
-    resolution: {integrity: sha512-JELkvo/DlpNdJ7dlyw/eY7E0suy5i5GQH+Vlxaq1nsNJ+H7f4Vtv3jMeCEgRhZZQFXTjldYfQgv2qmM6M1v5wA==}
-    dependencies:
       regenerator-runtime: 0.13.7
     dev: true
 
@@ -4720,7 +4714,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       '@babel/code-frame': 7.14.5
-      '@babel/runtime': 7.14.0
+      '@babel/runtime': 7.14.6
       '@types/aria-query': 4.2.1
       aria-query: 4.2.2
       chalk: 4.1.1
@@ -4729,11 +4723,11 @@ packages:
       pretty-format: 26.6.2
     dev: true
 
-  /@testing-library/jest-dom/5.14.1:
-    resolution: {integrity: sha512-dfB7HVIgTNCxH22M1+KU6viG5of2ldoA5ly8Ar8xkezKHKXjRvznCdbMbqjYGgO2xjRbwnR+rR8MLUIqF3kKbQ==}
+  /@testing-library/jest-dom/5.15.0:
+    resolution: {integrity: sha512-lOMuQidnL1tWHLEWIhL6UvSZC1Qt3OkNe1khvi2h6xFiqpe5O8arYs46OU0qyUGq0cSTbroQyMktYNXu3a7sAA==}
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
     dependencies:
-      '@babel/runtime': 7.14.0
+      '@babel/runtime': 7.14.6
       '@types/testing-library__jest-dom': 5.9.5
       aria-query: 4.2.2
       chalk: 3.0.0
@@ -5546,7 +5540,7 @@ packages:
     resolution: {integrity: sha512-o/HelwhuKpTj/frsOsbNLNgnNGVIFsVP/SW2BSF14gVl7kAfMOJ6/8wUAUvG1R1NHKrfG+2sHZTu0yauT1qBrA==}
     engines: {node: '>=6.0'}
     dependencies:
-      '@babel/runtime': 7.14.0
+      '@babel/runtime': 7.14.6
       '@babel/runtime-corejs3': 7.14.0
     dev: true
 
