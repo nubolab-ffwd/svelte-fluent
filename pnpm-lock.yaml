@@ -27,7 +27,7 @@ specifiers:
   jsdom: 18.1.0
   lint-staged: 11.2.6
   prettier: 2.4.1
-  prettier-plugin-svelte: 2.4.0
+  prettier-plugin-svelte: 2.5.0
   rollup: 2.60.0
   rollup-plugin-svelte: 7.1.0
   standard-version: 9.3.2
@@ -64,7 +64,7 @@ devDependencies:
   jest-transform-svelte: 2.1.1_svelte@3.44.1
   lint-staged: 11.2.6
   prettier: 2.4.1
-  prettier-plugin-svelte: 2.4.0_prettier@2.4.1+svelte@3.44.1
+  prettier-plugin-svelte: 2.5.0_prettier@2.4.1+svelte@3.44.1
   rollup: 2.60.0
   rollup-plugin-svelte: 7.1.0_rollup@2.60.0+svelte@3.44.1
   standard-version: 9.3.2
@@ -12157,8 +12157,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-svelte/2.4.0_prettier@2.4.1+svelte@3.44.1:
-    resolution: {integrity: sha512-JwJ9bOz4XHLQtiLnX4mTSSDUdhu12WH8sTwy/XTDCSyPlah6IcV7NWeYBZscPEcceu2YnW8Y9sJCP40Z2UH9GA==}
+  /prettier-plugin-svelte/2.5.0_prettier@2.4.1+svelte@3.44.1:
+    resolution: {integrity: sha512-+iHY2uGChOngrgKielJUnqo74gIL/EO5oeWm8MftFWjEi213lq9QYTOwm1pv4lI1nA61tdgf80CF2i5zMcu1kw==}
     peerDependencies:
       prettier: ^1.16.4 || ^2.0.0
       svelte: ^3.2.0
