@@ -13,7 +13,7 @@ specifiers:
   '@storybook/addon-storyshots': 6.3.12
   '@storybook/addons': 6.3.12
   '@storybook/svelte': 6.3.12
-  '@testing-library/jest-dom': 5.15.0
+  '@testing-library/jest-dom': 5.15.1
   '@testing-library/svelte': 3.0.3
   '@typescript-eslint/eslint-plugin': 5.4.0
   '@typescript-eslint/parser': 5.4.0
@@ -52,7 +52,7 @@ devDependencies:
   '@storybook/addon-storyshots': 6.3.12_163e6250e1b1a04098a69179f694b3db
   '@storybook/addons': 6.3.12
   '@storybook/svelte': 6.3.12_e8e74b2c9e70aceece53997e888c5a72
-  '@testing-library/jest-dom': 5.15.0
+  '@testing-library/jest-dom': 5.15.1
   '@testing-library/svelte': 3.0.3_svelte@3.44.2
   '@typescript-eslint/eslint-plugin': 5.4.0_5c8ff4cecd5a55e744866c0654edac32
   '@typescript-eslint/parser': 5.4.0_eslint@8.3.0+typescript@4.5.2
@@ -4723,8 +4723,8 @@ packages:
       pretty-format: 26.6.2
     dev: true
 
-  /@testing-library/jest-dom/5.15.0:
-    resolution: {integrity: sha512-lOMuQidnL1tWHLEWIhL6UvSZC1Qt3OkNe1khvi2h6xFiqpe5O8arYs46OU0qyUGq0cSTbroQyMktYNXu3a7sAA==}
+  /@testing-library/jest-dom/5.15.1:
+    resolution: {integrity: sha512-kmj8opVDRE1E4GXyLlESsQthCXK7An28dFWxhiMwD7ZUI7ZxA6sjdJRxLerD9Jd8cHX4BDc1jzXaaZKqzlUkvg==}
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
     dependencies:
       '@babel/runtime': 7.14.6
