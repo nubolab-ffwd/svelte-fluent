@@ -23,7 +23,7 @@ jobs:
         with:
           version: 6.13.0
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2.4.1
+        uses: actions/setup-node@v2.5.0
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
@@ -44,7 +44,7 @@ jobs:
         with:
           version: 6.13.0
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2.4.1
+        uses: actions/setup-node@v2.5.0
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
