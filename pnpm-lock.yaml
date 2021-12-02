@@ -24,7 +24,7 @@ specifiers:
   husky: 7.0.4
   jest: 27.4.2
   jest-transform-svelte: 2.1.1
-  jsdom: 18.1.1
+  jsdom: 19.0.0
   lint-staged: 12.1.2
   prettier: 2.5.0
   prettier-plugin-svelte: 2.5.0
@@ -39,7 +39,7 @@ dependencies:
   '@fluent/dom': 0.8.0
   '@fluent/sequence': 0.7.0_@fluent+bundle@0.17.0
   cached-iterable: 0.3.0
-  jsdom: 18.1.1
+  jsdom: 19.0.0
 
 devDependencies:
   '@commitlint/cli': 15.0.0
@@ -4602,17 +4602,10 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
-  /acorn/8.5.0:
-    resolution: {integrity: sha512-yXbYeFy+jUuYd3/CDcg2NkIYE991XYX/bje7LmjJigUciaeO1JR4XxXgCIV1/Zc/dRuFEyw1L0pbA+qynJkW5Q==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-    dev: false
-
   /acorn/8.6.0:
     resolution: {integrity: sha512-U1riIR+lBSNi3IbxtaHOIKdH8sLFv3NYfNv8sg7ZsNhcfl4HF2++BfqqrNAxoCLQW1iiylOj76ecnaUxz+z9yw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
-    dev: true
 
   /add-stream/1.0.0:
     resolution: {integrity: sha1-anmQQ3ynNtXhKI25K9MmbV9csqo=}
@@ -9757,8 +9750,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /jsdom/18.1.1:
-    resolution: {integrity: sha512-NmJQbjQ/gpS/1at/ce3nCx89HbXL/f5OcenBe8wU1Eik0ROhyUc3LtmG3567dEHAGXkN8rmILW/qtCOPxPHQJw==}
+  /jsdom/19.0.0:
+    resolution: {integrity: sha512-RYAyjCbxy/vri/CfnjUWJQQtZ3LKlLnDqj+9XLNnJPgEGeirZs3hllKR20re8LUZ6o1b1X4Jat+Qd26zmP41+A==}
     engines: {node: '>=12'}
     peerDependencies:
       canvas: ^2.5.0
@@ -9767,7 +9760,7 @@ packages:
         optional: true
     dependencies:
       abab: 2.0.5
-      acorn: 8.5.0
+      acorn: 8.6.0
       acorn-globals: 6.0.0
       cssom: 0.5.0
       cssstyle: 2.3.0
