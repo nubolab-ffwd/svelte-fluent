@@ -40,7 +40,7 @@
 		"@fluent/dom": "0.8.0",
 		"@fluent/sequence": "0.7.0",
 		"cached-iterable": "0.3.0",
-		"jsdom": "18.1.1"
+		"jsdom": "19.0.0"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "15.0.0",
@@ -101,6 +101,6 @@
 		"*.{md,json,yaml}": "prettier --write --plugin-search-dir=."
 	},
 	"peerDependencies": {
-		"jsdom": "^16.4.0 || ^17.0.0 || ^18.0.0"
+		"jsdom": "^16.4.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
 	}
 }
