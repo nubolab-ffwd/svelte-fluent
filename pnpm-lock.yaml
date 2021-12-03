@@ -22,7 +22,7 @@ specifiers:
   eslint-config-prettier: 8.3.0
   eslint-plugin-svelte3: 3.2.1
   husky: 7.0.4
-  jest: 27.4.2
+  jest: 27.4.3
   jest-transform-svelte: 2.1.1
   jsdom: 19.0.0
   lint-staged: 12.1.2
@@ -49,7 +49,7 @@ devDependencies:
   '@rollup/plugin-node-resolve': 13.0.6_rollup@2.60.2
   '@rollup/plugin-replace': 3.0.0_rollup@2.60.2
   '@storybook/addon-essentials': 6.4.5_svelte@3.44.2+typescript@4.5.2
-  '@storybook/addon-storyshots': 6.4.5_6a5d5eee10bd0b637e3b0f8461e8e090
+  '@storybook/addon-storyshots': 6.4.5_ca051409e40d83d4807d409fcc822be5
   '@storybook/addons': 6.4.5
   '@storybook/svelte': 6.4.5_e8e74b2c9e70aceece53997e888c5a72
   '@testing-library/jest-dom': 5.15.1
@@ -60,7 +60,7 @@ devDependencies:
   eslint-config-prettier: 8.3.0_eslint@8.3.0
   eslint-plugin-svelte3: 3.2.1_eslint@8.3.0+svelte@3.44.2
   husky: 7.0.4
-  jest: 27.4.2
+  jest: 27.4.3
   jest-transform-svelte: 2.1.1_svelte@3.44.2
   lint-staged: 12.1.2
   prettier: 2.5.0
@@ -1786,8 +1786,8 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /@jest/core/27.4.2:
-    resolution: {integrity: sha512-0mPM61tDbu8yc9CMKH9bvV+g+17VUpdWQtU1x6P1gk4AKj8iywWi8zBmEIl7pTGjUtYA92CNc/LlBfKCioBOow==}
+  /@jest/core/27.4.3:
+    resolution: {integrity: sha512-V9ms3zSxUHxh1E/ZLAiXF7SLejsdFnjWTFizWotMOWvjho0lW5kSjZymhQSodNW0T0ZMQRiha7f8+NcFVm3hJQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     peerDependencies:
       node-notifier: ^8.0.1 || ^9.0.0 || ^10.0.0
@@ -1807,13 +1807,13 @@ packages:
       exit: 0.1.2
       graceful-fs: 4.2.6
       jest-changed-files: 27.4.2
-      jest-config: 27.4.2
+      jest-config: 27.4.3
       jest-haste-map: 27.4.2
       jest-message-util: 27.4.2
       jest-regex-util: 27.4.0
       jest-resolve: 27.4.2
       jest-resolve-dependencies: 27.4.2
-      jest-runner: 27.4.2
+      jest-runner: 27.4.3
       jest-runtime: 27.4.2
       jest-snapshot: 27.4.2
       jest-util: 27.4.2
@@ -2446,7 +2446,7 @@ packages:
       - '@types/react'
     dev: true
 
-  /@storybook/addon-storyshots/6.4.5_6a5d5eee10bd0b637e3b0f8461e8e090:
+  /@storybook/addon-storyshots/6.4.5_ca051409e40d83d4807d409fcc822be5:
     resolution: {integrity: sha512-Tcray+iqwmqpUwk+bdwlII2oJkoWUrpPqcswAq31maPUREbfj8dpQWjpNhhIV7PdfsAOauVa0hQ/ZPZDaOSKww==}
     peerDependencies:
       '@angular/core': '>=6.0.0'
@@ -2511,8 +2511,8 @@ packages:
       core-js: 3.15.2
       glob: 7.1.7
       global: 4.4.0
-      jest: 27.4.2
-      jest-specific-snapshot: 4.0.0_jest@27.4.2
+      jest: 27.4.3
+      jest-specific-snapshot: 4.0.0_jest@27.4.3
       preact-render-to-string: 5.1.19
       pretty-format: 26.6.2
       react-test-renderer: 17.0.2
@@ -4133,14 +4133,6 @@ packages:
       pretty-format: 26.6.2
     dev: true
 
-  /@types/jsdom/16.2.13:
-    resolution: {integrity: sha512-8JQCjdeAidptSsOcRWk2iTm9wCcwn9l+kRG6k5bzUacrnm1ezV4forq0kWjUih/tumAeoG+OspOvQEbbRucBTw==}
-    dependencies:
-      '@types/node': 15.6.1
-      '@types/parse5': 5.0.3
-      '@types/tough-cookie': 4.0.1
-    dev: true
-
   /@types/json-schema/7.0.9:
     resolution: {integrity: sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==}
     dev: true
@@ -4250,10 +4242,6 @@ packages:
     resolution: {integrity: sha512-ggn3ws+yRbOHog9GxnXiEZ/35Mow6YtPZpd7Z5mKDeZS/o7zx3yAle0ov/wjhVB5QT4N2Dt+GNoGCdqkBGCajQ==}
     dependencies:
       '@types/jest': 26.0.23
-    dev: true
-
-  /@types/tough-cookie/4.0.1:
-    resolution: {integrity: sha512-Y0K95ThC3esLEYD6ZuqNek29lNX2EM1qxV8y2FTLUB0ff5wWrk7az+mLrnNFUnaXcgKye22+sFBRXOgpPILZNg==}
     dev: true
 
   /@types/uglify-js/3.13.0:
@@ -9086,8 +9074,8 @@ packages:
       - supports-color
     dev: true
 
-  /jest-cli/27.4.2:
-    resolution: {integrity: sha512-Ex2WhCj4s0XFntTKTnyLgV/CZKgQaZBYrKz02XOZ4nUjFD+26Fji/M1SgHm+2IWEIsQqoipNRx9RJH56p8d7MQ==}
+  /jest-cli/27.4.3:
+    resolution: {integrity: sha512-zZSJBXNC/i8UnJPwcKWsqnhGgIF3uoTYP7th32Zej7KNQJdxzOMj+wCfy2Ox3kU7nXErJ36DtYyXDhfiqaiDRw==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     hasBin: true
     peerDependencies:
@@ -9096,14 +9084,14 @@ packages:
       node-notifier:
         optional: true
     dependencies:
-      '@jest/core': 27.4.2
+      '@jest/core': 27.4.3
       '@jest/test-result': 27.4.2
       '@jest/types': 27.4.2
       chalk: 4.1.1
       exit: 0.1.2
       graceful-fs: 4.2.6
       import-local: 3.0.2
-      jest-config: 27.4.2
+      jest-config: 27.4.3
       jest-util: 27.4.2
       jest-validate: 27.4.2
       prompts: 2.4.1
@@ -9116,8 +9104,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /jest-config/27.4.2:
-    resolution: {integrity: sha512-2vKqelsfHPnIzrPTpE9hImqxZLp5l9Vszpci19RdVB2i5OwoM+OkPExZMQb8aGrpEGXoKtlzvdqCL1GObiz8JQ==}
+  /jest-config/27.4.3:
+    resolution: {integrity: sha512-DQ10HTSqYtC2pO7s9j2jw+li4xUnm2wLYWH2o7K1ftB8NyvToHsXoLlXxtsGh3AW9gUQR6KY/4B7G+T/NswJBw==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     peerDependencies:
       ts-node: '>=9.0.0'
@@ -9135,13 +9123,13 @@ packages:
       glob: 7.1.7
       graceful-fs: 4.2.6
       jest-circus: 27.4.2
-      jest-environment-jsdom: 27.4.2
+      jest-environment-jsdom: 27.4.3
       jest-environment-node: 27.4.2
       jest-get-type: 27.4.0
       jest-jasmine2: 27.4.2
       jest-regex-util: 27.4.0
       jest-resolve: 27.4.2
-      jest-runner: 27.4.2
+      jest-runner: 27.4.3
       jest-util: 27.4.2
       jest-validate: 27.4.2
       micromatch: 4.0.4
@@ -9192,14 +9180,13 @@ packages:
       pretty-format: 27.4.2
     dev: true
 
-  /jest-environment-jsdom/27.4.2:
-    resolution: {integrity: sha512-L0dV4oq4+Ll7hZ8QCGvSELn8uOr938/QKOg6o70kMHiZOpWOjAqSf7fMVAtGhG/BVSvk1GTzhGJNOWsxtH5KbQ==}
+  /jest-environment-jsdom/27.4.3:
+    resolution: {integrity: sha512-x1AUVz3G14LpEJs7KIFUaTINT2n0unOUmvdAby3s/sldUpJJetOJifHo1O/EUQC5fNBowggwJbVulko18y6OWw==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
       '@jest/environment': 27.4.2
       '@jest/fake-timers': 27.4.2
       '@jest/types': 27.4.2
-      '@types/jsdom': 16.2.13
       '@types/node': 15.6.1
       jest-mock: 27.4.2
       jest-util: 27.4.2
@@ -9441,8 +9428,8 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /jest-runner/27.4.2:
-    resolution: {integrity: sha512-YsgbYKk8V7J5BQPINXhdzNLoqIwUWrJkV9h6/ccsn6fbmC3n3ax1K5cDWzAU9qXyaQhetwFqPpHmAHIACscRKQ==}
+  /jest-runner/27.4.3:
+    resolution: {integrity: sha512-JgR6Om/j22Fd6ZUUIGTWNcCtuZVYbNrecb4k89W4UyFJoRtHpo2zMKWkmFFFJoqwWGrfrcPLnVBIgkJiTV3cyA==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     dependencies:
       '@jest/console': 27.4.2
@@ -9456,7 +9443,7 @@ packages:
       exit: 0.1.2
       graceful-fs: 4.2.6
       jest-docblock: 27.4.0
-      jest-environment-jsdom: 27.4.2
+      jest-environment-jsdom: 27.4.3
       jest-environment-node: 27.4.2
       jest-haste-map: 27.4.2
       jest-leak-detector: 27.4.2
@@ -9578,12 +9565,12 @@ packages:
       - supports-color
     dev: true
 
-  /jest-specific-snapshot/4.0.0_jest@27.4.2:
+  /jest-specific-snapshot/4.0.0_jest@27.4.3:
     resolution: {integrity: sha512-YdW5P/MVwOizWR0MJwURxdrjdXvdG2MMpXKVGr7dZ2YrBmE6E6Ab74UL3DOYmGmzaCnNAW1CL02pY5MTHE3ulQ==}
     peerDependencies:
       jest: '>= 26.0.0'
     dependencies:
-      jest: 27.4.2
+      jest: 27.4.3
       jest-snapshot: 26.6.2
     dev: true
 
@@ -9663,8 +9650,8 @@ packages:
       supports-color: 8.1.1
     dev: true
 
-  /jest/27.4.2:
-    resolution: {integrity: sha512-TAReynFYCfHNcrL+8Z74WPGafLFLF++bGkrpcsk6cO5G9S2VuJGhu2c44YFForMgF0GlYmtbpmeznkvZpNgTxg==}
+  /jest/27.4.3:
+    resolution: {integrity: sha512-jwsfVABBzuN3Atm+6h6vIEpTs9+VApODLt4dk2qv1WMOpb1weI1IIZfuwpMiWZ62qvWj78MvdvMHIYdUfqrFaA==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     hasBin: true
     peerDependencies:
@@ -9673,9 +9660,9 @@ packages:
       node-notifier:
         optional: true
     dependencies:
-      '@jest/core': 27.4.2
+      '@jest/core': 27.4.3
       import-local: 3.0.2
-      jest-cli: 27.4.2
+      jest-cli: 27.4.3
     transitivePeerDependencies:
       - bufferutil
       - canvas
