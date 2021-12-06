@@ -53,7 +53,7 @@
 		"@storybook/addon-storyshots": "6.4.8",
 		"@storybook/addons": "6.4.8",
 		"@storybook/svelte": "6.4.8",
-		"@testing-library/jest-dom": "5.15.1",
+		"@testing-library/jest-dom": "5.16.0",
 		"@testing-library/svelte": "3.0.3",
 		"@typescript-eslint/eslint-plugin": "5.5.0",
 		"@typescript-eslint/parser": "5.5.0",
