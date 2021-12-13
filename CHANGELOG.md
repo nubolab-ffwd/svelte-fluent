@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.2](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.4.1...v0.4.2) (2021-12-13)
+
+
+### Features
+
+* vite 2.7 plugin api compatibility ([1ef7266](https://github.com/nubolab-ffwd/svelte-fluent/commit/1ef7266f896038cb9aa66e94cecfd18de2935631))
+
+
+### Bug Fixes
+
+* **deps:** update dependency jsdom to v18.0.1 ([dd7be12](https://github.com/nubolab-ffwd/svelte-fluent/commit/dd7be12fca0ac3a9704cf3b0c7b40f15243d9f65))
+* **deps:** update dependency jsdom to v18.1.0 ([ee50e23](https://github.com/nubolab-ffwd/svelte-fluent/commit/ee50e23575fcc7c9503f50b316e645c90ce34a49))
+* **deps:** update dependency jsdom to v18.1.1 ([7454c16](https://github.com/nubolab-ffwd/svelte-fluent/commit/7454c165fa0f579f7aaa12e12433ac4112818d8b))
+
 ### [0.4.1](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.4.0...v0.4.1) (2021-09-15)
 
 ## [0.4.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.3.1...v0.4.0) (2021-07-14)
