@@ -27,7 +27,8 @@ export default function svelteFluentPlugin(options = defaultOptions) {
 			}
 		},
 
-		async resolveId(importee, importer, customOptions, ssr = options.ssr) {
+		async resolveId(importee, importer, opts, _ssr) {
+			const ssr = _ssr === true || opts.ssr;
 			if (ssr && importee === '@nubolab-ffwd/svelte-fluent') {
 				if (!resolvedSvelteFluentSSR) {
 					resolvedSvelteFluentSSR = this.resolve('@nubolab-ffwd/svelte-fluent/src/ssr', importer, {
