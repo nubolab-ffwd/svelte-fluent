@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@commitlint/cli': 15.0.0
   '@commitlint/config-conventional': 15.0.0
-  '@fluent/bundle': 0.17.0
+  '@fluent/bundle': 0.17.1
   '@fluent/dom': 0.8.0
   '@fluent/langneg': 0.6.0
   '@fluent/sequence': 0.7.0
@@ -37,14 +37,14 @@ specifiers:
 
 dependencies:
   '@fluent/dom': 0.8.0
-  '@fluent/sequence': 0.7.0_@fluent+bundle@0.17.0
+  '@fluent/sequence': 0.7.0_@fluent+bundle@0.17.1
   cached-iterable: 0.3.0
   jsdom: 19.0.0
 
 devDependencies:
   '@commitlint/cli': 15.0.0
   '@commitlint/config-conventional': 15.0.0
-  '@fluent/bundle': 0.17.0
+  '@fluent/bundle': 0.17.1
   '@fluent/langneg': 0.6.0
   '@rollup/plugin-node-resolve': 13.1.1_rollup@2.61.1
   '@rollup/plugin-replace': 3.0.0_rollup@2.61.1
@@ -1717,8 +1717,8 @@ packages:
       - supports-color
     dev: true
 
-  /@fluent/bundle/0.17.0:
-    resolution: {integrity: sha512-G/9wDCTKGPyHgw4ON3vBlLUIBBGG7vq8ytExqh4uwTfoeOfQ5VU5Xr6F+UV8B72k9P9S72GqFTXvqjS48pBVpg==}
+  /@fluent/bundle/0.17.1:
+    resolution: {integrity: sha512-CRFNT9QcSFAeFDneTF59eyv3JXFGhIIN4boUO2y22YmsuuKLyDk+N1I/NQUYz9Ab63e6V7T6vItoZIG/2oOOuw==}
     engines: {node: '>=12.0.0', npm: '>=7.0.0'}
     dev: true
 
@@ -1734,13 +1734,13 @@ packages:
     engines: {node: '>=12.0.0', npm: '>=7.0.0'}
     dev: true
 
-  /@fluent/sequence/0.7.0_@fluent+bundle@0.17.0:
+  /@fluent/sequence/0.7.0_@fluent+bundle@0.17.1:
     resolution: {integrity: sha512-aH1xMwX8DFvKOQSKUKpB3zMsnJ2rRKt7MajLNnx/r3V3DWDo2nzEfm21d7UyOgwEckPIjPmhxdW1MEmsGUxYIw==}
     engines: {node: '>=12.0.0', npm: '>=7.0.0'}
     peerDependencies:
       '@fluent/bundle': '>= 0.13.0'
     dependencies:
-      '@fluent/bundle': 0.17.0
+      '@fluent/bundle': 0.17.1
     dev: false
 
   /@humanwhocodes/config-array/0.9.2:
