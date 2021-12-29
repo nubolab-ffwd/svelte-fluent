@@ -4,7 +4,7 @@ specifiers:
   '@commitlint/cli': 15.0.0
   '@commitlint/config-conventional': 15.0.0
   '@fluent/bundle': 0.17.1
-  '@fluent/dom': 0.8.0
+  '@fluent/dom': 0.8.1
   '@fluent/langneg': 0.6.1
   '@fluent/sequence': 0.7.0
   '@rollup/plugin-node-resolve': 13.1.1
@@ -36,7 +36,7 @@ specifiers:
   typescript: 4.5.4
 
 dependencies:
-  '@fluent/dom': 0.8.0
+  '@fluent/dom': 0.8.1
   '@fluent/sequence': 0.7.0_@fluent+bundle@0.17.1
   cached-iterable: 0.3.0
   jsdom: 19.0.0
@@ -1722,8 +1722,8 @@ packages:
     engines: {node: '>=12.0.0', npm: '>=7.0.0'}
     dev: true
 
-  /@fluent/dom/0.8.0:
-    resolution: {integrity: sha512-rtnLUTHtFuPF5H9yfZXfsidbLLXGMbOsyNUOQ5cvOjrP6v406AjDSHnpcA9T81uhWt8J57rdVVIJLx0d4ekXMA==}
+  /@fluent/dom/0.8.1:
+    resolution: {integrity: sha512-wlQ3vHgioDL8dC0wcZ9AyCSpOgor0OREKXJMvvnx6bzk/PT2SZNA5frslmSdbEaiBQIVy2MhVvAIDtbKbdoVCg==}
     engines: {node: '>=12.0.0', npm: '>=7.0.0'}
     dependencies:
       cached-iterable: 0.3.0
