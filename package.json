@@ -48,7 +48,7 @@
 		"@fluent/bundle": "0.17.1",
 		"@fluent/langneg": "0.6.0",
 		"@rollup/plugin-node-resolve": "13.1.1",
-		"@rollup/plugin-replace": "3.0.0",
+		"@rollup/plugin-replace": "3.0.1",
 		"@storybook/addon-essentials": "6.4.9",
 		"@storybook/addon-storyshots": "6.4.9",
 		"@storybook/addons": "6.4.9",
