@@ -65,7 +65,7 @@
 		"jest-transform-svelte": "2.1.1",
 		"lint-staged": "12.1.4",
 		"prettier": "2.5.1",
-		"prettier-plugin-svelte": "2.5.1",
+		"prettier-plugin-svelte": "2.6.0",
 		"rollup": "2.62.0",
 		"rollup-plugin-svelte": "7.1.0",
 		"standard-version": "9.3.2",
