@@ -13,7 +13,7 @@ specifiers:
   '@storybook/addon-storyshots': 6.4.18
   '@storybook/addons': 6.4.18
   '@storybook/svelte': 6.4.18
-  '@testing-library/jest-dom': 5.16.1
+  '@testing-library/jest-dom': 5.16.2
   '@testing-library/svelte': 3.0.3
   '@typescript-eslint/eslint-plugin': 5.8.1
   '@typescript-eslint/parser': 5.8.1
@@ -52,7 +52,7 @@ devDependencies:
   '@storybook/addon-storyshots': 6.4.18_1a739a2d5f6f98a0d4c7f2b458329707
   '@storybook/addons': 6.4.18
   '@storybook/svelte': 6.4.18_f724288543b7b4529d39a73d7a449ba6
-  '@testing-library/jest-dom': 5.16.1
+  '@testing-library/jest-dom': 5.16.2
   '@testing-library/svelte': 3.0.3_svelte@3.46.3
   '@typescript-eslint/eslint-plugin': 5.8.1_af7f5920824b4a8dc58e8b7b6315b56a
   '@typescript-eslint/parser': 5.8.1_eslint@8.8.0+typescript@4.5.5
@@ -4003,8 +4003,8 @@ packages:
       pretty-format: 26.6.2
     dev: true
 
-  /@testing-library/jest-dom/5.16.1:
-    resolution: {integrity: sha512-ajUJdfDIuTCadB79ukO+0l8O+QwN0LiSxDaYUTI4LndbbUsGi6rWU1SCexXzBA2NSjlVB9/vbkasQIL3tmPBjw==}
+  /@testing-library/jest-dom/5.16.2:
+    resolution: {integrity: sha512-6ewxs1MXWwsBFZXIk4nKKskWANelkdUehchEOokHsN8X7c2eKXGw+77aRV63UU8f/DTSVUPLaGxdrj4lN7D/ug==}
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
     dependencies:
       '@babel/runtime': 7.14.6
@@ -12635,6 +12635,7 @@ packages:
 
   /source-map-resolve/0.6.0:
     resolution: {integrity: sha512-KXBr9d/fO/bWo97NXsPIAW1bFSBOuCnjbNTBMO7N59hsv5i9yzRDfcYwwt0l04+VqnKC+EwzvJZIP/qkuMgR/w==}
+    deprecated: See https://github.com/lydell/source-map-resolve#deprecated
     dependencies:
       atob: 2.1.2
       decode-uri-component: 0.2.0
