@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.4.3](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.4.2...v0.4.3) (2022-02-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @fluent/dom to v0.8.1 ([ee9342b](https://github.com/nubolab-ffwd/svelte-fluent/commit/ee9342b60f76993df95c97a121531803172bb4f6))
+* **rollup-plugin:** ensure `ssr` plugin option rewrites imports to SSR entry point ([d4aa9dc](https://github.com/nubolab-ffwd/svelte-fluent/commit/d4aa9dc9196896c13536802f02122c7ab4af2d2b))
+
 ### [0.4.2](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.4.1...v0.4.2) (2021-12-13)
 
 
