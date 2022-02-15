@@ -28,19 +28,25 @@ export default function svelteFluentPlugin(options = defaultOptions) {
 		},
 
 		async resolveId(importee, importer, opts, _ssr) {
-			const ssr = _ssr === true || opts.ssr;
+			const ssr = _ssr === true || opts.ssr || (!isVite && options.ssr);
 			if (ssr && importee === '@nubolab-ffwd/svelte-fluent') {
 				if (!resolvedSvelteFluentSSR) {
-					resolvedSvelteFluentSSR = this.resolve('@nubolab-ffwd/svelte-fluent/src/ssr', importer, {
-						skipSelf: true
-					}).then(
+					resolvedSvelteFluentSSR = this.resolve(
+						'@nubolab-ffwd/svelte-fluent/src/ssr.js',
+						importer,
+						{
+							skipSelf: true
+						}
+					).then(
 						(svelteFluentSSR) => {
-							debug('resolved @nubolab-ffwd/svelte-fluent to @nubolab-ffwd/svelte-fluent/ssr');
+							debug(
+								'resolved @nubolab-ffwd/svelte-fluent to @nubolab-ffwd/svelte-fluent/src/ssr.js'
+							);
 							return svelteFluentSSR;
 						},
 						(err) => {
 							debug(
-								'failed to resolve @nubolab-ffwd/svelte-fluent to @nubolab-ffwd/svelte-fluent/ssr',
+								'failed to resolve @nubolab-ffwd/svelte-fluent to @nubolab-ffwd/svelte-fluent/src/ssr.js',
 								err
 							);
 							return null; // returning null here leads to @nubolab-ffwd/svelte-fluent getting resolved regularly

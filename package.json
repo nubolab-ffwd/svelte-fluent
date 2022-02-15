@@ -23,7 +23,7 @@
 			"import": "./dist/rollup-plugin.mjs",
 			"require": "./dist/rollup-plugin.js"
 		},
-		"./src/*": "./src/*.js"
+		"./src/*": "./src/*"
 	},
 	"scripts": {
 		"build": "rollup -c",
