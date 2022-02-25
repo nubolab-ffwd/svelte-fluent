@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -16,7 +16,7 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: pnpm/action-setup@v2.2.1
         with:
-          version: 6.13.0
+          version: 6.32.1
       - uses: actions/setup-node@v3.0.0
         with:
           node-version: ${{ matrix.node-version }}
