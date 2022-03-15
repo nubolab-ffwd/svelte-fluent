@@ -54,7 +54,7 @@
 		"@storybook/addons": "6.4.19",
 		"@storybook/svelte": "6.4.19",
 		"@testing-library/jest-dom": "5.16.2",
-		"@testing-library/svelte": "3.0.3",
+		"@testing-library/svelte": "3.1.0",
 		"@typescript-eslint/eslint-plugin": "5.15.0",
 		"@typescript-eslint/parser": "5.15.0",
 		"eslint": "8.11.0",
