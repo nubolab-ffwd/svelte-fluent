@@ -14,7 +14,7 @@ specifiers:
   '@storybook/addons': 6.4.19
   '@storybook/svelte': 6.4.19
   '@testing-library/jest-dom': 5.16.2
-  '@testing-library/svelte': 3.0.3
+  '@testing-library/svelte': 3.1.0
   '@typescript-eslint/eslint-plugin': 5.15.0
   '@typescript-eslint/parser': 5.15.0
   cached-iterable: 0.3.0
@@ -53,7 +53,7 @@ devDependencies:
   '@storybook/addons': 6.4.19
   '@storybook/svelte': 6.4.19_311449f603256247137d9b0131f183d4
   '@testing-library/jest-dom': 5.16.2
-  '@testing-library/svelte': 3.0.3_svelte@3.46.4
+  '@testing-library/svelte': 3.1.0_svelte@3.46.4
   '@typescript-eslint/eslint-plugin': 5.15.0_f2c49ce7d0e93ebcfdb4b7d25b131b28
   '@typescript-eslint/parser': 5.15.0_eslint@8.11.0+typescript@4.6.2
   eslint: 8.11.0
@@ -4017,8 +4017,8 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/svelte/3.0.3_svelte@3.46.4:
-    resolution: {integrity: sha512-GxafAllShGM2nkntFGURZ7fYVlUYwv7K62lqv1aFqtTYzzeZ2Cu8zTVhtE/Qt3bk2zMl6+FPKP03wjLip/G8mA==}
+  /@testing-library/svelte/3.1.0_svelte@3.46.4:
+    resolution: {integrity: sha512-xTN6v4xRLQb75GTJn2mrjSUJN4PkhpNZFjwvtdzbOTS6OvxMrkRdm6hFRGauwiFd0LPV7/SqdWbbtMAOC7a+Dg==}
     engines: {node: '>= 8'}
     peerDependencies:
       svelte: 3.x
