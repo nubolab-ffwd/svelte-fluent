@@ -63,7 +63,7 @@
 		"husky": "7.0.4",
 		"jest": "27.5.1",
 		"jest-transform-svelte": "2.1.1",
-		"lint-staged": "12.3.6",
+		"lint-staged": "12.3.7",
 		"prettier": "2.6.0",
 		"prettier-plugin-svelte": "2.6.0",
 		"rollup": "2.70.1",
