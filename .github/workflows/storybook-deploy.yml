@@ -19,7 +19,7 @@ jobs:
         with:
           version: 6.32.1
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3.1.0
+        uses: actions/setup-node@v3.1.1
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
