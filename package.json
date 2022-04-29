@@ -43,8 +43,8 @@
 		"jsdom": "19.0.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "16.2.3",
-		"@commitlint/config-conventional": "16.2.1",
+		"@commitlint/cli": "16.2.4",
+		"@commitlint/config-conventional": "16.2.4",
 		"@fluent/bundle": "0.17.1",
 		"@fluent/langneg": "0.6.1",
 		"@rollup/plugin-node-resolve": "13.1.3",
