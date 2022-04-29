@@ -14,7 +14,7 @@ specifiers:
   '@storybook/addons': 6.4.22
   '@storybook/svelte': 6.4.22
   '@testing-library/jest-dom': 5.16.3
-  '@testing-library/svelte': 3.1.0
+  '@testing-library/svelte': 3.1.1
   '@typescript-eslint/eslint-plugin': 5.17.0
   '@typescript-eslint/parser': 5.17.0
   cached-iterable: 0.3.0
@@ -53,7 +53,7 @@ devDependencies:
   '@storybook/addons': 6.4.22
   '@storybook/svelte': 6.4.22_d3632207b19dbf6bb79dfb076f9af20b
   '@testing-library/jest-dom': 5.16.3
-  '@testing-library/svelte': 3.1.0_svelte@3.47.0
+  '@testing-library/svelte': 3.1.1_svelte@3.47.0
   '@typescript-eslint/eslint-plugin': 5.17.0_d9a18dc151c16410bf757f13e92f3bc3
   '@typescript-eslint/parser': 5.17.0_eslint@8.14.0+typescript@4.6.3
   eslint: 8.14.0
@@ -1328,13 +1328,6 @@ packages:
       make-dir: 2.1.0
       pirates: 4.0.5
       source-map-support: 0.5.19
-    dev: true
-
-  /@babel/runtime-corejs3/7.14.0:
-    resolution: {integrity: sha512-0R0HTZWHLk6G8jIk0FtoX+AatCtKnswS98VhXwGImFc759PJRp4Tru0PQYZofyijTFUr+gT8Mu7sgXVJLQ0ceg==}
-    dependencies:
-      core-js-pure: 3.13.0
-      regenerator-runtime: 0.13.7
     dev: true
 
   /@babel/runtime/7.14.6:
@@ -3988,18 +3981,18 @@ packages:
       - '@types/react'
     dev: true
 
-  /@testing-library/dom/7.31.0:
-    resolution: {integrity: sha512-0X7ACg4YvTRDFMIuTOEj6B4NpN7i3F/4j5igOcTI5NC5J+N4TribNdErCHOZF1LBWhhcyfwxelVwvoYNMUXTOA==}
-    engines: {node: '>=10'}
+  /@testing-library/dom/8.13.0:
+    resolution: {integrity: sha512-9VHgfIatKNXQNaZTtLnalIy0jNZzY35a4S3oi08YAt9Hv1VsfZ/DfA45lM8D/UhtHBGJ4/lGwp0PZkVndRkoOQ==}
+    engines: {node: '>=12'}
     dependencies:
       '@babel/code-frame': 7.14.5
       '@babel/runtime': 7.14.6
       '@types/aria-query': 4.2.1
-      aria-query: 4.2.2
+      aria-query: 5.0.0
       chalk: 4.1.1
-      dom-accessibility-api: 0.5.6
+      dom-accessibility-api: 0.5.14
       lz-string: 1.4.4
-      pretty-format: 26.6.2
+      pretty-format: 27.5.1
     dev: true
 
   /@testing-library/jest-dom/5.16.3:
@@ -4017,13 +4010,13 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/svelte/3.1.0_svelte@3.47.0:
-    resolution: {integrity: sha512-xTN6v4xRLQb75GTJn2mrjSUJN4PkhpNZFjwvtdzbOTS6OvxMrkRdm6hFRGauwiFd0LPV7/SqdWbbtMAOC7a+Dg==}
+  /@testing-library/svelte/3.1.1_svelte@3.47.0:
+    resolution: {integrity: sha512-JM0MwtUCbL13CkdosivF5So5s7Y1cGTrrIGTNUOy4vq+quCvHTiFkHLRsUuOyFhGG3fXT6lhCzX30ichG+AlHA==}
     engines: {node: '>= 8'}
     peerDependencies:
       svelte: 3.x
     dependencies:
-      '@testing-library/dom': 7.31.0
+      '@testing-library/dom': 8.13.0
       svelte: 3.47.0
     dev: true
 
@@ -4846,14 +4839,6 @@ packages:
 
   /argparse/2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
-    dev: true
-
-  /aria-query/4.2.2:
-    resolution: {integrity: sha512-o/HelwhuKpTj/frsOsbNLNgnNGVIFsVP/SW2BSF14gVl7kAfMOJ6/8wUAUvG1R1NHKrfG+2sHZTu0yauT1qBrA==}
-    engines: {node: '>=6.0'}
-    dependencies:
-      '@babel/runtime': 7.14.6
-      '@babel/runtime-corejs3': 7.14.0
     dev: true
 
   /aria-query/5.0.0:
@@ -6673,6 +6658,10 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       esutils: 2.0.3
+    dev: true
+
+  /dom-accessibility-api/0.5.14:
+    resolution: {integrity: sha512-NMt+m9zFMPZe0JcY9gN224Qvk6qLIdqex29clBvc/y75ZBX9YA9wNK3frsYvu2DI1xcCIwxwnX+TlsJ2DSOADg==}
     dev: true
 
   /dom-accessibility-api/0.5.6:
