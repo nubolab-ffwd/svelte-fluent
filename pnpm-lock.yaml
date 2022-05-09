@@ -6,7 +6,7 @@ specifiers:
   '@commitlint/config-conventional': 16.2.4
   '@fluent/bundle': 0.17.1
   '@fluent/dom': 0.8.1
-  '@fluent/langneg': 0.6.1
+  '@fluent/langneg': 0.6.2
   '@fluent/sequence': 0.7.0
   '@rollup/plugin-node-resolve': 13.2.1
   '@rollup/plugin-replace': 4.0.0
@@ -52,7 +52,7 @@ devDependencies:
   '@commitlint/cli': 16.2.4
   '@commitlint/config-conventional': 16.2.4
   '@fluent/bundle': 0.17.1
-  '@fluent/langneg': 0.6.1
+  '@fluent/langneg': 0.6.2
   '@rollup/plugin-node-resolve': 13.2.1_rollup@2.72.1
   '@rollup/plugin-replace': 4.0.0_rollup@2.72.1
   '@storybook/addon-essentials': 6.4.22_bzimnurvsjd67pnzk5zhsmc5nq
@@ -1756,8 +1756,8 @@ packages:
       cached-iterable: 0.3.0
     dev: false
 
-  /@fluent/langneg/0.6.1:
-    resolution: {integrity: sha512-BlP1MNHEtTRKd2Mq/twrFtHIzIBK4snG3t3dKAE1OR6RPOlxt7fzx7Q4jQvBrMPkm6OTg0u6d0ZrcH9XkSvINQ==}
+  /@fluent/langneg/0.6.2:
+    resolution: {integrity: sha512-YF4gZ4sLYRQfctpUR2uhb5UyPUYY5n/bi3OaED/Q4awKjPjlaF8tInO3uja7pnLQcmLTURkZL7L9zxv2Z5NDwg==}
     engines: {node: '>=12.0.0', npm: '>=7.0.0'}
     dev: true
 

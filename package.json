@@ -47,7 +47,7 @@
 		"@commitlint/cli": "16.2.4",
 		"@commitlint/config-conventional": "16.2.4",
 		"@fluent/bundle": "0.17.1",
-		"@fluent/langneg": "0.6.1",
+		"@fluent/langneg": "0.6.2",
 		"@rollup/plugin-node-resolve": "13.2.1",
 		"@rollup/plugin-replace": "4.0.0",
 		"@storybook/addon-essentials": "6.4.22",
