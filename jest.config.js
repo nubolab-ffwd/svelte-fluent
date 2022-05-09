@@ -30,7 +30,7 @@ const commonConfig = {
 
 const domConfig = {
 	testEnvironment: 'jsdom',
-	name: 'svelte-fluent DOM',
+	displayName: 'svelte-fluent DOM',
 	...commonConfig,
 	transform: {
 		...commonConfig.transform,
@@ -45,7 +45,7 @@ const domConfig = {
 
 const ssrConfig = {
 	testEnvironment: 'node',
-	name: 'svelte-fluent SSR',
+	displayName: 'svelte-fluent SSR',
 	...commonConfig,
 	transform: {
 		...commonConfig.transform,
