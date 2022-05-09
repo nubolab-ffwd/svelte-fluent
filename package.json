@@ -62,7 +62,7 @@
 		"eslint": "8.15.0",
 		"eslint-config-prettier": "8.5.0",
 		"eslint-plugin-svelte3": "4.0.0",
-		"husky": "8.0.0",
+		"husky": "8.0.1",
 		"jest": "27.5.1",
 		"jest-transform-svelte": "2.1.1",
 		"lint-staged": "12.4.1",
