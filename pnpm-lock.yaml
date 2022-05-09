@@ -14,7 +14,7 @@ specifiers:
   '@storybook/addon-storyshots': 6.4.22
   '@storybook/addons': 6.4.22
   '@storybook/svelte': 6.4.22
-  '@testing-library/jest-dom': 5.16.3
+  '@testing-library/jest-dom': 5.16.4
   '@testing-library/svelte': 3.1.1
   '@typescript-eslint/eslint-plugin': 5.22.0
   '@typescript-eslint/parser': 5.22.0
@@ -59,7 +59,7 @@ devDependencies:
   '@storybook/addon-storyshots': 6.4.22_mkklt4vfcuv3vgad4xjdrdfedq
   '@storybook/addons': 6.4.22_sfoxds7t5ydpegc3knd667wn6m
   '@storybook/svelte': 6.4.22_gznu6lf2r66wxskgkovu72qx2e
-  '@testing-library/jest-dom': 5.16.3
+  '@testing-library/jest-dom': 5.16.4
   '@testing-library/svelte': 3.1.1_svelte@3.48.0
   '@typescript-eslint/eslint-plugin': 5.22.0_tal4xlmvnofklupd3hwjtzfb4q
   '@typescript-eslint/parser': 5.22.0_hcfsmds2fshutdssjqluwm76uu
@@ -4157,8 +4157,8 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@testing-library/jest-dom/5.16.3:
-    resolution: {integrity: sha512-u5DfKj4wfSt6akfndfu1eG06jsdyA/IUrlX2n3pyq5UXgXMhXY+NJb8eNK/7pqPWAhCKsCGWDdDO0zKMKAYkEA==}
+  /@testing-library/jest-dom/5.16.4:
+    resolution: {integrity: sha512-Gy+IoFutbMQcky0k+bqqumXZ1cTGswLsFqmNLzNdSKkU9KGV2u9oXhukCbbJ9/LRPKiqwxEE8VpV/+YZlfkPUA==}
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
     dependencies:
       '@babel/runtime': 7.14.6
@@ -4167,7 +4167,7 @@ packages:
       chalk: 3.0.0
       css: 3.0.0
       css.escape: 1.5.1
-      dom-accessibility-api: 0.5.6
+      dom-accessibility-api: 0.5.14
       lodash: 4.17.21
       redent: 3.0.0
     dev: true
@@ -7021,10 +7021,6 @@ packages:
 
   /dom-accessibility-api/0.5.14:
     resolution: {integrity: sha512-NMt+m9zFMPZe0JcY9gN224Qvk6qLIdqex29clBvc/y75ZBX9YA9wNK3frsYvu2DI1xcCIwxwnX+TlsJ2DSOADg==}
-    dev: true
-
-  /dom-accessibility-api/0.5.6:
-    resolution: {integrity: sha512-DplGLZd8L1lN64jlT27N9TVSESFR5STaEJvX+thCby7fuCHonfPpAlodYc3vuUYbDuDec5w8AMP7oCM5TWFsqw==}
     dev: true
 
   /dom-converter/0.2.0:
