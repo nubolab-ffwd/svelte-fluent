@@ -72,7 +72,7 @@
 		"prettier-plugin-svelte": "2.7.0",
 		"react": "17.0.2",
 		"react-dom": "17.0.2",
-		"rollup": "2.75.4",
+		"rollup": "2.75.5",
 		"rollup-plugin-svelte": "7.1.0",
 		"standard-version": "9.3.2",
 		"svelte": "3.48.0",
