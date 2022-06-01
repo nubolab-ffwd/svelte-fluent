@@ -15,7 +15,7 @@ specifiers:
   '@storybook/addons': 6.5.6
   '@storybook/svelte': 6.5.6
   '@testing-library/jest-dom': 5.16.4
-  '@testing-library/svelte': 3.1.1
+  '@testing-library/svelte': 3.1.2
   '@typescript-eslint/eslint-plugin': 5.27.0
   '@typescript-eslint/parser': 5.27.0
   babel-loader: ^8.2.5
@@ -61,7 +61,7 @@ devDependencies:
   '@storybook/addons': 6.5.6_sfoxds7t5ydpegc3knd667wn6m
   '@storybook/svelte': 6.5.6_zlazmpecrhcai4cyx63urphxku
   '@testing-library/jest-dom': 5.16.4
-  '@testing-library/svelte': 3.1.1_svelte@3.48.0
+  '@testing-library/svelte': 3.1.2_svelte@3.48.0
   '@typescript-eslint/eslint-plugin': 5.27.0_dszb5tb7atwkjjijmmov4qhi7i
   '@typescript-eslint/parser': 5.27.0_xztl6dhthcahlo6akmb2bmjmle
   babel-loader: 8.2.5_rb5fcebzp6kx3hqg3ucus54t3m
@@ -3947,7 +3947,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@babel/code-frame': 7.16.7
-      '@babel/runtime': 7.14.6
+      '@babel/runtime': 7.18.3
       '@types/aria-query': 4.2.1
       aria-query: 5.0.0
       chalk: 4.1.1
@@ -3971,9 +3971,9 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/svelte/3.1.1_svelte@3.48.0:
-    resolution: {integrity: sha512-JM0MwtUCbL13CkdosivF5So5s7Y1cGTrrIGTNUOy4vq+quCvHTiFkHLRsUuOyFhGG3fXT6lhCzX30ichG+AlHA==}
-    engines: {node: '>= 8'}
+  /@testing-library/svelte/3.1.2_svelte@3.48.0:
+    resolution: {integrity: sha512-S66yOJFB8bgnFFk7lslhudZXHD+AWFmhWAlt7Np5j2N9O+HUiIJiD3/LeLm28YGcPcIkom5RskhPYAM+N3WLlw==}
+    engines: {node: '>= 10'}
     peerDependencies:
       svelte: 3.x
     dependencies:
@@ -5197,7 +5197,7 @@ packages:
     resolution: {integrity: sha512-Cg7TFGpIr01vOQNODXOOaGz2NpCU5gl8x1qJFbb6hbZxR7XrcE2vtbAsTAbJ7/xwJtUuJEw8K8Zr/AE0LHlesg==}
     engines: {node: '>=10', npm: '>=6'}
     dependencies:
-      '@babel/runtime': 7.14.6
+      '@babel/runtime': 7.18.3
       cosmiconfig: 7.0.1
       resolve: 1.20.0
     dev: true
@@ -9873,7 +9873,7 @@ packages:
     resolution: {integrity: sha512-prXSYk799h3GY3iOWnC6ZigYzMPjxN2svgjJ9shk7oMadSNX3wXy0B6F32PMJv7qtMnrIbUxoEHzbutvxR2LBQ==}
     engines: {node: '>=6.0.0', npm: '>=6.0.0', yarn: '>=1.0.0'}
     dependencies:
-      '@babel/runtime': 7.14.6
+      '@babel/runtime': 7.18.3
       app-root-dir: 1.0.2
       core-js: 3.15.2
       dotenv: 8.6.0
@@ -10106,7 +10106,7 @@ packages:
     dev: true
 
   /lz-string/1.4.4:
-    resolution: {integrity: sha1-wNjq82BZ9wV5bh40SBHPTEmNOiY=}
+    resolution: {integrity: sha512-0ckx7ZHRPqb0oUm8zNr+90mtf9DQB60H1wMCjBtfi62Kl3a7JbHob6gA2bC+xRvZoOL+1hzUK8jeuEIQE8svEQ==}
     hasBin: true
     dev: true
 
