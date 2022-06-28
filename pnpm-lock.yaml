@@ -28,7 +28,7 @@ specifiers:
   jest-environment-jsdom: 28.1.1
   jest-transform-svelte: 2.1.1
   jsdom: 19.0.0
-  lint-staged: 13.0.2
+  lint-staged: 13.0.3
   preact: ^10.7.2
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0
@@ -72,7 +72,7 @@ devDependencies:
   jest: 28.1.1
   jest-environment-jsdom: 28.1.1
   jest-transform-svelte: 2.1.1_svelte@3.48.0
-  lint-staged: 13.0.2
+  lint-staged: 13.0.3
   preact: 10.7.2
   prettier: 2.7.1
   prettier-plugin-svelte: 2.7.0_nakrehnrzdf7fdea5k3a4dfy4m
@@ -9935,8 +9935,8 @@ packages:
     resolution: {integrity: sha512-8ZmlJFVK9iCmtLz19HpSsR8HaAMWBT284VMNednLwlIMDP2hJDCIhUp0IZ2xUcZ+Ob6BM0VvCSJwzASDM45NLQ==}
     dev: true
 
-  /lint-staged/13.0.2:
-    resolution: {integrity: sha512-qQLfLTh9z34eMzfEHENC+QBskZfxjomrf+snF3xJ4BzilORbD989NLqQ00ughsF/A+PT41e87+WsMFabf9++pQ==}
+  /lint-staged/13.0.3:
+    resolution: {integrity: sha512-9hmrwSCFroTSYLjflGI8Uk+GWAwMB4OlpU4bMJEAT5d/llQwtYKoim4bLOyLCuWFAhWEupE0vkIFqtw/WIsPug==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
@@ -13259,7 +13259,7 @@ packages:
     dev: true
 
   /through/2.3.8:
-    resolution: {integrity: sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=}
+    resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
     dev: true
 
   /through2/2.0.5:
