@@ -22,6 +22,7 @@ jobs:
       - uses: pnpm/action-setup@v2.2.1
         with:
           version: 7
+        if: ${{ steps.release.outputs.release_created }}
       - uses: actions/setup-node@v3.3.0
         with:
           node-version: lts/*
