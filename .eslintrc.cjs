@@ -9,12 +9,11 @@ module.exports = {
 		{ files: ['tests/**/*.js'], env: { jest: true } }
 	],
 	settings: {
-		'svelte3/typescript': () => require('typescript'),
-		'svelte3/ignore-styles': () => true
+		'svelte3/typescript': () => require('typescript')
 	},
 	parserOptions: {
 		sourceType: 'module',
-		ecmaVersion: 2019
+		ecmaVersion: 2020
 	},
 	env: {
 		browser: true,

@@ -1,4 +1,3 @@
-# everything added here should also be added to .eslintignore and .prettierignore
 .DS_Store
 node_modules
 /build
@@ -9,3 +8,8 @@ node_modules
 !.env.example
 storybook-static
 .eslintcache
+
+# Ignore files for PNPM, NPM and YARN
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
