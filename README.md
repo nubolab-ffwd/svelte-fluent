@@ -1,4 +1,4 @@
-# Svelte Fluent [![Docs](https://img.shields.io/badge/docs-Storybook-blue)](https://nubolab-ffwd.github.io/svelte-fluent/) ![CI](https://github.com/nubolab-ffwd/svelte-fluent/workflows/CI/badge.svg) [![svelte-v3](https://img.shields.io/badge/svelte-v3-blueviolet.svg)](https://svelte.dev)
+# Svelte Fluent [![npm (scoped)](https://img.shields.io/npm/v/@nubolab-ffwd/svelte-fluent)](https://www.npmjs.com/package/@nubolab-ffwd/svelte-fluent) [![Docs](https://img.shields.io/badge/docs-Storybook-blue)](https://nubolab-ffwd.github.io/svelte-fluent/) ![CI](https://github.com/nubolab-ffwd/svelte-fluent/workflows/CI/badge.svg) [![svelte-v3](https://img.shields.io/badge/svelte-v3-blueviolet.svg)](https://svelte.dev)
 
 `svelte-fluent` provides [Svelte](https://svelte.dev/) components for easy
 integration of [Fluent](https://projectfluent.org/) localization in Svelte / Sapper / SvelteKit
@@ -53,7 +53,7 @@ This example showcases the most basic usage of `svelte-fluent`. Check the render
 </FluentProvider>
 ```
 
-# Bundler Notes
+# Framework and Bundler Notes
 
 If you're not using DOM Overlays or not using SSR rendering everything should work out-of-the-box. Without bundler support DOM Overlays
 will not get transformed during SSR rendering and will therefore show some visual flicker on page load. To address this `svelte-fluent` provides bundler plugins to enhance the SSR rendering.
@@ -77,7 +77,23 @@ export default {
 
 ## Vite / SvelteKit
 
-Add the `svelte-fluent/rollup-plugin` to your plugin list in `vite.config.js` or `svelte.config.js`. For example in SvelteKit it should look like this:
+Add the `svelte-fluent/rollup-plugin` to your plugin list in `vite.config.js`. For example in SvelteKit it should look like this:
+
+```js
+import { sveltekit } from '@sveltejs/kit/vite';
+import svelteFluent from '@nubolab-ffwd/svelte-fluent/rollup-plugin';
+
+/** @type {import('vite').UserConfig} */
+const config = {
+	plugins: [sveltekit(), svelteFluent()]
+};
+
+export default config;
+```
+
+## Older SvelteKit versions before 1.0.0-next.359
+
+Add the `svelte-fluent/rollup-plugin` to your plugin list in `svelte.config.js`. It should look like this:
 
 ```js
 import svelteFluent from '@nubolab-ffwd/svelte-fluent/rollup-plugin';
@@ -105,7 +121,7 @@ Contributions of a Webpack loader that replicates the Rollup plugin in `src/roll
 
 # DOM Overlays (experimental)
 
-**Important:** for proper SSR support of DOM Overlays some bundler support is needed. Please check the [Bundler Notes](#bundler-notes).
+**Important:** for proper SSR support of DOM Overlays some framework or bundler support is needed. Please check the [Framework and Bundler Notes](#framework-and-bundler-notes) section for instructions.
 
 This library includes experimental support for DOM overlays via
 [@fluent/dom](https://www.npmjs.com/package/@fluent/dom). For a detailed
