@@ -1,0 +1,17 @@
+// https://coolors.co/7cea9c-55d6be-2e5eaa-5b4e77-593959
+
+:root {
+	--theme-color-background: #fff;
+	--theme-color-text: #000;
+	--theme-color-primary: #2e5eaa;
+	--theme-color-secondary: #55d6be;
+}
+
+body {
+	color: var(--theme-color-text);
+	background-color: var(--theme-color-background);
+}
+
+a {
+	color: var(--theme-color-primary);
+}

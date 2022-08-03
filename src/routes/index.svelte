@@ -29,7 +29,11 @@
 </script>
 
 <FluentProvider bundles={generateBundles([])}>
-	<h1>
-		<Localized id="hello" />
-	</h1>
+	<div class="center">
+		<div class="stack">
+			<h1>
+				<Localized id="hello" />
+			</h1>
+		</div>
+	</div>
 </FluentProvider>
