@@ -2,10 +2,6 @@
 title: Getting started
 ---
 
-<script>
-	import Example from './_Example.svelte'
-</script>
-
 # {title}
 
 ## What is svelte-fluent?

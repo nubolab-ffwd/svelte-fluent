@@ -1,0 +1,73 @@
+:root {
+	--ratio: 1.4;
+	--s-5: calc(var(--s-4) / var(--ratio));
+	--s-4: calc(var(--s-3) / var(--ratio));
+	--s-3: calc(var(--s-2) / var(--ratio));
+	--s-2: calc(var(--s-1) / var(--ratio));
+	--s-1: calc(var(--s0) / var(--ratio));
+	--s0: 1rem;
+	--s1: calc(var(--s0) * var(--ratio));
+	--s2: calc(var(--s1) * var(--ratio));
+	--s3: calc(var(--s2) * var(--ratio));
+	--s4: calc(var(--s3) * var(--ratio));
+	--s5: calc(var(--s4) * var(--ratio));
+
+	--measure: 60ch;
+	--border-thin: var(--s-5);
+
+	--font-size-small: 0.6rem;
+	--font-size-smallish: 0.8rem;
+	--font-size-base: 1rem;
+	--font-size-biggish: 1.75rem;
+	--font-size-big: 2.25rem;
+}
+
+:root {
+	font-family: system-ui;
+	line-height: var(--ratio);
+}
+
+body {
+	margin: 0;
+}
+
+* {
+	max-inline-size: var(--measure);
+	box-sizing: border-box;
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer {
+	max-inline-size: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h6 {
+  font-size: var(--s1);
+}
+
+h5 {
+  font-size: var(--s2);
+}
+
+h4 {
+  font-size: var(--s3);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}

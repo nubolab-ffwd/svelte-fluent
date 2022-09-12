@@ -3,7 +3,13 @@ title: Tutorial
 ---
 
 <script>
-	import Example from './_Example.svelte'
+	import ExampleFirstSteps from '$lib/site/examples/tutorial/first-steps/Example.svelte'
+	import ExampleTranslationFiles from '$lib/site/examples/tutorial/multi-language/Example.svelte'
+	import ExampleMultiLanguage from '$lib/site/examples/tutorial/multi-language/Example.svelte'
+	import ExampleLanguageOverride from '$lib/site/examples/tutorial/language-override/Example.svelte'
+	import ExampleInterpolation from '$lib/site/examples/tutorial/interpolation/Example.svelte'
+	import ExampleInterpolationFormatting from '$lib/site/examples/tutorial/interpolation-formatting/Example.svelte'
+	import ExampleInterpolationCustomFunctions from '$lib/site/examples/tutorial/interpolation-custom-functions/Example.svelte'
 </script>
 
 # {title}
@@ -14,7 +20,7 @@ You need to provide your translations to svelte-fluent by adding the `FluentProv
 
 In the most basic setup those translations can be defined directly in the code like this:
 
-<Example name='tutorial/first-steps/App.svelte' />
+<ExampleFirstSteps />
 
 ## Load translations from files
 
@@ -25,7 +31,7 @@ A better way is to load translations from `.ftl` files which are easier to work 
 > adding the [rollup-plugin-string](https://www.npmjs.com/package/rollup-plugin-string) plugin to your
 > Rollup configuration. For vite you can add `?raw` to your import like in the example below.
 
-<Example name='tutorial/translation-files/App.svelte' extras={['en.ftl']} />
+<ExampleTranslationFiles />
 
 ## Multiple languages and language selection
 
@@ -40,7 +46,7 @@ based on your users' browser preferences.
 > [HTTP Accept-Language header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language)
 > and replace `navigator.languages` with the resulting list of locale identifiers.
 
-<Example name='tutorial/multi-language/App.svelte' extras={['en.ftl', 'fr.ftl', 'de.ftl']} />
+<ExampleMultiLanguage />
 
 ## Language override
 
@@ -48,7 +54,7 @@ Many applications also wish to provide their users with a way to override the
 auto-detected language. This can be accomplished by modifying the bundles passed
 to `FluentProvider` based on user settings.
 
-<Example name='tutorial/language-override/App.svelte' extras={['en.ftl', 'fr.ftl', 'de.ftl']} />
+<ExampleLanguageOverride />
 
 ## Translations with interpolation
 
@@ -56,7 +62,7 @@ You can insert variable into your translated text by using
 [Fluent Placeables](https://projectfluent.org/fluent/guide/placeables.html).
 Values for those variables are provided via the `args` prop of the `Localized` and `Overlay` components.
 
-<Example name='tutorial/interpolation/App.svelte' extras={['en.ftl']} />
+<ExampleInterpolation />
 
 ## Customizing interpolation formatting
 
@@ -67,11 +73,11 @@ Formatting parameters listed in "Parameters" in the
 [Fluent Functions](https://projectfluent.org/fluent/guide/functions.html) documentation can be set both in the `.ftl`
 files or in the JS source. Parameters listed in "Developer parameters" can only be set in JS code.
 
-<Example name='tutorial/interpolation-formatting/App.svelte' extras={['en.ftl']} />
+<ExampleInterpolationFormatting />
 
 ## Custom formatting functions
 
 You can extend the default [Fluent Functions](https://projectfluent.org/fluent/guide/functions.html)
 with custom formatting functions by adding them to the "functions" option of `FluentBundle`.
 
-<Example name='tutorial/interpolation-custom-functions/App.svelte' extras={['en.ftl']} />
+<ExampleInterpolationCustomFunctions />

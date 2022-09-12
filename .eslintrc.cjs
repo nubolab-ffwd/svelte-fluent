@@ -12,12 +12,11 @@ module.exports = {
 		'svelte3/typescript': () => require('typescript')
 	},
 	parserOptions: {
-		sourceType: 'module',
-		ecmaVersion: 2020
+		sourceType: 'module'
 	},
 	env: {
 		browser: true,
-		es2017: true,
+		es2020: true,
 		node: true
 	}
 };

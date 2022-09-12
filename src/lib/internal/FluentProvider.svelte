@@ -11,7 +11,7 @@
 	};
 	type Context = {
 		bundles: Readable<Iterable<FluentBundle>>;
-		dispatch: ReturnType<typeof createEventDispatcher<EventMap>>;
+		dispatch: (...args: Parameters<ReturnType<typeof createEventDispatcher<EventMap>>>) => void;
 	};
 	export type Translation = {
 		value: string;
@@ -40,17 +40,21 @@
 						return { value: id, attributes: {} };
 					}
 					const msg = bundle.getMessage(id);
-					if (!msg || !msg.value) {
+					if (!msg || msg.value === null || msg.value === undefined) {
 						dispatch('error', `[svelte-fluent] Translation missing: "${id}"`);
 						return { value: id, attributes: {} };
 					}
-					const value = bundle.formatPattern(msg.value, args);
+					const errors: Error[] = [];
+					const value = bundle.formatPattern(msg.value, args, errors);
 					const attributes = Object.fromEntries(
 						Object.entries(msg.attributes || {}).map(([name, pattern]) => [
 							name,
-							bundle.formatPattern(pattern, args)
+							bundle.formatPattern(pattern, args, errors)
 						])
 					);
+					for (const err of errors) {
+						dispatch('error', `[svelte-fluent] Translation error: ${err}`);
+					}
 					return { value, attributes };
 				}
 		);
@@ -66,14 +70,20 @@
 
 <script type="ts">
 	import { CachedSyncIterable } from 'cached-iterable';
+	import { tick } from 'svelte';
 	export let bundles: Iterable<FluentBundle> = [];
+
+	const initialTick = tick();
+	const dispatch = createEventDispatcher<EventMap>();
 
 	const bundlesStore = writable(CachedSyncIterable.from(bundles));
 	$: $bundlesStore = CachedSyncIterable.from(bundles);
 
 	setContext<Context>(CONTEXT_KEY, {
 		bundles: { subscribe: bundlesStore.subscribe },
-		dispatch: createEventDispatcher<EventMap>()
+		dispatch: (...args: Parameters<typeof dispatch>) => {
+			initialTick.then(() => dispatch(...args));
+		}
 	});
 </script>
 

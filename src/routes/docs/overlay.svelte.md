@@ -1,18 +1,21 @@
 ---
-title: Localized
+title: Overlay (experimental)
 ---
 
 <script>
-	import ExampleStaticText from '$lib/site/examples/localized/static-text/Example.svelte'
-	import ExampleDynamicText from '$lib/site/examples/localized/dynamic-text/Example.svelte'
-	import ExampleAttributes from '$lib/site/examples/localized/attributes/Example.svelte'
-	import ExampleAttributesWithVariables from '$lib/site/examples/localized/attributes-with-variables/Example.svelte'
+	import ExampleStaticText from '$lib/site/examples/overlay/static-text/Example.svelte'
+	import ExampleDynamicText from '$lib/site/examples/overlay/dynamic-text/Example.svelte'
 </script>
 
 # {title}
 
-The Localized component renders a translation message and outputs it as plain text.
-The output can be customized by overriding the default slot of the component.
+The experimental Overlay component uses [fluent.js DOM Overlays](https://github.com/projectfluent/fluent.js/wiki/DOM-Overlays)
+to render translation messages that contain HTML markup.
+
+Usages of DOM overlays are to:
+
+- allow localizers to use some safe text-level markup in translations, and
+- allow developers to pass functional elements as arguments to translations.
 
 ## Examples
 
@@ -23,14 +26,6 @@ The output can be customized by overriding the default slot of the component.
 ### Dynamic text with variables
 
 <ExampleDynamicText />
-
-### Attributes
-
-<ExampleAttributes />
-
-### Attributes with variables
-
-<ExampleAttributesWithVariables />
 
 ## Component API
 

@@ -1,3 +1,4 @@
+import mm from 'micromatch';
 import { mdsvex } from 'mdsvex';
 import mdsvexConfig from './mdsvex.config.js';
 import adapter from '@sveltejs/adapter-auto';
@@ -15,6 +16,9 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			'@nubolab-ffwd/svelte-fluent': 'src/lib' // used in examples so that import look more like real-world usage
+		},
+		package: {
+			files: mm.matcher('!site/**/*')
 		}
 	}
 };
