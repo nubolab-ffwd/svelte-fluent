@@ -4,7 +4,7 @@
 	</div>
 	<div class="cluster">
 		<a href="/docs/">Docs</a>
-		<a href="/docs/examples/">Examples</a>
+		<a href="https://github.com/nubolab-ffwd/svelte-fluent" target="_blank">GitHub</a>
 	</div>
 </header>
 

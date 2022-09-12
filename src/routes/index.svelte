@@ -1,39 +1,67 @@
 <script lang="ts">
-	import { negotiateLanguages } from '@fluent/langneg';
 	import { FluentBundle, FluentResource } from '@fluent/bundle';
 	import { FluentProvider, Localized } from '$lib';
+	import Editor from '$lib/site/editor';
 
-	// Store all translations as a simple object which is available
-	// synchronously and bundled with the rest of the code.
-	const RESOURCES: Record<string, FluentResource> = {
-		fr: new FluentResource('hello = Salut le monde !'),
-		'en-US': new FluentResource('hello = Hello, world!'),
-		pl: new FluentResource('hello = Witaj świecie!')
+	let ftlSource = `# Simple things are simple.
+hello-user = Hello, {$userName}!
+
+# Complex things are possible.
+shared-photos =
+    {$userName} {$photoCount ->
+        [one] added a new photo
+       *[other] added {$photoCount} new photos
+    } to {$userGender ->
+        [male] his stream
+        [female] her stream
+       *[other] their stream
+    }.
+`;
+
+	const ftlArgs = {
+		userName: 'Anna',
+		userGender: 'female',
+		photoCount: 3
 	};
 
-	// A generator function responsible for building the sequence
-	// of FluentBundle instances in the order of user's language
-	// preferences.
-	function* generateBundles(userLocales: readonly string[]) {
-		// Choose locales that are best for the user.
-		const currentLocales = negotiateLanguages(userLocales, ['fr', 'en-US', 'pl'], {
-			defaultLocale: 'en-US'
-		});
-
-		for (const locale of currentLocales) {
-			const bundle = new FluentBundle(locale);
-			bundle.addResource(RESOURCES[locale]);
-			yield bundle;
-		}
+	let bundle: FluentBundle;
+	$: {
+		bundle = new FluentBundle('en');
+		bundle.addResource(new FluentResource(ftlSource));
 	}
 </script>
 
-<FluentProvider bundles={generateBundles([])}>
-	<div class="center">
-		<div class="stack">
-			<h1>
-				<Localized id="hello" />
-			</h1>
-		</div>
+<div class="stack">
+	<h1>Svelte Fluent</h1>
+	<p>
+		Localize your Svelte applications with the <a href="https://projectfluent.org/">
+			Fluent localisation system
+		</a>.
+	</p>
+
+	<h2>Try it out</h2>
+	<div>
+		<Editor bind:text={ftlSource} height="12rem" />
 	</div>
-</FluentProvider>
+
+	<div class="variables">
+		<label>$userName <input type="text" bind:value={ftlArgs.userName} /></label>
+		<label>
+			$userGender
+			<select bind:value={ftlArgs.userGender}>
+				<option value="male">male</option>
+				<option value="female">female</option>
+				<option value="unspecified">unspecified</option>
+			</select>
+		</label>
+		<label>$photoCount <input type="range" min="1" max="9" bind:value={ftlArgs.photoCount} /></label
+		>
+	</div>
+
+	<FluentProvider bundles={[bundle]}>
+		<div class="results">
+			<div><strong>hello-user</strong> <Localized id="hello-user" args={ftlArgs} /></div>
+			<div><strong>shared-photos</strong> <Localized id="shared-photos" args={ftlArgs} /></div>
+		</div>
+	</FluentProvider>
+</div>
