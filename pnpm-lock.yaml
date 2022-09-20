@@ -15,7 +15,7 @@ specifiers:
   '@storybook/addons': 6.5.9
   '@storybook/svelte': 6.5.9
   '@testing-library/jest-dom': 5.16.5
-  '@testing-library/svelte': 3.1.3
+  '@testing-library/svelte': 3.2.1
   '@typescript-eslint/eslint-plugin': 5.38.0
   '@typescript-eslint/parser': 5.38.0
   babel-loader: 8.2.5
@@ -60,7 +60,7 @@ devDependencies:
   '@storybook/addons': 6.5.9_sfoxds7t5ydpegc3knd667wn6m
   '@storybook/svelte': 6.5.9_zhlt6uxbtb7zuptkp3734gsgki
   '@testing-library/jest-dom': 5.16.5
-  '@testing-library/svelte': 3.1.3_svelte@3.50.1
+  '@testing-library/svelte': 3.2.1_svelte@3.50.1
   '@typescript-eslint/eslint-plugin': 5.38.0_wsb62dxj2oqwgas4kadjymcmry
   '@typescript-eslint/parser': 5.38.0_irgkl5vooow2ydyo6aokmferha
   babel-loader: 8.2.5_rhsdbzevgb5tizdhlla5jsbgyu
@@ -4005,8 +4005,8 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/svelte/3.1.3_svelte@3.50.1:
-    resolution: {integrity: sha512-pyed3yMnTu7wG9Z4XKoIxdrx52hSEFDC8qUaiSsiSh8tBVj3ZjqEKnV2Nfc0IF2llEkT0B7QOXnOVTLJ3O5RCw==}
+  /@testing-library/svelte/3.2.1_svelte@3.50.1:
+    resolution: {integrity: sha512-qP5nMAx78zt+a3y9Sws9BNQYP30cOQ/LXDYuAj7wNtw86b7AtB7TFAz6/Av9hFsW3IJHPBBIGff6utVNyq+F1g==}
     engines: {node: '>= 10'}
     peerDependencies:
       svelte: 3.x
