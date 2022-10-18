@@ -23,7 +23,7 @@ jobs:
         with:
           version: 7
         if: ${{ steps.release.outputs.release_created }}
-      - uses: actions/setup-node@v3.4.1
+      - uses: actions/setup-node@v3.5.1
         with:
           node-version: lts/*
           cache: 'pnpm'
