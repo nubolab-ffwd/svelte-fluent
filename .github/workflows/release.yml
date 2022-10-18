@@ -19,7 +19,7 @@ jobs:
         # a new release is created:
         if: ${{ steps.release.outputs.release_created }}
       # Setup .npmrc file to publish to npm
-      - uses: pnpm/action-setup@v2.2.1
+      - uses: pnpm/action-setup@v2.2.4
         with:
           version: 7
         if: ${{ steps.release.outputs.release_created }}
