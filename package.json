@@ -39,7 +39,7 @@
 		"@fluent/dom": "0.8.1",
 		"@fluent/sequence": "0.7.0",
 		"cached-iterable": "0.3.0",
-		"jsdom": "20.0.0"
+		"jsdom": "20.0.2"
 	},
 	"devDependencies": {
 		"@babel/core": "7.19.1",
