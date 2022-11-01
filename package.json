@@ -43,8 +43,8 @@
 	},
 	"devDependencies": {
 		"@babel/core": "7.19.1",
-		"@commitlint/cli": "17.1.2",
-		"@commitlint/config-conventional": "17.1.0",
+		"@commitlint/cli": "17.2.0",
+		"@commitlint/config-conventional": "17.2.0",
 		"@fluent/bundle": "0.17.1",
 		"@fluent/langneg": "0.6.2",
 		"@rollup/plugin-node-resolve": "14.1.0",
