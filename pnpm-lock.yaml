@@ -37,7 +37,7 @@ specifiers:
   rollup: 2.79.1
   rollup-plugin-svelte: 7.1.0
   svelte: 3.53.1
-  svelte-loader: 3.1.3
+  svelte-loader: 3.1.4
   typescript: 4.8.4
   webpack: 5.74.0
 
@@ -58,7 +58,7 @@ devDependencies:
   '@storybook/addon-essentials': 6.5.9_mfgemzlunyna5pl2feyw4eucn4
   '@storybook/addon-storyshots': 6.5.9_7dtfhoxib7benbmlftiyv6igpy
   '@storybook/addons': 6.5.9_sfoxds7t5ydpegc3knd667wn6m
-  '@storybook/svelte': 6.5.9_ktye3er3gmxujwscpjjxcg2hbq
+  '@storybook/svelte': 6.5.9_ys2bkkw37ewqiay6lex64shjs4
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/svelte': 3.2.2_svelte@3.53.1
   '@typescript-eslint/eslint-plugin': 5.43.0_yy4vf4gcvxiubmg7fqa55dqe2i
@@ -80,7 +80,7 @@ devDependencies:
   rollup: 2.79.1
   rollup-plugin-svelte: 7.1.0_himpnf5456wzehbj5dj5u7v4ri
   svelte: 3.53.1
-  svelte-loader: 3.1.3_svelte@3.53.1
+  svelte-loader: 3.1.4_svelte@3.53.1
   typescript: 4.8.4
   webpack: 5.74.0
 
@@ -3617,7 +3617,7 @@ packages:
       '@mdx-js/mdx': 1.6.22
       '@types/lodash': 4.14.182
       js-string-escape: 1.0.1
-      loader-utils: 2.0.0
+      loader-utils: 2.0.4
       lodash: 4.17.21
       prettier: 2.3.0
       ts-dedent: 2.1.1
@@ -3745,7 +3745,7 @@ packages:
       core-js: 3.15.2
       estraverse: 5.2.0
       global: 4.4.0
-      loader-utils: 2.0.0
+      loader-utils: 2.0.4
       lodash: 4.17.21
       prettier: 2.3.0
       react: 17.0.2
@@ -3803,7 +3803,7 @@ packages:
       util-deprecate: 1.0.2
     dev: true
 
-  /@storybook/svelte/6.5.9_ktye3er3gmxujwscpjjxcg2hbq:
+  /@storybook/svelte/6.5.9_ys2bkkw37ewqiay6lex64shjs4:
     resolution: {integrity: sha512-lm+PYclfub1Ftmfen86iDFNNa/XYaPdLvrXKNP20hhTDWsNESXRCMCi9v6qwFT0hDXQIx/LV2Ig2XXkxpLL19A==}
     engines: {node: '>=10.13.0'}
     hasBin: true
@@ -3829,7 +3829,7 @@ packages:
       read-pkg-up: 7.0.1
       regenerator-runtime: 0.13.7
       svelte: 3.53.1
-      svelte-loader: 3.1.3_svelte@3.53.1
+      svelte-loader: 3.1.4_svelte@3.53.1
       sveltedoc-parser: 4.1.0
       ts-dedent: 2.1.1
       webpack: 5.74.0
@@ -7453,7 +7453,7 @@ packages:
     peerDependencies:
       webpack: ^4.0.0 || ^5.0.0
     dependencies:
-      loader-utils: 2.0.0
+      loader-utils: 2.0.4
       schema-utils: 3.1.1
       webpack: 4.46.0
     dev: true
@@ -9885,6 +9885,15 @@ packages:
       json5: 2.2.1
     dev: true
 
+  /loader-utils/2.0.4:
+    resolution: {integrity: sha512-xXqpXoINfFhgua9xiqD8fPFHgkoq1mmmpE92WlDbm9rNRd/EbRb+Gqf908T2DMfuHjjJlksiK2RbHVOdD/MqSw==}
+    engines: {node: '>=8.9.0'}
+    dependencies:
+      big.js: 5.2.2
+      emojis-list: 3.0.0
+      json5: 2.2.1
+    dev: true
+
   /locate-path/3.0.0:
     resolution: {integrity: sha512-7AO748wWnIhNqAuaty2ZWHkQHRSNfPVIsPIfwEOWO22AmaoVrWavlOcMR5nzTLNYvp36X220/maaRsrec1G65A==}
     engines: {node: '>=6'}
@@ -11125,7 +11134,7 @@ packages:
     dependencies:
       cosmiconfig: 7.0.1
       klona: 2.0.4
-      loader-utils: 2.0.0
+      loader-utils: 2.0.4
       postcss: 7.0.36
       schema-utils: 3.1.1
       semver: 7.3.7
@@ -11505,7 +11514,7 @@ packages:
     peerDependencies:
       webpack: ^4.0.0 || ^5.0.0
     dependencies:
-      loader-utils: 2.0.0
+      loader-utils: 2.0.4
       schema-utils: 3.1.1
       webpack: 4.46.0
     dev: true
@@ -12758,7 +12767,7 @@ packages:
     peerDependencies:
       webpack: ^4.0.0 || ^5.0.0
     dependencies:
-      loader-utils: 2.0.0
+      loader-utils: 2.0.4
       schema-utils: 2.7.1
       webpack: 4.46.0
     dev: true
@@ -12822,12 +12831,12 @@ packages:
       svelte: 3.53.1
     dev: true
 
-  /svelte-loader/3.1.3_svelte@3.53.1:
-    resolution: {integrity: sha512-B7HsKRrWaGB9RFef1t7JXbQ1npG/6J/Tka/ehv6pkxJx+QU9Dd8Sdi415IfhogpWEmH95VgsaWNrNU2GeBJ1VQ==}
+  /svelte-loader/3.1.4_svelte@3.53.1:
+    resolution: {integrity: sha512-DtgVPb03UWhPW0GGlWx+1w6+LeCSnFijpX+4NCUNlRQjuzy8fcjBWaC+Q5cMCrk8JDB8YBqHt+SijDmAz1A/Ww==}
     peerDependencies:
       svelte: '>3.0.0'
     dependencies:
-      loader-utils: 2.0.0
+      loader-utils: 2.0.4
       svelte: 3.53.1
       svelte-dev-helper: 1.1.9
       svelte-hmr: 0.14.7_svelte@3.53.1
@@ -13483,7 +13492,7 @@ packages:
         optional: true
     dependencies:
       file-loader: 6.2.0_webpack@4.46.0
-      loader-utils: 2.0.0
+      loader-utils: 2.0.4
       mime-types: 2.1.31
       schema-utils: 3.1.1
       webpack: 4.46.0
