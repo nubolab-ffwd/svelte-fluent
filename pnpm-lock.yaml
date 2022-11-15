@@ -29,7 +29,7 @@ specifiers:
   jest-transform-svelte: 2.1.1
   jsdom: 20.0.2
   lint-staged: 13.0.3
-  preact: 10.11.0
+  preact: 10.11.3
   prettier: 2.7.1
   prettier-plugin-svelte: 2.8.0
   react: 17.0.2
@@ -56,7 +56,7 @@ devDependencies:
   '@rollup/plugin-node-resolve': 15.0.1_rollup@2.79.1
   '@rollup/plugin-replace': 5.0.1_rollup@2.79.1
   '@storybook/addon-essentials': 6.5.9_caw3gk2hkqeoezhcm4a347drr4
-  '@storybook/addon-storyshots': 6.5.9_2n3uejbcoktkoyffaykom6mo4y
+  '@storybook/addon-storyshots': 6.5.9_h3fdpgsuopnw6og3iecuhj5i5m
   '@storybook/addons': 6.5.9_sfoxds7t5ydpegc3knd667wn6m
   '@storybook/svelte': 6.5.9_kwd67bvou4vh53hsk6gx36gi7i
   '@testing-library/jest-dom': 5.16.5
@@ -72,7 +72,7 @@ devDependencies:
   jest-environment-jsdom: 28.1.3
   jest-transform-svelte: 2.1.1_svelte@3.52.0
   lint-staged: 13.0.3
-  preact: 10.11.0
+  preact: 10.11.3
   prettier: 2.7.1
   prettier-plugin-svelte: 2.8.0_lrllcp5xtrkmmdzifit4hd52ze
   react: 17.0.2
@@ -2388,7 +2388,7 @@ packages:
       ts-dedent: 2.1.1
     dev: true
 
-  /@storybook/addon-storyshots/6.5.9_2n3uejbcoktkoyffaykom6mo4y:
+  /@storybook/addon-storyshots/6.5.9_h3fdpgsuopnw6og3iecuhj5i5m:
     resolution: {integrity: sha512-uJqHCTj1vLYOPwwR68QOb3iwJdD3mAhRuFxZvy7sOOuf2ZSo68hvYudrDChtxI+Tgz2VVvEOZxTrJgYVo/lfmg==}
     peerDependencies:
       '@angular/core': '>=6.0.0'
@@ -2455,8 +2455,8 @@ packages:
       global: 4.4.0
       jest: 28.1.3
       jest-specific-snapshot: 4.0.0_jest@28.1.3
-      preact: 10.11.0
-      preact-render-to-string: 5.1.19_preact@10.11.0
+      preact: 10.11.3
+      preact-render-to-string: 5.1.19_preact@10.11.3
       pretty-format: 26.6.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -11185,17 +11185,17 @@ packages:
       supports-color: 6.1.0
     dev: true
 
-  /preact-render-to-string/5.1.19_preact@10.11.0:
+  /preact-render-to-string/5.1.19_preact@10.11.3:
     resolution: {integrity: sha512-bj8sn/oytIKO6RtOGSS/1+5CrQyRSC99eLUnEVbqUa6MzJX5dYh7wu9bmT0d6lm/Vea21k9KhCQwvr2sYN3rrQ==}
     peerDependencies:
       preact: '>=10'
     dependencies:
-      preact: 10.11.0
+      preact: 10.11.3
       pretty-format: 3.8.0
     dev: true
 
-  /preact/10.11.0:
-    resolution: {integrity: sha512-Fk6+vB2kb6mSJfDgODq0YDhMfl0HNtK5+Uc9QqECO4nlyPAQwCI+BKyWO//idA7ikV7o+0Fm6LQmNuQi1wXI1w==}
+  /preact/10.11.3:
+    resolution: {integrity: sha512-eY93IVpod/zG3uMF22Unl8h9KkrcKIRs2EGar8hwLZZDU1lkjph303V9HZBwufh2s736U6VXuhD109LYqPoffg==}
     dev: true
 
   /prelude-ls/1.1.2:
