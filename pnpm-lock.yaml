@@ -31,7 +31,7 @@ specifiers:
   lint-staged: 13.0.3
   preact: 10.11.3
   prettier: 2.7.1
-  prettier-plugin-svelte: 2.8.0
+  prettier-plugin-svelte: 2.9.0
   react: 18.2.0
   react-dom: 18.2.0
   rollup: 2.79.1
@@ -74,7 +74,7 @@ devDependencies:
   lint-staged: 13.0.3
   preact: 10.11.3
   prettier: 2.7.1
-  prettier-plugin-svelte: 2.8.0_nryolsexf6k3znhuh4uzpugsem
+  prettier-plugin-svelte: 2.9.0_nryolsexf6k3znhuh4uzpugsem
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   rollup: 2.79.1
@@ -11166,8 +11166,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-svelte/2.8.0_nryolsexf6k3znhuh4uzpugsem:
-    resolution: {integrity: sha512-QlXv/U3bUszks3XYDPsk1fsaQC+fo2lshwKbcbO+lrSVdJ+40mB1BfL8OCAk1W9y4pJxpqO/4gqm6NtF3zNGCw==}
+  /prettier-plugin-svelte/2.9.0_nryolsexf6k3znhuh4uzpugsem:
+    resolution: {integrity: sha512-3doBi5NO4IVgaNPtwewvrgPpqAcvNv0NwJNflr76PIGgi9nf1oguQV1Hpdm9TI2ALIQVn/9iIwLpBO5UcD2Jiw==}
     peerDependencies:
       prettier: ^1.16.4 || ^2.0.0
       svelte: ^3.2.0
