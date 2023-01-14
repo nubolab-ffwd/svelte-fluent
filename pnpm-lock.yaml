@@ -30,7 +30,7 @@ specifiers:
   jsdom: 20.0.2
   lint-staged: 13.0.3
   preact: 10.11.3
-  prettier: 2.7.1
+  prettier: 2.8.3
   prettier-plugin-svelte: 2.8.0
   react: 18.2.0
   react-dom: 18.2.0
@@ -73,8 +73,8 @@ devDependencies:
   jest-transform-svelte: 2.1.1_svelte@3.53.1
   lint-staged: 13.0.3
   preact: 10.11.3
-  prettier: 2.7.1
-  prettier-plugin-svelte: 2.8.0_nryolsexf6k3znhuh4uzpugsem
+  prettier: 2.8.3
+  prettier-plugin-svelte: 2.8.0_bbwetjwp3cbrkywfc62aafzv6y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   rollup: 2.79.1
@@ -11166,13 +11166,13 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-svelte/2.8.0_nryolsexf6k3znhuh4uzpugsem:
+  /prettier-plugin-svelte/2.8.0_bbwetjwp3cbrkywfc62aafzv6y:
     resolution: {integrity: sha512-QlXv/U3bUszks3XYDPsk1fsaQC+fo2lshwKbcbO+lrSVdJ+40mB1BfL8OCAk1W9y4pJxpqO/4gqm6NtF3zNGCw==}
     peerDependencies:
       prettier: ^1.16.4 || ^2.0.0
       svelte: ^3.2.0
     dependencies:
-      prettier: 2.7.1
+      prettier: 2.8.3
       svelte: 3.53.1
     dev: true
 
@@ -11182,8 +11182,8 @@ packages:
     hasBin: true
     dev: true
 
-  /prettier/2.7.1:
-    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
+  /prettier/2.8.3:
+    resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
