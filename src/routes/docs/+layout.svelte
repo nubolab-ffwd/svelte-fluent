@@ -6,8 +6,8 @@
 </script>
 
 <script lang="ts">
-	import { headings as gettingStartedHeadings } from './getting-started.svelte.md';
-	import { headings as tutorialHeadings } from './tutorial.svelte.md';
+	import { headings as gettingStartedHeadings } from './getting-started/+page.svelte.md';
+	import { headings as tutorialHeadings } from './tutorial/+page.svelte.md';
 	import SidebarMenu, { type Item as MenuItem } from './_SidebarMenu.svelte';
 
 	$: menu = [

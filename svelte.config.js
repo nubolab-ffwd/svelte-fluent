@@ -4,7 +4,7 @@ import mdsvexConfig from './mdsvex.config.js';
 import adapter from '@sveltejs/adapter-auto';
 import preprocess from 'svelte-preprocess';
 
-/** @type {import('@sveltejs/kit').Config} */
+/** @type {import('@sveltejs/package').Config} */
 const config = {
 	extensions: ['.svelte', ...mdsvexConfig.extensions],
 
@@ -16,10 +16,10 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			'@nubolab-ffwd/svelte-fluent': 'src/lib' // used in examples so that import look more like real-world usage
-		},
-		package: {
-			files: mm.matcher('!site/**/*')
 		}
+	},
+	package: {
+		files: mm.matcher('!site/**/*')
 	}
 };
 
