@@ -1,7 +1,8 @@
-<script context="module" type="ts">
+<script context="module" lang="ts">
 	import { getContext, setContext, createEventDispatcher } from 'svelte';
 	import { mapBundleSync } from '@fluent/sequence';
-	import { derived, writable, type Readable } from 'svelte/store';
+	import { derived, writable } from 'svelte/store';
+	import type { Readable } from 'svelte/store';
 	import type { FluentBundle, FluentVariable } from '@fluent/bundle';
 
 	const CONTEXT_KEY = {};
@@ -68,7 +69,7 @@
 	}
 </script>
 
-<script type="ts">
+<script lang="ts">
 	import { CachedSyncIterable } from 'cached-iterable';
 	import { tick } from 'svelte';
 	export let bundles: Iterable<FluentBundle> = [];

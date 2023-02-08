@@ -1,4 +1,4 @@
-<script type="ts">
+<script lang="ts">
 	import type { FluentVariable } from '@fluent/bundle';
 
 	import { onMount } from 'svelte';
