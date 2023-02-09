@@ -4,7 +4,12 @@
 	--theme-color-background: #fff;
 	--theme-color-text: #000;
 	--theme-color-primary: #2e5eaa;
-	--theme-color-secondary: #55d6be;
+	--theme-color-secondary: #5b4e77;
+	--theme-color-tertiary: #7cea9c;
+	--theme-color-tertiary-light: #cbf7d7;
+	--theme-color-tertiary-dark: #147b32;
+
+	--theme-color-container-background: var(--theme-color-tertiary);
 }
 
 body {
@@ -13,5 +18,27 @@ body {
 }
 
 a {
-	color: var(--theme-color-primary);
+	color: var(--theme-color-tertiary-dark);
+}
+
+blockquote {
+	/* background-color: var(--theme-color-container-background); */
+	border: var(--border-thin) solid var(--theme-color-tertiary);
+	padding: var(--space);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	& > * {
+		margin-block: 0;
+	}
+	& > * + * {
+		margin-block-start: var(--space, 1rem);
+	}
+}
+
+p code {
+	padding: 0.2rem 0.4rem;
+	margin: 0 0.2rem;
+	background-color: var(--theme-color-container-background);
 }

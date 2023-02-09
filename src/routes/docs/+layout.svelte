@@ -14,12 +14,12 @@
 		{
 			text: 'Getting started',
 			href: '/docs/getting-started',
-			submenu: buildHeadingSubmenu('/docs/getting-started', gettingStartedHeadings)
+			submenu: buildHeadingSubmenu('/docs/getting-started', gettingStartedHeadings, 2)
 		},
 		{
 			text: 'Tutorial',
 			href: '/docs/tutorial',
-			submenu: buildHeadingSubmenu('/docs/tutorial', tutorialHeadings)
+			submenu: buildHeadingSubmenu('/docs/tutorial', tutorialHeadings, 2)
 		},
 		{
 			text: 'Components',
@@ -32,7 +32,7 @@
 	];
 
 	type Heading = { text: string; id: string; rank: number };
-	function buildHeadingSubmenu(baseHref: string, headings: Heading[], rank = 5): MenuItem[] {
+	function buildHeadingSubmenu(baseHref: string, headings: Heading[], rank: number): MenuItem[] {
 		return headings
 			.filter((h) => h.rank === rank)
 			.map((h) => ({
@@ -47,7 +47,7 @@
 		<SidebarMenu items={menu} />
 	</aside>
 	<div>
-		<div class="center">
+		<div class="center with-gutters">
 			<div class="stack"><slot /></div>
 		</div>
 	</div>

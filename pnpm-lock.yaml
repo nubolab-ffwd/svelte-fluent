@@ -7,6 +7,7 @@ specifiers:
   '@fluent/dom': 0.8.1
   '@fluent/langneg': 0.6.2
   '@fluent/sequence': 0.7.0
+  '@fontsource/manrope': ^4.5.13
   '@sveltejs/adapter-auto': 2.0.0
   '@sveltejs/kit': 1.5.0
   '@sveltejs/package': ^1.0.2
@@ -35,6 +36,7 @@ specifiers:
   postcss-preset-env: ^8.0.1
   prettier: 2.8.4
   prettier-plugin-svelte: 2.9.0
+  rehype-add-classes: ^1.0.0
   rehype-shift-heading: ^1.0.2
   rehype-slug: ^5.1.0
   sass: ^1.58.0
@@ -59,6 +61,7 @@ devDependencies:
   '@commitlint/config-conventional': 17.4.2
   '@fluent/bundle': 0.17.1
   '@fluent/langneg': 0.6.2
+  '@fontsource/manrope': 4.5.13
   '@sveltejs/adapter-auto': 2.0.0_@sveltejs+kit@1.5.0
   '@sveltejs/kit': 1.5.0_svelte@3.55.1+vite@4.1.1
   '@sveltejs/package': 1.0.2_4x7phaipmicbaooxtnresslofa
@@ -85,6 +88,7 @@ devDependencies:
   postcss-preset-env: 8.0.1_postcss@8.4.21
   prettier: 2.8.4
   prettier-plugin-svelte: 2.9.0_jrsxveqmsx2uadbqiuq74wlc4u
+  rehype-add-classes: 1.0.0
   rehype-shift-heading: 1.0.2
   rehype-slug: 5.1.0
   sass: 1.58.0
@@ -794,6 +798,10 @@ packages:
       '@fluent/bundle': 0.17.1
     dev: false
 
+  /@fontsource/manrope/4.5.13:
+    resolution: {integrity: sha512-UFN5DMGBp8nFpwhPQXfpSbsEm4OVISqUKQy+rA+pb1zYGoH+OGN1woKEND8VLx+pC7rY3nrPRCJvSuuOaNdW7Q==}
+    dev: true
+
   /@humanwhocodes/config-array/0.11.8:
     resolution: {integrity: sha512-UybHIJzJnR5Qc/MsD9Kr+RpO2h+/P1GhOwdiLPXK5TWk5sgTdu88bTD9UP+CKbPPh5Rni1u0GjAdYQLemG8g+g==}
     engines: {node: '>=10.10.0'}
@@ -1401,6 +1409,10 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /boolbase/1.0.0:
+    resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
+    dev: true
+
   /brace-expansion/1.1.11:
     resolution: {integrity: sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==}
     dependencies:
@@ -1480,6 +1492,11 @@ packages:
       camelcase: 5.3.1
       map-obj: 4.3.0
       quick-lru: 4.0.1
+    dev: true
+
+  /camelcase/3.0.0:
+    resolution: {integrity: sha512-4nhGqUkc4BqbBBB4Q6zLuD7lzzrHYrjKGeYaEji/3tFR5VdJu9v+LilhGIVe8wxEJPPOeWo7eg8dwY13TZ1BNg==}
+    engines: {node: '>=0.10.0'}
     dev: true
 
   /camelcase/5.3.1:
@@ -1607,6 +1624,10 @@ packages:
     engines: {node: '>= 0.8'}
     dependencies:
       delayed-stream: 1.0.0
+
+  /comma-separated-tokens/1.0.8:
+    resolution: {integrity: sha512-GHuDRO12Sypu2cV70d1dkA2EUmXHgntrzbpvOB+Qy+49ypNfGgFQIC2fhhXbnyrJRynDCAARsT7Ou0M6hirpfw==}
+    dev: true
 
   /commander/9.5.0:
     resolution: {integrity: sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==}
@@ -1742,6 +1763,10 @@ packages:
       postcss: ^8.4
     dependencies:
       postcss: 8.4.21
+    dev: true
+
+  /css-selector-parser/1.4.1:
+    resolution: {integrity: sha512-HYPSb7y/Z7BNDCOrakL4raGO2zltZkbeXyAd6Tg9obzix6QhzxCotdBl6VT0Dv4vZfJGVz3WL/xaEI9Ly3ul0g==}
     dev: true
 
   /cssdb/7.4.1:
@@ -2544,6 +2569,10 @@ packages:
       function-bind: 1.1.1
     dev: true
 
+  /hast-util-has-property/1.0.4:
+    resolution: {integrity: sha512-ghHup2voGfgFoHMGnaLHOjbYFACKrRh9KFttdCzMCbFoBMJXiNi2+XTrPP8+q6cDJM/RSqlCfVWrjp1H201rZg==}
+    dev: true
+
   /hast-util-has-property/2.0.0:
     resolution: {integrity: sha512-4Qf++8o5v14us4Muv3HRj+Er6wTNGA/N9uCaZMty4JWvyFKLdhULrv4KE1b65AthsSO9TXSZnjuxS8ecIyhb0w==}
     dev: true
@@ -2552,6 +2581,26 @@ packages:
     resolution: {integrity: sha512-iAuRp+ESgJoRFJbSyaqsfvJDY6zzmFoEnL1gtz1+U8gKtGGj1p0CVlysuUAUjq95qlZESHINLThwJzNGmgGZxA==}
     dependencies:
       '@types/hast': 2.3.4
+    dev: true
+
+  /hast-util-is-element/1.1.0:
+    resolution: {integrity: sha512-oUmNua0bFbdrD/ELDSSEadRVtWZOf3iF6Lbv81naqsIV99RnSCieTbWuWCY8BAeEfKJTKl0gRdokv+dELutHGQ==}
+    dev: true
+
+  /hast-util-select/1.0.1:
+    resolution: {integrity: sha512-wNFpEC9Or4YTcSzDERXu5n7L+dNTy9tLbqW+LMIkCH69g9NkLEKcGBoXUnJwOVG5KmecLmHxVbrRh3RJmUxtmA==}
+    dependencies:
+      camelcase: 3.0.0
+      comma-separated-tokens: 1.0.8
+      css-selector-parser: 1.4.1
+      hast-util-has-property: 1.0.4
+      hast-util-is-element: 1.1.0
+      hast-util-whitespace: 1.0.4
+      not: 0.1.0
+      nth-check: 1.0.2
+      property-information: 3.2.0
+      space-separated-tokens: 1.1.5
+      zwitch: 1.0.5
     dev: true
 
   /hast-util-shift-heading/3.0.0:
@@ -2567,6 +2616,10 @@ packages:
     resolution: {integrity: sha512-02AQ3vLhuH3FisaMM+i/9sm4OXGSq1UhOOCpTLLQtHdL3tZt7qil69r8M8iDkZYyC0HCFylcYoP+8IO7ddta1A==}
     dependencies:
       '@types/hast': 2.3.4
+    dev: true
+
+  /hast-util-whitespace/1.0.4:
+    resolution: {integrity: sha512-I5GTdSfhYfAPNztx2xJRQpG8cuDSNt599/7YUn7Gx/WxNMsG+a835k97TDkFgk123cwjfwINaZknkKkphx/f2A==}
     dev: true
 
   /hosted-git-info/2.8.9:
@@ -3423,6 +3476,10 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /not/0.1.0:
+    resolution: {integrity: sha512-5PDmaAsVfnWUgTUbJ3ERwn7u79Z0dYxN9ErxCpVJJqe2RK0PJ3z+iFUxuqjwtlDDegXvtWoxD/3Fzxox7tFGWA==}
+    dev: true
+
   /npm-run-all/4.1.5:
     resolution: {integrity: sha512-Oo82gJDAVcaMdi3nuoKFavkIHBRVqQ1qvMb+9LHk/cF4P6B2m8aP04hGf7oL6wZ9BuGwX1onlLhpuoofSyoQDQ==}
     engines: {node: '>= 4'}
@@ -3451,6 +3508,12 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       path-key: 4.0.0
+    dev: true
+
+  /nth-check/1.0.2:
+    resolution: {integrity: sha512-WeBOdju8SnzPN5vTUJYxYUxLeXpCaVP5i5e0LF8fg7WORF2Wd7wFX/pk0tYZk7s8T+J7VLy0Da6J1+wCT0AtHg==}
+    dependencies:
+      boolbase: 1.0.0
     dev: true
 
   /nwsapi/2.2.2:
@@ -4112,6 +4175,10 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  /property-information/3.2.0:
+    resolution: {integrity: sha512-BKU45RMZAA+3npkQ/VxEH7EeZImQcfV6rfKH0O4HkkDz3uqqz+689dbkjiWia00vK390MY6EARPS6TzNS4tXPg==}
+    dev: true
+
   /psl/1.9.0:
     resolution: {integrity: sha512-E/ZsdU4HLs/68gYzgGTkMicWTLPdAftJLfJFlLUAAKZGkStNU72sZjT66SnMDVOfOWY/YAoiD7Jxa9iHvngcag==}
 
@@ -4208,6 +4275,12 @@ packages:
   /regexpp/3.2.0:
     resolution: {integrity: sha512-pq2bWo9mVD43nbts2wGv17XLiNLya+GklZ8kaDLV2Z08gDCsGpnKn9BFMepvWuHCbyVvY7J5o5+BVvoQbmlJLg==}
     engines: {node: '>=8'}
+    dev: true
+
+  /rehype-add-classes/1.0.0:
+    resolution: {integrity: sha512-Iz8t2KhCNAL+0AHKjxb+kVwsHk/pI3Cy4k0R70ZGzoQiZ7WQm3o8+3odJkMhFRfcNIK1lNShIHEdC90H5LwLdg==}
+    dependencies:
+      hast-util-select: 1.0.1
     dev: true
 
   /rehype-shift-heading/1.0.2:
@@ -4515,6 +4588,10 @@ packages:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
     engines: {node: '>=0.10.0'}
     requiresBuild: true
+
+  /space-separated-tokens/1.1.5:
+    resolution: {integrity: sha512-q/JSVd1Lptzhf5bkYm4ob4iWPjx0KiRe3sRFBNrVqbJkFaBm5vbbowy1mymoPNLRa52+oadOhJ+K49wsSeSjTA==}
+    dev: true
 
   /spdx-correct/3.1.1:
     resolution: {integrity: sha512-cOYcUWwhCuHCXi49RhFRCyJEK3iPj1Ziz9DpViV3tbZOwXD49QzIN3MpOLJNxh2qwq2lJJZaKMVw9qNi4jTC0w==}
@@ -5475,4 +5552,8 @@ packages:
   /yocto-queue/1.0.0:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
+    dev: true
+
+  /zwitch/1.0.5:
+    resolution: {integrity: sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==}
     dev: true

@@ -31,37 +31,51 @@ shared-photos =
 	}
 </script>
 
-<div class="stack">
-	<h1>Svelte Fluent</h1>
-	<p>
-		Localize your Svelte applications with the <a href="https://projectfluent.org/">
-			Fluent localisation system
-		</a>.
-	</p>
+<div class="center with-gutters">
+	<div class="stack">
+		<h1>Svelte Fluent</h1>
+		<p>
+			Localize your Svelte applications with the <a href="https://projectfluent.org/">
+				Fluent localisation system
+			</a>.
+		</p>
 
-	<h2>Try it out</h2>
-	<div>
-		<Editor bind:text={ftlSource} height="12rem" />
-	</div>
-
-	<div class="variables">
-		<label>$userName <input type="text" bind:value={ftlArgs.userName} /></label>
-		<label>
-			$userGender
-			<select bind:value={ftlArgs.userGender}>
-				<option value="male">male</option>
-				<option value="female">female</option>
-				<option value="unspecified">unspecified</option>
-			</select>
-		</label>
-		<label>$photoCount <input type="range" min="1" max="9" bind:value={ftlArgs.photoCount} /></label
-		>
-	</div>
-
-	<FluentProvider bundles={[bundle]}>
-		<div class="results">
-			<div><strong>hello-user</strong> <Localized id="hello-user" args={ftlArgs} /></div>
-			<div><strong>shared-photos</strong> <Localized id="shared-photos" args={ftlArgs} /></div>
+		<h2>Try it out</h2>
+		<div>
+			<Editor bind:text={ftlSource} height="12rem" />
 		</div>
-	</FluentProvider>
+
+		<div class="variables">
+			<label>$userName <input type="text" bind:value={ftlArgs.userName} /></label>
+			<label>
+				$userGender
+				<select bind:value={ftlArgs.userGender}>
+					<option value="male">male</option>
+					<option value="female">female</option>
+					<option value="unspecified">unspecified</option>
+				</select>
+			</label>
+			<label
+				>$photoCount <input type="range" min="1" max="9" bind:value={ftlArgs.photoCount} /></label
+			>
+		</div>
+
+		<FluentProvider bundles={[bundle]}>
+			<dl class="results">
+				<dt>hello-user</dt>
+				<dd><Localized id="hello-user" args={ftlArgs} /></dd>
+				<dt>shared-photos</dt>
+				<dd><Localized id="shared-photos" args={ftlArgs} /></dd>
+			</dl>
+		</FluentProvider>
+	</div>
 </div>
+
+<style lang="postcss">
+	.results {
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 1fr 2fr;
+		align-items: start;
+	}
+</style>

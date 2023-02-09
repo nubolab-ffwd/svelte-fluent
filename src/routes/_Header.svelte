@@ -10,6 +10,6 @@
 
 <style lang="postcss">
 	header {
-		padding: var(--s1);
+		padding: var(--space);
 	}
 </style>

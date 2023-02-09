@@ -15,12 +15,12 @@
 	--color-light: var(--theme-color-background);
 	--color-dark: var(--theme-color-text);
 
-	padding: var(--padding, var(--s1));
+	padding: var(--padding, var(--space, 1rem));
 	border: var(--border-thin) solid;
 	color: var(--color-dark);
 	background-color: var(--color-light);
 
-	&--invert {
+	&.invert {
 		color: var(--color-light);
 		background-color: var(--color-dark);
 	}
@@ -34,14 +34,14 @@
 	margin-inline: auto;
 	max-inline-size: var(--measure);
 
-	&--text {
+	&.text {
 		text-align: center;
 	}
-	&--with-gutters {
+	&.with-gutters {
 		padding-inline-start: var(--gutters, 1rem);
 		padding-inline-end: var(--gutters, 1rem);
 	}
-	&--intrinsic {
+	&.intrinsic {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -73,17 +73,17 @@
 		flex-grow: 999;
 		min-inline-size: var(--x-content-min);
 	}
-	&--right > :first-child {
+	&.right > :first-child {
 		flex-basis: 0;
 		flex-grow: 999;
 		min-inline-size: var(--x-content-min);
 	}
-	&--right > :last-child {
+	&.right > :last-child {
 		flex-basis: var(--x-side-width);
 		flex-grow: 1;
 		min-inline-size: unset;
 	}
-	&--no-stretch {
+	&.no-stretch {
 		align-items: flex-start;
 	}
 }

@@ -4,11 +4,9 @@
 </script>
 
 {#each Object.entries(sources) as [name, source]}
-	<div>
-		<strong>{name}</strong>
-	</div>
-	<div class="box source">
-		<pre><code>{source}</code></pre>
+	<div class="code-block">
+		<span class="filepath">{name}</span>
+		<pre class="box"><code>{source}</code></pre>
 	</div>
 {/each}
 
@@ -18,9 +16,6 @@
 </div>
 
 <style lang="postcss">
-	.source {
-		overflow-y: auto;
-	}
 	.rendered {
 		& :global(input),
 		& :global(select),
