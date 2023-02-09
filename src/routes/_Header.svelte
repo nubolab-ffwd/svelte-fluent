@@ -8,7 +8,7 @@
 	</div>
 </header>
 
-<style lang="scss">
+<style lang="postcss">
 	header {
 		padding: var(--s1);
 	}

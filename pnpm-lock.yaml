@@ -15,6 +15,7 @@ specifiers:
   '@types/jsdom': ^21.1.0
   '@typescript-eslint/eslint-plugin': 5.51.0
   '@typescript-eslint/parser': 5.51.0
+  autoprefixer: ^10.4.13
   brace: ^0.11.1
   cached-iterable: 0.3.0
   eslint: 8.33.0
@@ -66,6 +67,7 @@ devDependencies:
   '@types/jsdom': 21.1.0
   '@typescript-eslint/eslint-plugin': 5.51.0_b635kmla6dsb4frxfihkw4m47e
   '@typescript-eslint/parser': 5.51.0_4vsywjlpuriuw3tl5oq6zy5a64
+  autoprefixer: 10.4.13_postcss@8.4.21
   brace: 0.11.1
   eslint: 8.33.0
   eslint-config-prettier: 8.6.0_eslint@8.33.0

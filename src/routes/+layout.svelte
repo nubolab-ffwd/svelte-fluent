@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '$lib/site/styles/app.scss';
+	import '../app.postcss';
 	import Header from './_Header.svelte';
 </script>
 

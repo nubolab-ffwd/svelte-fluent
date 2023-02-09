@@ -17,7 +17,7 @@
 	<svelte:component this={component} />
 </div>
 
-<style lang="scss">
+<style lang="postcss">
 	.source {
 		overflow-y: auto;
 	}
