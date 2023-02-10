@@ -1,5 +1,14 @@
 @import '@fontsource/manrope/variable.css';
 
+@font-face {
+	font-family: 'Mensch';
+	src: url('../fonts/Mensch-Regular.woff2') format('woff2'),
+		url('../fonts/Mensch-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
 :root {
 	--ratio: 1.4;
 	--s-5: calc(var(--s-4) / var(--ratio));
@@ -87,6 +96,46 @@ a {
 }
 
 pre {
+	max-width: 100%;
+	overflow-x: auto;
+	tab-size: 2;
+}
+
+pre,
+code {
+	font-family: Mensch;
+}
+
+code {
+	font-size: var(--s-1);
+}
+
+input,
+button,
+select {
+	font-size: 1rem;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	& td,
+	th {
+		border-width: var(--border-thin);
+		border-style: solid;
+		padding: var(--s-1);
+		text-align: left;
+	}
+	& th {
+		font-variation-settings: 'wght' 570;
+	}
+	& th,
+	code {
+		white-space: nowrap;
+	}
+}
+
+.responsive-table {
 	max-width: 100%;
 	overflow-x: auto;
 }

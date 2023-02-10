@@ -42,7 +42,7 @@ shared-photos =
 
 		<h2>Try it out</h2>
 		<div>
-			<Editor bind:text={ftlSource} height="12rem" />
+			<Editor bind:text={ftlSource} />
 		</div>
 
 		<div class="variables">

@@ -39,6 +39,7 @@ specifiers:
   rehype-add-classes: ^1.0.0
   rehype-shift-heading: ^1.0.2
   rehype-slug: ^5.1.0
+  rehype-wrap-all: ^1.1.0
   sass: ^1.58.0
   svelte: ^3.54.0
   svelte-ace: ^1.0.21
@@ -91,6 +92,7 @@ devDependencies:
   rehype-add-classes: 1.0.0
   rehype-shift-heading: 1.0.2
   rehype-slug: 5.1.0
+  rehype-wrap-all: 1.1.0
   sass: 1.58.0
   svelte: 3.55.1
   svelte-ace: 1.0.21
@@ -1404,6 +1406,10 @@ packages:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
     dev: true
 
+  /bcp-47-match/1.0.3:
+    resolution: {integrity: sha512-LggQ4YTdjWQSKELZF5JwchnBa1u0pIQSZf5lSdOHEdbVP55h0qICA/FUp3+W99q0xqxYa1ZQizTUH87gecII5w==}
+    dev: true
+
   /binary-extensions/2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
@@ -1908,6 +1914,11 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       path-type: 4.0.0
+    dev: true
+
+  /direction/1.0.4:
+    resolution: {integrity: sha512-GYqKi1aH7PJXxdhTeZBFrg8vUBeKXi+cNprXsC1kpJcbcVnV9wBsrOu1cQEdG0WeQwlfHiy3XvnKfIrJ2R0NzQ==}
+    hasBin: true
     dev: true
 
   /doctrine/3.0.0:
@@ -2587,6 +2598,10 @@ packages:
     resolution: {integrity: sha512-oUmNua0bFbdrD/ELDSSEadRVtWZOf3iF6Lbv81naqsIV99RnSCieTbWuWCY8BAeEfKJTKl0gRdokv+dELutHGQ==}
     dev: true
 
+  /hast-util-parse-selector/2.2.5:
+    resolution: {integrity: sha512-7j6mrk/qqkSehsM92wQjdIgWM2/BW61u/53G6xmC8i1OmEdKLHbk419QKQUjz6LglWsfqoiHmyMRkP1BGjecNQ==}
+    dev: true
+
   /hast-util-select/1.0.1:
     resolution: {integrity: sha512-wNFpEC9Or4YTcSzDERXu5n7L+dNTy9tLbqW+LMIkCH69g9NkLEKcGBoXUnJwOVG5KmecLmHxVbrRh3RJmUxtmA==}
     dependencies:
@@ -2603,6 +2618,25 @@ packages:
       zwitch: 1.0.5
     dev: true
 
+  /hast-util-select/4.0.2:
+    resolution: {integrity: sha512-8EEG2//bN5rrzboPWD2HdS3ugLijNioS1pqOTIolXNf67xxShYw4SQEmVXd3imiBG+U2bC2nVTySr/iRAA7Cjg==}
+    dependencies:
+      bcp-47-match: 1.0.3
+      comma-separated-tokens: 1.0.8
+      css-selector-parser: 1.4.1
+      direction: 1.0.4
+      hast-util-has-property: 1.0.4
+      hast-util-is-element: 1.1.0
+      hast-util-to-string: 1.0.4
+      hast-util-whitespace: 1.0.4
+      not: 0.1.0
+      nth-check: 2.1.1
+      property-information: 5.6.0
+      space-separated-tokens: 1.1.5
+      unist-util-visit: 2.0.3
+      zwitch: 1.0.5
+    dev: true
+
   /hast-util-shift-heading/3.0.0:
     resolution: {integrity: sha512-I2FctYjdGABQHfTVeOGin5u7UZpQhgUaU00RANKpfm48/qwpUBVIT4o+M42y75ezbKlkE4TNc8yp9pNPlsPPAw==}
     dependencies:
@@ -2610,6 +2644,10 @@ packages:
       '@types/unist': 2.0.6
       hast-util-heading-rank: 2.1.1
       unist-util-visit: 3.1.0
+    dev: true
+
+  /hast-util-to-string/1.0.4:
+    resolution: {integrity: sha512-eK0MxRX47AV2eZ+Lyr18DCpQgodvaS3fAQO2+b9Two9F5HEoRPhiUMNzoXArMJfZi2yieFzUBMRl3HNJ3Jus3w==}
     dev: true
 
   /hast-util-to-string/2.0.0:
@@ -3516,6 +3554,12 @@ packages:
       boolbase: 1.0.0
     dev: true
 
+  /nth-check/2.1.1:
+    resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
+    dependencies:
+      boolbase: 1.0.0
+    dev: true
+
   /nwsapi/2.2.2:
     resolution: {integrity: sha512-90yv+6538zuvUMnN+zCr8LuV6bPFdq50304114vJYJ8RDyK8D5O9Phpbd6SZWgI7PwzmmfN1upeOJlvybDSgCw==}
 
@@ -4179,6 +4223,12 @@ packages:
     resolution: {integrity: sha512-BKU45RMZAA+3npkQ/VxEH7EeZImQcfV6rfKH0O4HkkDz3uqqz+689dbkjiWia00vK390MY6EARPS6TzNS4tXPg==}
     dev: true
 
+  /property-information/5.6.0:
+    resolution: {integrity: sha512-YUHSPk+A30YPv+0Qf8i9Mbfe/C0hdPXk1s1jPVToV8pk8BQtpw10ct89Eo7OWkutrwqvT0eicAxlOg3dOAu8JA==}
+    dependencies:
+      xtend: 4.0.2
+    dev: true
+
   /psl/1.9.0:
     resolution: {integrity: sha512-E/ZsdU4HLs/68gYzgGTkMicWTLPdAftJLfJFlLUAAKZGkStNU72sZjT66SnMDVOfOWY/YAoiD7Jxa9iHvngcag==}
 
@@ -4301,6 +4351,15 @@ packages:
       hast-util-to-string: 2.0.0
       unified: 10.1.2
       unist-util-visit: 4.1.2
+    dev: true
+
+  /rehype-wrap-all/1.1.0:
+    resolution: {integrity: sha512-AFiCZqyJXnD2NF4ZjuVpW9aZuD+bz5YdkIF+bL66jmExdh6efgb9LAtUx+Rw1puMwRPGPqBXXYl9bEzi59Cq8g==}
+    engines: {node: '>=8.0'}
+    dependencies:
+      hast-util-parse-selector: 2.2.5
+      hast-util-select: 4.0.2
+      unist-util-visit: 2.0.3
     dev: true
 
   /require-directory/2.1.1:
@@ -5091,6 +5150,10 @@ packages:
       vfile: 5.3.4
     dev: true
 
+  /unist-util-is/4.1.0:
+    resolution: {integrity: sha512-ZOQSsnce92GrxSqlnEEseX0gi7GH9zTJZ0p9dtu87WRb/37mMPO2Ilx1s/t9vBHrFhbgweUwb+t7cIn5dxPhZg==}
+    dev: true
+
   /unist-util-is/5.1.1:
     resolution: {integrity: sha512-F5CZ68eYzuSvJjGhCLPL3cYx45IxkqXSetCcRgUXtbcm50X2L9oOWQlfUfDdAf+6Pd27YDblBfdtmsThXmwpbQ==}
     dev: true
@@ -5111,6 +5174,13 @@ packages:
       '@types/unist': 2.0.6
     dev: true
 
+  /unist-util-visit-parents/3.1.1:
+    resolution: {integrity: sha512-1KROIZWo6bcMrZEwiH2UrXDyalAa0uqzWCxCJj6lPOvTve2WkfgCytoDTPaMnodXh1WrXOq0haVYHj99ynJlsg==}
+    dependencies:
+      '@types/unist': 2.0.6
+      unist-util-is: 4.1.0
+    dev: true
+
   /unist-util-visit-parents/4.1.1:
     resolution: {integrity: sha512-1xAFJXAKpnnJl8G7K5KgU7FY55y3GcLIXqkzUj5QF/QVP7biUm0K0O2oqVkYsdjzJKifYeWn9+o6piAK2hGSHw==}
     dependencies:
@@ -5122,7 +5192,15 @@ packages:
     resolution: {integrity: sha512-x6+y8g7wWMyQhL1iZfhIPhDAs7Xwbn9nRosDXl7qoPTSCy0yNxnKc+hWokFifWQIDGi154rdUqKvbCa4+1kLhg==}
     dependencies:
       '@types/unist': 2.0.6
-      unist-util-is: 5.1.1
+      unist-util-is: 5.2.0
+    dev: true
+
+  /unist-util-visit/2.0.3:
+    resolution: {integrity: sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q==}
+    dependencies:
+      '@types/unist': 2.0.6
+      unist-util-is: 4.1.0
+      unist-util-visit-parents: 3.1.1
     dev: true
 
   /unist-util-visit/3.1.0:
@@ -5496,6 +5574,11 @@ packages:
 
   /xmlchars/2.2.0:
     resolution: {integrity: sha512-JZnDKK8B0RCDw84FNdDAIpZK+JuJw+s7Lz8nksI7SIuU3UXJJslUthsi+uWBUYOwPFwW7W7PRLRfUKpxjtjFCw==}
+
+  /xtend/4.0.2:
+    resolution: {integrity: sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==}
+    engines: {node: '>=0.4'}
+    dev: true
 
   /y18n/5.0.8:
     resolution: {integrity: sha512-0pfFzegeDWJHJIAmTLRP2DwHjdF5s7jo9tuztdQxAhINCdvS+3nGINqPd00AphqJR/0LhANUS6/+7SCb98YOfA==}

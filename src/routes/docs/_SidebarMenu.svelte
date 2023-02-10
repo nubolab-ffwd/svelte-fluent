@@ -20,3 +20,28 @@
 		</li>
 	{/each}
 </ul>
+
+<style lang="postcss">
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-size: var(--s-1);
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		& > li:has(ul) {
+			& + li {
+				margin-block-start: var(--s2, 1rem);
+			}
+			& > a {
+				text-transform: uppercase;
+				font-variation-settings: 'wght' 570;
+				letter-spacing: 0.1em;
+			}
+		}
+		& a {
+			color: #555;
+		}
+	}
+</style>

@@ -1,6 +1,7 @@
 import { defineMDSveXConfig as defineConfig } from 'mdsvex';
 import rehypeSlug from 'rehype-slug';
 import rehypeHeadings from './utils/rehype-headings.js';
+import rehypeWrap from 'rehype-wrap-all';
 
 // custom highlighter due to inability to add classes otherwise
 // see https://github.com/pngwn/MDsveX/issues/100
@@ -19,7 +20,11 @@ const config = defineConfig({
 	},
 
 	remarkPlugins: [],
-	rehypePlugins: [rehypeSlug, rehypeHeadings]
+	rehypePlugins: [
+		rehypeSlug,
+		rehypeHeadings,
+		[rehypeWrap, { selector: 'table', wrapper: 'div.responsive-table' }]
+	]
 });
 
 export default config;

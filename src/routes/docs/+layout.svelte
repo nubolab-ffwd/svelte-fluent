@@ -8,6 +8,7 @@
 <script lang="ts">
 	import { headings as gettingStartedHeadings } from './getting-started/+page.svelte.md';
 	import { headings as tutorialHeadings } from './tutorial/+page.svelte.md';
+	import { headings as componentsHeadings } from './components/+page.svelte.md';
 	import SidebarMenu, { type Item as MenuItem } from './_SidebarMenu.svelte';
 
 	$: menu = [
@@ -23,11 +24,8 @@
 		},
 		{
 			text: 'Components',
-			submenu: [
-				{ text: 'FluentProvider', href: '/docs/fluent-provider' },
-				{ text: 'Localized', href: '/docs/localized' },
-				{ text: 'Overlay', href: '/docs/overlay' }
-			]
+			href: '/docs/components',
+			submenu: buildHeadingSubmenu('/docs/components', componentsHeadings, 2)
 		}
 	];
 
@@ -42,9 +40,11 @@
 	}
 </script>
 
-<div class="with-sidebar">
+<div class="with-sidebar wrap-reverse">
 	<aside>
-		<SidebarMenu items={menu} />
+		<nav aria-label="Docs">
+			<SidebarMenu items={menu} />
+		</nav>
 	</aside>
 	<div>
 		<div class="center with-gutters">
@@ -52,3 +52,9 @@
 		</div>
 	</div>
 </div>
+
+<style lang="postcss">
+	nav {
+		padding-inline: var(--space);
+	}
+</style>
