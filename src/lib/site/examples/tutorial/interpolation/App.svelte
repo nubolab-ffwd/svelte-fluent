@@ -9,7 +9,5 @@
 </script>
 
 <FluentProvider bundles={[bundle]}>
-	<strong>
-		<Localized id="hello" args={{ name: 'everyone' }} />
-	</strong>
+	<Localized id="hello" args={{ name: 'everyone' }} />
 </FluentProvider>

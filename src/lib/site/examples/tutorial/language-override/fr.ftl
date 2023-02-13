@@ -1,1 +1,0 @@
-hello = Salut le monde !

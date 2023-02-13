@@ -1,26 +1,30 @@
 <script lang="ts">
 	export let sources: Record<string, string>;
 	export let component: object;
+	export let componentArgs: Record<string, unknown>;
+	export let hideFilepath = false;
 	import { code_highlight } from './highlight';
 </script>
 
 {#each Object.entries(sources) as [name, source]}
 	<div class="code-block">
-		<span class="filepath">{name}</span>
-		{#if name.endsWith('.svelte')}
-			<pre class="language-svelte"><code class="language-svelte"
-					>{@html code_highlight(source, 'svelte')}</code
-				></pre>
+		{#if !hideFilepath}
+			<span class="filepath">{name}</span>
+		{/if}
+		{#if name.endsWith('.svelte')}{@html code_highlight(source, 'svelte')}
+		{:else if name.endsWith('.ftl')}{@html code_highlight(source, 'ftl')}
 		{:else}
 			<pre class="box"><code>{source}</code></pre>
 		{/if}
 	</div>
 {/each}
 
-<strong>Rendered:</strong>
+Example:
 <div class="box rendered">
-	<svelte:component this={component} />
+	<svelte:component this={component} {...componentArgs} />
 </div>
+
+<slot name="controls" />
 
 <style lang="postcss">
 	.rendered {

@@ -2,11 +2,14 @@ import { defineMDSveXConfig as defineConfig } from 'mdsvex';
 import rehypeSlug from 'rehype-slug';
 import rehypeHeadings from './utils/rehype-headings.js';
 import rehypeWrap from 'rehype-wrap-all';
+import { getHighlighter, setCDN } from 'shiki';
 
-// custom highlighter due to inability to add classes otherwise
-// see https://github.com/pngwn/MDsveX/issues/100
-function highlighter(code) {
-	return `<pre class="box"><code>${code}</code></pre>`;
+const highlighter = await getHighlighter({
+	theme: 'dark-plus'
+});
+
+function code_highlight(code, lang) {
+	return highlighter.codeToHtml(code, { lang });
 }
 
 const config = defineConfig({
@@ -16,7 +19,7 @@ const config = defineConfig({
 		dashes: 'oldschool'
 	},
 	highlight: {
-		highlighter
+		highlighter: code_highlight
 	},
 
 	remarkPlugins: [],

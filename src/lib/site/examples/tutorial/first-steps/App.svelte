@@ -8,7 +8,5 @@
 </script>
 
 <FluentProvider bundles={[bundle]}>
-	<strong>
-		<Localized id="hello" />
-	</strong>
+	<Localized id="hello" />
 </FluentProvider>

@@ -27,10 +27,11 @@
 			return bundle;
 		});
 	}
+
+	// this could be stored in a user profile or browser localStorage
+	export let selectedLocale = '';
 </script>
 
-<FluentProvider bundles={generateBundles(navigator.languages)}>
-	<strong>
-		<Localized id="hello" />
-	</strong>
+<FluentProvider bundles={generateBundles(selectedLocale ? [selectedLocale] : navigator.languages)}>
+	<Localized id="hello" />
 </FluentProvider>

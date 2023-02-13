@@ -4,9 +4,8 @@ title: Tutorial
 
 <script>
 	import ExampleFirstSteps from '$lib/site/examples/tutorial/first-steps/Example.svelte'
-	import ExampleTranslationFiles from '$lib/site/examples/tutorial/multi-language/Example.svelte'
+	import ExampleTranslationFiles from '$lib/site/examples/tutorial/translation-files/Example.svelte'
 	import ExampleMultiLanguage from '$lib/site/examples/tutorial/multi-language/Example.svelte'
-	import ExampleLanguageOverride from '$lib/site/examples/tutorial/language-override/Example.svelte'
 	import ExampleInterpolation from '$lib/site/examples/tutorial/interpolation/Example.svelte'
 	import ExampleInterpolationFormatting from '$lib/site/examples/tutorial/interpolation-formatting/Example.svelte'
 	import ExampleInterpolationCustomFunctions from '$lib/site/examples/tutorial/interpolation-custom-functions/Example.svelte'
@@ -33,11 +32,11 @@ A better way is to load translations from `.ftl` files which are easier to work 
 
 <ExampleTranslationFiles />
 
-## Multiple languages and language selection
+## Multiple languages
 
-The previous examples only used a single language for simplicity. The next example
-shows how to extend this to multiple languages and selecting the translation
-based on your users' browser preferences.
+With the basics in place we can now extend this to multiple languages.
+This example shows selection of the desired language and provides a fallback to
+the auto-detected language from the browser.
 
 > This example will fail when used with server-side rendering (SSR) because during
 > SSR the component cannot use browser-only globals like `navigator.languages`.
@@ -47,14 +46,6 @@ based on your users' browser preferences.
 > and replace `navigator.languages` with the resulting list of locale identifiers.
 
 <ExampleMultiLanguage />
-
-## Language override
-
-Many applications also wish to provide their users with a way to override the
-auto-detected language. This can be accomplished by modifying the bundles passed
-to `FluentProvider` based on user settings.
-
-<ExampleLanguageOverride />
 
 ## Translations with interpolation
 
