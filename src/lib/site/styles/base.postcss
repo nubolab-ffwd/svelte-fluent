@@ -1,4 +1,5 @@
 @import '@fontsource/manrope/variable.css';
+@import 'prism-themes/themes/prism-atom-dark.css';
 
 @font-face {
 	font-family: 'Mensch';
@@ -32,6 +33,9 @@
 	--font-size-base: 1rem;
 	--font-size-biggish: 1.75rem;
 	--font-size-big: 2.25rem;
+
+	--font-size-code: var(--s-1);
+	--font-family-code: Mensch;
 }
 
 :root {
@@ -95,6 +99,12 @@ a {
 	text-decoration: none;
 }
 
+input,
+button,
+select {
+	font-size: var(--s0);
+}
+
 pre {
 	max-width: 100%;
 	overflow-x: auto;
@@ -103,17 +113,14 @@ pre {
 
 pre,
 code {
-	font-family: Mensch;
-}
+	font-family: var(--font-family-code);
+	font-size: var(--font-size-code);
 
-code {
-	font-size: var(--s-1);
-}
-
-input,
-button,
-select {
-	font-size: 1rem;
+	&[class*="language-"] {
+		font-family: var(--font-family-code);
+		font-size: var(--font-size-code);
+		line-height: var(--ratio);
+	}
 }
 
 table {
@@ -138,4 +145,8 @@ table {
 .responsive-table {
 	max-width: 100%;
 	overflow-x: auto;
+}
+
+.token.class-name {
+	text-decoration: none;
 }
