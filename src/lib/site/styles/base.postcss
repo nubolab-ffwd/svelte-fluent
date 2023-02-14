@@ -69,7 +69,11 @@ h3,
 h4,
 h5,
 h6,
-blockquote {
+blockquote,
+dl,
+dt,
+dd,
+p {
 	margin: 0;
 }
 
@@ -116,7 +120,7 @@ code {
 	font-family: var(--font-family-code);
 	font-size: var(--font-size-code);
 
-	&[class*="language-"] {
+	&[class*='language-'] {
 		font-family: var(--font-family-code);
 		font-size: var(--font-size-code);
 		line-height: var(--ratio);

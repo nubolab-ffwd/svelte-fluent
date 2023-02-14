@@ -26,6 +26,8 @@ shared-photos =
 </script>
 
 <FluentProvider bundles={[bundle]}>
-	<div><Localized id="hello-user" args={{ userName }} /></div>
-	<div><Localized id="shared-photos" args={{ userName, userGender, photoCount }} /></div>
+	<strong><Localized id="hello-user" args={{ userName }} /></strong>
+	<p>
+		<Localized id="shared-photos" args={{ userName, userGender, photoCount }} />
+	</p>
 </FluentProvider>

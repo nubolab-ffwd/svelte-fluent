@@ -6,6 +6,9 @@
 	import translationsDe from './de.ftl?raw';
 	import translationsFr from './fr.ftl?raw';
 
+	// this could be stored in a user profile or browser localStorage
+	export let selectedLocale = '';
+
 	const defaultLocale = 'en';
 	const resources = {
 		en: new FluentResource(translationsEn),
@@ -27,9 +30,6 @@
 			return bundle;
 		});
 	}
-
-	// this could be stored in a user profile or browser localStorage
-	export let selectedLocale = '';
 </script>
 
 <FluentProvider bundles={generateBundles(selectedLocale ? [selectedLocale] : navigator.languages)}>

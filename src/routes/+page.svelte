@@ -11,8 +11,6 @@
 			</a>.
 		</p>
 
-		<div class="example">
-			<Example />
-		</div>
+		<Example />
 	</div>
 </div>

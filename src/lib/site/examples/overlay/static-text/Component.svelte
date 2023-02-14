@@ -3,7 +3,7 @@
 </script>
 
 <Overlay id="info">
-	<a data-l10n-name="link" href="https://example.com/"
-		><!-- text from FTL file gets inserted here --></a
-	>
+	<a data-l10n-name="link" href="https://example.com/">
+		<!-- text from FTL file gets inserted here -->
+	</a>
 </Overlay>

@@ -4,16 +4,13 @@
 	import translationsEn from './en.ftl?raw';
 	import Component from './Component.svelte';
 
+	export let productName = 'Example Product';
+
 	const resource = new FluentResource(translationsEn);
 	const bundle = new FluentBundle('en');
 	bundle.addResource(resource);
-
-	let productName = 'Example Product';
 </script>
 
 <FluentProvider bundles={[bundle]}>
-	<div>
-		<label>Name: <input bind:value={productName} /></label>
-	</div>
 	<Component {productName} />
 </FluentProvider>
