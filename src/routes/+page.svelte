@@ -1,16 +1,17 @@
 <script lang="ts">
 	import Example from '$lib/site/examples/frontpage/Example.svelte';
+	import Hero from './Hero.svelte';
 </script>
 
-<div class="center with-gutters">
+<div class="content center with-gutters">
 	<div class="stack">
-		<h1>Svelte Fluent</h1>
-		<p>
-			Localize your Svelte applications with the <a href="https://projectfluent.org/">
-				Fluent localisation system
-			</a>.
-		</p>
-
+		<Hero />
 		<Example />
 	</div>
 </div>
+
+<style lang="postcss">
+	.content {
+		max-width: calc(var(--measure) * 1.33);
+	}
+</style>

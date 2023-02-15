@@ -1,7 +1,3 @@
----
-title: Components
----
-
 <script>
 	import ExampleProviderMultiLanguage from '$lib/site/examples/tutorial/multi-language/Example.svelte'
 	import ExampleLocalizedStaticText from '$lib/site/examples/localized/static-text/Example.svelte'
@@ -12,21 +8,21 @@ title: Components
 	import ExampleOverlayDynamicText from '$lib/site/examples/overlay/dynamic-text/Example.svelte'
 </script>
 
-# {title}
+# Components
 
 ## FluentProvider
 
-The FluentProvider component provides configuration to child components in it's default slot.
+This component provides configuration to child components in it's default slot.
 
-Typically there is only a single instance of FluentProvider wrapping the top level of the application
+Typically there is only a single instance of `FluentProvider` wrapping the top level of the application
 (e.g. in a `__layout.svelte` file in SvelteKit or similar). For specialized needs it's possible to nest
-multiple FluentProvider instances.
+multiple `FluentProvider` instances.
 
 The mandatory `bundles` argument takes a list of
-[FluentBundle](https://projectfluent.org/fluent.js/bundle/classes/fluentbundle.html) instances.When resolving a
-translation via it's `id` each of the provided bundles will be tried in sequence until the translation message
-is found making it possible to split your translations across several files and use different bundle configurations
-(like attached functions) for each of them.
+[FluentBundle](https://projectfluent.org/fluent.js/bundle/classes/fluentbundle.html) instances. When resolving a
+translation each of the provided bundles will be tried in sequence until the translation message is found making
+it possible to split your translations across several files and use different bundle configurations (like attached
+functions) for each of them.
 
 The FluentBundle component also emits `error` events whenever a translation message fails to parse or render.
 
@@ -94,10 +90,11 @@ The output can be customized by overriding the default slot of the component.
 The experimental Overlay component uses [fluent.js DOM Overlays](https://github.com/projectfluent/fluent.js/wiki/DOM-Overlays)
 to render translation messages that contain HTML markup.
 
-Usages of DOM overlays are to:
+DOM overlays provide a safe mechanism for translators to use text-level markup.
+They also allow developers to provide functional elements that can be used in translations.
 
-- allow localizers to use some safe text-level markup in translations, and
-- allow developers to pass functional elements as arguments to translations.
+Please check the [fluent.js documentation for DOM Overlays](https://github.com/projectfluent/fluent.js/wiki/DOM-Overlays)
+if you want to learn more.
 
 ### Examples
 

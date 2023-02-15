@@ -13,7 +13,9 @@
 <ul>
 	{#each items as { text, href, submenu }}
 		<li>
-			{#if href}<a {href}>{text}</a>{:else}{text}{/if}
+			<span class="item">
+				{#if href && !submenu}<a {href}>{text}</a>{:else}{text}{/if}
+			</span>
 			{#if submenu}
 				<svelte:self items={submenu} />
 			{/if}
@@ -34,14 +36,14 @@
 			& + li {
 				margin-block-start: var(--s2, 1rem);
 			}
-			& > a {
+			& > .item {
 				text-transform: uppercase;
 				font-variation-settings: 'wght' 570;
 				letter-spacing: 0.1em;
 			}
 		}
-		& a {
-			color: #555;
+		& .item a {
+			color: var(--theme-color-gray-dark);
 		}
 	}
 </style>

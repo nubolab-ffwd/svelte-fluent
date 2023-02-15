@@ -1,5 +1,6 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
+import Icons from 'unplugin-icons/vite';
 
 /** @type {import('vite').UserConfig} */
 const config = {
@@ -12,7 +13,11 @@ const config = {
 				}
 			]
 		}),
-		sveltekit()
+		sveltekit(),
+		Icons({
+			compiler: 'svelte',
+			autoInstall: true
+		})
 	]
 };
 

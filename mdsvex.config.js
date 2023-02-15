@@ -2,6 +2,8 @@ import { defineMDSveXConfig as defineConfig } from 'mdsvex';
 import rehypeSlug from 'rehype-slug';
 import rehypeHeadings from './utils/rehype-headings.js';
 import rehypeWrap from 'rehype-wrap-all';
+import rehypeExternalLinks from 'rehype-external-links';
+
 import { getHighlighter, setCDN } from 'shiki';
 
 const highlighter = await getHighlighter({
@@ -26,7 +28,8 @@ const config = defineConfig({
 	rehypePlugins: [
 		rehypeSlug,
 		rehypeHeadings,
-		[rehypeWrap, { selector: 'table', wrapper: 'div.responsive-table' }]
+		[rehypeWrap, { selector: 'table', wrapper: 'div.responsive-table' }],
+		[rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }]
 	]
 });
 

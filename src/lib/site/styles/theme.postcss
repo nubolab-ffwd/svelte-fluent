@@ -4,12 +4,17 @@
 	--theme-color-background: #fff;
 	--theme-color-text: #000;
 	--theme-color-primary: #2e5eaa;
-	--theme-color-secondary: #5b4e77;
+	--theme-color-secondary: #501886;
 	--theme-color-tertiary: #7cea9c;
 	--theme-color-tertiary-light: #cbf7d7;
 	--theme-color-tertiary-dark: #147b32;
 
+	--theme-color-gray-dark: #555;
+	--theme-color-gray: #999;
+	--theme-color-gray-light: #ddd;
+
 	--theme-color-container-background: var(--theme-color-tertiary);
+	--theme-separator-color: var(--theme-color-gray-light);
 }
 
 body {
@@ -41,4 +46,10 @@ p code {
 	padding: 0.2rem 0.4rem;
 	margin: 0 0.2rem;
 	background-color: var(--theme-color-container-background);
+}
+
+hr {
+	border: none;
+	border-block-start: 1px solid var(--theme-separator-color);
+	width: 100%;
 }

@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let sources: Record<string, string>;
 	export let component: object;
-	export let componentArgs: Record<string, unknown>;
+	export let componentArgs: Record<string, unknown> = {};
 	import { code_highlight } from './highlight';
 </script>
 

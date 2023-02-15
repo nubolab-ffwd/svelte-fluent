@@ -1,7 +1,3 @@
----
-title: Tutorial
----
-
 <script>
 	import ExampleFirstSteps from '$lib/site/examples/tutorial/first-steps/Example.svelte'
 	import ExampleTranslationFiles from '$lib/site/examples/tutorial/translation-files/Example.svelte'
@@ -11,11 +7,11 @@ title: Tutorial
 	import ExampleInterpolationCustomFunctions from '$lib/site/examples/tutorial/interpolation-custom-functions/Example.svelte'
 </script>
 
-# {title}
+# Tutorial
 
 ## First steps
 
-You need to provide your translations to svelte-fluent by adding the `FluentProvider` component in your component hierarchy.
+You need to provide your translations to `svelte-fluent` by adding the `FluentProvider` component in your component hierarchy.
 
 In the most basic setup those translations can be defined directly in the code like this:
 
@@ -26,9 +22,12 @@ In the most basic setup those translations can be defined directly in the code l
 Managing translations directly in the code can get messy.
 A better way is to load translations from `.ftl` files which are easier to work with:
 
-> The bundler must support importing the `.ftl` files as strings. For rollup this can be achived by
-> adding the [rollup-plugin-string](https://www.npmjs.com/package/rollup-plugin-string) plugin to your
-> Rollup configuration. For vite you can add `?raw` to your import like in the example below.
+> The bundler must support importing `.ftl` files as strings.
+>
+> For [Vite](https://vitejs.dev/) you can add `?raw` to your import like in the example below.
+>
+> For [Rollup](https://rollupjs.org/) you can add [rollup-plugin-string](https://www.npmjs.com/package/rollup-plugin-string)
+> to your configuration.
 
 <ExampleTranslationFiles />
 
@@ -49,7 +48,7 @@ the auto-detected language from the browser.
 
 ## Translations with interpolation
 
-You can insert variable into your translated text by using
+You can insert variables into your translated text by using
 [Fluent Placeables](https://projectfluent.org/fluent/guide/placeables.html).
 Values for those variables are provided via the `args` prop of the `Localized` and `Overlay` components.
 

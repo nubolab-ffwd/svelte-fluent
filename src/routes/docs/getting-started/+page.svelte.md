@@ -1,17 +1,13 @@
----
-title: Getting started
----
-
-# {title}
+# Getting started
 
 ## What is svelte-fluent?
 
-svelte-fluent is a svelte component library that aims to make it effortless to localize applications using
+`svelte-fluent` is a svelte component library that aims to make it effortless to localize applications using
 the [Fluent](https://projectfluent.org/) localization system by Mozilla.
 
 ## Installation
 
-Install svelte-fluent with your package manager of choice.
+Install `svelte-fluent` with your package manager of choice.
 
 ```sh
 npm install --save-dev @nubolab-ffwd/svelte-fluent
