@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Logo from '$lib/site/logo.svelte';
-	import IconGithub from '~icons/mdi/github';
+	import IconGitHub from '~icons/mdi/github';
 </script>
 
 <header>
@@ -16,10 +16,10 @@
 				href="https://github.com/nubolab-ffwd/svelte-fluent"
 				target="_blank"
 				rel="noreferrer noopener"
-				aria-label="Github"
+				title="View on GitHub"
 			>
 				<div class="icon">
-					<IconGithub />
+					<IconGitHub />
 				</div>
 			</a>
 		</div>

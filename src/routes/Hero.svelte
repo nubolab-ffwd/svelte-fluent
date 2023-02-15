@@ -3,10 +3,16 @@
 </script>
 
 <div class="hero with-sidebar right wrap-reverse" style:--content-min="50%">
-	<div>
-		<h1>svelte-fluent</h1>
-		<p class="text">The expressive Svelte localisation library</p>
-		<p class="tagline">Describe translations with Mozilla's natural-sounding Fluent syntax</p>
+	<div class="stack">
+		<div>
+			<h1>svelte-fluent</h1>
+			<p class="text">The expressive Svelte localisation library</p>
+			<p class="tagline">Describe translations with Mozilla's natural-sounding Fluent syntax</p>
+		</div>
+		<div class="buttons">
+			<a class="button primary" href="">Get started</a>
+			<a class="button" href="https://github.com/nubolab-ffwd/svelte-fluent">View on GitHub</a>
+		</div>
 	</div>
 	<div class="logo-wrapper">
 		<Logo />
@@ -34,6 +40,11 @@
 		& .logo-wrapper {
 			inline-size: clamp(calc(320px - 2rem), 10rem, calc(100vw - 8rem));
 			display: flex;
+		}
+		& .buttons {
+			display: flex;
+			gap: var(--space);
+			font-size: var(--s-1);
 		}
 	}
 </style>

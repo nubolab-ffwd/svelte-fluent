@@ -5,30 +5,32 @@
 	import { code_highlight } from './highlight';
 </script>
 
-{#each Object.entries(sources) as [name, source], idx}
-	<div class="code-block stack">
-		{#if idx !== 0}
-			<span class="filepath">{name}</span>
-		{/if}
-		{#if name.endsWith('.svelte')}{@html code_highlight(source, 'svelte')}
-		{:else if name.endsWith('.ftl')}{@html code_highlight(source, 'ftl')}
-		{:else}
-			<pre class="box"><code>{source}</code></pre>
-		{/if}
-	</div>
-{/each}
-
-<div>Result:</div>
-<div class="stack" class:box={$$slots.controls}>
-	<div class="box rendered">
-		<svelte:component this={component} {...componentArgs} />
-	</div>
-
-	{#if $$slots.controls}
-		<div class="controls">
-			<slot name="controls" />
+<div class="stack" aria-label="Code example">
+	{#each Object.entries(sources) as [name, source], idx}
+		<div class="code-block stack">
+			{#if idx !== 0}
+				<span class="filepath">{name}</span>
+			{/if}
+			{#if name.endsWith('.svelte')}{@html code_highlight(source, 'svelte')}
+			{:else if name.endsWith('.ftl')}{@html code_highlight(source, 'ftl')}
+			{:else}
+				<pre class="box"><code>{source}</code></pre>
+			{/if}
 		</div>
-	{/if}
+	{/each}
+
+	<div>Result:</div>
+	<div class="stack" class:box={$$slots.controls}>
+		<div class="box rendered">
+			<svelte:component this={component} {...componentArgs} />
+		</div>
+
+		{#if $$slots.controls}
+			<div class="controls">
+				<slot name="controls" />
+			</div>
+		{/if}
+	</div>
 </div>
 
 <style lang="postcss">
