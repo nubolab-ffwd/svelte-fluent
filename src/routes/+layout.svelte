@@ -8,7 +8,20 @@
 <script lang="ts">
 	import '../app.postcss';
 	import Header from './Header.svelte';
+	import { page } from '$app/stores';
+
+	$: seo = {
+		...$page.data.seo,
+		title: [$page.data.seo?.title, 'svelte-fluent'].filter(Boolean).join(' | ')
+	};
 </script>
+
+<svelte:head>
+	<title>{seo.title}</title>
+	{#if seo.description}
+		<meta name="description" content={seo.description} />
+	{/if}
+</svelte:head>
 
 <Header />
 
@@ -18,6 +31,6 @@
 
 <style lang="postcss">
 	.content {
-		margin-block-end: calc(var(--space) * 5);
+		margin-block-end: var(--s5);
 	}
 </style>

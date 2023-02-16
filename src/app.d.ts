@@ -9,4 +9,10 @@ declare namespace App {
 	// interface Platform {}
 	// interface Session {}
 	// interface Stuff {}
+	interface PageData {
+		seo?: {
+			title?: string;
+			description?: string;
+		};
+	}
 }

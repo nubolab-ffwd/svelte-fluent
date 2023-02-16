@@ -57,29 +57,30 @@
 }
 
 .with-sidebar {
-	--x-content-min: var(--content-min, 50%);
-	--x-side-width: var(--side-width, auto);
+	--content-min: 50%;
+	--side-width: auto;
+	--gap: var(--space, 1rem);
 
 	display: flex;
 	flex-wrap: wrap;
-	gap: var(--space, var(--s1));
+	gap: var(--gap);
 
 	& > :first-child {
-		flex-basis: var(--x-side-width);
+		flex-basis: var(--side-width);
 		flex-grow: 1;
 	}
 	& > :last-child {
 		flex-basis: 0;
 		flex-grow: 999;
-		min-inline-size: var(--x-content-min);
+		min-inline-size: var(--content-min);
 	}
 	&.right > :first-child {
 		flex-basis: 0;
 		flex-grow: 999;
-		min-inline-size: var(--x-content-min);
+		min-inline-size: var(--content-min);
 	}
 	&.right > :last-child {
-		flex-basis: var(--x-side-width);
+		flex-basis: var(--side-width);
 		flex-grow: 1;
 		min-inline-size: unset;
 	}

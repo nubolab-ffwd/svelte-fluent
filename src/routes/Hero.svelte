@@ -11,7 +11,12 @@
 		</div>
 		<div class="buttons">
 			<a class="button primary" href="/docs/getting-started">Get started</a>
-			<a class="button" href="https://github.com/nubolab-ffwd/svelte-fluent">View on GitHub</a>
+			<a
+				class="button"
+				href="https://github.com/nubolab-ffwd/svelte-fluent"
+				target="_blank"
+				rel="noopener noreferrer">View on GitHub</a
+			>
 		</div>
 	</div>
 	<div class="logo-wrapper">
@@ -44,7 +49,7 @@
 		& .buttons {
 			display: flex;
 			gap: var(--space);
-			font-size: var(--s-1);
+			font-size: var(--font-size-smallish);
 		}
 	}
 </style>

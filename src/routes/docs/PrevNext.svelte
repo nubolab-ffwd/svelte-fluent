@@ -43,7 +43,6 @@
 			border: 1px solid var(--theme-color-gray-light);
 			padding: var(--space);
 			border-radius: var(--s-2);
-			font-size: var(--s-1);
 
 			&:hover {
 				border-color: var(--theme-color-tertiary-dark);
@@ -54,7 +53,6 @@
 			}
 			& .desc {
 				color: var(--theme-color-text);
-				font-size: var(--s-2);
 			}
 		}
 	}
