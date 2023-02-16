@@ -36,6 +36,7 @@
 			display: flex;
 			align-items: center;
 			gap: var(--space);
+			font-variant-ligatures: none;
 
 			& :global(svg) {
 				width: 4rem;

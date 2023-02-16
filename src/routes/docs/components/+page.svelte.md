@@ -1,5 +1,5 @@
 <script>
-	import ExampleProviderMultiLanguage from '$lib/site/examples/tutorial/multi-language/Example.svelte'
+	import ExampleProvider from '$lib/site/examples/provider/Example.svelte'
 	import ExampleLocalizedStaticText from '$lib/site/examples/localized/static-text/Example.svelte'
 	import ExampleLocalizedDynamicText from '$lib/site/examples/localized/dynamic-text/Example.svelte'
 	import ExampleLocalizedAttributes from '$lib/site/examples/localized/attributes/Example.svelte'
@@ -12,23 +12,21 @@
 
 ## FluentProvider
 
-This component provides configuration to child components in it's default slot.
-
 Typically there is only a single instance of `FluentProvider` wrapping the top level of the application
 (e.g. in a `__layout.svelte` file in SvelteKit or similar). For specialized needs it's possible to nest
 multiple `FluentProvider` instances.
 
 The mandatory `bundles` argument takes a list of
-[FluentBundle](https://projectfluent.org/fluent.js/bundle/classes/fluentbundle.html) instances. When resolving a
+[`FluentBundle`](https://projectfluent.org/fluent.js/bundle/classes/fluentbundle.html) instances. When resolving a
 translation each of the provided bundles will be tried in sequence until the translation message is found making
 it possible to split your translations across several files and use different bundle configurations (like attached
 functions) for each of them.
 
-The FluentBundle component also emits `error` events whenever a translation message fails to parse or render.
+The `FluentBundle` component also emits `error` events whenever a translation message fails to parse or render.
 
 ### Example
 
-<ExampleProviderMultiLanguage />
+<ExampleProvider />
 
 ### Props
 
@@ -53,21 +51,19 @@ The FluentBundle component also emits `error` events whenever a translation mess
 The Localized component renders a translation message and outputs it as plain text.
 The output can be customized by overriding the default slot of the component.
 
-### Examples
-
-#### Static text
+### Static text example
 
 <ExampleLocalizedStaticText />
 
-#### Dynamic text with variables
+### Dynamic text with variables example
 
 <ExampleLocalizedDynamicText />
 
-#### Attributes
+### Attributes example
 
 <ExampleLocalizedAttributes />
 
-#### Attributes with variables
+### Attributes with variables example
 
 <ExampleLocalizedAttributesWithVariables />
 
@@ -96,13 +92,11 @@ They also allow developers to provide functional elements that can be used in tr
 Please check the [fluent.js documentation for DOM Overlays](https://github.com/projectfluent/fluent.js/wiki/DOM-Overlays)
 if you want to learn more.
 
-### Examples
-
-#### Static text
+### Static text example
 
 <ExampleOverlayStaticText />
 
-#### Dynamic text with variables
+### Dynamic text with variables example
 
 <ExampleOverlayDynamicText />
 

@@ -28,7 +28,6 @@ a {
 }
 
 blockquote {
-	/* background-color: var(--theme-color-container-background); */
 	border: var(--border-thin) solid var(--theme-color-tertiary);
 	padding: var(--space);
 	display: flex;
@@ -44,9 +43,17 @@ blockquote {
 }
 
 p code {
+	position: relative;
+	top: -0.05rem;
 	padding: 0.2rem 0.4rem;
 	margin: 0 0.2rem;
 	background-color: var(--theme-color-container-background);
+	&:first-child {
+		margin-inline-start: 0;
+	}
+	&:last-child {
+		margin-inline-end: 0;
+	}
 }
 
 hr {

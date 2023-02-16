@@ -10,7 +10,7 @@
 			<p class="tagline">Describe translations with Mozilla's natural-sounding Fluent syntax</p>
 		</div>
 		<div class="buttons">
-			<a class="button primary" href="">Get started</a>
+			<a class="button primary" href="/docs/getting-started">Get started</a>
 			<a class="button" href="https://github.com/nubolab-ffwd/svelte-fluent">View on GitHub</a>
 		</div>
 	</div>

@@ -50,9 +50,14 @@
 <style lang="postcss">
 	nav {
 		padding-inline: var(--space);
+		position: sticky;
+		top: var(--space);
 	}
 	main {
 		margin-block-end: calc(var(--space) * 5);
+		& :global(:not(h1) + h2) {
+			margin-block-start: var(--s3);
+		}
 	}
 	hr {
 		margin-block-start: 0;

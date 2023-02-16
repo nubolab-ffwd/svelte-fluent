@@ -3,6 +3,7 @@ import rehypeSlug from 'rehype-slug';
 import rehypeHeadings from './utils/rehype-headings.js';
 import rehypeWrap from 'rehype-wrap-all';
 import rehypeExternalLinks from 'rehype-external-links';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 import { getHighlighter, setCDN } from 'shiki';
 
@@ -29,7 +30,8 @@ const config = defineConfig({
 		rehypeSlug,
 		rehypeHeadings,
 		[rehypeWrap, { selector: 'table', wrapper: 'div.responsive-table' }],
-		[rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }]
+		[rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
+		[rehypeAutolinkHeadings, { behavior: 'wrap', test: ['h2', 'h3', 'h4', 'h5', 'h6'] }]
 	]
 });
 
