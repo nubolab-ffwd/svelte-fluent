@@ -5,14 +5,26 @@ import rehypeWrap from 'rehype-wrap-all';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
-import { getHighlighter, setCDN } from 'shiki';
+import { getHighlighter } from 'shiki';
+
+// escape curlies, backtick, \t, \r, \n to avoid breaking output of {@html `here`} in .svelte
+/**
+ *
+ * @param str string
+ * @returns string
+ */
+export const escape_svelty = (str) =>
+	str
+		.replace(/[{}`]/g, (c) => ({ '{': '&#123;', '}': '&#125;', '`': '&#96;' }[c]))
+		.replace(/\\([trn])/g, '&#92;$1');
 
 const highlighter = await getHighlighter({
 	theme: 'dark-plus'
 });
 
 function code_highlight(code, lang) {
-	return highlighter.codeToHtml(code, { lang });
+	const highlighted = highlighter.codeToHtml(code, { lang });
+	return `{@html \`${escape_svelty(highlighted)}\`}`;
 }
 
 const config = defineConfig({

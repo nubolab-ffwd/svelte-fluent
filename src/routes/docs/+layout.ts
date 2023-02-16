@@ -2,8 +2,7 @@ import type { LayoutLoad } from './$types';
 import { headings as gettingStartedHeadings } from './getting-started/+page.svelte.md';
 import { headings as tutorialHeadings } from './tutorial/+page.svelte.md';
 import { headings as componentsHeadings } from './components/+page.svelte.md';
-import SidebarMenu, { type Item as MenuItem } from './SidebarMenu.svelte';
-import PrevNext from './PrevNext.svelte';
+import type { Item as MenuItem } from './SidebarMenu.svelte';
 
 type Heading = { text: string; id: string; rank: number };
 
@@ -33,7 +32,6 @@ export const load = (async (ev) => {
 	];
 	const title =
 		menu.find((x) => x.href && ev.url.pathname.startsWith(x.href))?.text ?? 'Documentation';
-	console.log('title:', title);
 	return {
 		menu,
 		seo: { title, description: title }

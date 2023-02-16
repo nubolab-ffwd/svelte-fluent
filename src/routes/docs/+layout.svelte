@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import SidebarMenu, { type Item as MenuItem } from './SidebarMenu.svelte';
+	import SidebarMenu from './SidebarMenu.svelte';
 	import PrevNext from './PrevNext.svelte';
 </script>
 
@@ -24,8 +24,10 @@
 <style lang="postcss">
 	.sidebar {
 		padding-inline: var(--space);
-		position: sticky;
-		top: var(--space);
+		& nav {
+			position: sticky;
+			top: var(--space);
+		}
 	}
 	nav {
 		font-size: smaller;

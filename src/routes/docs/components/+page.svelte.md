@@ -92,6 +92,15 @@ They also allow developers to provide functional elements that can be used in tr
 Please check the [fluent.js documentation for DOM Overlays](https://github.com/projectfluent/fluent.js/wiki/DOM-Overlays)
 if you want to learn more.
 
+Due to the way DOM Overlays are currently implemented in `svelte-fluent` there are some additional limitations
+to the [limitations listed in the @fluent/dom wiki](https://github.com/projectfluent/fluent.js/wiki/DOM-Overlays#limitations):
+
+- Updates to `<Overlay/>` component props and children cause a high overhead and should be minimized
+- Svelte actions (`<tag use:someaction/>`) won't work correctly for children of the `<Overlay/>` component
+- Svelte transitions/animations (`<tag transition:fade />`) won't work correctly for children of the `<Overlay/>` component
+- Svelte bindings (`<tag bind:clientWidth={something} />`) won't work correctly for children of the `<Overlay/>` component
+- Event handlers (`<tag on:click={handleClick} />`) bound on children of the `<Overlay/>` component will not fire
+
 ### Static text example
 
 <ExampleOverlayStaticText />

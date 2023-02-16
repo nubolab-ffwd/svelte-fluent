@@ -9,7 +9,59 @@ the [Fluent](https://projectfluent.org/) localization system by Mozilla.
 
 Install `svelte-fluent` with your package manager of choice.
 
-```sh
+```
 npm install --save-dev @nubolab-ffwd/svelte-fluent
 npm install --save jsdom
+```
+
+## Configure bundler
+
+`svelte-fluent` needs an additional bundler plugin to support server-side rendering (SSR) and [DOM Overlays](/docs/components#overlay-experimental). Currently vite and rollup are supported.
+
+### SvelteKit
+
+vite.config.js
+
+```js
+import { sveltekit } from '@sveltejs/kit/vite';
+import svelteFluent from '@nubolab-ffwd/svelte-fluent/rollup-plugin';
+
+/** @type {import('vite').UserConfig} */
+const config = {
+	plugins: [sveltekit(), svelteFluent()]
+};
+
+export default config;
+```
+
+### Vite
+
+vite.config.js
+
+```js
+import svelteFluent from '@nubolab-ffwd/svelte-fluent/rollup-plugin';
+
+/** @type {import('vite').UserConfig} */
+const config = {
+	plugins: [svelteFluent()]
+};
+
+export default config;
+```
+
+### Rollup / Sapper
+
+rollup.config.js
+
+```js
+import svelteFluent from '@nubolab-ffwd/svelte-fluent/rollup-plugin';
+
+export default {
+	client: {
+		plugins: [svelteFluent()]
+	},
+	server: {
+		plugins: [svelteFluent({ ssr: true })]
+	}
+};
 ```
