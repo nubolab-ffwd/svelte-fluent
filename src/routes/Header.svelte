@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Logo from '$lib/site/logo.svelte';
+	import Logo from '$site/logo.svelte';
 	import IconGitHub from '~icons/mdi/github';
 </script>
 

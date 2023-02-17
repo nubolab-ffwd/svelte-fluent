@@ -2,10 +2,10 @@ import { describe, it, expect, vi } from 'vitest';
 
 vi.stubGlobal('navigator', { languages: [] });
 
-const exampleComponents = import.meta.glob('$lib/site/examples/**/App.svelte');
+const exampleComponents = import.meta.glob('$site/examples/**/App.svelte');
 
 export const examples = Object.entries(exampleComponents).map(([name, mod]) => ({
-	name: name.replace('/src/lib/site/examples/', ''),
+	name: name.replace('/src/site/examples/', ''),
 	module: mod
 }));
 

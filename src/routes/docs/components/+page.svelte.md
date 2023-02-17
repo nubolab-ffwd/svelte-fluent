@@ -1,11 +1,11 @@
 <script>
-	import ExampleProvider from '$lib/site/examples/provider/Example.svelte'
-	import ExampleLocalizedStaticText from '$lib/site/examples/localized/static-text/Example.svelte'
-	import ExampleLocalizedDynamicText from '$lib/site/examples/localized/dynamic-text/Example.svelte'
-	import ExampleLocalizedAttributes from '$lib/site/examples/localized/attributes/Example.svelte'
-	import ExampleLocalizedAttributesWithVariables from '$lib/site/examples/localized/attributes-with-variables/Example.svelte'
-	import ExampleOverlayStaticText from '$lib/site/examples/overlay/static-text/Example.svelte'
-	import ExampleOverlayDynamicText from '$lib/site/examples/overlay/dynamic-text/Example.svelte'
+	import ExampleProvider from '$site/examples/provider/Example.svelte'
+	import ExampleLocalizedStaticText from '$site/examples/localized/static-text/Example.svelte'
+	import ExampleLocalizedDynamicText from '$site/examples/localized/dynamic-text/Example.svelte'
+	import ExampleLocalizedAttributes from '$site/examples/localized/attributes/Example.svelte'
+	import ExampleLocalizedAttributesWithVariables from '$site/examples/localized/attributes-with-variables/Example.svelte'
+	import ExampleOverlayStaticText from '$site/examples/overlay/static-text/Example.svelte'
+	import ExampleOverlayDynamicText from '$site/examples/overlay/dynamic-text/Example.svelte'
 </script>
 
 # Components

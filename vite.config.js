@@ -1,6 +1,6 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
-import ssrResolvePlugin from './src/lib/site/plugin';
+import ssrResolvePlugin from './src/site/plugin';
 import Icons from 'unplugin-icons/vite';
 
 /** @type {import('vite').UserConfig} */

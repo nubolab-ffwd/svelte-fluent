@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitest/config';
 import { sveltekit } from '@sveltejs/kit/vite';
-import ssrResolvePlugin from './src/lib/site/plugin';
+import ssrResolvePlugin from './src/site/plugin';
 
 export default defineConfig({
 	plugins: [sveltekit(), ssrResolvePlugin()],

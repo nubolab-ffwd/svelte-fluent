@@ -1,10 +1,10 @@
 <script>
-	import ExampleFirstSteps from '$lib/site/examples/tutorial/first-steps/Example.svelte'
-	import ExampleTranslationFiles from '$lib/site/examples/tutorial/translation-files/Example.svelte'
-	import ExampleMultiLanguage from '$lib/site/examples/tutorial/multi-language/Example.svelte'
-	import ExampleInterpolation from '$lib/site/examples/tutorial/interpolation/Example.svelte'
-	import ExampleInterpolationFormatting from '$lib/site/examples/tutorial/interpolation-formatting/Example.svelte'
-	import ExampleInterpolationCustomFunctions from '$lib/site/examples/tutorial/interpolation-custom-functions/Example.svelte'
+	import ExampleFirstSteps from '$site/examples/tutorial/first-steps/Example.svelte'
+	import ExampleTranslationFiles from '$site/examples/tutorial/translation-files/Example.svelte'
+	import ExampleMultiLanguage from '$site/examples/tutorial/multi-language/Example.svelte'
+	import ExampleInterpolation from '$site/examples/tutorial/interpolation/Example.svelte'
+	import ExampleInterpolationFormatting from '$site/examples/tutorial/interpolation-formatting/Example.svelte'
+	import ExampleInterpolationCustomFunctions from '$site/examples/tutorial/interpolation-custom-functions/Example.svelte'
 </script>
 
 # Tutorial

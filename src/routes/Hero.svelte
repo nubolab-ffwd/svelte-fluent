@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Logo from '$lib/site/logo.svelte';
+	import Logo from '$site/logo.svelte';
 </script>
 
 <div class="hero with-sidebar right wrap-reverse" style:--content-min="50%">

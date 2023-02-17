@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Example from '$lib/site/examples/frontpage/Example.svelte';
+	import Example from '$site/examples/frontpage/Example.svelte';
 	import Hero from './Hero.svelte';
 </script>
 

@@ -15,11 +15,9 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
+			$site: 'src/site',
 			'@nubolab-ffwd/svelte-fluent': 'src/lib' // used in examples so that import look more like real-world usage
 		}
-	},
-	package: {
-		files: mm.matcher('!site/**/*')
 	}
 };
 

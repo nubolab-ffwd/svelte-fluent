@@ -1,4 +1,4 @@
-import { defaultHighlighter } from '$lib/site/highlight';
+import { defaultHighlighter } from '$site/highlight';
 import type { LayoutLoad } from './$types';
 
 export const load = (async () => {
