@@ -260,7 +260,8 @@ blockquote > * + * {
 		margin-top: 1rem;
 		margin-top: var(--space, 1rem);
 	}
-p code, li code {
+p code,
+li code {
 	position: relative;
 	top: -0.05rem;
 	padding: 0.2rem 0.4rem;
