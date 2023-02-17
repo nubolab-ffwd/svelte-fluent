@@ -1,0 +1,255 @@
+// Vitest Snapshot v1
+
+exports[`Example frontpage/App.svelte > should render 1`] = `
+<body>
+  <div>
+    <strong>
+      Hello, ⁨Anna⁩!
+      <!--&lt;Localized&gt;-->
+    </strong>
+     
+    <p>
+      ⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.
+      <!--&lt;Localized&gt;-->
+    </p>
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
+exports[`Example localized/attributes/App.svelte > should render 1`] = `
+<body>
+  <div>
+    <div>
+      Please confirm the action.
+    </div>
+     
+    <div>
+      <button>
+        Ok
+      </button>
+       
+      <button>
+        Cancel
+      </button>
+    </div>
+    <!--&lt;Localized&gt;-->
+    <!--&lt;Component&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
+exports[`Example localized/attributes-with-variables/App.svelte > should render 1`] = `
+<body>
+  <div>
+    <div>
+      Please confirm the action for ⁨20⁩ items.
+    </div>
+     
+    <div>
+      <button>
+        Yes, perform action for ⁨20⁩ items
+      </button>
+       
+      <button>
+        Cancel
+      </button>
+    </div>
+    <!--&lt;Localized&gt;-->
+    <!--&lt;Component&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
+exports[`Example localized/dynamic-text/App.svelte > should render 1`] = `
+<body>
+  <div>
+    You have ⁨10⁩ unread emails.
+    <!--&lt;Localized&gt;-->
+    <!--&lt;Component&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
+exports[`Example localized/static-text/App.svelte > should render 1`] = `
+<body>
+  <div>
+    Hello, world!
+    <!--&lt;Localized&gt;-->
+    <!--&lt;Component&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
+exports[`Example overlay/dynamic-text/App.svelte > should render 1`] = `
+<body>
+  <div>
+    <div
+      class="s-inkqtEk9hetm"
+    >
+      You can download "⁨Example Product⁩" by clicking
+on the 
+      <strong>
+        Download
+      </strong>
+       button or read
+the 
+      <a
+        data-l10n-name="release-notes"
+        href="https://example.com/"
+        rel="noreferrer"
+        target="_blank"
+      >
+        release notes
+      </a>
+       to learn more.
+    </div>
+    <!--&lt;Overlay&gt;-->
+    <!--&lt;Component&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
+exports[`Example overlay/static-text/App.svelte > should render 1`] = `
+<body>
+  <div>
+    <div
+      class="s-inkqtEk9hetm"
+    >
+      Read the 
+      <a
+        data-l10n-name="link"
+        href="https://example.com/"
+      >
+        documentation
+      </a>
+       for more information.
+    </div>
+    <!--&lt;Overlay&gt;-->
+    <!--&lt;Component&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
+exports[`Example provider/App.svelte > should render 1`] = `
+<body>
+  <div>
+    Hello, world!
+    <!--&lt;Localized&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;Component&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
+exports[`Example tutorial/attributes/App.svelte > should render 1`] = `
+<body>
+  <div>
+    <label>
+      Login
+       
+      <input
+        aria-label="Login input value"
+        placeholder="email@example.com"
+        title="Type your login email"
+        type="email"
+      />
+    </label>
+    <!--&lt;Localized&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
+exports[`Example tutorial/first-steps/App.svelte > should render 1`] = `
+<body>
+  <div>
+    Hello, world!
+    <!--&lt;Localized&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
+exports[`Example tutorial/interpolation/App.svelte > should render 1`] = `
+<body>
+  <div>
+    Hello, ⁨everyone⁩!
+    <!--&lt;Localized&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
+exports[`Example tutorial/interpolation-custom-functions/App.svelte > should render 1`] = `
+<body>
+  <div>
+    Weekday ⁨2⁩ is ⁨Tuesday⁩
+    <!--&lt;Localized&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
+exports[`Example tutorial/interpolation-formatting/App.svelte > should render 1`] = `
+<body>
+  <div>
+    <div>
+      Your DPI ratio is ⁨1.778⁩
+      <!--&lt;Localized&gt;-->
+    </div>
+     
+    <div>
+      Your account balance is ⁨$1,234.56⁩
+      <!--&lt;Localized&gt;-->
+    </div>
+     
+    <div>
+      Today is ⁨September 13, 2022⁩
+      <!--&lt;Localized&gt;-->
+    </div>
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
+exports[`Example tutorial/multi-language/App.svelte > should render 1`] = `
+<body>
+  <div>
+    Hello, world!
+    <!--&lt;Localized&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
+exports[`Example tutorial/translation-files/App.svelte > should render 1`] = `
+<body>
+  <div>
+    Hello, world!
+    <!--&lt;Localized&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;

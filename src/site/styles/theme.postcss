@@ -1,0 +1,64 @@
+/* https://coolors.co/7cea9c-55d6be-2e5eaa-5b4e77-593959 */
+
+:root {
+	--theme-color-background: #fff;
+	--theme-color-text: #000;
+	--theme-color-primary: #501886;
+	--theme-color-secondary: #7cea9c;
+	--theme-color-secondary-light: #cbf7d7;
+	--theme-color-secondary-dark: #147b32;
+
+	--theme-color-gray-dark: #444;
+	--theme-color-gray: #999;
+	--theme-color-gray-light: #ddd;
+
+	--theme-color-container-background: var(--theme-color-secondary);
+	--theme-separator-color: var(--theme-color-gray-light);
+	--theme-border-color: var(--theme-color-gray-light);
+}
+
+body {
+	color: var(--theme-color-text);
+	background-color: var(--theme-color-background);
+}
+
+a {
+	color: var(--theme-color-secondary-dark);
+}
+
+blockquote {
+	border: var(--border-thin) solid var(--theme-color-secondary);
+	padding: var(--space);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	& > * {
+		margin-block: 0;
+	}
+	& > * + * {
+		margin-block-start: var(--space, 1rem);
+	}
+}
+
+p code,
+li code {
+	position: relative;
+	top: -0.05rem;
+	padding: 0.2rem 0.4rem;
+	margin: 0 0.2rem;
+	background-color: var(--theme-color-container-background);
+	white-space: nowrap;
+	&:first-child {
+		margin-inline-start: 0;
+	}
+	&:last-child {
+		margin-inline-end: 0;
+	}
+}
+
+hr {
+	border: none;
+	border-block-start: 1px solid var(--theme-separator-color);
+	width: 100%;
+}

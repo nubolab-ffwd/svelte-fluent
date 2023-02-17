@@ -1,0 +1,174 @@
+@import '@fontsource/manrope/variable.css';
+
+@font-face {
+	font-family: 'Mensch';
+	src: url('../fonts/Mensch-Regular.woff2') format('woff2'),
+		url('../fonts/Mensch-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--ratio: 1.4;
+	--s-5: calc(var(--s-4) / var(--ratio));
+	--s-4: calc(var(--s-3) / var(--ratio));
+	--s-3: calc(var(--s-2) / var(--ratio));
+	--s-2: calc(var(--s-1) / var(--ratio));
+	--s-1: calc(var(--s0) / var(--ratio));
+	--s0: 1rem;
+	--s1: calc(var(--s0) * var(--ratio));
+	--s2: calc(var(--s1) * var(--ratio));
+	--s3: calc(var(--s2) * var(--ratio));
+	--s4: calc(var(--s3) * var(--ratio));
+	--s5: calc(var(--s4) * var(--ratio));
+
+	--measure: 60ch;
+	--border-thin: var(--s-5);
+	--space: var(--s0);
+
+	--font-size-small: var(--s-3);
+	--font-size-smallish: var(--s-1);
+	--font-size-base: 1rem;
+	--font-size-biggish: var(--s1);
+	--font-size-big: var(--s3);
+
+	--font-size-code: var(--s-1);
+	--font-family-code: Mensch;
+}
+
+:root {
+	font-family: ManropeVariable, system-ui;
+	font-size: clamp(1rem, calc(1rem + ((1vw - 0.48rem) * 0.6944)), 1.5rem);
+	min-height: 0vw; /* safari fix */
+	line-height: var(--ratio);
+}
+
+body {
+	margin: 0;
+	min-inline-size: 320px;
+}
+
+* {
+	max-inline-size: var(--measure);
+	box-sizing: border-box;
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer {
+	max-inline-size: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+dl,
+dt,
+dd,
+p {
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	& a {
+		color: inherit;
+		font-variation-settings: inherit;
+		&::after {
+			content: '#';
+			color: var(--theme-color-gray);
+			margin-inline-start: 0.25ch;
+		}
+	}
+}
+
+* {
+	font-variation-settings: 'wght' 380;
+}
+
+h1 {
+	font-variation-settings: 'wght' 640;
+}
+
+h2 {
+	font-variation-settings: 'wght' 570;
+}
+
+h3 {
+	font-variation-settings: 'wght' 620;
+}
+
+strong {
+	font-variation-settings: 'wght' 570;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+input,
+button,
+select {
+	font-size: var(--font-size-base);
+}
+
+pre {
+	max-width: 100%;
+	overflow-x: auto;
+	tab-size: 2;
+	padding: var(--space, 1rem);
+}
+
+pre,
+code {
+	font-family: var(--font-family-code);
+	font-size: var(--font-size-code);
+
+	&[class*='language-'] {
+		font-family: var(--font-family-code);
+		font-size: var(--font-size-code);
+		line-height: var(--ratio);
+	}
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	& td,
+	th {
+		border-width: var(--border-thin);
+		border-style: solid;
+		padding: var(--s-1);
+		text-align: left;
+	}
+	& th {
+		font-variation-settings: 'wght' 570;
+	}
+	& th,
+	code {
+		white-space: nowrap;
+	}
+}
+
+.responsive-table {
+	max-width: 100%;
+	overflow-x: auto;
+}
+
+.token.class-name {
+	text-decoration: none;
+}
