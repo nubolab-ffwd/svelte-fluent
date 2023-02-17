@@ -1,5 +1,4 @@
 <script>
-	import { FluentBundle, FluentResource } from '@fluent/bundle';
 	import { FluentProvider, Localized } from '@nubolab-ffwd/svelte-fluent';
 
 	export let bundles;
