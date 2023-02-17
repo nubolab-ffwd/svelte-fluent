@@ -38,6 +38,7 @@
 			align-items: center;
 			gap: var(--space);
 			font-variant-ligatures: none;
+			font-variation-settings: 'wght' 570;
 
 			& :global(svg) {
 				width: 4rem;

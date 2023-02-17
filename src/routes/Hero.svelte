@@ -35,7 +35,7 @@
 			font-variation-settings: 'wght' 800;
 		}
 		& h1 {
-			color: var(--theme-color-secondary);
+			color: var(--theme-color-primary);
 			font-variant-ligatures: none;
 		}
 		& .tagline {

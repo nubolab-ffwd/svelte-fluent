@@ -18,7 +18,7 @@
 	{/if}
 	{#if next}
 		<a class="next" href={next?.href}>
-			<span class="desc"><strong>Next page</strong></span>
+			<span class="desc">Next page</span>
 			<span class="text">{next?.text}</span>
 		</a>
 	{:else}
@@ -45,14 +45,17 @@
 			border-radius: var(--s-2);
 
 			&:hover {
-				border-color: var(--theme-color-tertiary-dark);
+				border-color: var(--theme-color-secondary-dark);
 			}
 			& .desc,
 			& .text {
 				display: block;
 			}
 			& .desc {
-				color: var(--theme-color-text);
+				color: var(--theme-color-gray-dark);
+			}
+			& .text {
+				font-variation-settings: 'wght' 570;
 			}
 		}
 	}

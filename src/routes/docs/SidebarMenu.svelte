@@ -41,8 +41,11 @@
 				letter-spacing: 0.1em;
 			}
 		}
-		& .item a {
+		& .item {
 			color: var(--theme-color-gray-dark);
+			& a {
+				color: inherit;
+			}
 		}
 	}
 </style>
