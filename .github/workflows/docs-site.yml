@@ -2,7 +2,6 @@ on:
   push:
     branches:
       - main
-      - 'feature/sveltekit'
 
 name: Docs site
 jobs:

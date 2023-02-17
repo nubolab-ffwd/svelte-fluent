@@ -3,9 +3,7 @@
 
 on:
   push:
-    branches:
-      - main
-      - 'feature/sveltekit'
+    branches: [main]
   pull_request:
     branches: [main]
 
