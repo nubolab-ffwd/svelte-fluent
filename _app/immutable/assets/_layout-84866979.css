@@ -218,17 +218,16 @@ table th,
 :root {
 	--theme-color-background: #fff;
 	--theme-color-text: #000;
-	--theme-color-primary: #2e5eaa;
-	--theme-color-secondary: #501886;
-	--theme-color-tertiary: #7cea9c;
-	--theme-color-tertiary-light: #cbf7d7;
-	--theme-color-tertiary-dark: #147b32;
+	--theme-color-primary: #501886;
+	--theme-color-secondary: #7cea9c;
+	--theme-color-secondary-light: #cbf7d7;
+	--theme-color-secondary-dark: #147b32;
 
 	--theme-color-gray-dark: #444;
 	--theme-color-gray: #999;
 	--theme-color-gray-light: #ddd;
 
-	--theme-color-container-background: var(--theme-color-tertiary);
+	--theme-color-container-background: var(--theme-color-secondary);
 	--theme-separator-color: var(--theme-color-gray-light);
 	--theme-border-color: var(--theme-color-gray-light);
 }
@@ -240,12 +239,12 @@ body {
 }
 a {
 	color: #147b32;
-	color: var(--theme-color-tertiary-dark);
+	color: var(--theme-color-secondary-dark);
 }
 blockquote {
 	border: calc(((((1rem / 1.4) / 1.4) / 1.4) / 1.4) / 1.4) solid #7cea9c;
 	border: calc(calc(calc(calc(calc(1rem / 1.4) / 1.4) / 1.4) / 1.4) / 1.4) solid #7cea9c;
-	border: var(--border-thin) solid var(--theme-color-tertiary);
+	border: var(--border-thin) solid var(--theme-color-secondary);
 	padding: 1rem;
 	padding: var(--space);
 	display: flex;
@@ -396,7 +395,7 @@ hr {
 }
 .button.primary {
 		background-color: #7cea9c;
-		background-color: var(--theme-color-tertiary);
+		background-color: var(--theme-color-secondary);
 		border: none;
 	}
-header.svelte-1nu7a08.svelte-1nu7a08{padding:var(--space);box-shadow:0 0 var(--s-5) #aaa;margin-bottom:var(--s2)}header.svelte-1nu7a08 .logo.svelte-1nu7a08{display:flex;align-items:center;gap:var(--space);font-feature-settings:none;font-variant-ligatures:none}header.svelte-1nu7a08 .logo.svelte-1nu7a08 svg{width:4rem}header.svelte-1nu7a08 .icon.svelte-1nu7a08{display:flex;justify-content:baseline}header.svelte-1nu7a08 a.svelte-1nu7a08{color:inherit}.content.svelte-na9ceh{margin-bottom:var(--s5)}
+header.svelte-2ptxw5.svelte-2ptxw5{padding:var(--space);box-shadow:0 0 var(--s-5) #aaa;margin-bottom:var(--s2)}header.svelte-2ptxw5 .logo.svelte-2ptxw5{display:flex;align-items:center;gap:var(--space);font-feature-settings:none;font-variant-ligatures:none;font-variation-settings:'wght' 570}header.svelte-2ptxw5 .logo.svelte-2ptxw5 svg{width:4rem}header.svelte-2ptxw5 .icon.svelte-2ptxw5{display:flex;justify-content:baseline}header.svelte-2ptxw5 a.svelte-2ptxw5{color:inherit}.content.svelte-na9ceh{margin-bottom:var(--s5)}
