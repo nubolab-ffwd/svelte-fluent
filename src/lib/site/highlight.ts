@@ -1,13 +1,13 @@
-import { getHighlighter, setCDN } from 'shiki';
+import { getHighlighter, setCDN, type Highlighter } from 'shiki';
 import FluentGrammar from './fluent.tmLanguage.json';
 
 setCDN('/shiki/');
 
-const highlighter = await getHighlighter({
+export const defaultHighlighter = getHighlighter({
 	theme: 'dark-plus',
 	langs: ['shellscript', 'svelte', { id: 'ftl', scopeName: 'source.ftl', grammar: FluentGrammar }]
 });
 
-export function code_highlight(code: string, lang: string): string {
+export function code_highlight(highlighter: Highlighter, code: string, lang: string): string {
 	return highlighter.codeToHtml(code, { lang });
 }

@@ -1,5 +1,21 @@
 // Vitest Snapshot v1
 
+exports[`Example frontpage/App.svelte > should render 1`] = `
+{
+  "css": {
+    "code": "",
+    "map": null,
+  },
+  "head": "",
+  "html": "<strong>
+	Hello, ⁨Anna⁩!
+</strong>
+	<p>
+	⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.
+</p>",
+}
+`;
+
 exports[`Example localized/attributes/App.svelte > should render 1`] = `
 {
   "css": {
@@ -33,8 +49,7 @@ exports[`Example localized/dynamic-text/App.svelte > should render 1`] = `
     "map": null,
   },
   "head": "",
-  "html": "<div><label>Emails: <input type=\\"number\\" value=\\"10\\"></label></div>
-	
+  "html": "
 	You have ⁨10⁩ unread emails.
 ",
 }
@@ -60,10 +75,9 @@ exports[`Example overlay/dynamic-text/App.svelte > should render 1`] = `
     "map": null,
   },
   "head": "",
-  "html": "<div><label>Name: <input value=\\"Example Product\\"></label></div>
-	<div class=\\"s-inkqtEk9hetm\\">You can download \\"⁨Example Product⁩\\" by clicking
+  "html": "<div class=\\"s-inkqtEk9hetm\\">You can download \\"⁨Example Product⁩\\" by clicking
 on the <strong>Download</strong> button or read
-the <a data-l10n-name=\\"release-notes\\" href=\\"https://example.com/\\" target=\\"_blank\\">release notes</a> to learn more.</div>",
+the <a data-l10n-name=\\"release-notes\\" href=\\"https://example.com/\\" target=\\"_blank\\" rel=\\"noreferrer\\">release notes</a> to learn more.</div>",
 }
 `;
 
@@ -75,6 +89,19 @@ exports[`Example overlay/static-text/App.svelte > should render 1`] = `
   },
   "head": "",
   "html": "<div class=\\"s-inkqtEk9hetm\\">Read the <a data-l10n-name=\\"link\\" href=\\"https://example.com/\\">documentation</a> for more information.</div>",
+}
+`;
+
+exports[`Example provider/App.svelte > should render 1`] = `
+{
+  "css": {
+    "code": "",
+    "map": null,
+  },
+  "head": "",
+  "html": "
+	Hello, world!
+",
 }
 `;
 
@@ -97,9 +124,9 @@ exports[`Example tutorial/first-steps/App.svelte > should render 1`] = `
     "map": null,
   },
   "head": "",
-  "html": "<strong>
+  "html": "
 	Hello, world!
-</strong>",
+",
 }
 `;
 
@@ -110,9 +137,9 @@ exports[`Example tutorial/interpolation/App.svelte > should render 1`] = `
     "map": null,
   },
   "head": "",
-  "html": "<strong>
+  "html": "
 	Hello, ⁨everyone⁩!
-</strong>",
+",
 }
 `;
 
@@ -148,22 +175,6 @@ exports[`Example tutorial/interpolation-formatting/App.svelte > should render 1`
 }
 `;
 
-exports[`Example tutorial/language-override/App.svelte > should render 1`] = `
-{
-  "css": {
-    "code": "select.s-cQkWSroMfW56{color:#000;color:initial}.s-cQkWSroMfW56{}",
-    "map": null,
-  },
-  "head": "",
-  "html": "<div class=\\"s-cQkWSroMfW56\\"><label class=\\"s-cQkWSroMfW56\\">Select language:
-		<select class=\\"s-cQkWSroMfW56\\"><option value=\\"\\" class=\\"s-cQkWSroMfW56\\">auto</option><option value=\\"en\\" class=\\"s-cQkWSroMfW56\\">en</option><option value=\\"fr\\" class=\\"s-cQkWSroMfW56\\">fr</option><option value=\\"de\\" class=\\"s-cQkWSroMfW56\\">de</option></select></label></div>
-
-<strong class=\\"s-cQkWSroMfW56\\">
-	Hello, world!
-</strong>",
-}
-`;
-
 exports[`Example tutorial/multi-language/App.svelte > should render 1`] = `
 {
   "css": {
@@ -171,9 +182,9 @@ exports[`Example tutorial/multi-language/App.svelte > should render 1`] = `
     "map": null,
   },
   "head": "",
-  "html": "<strong>
+  "html": "
 	Hello, world!
-</strong>",
+",
 }
 `;
 
@@ -184,8 +195,8 @@ exports[`Example tutorial/translation-files/App.svelte > should render 1`] = `
     "map": null,
   },
   "head": "",
-  "html": "<strong>
+  "html": "
 	Hello, world!
-</strong>",
+",
 }
 `;

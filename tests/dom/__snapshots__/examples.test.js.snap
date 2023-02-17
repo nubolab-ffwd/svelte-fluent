@@ -1,5 +1,23 @@
 // Vitest Snapshot v1
 
+exports[`Example frontpage/App.svelte > should render 1`] = `
+<body>
+  <div>
+    <strong>
+      Hello, ⁨Anna⁩!
+      <!--&lt;Localized&gt;-->
+    </strong>
+     
+    <p>
+      ⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.
+      <!--&lt;Localized&gt;-->
+    </p>
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
 exports[`Example localized/attributes/App.svelte > should render 1`] = `
 <body>
   <div>
@@ -51,15 +69,6 @@ exports[`Example localized/attributes-with-variables/App.svelte > should render 
 exports[`Example localized/dynamic-text/App.svelte > should render 1`] = `
 <body>
   <div>
-    <div>
-      <label>
-        Emails: 
-        <input
-          type="number"
-        />
-      </label>
-    </div>
-     
     You have ⁨10⁩ unread emails.
     <!--&lt;Localized&gt;-->
     <!--&lt;Component&gt;-->
@@ -84,13 +93,6 @@ exports[`Example localized/static-text/App.svelte > should render 1`] = `
 exports[`Example overlay/dynamic-text/App.svelte > should render 1`] = `
 <body>
   <div>
-    <div>
-      <label>
-        Name: 
-        <input />
-      </label>
-    </div>
-     
     <div
       class="s-inkqtEk9hetm"
     >
@@ -104,6 +106,7 @@ the
       <a
         data-l10n-name="release-notes"
         href="https://example.com/"
+        rel="noreferrer"
         target="_blank"
       >
         release notes
@@ -141,6 +144,18 @@ exports[`Example overlay/static-text/App.svelte > should render 1`] = `
 </body>
 `;
 
+exports[`Example provider/App.svelte > should render 1`] = `
+<body>
+  <div>
+    Hello, world!
+    <!--&lt;Localized&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;Component&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
 exports[`Example tutorial/attributes/App.svelte > should render 1`] = `
 <body>
   <div>
@@ -164,10 +179,8 @@ exports[`Example tutorial/attributes/App.svelte > should render 1`] = `
 exports[`Example tutorial/first-steps/App.svelte > should render 1`] = `
 <body>
   <div>
-    <strong>
-      Hello, world!
-      <!--&lt;Localized&gt;-->
-    </strong>
+    Hello, world!
+    <!--&lt;Localized&gt;-->
     <!--&lt;FluentProvider&gt;-->
     <!--&lt;App&gt;-->
   </div>
@@ -177,10 +190,8 @@ exports[`Example tutorial/first-steps/App.svelte > should render 1`] = `
 exports[`Example tutorial/interpolation/App.svelte > should render 1`] = `
 <body>
   <div>
-    <strong>
-      Hello, ⁨everyone⁩!
-      <!--&lt;Localized&gt;-->
-    </strong>
+    Hello, ⁨everyone⁩!
+    <!--&lt;Localized&gt;-->
     <!--&lt;FluentProvider&gt;-->
     <!--&lt;App&gt;-->
   </div>
@@ -221,67 +232,11 @@ exports[`Example tutorial/interpolation-formatting/App.svelte > should render 1`
 </body>
 `;
 
-exports[`Example tutorial/language-override/App.svelte > should render 1`] = `
-<body>
-  <div>
-    <div
-      class="s-cQkWSroMfW56"
-    >
-      <label
-        class="s-cQkWSroMfW56"
-      >
-        Select language:
-		
-        <select
-          class="s-cQkWSroMfW56"
-        >
-          <option
-            class="s-cQkWSroMfW56"
-            value=""
-          >
-            auto
-          </option>
-          <option
-            class="s-cQkWSroMfW56"
-            value="en"
-          >
-            en
-          </option>
-          <option
-            class="s-cQkWSroMfW56"
-            value="fr"
-          >
-            fr
-          </option>
-          <option
-            class="s-cQkWSroMfW56"
-            value="de"
-          >
-            de
-          </option>
-        </select>
-      </label>
-    </div>
-     
-    <strong
-      class="s-cQkWSroMfW56"
-    >
-      Hello, world!
-      <!--&lt;Localized&gt;-->
-    </strong>
-    <!--&lt;FluentProvider&gt;-->
-    <!--&lt;App&gt;-->
-  </div>
-</body>
-`;
-
 exports[`Example tutorial/multi-language/App.svelte > should render 1`] = `
 <body>
   <div>
-    <strong>
-      Hello, world!
-      <!--&lt;Localized&gt;-->
-    </strong>
+    Hello, world!
+    <!--&lt;Localized&gt;-->
     <!--&lt;FluentProvider&gt;-->
     <!--&lt;App&gt;-->
   </div>
@@ -291,10 +246,8 @@ exports[`Example tutorial/multi-language/App.svelte > should render 1`] = `
 exports[`Example tutorial/translation-files/App.svelte > should render 1`] = `
 <body>
   <div>
-    <strong>
-      Hello, world!
-      <!--&lt;Localized&gt;-->
-    </strong>
+    Hello, world!
+    <!--&lt;Localized&gt;-->
     <!--&lt;FluentProvider&gt;-->
     <!--&lt;App&gt;-->
   </div>

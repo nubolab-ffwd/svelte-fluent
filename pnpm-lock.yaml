@@ -17,6 +17,7 @@ specifiers:
   '@types/jsdom': ^21.1.0
   '@typescript-eslint/eslint-plugin': 5.51.0
   '@typescript-eslint/parser': 5.51.0
+  '@vitest/ui': ^0.28.5
   autoprefixer: ^10.4.13
   cached-iterable: 0.3.0
   eslint: 8.33.0
@@ -76,6 +77,7 @@ devDependencies:
   '@types/jsdom': 21.1.0
   '@typescript-eslint/eslint-plugin': 5.51.0_b635kmla6dsb4frxfihkw4m47e
   '@typescript-eslint/parser': 5.51.0_4vsywjlpuriuw3tl5oq6zy5a64
+  '@vitest/ui': 0.28.5
   autoprefixer: 10.4.13_postcss@8.4.21
   eslint: 8.33.0
   eslint-config-prettier: 8.6.0_eslint@8.33.0
@@ -110,7 +112,7 @@ devDependencies:
   unplugin-icons: 0.15.3
   vite: 4.1.1_sass@1.58.0
   vite-plugin-static-copy: 0.13.0_vite@4.1.1
-  vitest: 0.28.4_jsdom@21.1.0+sass@1.58.0
+  vitest: 0.28.4_qebpbwot6d7ow27v636oduzcqu
 
 packages:
 
@@ -1250,6 +1252,16 @@ packages:
     resolution: {integrity: sha512-8WuhfXLlvCXpNXEGJW6Gc+IKWI32435fQJLh43u70HnZ1otJOa2Cmg2Wy2Aym47ZnNCP4NolF+8cUPwd0MigKQ==}
     dependencies:
       tinyspy: 1.1.1
+    dev: true
+
+  /@vitest/ui/0.28.5:
+    resolution: {integrity: sha512-hzzZzv38mH/LMFh54QEJpWFuGixZZBOD+C0fHU81d1lsvochPwNZhWJbuRJQNyZLSMZYCYW4hF6PpNQJXDHDmg==}
+    dependencies:
+      fast-glob: 3.2.12
+      flatted: 3.2.7
+      pathe: 1.1.0
+      picocolors: 1.0.0
+      sirv: 2.0.2
     dev: true
 
   /@vitest/utils/0.28.4:
@@ -5470,7 +5482,7 @@ packages:
       vite: 4.1.1_sass@1.58.0
     dev: true
 
-  /vitest/0.28.4_jsdom@21.1.0+sass@1.58.0:
+  /vitest/0.28.4_qebpbwot6d7ow27v636oduzcqu:
     resolution: {integrity: sha512-sfWIy0AdlbyGRhunm+TLQEJrFH9XuRPdApfubsyLcDbCRrUX717BRQKInTgzEfyl2Ipi1HWoHB84Nqtcwxogcg==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
@@ -5498,6 +5510,7 @@ packages:
       '@vitest/expect': 0.28.4
       '@vitest/runner': 0.28.4
       '@vitest/spy': 0.28.4
+      '@vitest/ui': 0.28.5
       '@vitest/utils': 0.28.4
       acorn: 8.8.2
       acorn-walk: 8.2.0

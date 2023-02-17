@@ -3,6 +3,7 @@
 	export let component: object;
 	export let componentArgs: Record<string, unknown> = {};
 	import { code_highlight } from './highlight';
+	import { page } from '$app/stores';
 </script>
 
 <div class="stack" aria-label="Code example">
@@ -11,8 +12,10 @@
 			{#if idx !== 0}
 				<span class="filepath">{name}</span>
 			{/if}
-			{#if name.endsWith('.svelte')}{@html code_highlight(source, 'svelte')}
-			{:else if name.endsWith('.ftl')}{@html code_highlight(source, 'ftl')}
+			{#if name.endsWith('.svelte')}
+				{@html code_highlight($page.data.highlighter, source, 'svelte')}
+			{:else if name.endsWith('.ftl')}
+				{@html code_highlight($page.data.highlighter, source, 'ftl')}
 			{:else}
 				<pre class="box"><code>{source}</code></pre>
 			{/if}
