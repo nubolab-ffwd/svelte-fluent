@@ -1,7 +1,7 @@
 import mm from 'micromatch';
 import { mdsvex } from 'mdsvex';
 import mdsvexConfig from './mdsvex.config.js';
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/package').Config} */
@@ -17,6 +17,9 @@ const config = {
 		alias: {
 			$site: 'src/site',
 			'@nubolab-ffwd/svelte-fluent': 'src/lib' // used in examples so that import look more like real-world usage
+		},
+		paths: {
+			base: process.env.NODE_ENV === 'production' ? '/svelte-fluent' : ''
 		}
 	}
 };

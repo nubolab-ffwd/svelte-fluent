@@ -19,9 +19,9 @@ jobs:
           node-version: lts/*
           cache: 'pnpm'
       - run: pnpm install --frozen-lockfile --strict-peer-dependencies
-      - run: pnpm build-storybook
+      - run: pnpm build
       - name: Deploy to GH Pages
         uses: peaceiris/actions-gh-pages@v3.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./storybook-static
+          publish_dir: ./build

@@ -1,7 +1,8 @@
+import { base } from '$app/paths';
 import { getHighlighter, setCDN, type Highlighter } from 'shiki';
 import FluentGrammar from './fluent.tmLanguage.json';
 
-setCDN('/shiki/');
+setCDN(base + '/shiki/');
 
 export const defaultHighlighter = getHighlighter({
 	theme: 'dark-plus',

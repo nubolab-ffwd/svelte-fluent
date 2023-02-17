@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { base } from '$app/paths'
+</script>
+
 # Getting started
 
 ## What is svelte-fluent?
@@ -16,7 +20,7 @@ npm install --save jsdom
 
 ## Configure bundler
 
-`svelte-fluent` needs an additional bundler plugin to support server-side rendering (SSR) and [DOM Overlays](/docs/components#overlay-experimental). Currently vite and rollup are supported.
+`svelte-fluent` needs an additional bundler plugin to support server-side rendering (SSR) and [DOM Overlays]({base}/docs/components#overlay-experimental). Currently vite and rollup are supported.
 
 ### SvelteKit
 

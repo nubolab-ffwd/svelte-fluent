@@ -3,6 +3,7 @@ import { headings as gettingStartedHeadings } from './getting-started/+page.svel
 import { headings as tutorialHeadings } from './tutorial/+page.svelte.md';
 import { headings as componentsHeadings } from './components/+page.svelte.md';
 import type { Item as MenuItem } from './SidebarMenu.svelte';
+import { base } from '$app/paths';
 
 type Heading = { text: string; id: string; rank: number };
 
@@ -26,9 +27,9 @@ function buildHeadingSubmenu(baseHref: string, headings: Heading[], rank: number
 
 export const load = (async (ev) => {
 	const menu = [
-		buildMenu('/docs/getting-started', gettingStartedHeadings, 1),
-		buildMenu('/docs/tutorial', tutorialHeadings, 1),
-		buildMenu('/docs/components', componentsHeadings, 1)
+		buildMenu(base + '/docs/getting-started', gettingStartedHeadings, 1),
+		buildMenu(base + '/docs/tutorial', tutorialHeadings, 1),
+		buildMenu(base + '/docs/components', componentsHeadings, 1)
 	];
 	const title =
 		menu.find((x) => x.href && ev.url.pathname.startsWith(x.href))?.text ?? 'Documentation';
