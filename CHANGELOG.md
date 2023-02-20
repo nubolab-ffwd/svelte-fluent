@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.0.0 (2023-02-20)
+
+
+### Features
+
+* vite 2.7 plugin api compatibility ([1ef7266](https://github.com/nubolab-ffwd/svelte-fluent/commit/1ef7266f896038cb9aa66e94cecfd18de2935631))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @fluent/dom to v0.8.1 ([ee9342b](https://github.com/nubolab-ffwd/svelte-fluent/commit/ee9342b60f76993df95c97a121531803172bb4f6))
+* **deps:** update dependency jsdom to v18.0.1 ([dd7be12](https://github.com/nubolab-ffwd/svelte-fluent/commit/dd7be12fca0ac3a9704cf3b0c7b40f15243d9f65))
+* **deps:** update dependency jsdom to v18.1.0 ([ee50e23](https://github.com/nubolab-ffwd/svelte-fluent/commit/ee50e23575fcc7c9503f50b316e645c90ce34a49))
+* **deps:** update dependency jsdom to v18.1.1 ([7454c16](https://github.com/nubolab-ffwd/svelte-fluent/commit/7454c165fa0f579f7aaa12e12433ac4112818d8b))
+* **deps:** update dependency jsdom to v20.0.2 ([1b2a3f1](https://github.com/nubolab-ffwd/svelte-fluent/commit/1b2a3f148685314960ea1133b9a35dec74c360af))
+* **rollup-plugin:** ensure `ssr` plugin option rewrites imports to SSR entry point ([d4aa9dc](https://github.com/nubolab-ffwd/svelte-fluent/commit/d4aa9dc9196896c13536802f02122c7ab4af2d2b))
+
 ### [0.4.3](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.4.2...v0.4.3) (2022-02-15)
 
 
