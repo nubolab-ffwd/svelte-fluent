@@ -14,7 +14,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"package": "svelte-package",
+		"package": "svelte-package -o dist",
 		"preview": "vite preview",
 		"prepare": "husky install && svelte-kit sync",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
@@ -24,7 +24,7 @@
 		"test": "run-s test:*",
 		"test:dom": "vitest --run",
 		"test:ssr": "vitest -c vitest.ssr.config.ts --run",
-		"prepublishOnly": "echo 'Did you mean to publish `./package/`, instead of `./`?' && exit 1"
+		"prepublishOnly": "npm run package"
 	},
 	"dependencies": {
 		"@fluent/dom": "0.8.1",
@@ -83,7 +83,8 @@
 		"vitest": "0.28.5"
 	},
 	"peerDependencies": {
-		"jsdom": "^16.4.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0"
+		"jsdom": "^16.4.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0",
+		"svelte": "^3.55.0"
 	},
 	"lint-staged": {
 		"*.{cjs,js,ts,svelte}": [
@@ -91,5 +92,30 @@
 			"prettier --write --plugin-search-dir=."
 		],
 		"*.{md,json,yaml}": "prettier --write --plugin-search-dir=."
-	}
+	},
+	"exports": {
+		"./package.json": "./package.json",
+		".": {
+			"types": "./package/index.d.ts",
+			"svelte": "./package/index.js",
+			"default": "./package/index.js"
+		},
+		"./rollup-plugin": {
+			"types": "./package/rollup-plugin.d.ts",
+			"default": "./package/rollup-plugin.js"
+		},
+		"./ssr": {
+			"types": "./package/ssr.d.ts",
+			"default": "./package/ssr.js"
+		},
+		"./types": {
+			"types": "./package/types.d.ts",
+			"default": "./package/types.js"
+		}
+	},
+	"files": [
+		"dist",
+		"src/lib"
+	],
+	"svelte": "./package/index.js"
 }
