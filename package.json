@@ -41,7 +41,7 @@
 		"@iconify-json/mdi": "1.1.47",
 		"@sveltejs/adapter-static": "2.0.1",
 		"@sveltejs/kit": "1.7.2",
-		"@sveltejs/package": "2.0.1",
+		"@sveltejs/package": "2.0.2",
 		"@testing-library/svelte": "3.2.2",
 		"@types/hast": "2.3.4",
 		"@types/jsdom": "21.1.0",
