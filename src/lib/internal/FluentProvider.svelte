@@ -41,12 +41,12 @@
 						return { value: id, attributes: {} };
 					}
 					const msg = bundle.getMessage(id);
-					if (!msg || msg.value === null || msg.value === undefined) {
+					if (!msg) {
 						dispatch('error', `[svelte-fluent] Translation missing: "${id}"`);
 						return { value: id, attributes: {} };
 					}
 					const errors: Error[] = [];
-					const value = bundle.formatPattern(msg.value, args, errors);
+					const value = msg.value ? bundle.formatPattern(msg.value, args, errors) : '';
 					const attributes = Object.fromEntries(
 						Object.entries(msg.attributes || {}).map(([name, pattern]) => [
 							name,
