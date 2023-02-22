@@ -1,0 +1,12 @@
+// Vitest Snapshot v1
+
+exports[`Regression test empty-pattern-with-attributes/Test.svelte > should render 1`] = `
+<body>
+  <div>
+    Some text
+    <!--&lt;Localized&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;Test&gt;-->
+  </div>
+</body>
+`;
