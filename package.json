@@ -73,7 +73,7 @@
 		"shiki": "0.14.1",
 		"svelte": "3.55.1",
 		"svelte-check": "3.0.3",
-		"svelte2tsx": "0.6.1",
+		"svelte2tsx": "0.6.2",
 		"tslib": "2.5.0",
 		"typescript": "4.9.5",
 		"unist-util-visit": "4.1.2",
