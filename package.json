@@ -96,26 +96,26 @@
 	"exports": {
 		"./package.json": "./package.json",
 		".": {
-			"types": "./package/index.d.ts",
-			"svelte": "./package/index.js",
-			"default": "./package/index.js"
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js",
+			"default": "./dist/index.js"
 		},
 		"./rollup-plugin": {
-			"types": "./package/rollup-plugin.d.ts",
-			"default": "./package/rollup-plugin.js"
+			"types": "./dist/rollup-plugin.d.ts",
+			"default": "./dist/rollup-plugin.js"
 		},
 		"./ssr": {
-			"types": "./package/ssr.d.ts",
-			"default": "./package/ssr.js"
+			"types": "./dist/ssr.d.ts",
+			"default": "./dist/ssr.js"
 		},
 		"./types": {
-			"types": "./package/types.d.ts",
-			"default": "./package/types.js"
+			"types": "./dist/types.d.ts",
+			"default": "./dist/types.js"
 		}
 	},
 	"files": [
 		"dist",
 		"src/lib"
 	],
-	"svelte": "./package/index.js"
+	"svelte": "./dist/index.js"
 }
