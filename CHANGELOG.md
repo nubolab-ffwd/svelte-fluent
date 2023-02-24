@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v0.4.3...svelte-fluent-v0.5.0) (2023-02-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* ESM/UMD builds for usage outside of svelte applications are not generated any more
+* wrapper element of `Overlay` component changed to `div`
+
+### Features
+
+* export typescript type definitions ([da86e4b](https://github.com/nubolab-ffwd/svelte-fluent/commit/da86e4b3cfdb90d424a0ab2379894b503134a13c))
+
+
+### Bug Fixes
+
+* **deps:** update dependency jsdom to v20.0.2 ([1b2a3f1](https://github.com/nubolab-ffwd/svelte-fluent/commit/1b2a3f148685314960ea1133b9a35dec74c360af))
+* handle translations with empty pattern that define attributes ([7971653](https://github.com/nubolab-ffwd/svelte-fluent/commit/79716538cc7082f355dcb28e44a5812b1a6dc4d5)), closes [#695](https://github.com/nubolab-ffwd/svelte-fluent/issues/695)
+
+
+### Code Refactoring
+
+* wrapper element of `Overlay` component changed to `div` ([da86e4b](https://github.com/nubolab-ffwd/svelte-fluent/commit/da86e4b3cfdb90d424a0ab2379894b503134a13c))
+
+
+### Build System
+
+* use `@sveltejs/package` for publishing ([da86e4b](https://github.com/nubolab-ffwd/svelte-fluent/commit/da86e4b3cfdb90d424a0ab2379894b503134a13c))
+
 ### [0.4.3](https://github.com/nubolab-ffwd/svelte-fluent/compare/v0.4.2...v0.4.3) (2022-02-15)
 
 
