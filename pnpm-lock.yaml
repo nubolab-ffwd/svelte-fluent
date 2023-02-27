@@ -51,7 +51,7 @@ specifiers:
   unist-util-visit: 4.1.2
   unplugin-icons: 0.15.3
   vite: 4.1.4
-  vite-plugin-static-copy: 0.13.0
+  vite-plugin-static-copy: 0.13.1
   vitest: 0.28.5
 
 dependencies:
@@ -107,7 +107,7 @@ devDependencies:
   unist-util-visit: 4.1.2
   unplugin-icons: 0.15.3
   vite: 4.1.4
-  vite-plugin-static-copy: 0.13.0_vite@4.1.4
+  vite-plugin-static-copy: 0.13.1_vite@4.1.4
   vitest: 0.28.5_itn5mhdgoxdt6nk7zeh5bmcq5a
 
 packages:
@@ -5343,8 +5343,8 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-static-copy/0.13.0_vite@4.1.4:
-    resolution: {integrity: sha512-cln+fvKMgwNBjxQ59QVblmExZrc9gGEdRmfqcPOOGpxT5KInfpkGMvmK4L+kCAeHHSSGNU1bM7BA9PQgaAJc6g==}
+  /vite-plugin-static-copy/0.13.1_vite@4.1.4:
+    resolution: {integrity: sha512-KwIcGBT1aOxSq+laK3VmSngoEa3HXWj/6ZEXdv+y59eZ7p/XSuPahoDo+CfYW22JjTdnstgeKWiX+78KNgDu6g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
       vite: ^3.0.0 || ^4.0.0
