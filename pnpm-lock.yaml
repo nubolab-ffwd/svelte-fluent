@@ -23,7 +23,7 @@ specifiers:
   eslint: 8.35.0
   eslint-config-prettier: 8.6.0
   eslint-plugin-svelte3: 4.0.0
-  glob: 9.0.1
+  glob: 9.1.0
   hast-util-heading-rank: 2.1.1
   hast-util-to-string: 2.0.0
   husky: 8.0.3
@@ -80,7 +80,7 @@ devDependencies:
   eslint: 8.35.0
   eslint-config-prettier: 8.6.0_eslint@8.35.0
   eslint-plugin-svelte3: 4.0.0_n4ieifq2d7jq3sqoe474cgqlim
-  glob: 9.0.1
+  glob: 9.1.0
   hast-util-heading-rank: 2.1.1
   hast-util-to-string: 2.0.0
   husky: 8.0.3
@@ -2518,12 +2518,12 @@ packages:
       path-is-absolute: 1.0.1
     dev: true
 
-  /glob/9.0.1:
-    resolution: {integrity: sha512-psRdn8MI0gRcH0xow0VOhYxXD/6ZaRGmgtfN0oWN/hCgjxpRQBMCl7wE4JRJSAUTdJsW+FmD0EtE0CgJhKqSVw==}
+  /glob/9.1.0:
+    resolution: {integrity: sha512-bAnZn/xYN7o43Y97vDipnunJtQOOhJAyt7/zt1HrzFgtIrol4eJTUn8Kd74B1cMyOBuzWUMvBr2F178h0UQuUw==}
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       fs.realpath: 1.0.0
-      minimatch: 7.3.0
+      minimatch: 7.4.1
       minipass: 4.2.4
       path-scurry: 1.5.0
     dev: true
@@ -3432,8 +3432,8 @@ packages:
       brace-expansion: 1.1.11
     dev: true
 
-  /minimatch/7.3.0:
-    resolution: {integrity: sha512-WaMDuhKa7a6zKiwplR1AOz+zGvJba24k5VU1Cy6NhEguavT2YRlHxuINUgTas4wiS6fwBpYq4TcA1XIECSntyw==}
+  /minimatch/7.4.1:
+    resolution: {integrity: sha512-Oz1iPEP+MGl7KS3SciLsLLcuZ7VsBfb7Qrz/jYt/s/sYAv272P26HSLz2f77Y6hzTKXiBi6g765fqpEDNc5fJw==}
     engines: {node: '>=10'}
     dependencies:
       brace-expansion: 2.0.1
