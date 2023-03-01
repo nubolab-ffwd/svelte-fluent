@@ -8,7 +8,7 @@ specifiers:
   '@fluent/langneg': 0.6.2
   '@fluent/sequence': 0.7.0
   '@fontsource/manrope': 4.5.13
-  '@iconify-json/mdi': 1.1.47
+  '@iconify-json/mdi': 1.1.48
   '@sveltejs/adapter-static': 2.0.1
   '@sveltejs/kit': 1.9.1
   '@sveltejs/package': 2.0.2
@@ -66,7 +66,7 @@ devDependencies:
   '@fluent/bundle': 0.17.1
   '@fluent/langneg': 0.6.2
   '@fontsource/manrope': 4.5.13
-  '@iconify-json/mdi': 1.1.47
+  '@iconify-json/mdi': 1.1.48
   '@sveltejs/adapter-static': 2.0.1_@sveltejs+kit@1.9.1
   '@sveltejs/kit': 1.9.1_svelte@3.55.1+vite@4.1.4
   '@sveltejs/package': 2.0.2_4x7phaipmicbaooxtnresslofa
@@ -846,8 +846,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify-json/mdi/1.1.47:
-    resolution: {integrity: sha512-5E5mazdQaMNl3gmLL7whteh61weJBRfW2R9Rq0/pgAe9B0j22mViyADm/ooHZx07Vkc0ZqnkgUrpT6OsS9Qhzg==}
+  /@iconify-json/mdi/1.1.48:
+    resolution: {integrity: sha512-SKnwyS35W7NJoNhWZ1n1xtarYby1AXAtFKLaecPuNh47yMqNtlRk+BhFyZhX9UDMtibMRgcViu9MNKj9sxq3TQ==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
