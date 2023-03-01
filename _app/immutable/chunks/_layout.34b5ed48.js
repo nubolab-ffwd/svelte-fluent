@@ -1,0 +1,1 @@
+import{d as e}from"./highlight.83bf4bb4.js";const t=!0,r=async()=>({highlighter:await e}),a=Object.freeze(Object.defineProperty({__proto__:null,load:r,prerender:t},Symbol.toStringTag,{value:"Module"}));export{a as _,r as l,t as p};
