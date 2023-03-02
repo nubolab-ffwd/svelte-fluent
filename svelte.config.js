@@ -18,7 +18,8 @@ const config = {
 			'@nubolab-ffwd/svelte-fluent': 'src/lib' // used in examples so that import look more like real-world usage
 		},
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/svelte-fluent' : ''
+			base: process.env.NODE_ENV === 'production' ? '/svelte-fluent' : '',
+			relative: false
 		}
 	}
 };
