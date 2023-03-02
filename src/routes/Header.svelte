@@ -12,7 +12,7 @@
 			</a>
 		</div>
 		<div class="cluster">
-			<a href="{base}/docs/">Docs</a>
+			<a href="{base}/docs">Docs</a>
 			<a
 				href="https://github.com/nubolab-ffwd/svelte-fluent"
 				target="_blank"
