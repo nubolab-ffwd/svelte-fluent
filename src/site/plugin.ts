@@ -1,6 +1,9 @@
+import type { ResolvedId } from 'rollup';
+import type { Plugin as VitePlugin } from 'vite';
+
 // this basically does the same as $lib/rollup-plugin.js but with different paths
-const ssrResolvePlugin = () => {
-	let resolveResult;
+const ssrResolvePlugin: () => VitePlugin = () => {
+	let resolveResult: Promise<ResolvedId | null>;
 
 	return {
 		name: 'ssr-resolve',
