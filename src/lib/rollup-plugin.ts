@@ -1,28 +1,19 @@
-/**
- * @typedef {object} PluginOptions
- * @property {boolean?} ssr
- */
+import type { ResolvedId } from 'rollup';
+import type { Plugin as VitePlugin } from 'vite';
+
+type PluginOptions = { ssr?: boolean };
 
 const defaultOptions = { ssr: false };
 
-/**
- * @param {...any} args
- */
-function debug(...args) {
+function debug(...args: unknown[]) {
 	if (process.env.DEBUG) {
 		console.debug(...args);
 	}
 }
 
-/**
- *
- * @param {PluginOptions} options
- * @returns {import('vite').Plugin}
- */
-export default function svelteFluentPlugin(options = defaultOptions) {
+export default function svelteFluentPlugin(options: PluginOptions = defaultOptions): VitePlugin {
 	options = { ...defaultOptions, ...options };
-	/** @type {Promise<import('rollup').ResolvedId | null>} */
-	let resolveResult;
+	let resolveResult: Promise<ResolvedId | null>;
 	let isVite = false;
 
 	return {
@@ -33,9 +24,6 @@ export default function svelteFluentPlugin(options = defaultOptions) {
 			isVite = true;
 		},
 
-		/**
-		 * @this {import('rollup').PluginContext}
-		 */
 		buildStart() {
 			if (isVite && options.ssr) {
 				this.warn(
@@ -44,16 +32,7 @@ export default function svelteFluentPlugin(options = defaultOptions) {
 			}
 		},
 
-		/**
-		 *
-		 * @this {import('rollup').PluginContext}
-		 * @param {string} source
-		 * @param {string?} importer
-		 * @param {PluginOptions?} opts
-		 * @param {boolean?} _ssr
-		 * @returns {Promise<import('rollup').ResolveIdResult>}
-		 */
-		async resolveId(source, importer, opts, _ssr) {
+		async resolveId(source, importer, opts, _ssr?: boolean) {
 			const ssr = _ssr === true || opts?.ssr || (!isVite && options.ssr);
 			if (ssr && source === '@nubolab-ffwd/svelte-fluent') {
 				if (!resolveResult) {
