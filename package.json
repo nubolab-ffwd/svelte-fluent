@@ -118,5 +118,6 @@
 		"dist",
 		"src/lib"
 	],
-	"svelte": "./dist/index.js"
+	"svelte": "./dist/index.js",
+	"types": "./dist/index.d.ts"
 }
