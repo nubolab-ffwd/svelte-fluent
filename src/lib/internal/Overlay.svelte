@@ -1,8 +1,7 @@
 <script lang="ts">
 	import type { FluentVariable } from '@fluent/bundle';
-
 	import { onMount } from 'svelte';
-	import { stores, type Translation } from './FluentProvider.svelte';
+	import { getTranslation, type Translation } from './stores';
 	import { translateElement } from './utils';
 
 	// props are also consumed in `../Overlay.js`. Changes made here need to be reflected there
@@ -12,15 +11,13 @@
 	let root: HTMLElement;
 	let translatedRoot: HTMLElement;
 
-	const { getTranslation } = stores();
-
 	$: translation = $getTranslation(id, args);
 	$: update(translation);
 
-	function update(translation: Translation) {
-		if (translation && root) {
+	function update(t: Translation) {
+		if (t && root) {
 			const newRoot = root.cloneNode(true) as typeof root;
-			translateElement(newRoot, translation);
+			translateElement(newRoot, t);
 			if (translatedRoot?.parentNode) {
 				translatedRoot.parentNode.replaceChild(newRoot, translatedRoot);
 			}
