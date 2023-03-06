@@ -1,120 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="/svelte-fluent/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="content-security-policy" content="">
-		<link href="/svelte-fluent/_app/immutable/assets/_layout.1468b322.css" rel="stylesheet">
-		<link href="/svelte-fluent/_app/immutable/assets/_layout.b000c885.css" rel="stylesheet">
-		<link href="/svelte-fluent/_app/immutable/assets/_page.svelte.e07d2c57.css" rel="stylesheet">
-		<link href="/svelte-fluent/_app/immutable/assets/Overlay.2c91afa1.css" rel="stylesheet">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/start.68d56ad4.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/index.01f00b63.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/singletons.0e61803e.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/index.497caf63.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/paths.a1ecf9b0.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/control.e7f5239e.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/app.4d611036.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/_layout.svelte.7867c4c8.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/logo.53b7b5a4.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/stores.21c10788.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/_layout.ts.984db11e.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/docs-layout.svelte.409d9758.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/docs-layout.ts.daeee086.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/docs-getting-started-page.svelte.md.cda2fd2b.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/docs-tutorial-page.svelte.md.62c2cc7a.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/Overlay.svelte_svelte_type_style_lang.549e7eb2.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/docs-reference-page.svelte.md.1be67c2c.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/_layout.3e539419.js"><title>Tutorial | svelte-fluent</title><!-- HEAD_svelte-98thyt_START --><meta name="description" content="Tutorial"><!-- HEAD_svelte-98thyt_END -->
-	</head>
-	<body>
-		<div>
-
-
-
-
-<header class="svelte-2ptxw5"><nav aria-label="Primary" class="cluster" style="--justify: space-between;"><div class="cluster"><a class="logo svelte-2ptxw5" href="/svelte-fluent/"><!-- HTML_TAG_START -->
-<svg width="100%" height="100%" viewBox="0 0 180 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;display:block;">
-		<g transform="matrix(1,0,0,1,-300,-390)">
-				<g transform="matrix(1,0,0,1,10,-177.124)">
-						<g id="Logo">
-								<g id="Right" transform="matrix(1,0,0,1,-530,-32.8761)">
-										<path d="M900,620l90,0c5.523,0 10,4.477 10,10l0,80c-0,5.523 -4.477,10 -10,10l-90,0l0,-100Z" style="fill:rgb(224,224,224);"/>
-										<g transform="matrix(1,0,0,1,900,620)">
-												<g transform="matrix(60,0,0,60,20,73.4668)">
-														<path d="M0.026,-0.68l0.409,-0c-0.011,-0.033 -0.024,-0.074 -0.041,-0.123l0.149,-0.03c0.024,0.064 0.043,0.115 0.056,0.153l0.372,-0l-0,0.132l-0.145,-0c-0.049,0.147 -0.12,0.272 -0.213,0.374c0.101,0.07 0.224,0.122 0.371,0.159c-0.054,0.066 -0.089,0.113 -0.107,0.143c-0.149,-0.049 -0.275,-0.115 -0.379,-0.197c-0.104,0.079 -0.233,0.147 -0.385,0.203c-0.035,-0.056 -0.067,-0.104 -0.097,-0.141c0.146,-0.046 0.268,-0.102 0.367,-0.169c-0.094,-0.105 -0.16,-0.229 -0.199,-0.372l-0.158,-0l0,-0.132Zm0.634,0.132l-0.326,-0c0.034,0.106 0.088,0.199 0.164,0.277c0.075,-0.079 0.129,-0.171 0.162,-0.277Z" style="fill:rgb(80,24,134);fill-rule:nonzero;"/>
-												</g>
-										</g>
-								</g>
-								<g id="Fold" transform="matrix(0.4,0,0,1,10,-32.8761)">
-										<path d="M900,700l0,20l100,-20l-100,0Z" style="fill:rgb(58,168,90);"/>
-								</g>
-								<g id="Left" transform="matrix(0.857143,0,0,1,-395.714,-32.8761)">
-										<path d="M800,610c0,-5.523 5.223,-10 11.667,-10c26.378,0 88.333,0 88.333,0l40,100l-128.333,0c-6.444,-0 -11.667,-4.477 -11.667,-10l0,-80Z" style="fill:rgb(124,234,156);"/>
-								</g>
-								<g id="Svelte" transform="matrix(0.598536,0,0,0.598536,-232.485,293.914)">
-										<g transform="matrix(1,0,0,1,906.5,476)">
-												<path d="M94.157,22.819c-10.4,-14.885 -30.94,-19.297 -45.792,-9.835l-26.082,16.624c-7.122,4.48 -12.033,11.762 -13.519,20.043c-1.244,6.9 -0.15,14.022 3.107,20.231c-2.232,3.387 -3.755,7.192 -4.476,11.183c-1.5,8.441 0.465,17.14 5.448,24.116c10.402,14.886 30.942,19.297 45.791,9.835l26.083,-16.624c7.121,-4.479 12.033,-11.762 13.518,-20.043c1.244,-6.9 0.151,-14.022 -3.105,-20.232c2.232,-3.387 3.754,-7.191 4.474,-11.182c1.502,-8.441 -0.463,-17.14 -5.447,-24.116" style="fill:rgb(58,168,90);fill-rule:nonzero;"/>
-										</g>
-										<g transform="matrix(1,0,0,1,906.5,476)">
-												<path d="M45.817,106.582c-8.388,2.18 -17.297,-1.122 -22.237,-8.243c-2.997,-4.195 -4.179,-9.427 -3.277,-14.503c0.152,-0.825 0.36,-1.639 0.624,-2.435l0.491,-1.498l1.336,0.981c3.086,2.268 6.537,3.992 10.203,5.098l0.97,0.294l-0.09,0.968c-0.118,1.376 0.255,2.75 1.052,3.878c1.487,2.145 4.169,3.141 6.696,2.485c0.566,-0.152 1.107,-0.389 1.602,-0.704l26.083,-16.622c1.29,-0.812 2.18,-2.131 2.451,-3.631c0.27,-1.53 -0.086,-3.106 -0.988,-4.371c-1.487,-2.146 -4.171,-3.142 -6.698,-2.487c-0.566,0.152 -1.105,0.389 -1.6,0.704l-9.953,6.345c-1.637,1.041 -3.423,1.825 -5.296,2.326c-8.388,2.181 -17.297,-1.122 -22.237,-8.243c-2.997,-4.195 -4.179,-9.426 -3.277,-14.502c0.894,-4.98 3.847,-9.359 8.13,-12.052l26.081,-16.623c1.638,-1.042 3.425,-1.827 5.3,-2.329c8.388,-2.18 17.297,1.122 22.237,8.243c2.997,4.195 4.179,9.427 3.277,14.503c-0.152,0.825 -0.361,1.639 -0.624,2.435l-0.491,1.498l-1.335,-0.98c-3.086,-2.269 -6.537,-3.994 -10.204,-5.1l-0.97,-0.294l0.09,-0.968c0.117,-1.376 -0.256,-2.75 -1.052,-3.878c-1.487,-2.145 -4.169,-3.14 -6.695,-2.485c-0.567,0.152 -1.108,0.389 -1.603,0.704l-26.083,16.623c-1.29,0.812 -2.179,2.13 -2.449,3.63c-0.272,1.53 0.084,3.107 0.986,4.372c1.487,2.145 4.171,3.141 6.698,2.486c0.566,-0.152 1.107,-0.389 1.602,-0.704l9.952,-6.343c1.636,-1.041 3.422,-1.827 5.296,-2.327c8.387,-2.181 17.297,1.121 22.236,8.242c2.998,4.195 4.179,9.427 3.277,14.503c-0.894,4.98 -3.848,9.359 -8.13,12.053l-26.081,16.622c-1.638,1.042 -3.425,1.827 -5.3,2.328" style="fill:white;fill-rule:nonzero;"/>
-										</g>
-								</g>
-						</g>
-				</g>
-		</g>
-</svg>
-<!-- HTML_TAG_END --> svelte-fluent
-			</a></div>
-		<div class="cluster"><a href="/svelte-fluent/docs" class="svelte-2ptxw5">Docs</a>
-			<a href="https://github.com/nubolab-ffwd/svelte-fluent" target="_blank" rel="noreferrer noopener" title="View on GitHub" class="svelte-2ptxw5"><div class="icon svelte-2ptxw5"><svg viewBox="0 0 24 24" width="1.2em" height="1.2em"><!-- HTML_TAG_START --><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/><!-- HTML_TAG_END --></svg></div></a></div></nav>
-</header>
-
-<div class="content svelte-na9ceh"><div class="docs with-sidebar wrap-reverse" style="--gap: var(--s5) var(--space);"><div class="sidebar svelte-1jxh5k7"><nav aria-label="Docs" class="svelte-1jxh5k7"><ul class="svelte-10yuc2m"><li class="svelte-10yuc2m"><span class="item svelte-10yuc2m">Getting started</span>
-			<ul class="svelte-10yuc2m"><li class="svelte-10yuc2m"><span class="item svelte-10yuc2m"><a href="/svelte-fluent/docs/getting-started#what-is-svelte-fluent" class="svelte-10yuc2m">What is svelte-fluent?</a></span>
-			
-		</li><li class="svelte-10yuc2m"><span class="item svelte-10yuc2m"><a href="/svelte-fluent/docs/getting-started#installation" class="svelte-10yuc2m">Installation</a></span>
-			
-		</li><li class="svelte-10yuc2m"><span class="item svelte-10yuc2m"><a href="/svelte-fluent/docs/getting-started#configure-bundler" class="svelte-10yuc2m">Configure bundler</a></span>
-			
-		</li>
-</ul>
-		</li><li class="svelte-10yuc2m"><span class="item svelte-10yuc2m">Tutorial</span>
-			<ul class="svelte-10yuc2m"><li class="svelte-10yuc2m"><span class="item svelte-10yuc2m"><a href="/svelte-fluent/docs/tutorial#first-steps" class="svelte-10yuc2m">First steps</a></span>
-			
-		</li><li class="svelte-10yuc2m"><span class="item svelte-10yuc2m"><a href="/svelte-fluent/docs/tutorial#load-translations-from-files" class="svelte-10yuc2m">Load translations from files</a></span>
-			
-		</li><li class="svelte-10yuc2m"><span class="item svelte-10yuc2m"><a href="/svelte-fluent/docs/tutorial#multiple-languages" class="svelte-10yuc2m">Multiple languages</a></span>
-			
-		</li><li class="svelte-10yuc2m"><span class="item svelte-10yuc2m"><a href="/svelte-fluent/docs/tutorial#interpolation" class="svelte-10yuc2m">Interpolation</a></span>
-			
-		</li><li class="svelte-10yuc2m"><span class="item svelte-10yuc2m"><a href="/svelte-fluent/docs/tutorial#interpolation-formatting" class="svelte-10yuc2m">Interpolation formatting</a></span>
-			
-		</li><li class="svelte-10yuc2m"><span class="item svelte-10yuc2m"><a href="/svelte-fluent/docs/tutorial#custom-functions" class="svelte-10yuc2m">Custom functions</a></span>
-			
-		</li>
-</ul>
-		</li><li class="svelte-10yuc2m"><span class="item svelte-10yuc2m">Reference</span>
-			<ul class="svelte-10yuc2m"><li class="svelte-10yuc2m"><span class="item svelte-10yuc2m"><a href="/svelte-fluent/docs/reference#fluentprovider" class="svelte-10yuc2m">FluentProvider</a></span>
-			
-		</li><li class="svelte-10yuc2m"><span class="item svelte-10yuc2m"><a href="/svelte-fluent/docs/reference#localized" class="svelte-10yuc2m">Localized</a></span>
-			
-		</li><li class="svelte-10yuc2m"><span class="item svelte-10yuc2m"><a href="/svelte-fluent/docs/reference#overlay-experimental" class="svelte-10yuc2m">Overlay (experimental)</a></span>
-			
-		</li><li class="svelte-10yuc2m"><span class="item svelte-10yuc2m"><a href="/svelte-fluent/docs/reference#localize" class="svelte-10yuc2m">$localize</a></span>
-			
-		</li>
-</ul>
-		</li>
-</ul></nav></div>
-	<div class="content"><div class="stack center with-gutters"><main class="stack svelte-1jxh5k7"><h1 id="tutorial">Tutorial</h1>
-<h2 id="first-steps"><a href="#first-steps">First steps</a></h2>
-<p>You need to provide your translations to <code>svelte-fluent</code> by adding the <code>FluentProvider</code> component in your component hierarchy.</p>
-<p>In the most basic setup those translations can be defined directly in the code like this:</p>
-<div class="stack" aria-label="Code example"><div class="code-block stack">
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+import{S as P,i as O,s as S,y as v,z as A,A as b,g as w,d as _,B as k,H as I,k as D,q as r,a as $,l as y,m as i,r as c,h as o,c as g,n as m,R as wl,b as E,J as e,U as hl,V as _l,X as kl}from"../chunks/index.01f00b63.js";import{F as js,a as Ks,b as us,L as Cs,E as Ms,c as bl,d as vl,e as Ta}from"../chunks/Overlay.svelte_svelte_type_style_lang.549e7eb2.js";function Ll(p){let s,l;return s=new Cs({props:{id:"hello"}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p:I,i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}function xl(p){let s,l;return s=new js({props:{bundles:[p[0]],$$slots:{default:[Ll]},$$scope:{ctx:p}}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p(n,[t]){const u={};t&2&&(u.$$scope={dirty:t,ctx:n}),s.$set(u)},i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}const Bl="hello = Hello, world!";function zl(p){const s=new Ks("en");return s.addResource(new us(Bl)),[s]}let Pl=class extends P{constructor(s){super(),O(this,s,zl,xl,S,{})}};const Ol=`<pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">FluentBundle</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">FluentResource</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@fluent/bundle&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">FluentProvider</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">Localized</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@nubolab-ffwd/svelte-fluent&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"></span>
@@ -126,25 +10,8 @@
 <span class="line"><span style="color: #808080">&lt;</span><span style="color: #4EC9B0">FluentProvider</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">bundles</span><span style="color: #D4D4D4">=</span><span style="color: #569CD6">{</span><span style="color: #D4D4D4">[</span><span style="color: #9CDCFE">bundle</span><span style="color: #D4D4D4">]</span><span style="color: #569CD6">}</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #808080">&lt;</span><span style="color: #4EC9B0">Localized</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">id</span><span style="color: #D4D4D4">=</span><span style="color: #CE9178">&quot;hello&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #808080">/&gt;</span></span>
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #4EC9B0">FluentProvider</span><span style="color: #808080">&gt;</span></span>
-<span class="line"></span></code></pre><!-- HTML_TAG_END -->
-		</div>
-
-	<div>Result:</div>
-	<div class="stack"><div class="box rendered svelte-zbatgl">
-	Hello, world!
-</div>
-
-		</div>
-</div>
-<h2 id="load-translations-from-files"><a href="#load-translations-from-files">Load translations from files</a></h2>
-<p>Managing translations directly in the code can get messy.
-A better way is to load translations from <code>.ftl</code> files.</p>
-<blockquote><p>The bundler must support importing <code>.ftl</code> files as strings:</p>
-<ul><li>For <a href="https://vitejs.dev/" rel="noopener noreferrer" target="_blank">Vite</a> you can add <code>?raw</code> to your import like in the example below.</li>
-<li>For <a href="https://rollupjs.org/" rel="noopener noreferrer" target="_blank">Rollup</a> you can add <a href="https://www.npmjs.com/package/rollup-plugin-string" rel="noopener noreferrer" target="_blank">rollup-plugin-string</a>
-to your configuration.</li></ul></blockquote>
-<div class="stack" aria-label="Code example"><div class="code-block stack">
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+<span class="line"></span></code></pre>`;function Sl(p){let s,l;return s=new Ms({props:{sources:{"App.svelte":{code:Ol,html:!0}},component:Pl}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p:I,i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}let Rl=class extends P{constructor(s){super(),O(this,s,null,Sl,S,{})}};const Tl=`hello = Hello, world!
+`;function ql(p){let s,l;return s=new Cs({props:{id:"hello"}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p:I,i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}function Wl(p){let s,l;return s=new js({props:{bundles:[p[0]],$$slots:{default:[ql]},$$scope:{ctx:p}}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p(n,[t]){const u={};t&4&&(u.$$scope={dirty:t,ctx:n}),s.$set(u)},i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}function Yl(p){const s=new us(Tl),l=new Ks("en");return l.addResource(s),[l]}let Il=class extends P{constructor(s){super(),O(this,s,Yl,Wl,S,{})}};const Hl=`<pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">FluentBundle</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">FluentResource</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@fluent/bundle&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">FluentProvider</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">Localized</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@nubolab-ffwd/svelte-fluent&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">translationsEn</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;./en.ftl?raw&#39;</span><span style="color: #D4D4D4">;</span></span>
@@ -157,30 +24,11 @@ to your configuration.</li></ul></blockquote>
 <span class="line"><span style="color: #808080">&lt;</span><span style="color: #4EC9B0">FluentProvider</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">bundles</span><span style="color: #D4D4D4">=</span><span style="color: #569CD6">{</span><span style="color: #D4D4D4">[</span><span style="color: #9CDCFE">bundle</span><span style="color: #D4D4D4">]</span><span style="color: #569CD6">}</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #808080">&lt;</span><span style="color: #4EC9B0">Localized</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">id</span><span style="color: #D4D4D4">=</span><span style="color: #CE9178">&quot;hello&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #808080">/&gt;</span></span>
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #4EC9B0">FluentProvider</span><span style="color: #808080">&gt;</span></span>
-<span class="line"></span></code></pre><!-- HTML_TAG_END -->
-		</div><div class="code-block stack"><span class="filepath">en.ftl</span>
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">hello = </span><span style="color: #CE9178">Hello, world!</span></span>
-<span class="line"></span></code></pre><!-- HTML_TAG_END -->
-		</div>
-
-	<div>Result:</div>
-	<div class="stack"><div class="box rendered svelte-zbatgl">
-	Hello, world!
-</div>
-
-		</div>
-</div>
-<h2 id="multiple-languages"><a href="#multiple-languages">Multiple languages</a></h2>
-<p>With the basics in place we can now extend this to multiple languages.
-This example shows selection of the desired language and provides a fallback to
-the auto-detected language from the browser.</p>
-<blockquote><p>This example will fail when used with server-side rendering (SSR) because during
-SSR the component cannot use browser-only globals like <code>navigator.languages</code>.</p>
-<p>As an alternative that works in SSR you can parse the
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language" rel="noopener noreferrer" target="_blank">HTTP Accept-Language header</a>
-and replace <code>navigator.languages</code> with the resulting list of locale identifiers.</p></blockquote>
-<div class="stack" aria-label="Code example"><div class="code-block stack">
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+<span class="line"></span></code></pre>`,jl=`<pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">hello = </span><span style="color: #CE9178">Hello, world!</span></span>
+<span class="line"></span></code></pre>`;function Kl(p){let s,l;return s=new Ms({props:{sources:{"App.svelte":{code:Hl,html:!0},"en.ftl":{code:jl,html:!0}},component:Il}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p:I,i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}let Ml=class extends P{constructor(s){super(),O(this,s,null,Kl,S,{})}};const Nl="([a-z]{2,3}|\\*)",Ul="(?:-([a-z]{4}|\\*))",Vl="(?:-([a-z]{2}|\\*))",Jl="(?:-(([0-9][a-z0-9]{3}|[a-z0-9]{5,8})|\\*))",Ql=new RegExp(`^${Nl}${Ul}?${Vl}?${Jl}?$`,"i");class ln{constructor(s){const l=Ql.exec(s.replace(/_/g,"-"));if(!l){this.isWellFormed=!1;return}let[,n,t,u,L]=l;n&&(this.language=n.toLowerCase()),t&&(this.script=t[0].toUpperCase()+t.slice(1)),u&&(this.region=u.toUpperCase()),this.variant=L,this.isWellFormed=!0}isEqual(s){return this.language===s.language&&this.script===s.script&&this.region===s.region&&this.variant===s.variant}matches(s,l=!1,n=!1){return(this.language===s.language||l&&this.language===void 0||n&&s.language===void 0)&&(this.script===s.script||l&&this.script===void 0||n&&s.script===void 0)&&(this.region===s.region||l&&this.region===void 0||n&&s.region===void 0)&&(this.variant===s.variant||l&&this.variant===void 0||n&&s.variant===void 0)}toString(){return[this.language,this.script,this.region,this.variant].filter(s=>s!==void 0).join("-")}clearVariants(){this.variant=void 0}clearRegion(){this.region=void 0}addLikelySubtags(){const s=Gl(this.toString().toLowerCase());return s?(this.language=s.language,this.script=s.script,this.region=s.region,this.variant=s.variant,!0):!1}}const Al={ar:"ar-arab-eg","az-arab":"az-arab-ir","az-ir":"az-arab-ir",be:"be-cyrl-by",da:"da-latn-dk",el:"el-grek-gr",en:"en-latn-us",fa:"fa-arab-ir",ja:"ja-jpan-jp",ko:"ko-kore-kr",pt:"pt-latn-br",sr:"sr-cyrl-rs","sr-ru":"sr-latn-ru",sv:"sv-latn-se",ta:"ta-taml-in",uk:"uk-cyrl-ua",zh:"zh-hans-cn","zh-hant":"zh-hant-tw","zh-hk":"zh-hant-hk","zh-mo":"zh-hant-mo","zh-tw":"zh-hant-tw","zh-gb":"zh-hant-gb","zh-us":"zh-hant-us"},Xl=["az","bg","cs","de","es","fi","fr","hu","it","lt","lv","nl","pl","ro","ru"];function Gl(p){if(Object.prototype.hasOwnProperty.call(Al,p))return new ln(Al[p]);const s=new ln(p);return s.language&&Xl.includes(s.language)?(s.region=s.language.toUpperCase(),s):null}function Zl(p,s,l){const n=new Set,t=new Map;for(let u of s)new ln(u).isWellFormed&&t.set(u,new ln(u));s:for(const u of p){const L=u.toLowerCase(),d=new ln(L);if(d.language!==void 0){for(const C of t.keys())if(L===C.toLowerCase()){if(n.add(C),t.delete(C),l==="lookup")return Array.from(n);if(l==="filtering")continue;continue s}for(const[C,h]of t.entries())if(h.matches(d,!0,!1)){if(n.add(C),t.delete(C),l==="lookup")return Array.from(n);if(l==="filtering")continue;continue s}if(d.addLikelySubtags()){for(const[C,h]of t.entries())if(h.matches(d,!0,!1)){if(n.add(C),t.delete(C),l==="lookup")return Array.from(n);if(l==="filtering")continue;continue s}}d.clearVariants();for(const[C,h]of t.entries())if(h.matches(d,!0,!0)){if(n.add(C),t.delete(C),l==="lookup")return Array.from(n);if(l==="filtering")continue;continue s}if(d.clearRegion(),d.addLikelySubtags()){for(const[C,h]of t.entries())if(h.matches(d,!0,!1)){if(n.add(C),t.delete(C),l==="lookup")return Array.from(n);if(l==="filtering")continue;continue s}}d.clearRegion();for(const[C,h]of t.entries())if(h.matches(d,!0,!0)){if(n.add(C),t.delete(C),l==="lookup")return Array.from(n);if(l==="filtering")continue;continue s}}}return Array.from(n)}function se(p,s,{strategy:l="filtering",defaultLocale:n}={}){const t=Zl(Array.from(p??[]).map(String),Array.from(s??[]).map(String),l);if(l==="lookup"){if(n===void 0)throw new Error("defaultLocale cannot be undefined for strategy `lookup`");t.length===0&&t.push(n)}else n&&!t.includes(n)&&t.push(n);return t}const ne=`hello = Hello, world!
+`,ae=`hello = Hallo Welt!
+`,le=`hello = Salut le monde !
+`;function ee(p){let s,l;return s=new Cs({props:{id:"hello"}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p:I,i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}function oe(p){let s,l;return s=new js({props:{bundles:p[1](p[0]?[p[0]]:navigator.languages),$$slots:{default:[ee]},$$scope:{ctx:p}}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p(n,[t]){const u={};t&1&&(u.bundles=n[1](n[0]?[n[0]]:navigator.languages)),t&16&&(u.$$scope={dirty:t,ctx:n}),s.$set(u)},i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}const te="en";function pe(p,s,l){let{selectedLocale:n=""}=s;const t={en:new us(ne),fr:new us(le),de:new us(ae)},u=Object.keys(t);function L(d){return se(d,u,{defaultLocale:te,strategy:"lookup"}).map(h=>{const F=new Ks(h);return F.addResource(t[h]),F})}return p.$$set=d=>{"selectedLocale"in d&&l(0,n=d.selectedLocale)},[n,L]}let re=class extends P{constructor(s){super(),O(this,s,pe,oe,S,{selectedLocale:0})}};const ce=`<pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">FluentBundle</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">FluentResource</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@fluent/bundle&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">FluentProvider</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">Localized</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@nubolab-ffwd/svelte-fluent&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">negotiateLanguages</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@fluent/langneg&#39;</span><span style="color: #D4D4D4">;</span></span>
@@ -217,32 +65,11 @@ and replace <code>navigator.languages</code> with the resulting list of locale i
 <span class="line"><span style="color: #808080">&lt;</span><span style="color: #4EC9B0">FluentProvider</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">bundles</span><span style="color: #D4D4D4">=</span><span style="color: #569CD6">{</span><span style="color: #DCDCAA">generateBundles</span><span style="color: #D4D4D4">(</span><span style="color: #9CDCFE">selectedLocale</span><span style="color: #D4D4D4"> ? [</span><span style="color: #9CDCFE">selectedLocale</span><span style="color: #D4D4D4">] : </span><span style="color: #9CDCFE">navigator</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">languages</span><span style="color: #D4D4D4">)</span><span style="color: #569CD6">}</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #808080">&lt;</span><span style="color: #4EC9B0">Localized</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">id</span><span style="color: #D4D4D4">=</span><span style="color: #CE9178">&quot;hello&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #808080">/&gt;</span></span>
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #4EC9B0">FluentProvider</span><span style="color: #808080">&gt;</span></span>
-<span class="line"></span></code></pre><!-- HTML_TAG_END -->
-		</div><div class="code-block stack"><span class="filepath">en.ftl</span>
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">hello = </span><span style="color: #CE9178">Hello, world!</span></span>
-<span class="line"></span></code></pre><!-- HTML_TAG_END -->
-		</div><div class="code-block stack"><span class="filepath">fr.ftl</span>
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">hello = </span><span style="color: #CE9178">Salut le monde !</span></span>
-<span class="line"></span></code></pre><!-- HTML_TAG_END -->
-		</div><div class="code-block stack"><span class="filepath">de.ftl</span>
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">hello = </span><span style="color: #CE9178">Hallo Welt!</span></span>
-<span class="line"></span></code></pre><!-- HTML_TAG_END -->
-		</div>
-
-	<div>Result:</div>
-	<div class="stack box"><div class="box rendered svelte-zbatgl">
-	Hello, world!
-</div>
-
-		<div class="controls svelte-zbatgl"><dl slot="controls" class="svelte-74ye1h"><dt><label for="selected-locale">selectedLocale</label>
-		</dt><dd><select id="selected-locale"><option value="">auto</option><option value="de">de</option><option value="en">en</option><option value="fr">fr</option></select></dd></dl></div></div>
-</div>
-<h2 id="interpolation"><a href="#interpolation">Interpolation</a></h2>
-<p>You can insert variables into your translated text by using
-<a href="https://projectfluent.org/fluent/guide/placeables.html" rel="noopener noreferrer" target="_blank">Fluent Placeables</a>.
-Values for those variables are provided via the <code>args</code> prop of the <code>Localized</code> and <code>Overlay</code> components.</p>
-<div class="stack" aria-label="Code example"><div class="code-block stack">
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+<span class="line"></span></code></pre>`,De=`<pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">hello = </span><span style="color: #CE9178">Hello, world!</span></span>
+<span class="line"></span></code></pre>`,ye=`<pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">hello = </span><span style="color: #CE9178">Salut le monde !</span></span>
+<span class="line"></span></code></pre>`,ie=`<pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">hello = </span><span style="color: #CE9178">Hallo Welt!</span></span>
+<span class="line"></span></code></pre>`;function ue(p){let s,l,n,t,u,L,d,C,h,F,x,B,R,T,fs,G,V;return{c(){s=D("dl"),l=D("dt"),n=D("label"),t=r("selectedLocale"),u=$(),L=D("dd"),d=D("select"),C=D("option"),h=r("auto"),F=D("option"),x=r("de"),B=D("option"),R=r("en"),T=D("option"),fs=r("fr"),this.h()},l(H){s=y(H,"DL",{slot:!0,class:!0});var q=i(s);l=y(q,"DT",{});var j=i(l);n=y(j,"LABEL",{for:!0});var ds=i(n);t=c(ds,"selectedLocale"),ds.forEach(o),u=g(j),j.forEach(o),L=y(q,"DD",{});var M=i(L);d=y(M,"SELECT",{id:!0});var W=i(d);C=y(W,"OPTION",{});var xs=i(C);h=c(xs,"auto"),xs.forEach(o),F=y(W,"OPTION",{});var Es=i(F);x=c(Es,"de"),Es.forEach(o),B=y(W,"OPTION",{});var K=i(B);R=c(K,"en"),K.forEach(o),T=y(W,"OPTION",{});var Bs=i(T);fs=c(Bs,"fr"),Bs.forEach(o),W.forEach(o),M.forEach(o),q.forEach(o),this.h()},h(){m(n,"for","selected-locale"),C.__value="",C.value=C.__value,F.__value="de",F.value=F.__value,B.__value="en",B.value=B.__value,T.__value="fr",T.value=T.__value,m(d,"id","selected-locale"),p[0].selectedLocale===void 0&&wl(()=>p[1].call(d)),m(s,"slot","controls"),m(s,"class","svelte-74ye1h")},m(H,q){E(H,s,q),e(s,l),e(l,n),e(n,t),e(l,u),e(s,L),e(L,d),e(d,C),e(C,h),e(d,F),e(F,x),e(d,B),e(B,R),e(d,T),e(T,fs),hl(d,p[0].selectedLocale),G||(V=_l(d,"change",p[1]),G=!0)},p(H,q){q&1&&hl(d,H[0].selectedLocale)},d(H){H&&o(s),G=!1,V()}}}function Ce(p){let s,l;return s=new Ms({props:{sources:{"App.svelte":{code:ce,html:!0},"en.ftl":{code:De,html:!0},"fr.ftl":{code:ye,html:!0},"de.ftl":{code:ie,html:!0}},component:re,componentArgs:p[0],$$slots:{controls:[ue]},$$scope:{ctx:p}}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p(n,[t]){const u={};t&1&&(u.componentArgs=n[0]),t&5&&(u.$$scope={dirty:t,ctx:n}),s.$set(u)},i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}function fe(p,s,l){const n={selectedLocale:""};function t(){n.selectedLocale=kl(this),l(0,n)}return[n,t]}let de=class extends P{constructor(s){super(),O(this,s,fe,Ce,S,{})}};const Ee=`hello = Hello, { $name }!
+`;function me(p){let s,l;return s=new Cs({props:{id:"hello",args:{name:"everyone"}}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p:I,i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}function Fe(p){let s,l;return s=new js({props:{bundles:[p[0]],$$slots:{default:[me]},$$scope:{ctx:p}}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p(n,[t]){const u={};t&4&&(u.$$scope={dirty:t,ctx:n}),s.$set(u)},i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}function $e(p){const s=new us(Ee),l=new Ks("en");return l.addResource(s),[l]}let ge=class extends P{constructor(s){super(),O(this,s,$e,Fe,S,{})}};const he=`<pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">FluentBundle</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">FluentResource</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@fluent/bundle&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">FluentProvider</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">Localized</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@nubolab-ffwd/svelte-fluent&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">translationsEn</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;./en.ftl?raw&#39;</span><span style="color: #D4D4D4">;</span></span>
@@ -255,28 +82,11 @@ Values for those variables are provided via the <code>args</code> prop of the <c
 <span class="line"><span style="color: #808080">&lt;</span><span style="color: #4EC9B0">FluentProvider</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">bundles</span><span style="color: #D4D4D4">=</span><span style="color: #569CD6">{</span><span style="color: #D4D4D4">[</span><span style="color: #9CDCFE">bundle</span><span style="color: #D4D4D4">]</span><span style="color: #569CD6">}</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #808080">&lt;</span><span style="color: #4EC9B0">Localized</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">id</span><span style="color: #D4D4D4">=</span><span style="color: #CE9178">&quot;hello&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">args</span><span style="color: #D4D4D4">=</span><span style="color: #569CD6">{</span><span style="color: #D4D4D4">{ </span><span style="color: #9CDCFE">name:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;everyone&#39;</span><span style="color: #D4D4D4"> }</span><span style="color: #569CD6">}</span><span style="color: #D4D4D4"> </span><span style="color: #808080">/&gt;</span></span>
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #4EC9B0">FluentProvider</span><span style="color: #808080">&gt;</span></span>
-<span class="line"></span></code></pre><!-- HTML_TAG_END -->
-		</div><div class="code-block stack"><span class="filepath">en.ftl</span>
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">hello = </span><span style="color: #CE9178">Hello, </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE"> $name </span><span style="color: #569CD6">}</span><span style="color: #CE9178">!</span></span>
-<span class="line"></span></code></pre><!-- HTML_TAG_END -->
-		</div>
-
-	<div>Result:</div>
-	<div class="stack"><div class="box rendered svelte-zbatgl">
-	Hello, ⁨everyone⁩!
-</div>
-
-		</div>
-</div>
-<h2 id="interpolation-formatting"><a href="#interpolation-formatting">Interpolation formatting</a></h2>
-<p>Fluent outputs interpolations in a human readable format appropriate to the currently used locale.
-You can customize the formatting by using <a href="https://projectfluent.org/fluent/guide/functions.html" rel="noopener noreferrer" target="_blank">Fluent Functions</a>.</p>
-<p>Formatting parameters listed in “Parameters” in the
-<a href="https://projectfluent.org/fluent/guide/functions.html" rel="noopener noreferrer" target="_blank">Fluent Functions</a> documentation can be set both in the <code>.ftl</code>
-files or in the JS source.</p>
-<p>Parameters listed in “Developer parameters” can only be set in JS code.</p>
-<div class="stack" aria-label="Code example"><div class="code-block stack">
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+<span class="line"></span></code></pre>`,ve=`<pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">hello = </span><span style="color: #CE9178">Hello, </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE"> $name </span><span style="color: #569CD6">}</span><span style="color: #CE9178">!</span></span>
+<span class="line"></span></code></pre>`;function Ae(p){let s,l;return s=new Ms({props:{sources:{"App.svelte":{code:he,html:!0},"en.ftl":{code:ve,html:!0}},component:ge}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p:I,i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}let be=class extends P{constructor(s){super(),O(this,s,null,Ae,S,{})}};const we=`dpi-ratio = Your DPI ratio is { NUMBER($ratio, minimumFractionDigits: 2) }
+balance = Your account balance is { $balance }
+today-is = Today is { DATETIME($date, month: "long", year: "numeric", day: "numeric") }
+`;function _e(p){let s,l,n,t,u,L,d,C,h;return l=new Cs({props:{id:"dpi-ratio",args:{ratio:16/9}}}),u=new Cs({props:{id:"balance",args:{balance:new bl(1234.56,{style:"currency",currency:"USD"})}}}),C=new Cs({props:{id:"today-is",args:{date:new Date}}}),{c(){s=D("div"),v(l.$$.fragment),n=$(),t=D("div"),v(u.$$.fragment),L=$(),d=D("div"),v(C.$$.fragment)},l(F){s=y(F,"DIV",{});var x=i(s);A(l.$$.fragment,x),x.forEach(o),n=g(F),t=y(F,"DIV",{});var B=i(t);A(u.$$.fragment,B),B.forEach(o),L=g(F),d=y(F,"DIV",{});var R=i(d);A(C.$$.fragment,R),R.forEach(o)},m(F,x){E(F,s,x),b(l,s,null),E(F,n,x),E(F,t,x),b(u,t,null),E(F,L,x),E(F,d,x),b(C,d,null),h=!0},p:I,i(F){h||(w(l.$$.fragment,F),w(u.$$.fragment,F),w(C.$$.fragment,F),h=!0)},o(F){_(l.$$.fragment,F),_(u.$$.fragment,F),_(C.$$.fragment,F),h=!1},d(F){F&&o(s),k(l),F&&o(n),F&&o(t),k(u),F&&o(L),F&&o(d),k(C)}}}function ke(p){let s,l;return s=new js({props:{bundles:[p[0]],$$slots:{default:[_e]},$$scope:{ctx:p}}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p(n,[t]){const u={};t&4&&(u.$$scope={dirty:t,ctx:n}),s.$set(u)},i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}function Le(p){const s=new us(we),l=new Ks("en");return l.addResource(s),[l]}let xe=class extends P{constructor(s){super(),O(this,s,Le,ke,S,{})}};const Be=`<pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">FluentBundle</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">FluentNumber</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">FluentResource</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@fluent/bundle&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">FluentProvider</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">Localized</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@nubolab-ffwd/svelte-fluent&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">translationsEn</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;./en.ftl?raw&#39;</span><span style="color: #D4D4D4">;</span></span>
@@ -296,35 +106,11 @@ files or in the JS source.</p>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #808080">&lt;/</span><span style="color: #569CD6">div</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #808080">&lt;</span><span style="color: #569CD6">div</span><span style="color: #808080">&gt;&lt;</span><span style="color: #4EC9B0">Localized</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">id</span><span style="color: #D4D4D4">=</span><span style="color: #CE9178">&quot;today-is&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">args</span><span style="color: #D4D4D4">=</span><span style="color: #569CD6">{</span><span style="color: #D4D4D4">{ </span><span style="color: #9CDCFE">date:</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">new</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">Date</span><span style="color: #D4D4D4">() }</span><span style="color: #569CD6">}</span><span style="color: #D4D4D4"> </span><span style="color: #808080">/&gt;&lt;/</span><span style="color: #569CD6">div</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #4EC9B0">FluentProvider</span><span style="color: #808080">&gt;</span></span>
-<span class="line"></span></code></pre><!-- HTML_TAG_END -->
-		</div><div class="code-block stack"><span class="filepath">en.ftl</span>
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">dpi-ratio = </span><span style="color: #CE9178">Your DPI ratio is </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE"> </span><span style="color: #DCDCAA">NUMBER(</span><span style="color: #9CDCFE">$ratio</span><span style="color: #DCDCAA">,</span><span style="color: #CE9178"> </span><span style="color: #DCDCAA">minimumFractionDigits:</span><span style="color: #9CDCFE"> 2</span><span style="color: #DCDCAA">)</span><span style="color: #9CDCFE"> </span><span style="color: #569CD6">}</span></span>
+<span class="line"></span></code></pre>`,ze=`<pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">dpi-ratio = </span><span style="color: #CE9178">Your DPI ratio is </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE"> </span><span style="color: #DCDCAA">NUMBER(</span><span style="color: #9CDCFE">$ratio</span><span style="color: #DCDCAA">,</span><span style="color: #CE9178"> </span><span style="color: #DCDCAA">minimumFractionDigits:</span><span style="color: #9CDCFE"> 2</span><span style="color: #DCDCAA">)</span><span style="color: #9CDCFE"> </span><span style="color: #569CD6">}</span></span>
 <span class="line"><span style="color: #4EC9B0">balance = </span><span style="color: #CE9178">Your account balance is </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE"> $balance </span><span style="color: #569CD6">}</span></span>
 <span class="line"><span style="color: #4EC9B0">today-is = </span><span style="color: #CE9178">Today is </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE"> </span><span style="color: #DCDCAA">DATETIME(</span><span style="color: #9CDCFE">$date</span><span style="color: #DCDCAA">,</span><span style="color: #CE9178"> </span><span style="color: #DCDCAA">month:</span><span style="color: #9CDCFE"> &quot;long&quot;</span><span style="color: #DCDCAA">,</span><span style="color: #CE9178"> </span><span style="color: #DCDCAA">year:</span><span style="color: #9CDCFE"> &quot;numeric&quot;</span><span style="color: #DCDCAA">,</span><span style="color: #CE9178"> </span><span style="color: #DCDCAA">day:</span><span style="color: #9CDCFE"> &quot;numeric&quot;</span><span style="color: #DCDCAA">)</span><span style="color: #9CDCFE"> </span><span style="color: #569CD6">}</span></span>
-<span class="line"></span></code></pre><!-- HTML_TAG_END -->
-		</div>
-
-	<div>Result:</div>
-	<div class="stack"><div class="box rendered svelte-zbatgl"><div>
-	Your DPI ratio is ⁨1.778⁩
-</div>
-	<div>
-	Your account balance is ⁨$1,234.56⁩
-</div>
-	<div>
-	Today is ⁨March 6, 2023⁩
-</div></div>
-
-		</div>
-</div>
-<h2 id="custom-functions"><a href="#custom-functions">Custom functions</a></h2>
-<p>You can extend the default <a href="https://projectfluent.org/fluent/guide/functions.html" rel="noopener noreferrer" target="_blank">Fluent Functions</a>
-with custom formatting functions by adding them to the <code>functions</code> option of <code>FluentBundle</code>.</p>
-<p>You can also check out the
-<a href="https://github.com/projectfluent/fluent.js/blob/master/fluent-bundle/src/builtins.ts" rel="noopener noreferrer" target="_blank">code of the built-in Fluent Functions</a>
-for more examples.</p>
-<div class="stack" aria-label="Code example"><div class="code-block stack">
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+<span class="line"></span></code></pre>`;function Pe(p){let s,l;return s=new Ms({props:{sources:{"App.svelte":{code:Be,html:!0},"en.ftl":{code:ze,html:!0}},component:xe}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p:I,i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}let Oe=class extends P{constructor(s){super(),O(this,s,null,Pe,S,{})}};const Se=`weekday-is = Weekday { $weekday } is { WEEKDAY($weekday) }
+`;function Re(p){let s,l;return s=new Cs({props:{id:"weekday-is",args:{weekday:2}}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p:I,i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}function Te(p){let s,l;return s=new js({props:{bundles:[p[0]],$$slots:{default:[Re]},$$scope:{ctx:p}}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p(n,[t]){const u={};t&16&&(u.$$scope={dirty:t,ctx:n}),s.$set(u)},i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}function qa(p,s){const l=Object.create(null);for(const[n,t]of Object.entries(p))s.includes(n)&&(l[n]=t.valueOf());return l}function qe(p){const s=["weekday"];function l(u,L){const d=u[0];if(d instanceof vl)return new vl(`WEEKDAY(${d.valueOf()})`);if(d instanceof Ta)return new Ta(d.valueOf(),{...qa(d.opts,s),...qa(L,s)});if(d instanceof bl){const C=new Date(Date.now()),h=d.valueOf()-C.getDay();return C.setDate(C.getDate()+h),new Ta(C.valueOf(),{weekday:"long",...qa(L,s)})}throw new TypeError("Invalid argument to WEEKDAY")}const n=new us(Se),t=new Ks("en",{functions:{WEEKDAY:l}});return t.addResource(n),[t]}class We extends P{constructor(s){super(),O(this,s,qe,Te,S,{})}}const Ye=`<pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> {</span></span>
 <span class="line"><span style="color: #D4D4D4">		</span><span style="color: #9CDCFE">FluentBundle</span><span style="color: #D4D4D4">,</span></span>
 <span class="line"><span style="color: #D4D4D4">		</span><span style="color: #9CDCFE">FluentDateTime</span><span style="color: #D4D4D4">,</span></span>
@@ -351,7 +137,7 @@ for more examples.</p>
 <span class="line"><span style="color: #D4D4D4">		</span><span style="color: #569CD6">const</span><span style="color: #D4D4D4"> </span><span style="color: #4FC1FF">arg</span><span style="color: #D4D4D4"> = </span><span style="color: #9CDCFE">args</span><span style="color: #D4D4D4">[</span><span style="color: #B5CEA8">0</span><span style="color: #D4D4D4">];</span></span>
 <span class="line"></span>
 <span class="line"><span style="color: #D4D4D4">		</span><span style="color: #C586C0">if</span><span style="color: #D4D4D4"> (</span><span style="color: #9CDCFE">arg</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">instanceof</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">FluentNone</span><span style="color: #D4D4D4">) {</span></span>
-<span class="line"><span style="color: #D4D4D4">			</span><span style="color: #C586C0">return</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">new</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">FluentNone</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">`WEEKDAY(</span><span style="color: #569CD6">${</span><span style="color: #9CDCFE">arg</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">valueOf</span><span style="color: #D4D4D4">()</span><span style="color: #569CD6">}</span><span style="color: #CE9178">)`</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">			</span><span style="color: #C586C0">return</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">new</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">FluentNone</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">\`WEEKDAY(</span><span style="color: #569CD6">\${</span><span style="color: #9CDCFE">arg</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">valueOf</span><span style="color: #D4D4D4">()</span><span style="color: #569CD6">}</span><span style="color: #CE9178">)\`</span><span style="color: #D4D4D4">);</span></span>
 <span class="line"><span style="color: #D4D4D4">		}</span></span>
 <span class="line"></span>
 <span class="line"><span style="color: #D4D4D4">		</span><span style="color: #C586C0">if</span><span style="color: #D4D4D4"> (</span><span style="color: #9CDCFE">arg</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">instanceof</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">FluentDateTime</span><span style="color: #D4D4D4">) {</span></span>
@@ -382,54 +168,35 @@ for more examples.</p>
 <span class="line"><span style="color: #808080">&lt;</span><span style="color: #4EC9B0">FluentProvider</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">bundles</span><span style="color: #D4D4D4">=</span><span style="color: #569CD6">{</span><span style="color: #D4D4D4">[</span><span style="color: #9CDCFE">bundle</span><span style="color: #D4D4D4">]</span><span style="color: #569CD6">}</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #808080">&lt;</span><span style="color: #4EC9B0">Localized</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">id</span><span style="color: #D4D4D4">=</span><span style="color: #CE9178">&quot;weekday-is&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">args</span><span style="color: #D4D4D4">=</span><span style="color: #569CD6">{</span><span style="color: #D4D4D4">{ </span><span style="color: #9CDCFE">weekday:</span><span style="color: #D4D4D4"> </span><span style="color: #B5CEA8">2</span><span style="color: #D4D4D4"> }</span><span style="color: #569CD6">}</span><span style="color: #D4D4D4"> </span><span style="color: #808080">/&gt;</span></span>
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #4EC9B0">FluentProvider</span><span style="color: #808080">&gt;</span></span>
-<span class="line"></span></code></pre><!-- HTML_TAG_END -->
-		</div><div class="code-block stack"><span class="filepath">en.ftl</span>
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">weekday-is = </span><span style="color: #CE9178">Weekday </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE"> $weekday </span><span style="color: #569CD6">}</span><span style="color: #CE9178"> is </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE"> </span><span style="color: #DCDCAA">WEEKDAY(</span><span style="color: #9CDCFE">$weekday</span><span style="color: #DCDCAA">)</span><span style="color: #9CDCFE"> </span><span style="color: #569CD6">}</span></span>
-<span class="line"></span></code></pre><!-- HTML_TAG_END -->
-		</div>
-
-	<div>Result:</div>
-	<div class="stack"><div class="box rendered svelte-zbatgl">
-	Weekday ⁨2⁩ is ⁨Tuesday⁩
-</div>
-
-		</div>
-</div></main>
-			<hr class="svelte-1jxh5k7">
-			<nav class="svelte-1jxh5k7"><div class="prev-next svelte-3ugd59"><a class="prev svelte-3ugd59" href="/svelte-fluent/docs/getting-started"><span class="desc svelte-3ugd59"><strong class="svelte-3ugd59">Previous page</strong></span>
-			<span class="text svelte-3ugd59">Getting started</span></a>
-	<a class="next svelte-3ugd59" href="/svelte-fluent/docs/reference"><span class="desc svelte-3ugd59">Next page</span>
-			<span class="text svelte-3ugd59">Reference</span></a>
-</div></nav></div></div>
-</div>
-</div>
-
-
-			
-			<script>
-				{
-					__sveltekit_64wnzu = {
-						env: {},
-						assets: "/svelte-fluent",
-						base: "/svelte-fluent",
-						element: document.currentScript.parentElement
-					};
-
-					const data = [null,null,null];
-
-					Promise.all([
-						import("/svelte-fluent/_app/immutable/entry/start.68d56ad4.js"),
-						import("/svelte-fluent/_app/immutable/entry/app.4d611036.js")
-					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_64wnzu.element, {
-							node_ids: [0, 2, 7],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-	</body>
-</html>
+<span class="line"></span></code></pre>`,Ie=`<pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">weekday-is = </span><span style="color: #CE9178">Weekday </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE"> $weekday </span><span style="color: #569CD6">}</span><span style="color: #CE9178"> is </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE"> </span><span style="color: #DCDCAA">WEEKDAY(</span><span style="color: #9CDCFE">$weekday</span><span style="color: #DCDCAA">)</span><span style="color: #9CDCFE"> </span><span style="color: #569CD6">}</span></span>
+<span class="line"></span></code></pre>`;function He(p){let s,l;return s=new Ms({props:{sources:{"App.svelte":{code:Ye,html:!0},"en.ftl":{code:Ie,html:!0}},component:We}}),{c(){v(s.$$.fragment)},l(n){A(s.$$.fragment,n)},m(n,t){b(s,n,t),l=!0},p:I,i(n){l||(w(s.$$.fragment,n),l=!0)},o(n){_(s.$$.fragment,n),l=!1},d(n){k(s,n)}}}class je extends P{constructor(s){super(),O(this,s,null,He,S,{})}}function Ke(p){let s,l,n,t,u,L,d,C,h,F,x,B,R,T,fs,G,V,H,q,j,ds,M,W,xs,Es,K,Bs,Ns,zn,Pn,en,Z,ms,On,Us,Sn,Rn,Tn,Fs,J,qn,ss,Wn,Yn,Vs,In,Hn,jn,Q,Kn,ns,Mn,Nn,as,Un,Vn,on,$s,tn,gs,zs,Jn,pn,Ps,Qn,rn,ls,hs,Xn,Js,Gn,Zn,sa,X,na,es,aa,la,Qs,ea,oa,cn,vs,Dn,As,Os,ta,yn,z,pa,os,ra,ca,Xs,Da,ya,Gs,ia,ua,Zs,Ca,fa,un,bs,Cn,ws,Ss,da,fn,ts,Ea,ps,ma,Fa,dn,N,$a,rs,ga,ha,sn,va,Aa,En,Rs,ba,mn,_s,Fn,ks,Ts,wa,$n,Y,_a,cs,ka,La,nn,xa,Ba,an,za,Pa,gn,Ds,Oa,ys,Sa,Ra,hn,Ls,vn;return j=new Rl({}),$s=new Ml({}),vs=new de({}),bs=new be({}),_s=new Oe({}),Ls=new je({}),{c(){s=D("h1"),l=r("Tutorial"),n=$(),t=D("h2"),u=D("a"),L=r("First steps"),d=$(),C=D("p"),h=r("You need to provide your translations to "),F=D("code"),x=r("svelte-fluent"),B=r(" by adding the "),R=D("code"),T=r("FluentProvider"),fs=r(" component in your component hierarchy."),G=$(),V=D("p"),H=r("In the most basic setup those translations can be defined directly in the code like this:"),q=$(),v(j.$$.fragment),ds=$(),M=D("h2"),W=D("a"),xs=r("Load translations from files"),Es=$(),K=D("p"),Bs=r(`Managing translations directly in the code can get messy.
+A better way is to load translations from `),Ns=D("code"),zn=r(".ftl"),Pn=r(" files."),en=$(),Z=D("blockquote"),ms=D("p"),On=r("The bundler must support importing "),Us=D("code"),Sn=r(".ftl"),Rn=r(" files as strings:"),Tn=$(),Fs=D("ul"),J=D("li"),qn=r("For "),ss=D("a"),Wn=r("Vite"),Yn=r(" you can add "),Vs=D("code"),In=r("?raw"),Hn=r(" to your import like in the example below."),jn=$(),Q=D("li"),Kn=r("For "),ns=D("a"),Mn=r("Rollup"),Nn=r(" you can add "),as=D("a"),Un=r("rollup-plugin-string"),Vn=r(`
+to your configuration.`),on=$(),v($s.$$.fragment),tn=$(),gs=D("h2"),zs=D("a"),Jn=r("Multiple languages"),pn=$(),Ps=D("p"),Qn=r(`With the basics in place we can now extend this to multiple languages.
+This example shows selection of the desired language and provides a fallback to
+the auto-detected language from the browser.`),rn=$(),ls=D("blockquote"),hs=D("p"),Xn=r(`This example will fail when used with server-side rendering (SSR) because during
+SSR the component cannot use browser-only globals like `),Js=D("code"),Gn=r("navigator.languages"),Zn=r("."),sa=$(),X=D("p"),na=r(`As an alternative that works in SSR you can parse the
+`),es=D("a"),aa=r("HTTP Accept-Language header"),la=r(`
+and replace `),Qs=D("code"),ea=r("navigator.languages"),oa=r(" with the resulting list of locale identifiers."),cn=$(),v(vs.$$.fragment),Dn=$(),As=D("h2"),Os=D("a"),ta=r("Interpolation"),yn=$(),z=D("p"),pa=r(`You can insert variables into your translated text by using
+`),os=D("a"),ra=r("Fluent Placeables"),ca=r(`.
+Values for those variables are provided via the `),Xs=D("code"),Da=r("args"),ya=r(" prop of the "),Gs=D("code"),ia=r("Localized"),ua=r(" and "),Zs=D("code"),Ca=r("Overlay"),fa=r(" components."),un=$(),v(bs.$$.fragment),Cn=$(),ws=D("h2"),Ss=D("a"),da=r("Interpolation formatting"),fn=$(),ts=D("p"),Ea=r(`Fluent outputs interpolations in a human readable format appropriate to the currently used locale.
+You can customize the formatting by using `),ps=D("a"),ma=r("Fluent Functions"),Fa=r("."),dn=$(),N=D("p"),$a=r(`Formatting parameters listed in “Parameters” in the
+`),rs=D("a"),ga=r("Fluent Functions"),ha=r(" documentation can be set both in the "),sn=D("code"),va=r(".ftl"),Aa=r(`
+files or in the JS source.`),En=$(),Rs=D("p"),ba=r("Parameters listed in “Developer parameters” can only be set in JS code."),mn=$(),v(_s.$$.fragment),Fn=$(),ks=D("h2"),Ts=D("a"),wa=r("Custom functions"),$n=$(),Y=D("p"),_a=r("You can extend the default "),cs=D("a"),ka=r("Fluent Functions"),La=r(`
+with custom formatting functions by adding them to the `),nn=D("code"),xa=r("functions"),Ba=r(" option of "),an=D("code"),za=r("FluentBundle"),Pa=r("."),gn=$(),Ds=D("p"),Oa=r(`You can also check out the
+`),ys=D("a"),Sa=r("code of the built-in Fluent Functions"),Ra=r(`
+for more examples.`),hn=$(),v(Ls.$$.fragment),this.h()},l(a){s=y(a,"H1",{id:!0});var f=i(s);l=c(f,"Tutorial"),f.forEach(o),n=g(a),t=y(a,"H2",{id:!0});var Wa=i(t);u=y(Wa,"A",{href:!0});var Ya=i(u);L=c(Ya,"First steps"),Ya.forEach(o),Wa.forEach(o),d=g(a),C=y(a,"P",{});var qs=i(C);h=c(qs,"You need to provide your translations to "),F=y(qs,"CODE",{});var Ia=i(F);x=c(Ia,"svelte-fluent"),Ia.forEach(o),B=c(qs," by adding the "),R=y(qs,"CODE",{});var Ha=i(R);T=c(Ha,"FluentProvider"),Ha.forEach(o),fs=c(qs," component in your component hierarchy."),qs.forEach(o),G=g(a),V=y(a,"P",{});var ja=i(V);H=c(ja,"In the most basic setup those translations can be defined directly in the code like this:"),ja.forEach(o),q=g(a),A(j.$$.fragment,a),ds=g(a),M=y(a,"H2",{id:!0});var Ka=i(M);W=y(Ka,"A",{href:!0});var Ma=i(W);xs=c(Ma,"Load translations from files"),Ma.forEach(o),Ka.forEach(o),Es=g(a),K=y(a,"P",{});var An=i(K);Bs=c(An,`Managing translations directly in the code can get messy.
+A better way is to load translations from `),Ns=y(An,"CODE",{});var Na=i(Ns);zn=c(Na,".ftl"),Na.forEach(o),Pn=c(An," files."),An.forEach(o),en=g(a),Z=y(a,"BLOCKQUOTE",{});var bn=i(Z);ms=y(bn,"P",{});var wn=i(ms);On=c(wn,"The bundler must support importing "),Us=y(wn,"CODE",{});var Ua=i(Us);Sn=c(Ua,".ftl"),Ua.forEach(o),Rn=c(wn," files as strings:"),wn.forEach(o),Tn=g(bn),Fs=y(bn,"UL",{});var _n=i(Fs);J=y(_n,"LI",{});var Ws=i(J);qn=c(Ws,"For "),ss=y(Ws,"A",{href:!0,rel:!0,target:!0});var Va=i(ss);Wn=c(Va,"Vite"),Va.forEach(o),Yn=c(Ws," you can add "),Vs=y(Ws,"CODE",{});var Ja=i(Vs);In=c(Ja,"?raw"),Ja.forEach(o),Hn=c(Ws," to your import like in the example below."),Ws.forEach(o),jn=g(_n),Q=y(_n,"LI",{});var Ys=i(Q);Kn=c(Ys,"For "),ns=y(Ys,"A",{href:!0,rel:!0,target:!0});var Qa=i(ns);Mn=c(Qa,"Rollup"),Qa.forEach(o),Nn=c(Ys," you can add "),as=y(Ys,"A",{href:!0,rel:!0,target:!0});var Xa=i(as);Un=c(Xa,"rollup-plugin-string"),Xa.forEach(o),Vn=c(Ys,`
+to your configuration.`),Ys.forEach(o),_n.forEach(o),bn.forEach(o),on=g(a),A($s.$$.fragment,a),tn=g(a),gs=y(a,"H2",{id:!0});var Ga=i(gs);zs=y(Ga,"A",{href:!0});var Za=i(zs);Jn=c(Za,"Multiple languages"),Za.forEach(o),Ga.forEach(o),pn=g(a),Ps=y(a,"P",{});var sl=i(Ps);Qn=c(sl,`With the basics in place we can now extend this to multiple languages.
+This example shows selection of the desired language and provides a fallback to
+the auto-detected language from the browser.`),sl.forEach(o),rn=g(a),ls=y(a,"BLOCKQUOTE",{});var kn=i(ls);hs=y(kn,"P",{});var Ln=i(hs);Xn=c(Ln,`This example will fail when used with server-side rendering (SSR) because during
+SSR the component cannot use browser-only globals like `),Js=y(Ln,"CODE",{});var nl=i(Js);Gn=c(nl,"navigator.languages"),nl.forEach(o),Zn=c(Ln,"."),Ln.forEach(o),sa=g(kn),X=y(kn,"P",{});var Is=i(X);na=c(Is,`As an alternative that works in SSR you can parse the
+`),es=y(Is,"A",{href:!0,rel:!0,target:!0});var al=i(es);aa=c(al,"HTTP Accept-Language header"),al.forEach(o),la=c(Is,`
+and replace `),Qs=y(Is,"CODE",{});var ll=i(Qs);ea=c(ll,"navigator.languages"),ll.forEach(o),oa=c(Is," with the resulting list of locale identifiers."),Is.forEach(o),kn.forEach(o),cn=g(a),A(vs.$$.fragment,a),Dn=g(a),As=y(a,"H2",{id:!0});var el=i(As);Os=y(el,"A",{href:!0});var ol=i(Os);ta=c(ol,"Interpolation"),ol.forEach(o),el.forEach(o),yn=g(a),z=y(a,"P",{});var U=i(z);pa=c(U,`You can insert variables into your translated text by using
+`),os=y(U,"A",{href:!0,rel:!0,target:!0});var tl=i(os);ra=c(tl,"Fluent Placeables"),tl.forEach(o),ca=c(U,`.
+Values for those variables are provided via the `),Xs=y(U,"CODE",{});var pl=i(Xs);Da=c(pl,"args"),pl.forEach(o),ya=c(U," prop of the "),Gs=y(U,"CODE",{});var rl=i(Gs);ia=c(rl,"Localized"),rl.forEach(o),ua=c(U," and "),Zs=y(U,"CODE",{});var cl=i(Zs);Ca=c(cl,"Overlay"),cl.forEach(o),fa=c(U," components."),U.forEach(o),un=g(a),A(bs.$$.fragment,a),Cn=g(a),ws=y(a,"H2",{id:!0});var Dl=i(ws);Ss=y(Dl,"A",{href:!0});var yl=i(Ss);da=c(yl,"Interpolation formatting"),yl.forEach(o),Dl.forEach(o),fn=g(a),ts=y(a,"P",{});var xn=i(ts);Ea=c(xn,`Fluent outputs interpolations in a human readable format appropriate to the currently used locale.
+You can customize the formatting by using `),ps=y(xn,"A",{href:!0,rel:!0,target:!0});var il=i(ps);ma=c(il,"Fluent Functions"),il.forEach(o),Fa=c(xn,"."),xn.forEach(o),dn=g(a),N=y(a,"P",{});var Hs=i(N);$a=c(Hs,`Formatting parameters listed in “Parameters” in the
+`),rs=y(Hs,"A",{href:!0,rel:!0,target:!0});var ul=i(rs);ga=c(ul,"Fluent Functions"),ul.forEach(o),ha=c(Hs," documentation can be set both in the "),sn=y(Hs,"CODE",{});var Cl=i(sn);va=c(Cl,".ftl"),Cl.forEach(o),Aa=c(Hs,`
+files or in the JS source.`),Hs.forEach(o),En=g(a),Rs=y(a,"P",{});var fl=i(Rs);ba=c(fl,"Parameters listed in “Developer parameters” can only be set in JS code."),fl.forEach(o),mn=g(a),A(_s.$$.fragment,a),Fn=g(a),ks=y(a,"H2",{id:!0});var dl=i(ks);Ts=y(dl,"A",{href:!0});var El=i(Ts);wa=c(El,"Custom functions"),El.forEach(o),dl.forEach(o),$n=g(a),Y=y(a,"P",{});var is=i(Y);_a=c(is,"You can extend the default "),cs=y(is,"A",{href:!0,rel:!0,target:!0});var ml=i(cs);ka=c(ml,"Fluent Functions"),ml.forEach(o),La=c(is,`
+with custom formatting functions by adding them to the `),nn=y(is,"CODE",{});var Fl=i(nn);xa=c(Fl,"functions"),Fl.forEach(o),Ba=c(is," option of "),an=y(is,"CODE",{});var $l=i(an);za=c($l,"FluentBundle"),$l.forEach(o),Pa=c(is,"."),is.forEach(o),gn=g(a),Ds=y(a,"P",{});var Bn=i(Ds);Oa=c(Bn,`You can also check out the
+`),ys=y(Bn,"A",{href:!0,rel:!0,target:!0});var gl=i(ys);Sa=c(gl,"code of the built-in Fluent Functions"),gl.forEach(o),Ra=c(Bn,`
+for more examples.`),Bn.forEach(o),hn=g(a),A(Ls.$$.fragment,a),this.h()},h(){m(s,"id","tutorial"),m(u,"href","#first-steps"),m(t,"id","first-steps"),m(W,"href","#load-translations-from-files"),m(M,"id","load-translations-from-files"),m(ss,"href","https://vitejs.dev/"),m(ss,"rel","noopener noreferrer"),m(ss,"target","_blank"),m(ns,"href","https://rollupjs.org/"),m(ns,"rel","noopener noreferrer"),m(ns,"target","_blank"),m(as,"href","https://www.npmjs.com/package/rollup-plugin-string"),m(as,"rel","noopener noreferrer"),m(as,"target","_blank"),m(zs,"href","#multiple-languages"),m(gs,"id","multiple-languages"),m(es,"href","https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language"),m(es,"rel","noopener noreferrer"),m(es,"target","_blank"),m(Os,"href","#interpolation"),m(As,"id","interpolation"),m(os,"href","https://projectfluent.org/fluent/guide/placeables.html"),m(os,"rel","noopener noreferrer"),m(os,"target","_blank"),m(Ss,"href","#interpolation-formatting"),m(ws,"id","interpolation-formatting"),m(ps,"href","https://projectfluent.org/fluent/guide/functions.html"),m(ps,"rel","noopener noreferrer"),m(ps,"target","_blank"),m(rs,"href","https://projectfluent.org/fluent/guide/functions.html"),m(rs,"rel","noopener noreferrer"),m(rs,"target","_blank"),m(Ts,"href","#custom-functions"),m(ks,"id","custom-functions"),m(cs,"href","https://projectfluent.org/fluent/guide/functions.html"),m(cs,"rel","noopener noreferrer"),m(cs,"target","_blank"),m(ys,"href","https://github.com/projectfluent/fluent.js/blob/master/fluent-bundle/src/builtins.ts"),m(ys,"rel","noopener noreferrer"),m(ys,"target","_blank")},m(a,f){E(a,s,f),e(s,l),E(a,n,f),E(a,t,f),e(t,u),e(u,L),E(a,d,f),E(a,C,f),e(C,h),e(C,F),e(F,x),e(C,B),e(C,R),e(R,T),e(C,fs),E(a,G,f),E(a,V,f),e(V,H),E(a,q,f),b(j,a,f),E(a,ds,f),E(a,M,f),e(M,W),e(W,xs),E(a,Es,f),E(a,K,f),e(K,Bs),e(K,Ns),e(Ns,zn),e(K,Pn),E(a,en,f),E(a,Z,f),e(Z,ms),e(ms,On),e(ms,Us),e(Us,Sn),e(ms,Rn),e(Z,Tn),e(Z,Fs),e(Fs,J),e(J,qn),e(J,ss),e(ss,Wn),e(J,Yn),e(J,Vs),e(Vs,In),e(J,Hn),e(Fs,jn),e(Fs,Q),e(Q,Kn),e(Q,ns),e(ns,Mn),e(Q,Nn),e(Q,as),e(as,Un),e(Q,Vn),E(a,on,f),b($s,a,f),E(a,tn,f),E(a,gs,f),e(gs,zs),e(zs,Jn),E(a,pn,f),E(a,Ps,f),e(Ps,Qn),E(a,rn,f),E(a,ls,f),e(ls,hs),e(hs,Xn),e(hs,Js),e(Js,Gn),e(hs,Zn),e(ls,sa),e(ls,X),e(X,na),e(X,es),e(es,aa),e(X,la),e(X,Qs),e(Qs,ea),e(X,oa),E(a,cn,f),b(vs,a,f),E(a,Dn,f),E(a,As,f),e(As,Os),e(Os,ta),E(a,yn,f),E(a,z,f),e(z,pa),e(z,os),e(os,ra),e(z,ca),e(z,Xs),e(Xs,Da),e(z,ya),e(z,Gs),e(Gs,ia),e(z,ua),e(z,Zs),e(Zs,Ca),e(z,fa),E(a,un,f),b(bs,a,f),E(a,Cn,f),E(a,ws,f),e(ws,Ss),e(Ss,da),E(a,fn,f),E(a,ts,f),e(ts,Ea),e(ts,ps),e(ps,ma),e(ts,Fa),E(a,dn,f),E(a,N,f),e(N,$a),e(N,rs),e(rs,ga),e(N,ha),e(N,sn),e(sn,va),e(N,Aa),E(a,En,f),E(a,Rs,f),e(Rs,ba),E(a,mn,f),b(_s,a,f),E(a,Fn,f),E(a,ks,f),e(ks,Ts),e(Ts,wa),E(a,$n,f),E(a,Y,f),e(Y,_a),e(Y,cs),e(cs,ka),e(Y,La),e(Y,nn),e(nn,xa),e(Y,Ba),e(Y,an),e(an,za),e(Y,Pa),E(a,gn,f),E(a,Ds,f),e(Ds,Oa),e(Ds,ys),e(ys,Sa),e(Ds,Ra),E(a,hn,f),b(Ls,a,f),vn=!0},p:I,i(a){vn||(w(j.$$.fragment,a),w($s.$$.fragment,a),w(vs.$$.fragment,a),w(bs.$$.fragment,a),w(_s.$$.fragment,a),w(Ls.$$.fragment,a),vn=!0)},o(a){_(j.$$.fragment,a),_($s.$$.fragment,a),_(vs.$$.fragment,a),_(bs.$$.fragment,a),_(_s.$$.fragment,a),_(Ls.$$.fragment,a),vn=!1},d(a){a&&o(s),a&&o(n),a&&o(t),a&&o(d),a&&o(C),a&&o(G),a&&o(V),a&&o(q),k(j,a),a&&o(ds),a&&o(M),a&&o(Es),a&&o(K),a&&o(en),a&&o(Z),a&&o(on),k($s,a),a&&o(tn),a&&o(gs),a&&o(pn),a&&o(Ps),a&&o(rn),a&&o(ls),a&&o(cn),k(vs,a),a&&o(Dn),a&&o(As),a&&o(yn),a&&o(z),a&&o(un),k(bs,a),a&&o(Cn),a&&o(ws),a&&o(fn),a&&o(ts),a&&o(dn),a&&o(N),a&&o(En),a&&o(Rs),a&&o(mn),k(_s,a),a&&o(Fn),a&&o(ks),a&&o($n),a&&o(Y),a&&o(gn),a&&o(Ds),a&&o(hn),k(Ls,a)}}}const lo=[{rank:1,text:"Tutorial",id:"tutorial"},{rank:2,text:"First steps",id:"first-steps"},{rank:2,text:"Load translations from files",id:"load-translations-from-files"},{rank:2,text:"Multiple languages",id:"multiple-languages"},{rank:2,text:"Interpolation",id:"interpolation"},{rank:2,text:"Interpolation formatting",id:"interpolation-formatting"},{rank:2,text:"Custom functions",id:"custom-functions"}];class eo extends P{constructor(s){super(),O(this,s,null,Ke,S,{})}}export{eo as default,lo as headings};
