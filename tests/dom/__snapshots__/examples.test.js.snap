@@ -18,6 +18,45 @@ exports[`Example frontpage/App.svelte > should render 1`] = `
 </body>
 `;
 
+exports[`Example localize/attributes/App.svelte > should render 1`] = `
+<body>
+  <div>
+    <button>
+      Show prompt
+    </button>
+    <!--&lt;Component&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
+exports[`Example localize/dynamic-text/App.svelte > should render 1`] = `
+<body>
+  <div>
+    <button>
+      Say hello
+    </button>
+    <!--&lt;Component&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
+exports[`Example localize/static-text/App.svelte > should render 1`] = `
+<body>
+  <div>
+    <button>
+      Say hello
+    </button>
+    <!--&lt;Component&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;App&gt;-->
+  </div>
+</body>
+`;
+
 exports[`Example localized/attributes/App.svelte > should render 1`] = `
 <body>
   <div>

@@ -16,6 +16,40 @@ exports[`Example frontpage/App.svelte > should render 1`] = `
 }
 `;
 
+exports[`Example localize/attributes/App.svelte > should render 1`] = `
+{
+  "css": {
+    "code": "",
+    "map": null,
+  },
+  "head": "",
+  "html": "<button>Show prompt
+</button>",
+}
+`;
+
+exports[`Example localize/dynamic-text/App.svelte > should render 1`] = `
+{
+  "css": {
+    "code": "",
+    "map": null,
+  },
+  "head": "",
+  "html": "<button>Say hello</button>",
+}
+`;
+
+exports[`Example localize/static-text/App.svelte > should render 1`] = `
+{
+  "css": {
+    "code": "",
+    "map": null,
+  },
+  "head": "",
+  "html": "<button>Say hello</button>",
+}
+`;
+
 exports[`Example localized/attributes/App.svelte > should render 1`] = `
 {
   "css": {
