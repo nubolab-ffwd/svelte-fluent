@@ -85,7 +85,7 @@
 	--font-size-biggish: calc(max(var(--s1), var(--font-size-minimum)));
 	--font-size-big: calc(max(var(--s3), var(--font-size-minimum)));
 
-	--font-size-code: var(--s-1);
+	--font-size-code: var(--font-size-smallish);
 	--font-family-code: Mensch;
 }
 :root {
@@ -175,13 +175,13 @@ pre,
 code {
 	font-family: Mensch;
 	font-family: var(--font-family-code);
-	font-size: calc(1rem / 1.4);
+	font-size: calc(max(calc(1rem / 1.4), 12px));
 	font-size: var(--font-size-code);
 }
 pre[class*='language-'], code[class*='language-'] {
 		font-family: Mensch;
 		font-family: var(--font-family-code);
-		font-size: calc(1rem / 1.4);
+		font-size: calc(max(calc(1rem / 1.4), 12px));
 		font-size: var(--font-size-code);
 		line-height: 1.4;
 		line-height: var(--ratio);
