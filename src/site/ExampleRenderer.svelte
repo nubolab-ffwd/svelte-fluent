@@ -1,23 +1,28 @@
 <script lang="ts">
-	export let sources: Record<string, string>;
+	type SourceEntry = { code: string; html: boolean };
+
+	export let sources: Record<string, string | SourceEntry>;
 	export let component: object;
 	export let componentArgs: Record<string, unknown> = {};
-	import { code_highlight } from './highlight';
-	import { page } from '$app/stores';
+
+	$: normalizedSources = Object.fromEntries(
+		Object.entries(sources).map(([name, entry]) => [
+			name,
+			typeof entry === 'string' ? { code: entry, html: false } : entry
+		]) ?? []
+	);
 </script>
 
 <div class="stack" aria-label="Code example">
-	{#each Object.entries(sources) as [name, source], idx}
+	{#each Object.entries(normalizedSources) as [name, entry], idx}
 		<div class="code-block stack">
 			{#if idx !== 0}
 				<span class="filepath">{name}</span>
 			{/if}
-			{#if name.endsWith('.svelte')}
-				{@html code_highlight($page.data.highlighter, source, 'svelte')}
-			{:else if name.endsWith('.ftl')}
-				{@html code_highlight($page.data.highlighter, source, 'ftl')}
+			{#if entry.html}
+				{@html entry.code}
 			{:else}
-				<pre class="box"><code>{source}</code></pre>
+				<pre class="box"><code>{entry.code}</code></pre>
 			{/if}
 		</div>
 	{/each}

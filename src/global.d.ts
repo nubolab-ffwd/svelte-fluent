@@ -5,3 +5,8 @@ declare module '*.svelte.md' {
 
 	export default component;
 }
+
+declare module '*?raw&highlight' {
+	const src: string;
+	export default src;
+}

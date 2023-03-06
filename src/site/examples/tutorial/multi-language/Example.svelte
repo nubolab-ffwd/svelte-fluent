@@ -1,20 +1,20 @@
 <script lang="ts">
 	import ExampleRenderer from '$site/ExampleRenderer.svelte';
 	import appComponent from './App.svelte';
-	import appSource from './App.svelte?raw';
-	import enFtlSource from './en.ftl?raw';
-	import frFtlSource from './fr.ftl?raw';
-	import deFtlSource from './de.ftl?raw';
+	import appSource from './App.svelte?raw&highlight';
+	import enFtlSource from './en.ftl?raw&highlight';
+	import frFtlSource from './fr.ftl?raw&highlight';
+	import deFtlSource from './de.ftl?raw&highlight';
 
 	const args = { selectedLocale: '' };
 </script>
 
 <ExampleRenderer
 	sources={{
-		'App.svelte': appSource,
-		'en.ftl': enFtlSource,
-		'fr.ftl': frFtlSource,
-		'de.ftl': deFtlSource
+		'App.svelte': { code: appSource, html: true },
+		'en.ftl': { code: enFtlSource, html: true },
+		'fr.ftl': { code: frFtlSource, html: true },
+		'de.ftl': { code: deFtlSource, html: true }
 	}}
 	component={appComponent}
 	componentArgs={args}
