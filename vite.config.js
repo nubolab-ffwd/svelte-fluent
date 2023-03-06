@@ -1,20 +1,13 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import { viteStaticCopy } from 'vite-plugin-static-copy';
-import ssrResolvePlugin from './src/site/plugin';
 import Icons from 'unplugin-icons/vite';
+import ssrResolvePlugin from './src/site/plugin';
+import highlightPlugin from './utils/highlight-plugin';
 
 /** @type {import('vite').UserConfig} */
 const config = {
 	plugins: [
-		viteStaticCopy({
-			targets: [
-				{
-					src: 'node_modules/shiki',
-					dest: '.'
-				}
-			]
-		}),
 		ssrResolvePlugin(),
+		highlightPlugin(),
 		sveltekit(),
 		Icons({
 			compiler: 'svelte',

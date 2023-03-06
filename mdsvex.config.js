@@ -1,11 +1,10 @@
 import { defineMDSveXConfig as defineConfig } from 'mdsvex';
-import rehypeSlug from 'rehype-slug';
-import rehypeHeadings from './utils/rehype-headings.js';
-import rehypeWrap from 'rehype-wrap-all';
-import rehypeExternalLinks from 'rehype-external-links';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-
-import { getHighlighter } from 'shiki';
+import rehypeExternalLinks from 'rehype-external-links';
+import rehypeSlug from 'rehype-slug';
+import rehypeWrap from 'rehype-wrap-all';
+import { defaultHighlighter } from './utils/highlight.js';
+import rehypeHeadings from './utils/rehype-headings.js';
 
 // escape curlies, backtick, \t, \r, \n to avoid breaking output of {@html `here`} in .svelte
 /**
@@ -18,12 +17,8 @@ export const escape_svelty = (str) =>
 		.replace(/[{}`]/g, (c) => ({ '{': '&#123;', '}': '&#125;', '`': '&#96;' }[c]))
 		.replace(/\\([trn])/g, '&#92;$1');
 
-const highlighter = await getHighlighter({
-	theme: 'dark-plus'
-});
-
-function code_highlight(code, lang) {
-	const highlighted = highlighter.codeToHtml(code, { lang });
+async function code_highlight(code, lang) {
+	const highlighted = (await defaultHighlighter).codeToHtml(code, { lang });
 	return `{@html \`${escape_svelty(highlighted)}\`}`;
 }
 
