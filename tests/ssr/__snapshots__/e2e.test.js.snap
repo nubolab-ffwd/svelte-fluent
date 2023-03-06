@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`E2E test regression-tests/empty-pattern-with-attributes/Test.svelte > should render 1`] = `
+{
+  "css": {
+    "code": "",
+    "map": null,
+  },
+  "head": "",
+  "html": "Some text",
+}
+`;
