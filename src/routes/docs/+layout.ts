@@ -1,7 +1,7 @@
 import type { LayoutLoad } from './$types';
 import { headings as gettingStartedHeadings } from './getting-started/+page.svelte.md';
 import { headings as tutorialHeadings } from './tutorial/+page.svelte.md';
-import { headings as componentsHeadings } from './components/+page.svelte.md';
+import { headings as referenceHeadings } from './reference/+page.svelte.md';
 import type { Item as MenuItem } from './SidebarMenu.svelte';
 import { base } from '$app/paths';
 
@@ -29,7 +29,7 @@ export const load = (async (ev) => {
 	const menu = [
 		buildMenu(base + '/docs/getting-started', gettingStartedHeadings, 1),
 		buildMenu(base + '/docs/tutorial', tutorialHeadings, 1),
-		buildMenu(base + '/docs/components', componentsHeadings, 1)
+		buildMenu(base + '/docs/reference', referenceHeadings, 1)
 	];
 	const title =
 		menu.find((x) => x.href && ev.url.pathname.startsWith(x.href))?.text ?? 'Documentation';
