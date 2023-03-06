@@ -27,11 +27,12 @@
 	--border-thin: var(--s-5);
 	--space: var(--s0);
 
-	--font-size-small: var(--s-3);
-	--font-size-smallish: var(--s-1);
-	--font-size-base: 1rem;
-	--font-size-biggish: var(--s1);
-	--font-size-big: var(--s3);
+	--font-size-minimum: 12px;
+	--font-size-small: calc(max(var(--s-3), var(--font-size-minimum)));
+	--font-size-smallish: calc(max(var(--s-1), var(--font-size-minimum)));
+	--font-size-base: calc(max(1rem, var(--font-size-minimum)));
+	--font-size-biggish: calc(max(var(--s1), var(--font-size-minimum)));
+	--font-size-big: calc(max(var(--s3), var(--font-size-minimum)));
 
 	--font-size-code: var(--s-1);
 	--font-family-code: Mensch;
