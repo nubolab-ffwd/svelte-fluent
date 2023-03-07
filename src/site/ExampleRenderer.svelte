@@ -66,7 +66,7 @@
 			font-size: var(--font-size-code);
 		}
 		& :global(dl > dd > *) {
-			width: 100%;
+			inline-size: 100%;
 		}
 	}
 </style>

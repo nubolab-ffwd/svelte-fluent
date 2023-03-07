@@ -61,7 +61,9 @@ div,
 header,
 nav,
 main,
-footer {
+footer,
+pre,
+pre > code {
 	max-inline-size: none;
 }
 
@@ -128,7 +130,6 @@ select {
 }
 
 pre {
-	max-width: 100%;
 	overflow-x: auto;
 	tab-size: 2;
 	padding: var(--space, 1rem);
@@ -147,7 +148,7 @@ code {
 }
 
 table {
-	width: 100%;
+	inline-size: 100%;
 	border-collapse: collapse;
 	& td,
 	th {
@@ -166,10 +167,6 @@ table {
 }
 
 .responsive-table {
-	max-width: 100%;
+	max-inline-size: 100%;
 	overflow-x: auto;
-}
-
-.token.class-name {
-	text-decoration: none;
 }

@@ -31,7 +31,7 @@
 		display: flex;
 		gap: var(--space);
 		& * {
-			max-width: none;
+			max-inline-size: none;
 		}
 		& > * {
 			flex: 1 1 50%;

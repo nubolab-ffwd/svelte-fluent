@@ -12,6 +12,6 @@
 
 <style lang="postcss">
 	.content {
-		max-width: calc(var(--measure) * 1.33);
+		max-inline-size: calc(var(--measure) * 1.33);
 	}
 </style>
