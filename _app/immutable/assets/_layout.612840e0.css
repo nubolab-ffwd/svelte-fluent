@@ -110,7 +110,9 @@ div,
 header,
 nav,
 main,
-footer {
+footer,
+pre,
+pre > code {
 	max-inline-size: none;
 }
 h1,
@@ -163,7 +165,6 @@ select {
 	font-size: var(--font-size-base);
 }
 pre {
-	max-width: 100%;
 	overflow-x: auto;
 	-moz-tab-size: 2;
 	  -o-tab-size: 2;
@@ -208,12 +209,8 @@ table th,
 		white-space: nowrap;
 	}
 .responsive-table {
-	max-width: 100%;
+	max-inline-size: 100%;
 	overflow-x: auto;
-}
-.token.class-name {
-	-webkit-text-decoration: none;
-	text-decoration: none;
 }
 /* https://coolors.co/7cea9c-55d6be-2e5eaa-5b4e77-593959 */
 :root {
