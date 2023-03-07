@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v0.5.0...svelte-fluent-v0.6.0) (2023-03-07)
+
+
+### Features
+
+* new `localize` store for localizations in component scripts ([867e444](https://github.com/nubolab-ffwd/svelte-fluent/commit/867e4442f72de2f8e7bdf7f35291f8050bfc7272))
+
+
+### Bug Fixes
+
+* **packaging:** add `types` reference to package.json ([5cbfb1e](https://github.com/nubolab-ffwd/svelte-fluent/commit/5cbfb1ebf463d09b4d8f200588b59c2e95b331d2))
+
 ## [0.5.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v0.4.3...svelte-fluent-v0.5.0) (2023-02-24)
 
 
