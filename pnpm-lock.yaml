@@ -10,7 +10,7 @@ specifiers:
   '@fontsource/manrope': 4.5.13
   '@iconify-json/mdi': 1.1.49
   '@sveltejs/adapter-static': 2.0.1
-  '@sveltejs/kit': 1.9.2
+  '@sveltejs/kit': 1.10.0
   '@sveltejs/package': 2.0.2
   '@testing-library/svelte': 3.2.2
   '@types/hast': 2.3.4
@@ -69,8 +69,8 @@ devDependencies:
   '@fluent/langneg': 0.6.2
   '@fontsource/manrope': 4.5.13
   '@iconify-json/mdi': 1.1.49
-  '@sveltejs/adapter-static': 2.0.1_@sveltejs+kit@1.9.2
-  '@sveltejs/kit': 1.9.2_svelte@3.55.1+vite@4.1.4
+  '@sveltejs/adapter-static': 2.0.1_@sveltejs+kit@1.10.0
+  '@sveltejs/kit': 1.10.0_svelte@3.55.1+vite@4.1.4
   '@sveltejs/package': 2.0.2_4x7phaipmicbaooxtnresslofa
   '@testing-library/svelte': 3.2.2_svelte@3.55.1
   '@types/hast': 2.3.4
@@ -895,16 +895,16 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@sveltejs/adapter-static/2.0.1_@sveltejs+kit@1.9.2:
+  /@sveltejs/adapter-static/2.0.1_@sveltejs+kit@1.10.0:
     resolution: {integrity: sha512-o5/q3YwD/ErxYCFlK1v3ydvldyNKk1lh3oeyxn4mhz+Pkbx/uuxhzmbOpytTlp5aVqNHDVsb04xadUzOFCDDzw==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.9.2_svelte@3.55.1+vite@4.1.4
+      '@sveltejs/kit': 1.10.0_svelte@3.55.1+vite@4.1.4
     dev: true
 
-  /@sveltejs/kit/1.9.2_svelte@3.55.1+vite@4.1.4:
-    resolution: {integrity: sha512-KYDrzs9bdoK+3typr5eBa+8q+RFwZdI80tuSL1yU99Rn5hZsEbcj4tlBGVvlL7SHxJdMUiDUYhTznbpb7CIs9A==}
+  /@sveltejs/kit/1.10.0_svelte@3.55.1+vite@4.1.4:
+    resolution: {integrity: sha512-0P35zHrByfbF3Ym3RdQL+RvzgsCDSyO3imSwuZ67XAD5HoCQFF3a8Mhh0V3sObz3rc5aJd4Qn82UpAihJqZ6gQ==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
