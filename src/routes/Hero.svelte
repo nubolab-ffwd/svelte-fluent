@@ -34,6 +34,9 @@
 			font-size: var(--font-size-big);
 			font-variation-settings: 'wght' 800;
 		}
+		& .text {
+			text-transform: capitalize;
+		}
 		& h1 {
 			color: var(--theme-color-primary);
 			font-variant-ligatures: none;
