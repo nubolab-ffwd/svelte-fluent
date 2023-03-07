@@ -7,7 +7,7 @@
 	<div class="stack">
 		<div>
 			<h1>svelte-fluent</h1>
-			<p class="text">The expressive Svelte localisation library</p>
+			<p class="text">The expressive Svelte localization library</p>
 			<p class="tagline">Describe translations with Mozilla's natural-sounding Fluent syntax</p>
 		</div>
 		<div class="buttons">
