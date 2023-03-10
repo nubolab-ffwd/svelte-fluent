@@ -46,7 +46,7 @@ specifiers:
   shiki: 0.14.1
   svelte: 3.55.1
   svelte-check: 3.0.4
-  svelte2tsx: 0.6.2
+  svelte2tsx: 0.6.7
   tslib: 2.5.0
   typescript: 4.9.5
   unist-util-visit: 4.1.2
@@ -103,7 +103,7 @@ devDependencies:
   shiki: 0.14.1
   svelte: 3.55.1
   svelte-check: 3.0.4_gqx7lw3sljhsd4bstor5m2aa2u
-  svelte2tsx: 0.6.2_4x7phaipmicbaooxtnresslofa
+  svelte2tsx: 0.6.7_4x7phaipmicbaooxtnresslofa
   tslib: 2.5.0
   typescript: 4.9.5
   unist-util-visit: 4.1.2
@@ -942,7 +942,7 @@ packages:
       kleur: 4.1.5
       sade: 1.8.1
       svelte: 3.55.1
-      svelte2tsx: 0.6.2_4x7phaipmicbaooxtnresslofa
+      svelte2tsx: 0.6.7_4x7phaipmicbaooxtnresslofa
     transitivePeerDependencies:
       - typescript
     dev: true
@@ -4904,8 +4904,8 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
-  /svelte2tsx/0.6.2_4x7phaipmicbaooxtnresslofa:
-    resolution: {integrity: sha512-0ircYY2/jMOfistf+iq8fVHERnu1i90nku56c78+btC8svyafsc3OjOV37LDEOV7buqYY1Rv/uy03eMxhopH2Q==}
+  /svelte2tsx/0.6.7_4x7phaipmicbaooxtnresslofa:
+    resolution: {integrity: sha512-eqd/MxAx7GBIpzFIZq+YzDdCQNe9p0fUF1J+oG93jFR9uDiMHBst6Uofsz4EYyiW8RR6YDV2lwKGJ9jSRRnpSg==}
     peerDependencies:
       svelte: ^3.55
       typescript: ^4.9.4
