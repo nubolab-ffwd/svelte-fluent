@@ -1,1 +1,0 @@
-import{b as o}from"./paths.458105a1.js";import{R as r}from"./control.e7f5239e.js";function n(e,t){return new r(e,t)}new TextEncoder;const a=()=>{throw n(302,o+"/docs/getting-started")},d=Object.freeze(Object.defineProperty({__proto__:null,load:a},Symbol.toStringTag,{value:"Module"}));export{d as _,a as l};
