@@ -4,9 +4,9 @@ specifiers:
   '@commitlint/cli': 17.4.4
   '@commitlint/config-conventional': 17.4.4
   '@fluent/bundle': 0.17.1
-  '@fluent/dom': 0.8.1
+  '@fluent/dom': ^0.8.1
   '@fluent/langneg': 0.6.2
-  '@fluent/sequence': 0.7.0
+  '@fluent/sequence': ^0.7.0
   '@fontsource/manrope': 4.5.13
   '@iconify-json/mdi': 1.1.50
   '@sveltejs/adapter-static': 2.0.1
@@ -19,7 +19,7 @@ specifiers:
   '@typescript-eslint/parser': 5.54.1
   '@vitest/ui': 0.29.2
   autoprefixer: 10.4.14
-  cached-iterable: 0.3.0
+  cached-iterable: ^0.3.0
   eslint: 8.36.0
   eslint-config-prettier: 8.7.0
   eslint-plugin-svelte3: 4.0.0
@@ -27,7 +27,7 @@ specifiers:
   hast-util-heading-rank: 2.1.1
   hast-util-to-string: 2.0.0
   husky: 8.0.3
-  jsdom: 21.1.0
+  jsdom: ^21.1.0
   lint-staged: 13.2.0
   mdsvex: 0.10.6
   npm-run-all: 4.1.5
@@ -42,7 +42,7 @@ specifiers:
   rehype-shift-heading: 1.0.2
   rehype-slug: 5.1.0
   rehype-wrap-all: 1.1.0
-  rollup: 3.18.0
+  rollup: ^3.18.0
   shiki: 0.14.1
   svelte: 3.56.0
   svelte-check: 3.1.2
@@ -51,7 +51,7 @@ specifiers:
   typescript: 4.9.5
   unist-util-visit: 4.1.2
   unplugin-icons: 0.15.3
-  vite: 4.1.4
+  vite: ^4.1.4
   vitest: 0.29.2
 
 dependencies:
