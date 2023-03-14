@@ -1,9 +1,3 @@
 {
-	"extends": ["config:js-lib"],
-	"packageRules": [
-		{
-			"matchPackageNames": ["rollup", "vite"],
-			"semanticCommitType": "chore"
-		}
-	]
+	"extends": ["config:js-lib", ":semanticCommitTypeAll(chore)"]
 }
