@@ -27,7 +27,7 @@
 		"prepublishOnly": "npm run package"
 	},
 	"dependencies": {
-		"@fluent/dom": "^0.8.1",
+		"@fluent/dom": "^0.9.0",
 		"@fluent/sequence": "^0.7.0",
 		"cached-iterable": "^0.3.0",
 		"jsdom": "^21.1.0",
