@@ -6,7 +6,7 @@ specifiers:
   '@fluent/bundle': 0.18.0
   '@fluent/dom': ^0.9.0
   '@fluent/langneg': 0.7.0
-  '@fluent/sequence': ^0.7.0
+  '@fluent/sequence': ^0.8.0
   '@fontsource/manrope': 4.5.13
   '@iconify-json/mdi': 1.1.50
   '@sveltejs/adapter-static': 2.0.1
@@ -56,7 +56,7 @@ specifiers:
 
 dependencies:
   '@fluent/dom': 0.9.0
-  '@fluent/sequence': 0.7.0_@fluent+bundle@0.18.0
+  '@fluent/sequence': 0.8.0_@fluent+bundle@0.18.0
   cached-iterable: 0.3.0
   jsdom: 21.1.0
   rollup: 3.18.0
@@ -806,9 +806,9 @@ packages:
     engines: {node: '>=14.0.0', npm: '>=7.0.0'}
     dev: true
 
-  /@fluent/sequence/0.7.0_@fluent+bundle@0.18.0:
-    resolution: {integrity: sha512-aH1xMwX8DFvKOQSKUKpB3zMsnJ2rRKt7MajLNnx/r3V3DWDo2nzEfm21d7UyOgwEckPIjPmhxdW1MEmsGUxYIw==}
-    engines: {node: '>=12.0.0', npm: '>=7.0.0'}
+  /@fluent/sequence/0.8.0_@fluent+bundle@0.18.0:
+    resolution: {integrity: sha512-eV5QlEEVV/wR3AFQLXO67x4yPRPQXyqke0c8yucyMSeW36B3ecZyVFlY1UprzrfFV8iPJB4TAehDy/dLGbvQ1Q==}
+    engines: {node: '>=14.0.0', npm: '>=7.0.0'}
     peerDependencies:
       '@fluent/bundle': '>= 0.13.0'
     dependencies:
