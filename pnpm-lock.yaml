@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@commitlint/cli': 17.4.4
   '@commitlint/config-conventional': 17.4.4
-  '@fluent/bundle': 0.17.1
+  '@fluent/bundle': 0.18.0
   '@fluent/dom': ^0.8.1
   '@fluent/langneg': 0.6.2
   '@fluent/sequence': ^0.7.0
@@ -56,7 +56,7 @@ specifiers:
 
 dependencies:
   '@fluent/dom': 0.8.1
-  '@fluent/sequence': 0.7.0_@fluent+bundle@0.17.1
+  '@fluent/sequence': 0.7.0_@fluent+bundle@0.18.0
   cached-iterable: 0.3.0
   jsdom: 21.1.0
   rollup: 3.18.0
@@ -65,7 +65,7 @@ dependencies:
 devDependencies:
   '@commitlint/cli': 17.4.4
   '@commitlint/config-conventional': 17.4.4
-  '@fluent/bundle': 0.17.1
+  '@fluent/bundle': 0.18.0
   '@fluent/langneg': 0.6.2
   '@fontsource/manrope': 4.5.13
   '@iconify-json/mdi': 1.1.50
@@ -790,9 +790,9 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fluent/bundle/0.17.1:
-    resolution: {integrity: sha512-CRFNT9QcSFAeFDneTF59eyv3JXFGhIIN4boUO2y22YmsuuKLyDk+N1I/NQUYz9Ab63e6V7T6vItoZIG/2oOOuw==}
-    engines: {node: '>=12.0.0', npm: '>=7.0.0'}
+  /@fluent/bundle/0.18.0:
+    resolution: {integrity: sha512-8Wfwu9q8F9g2FNnv82g6Ch/E1AW1wwljsUOolH5NEtdJdv0sZTuWvfCM7c3teB9dzNaJA8rn4khpidpozHWYEA==}
+    engines: {node: '>=14.0.0', npm: '>=7.0.0'}
 
   /@fluent/dom/0.8.1:
     resolution: {integrity: sha512-wlQ3vHgioDL8dC0wcZ9AyCSpOgor0OREKXJMvvnx6bzk/PT2SZNA5frslmSdbEaiBQIVy2MhVvAIDtbKbdoVCg==}
@@ -806,13 +806,13 @@ packages:
     engines: {node: '>=12.0.0', npm: '>=7.0.0'}
     dev: true
 
-  /@fluent/sequence/0.7.0_@fluent+bundle@0.17.1:
+  /@fluent/sequence/0.7.0_@fluent+bundle@0.18.0:
     resolution: {integrity: sha512-aH1xMwX8DFvKOQSKUKpB3zMsnJ2rRKt7MajLNnx/r3V3DWDo2nzEfm21d7UyOgwEckPIjPmhxdW1MEmsGUxYIw==}
     engines: {node: '>=12.0.0', npm: '>=7.0.0'}
     peerDependencies:
       '@fluent/bundle': '>= 0.13.0'
     dependencies:
-      '@fluent/bundle': 0.17.1
+      '@fluent/bundle': 0.18.0
     dev: false
 
   /@fontsource/manrope/4.5.13:
