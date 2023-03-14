@@ -38,7 +38,7 @@
 		"@commitlint/cli": "17.4.4",
 		"@commitlint/config-conventional": "17.4.4",
 		"@fluent/bundle": "0.18.0",
-		"@fluent/langneg": "0.6.2",
+		"@fluent/langneg": "0.7.0",
 		"@fontsource/manrope": "4.5.13",
 		"@iconify-json/mdi": "1.1.50",
 		"@sveltejs/adapter-static": "2.0.1",
