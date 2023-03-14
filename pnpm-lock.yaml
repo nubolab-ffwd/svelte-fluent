@@ -23,7 +23,7 @@ specifiers:
   eslint: 8.36.0
   eslint-config-prettier: 8.7.0
   eslint-plugin-svelte3: 4.0.0
-  glob: 9.2.1
+  glob: 9.3.0
   hast-util-heading-rank: 2.1.1
   hast-util-to-string: 2.0.0
   husky: 8.0.3
@@ -82,7 +82,7 @@ devDependencies:
   eslint: 8.36.0
   eslint-config-prettier: 8.7.0_eslint@8.36.0
   eslint-plugin-svelte3: 4.0.0_pdvxdpbnzjwxjm7tkjwumh3vqi
-  glob: 9.2.1
+  glob: 9.3.0
   hast-util-heading-rank: 2.1.1
   hast-util-to-string: 2.0.0
   husky: 8.0.3
@@ -2498,8 +2498,8 @@ packages:
       path-is-absolute: 1.0.1
     dev: true
 
-  /glob/9.2.1:
-    resolution: {integrity: sha512-Pxxgq3W0HyA3XUvSXcFhRSs+43Jsx0ddxcFrbjxNGkL2Ak5BAUBxLqI5G6ADDeCHLfzzXFhe0b1yYcctGmytMA==}
+  /glob/9.3.0:
+    resolution: {integrity: sha512-EAZejC7JvnQINayvB/7BJbpZpNOJ8Lrw2OZNEvQxe0vaLn1SuwMcfV7/MNaX8L/T0wmptBFI4YMtDvSBxYDc7w==}
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       fs.realpath: 1.0.0
