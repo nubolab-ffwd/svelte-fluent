@@ -35,7 +35,7 @@
 		"vite": "^4.1.4"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "17.4.4",
+		"@commitlint/cli": "17.5.0",
 		"@commitlint/config-conventional": "17.4.4",
 		"@fluent/bundle": "0.18.0",
 		"@fluent/langneg": "0.7.0",
