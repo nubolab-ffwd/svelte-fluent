@@ -32,7 +32,7 @@ import svelteFluent from '@nubolab-ffwd/svelte-fluent/rollup-plugin';
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	plugins: [sveltekit(), svelteFluent()]
+	plugins: [svelteFluent(), sveltekit()]
 };
 
 export default config;
