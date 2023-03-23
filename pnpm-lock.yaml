@@ -14,7 +14,7 @@ specifiers:
   '@sveltejs/package': 2.0.2
   '@testing-library/svelte': 3.2.2
   '@types/hast': 2.3.4
-  '@types/jsdom': 21.1.0
+  '@types/jsdom': 21.1.1
   '@typescript-eslint/eslint-plugin': 5.55.0
   '@typescript-eslint/parser': 5.55.0
   '@vitest/ui': 0.29.2
@@ -74,7 +74,7 @@ devDependencies:
   '@sveltejs/package': 2.0.2_wkdgp32a7s6524odeddpfzb52q
   '@testing-library/svelte': 3.2.2_svelte@3.57.0
   '@types/hast': 2.3.4
-  '@types/jsdom': 21.1.0
+  '@types/jsdom': 21.1.1
   '@typescript-eslint/eslint-plugin': 5.55.0_342y7v4tc7ytrrysmit6jo4wri
   '@typescript-eslint/parser': 5.55.0_vgl77cfdswitgr47lm5swmv43m
   '@vitest/ui': 0.29.2
@@ -1049,8 +1049,8 @@ packages:
       '@types/unist': 2.0.6
     dev: true
 
-  /@types/jsdom/21.1.0:
-    resolution: {integrity: sha512-leWreJOdnuIxq9Y70tBVm/bvTuh31DSlF/r4l7Cfi4uhVQqLHD0Q4v301GMisEMwwbMgF7ZKxuZ+Jbd4NcdmRw==}
+  /@types/jsdom/21.1.1:
+    resolution: {integrity: sha512-cZFuoVLtzKP3gmq9eNosUL1R50U+USkbLtUQ1bYVgl/lKp0FZM7Cq4aIHAL8oIvQ17uSHi7jXPtfDOdjPwBE7A==}
     dependencies:
       '@types/node': 18.13.0
       '@types/tough-cookie': 4.0.2
