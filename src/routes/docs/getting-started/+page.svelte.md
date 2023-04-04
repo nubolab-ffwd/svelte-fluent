@@ -15,6 +15,7 @@ Install `svelte-fluent` with your package manager of choice.
 
 ```
 npm install --save-dev @nubolab-ffwd/svelte-fluent
+npm install --save jsdom
 ```
 
 ## Configure bundler
