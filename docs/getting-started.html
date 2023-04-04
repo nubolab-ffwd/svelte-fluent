@@ -9,25 +9,25 @@
 		<link href="/svelte-fluent/_app/immutable/assets/_layout.b0307ea0.css" rel="stylesheet">
 		<link href="/svelte-fluent/_app/immutable/assets/_page.svelte.e07d2c57.css" rel="stylesheet">
 		<link href="/svelte-fluent/_app/immutable/assets/Overlay.2c91afa1.css" rel="stylesheet">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/start.6bba79b7.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/start.2620c17f.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/index.3fd37a06.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/singletons.e1cfc518.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/singletons.f30e2a03.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/index.008a0305.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/paths.3cf20c57.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/paths.3ae5b4dd.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/control.e7f5239e.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/app.637ea6b1.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/_layout.svelte.bf975dce.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/app.dfe76a12.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/_layout.svelte.c9cb2a77.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/logo.00b8d8ff.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/stores.95b066a0.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/stores.04ecc915.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/_layout.ts.984db11e.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/docs-layout.svelte.804edb52.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/docs-layout.ts.94fb7dcc.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/docs-getting-started-page.svelte.md.c3d14750.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/docs-layout.svelte.b9f4bbc2.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/docs-layout.ts.681763e6.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/docs-getting-started-page.svelte.md.cf7c0d9c.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/docs-tutorial-page.svelte.md.5fba0508.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/Overlay.svelte_svelte_type_style_lang.ffedf09d.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/docs-reference-page.svelte.md.53ce1ebd.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/_layout.6daf77de.js"><title>Getting started | svelte-fluent</title><!-- HEAD_svelte-98thyt_START --><meta name="description" content="Getting started"><!-- HEAD_svelte-98thyt_END -->
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/_layout.fd745f2c.js"><title>Getting started | svelte-fluent</title><!-- HEAD_svelte-98thyt_START --><meta name="description" content="Getting started"><!-- HEAD_svelte-98thyt_END -->
 	</head>
 	<body>
 		<div>
@@ -115,7 +115,8 @@
 the <a href="https://projectfluent.org/" rel="noopener noreferrer" target="_blank">Fluent</a> localization system by Mozilla.</p>
 <h2 id="installation"><a href="#installation">Installation</a></h2>
 <p>Install <code>svelte-fluent</code> with your package manager of choice.</p>
-<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #D4D4D4">npm install --save-dev @nubolab-ffwd/svelte-fluent</span></span></code></pre><!-- HTML_TAG_END -->
+<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #D4D4D4">npm install --save-dev @nubolab-ffwd/svelte-fluent</span></span>
+<span class="line"><span style="color: #D4D4D4">npm install --save jsdom</span></span></code></pre><!-- HTML_TAG_END -->
 <h2 id="configure-bundler"><a href="#configure-bundler">Configure bundler</a></h2>
 <p><code>svelte-fluent</code> needs an additional bundler plugin to support server-side rendering (SSR) and <a href="/svelte-fluent/docs/reference#overlay-experimental">DOM Overlays</a>. Currently vite and rollup are supported.</p>
 <h3 id="sveltekit"><a href="#sveltekit">SvelteKit</a></h3>
@@ -163,7 +164,7 @@ the <a href="https://projectfluent.org/" rel="noopener noreferrer" target="_blan
 			
 			<script>
 				{
-					__sveltekit_n239ax = {
+					__sveltekit_j2vnhb = {
 						env: {},
 						assets: "/svelte-fluent",
 						base: "/svelte-fluent",
@@ -173,10 +174,10 @@ the <a href="https://projectfluent.org/" rel="noopener noreferrer" target="_blan
 					const data = [null,null,null];
 
 					Promise.all([
-						import("/svelte-fluent/_app/immutable/entry/start.6bba79b7.js"),
-						import("/svelte-fluent/_app/immutable/entry/app.637ea6b1.js")
+						import("/svelte-fluent/_app/immutable/entry/start.2620c17f.js"),
+						import("/svelte-fluent/_app/immutable/entry/app.dfe76a12.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_n239ax.element, {
+						kit.start(app, __sveltekit_j2vnhb.element, {
 							node_ids: [0, 2, 5],
 							data,
 							form: null,
