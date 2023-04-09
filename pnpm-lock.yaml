@@ -79,8 +79,8 @@ devDependencies:
     specifier: 4.0.0
     version: 4.0.0(eslint@8.37.0)(svelte@3.58.0)
   glob:
-    specifier: 9.3.4
-    version: 9.3.4
+    specifier: 9.3.5
+    version: 9.3.5
   hast-util-heading-rank:
     specifier: 2.1.1
     version: 2.1.1
@@ -2546,8 +2546,8 @@ packages:
       path-is-absolute: 1.0.1
     dev: true
 
-  /glob@9.3.4:
-    resolution: {integrity: sha512-qaSc49hojMOv1EPM4EuyITjDSgSKI0rthoHnvE81tcOi1SCVndHko7auqxdQ14eiQG2NDBJBE86+2xIrbIvrbA==}
+  /glob@9.3.5:
+    resolution: {integrity: sha512-e1LleDykUz2Iu+MTYdkSsuWX8lvAjAcs0Xef0lNIu0S2wOAzuTxCJtcd9S3cijlwYF18EsU3rzb8jPVobxDh9Q==}
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       fs.realpath: 1.0.0

@@ -54,7 +54,7 @@
 		"eslint": "8.37.0",
 		"eslint-config-prettier": "8.8.0",
 		"eslint-plugin-svelte3": "4.0.0",
-		"glob": "9.3.4",
+		"glob": "9.3.5",
 		"hast-util-heading-rank": "2.1.1",
 		"hast-util-to-string": "2.0.0",
 		"husky": "8.0.3",
