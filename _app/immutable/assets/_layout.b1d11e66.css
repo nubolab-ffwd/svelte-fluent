@@ -97,11 +97,11 @@
 }
 body {
 	margin: 0;
-	min-inline-size: 320px;
+	min-width: 320px;
 }
 * {
-	max-inline-size: 60ch;
-	max-inline-size: var(--measure);
+	max-width: 60ch;
+	max-width: var(--measure);
 	box-sizing: border-box;
 }
 html,
@@ -113,7 +113,7 @@ main,
 footer,
 pre,
 pre > code {
-	max-inline-size: none;
+	max-width: none;
 }
 h1,
 h2,
@@ -209,7 +209,7 @@ table th,
 		white-space: nowrap;
 	}
 .responsive-table {
-	max-inline-size: 100%;
+	max-width: 100%;
 	overflow-x: auto;
 }
 /* https://coolors.co/7cea9c-55d6be-2e5eaa-5b4e77-593959 */
@@ -318,8 +318,8 @@ hr {
 	box-sizing: content-box;
 	margin-left: auto;
 	margin-right: auto;
-	max-inline-size: 60ch;
-	max-inline-size: var(--measure);
+	max-width: 60ch;
+	max-width: var(--measure);
 }
 .center.text {
 		text-align: center;
@@ -362,17 +362,18 @@ hr {
 .with-sidebar > :last-child {
 		flex-basis: 0;
 		flex-grow: 999;
-		min-inline-size: var(--content-min);
+		min-width: var(--content-min);
 	}
 .with-sidebar.right > :first-child {
 		flex-basis: 0;
 		flex-grow: 999;
-		min-inline-size: var(--content-min);
+		min-width: var(--content-min);
 	}
 .with-sidebar.right > :last-child {
 		flex-basis: var(--side-width);
 		flex-grow: 1;
-		min-inline-size: unset;
+		min-width: 0;
+		min-width: initial;
 	}
 .with-sidebar.no-stretch {
 		align-items: flex-start;
