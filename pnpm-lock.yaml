@@ -142,8 +142,8 @@ devDependencies:
     specifier: 3.2.0
     version: 3.2.0(postcss-load-config@4.0.1)(postcss@8.4.21)(svelte@3.58.0)
   svelte2tsx:
-    specifier: 0.6.11
-    version: 0.6.11(svelte@3.58.0)(typescript@5.0.4)
+    specifier: 0.6.14
+    version: 0.6.14(svelte@3.58.0)(typescript@5.0.4)
   tslib:
     specifier: 2.5.0
     version: 2.5.0
@@ -1077,7 +1077,7 @@ packages:
       kleur: 4.1.5
       sade: 1.8.1
       svelte: 3.58.0
-      svelte2tsx: 0.6.11(svelte@3.58.0)(typescript@5.0.4)
+      svelte2tsx: 0.6.14(svelte@3.58.0)(typescript@5.0.4)
     transitivePeerDependencies:
       - typescript
     dev: true
@@ -5056,8 +5056,8 @@ packages:
       typescript: 5.0.4
     dev: true
 
-  /svelte2tsx@0.6.11(svelte@3.58.0)(typescript@5.0.4):
-    resolution: {integrity: sha512-rRW/3V/6mcejYWmSqcHpmILOSPsOhLgkbKbrTOz82s2n8TywmIsqj2jYPsiL6HeGoUM/atiTD0YKguW4b7ECog==}
+  /svelte2tsx@0.6.14(svelte@3.58.0)(typescript@5.0.4):
+    resolution: {integrity: sha512-Sxo9gtpc3dYWuFQ8fruZG+M+I6OZMIvOxxKjt48Lr8jD6Kr9cNf1Hf/yHUDEgDwQdRbAzn5y0FL9xk8Dx5v9lg==}
     peerDependencies:
       svelte: ^3.55
       typescript: ^4.9.4 || ^5.0.0
