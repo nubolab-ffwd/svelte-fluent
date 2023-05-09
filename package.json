@@ -72,7 +72,7 @@
 		"rehype-shift-heading": "1.0.2",
 		"rehype-slug": "5.1.0",
 		"rehype-wrap-all": "1.1.0",
-		"shiki": "0.14.1",
+		"shiki": "0.14.2",
 		"svelte": "3.58.0",
 		"svelte-check": "3.2.0",
 		"svelte2tsx": "0.6.11",
