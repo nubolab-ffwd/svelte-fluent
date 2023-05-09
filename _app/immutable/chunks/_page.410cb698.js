@@ -1,1 +1,0 @@
-const e=async()=>({seo:{title:"The expressive Svelte localization library",description:"The expressive Svelte localization library"}}),t=Object.freeze(Object.defineProperty({__proto__:null,load:e},Symbol.toStringTag,{value:"Module"}));export{t as _,e as l};
