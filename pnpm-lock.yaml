@@ -139,8 +139,8 @@ devDependencies:
     specifier: 3.59.1
     version: 3.59.1
   svelte-check:
-    specifier: 3.2.0
-    version: 3.2.0(postcss-load-config@4.0.1)(postcss@8.4.23)(svelte@3.59.1)
+    specifier: 3.3.2
+    version: 3.3.2(postcss-load-config@4.0.1)(postcss@8.4.23)(svelte@3.59.1)
   svelte2tsx:
     specifier: 0.6.14
     version: 0.6.14(svelte@3.59.1)(typescript@5.0.4)
@@ -4972,8 +4972,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  /svelte-check@3.2.0(postcss-load-config@4.0.1)(postcss@8.4.23)(svelte@3.59.1):
-    resolution: {integrity: sha512-6ZnscN8dHEN5Eq5LgIzjj07W9nc9myyBH+diXsUAuiY/3rt0l65/LCIQYlIuoFEjp2F1NhXqZiJwV9omPj9tMw==}
+  /svelte-check@3.3.2(postcss-load-config@4.0.1)(postcss@8.4.23)(svelte@3.59.1):
+    resolution: {integrity: sha512-67j3rI0LDc2DvL0ON/2pvCasVVD3nHDrTkZNr4eITNfo2oFXdw7SIyMOiFj4swu+pjmFQAigytBK1IWyik8dBw==}
     hasBin: true
     peerDependencies:
       svelte: ^3.55.0
