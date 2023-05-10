@@ -37,8 +37,8 @@ devDependencies:
     specifier: 4.5.13
     version: 4.5.13
   '@iconify-json/mdi':
-    specifier: 1.1.50
-    version: 1.1.50
+    specifier: 1.1.51
+    version: 1.1.51
   '@sveltejs/adapter-static':
     specifier: 2.0.2
     version: 2.0.2(@sveltejs/kit@1.16.3)
@@ -959,8 +959,8 @@ packages:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
     dev: true
 
-  /@iconify-json/mdi@1.1.50:
-    resolution: {integrity: sha512-SgbT5w5eHCdOG74ZWPz7HlTGk6VsifIJhNi6lAsxj/5Nlqt6Cz4LlQmSa9eecU9p075Jub2aAx/o7YI+GCahRQ==}
+  /@iconify-json/mdi@1.1.51:
+    resolution: {integrity: sha512-fyf4N7GBaUw2A//v3vjsJ440qd69c+pN4PazOp6901ALM3QcKGAVWcISOhZ1J6jVF2zNsxrwMYHoOoP2UrAkCw==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
