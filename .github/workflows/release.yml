@@ -20,7 +20,7 @@ jobs:
       # Setup .npmrc file to publish to npm
       - uses: pnpm/action-setup@v2.2.4
         with:
-          version: 7
+          version: 8
         if: ${{ steps.release.outputs.release_created }}
       - uses: actions/setup-node@v3.6.0
         with:
