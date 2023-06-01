@@ -9,18 +9,18 @@
 		<link href="/svelte-fluent/_app/immutable/assets/2.b000c885.css" rel="stylesheet">
 		<link href="/svelte-fluent/_app/immutable/assets/_page.e07d2c57.css" rel="stylesheet">
 		<link href="/svelte-fluent/_app/immutable/assets/Overlay.2c91afa1.css" rel="stylesheet">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/start.9a2f54a8.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/start.8caca90d.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/index.cd621e7a.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/singletons.7748270e.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/singletons.512fb930.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/index.46d54798.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/paths.27d708b8.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/paths.77ff5e02.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/control.f5b05b5f.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/app.99b1fe81.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/nodes/0.b75af5bb.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/app.561dab0e.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/nodes/0.10583375.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/logo.2b71cccd.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/stores.517c3e55.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/nodes/2.bbe61dc8.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/_page.svelte.fe94002a.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/stores.da3fab7a.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/nodes/2.42c63e51.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/_page.svelte.ebc4d74b.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/_page.svelte.0fed090e.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/Overlay.svelte_svelte_type_style_lang.1fb675a3.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/_page.svelte.0c1613a6.js">
@@ -32,7 +32,8 @@
 
 
 
-<header class="svelte-2ptxw5"><nav aria-label="Primary" class="cluster" style="--justify: space-between;"><div class="cluster"><a class="logo svelte-2ptxw5" href="/svelte-fluent/"><!-- HTML_TAG_START -->
+<header class="svelte-2ptxw5"><nav aria-label="Primary" class="cluster" style="--justify: space-between;"><div class="cluster"><a class="logo svelte-2ptxw5" href="/svelte-fluent/">
+<!-- HTML_TAG_START -->
 <svg width="100%" height="100%" viewBox="0 0 180 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;display:block;">
 		<g transform="matrix(1,0,0,1,-300,-390)">
 				<g transform="matrix(1,0,0,1,10,-177.124)">
@@ -120,7 +121,8 @@ functions) for each of them.</p>
 <p>The <code>FluentBundle</code> component also emits <code>error</code> events whenever a translation message fails to parse or render.</p>
 <h3 id="example"><a href="#example">Example</a></h3>
 <div class="stack" aria-label="Code example"><div class="code-block stack">
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">FluentProvider</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">Localized</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@nubolab-ffwd/svelte-fluent&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">let</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">bundles</span><span style="color: #D4D4D4">;</span></span>
@@ -169,14 +171,16 @@ functions) for each of them.</p>
 The output can be customized by overriding the default slot of the component.</p>
 <h3 id="static-text-example"><a href="#static-text-example">Static text example</a></h3>
 <div class="stack" aria-label="Code example"><div class="code-block stack">
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">Localized</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@nubolab-ffwd/svelte-fluent&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color: #808080">&lt;</span><span style="color: #4EC9B0">Localized</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">id</span><span style="color: #D4D4D4">=</span><span style="color: #CE9178">&quot;hello&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #808080">/&gt;</span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END -->
 		</div><div class="code-block stack"><span class="filepath">en.ftl</span>
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">hello = </span><span style="color: #CE9178">Hello, world!</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">hello = </span><span style="color: #CE9178">Hello, world!</span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END -->
 		</div>
 
@@ -189,7 +193,8 @@ The output can be customized by overriding the default slot of the component.</p
 </div>
 <h3 id="dynamic-text-with-variables-example"><a href="#dynamic-text-with-variables-example">Dynamic text with variables example</a></h3>
 <div class="stack" aria-label="Code example"><div class="code-block stack">
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">Localized</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@nubolab-ffwd/svelte-fluent&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">let</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">unreadEmails</span><span style="color: #D4D4D4"> = </span><span style="color: #B5CEA8">10</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
@@ -197,7 +202,8 @@ The output can be customized by overriding the default slot of the component.</p
 <span class="line"><span style="color: #808080">&lt;</span><span style="color: #4EC9B0">Localized</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">id</span><span style="color: #D4D4D4">=</span><span style="color: #CE9178">&quot;emails&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">args</span><span style="color: #D4D4D4">=</span><span style="color: #569CD6">{</span><span style="color: #D4D4D4">{ </span><span style="color: #9CDCFE">unreadEmails</span><span style="color: #D4D4D4"> }</span><span style="color: #569CD6">}</span><span style="color: #D4D4D4"> </span><span style="color: #808080">/&gt;</span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END -->
 		</div><div class="code-block stack"><span class="filepath">en.ftl</span>
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">emails =</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">emails =</span></span>
 <span class="line"><span style="color: #CE9178">  </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE"> $unreadEmails </span><span style="color: #DCDCAA">-&gt;</span></span>
 <span class="line"><span style="color: #DCDCAA">    [</span><span style="color: #9CDCFE">one</span><span style="color: #DCDCAA">] </span><span style="color: #CE9178">You have one unread email.</span></span>
 <span class="line"><span style="color: #DCDCAA">    *[</span><span style="color: #9CDCFE">other</span><span style="color: #DCDCAA">] </span><span style="color: #CE9178">You have </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE"> $unreadEmails </span><span style="color: #569CD6">}</span><span style="color: #CE9178"> unread emails.</span></span>
@@ -215,7 +221,8 @@ The output can be customized by overriding the default slot of the component.</p
 </div>
 <h3 id="attributes-example"><a href="#attributes-example">Attributes example</a></h3>
 <div class="stack" aria-label="Code example"><div class="code-block stack">
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">Localized</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@nubolab-ffwd/svelte-fluent&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"></span>
@@ -228,7 +235,8 @@ The output can be customized by overriding the default slot of the component.</p
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #4EC9B0">Localized</span><span style="color: #808080">&gt;</span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END -->
 		</div><div class="code-block stack"><span class="filepath">en.ftl</span>
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">confirm = </span><span style="color: #CE9178">Please confirm the action.</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">confirm = </span><span style="color: #CE9178">Please confirm the action.</span></span>
 <span class="line"><span style="color: #CE9178">  </span><span style="color: #4EC9B0">.ok     = </span><span style="color: #CE9178">Ok</span></span>
 <span class="line"><span style="color: #CE9178">  </span><span style="color: #4EC9B0">.cancel = </span><span style="color: #CE9178">Cancel</span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END -->
@@ -243,7 +251,8 @@ The output can be customized by overriding the default slot of the component.</p
 </div>
 <h3 id="attributes-with-variables-example"><a href="#attributes-with-variables-example">Attributes with variables example</a></h3>
 <div class="stack" aria-label="Code example"><div class="code-block stack">
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">Localized</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@nubolab-ffwd/svelte-fluent&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"></span>
@@ -256,7 +265,8 @@ The output can be customized by overriding the default slot of the component.</p
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #4EC9B0">Localized</span><span style="color: #808080">&gt;</span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END -->
 		</div><div class="code-block stack"><span class="filepath">en.ftl</span>
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">confirm = </span><span style="color: #CE9178">Please confirm the action for </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE"> $count </span><span style="color: #569CD6">}</span><span style="color: #CE9178"> items.</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">confirm = </span><span style="color: #CE9178">Please confirm the action for </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE"> $count </span><span style="color: #569CD6">}</span><span style="color: #CE9178"> items.</span></span>
 <span class="line"><span style="color: #CE9178">  </span><span style="color: #4EC9B0">.ok     = </span><span style="color: #CE9178">Yes, perform action for </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE"> $count </span><span style="color: #569CD6">}</span><span style="color: #CE9178"> items</span></span>
 <span class="line"><span style="color: #CE9178">  </span><span style="color: #4EC9B0">.cancel = </span><span style="color: #CE9178">Cancel</span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END -->
@@ -311,7 +321,8 @@ to the <a href="https://github.com/projectfluent/fluent.js/wiki/DOM-Overlays#lim
 <li>Event handlers (<code>&lt;tag on:click={handleClick} /&gt;</code>) bound on children of the <code>&lt;Overlay/&gt;</code> component will not fire</li></ul>
 <h3 id="static-text-example-1"><a href="#static-text-example-1">Static text example</a></h3>
 <div class="stack" aria-label="Code example"><div class="code-block stack">
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">Overlay</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@nubolab-ffwd/svelte-fluent&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"></span>
@@ -322,7 +333,8 @@ to the <a href="https://github.com/projectfluent/fluent.js/wiki/DOM-Overlays#lim
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #4EC9B0">Overlay</span><span style="color: #808080">&gt;</span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END -->
 		</div><div class="code-block stack"><span class="filepath">en.ftl</span>
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">info = </span><span style="color: #CE9178">Read the &lt;a data-l10n-name=&quot;link&quot;&gt;documentation&lt;/a&gt; for more information.</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">info = </span><span style="color: #CE9178">Read the &lt;a data-l10n-name=&quot;link&quot;&gt;documentation&lt;/a&gt; for more information.</span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END -->
 		</div>
 
@@ -334,7 +346,8 @@ to the <a href="https://github.com/projectfluent/fluent.js/wiki/DOM-Overlays#lim
 </div>
 <h3 id="dynamic-text-with-variables-example-1"><a href="#dynamic-text-with-variables-example-1">Dynamic text with variables example</a></h3>
 <div class="stack" aria-label="Code example"><div class="code-block stack">
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">Overlay</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@nubolab-ffwd/svelte-fluent&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">let</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">productName</span><span style="color: #D4D4D4"> = </span><span style="color: #CE9178">&#39;Example Product&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
@@ -346,7 +359,8 @@ to the <a href="https://github.com/projectfluent/fluent.js/wiki/DOM-Overlays#lim
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #4EC9B0">Overlay</span><span style="color: #808080">&gt;</span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END -->
 		</div><div class="code-block stack"><span class="filepath">en.ftl</span>
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">info =</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">info =</span></span>
 <span class="line"><span style="color: #CE9178">  You can download &quot;</span><span style="color: #569CD6">{</span><span style="color: #9CDCFE"> $productName </span><span style="color: #569CD6">}</span><span style="color: #CE9178">&quot; by clicking</span></span>
 <span class="line"><span style="color: #CE9178">  on the &lt;strong&gt;Download&lt;/strong&gt; button or read</span></span>
 <span class="line"><span style="color: #CE9178">  the &lt;a data-l10n-name=&#39;release-notes&#39;&gt;release notes&lt;/a&gt; to learn more.</span></span>
@@ -407,14 +421,16 @@ feasible.</p></blockquote>
 <td align="left">Arguments for interpolation</td></tr></tbody></table></div>
 <h3 id="static-text-example-2"><a href="#static-text-example-2">Static text example</a></h3>
 <div class="stack" aria-label="Code example"><div class="code-block stack">
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">localize</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@nubolab-ffwd/svelte-fluent&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">button</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">on</span><span style="color: #D4D4D4">:</span><span style="color: #4EC9B0">click</span><span style="color: #D4D4D4">=</span><span style="color: #569CD6">{</span><span style="color: #D4D4D4">() </span><span style="color: #569CD6">=&gt;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">window</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">alert</span><span style="color: #D4D4D4">($</span><span style="color: #DCDCAA">localize</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;hello&#39;</span><span style="color: #D4D4D4">))</span><span style="color: #569CD6">}</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4">Say hello</span><span style="color: #808080">&lt;/</span><span style="color: #569CD6">button</span><span style="color: #808080">&gt;</span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END -->
 		</div><div class="code-block stack"><span class="filepath">en.ftl</span>
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">hello = </span><span style="color: #CE9178">Hello, world!</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">hello = </span><span style="color: #CE9178">Hello, world!</span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END -->
 		</div>
 
@@ -425,7 +441,8 @@ feasible.</p></blockquote>
 </div>
 <h3 id="dynamic-text-with-variables-example-2"><a href="#dynamic-text-with-variables-example-2">Dynamic text with variables example</a></h3>
 <div class="stack" aria-label="Code example"><div class="code-block stack">
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">localize</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@nubolab-ffwd/svelte-fluent&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #569CD6">const</span><span style="color: #D4D4D4"> </span><span style="color: #4FC1FF">name</span><span style="color: #D4D4D4"> = </span><span style="color: #CE9178">&#39;World&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
@@ -433,7 +450,8 @@ feasible.</p></blockquote>
 <span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">button</span><span style="color: #D4D4D4"> </span><span style="color: #C586C0">on</span><span style="color: #D4D4D4">:</span><span style="color: #4EC9B0">click</span><span style="color: #D4D4D4">=</span><span style="color: #569CD6">{</span><span style="color: #D4D4D4">() </span><span style="color: #569CD6">=&gt;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">window</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">alert</span><span style="color: #D4D4D4">($</span><span style="color: #DCDCAA">localize</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;hello&#39;</span><span style="color: #D4D4D4">, { </span><span style="color: #9CDCFE">name</span><span style="color: #D4D4D4"> }))</span><span style="color: #569CD6">}</span><span style="color: #808080">&gt;</span><span style="color: #D4D4D4">Say hello</span><span style="color: #808080">&lt;/</span><span style="color: #569CD6">button</span><span style="color: #808080">&gt;</span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END -->
 		</div><div class="code-block stack"><span class="filepath">en.ftl</span>
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">hello = </span><span style="color: #CE9178">Hello, </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE">$name</span><span style="color: #569CD6">}</span><span style="color: #CE9178">!</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">hello = </span><span style="color: #CE9178">Hello, </span><span style="color: #569CD6">{</span><span style="color: #9CDCFE">$name</span><span style="color: #569CD6">}</span><span style="color: #CE9178">!</span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END -->
 		</div>
 
@@ -447,7 +465,8 @@ feasible.</p></blockquote>
 <p>In the example below this is done for the <code>.default</code> attribute of the <code>prompt</code> message by
 calling <code>$localize</code> with <code>&#39;prompt.default&#39;</code> as the message identifier.</p></blockquote>
 <div class="stack" aria-label="Code example"><div class="code-block stack">
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">localize</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@nubolab-ffwd/svelte-fluent&#39;</span><span style="color: #D4D4D4">;</span></span>
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
 <span class="line"></span>
@@ -456,7 +475,8 @@ calling <code>$localize</code> with <code>&#39;prompt.default&#39;</code> as the
 <span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">button</span><span style="color: #808080">&gt;</span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END -->
 		</div><div class="code-block stack"><span class="filepath">en.ftl</span>
-			<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">prompt = </span><span style="color: #CE9178">Please enter your name</span></span>
+			
+				<!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #4EC9B0">prompt = </span><span style="color: #CE9178">Please enter your name</span></span>
 <span class="line"><span style="color: #CE9178">	</span><span style="color: #4EC9B0">.default = </span><span style="color: #CE9178">Your name goes here</span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END -->
 		</div>
@@ -479,7 +499,7 @@ calling <code>$localize</code> with <code>&#39;prompt.default&#39;</code> as the
 			
 			<script>
 				{
-					__sveltekit_1bigmrf = {
+					__sveltekit_1xffch = {
 						assets: "/svelte-fluent",
 						base: "/svelte-fluent",
 						env: {}
@@ -490,8 +510,8 @@ calling <code>$localize</code> with <code>&#39;prompt.default&#39;</code> as the
 					const data = [null,null,null];
 
 					Promise.all([
-						import("/svelte-fluent/_app/immutable/entry/start.9a2f54a8.js"),
-						import("/svelte-fluent/_app/immutable/entry/app.99b1fe81.js")
+						import("/svelte-fluent/_app/immutable/entry/start.8caca90d.js"),
+						import("/svelte-fluent/_app/immutable/entry/app.561dab0e.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2, 6],
