@@ -1,8 +1,10 @@
 <script lang="ts">
+	import type { SvelteComponent } from 'svelte';
+
 	type SourceEntry = { code: string; html: boolean };
 
 	export let sources: Record<string, string | SourceEntry>;
-	export let component: object;
+	export let component: typeof SvelteComponent;
 	export let componentArgs: Record<string, unknown> = {};
 
 	$: normalizedSources = Object.fromEntries(
