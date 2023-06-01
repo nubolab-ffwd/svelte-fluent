@@ -19,7 +19,7 @@ jobs:
           version: 8
       - uses: actions/setup-node@v3.6.0
         with:
-          node-version: lts/*
+          node-version: 18.x
           cache: 'pnpm'
       - run: pnpm install --frozen-lockfile --strict-peer-dependencies
       - run: pnpm lint

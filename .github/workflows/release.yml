@@ -24,7 +24,7 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       - uses: actions/setup-node@v3.6.0
         with:
-          node-version: lts/*
+          node-version: 18.x
           cache: 'pnpm'
           registry-url: 'https://registry.npmjs.org'
         if: ${{ steps.release.outputs.release_created }}
