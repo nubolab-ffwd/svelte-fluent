@@ -22,6 +22,7 @@
 				<span class="filepath">{name}</span>
 			{/if}
 			{#if entry.html}
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
 				{@html entry.code}
 			{:else}
 				<pre class="box"><code>{entry.code}</code></pre>
