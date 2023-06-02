@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.1](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v0.6.0...svelte-fluent-v0.6.1) (2023-06-02)
+
+
+### Bug Fixes
+
+* **build:** reintroduce peer dependency on jsdom due to SSR errors when bundled in sveltekit apps ([02e094b](https://github.com/nubolab-ffwd/svelte-fluent/commit/02e094bbba8bfddad6b047fd3d989890861becea))
+
 ## [0.6.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v0.5.0...svelte-fluent-v0.6.0) (2023-03-07)
 
 
