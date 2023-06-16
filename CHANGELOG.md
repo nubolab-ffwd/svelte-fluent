@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.2](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v0.6.1...svelte-fluent-v0.6.2) (2023-06-16)
+
+
+### Bug Fixes
+
+* prevent exception in svelte-devtools ([f3259d0](https://github.com/nubolab-ffwd/svelte-fluent/commit/f3259d0f5ce9bbc17fae4bc8c5a4678016cf2d8b))
+
 ## [0.6.1](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v0.6.0...svelte-fluent-v0.6.1) (2023-06-02)
 
 
