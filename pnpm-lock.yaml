@@ -83,8 +83,8 @@ devDependencies:
     specifier: 2.31.0
     version: 2.31.0(eslint@8.43.0)(svelte@3.59.2)(ts-node@10.9.1)
   glob:
-    specifier: 10.2.7
-    version: 10.2.7
+    specifier: 10.3.0
+    version: 10.3.0
   hast-util-heading-rank:
     specifier: 2.1.1
     version: 2.1.1
@@ -2746,8 +2746,8 @@ packages:
       is-glob: 4.0.3
     dev: true
 
-  /glob@10.2.7:
-    resolution: {integrity: sha512-jTKehsravOJo8IJxUGfZILnkvVJM/MOfHRs8QcXolVef2zNI9Tqyy5+SeuOAZd3upViEZQLyFpQhYiHLrMUNmA==}
+  /glob@10.3.0:
+    resolution: {integrity: sha512-AQ1/SB9HH0yCx1jXAT4vmCbTOPe5RQ+kCurjbel5xSCGhebumUv+GJZfa1rEqor3XIViqwSEmlkZCQD43RWrBg==}
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
     dependencies:
