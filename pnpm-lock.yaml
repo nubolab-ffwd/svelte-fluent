@@ -53,8 +53,8 @@ devDependencies:
     specifier: 2.1.0
     version: 2.1.0(svelte@3.59.2)(typescript@5.1.3)
   '@testing-library/svelte':
-    specifier: 4.0.0
-    version: 4.0.0(svelte@3.59.2)
+    specifier: 4.0.1
+    version: 4.0.1(svelte@3.59.2)
   '@types/hast':
     specifier: 2.3.4
     version: 2.3.4
@@ -1188,8 +1188,8 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@testing-library/svelte@4.0.0(svelte@3.59.2):
-    resolution: {integrity: sha512-LRsrUm0FPn/PSdiyFGpix7i3VwgvF65Uw6eLboTM84SWGvRnBlE0VkawrhGl49Phh2nyZ7mS7M0gtVl3OM1eKQ==}
+  /@testing-library/svelte@4.0.1(svelte@3.59.2):
+    resolution: {integrity: sha512-rvqkMlkXPtbtMbYQsWTb666yBAJVrTJcek2TlDogBKhxwYKqbWgvtTftMNclPi5aLgy+QGndTyIf4gtdFKaiXA==}
     engines: {node: '>= 10'}
     peerDependencies:
       svelte: ^3 || ^4
