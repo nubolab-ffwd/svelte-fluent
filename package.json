@@ -44,7 +44,7 @@
 		"@sveltejs/adapter-static": "2.0.2",
 		"@sveltejs/kit": "1.21.0",
 		"@sveltejs/package": "2.1.0",
-		"@testing-library/svelte": "4.0.2",
+		"@testing-library/svelte": "4.0.3",
 		"@types/hast": "2.3.4",
 		"@types/jsdom": "21.1.1",
 		"@typescript-eslint/eslint-plugin": "5.60.1",
