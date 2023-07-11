@@ -14,7 +14,7 @@ import rehypeHeadings from './utils/rehype-headings.js';
  */
 export const escape_svelty = (str) =>
 	str
-		.replace(/[{}`]/g, (c) => ({ '{': '&#123;', '}': '&#125;', '`': '&#96;' }[c]))
+		.replace(/[{}`]/g, (c) => ({ '{': '&#123;', '}': '&#125;', '`': '&#96;' })[c])
 		.replace(/\\([trn])/g, '&#92;$1');
 
 async function code_highlight(code, lang) {
