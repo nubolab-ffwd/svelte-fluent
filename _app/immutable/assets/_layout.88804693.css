@@ -54,7 +54,8 @@
 }
 @font-face {
 	font-family: 'Mensch';
-	src: url('/svelte-fluent/_app/immutable/assets/Mensch-Regular.92999273.woff2') format('woff2'),
+	src:
+		url('/svelte-fluent/_app/immutable/assets/Mensch-Regular.92999273.woff2') format('woff2'),
 		url('/svelte-fluent/_app/immutable/assets/Mensch-Regular.ce9a345e.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
