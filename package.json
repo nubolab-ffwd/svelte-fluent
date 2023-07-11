@@ -40,7 +40,7 @@
 		"@fluent/bundle": "0.18.0",
 		"@fluent/langneg": "0.7.0",
 		"@fontsource-variable/manrope": "5.0.5",
-		"@iconify-json/mdi": "1.1.52",
+		"@iconify-json/mdi": "1.1.53",
 		"@sveltejs/adapter-static": "2.0.2",
 		"@sveltejs/kit": "1.22.1",
 		"@sveltejs/package": "2.1.0",
