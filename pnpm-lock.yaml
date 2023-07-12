@@ -45,10 +45,10 @@ devDependencies:
     version: 1.1.53
   '@sveltejs/adapter-static':
     specifier: 2.0.2
-    version: 2.0.2(@sveltejs/kit@1.22.1)
+    version: 2.0.2(@sveltejs/kit@1.22.2)
   '@sveltejs/kit':
-    specifier: 1.22.1
-    version: 1.22.1(svelte@4.0.5)(vite@4.1.4)
+    specifier: 1.22.2
+    version: 1.22.2(svelte@4.0.5)(vite@4.1.4)
   '@sveltejs/package':
     specifier: 2.1.0
     version: 2.1.0(svelte@4.0.5)(typescript@5.1.6)
@@ -1149,16 +1149,16 @@ packages:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
     dev: true
 
-  /@sveltejs/adapter-static@2.0.2(@sveltejs/kit@1.22.1):
+  /@sveltejs/adapter-static@2.0.2(@sveltejs/kit@1.22.2):
     resolution: {integrity: sha512-9wYtf6s6ew7DHUHMrt55YpD1FgV7oWql2IGsW5BXquLxqcY9vjrqCFo0TzzDpo+ZPZkW/v77k0eOP6tsAb8HmQ==}
     peerDependencies:
       '@sveltejs/kit': ^1.5.0
     dependencies:
-      '@sveltejs/kit': 1.22.1(svelte@4.0.5)(vite@4.1.4)
+      '@sveltejs/kit': 1.22.2(svelte@4.0.5)(vite@4.1.4)
     dev: true
 
-  /@sveltejs/kit@1.22.1(svelte@4.0.5)(vite@4.1.4):
-    resolution: {integrity: sha512-idFhKVEHuCKbTETvuo3V7UShqSYX9JMKVJXP546dOTkh5ZRejo5XtKtsB5TCSwNBa0TH8hIV44/bnylaFhM1Vg==}
+  /@sveltejs/kit@1.22.2(svelte@4.0.5)(vite@4.1.4):
+    resolution: {integrity: sha512-T6GY5jSfQgoDnNPNqAuDi9IK+ZW0TspzTV16UAN6GTsxbri67DGVIbw7QOXPg8FMrZQMmda1AtAxPMfXbOqCgw==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     requiresBuild: true
