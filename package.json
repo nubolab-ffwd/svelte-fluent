@@ -14,7 +14,11 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"package": "svelte-package -o dist",
+		"package": "run-s package:sync package:pkg package:rollup package:lint",
+		"package:sync": "svelte-kit sync",
+		"package:pkg": "svelte-package",
+		"package:rollup": "rollup --file dist/rollup-plugin.cjs --format cjs dist/rollup-plugin.js",
+		"package:lint": "publint",
 		"preview": "vite preview",
 		"prepare": "husky install && svelte-kit sync",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
@@ -66,6 +70,7 @@
 		"postcss-preset-env": "9.0.0",
 		"prettier": "3.0.0",
 		"prettier-plugin-svelte": "2.10.1",
+		"publint": "^0.1.16",
 		"rehype-add-classes": "1.0.0",
 		"rehype-autolink-headings": "6.1.1",
 		"rehype-external-links": "2.1.0",
@@ -102,6 +107,7 @@
 		},
 		"./rollup-plugin": {
 			"types": "./dist/rollup-plugin.d.ts",
+			"require": "./dist/rollup-plugin.cjs",
 			"default": "./dist/rollup-plugin.js"
 		},
 		"./ssr": {
