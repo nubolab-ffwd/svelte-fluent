@@ -56,8 +56,8 @@ devDependencies:
     specifier: 4.0.3
     version: 4.0.3(svelte@4.0.5)
   '@types/hast':
-    specifier: 2.3.5
-    version: 2.3.5
+    specifier: 3.0.0
+    version: 3.0.0
   '@types/jsdom':
     specifier: 21.1.1
     version: 21.1.1
@@ -1311,6 +1311,12 @@ packages:
 
   /@types/hast@2.3.5:
     resolution: {integrity: sha512-SvQi0L/lNpThgPoleH53cdjB3y9zpLlVjRbqB3rH8hx1jiRSBGAhyjV3H+URFjNVRqt2EdYNrbZE5IsGlNfpRg==}
+    dependencies:
+      '@types/unist': 2.0.6
+    dev: true
+
+  /@types/hast@3.0.0:
+    resolution: {integrity: sha512-SoytUJRuf68HXYqcXicQIhCrLQjqeYU2anikr4G3p3Iz+OZO5QDQpDj++gv+RenHsnUBwNZ2dumBArF8VLSk2Q==}
     dependencies:
       '@types/unist': 2.0.6
     dev: true
