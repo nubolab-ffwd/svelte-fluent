@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v0.6.2...svelte-fluent-v0.7.0) (2023-07-17)
+
+
+### Features
+
+* add cjs build of rollup plugin for legacy rollup projects like sapper ([74b49e8](https://github.com/nubolab-ffwd/svelte-fluent/commit/74b49e83bb3e2b05c0a22c36b656b44abe404456))
+
 ## [0.6.2](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v0.6.1...svelte-fluent-v0.6.2) (2023-06-16)
 
 
