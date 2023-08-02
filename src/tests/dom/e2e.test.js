@@ -6,10 +6,10 @@ afterEach(async () => {
 	cleanup();
 });
 
-const testComponents = import.meta.glob('../../src/e2e/**/Test.svelte');
+const testComponents = import.meta.glob('../../e2e/**/Test.svelte');
 
 export const tests = Object.entries(testComponents).map(([name, mod]) => ({
-	name: name.replace('../../src/e2e/', ''),
+	name: name.replace('../../e2e/', ''),
 	module: mod
 }));
 
