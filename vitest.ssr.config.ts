@@ -7,9 +7,6 @@ export default defineConfig({
 	test: {
 		environment: 'node',
 		include: ['tests/ssr/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
-		setupFiles: 'tests/setup.js',
-		transformMode: {
-			ssr: [/\.([cm]?[jt]sx?|json|svelte)$/]
-		}
+		setupFiles: 'tests/setup.js'
 	}
 });
