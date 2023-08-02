@@ -1,10 +1,11 @@
+/// <reference types="vitest" />
 import { sveltekit } from '@sveltejs/kit/vite';
 import Icons from 'unplugin-icons/vite';
+import { defineConfig } from 'vite';
 import ssrResolvePlugin from './src/site/plugin';
 import highlightPlugin from './utils/highlight-plugin';
 
-/** @type {import('vite').UserConfig} */
-const config = {
+export default defineConfig({
 	plugins: [
 		ssrResolvePlugin(),
 		highlightPlugin(),
@@ -13,7 +14,13 @@ const config = {
 			compiler: 'svelte',
 			autoInstall: true
 		})
-	]
-};
-
-export default config;
+	],
+	test: {
+		environmentMatchGlobs: [
+			['src/tests/dom/**', 'jsdom'],
+			['src/tests/ssr/**', 'node']
+		],
+		include: ['src/tests/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+		setupFiles: 'src/tests/setup.js'
+	}
+});

@@ -25,9 +25,7 @@
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"test": "run-s test:*",
-		"test:dom": "vitest --run",
-		"test:ssr": "vitest -c vitest.ssr.config.ts --run",
+		"test": "vitest",
 		"prepublishOnly": "npm run package"
 	},
 	"dependencies": {
