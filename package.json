@@ -54,7 +54,7 @@
 		"@vitest/ui": "0.34.1",
 		"autoprefixer": "10.4.14",
 		"eslint": "8.46.0",
-		"eslint-config-prettier": "8.9.0",
+		"eslint-config-prettier": "8.10.0",
 		"eslint-plugin-svelte": "2.32.4",
 		"glob": "10.3.3",
 		"hast-util-heading-rank": "3.0.0",
