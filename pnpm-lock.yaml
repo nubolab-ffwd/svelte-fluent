@@ -50,8 +50,8 @@ devDependencies:
     specifier: 1.22.6
     version: 1.22.6(svelte@4.1.2)(vite@4.1.5)
   '@sveltejs/package':
-    specifier: 2.2.0
-    version: 2.2.0(svelte@4.1.2)(typescript@5.1.6)
+    specifier: 2.2.1
+    version: 2.2.1(svelte@4.1.2)(typescript@5.1.6)
   '@testing-library/svelte':
     specifier: 4.0.3
     version: 4.0.3(svelte@4.1.2)
@@ -1155,8 +1155,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/package@2.2.0(svelte@4.1.2)(typescript@5.1.6):
-    resolution: {integrity: sha512-TXbrzsk+T5WNcSzrU41D8P32vU5guo96lVS11/R+rpLhZBH5sORh0Qp6r68Jg4O5vcdS3JLwpwcpe8VFbT/QeA==}
+  /@sveltejs/package@2.2.1(svelte@4.1.2)(typescript@5.1.6):
+    resolution: {integrity: sha512-7Yv4SdoOZFPYWK1/A8LtZ7+WLlZny/4q5sWbU7dnkEqbIt5j4V3TzrquT9nAE6sUy6Dghxf35dXoPIdvRH7w7g==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     peerDependencies:
@@ -1165,7 +1165,7 @@ packages:
       chokidar: 3.5.3
       kleur: 4.1.5
       sade: 1.8.1
-      semver: 7.5.3
+      semver: 7.5.4
       svelte: 4.1.2
       svelte2tsx: 0.6.19(svelte@4.1.2)(typescript@5.1.6)
     transitivePeerDependencies:
@@ -4895,14 +4895,6 @@ packages:
   /semver@5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
     hasBin: true
-    dev: true
-
-  /semver@7.5.3:
-    resolution: {integrity: sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      lru-cache: 6.0.0
     dev: true
 
   /semver@7.5.4:
