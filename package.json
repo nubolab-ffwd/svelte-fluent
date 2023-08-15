@@ -52,7 +52,7 @@
 		"@typescript-eslint/eslint-plugin": "6.3.0",
 		"@typescript-eslint/parser": "6.3.0",
 		"@vitest/ui": "0.34.1",
-		"autoprefixer": "10.4.14",
+		"autoprefixer": "10.4.15",
 		"eslint": "8.46.0",
 		"eslint-config-prettier": "9.0.0",
 		"eslint-plugin-svelte": "2.32.4",
