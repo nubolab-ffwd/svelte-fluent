@@ -119,8 +119,8 @@ devDependencies:
     specifier: 3.0.3
     version: 3.0.3(prettier@3.0.2)(svelte@4.2.0)
   publint:
-    specifier: 0.2.0
-    version: 0.2.0
+    specifier: 0.2.1
+    version: 0.2.1
   rehype-add-classes:
     specifier: 1.0.0
     version: 1.0.0
@@ -4603,8 +4603,8 @@ packages:
   /psl@1.9.0:
     resolution: {integrity: sha512-E/ZsdU4HLs/68gYzgGTkMicWTLPdAftJLfJFlLUAAKZGkStNU72sZjT66SnMDVOfOWY/YAoiD7Jxa9iHvngcag==}
 
-  /publint@0.2.0:
-    resolution: {integrity: sha512-h8lxdjhQjpDw+A4BgY4sE7Z4CU3x5tCGGpERVdKGDQmWMtr1P7kvptJS2P10HhmNnS7Yeny37zfQE5+xRZ6nig==}
+  /publint@0.2.1:
+    resolution: {integrity: sha512-WdNOjBRgfvy1yigbcmxQMvMFQPaIVXatclpWsYjyKvewdr2GuQX4larT9fi/tJ9Q/CxhvwCjvvQRMYhHOLA5BQ==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
