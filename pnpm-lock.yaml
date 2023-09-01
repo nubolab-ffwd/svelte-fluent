@@ -89,8 +89,8 @@ devDependencies:
     specifier: 3.0.0
     version: 3.0.0
   hast-util-to-string:
-    specifier: 2.0.0
-    version: 2.0.0
+    specifier: 3.0.0
+    version: 3.0.0
   husky:
     specifier: 8.0.3
     version: 8.0.3
@@ -2946,6 +2946,12 @@ packages:
     resolution: {integrity: sha512-02AQ3vLhuH3FisaMM+i/9sm4OXGSq1UhOOCpTLLQtHdL3tZt7qil69r8M8iDkZYyC0HCFylcYoP+8IO7ddta1A==}
     dependencies:
       '@types/hast': 2.3.4
+    dev: true
+
+  /hast-util-to-string@3.0.0:
+    resolution: {integrity: sha512-OGkAxX1Ua3cbcW6EJ5pT/tslVb90uViVkcJ4ZZIMW/R33DX/AkcJcRrPebPwJkHYwlDHXz4aIwvAAaAdtrACFA==}
+    dependencies:
+      '@types/hast': 3.0.0
     dev: true
 
   /hast-util-whitespace@1.0.4:
