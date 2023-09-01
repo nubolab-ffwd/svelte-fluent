@@ -161,8 +161,8 @@ devDependencies:
     specifier: 5.0.0
     version: 5.0.0
   unplugin-icons:
-    specifier: 0.16.5
-    version: 0.16.5
+    specifier: 0.16.6
+    version: 0.16.6
   vitest:
     specifier: 0.34.3
     version: 0.34.3(@vitest/ui@0.34.3)(jsdom@22.0.0)
@@ -189,8 +189,8 @@ packages:
       find-up: 5.0.0
     dev: true
 
-  /@antfu/utils@0.7.5:
-    resolution: {integrity: sha512-dlR6LdS+0SzOAPx/TPRhnoi7hE251OVeT2Snw0RguNbBSbjUHdWr0l3vcUUDg26rEysT89kCbtw1lVorBXLLCg==}
+  /@antfu/utils@0.7.6:
+    resolution: {integrity: sha512-pvFiLP2BeOKA/ZOS6jxx4XhKzdVLHDhGlFEaZ2flWWYf2xOqVniqpk38I04DFRyz+L0ASggl7SkItTc+ZLju4w==}
     dev: true
 
   /@babel/code-frame@7.18.6:
@@ -1023,11 +1023,11 @@ packages:
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
     dev: true
 
-  /@iconify/utils@2.1.7:
-    resolution: {integrity: sha512-P8S3z/L1LcV4Qem9AoCfVAaTFGySEMzFEY4CHZLkfRj0Fv9LiR+AwjDgrDrzyI93U2L2mg9JHsbTJ52mF8suNw==}
+  /@iconify/utils@2.1.9:
+    resolution: {integrity: sha512-mo+A4n3MwLlWlg1SoSO+Dt6pOPWKElk9sSJ6ZpuzbB9OcjxN8RUWxU3ulPwB1nglErWKRam2x4BAohbYF7FiFA==}
     dependencies:
       '@antfu/install-pkg': 0.1.1
-      '@antfu/utils': 0.7.5
+      '@antfu/utils': 0.7.6
       '@iconify/types': 2.0.0
       debug: 4.3.4
       kolorist: 1.8.0
@@ -5554,8 +5554,8 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unplugin-icons@0.16.5:
-    resolution: {integrity: sha512-laCCqMWfng1XZgB9yowGfjBdDhtmz8t8zVnhzRNEMhBNdy26QrVewVmdXk/zsiAQYnEWvIxTjvW1nQXrxdd2+w==}
+  /unplugin-icons@0.16.6:
+    resolution: {integrity: sha512-jL70sAC7twp4hI/MTfm+vyvTRtHqiEIzf3XOjJz7yzhMEEQnk5Ey5YIXRAU03Mc4BF99ITvvnBzfyRZee86OeA==}
     peerDependencies:
       '@svgr/core': '>=7.0.0'
       '@svgx/core': ^1.0.1
@@ -5575,8 +5575,8 @@ packages:
         optional: true
     dependencies:
       '@antfu/install-pkg': 0.1.1
-      '@antfu/utils': 0.7.5
-      '@iconify/utils': 2.1.7
+      '@antfu/utils': 0.7.6
+      '@iconify/utils': 2.1.9
       debug: 4.3.4
       kolorist: 1.8.0
       local-pkg: 0.4.3
