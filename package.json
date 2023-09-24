@@ -44,7 +44,7 @@
 		"@fontsource-variable/manrope": "5.0.12",
 		"@iconify-json/mdi": "1.1.54",
 		"@sveltejs/adapter-static": "2.0.3",
-		"@sveltejs/kit": "1.25.0",
+		"@sveltejs/kit": "1.25.1",
 		"@sveltejs/package": "2.2.2",
 		"@testing-library/svelte": "4.0.3",
 		"@types/hast": "3.0.1",
