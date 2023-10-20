@@ -82,7 +82,7 @@
 		"tslib": "2.6.2",
 		"typescript": "5.2.2",
 		"unist-util-visit": "5.0.0",
-		"unplugin-icons": "0.17.0",
+		"unplugin-icons": "0.17.1",
 		"vitest": "0.34.6"
 	},
 	"peerDependencies": {
