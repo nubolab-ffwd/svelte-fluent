@@ -161,8 +161,8 @@ devDependencies:
     specifier: 5.0.0
     version: 5.0.0
   unplugin-icons:
-    specifier: 0.17.1
-    version: 0.17.1
+    specifier: 0.17.4
+    version: 0.17.4
   vitest:
     specifier: 1.0.0-beta.6
     version: 1.0.0-beta.6(@types/node@20.5.1)(@vitest/ui@1.0.0-beta.6)(jsdom@23.0.0)
@@ -5783,8 +5783,8 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unplugin-icons@0.17.1:
-    resolution: {integrity: sha512-KsWejBPCHokYCNDQUzGu6R3E3XDYH/YpewgQwrVBXgpl1iR0RdW1NEGNdjlbuapwVnZXVgA5eiDTfNaQCawSdg==}
+  /unplugin-icons@0.17.4:
+    resolution: {integrity: sha512-PHLxjBx3ZV8RUBvfMafFl8uWH88jHeZgOijcRpkwgne7y2Ovx7WI0Ltzzw3fjZQ7dGaDhB8udyKVdm9N2S6BIw==}
     peerDependencies:
       '@svgr/core': '>=7.0.0'
       '@svgx/core': ^1.0.1
