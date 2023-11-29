@@ -7,7 +7,7 @@ exports[`E2E test localize-store/Test.svelte > should render 1`] = `
     "map": null,
   },
   "head": "",
-  "html": "<div id=\\"plain\\">Test Attribute</div> <div id=\\"with-vars\\">Test ⁨with variables⁩ Attribute ⁨with variables⁩</div>
+  "html": "<div id="plain">Test Attribute</div> <div id="with-vars">Test ⁨with variables⁩ Attribute ⁨with variables⁩</div>
 7",
 }
 `;
