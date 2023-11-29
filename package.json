@@ -77,7 +77,7 @@
 		"rehype-wrap-all": "1.1.0",
 		"shiki": "0.14.5",
 		"svelte": "4.2.7",
-		"svelte-check": "3.5.2",
+		"svelte-check": "3.6.2",
 		"svelte2tsx": "0.6.23",
 		"tslib": "2.6.2",
 		"typescript": "5.3.2",
