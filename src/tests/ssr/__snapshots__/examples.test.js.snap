@@ -18,7 +18,7 @@ exports[`Example localize/attributes/App.svelte > should render 1`] = `
     "map": null,
   },
   "head": "",
-  "html": "<button data-svelte-h=\\"svelte-1e53d2i\\">Show prompt</button>",
+  "html": "<button data-svelte-h="svelte-1e53d2i">Show prompt</button>",
 }
 `;
 
@@ -29,7 +29,7 @@ exports[`Example localize/dynamic-text/App.svelte > should render 1`] = `
     "map": null,
   },
   "head": "",
-  "html": "<button data-svelte-h=\\"svelte-svtntt\\">Say hello</button>",
+  "html": "<button data-svelte-h="svelte-svtntt">Say hello</button>",
 }
 `;
 
@@ -40,7 +40,7 @@ exports[`Example localize/static-text/App.svelte > should render 1`] = `
     "map": null,
   },
   "head": "",
-  "html": "<button data-svelte-h=\\"svelte-15s1pbq\\">Say hello</button>",
+  "html": "<button data-svelte-h="svelte-15s1pbq">Say hello</button>",
 }
 `;
 
@@ -95,9 +95,9 @@ exports[`Example overlay/dynamic-text/App.svelte > should render 1`] = `
     "map": null,
   },
   "head": "",
-  "html": "<div class=\\"s-inkqtEk9hetm\\">You can download \\"⁨Example Product⁩\\" by clicking
+  "html": "<div class="s-inkqtEk9hetm">You can download "⁨Example Product⁩" by clicking
 on the <strong>Download</strong> button or read
-the <a data-l10n-name=\\"release-notes\\" href=\\"https://example.com/\\" target=\\"_blank\\" rel=\\"noreferrer\\" data-svelte-h=\\"svelte-18dssra\\">release notes</a> to learn more.</div>",
+the <a data-l10n-name="release-notes" href="https://example.com/" target="_blank" rel="noreferrer" data-svelte-h="svelte-18dssra">release notes</a> to learn more.</div>",
 }
 `;
 
@@ -108,7 +108,7 @@ exports[`Example overlay/static-text/App.svelte > should render 1`] = `
     "map": null,
   },
   "head": "",
-  "html": "<div class=\\"s-inkqtEk9hetm\\">Read the <a data-l10n-name=\\"link\\" href=\\"https://example.com/\\" data-svelte-h=\\"svelte-1j6xxoa\\">documentation</a> for more information.</div>",
+  "html": "<div class="s-inkqtEk9hetm">Read the <a data-l10n-name="link" href="https://example.com/" data-svelte-h="svelte-1j6xxoa">documentation</a> for more information.</div>",
 }
 `;
 
@@ -130,7 +130,7 @@ exports[`Example tutorial/attributes/App.svelte > should render 1`] = `
     "map": null,
   },
   "head": "",
-  "html": "<label>Login <input type=\\"email\\" placeholder=\\"email@example.com\\" title=\\"Type your login email\\" aria-label=\\"Login input value\\"></label>",
+  "html": "<label>Login <input type="email" placeholder="email@example.com" title="Type your login email" aria-label="Login input value"></label>",
 }
 `;
 
