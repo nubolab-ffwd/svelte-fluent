@@ -59,8 +59,8 @@ devDependencies:
     specifier: 3.0.2
     version: 3.0.2
   '@types/jsdom':
-    specifier: 21.1.4
-    version: 21.1.4
+    specifier: 21.1.6
+    version: 21.1.6
   '@typescript-eslint/eslint-plugin':
     specifier: 6.13.1
     version: 6.13.1(@typescript-eslint/parser@6.13.1)(eslint@8.54.0)(typescript@5.3.2)
@@ -1440,8 +1440,8 @@ packages:
       '@types/unist': 3.0.0
     dev: true
 
-  /@types/jsdom@21.1.4:
-    resolution: {integrity: sha512-NzAMLEV0KQ4cBaDx3Ls8VfJUElyDUm1xrtYRmcMK0gF8L5xYbujFVaQlJ50yinQ/d47j2rEP1XUzkiYrw4YRFA==}
+  /@types/jsdom@21.1.6:
+    resolution: {integrity: sha512-/7kkMsC+/kMs7gAYmmBR9P0vGTnOoLhQhyhQJSlXGI5bzTHp6xdo0TtKWQAsz6pmSAeVqKSbqeyP6hytqr9FDw==}
     dependencies:
       '@types/node': 20.5.1
       '@types/tough-cookie': 4.0.2
