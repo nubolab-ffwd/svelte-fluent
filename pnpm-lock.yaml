@@ -50,8 +50,8 @@ devDependencies:
     specifier: 1.27.6
     version: 1.27.6(svelte@4.2.2)(vite@4.1.5)
   '@sveltejs/package':
-    specifier: 2.2.2
-    version: 2.2.2(svelte@4.2.2)(typescript@5.2.2)
+    specifier: 2.2.3
+    version: 2.2.3(svelte@4.2.2)(typescript@5.2.2)
   '@testing-library/svelte':
     specifier: 4.0.4
     version: 4.0.4(svelte@4.2.2)
@@ -1279,8 +1279,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/package@2.2.2(svelte@4.2.2)(typescript@5.2.2):
-    resolution: {integrity: sha512-rP3sVv6cAntcdcG4r4KspLU6nZYYUrHJBAX3Arrw0KJFdgxtlsi2iDwN0Jwr/vIkgjcU0ZPWM8kkT5kpZDlWAw==}
+  /@sveltejs/package@2.2.3(svelte@4.2.2)(typescript@5.2.2):
+    resolution: {integrity: sha512-iZEC5qw+2RIjfIAHR3O+IeokJIjVM/ieoxPxj6YmZCwu5JKFADtC4jzjSUJ7GkCMUQ4HqE7u4/3cCxXBocxi8A==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     peerDependencies:
