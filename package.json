@@ -66,7 +66,7 @@
 		"postcss": "8.4.32",
 		"postcss-load-config": "5.0.2",
 		"postcss-preset-env": "9.3.0",
-		"prettier": "3.1.0",
+		"prettier": "3.2.5",
 		"prettier-plugin-svelte": "3.1.2",
 		"publint": "0.2.6",
 		"rehype-add-classes": "1.0.0",
