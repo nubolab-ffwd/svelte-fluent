@@ -43,7 +43,7 @@
 		"@fluent/langneg": "0.7.0",
 		"@fontsource-variable/manrope": "5.0.18",
 		"@iconify-json/mdi": "1.1.64",
-		"@sveltejs/adapter-static": "2.0.3",
+		"@sveltejs/adapter-static": "3.0.1",
 		"@sveltejs/kit": "1.30.3",
 		"@sveltejs/package": "2.2.3",
 		"@testing-library/svelte": "4.0.5",
