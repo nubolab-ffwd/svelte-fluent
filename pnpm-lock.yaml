@@ -152,8 +152,8 @@ devDependencies:
     specifier: 3.6.2
     version: 3.6.2(postcss-load-config@5.0.2)(postcss@8.4.32)(svelte@4.2.8)
   svelte2tsx:
-    specifier: 0.6.27
-    version: 0.6.27(svelte@4.2.8)(typescript@5.3.3)
+    specifier: 0.7.0
+    version: 0.7.0(svelte@4.2.8)(typescript@5.3.3)
   tslib:
     specifier: 2.6.2
     version: 2.6.2
@@ -5347,18 +5347,6 @@ packages:
       postcss-load-config: 5.0.2(postcss@8.4.32)
       sorcery: 0.11.0
       strip-indent: 3.0.0
-      svelte: 4.2.8
-      typescript: 5.3.3
-    dev: true
-
-  /svelte2tsx@0.6.27(svelte@4.2.8)(typescript@5.3.3):
-    resolution: {integrity: sha512-E1uPW1o6VsbRz+nUk3fznZ2lSmCITAJoNu8AYefWSvIwE2pSB01i5sId4RMbWNzfcwCQl1DcgGShCPcldl4rvg==}
-    peerDependencies:
-      svelte: ^3.55 || ^4.0.0-next.0 || ^4.0 || ^5.0.0-next.0
-      typescript: ^4.9.4 || ^5.0.0
-    dependencies:
-      dedent-js: 1.0.1
-      pascal-case: 3.1.2
       svelte: 4.2.8
       typescript: 5.3.3
     dev: true
