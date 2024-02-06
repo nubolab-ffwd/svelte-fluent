@@ -60,7 +60,7 @@
 		"glob": "10.3.10",
 		"hast-util-heading-rank": "3.0.0",
 		"hast-util-to-string": "3.0.0",
-		"husky": "8.0.3",
+		"husky": "9.0.10",
 		"lint-staged": "15.2.2",
 		"mdsvex": "0.11.0",
 		"npm-run-all2": "6.1.2",
