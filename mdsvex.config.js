@@ -3,7 +3,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeExternalLinks from 'rehype-external-links';
 import rehypeSlug from 'rehype-slug';
 import rehypeWrap from 'rehype-wrap-all';
-import { defaultHighlighter } from './utils/highlight.js';
+import { highlight } from './utils/highlight.js';
 import rehypeHeadings from './utils/rehype-headings.js';
 
 // escape curlies, backtick, \t, \r, \n to avoid breaking output of {@html `here`} in .svelte
@@ -18,7 +18,7 @@ export const escape_svelty = (str) =>
 		.replace(/\\([trn])/g, '&#92;$1');
 
 async function code_highlight(code, lang) {
-	const highlighted = (await defaultHighlighter).codeToHtml(code, { lang });
+	const highlighted = await highlight(code, lang);
 	return `{@html \`${escape_svelty(highlighted)}\`}`;
 }
 

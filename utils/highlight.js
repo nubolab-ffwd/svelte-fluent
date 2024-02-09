@@ -6,7 +6,19 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const fluentGrammar = JSON.parse(readFileSync(resolve(__dirname, './fluent.tmLanguage.json')));
 
-export const defaultHighlighter = getHighlighter({
-	theme: 'dark-plus',
-	langs: ['shellscript', 'svelte', { id: 'ftl', scopeName: 'source.ftl', grammar: fluentGrammar }]
-});
+const theme = 'dark-plus';
+const themes = [theme];
+const langs = ['shellscript', 'svelte', { name: 'ftl', scopeName: 'source.ftl', ...fluentGrammar }];
+
+const defaultHighlighter = getHighlighter({ themes, langs });
+
+/**
+ *
+ * @param {string} code
+ * @param {string} lang
+ * @returns {string}
+ */
+export async function highlight(code, lang) {
+	const hl = await defaultHighlighter;
+	return hl.codeToHtml(code, { lang, theme, langs });
+}
