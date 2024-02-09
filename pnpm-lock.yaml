@@ -143,8 +143,8 @@ devDependencies:
     specifier: 1.1.0
     version: 1.1.0
   shiki:
-    specifier: 1.0.0
-    version: 1.0.0
+    specifier: 1.1.0
+    version: 1.1.0
   svelte:
     specifier: 4.2.10
     version: 4.2.10
@@ -1328,8 +1328,8 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@shikijs/core@1.0.0:
-    resolution: {integrity: sha512-UMKGMZ+8b88N0/n6DWwWth1PHsOaxjW+R2u+hzSiargZWTv+l3s1l8dhuIxUSsEUPlBDKLs2CSMiFZeviKQM1w==}
+  /@shikijs/core@1.1.0:
+    resolution: {integrity: sha512-mB1uFNMpHD82I6QAi/Sk4+H070czXNqUCXvpobeLQGFQ8LM1jQHK/lbHLcucUNSDpFKxTCNJK4KbU2PjR+KJNA==}
     dev: true
 
   /@sinclair/typebox@0.27.8:
@@ -5023,10 +5023,10 @@ packages:
     resolution: {integrity: sha512-Vpfqwm4EnqGdlsBFNmHhxhElJYrdfcxPThu+ryKS5J8L/fhAwLazFZtq+S+TWZ9ANj2piSQLGj6NQg+lKPmxrw==}
     dev: true
 
-  /shiki@1.0.0:
-    resolution: {integrity: sha512-rOUGJa3yFGgOrEoiELYxraoBbag3ZWf9bpodlr05Wjm85Scx8OIX+otdSefq9Pk7L47TKEzGodSQb4L38jka6A==}
+  /shiki@1.1.0:
+    resolution: {integrity: sha512-esLKFNE2wwgAU/Ze4u/7qZRi9CwDfPq/4PQNFf7TiAN6+pbgTmibOxBS0eu1xvSW7autXP/g1bOGRGkAQK233w==}
     dependencies:
-      '@shikijs/core': 1.0.0
+      '@shikijs/core': 1.1.0
     dev: true
 
   /side-channel@1.0.4:
