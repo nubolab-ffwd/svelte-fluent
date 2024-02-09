@@ -1,6 +1,6 @@
-import { createFilter, Plugin } from 'vite';
+import { createFilter, type Plugin } from 'vite';
 import { promises as fsp } from 'node:fs';
-import { defaultHighlighter } from './highlight';
+import { highlight } from './highlight';
 
 type PluginOptions = {
 	include: Array<string | RegExp> | string | RegExp;
@@ -50,8 +50,7 @@ export default function highlightPlugin(userOptions: Partial<PluginOptions>): Pl
 			const file = cleanUrl(id);
 			const lang = detectLanguage(file);
 			const source = await fsp.readFile(file, 'utf-8');
-			const highlighter = await defaultHighlighter;
-			const highlighted = highlighter.codeToHtml(source, { lang });
+			const highlighted = await highlight(source, lang);
 
 			return `export default ${JSON.stringify(highlighted)}`;
 		}
