@@ -8,19 +8,19 @@
 		<link href="/svelte-fluent/_app/immutable/assets/0.7H3Ijql_.css" rel="stylesheet">
 		<link href="/svelte-fluent/_app/immutable/assets/3.YEVo17Sj.css" rel="stylesheet">
 		<link href="/svelte-fluent/_app/immutable/assets/Overlay.o6h2uO0R.css" rel="stylesheet">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/start.fczeAULR.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/entry.kuQOVcbB.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/start.QK4HVMec.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/entry.UUDwBfeA.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/scheduler.hmJBBN8a.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/index.wmKu0RRU.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/paths.NRRT5gqq.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/paths.9xXfabAy.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/control.pJ1mnnAb.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/app.SSldiCtX.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/entry/app.3vGmhV0K.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/index.vmpf5XgC.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/nodes/0.YbzDgVbQ.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/nodes/0.nKF_ootW.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/logo.ybuCf_qV.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/spread.rEx3vLA9.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/stores.JrF3LMa7.js">
-		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/nodes/3.RiU5MFQJ.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/stores.kTOVTMZG.js">
+		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/nodes/3.Uvl6He2K.js">
 		<link rel="modulepreload" href="/svelte-fluent/_app/immutable/chunks/Overlay.svelte_svelte_type_style_lang._vqx78ht.js"><title>The expressive Svelte localization library | svelte-fluent</title><!-- HEAD_svelte-98thyt_START --><meta name="description" content="The expressive Svelte localization library"><!-- HEAD_svelte-98thyt_END -->
 	</head>
 	<body>
@@ -92,44 +92,44 @@
 			structures than traditional localization systems can handle.</p> <p data-svelte-h="svelte-80qzw0">The example below shows how you can use svelte-fluent and FTL, the format for describing
 			translation resources used by Fluent, to represent complex natural language concepts such as
 			gender, plurals, and others that are important to many languages but difficult to handle with
-			traditional localization systems.</p> <div class="stack" aria-label="Code example"><div class="code-block stack">  <!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #808080">&lt;</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
-<span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">FluentBundle</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">FluentResource</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@fluent/bundle&#39;</span><span style="color: #D4D4D4">;</span></span>
-<span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">FluentProvider</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">Localized</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@nubolab-ffwd/svelte-fluent&#39;</span><span style="color: #D4D4D4">;</span></span>
+			traditional localization systems.</p> <div class="stack" aria-label="Code example"><div class="code-block stack">  <!-- HTML_TAG_START --><pre class="shiki dark-plus" style="background-color:#1E1E1E;color:#D4D4D4" tabindex="0"><code><span class="line"><span style="color:#808080">&#x3C;</span><span style="color:#569CD6">script</span><span style="color:#808080">></span></span>
+<span class="line"><span style="color:#C586C0">	import</span><span style="color:#D4D4D4"> { </span><span style="color:#9CDCFE">FluentBundle</span><span style="color:#D4D4D4">, </span><span style="color:#9CDCFE">FluentResource</span><span style="color:#D4D4D4"> } </span><span style="color:#C586C0">from</span><span style="color:#CE9178"> '@fluent/bundle'</span><span style="color:#D4D4D4">;</span></span>
+<span class="line"><span style="color:#C586C0">	import</span><span style="color:#D4D4D4"> { </span><span style="color:#9CDCFE">FluentProvider</span><span style="color:#D4D4D4">, </span><span style="color:#9CDCFE">Localized</span><span style="color:#D4D4D4"> } </span><span style="color:#C586C0">from</span><span style="color:#CE9178"> '@nubolab-ffwd/svelte-fluent'</span><span style="color:#D4D4D4">;</span></span>
 <span class="line"></span>
-<span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">let</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">userName</span><span style="color: #D4D4D4"> = </span><span style="color: #CE9178">&#39;Anna&#39;</span><span style="color: #D4D4D4">;</span></span>
-<span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">let</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">userGender</span><span style="color: #D4D4D4"> = </span><span style="color: #CE9178">&#39;female&#39;</span><span style="color: #D4D4D4">;</span></span>
-<span class="line"><span style="color: #D4D4D4">	</span><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">let</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">photoCount</span><span style="color: #D4D4D4"> = </span><span style="color: #B5CEA8">3</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color:#C586C0">	export</span><span style="color:#569CD6"> let</span><span style="color:#9CDCFE"> userName</span><span style="color:#D4D4D4"> = </span><span style="color:#CE9178">'Anna'</span><span style="color:#D4D4D4">;</span></span>
+<span class="line"><span style="color:#C586C0">	export</span><span style="color:#569CD6"> let</span><span style="color:#9CDCFE"> userGender</span><span style="color:#D4D4D4"> = </span><span style="color:#CE9178">'female'</span><span style="color:#D4D4D4">;</span></span>
+<span class="line"><span style="color:#C586C0">	export</span><span style="color:#569CD6"> let</span><span style="color:#9CDCFE"> photoCount</span><span style="color:#D4D4D4"> = </span><span style="color:#B5CEA8">3</span><span style="color:#D4D4D4">;</span></span>
 <span class="line"></span>
-<span class="line"><span style="color: #D4D4D4">	</span><span style="color: #569CD6">const</span><span style="color: #D4D4D4"> </span><span style="color: #4FC1FF">translations</span><span style="color: #D4D4D4"> = </span><span style="color: #CE9178">`</span></span>
-<span class="line"><span style="color: #CE9178"># Simple things are simple.</span></span>
-<span class="line"><span style="color: #CE9178">hello-user = Hello, {$userName}!</span></span>
+<span class="line"><span style="color:#569CD6">	const</span><span style="color:#4FC1FF"> translations</span><span style="color:#D4D4D4"> = </span><span style="color:#CE9178">`</span></span>
+<span class="line"><span style="color:#CE9178"># Simple things are simple.</span></span>
+<span class="line"><span style="color:#CE9178">hello-user = Hello, {$userName}!</span></span>
 <span class="line"></span>
-<span class="line"><span style="color: #CE9178"># Complex things are possible.</span></span>
-<span class="line"><span style="color: #CE9178">shared-photos =</span></span>
-<span class="line"><span style="color: #CE9178">    {$userName} {$photoCount -&gt;</span></span>
-<span class="line"><span style="color: #CE9178">        [one] added a new photo</span></span>
-<span class="line"><span style="color: #CE9178">       *[other] added {$photoCount} new photos</span></span>
-<span class="line"><span style="color: #CE9178">    } to {$userGender -&gt;</span></span>
-<span class="line"><span style="color: #CE9178">        [male] his stream</span></span>
-<span class="line"><span style="color: #CE9178">        [female] her stream</span></span>
-<span class="line"><span style="color: #CE9178">       *[other] their stream</span></span>
-<span class="line"><span style="color: #CE9178">    }.</span></span>
-<span class="line"><span style="color: #CE9178">`</span><span style="color: #D4D4D4">;</span></span>
-<span class="line"><span style="color: #D4D4D4">	</span><span style="color: #569CD6">const</span><span style="color: #D4D4D4"> </span><span style="color: #4FC1FF">bundle</span><span style="color: #D4D4D4"> = </span><span style="color: #569CD6">new</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">FluentBundle</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;en&#39;</span><span style="color: #D4D4D4">);</span></span>
-<span class="line"><span style="color: #D4D4D4">	</span><span style="color: #9CDCFE">bundle</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">addResource</span><span style="color: #D4D4D4">(</span><span style="color: #569CD6">new</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">FluentResource</span><span style="color: #D4D4D4">(</span><span style="color: #9CDCFE">translations</span><span style="color: #D4D4D4">));</span></span>
-<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #569CD6">script</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color:#CE9178"># Complex things are possible.</span></span>
+<span class="line"><span style="color:#CE9178">shared-photos =</span></span>
+<span class="line"><span style="color:#CE9178">    {$userName} {$photoCount -></span></span>
+<span class="line"><span style="color:#CE9178">        [one] added a new photo</span></span>
+<span class="line"><span style="color:#CE9178">       *[other] added {$photoCount} new photos</span></span>
+<span class="line"><span style="color:#CE9178">    } to {$userGender -></span></span>
+<span class="line"><span style="color:#CE9178">        [male] his stream</span></span>
+<span class="line"><span style="color:#CE9178">        [female] her stream</span></span>
+<span class="line"><span style="color:#CE9178">       *[other] their stream</span></span>
+<span class="line"><span style="color:#CE9178">    }.</span></span>
+<span class="line"><span style="color:#CE9178">`</span><span style="color:#D4D4D4">;</span></span>
+<span class="line"><span style="color:#569CD6">	const</span><span style="color:#4FC1FF"> bundle</span><span style="color:#D4D4D4"> = </span><span style="color:#569CD6">new</span><span style="color:#DCDCAA"> FluentBundle</span><span style="color:#D4D4D4">(</span><span style="color:#CE9178">'en'</span><span style="color:#D4D4D4">);</span></span>
+<span class="line"><span style="color:#9CDCFE">	bundle</span><span style="color:#D4D4D4">.</span><span style="color:#DCDCAA">addResource</span><span style="color:#D4D4D4">(</span><span style="color:#569CD6">new</span><span style="color:#DCDCAA"> FluentResource</span><span style="color:#D4D4D4">(</span><span style="color:#9CDCFE">translations</span><span style="color:#D4D4D4">));</span></span>
+<span class="line"><span style="color:#808080">&#x3C;/</span><span style="color:#569CD6">script</span><span style="color:#808080">></span></span>
 <span class="line"></span>
-<span class="line"><span style="color: #808080">&lt;</span><span style="color: #4EC9B0">FluentProvider</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">bundles</span><span style="color: #D4D4D4">=</span><span style="color: #569CD6">{</span><span style="color: #D4D4D4">[</span><span style="color: #9CDCFE">bundle</span><span style="color: #D4D4D4">]</span><span style="color: #569CD6">}</span><span style="color: #808080">&gt;</span></span>
-<span class="line"><span style="color: #D4D4D4">	</span><span style="color: #808080">&lt;</span><span style="color: #569CD6">strong</span><span style="color: #808080">&gt;&lt;</span><span style="color: #4EC9B0">Localized</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">id</span><span style="color: #D4D4D4">=</span><span style="color: #CE9178">&quot;hello-user&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">args</span><span style="color: #D4D4D4">=</span><span style="color: #569CD6">{</span><span style="color: #D4D4D4">{ </span><span style="color: #9CDCFE">userName</span><span style="color: #D4D4D4"> }</span><span style="color: #569CD6">}</span><span style="color: #D4D4D4"> </span><span style="color: #808080">/&gt;&lt;/</span><span style="color: #569CD6">strong</span><span style="color: #808080">&gt;</span></span>
-<span class="line"><span style="color: #D4D4D4">	</span><span style="color: #808080">&lt;</span><span style="color: #569CD6">p</span><span style="color: #808080">&gt;</span></span>
-<span class="line"><span style="color: #D4D4D4">		</span><span style="color: #808080">&lt;</span><span style="color: #4EC9B0">Localized</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">id</span><span style="color: #D4D4D4">=</span><span style="color: #CE9178">&quot;shared-photos&quot;</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">args</span><span style="color: #D4D4D4">=</span><span style="color: #569CD6">{</span><span style="color: #D4D4D4">{ </span><span style="color: #9CDCFE">userName</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">userGender</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">photoCount</span><span style="color: #D4D4D4"> }</span><span style="color: #569CD6">}</span><span style="color: #D4D4D4"> </span><span style="color: #808080">/&gt;</span></span>
-<span class="line"><span style="color: #D4D4D4">	</span><span style="color: #808080">&lt;/</span><span style="color: #569CD6">p</span><span style="color: #808080">&gt;</span></span>
-<span class="line"><span style="color: #808080">&lt;/</span><span style="color: #4EC9B0">FluentProvider</span><span style="color: #808080">&gt;</span></span>
+<span class="line"><span style="color:#808080">&#x3C;</span><span style="color:#4EC9B0">FluentProvider</span><span style="color:#9CDCFE"> bundles</span><span style="color:#D4D4D4">=</span><span style="color:#569CD6">{</span><span style="color:#D4D4D4">[</span><span style="color:#9CDCFE">bundle</span><span style="color:#D4D4D4">]</span><span style="color:#569CD6">}</span><span style="color:#808080">></span></span>
+<span class="line"><span style="color:#808080">	&#x3C;</span><span style="color:#569CD6">strong</span><span style="color:#808080">>&#x3C;</span><span style="color:#4EC9B0">Localized</span><span style="color:#9CDCFE"> id</span><span style="color:#D4D4D4">=</span><span style="color:#CE9178">"hello-user"</span><span style="color:#9CDCFE"> args</span><span style="color:#D4D4D4">=</span><span style="color:#569CD6">{</span><span style="color:#D4D4D4">{ </span><span style="color:#9CDCFE">userName</span><span style="color:#D4D4D4"> }</span><span style="color:#569CD6">}</span><span style="color:#808080"> />&#x3C;/</span><span style="color:#569CD6">strong</span><span style="color:#808080">></span></span>
+<span class="line"><span style="color:#808080">	&#x3C;</span><span style="color:#569CD6">p</span><span style="color:#808080">></span></span>
+<span class="line"><span style="color:#808080">		&#x3C;</span><span style="color:#4EC9B0">Localized</span><span style="color:#9CDCFE"> id</span><span style="color:#D4D4D4">=</span><span style="color:#CE9178">"shared-photos"</span><span style="color:#9CDCFE"> args</span><span style="color:#D4D4D4">=</span><span style="color:#569CD6">{</span><span style="color:#D4D4D4">{ </span><span style="color:#9CDCFE">userName</span><span style="color:#D4D4D4">, </span><span style="color:#9CDCFE">userGender</span><span style="color:#D4D4D4">, </span><span style="color:#9CDCFE">photoCount</span><span style="color:#D4D4D4"> }</span><span style="color:#569CD6">}</span><span style="color:#808080"> /></span></span>
+<span class="line"><span style="color:#808080">	&#x3C;/</span><span style="color:#569CD6">p</span><span style="color:#808080">></span></span>
+<span class="line"><span style="color:#808080">&#x3C;/</span><span style="color:#4EC9B0">FluentProvider</span><span style="color:#808080">></span></span>
 <span class="line"></span></code></pre><!-- HTML_TAG_END --> </div> <div data-svelte-h="svelte-1v9238f">Result:</div> <div class="stack box"><div class="box rendered svelte-zbatgl"><strong> Hello, ⁨Anna⁩! </strong> <p> ⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩. </p></div> <div class="controls svelte-zbatgl"><dl slot="controls" style="--space: var(--s-2);"><dt data-svelte-h="svelte-1t6332q"><label for="frontpage-username">userName</label></dt><dd><input id="frontpage-username" type="text" value="Anna"></dd><dt data-svelte-h="svelte-v02afu"><label for="frontpage-usergender">userGender</label></dt><dd><select id="frontpage-usergender"><option value="male" data-svelte-h="svelte-tijyma">male</option><option value="female" data-svelte-h="svelte-manpx2">female</option><option value="unspecified" data-svelte-h="svelte-1jgizdc">unspecified</option></select> </dd><dt data-svelte-h="svelte-wowr2a"><label for="frontpage-photocount">photoCount</label></dt><dd><input id="frontpage-photocount" type="range" min="1" max="9" value="3"></dd></dl></div></div> </div></div> </div> </div> 
 			
 			<script>
 				{
-					__sveltekit_t6yvrt = {
+					__sveltekit_14byge4 = {
 						base: "/svelte-fluent",
 						assets: "/svelte-fluent"
 					};
@@ -139,8 +139,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("/svelte-fluent/_app/immutable/entry/start.fczeAULR.js"),
-						import("/svelte-fluent/_app/immutable/entry/app.SSldiCtX.js")
+						import("/svelte-fluent/_app/immutable/entry/start.QK4HVMec.js"),
+						import("/svelte-fluent/_app/immutable/entry/app.3vGmhV0K.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 3],
