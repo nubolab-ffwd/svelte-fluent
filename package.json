@@ -118,5 +118,15 @@
 		"src/lib"
 	],
 	"svelte": "./dist/index.js",
-	"types": "./dist/index.d.ts"
+	"types": "./dist/index.d.ts",
+	"typesVersions": {
+		">4.0": {
+			"rollup-plugin": [
+				"./dist/rollup-plugin.d.ts"
+			],
+			"ssr": [
+				"./dist/ssr.d.ts"
+			]
+		}
+	}
 }
