@@ -1,0 +1,39 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`E2E test localize-store/Test.svelte > should render 1`] = `
+<body>
+  <div>
+    <div
+      id="plain"
+    >
+      Test
+       
+      Attribute
+    </div>
+     
+    <div
+      id="with-vars"
+    >
+      Test ⁨with variables⁩
+       
+      Attribute ⁨with variables⁩
+    </div>
+    
+7
+    <!--&lt;Content&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;Test&gt;-->
+  </div>
+</body>
+`;
+
+exports[`E2E test regression-tests/empty-pattern-with-attributes/Test.svelte > should render 1`] = `
+<body>
+  <div>
+    Some text
+    <!--&lt;Localized&gt;-->
+    <!--&lt;FluentProvider&gt;-->
+    <!--&lt;Test&gt;-->
+  </div>
+</body>
+`;
