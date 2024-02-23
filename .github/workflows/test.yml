@@ -24,7 +24,7 @@ jobs:
       - run: pnpm install --frozen-lockfile --strict-peer-dependencies
       - run: pnpm lint
 
-  ci:
+  test:
     name: Node.js ${{ matrix.node-version }}
     runs-on: ubuntu-latest
 
@@ -43,5 +43,32 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
       - run: pnpm install --frozen-lockfile --strict-peer-dependencies
+      - run: pnpm test
+      - run: pnpm build
+
+  test-peer-deps:
+    name: ${{ matrix.package-version }}
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        package-version:
+          - jsdom@^20.0.0
+          - jsdom@^21.0.0
+          - jsdom@^22.0.0
+          - jsdom@^23.0.0
+          - svelte@^3.55.0
+    steps:
+      - uses: actions/checkout@v4.1.1 # v4
+      - uses: pnpm/action-setup@v3.0.0
+        with:
+          version: 8
+      - uses: actions/setup-node@v4.0.2
+        with:
+          node-version: 20.x
+          cache: 'pnpm'
+      - run: pnpm install --frozen-lockfile --strict-peer-dependencies
+      - name: Install ${{ matrix.package-version }}
+        run: pnpm install --no-lockfile ${{ matrix.package-version }}
       - run: pnpm test
       - run: pnpm build
