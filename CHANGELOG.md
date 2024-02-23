@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.8.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v0.7.0...svelte-fluent-v0.8.0) (2024-02-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** drop jsdom <20 from peer dependencies
+
+### Features
+
+* **deps:** drop jsdom &lt;20 from peer dependencies ([554db59](https://github.com/nubolab-ffwd/svelte-fluent/commit/554db59b7af90a36335700981358ea418c8787b3))
+
+
+### Bug Fixes
+
+* **deps:** update dependency jsdom to v24 ([c5478ea](https://github.com/nubolab-ffwd/svelte-fluent/commit/c5478ea5119dd5a87c60fe6e41d98e6aa097e905))
+* **deps:** update dependency jsdom to v24 ([c8d412a](https://github.com/nubolab-ffwd/svelte-fluent/commit/c8d412aed880147de88e1d03dddd01d0ca7c906a))
+
 ## [0.7.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v0.6.2...svelte-fluent-v0.7.0) (2023-07-17)
 
 
