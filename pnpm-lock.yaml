@@ -38,8 +38,8 @@ devDependencies:
     specifier: 0.7.0
     version: 0.7.0
   '@fontsource-variable/manrope':
-    specifier: 5.0.18
-    version: 5.0.18
+    specifier: 5.0.19
+    version: 5.0.19
   '@iconify-json/mdi':
     specifier: 1.1.64
     version: 1.1.64
@@ -1058,8 +1058,8 @@ packages:
       '@fluent/bundle': 0.18.0
     dev: false
 
-  /@fontsource-variable/manrope@5.0.18:
-    resolution: {integrity: sha512-BmTWanceVCX3/xAY0VhBLM9fwEwe+Z/jR3/EPDLxas6+b3gnBChI+MYh+vMxDPEavfpEhcQptCCNJ3kQxn07iw==}
+  /@fontsource-variable/manrope@5.0.19:
+    resolution: {integrity: sha512-1WQ1NFnS3tfZ+ZQ3nNJ6sQGpIr6RWhq/wTovlcTlmvVrd53lnmITSolq6vBSEgVef6DWNFUehEvodDcyL3O6EA==}
     dev: true
 
   /@humanwhocodes/config-array@0.11.14:
