@@ -50,7 +50,7 @@
 		"@types/semver": "7.5.8",
 		"@typescript-eslint/eslint-plugin": "7.2.0",
 		"@typescript-eslint/parser": "7.2.0",
-		"@vitest/ui": "1.3.1",
+		"@vitest/ui": "1.5.0",
 		"autoprefixer": "10.4.19",
 		"eslint": "8.57.0",
 		"eslint-config-prettier": "9.1.0",
@@ -84,7 +84,7 @@
 		"typescript": "5.4.5",
 		"unist-util-visit": "5.0.0",
 		"unplugin-icons": "0.18.5",
-		"vitest": "1.3.1"
+		"vitest": "1.5.0"
 	},
 	"peerDependencies": {
 		"jsdom": "^20.0.0 || ^21.0.0 || ^22.0.0 || ^23.0.0 || ^24.0.0",
