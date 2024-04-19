@@ -34,8 +34,8 @@
 		"cached-iterable": "^0.3.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "19.2.1",
-		"@commitlint/config-conventional": "19.1.0",
+		"@commitlint/cli": "19.2.2",
+		"@commitlint/config-conventional": "19.2.2",
 		"@fluent/bundle": "0.18.0",
 		"@fluent/langneg": "0.7.0",
 		"@fontsource-variable/manrope": "5.0.19",
