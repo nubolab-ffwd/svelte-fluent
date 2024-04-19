@@ -21,8 +21,6 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       # Setup .npmrc file to publish to npm
       - uses: pnpm/action-setup@v3.0.0
-        with:
-          version: 8
         if: ${{ steps.release.outputs.release_created }}
       - uses: actions/setup-node@v4.0.2
         with:
