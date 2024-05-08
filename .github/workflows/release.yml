@@ -15,7 +15,7 @@ jobs:
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
       # The logic below handles the npm publication:
-      - uses: actions/checkout@v4.1.1 # v4
+      - uses: actions/checkout@v4.1.5
         # these if statements ensure that a publication only occurs when
         # a new release is created:
         if: ${{ steps.release.outputs.release_created }}
