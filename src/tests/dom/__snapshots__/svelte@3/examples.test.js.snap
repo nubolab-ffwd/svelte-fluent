@@ -4,15 +4,11 @@ exports[`Example frontpage/App.svelte > should render 1`] = `
 <div>
   <strong>
     Hello, ⁨Anna⁩!
-    <!--&lt;Localized&gt;-->
   </strong>
    
   <p>
     ⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.
-    <!--&lt;Localized&gt;-->
   </p>
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
@@ -21,9 +17,6 @@ exports[`Example localize/attributes/App.svelte > should render 1`] = `
   <button>
     Show prompt
   </button>
-  <!--&lt;Component&gt;-->
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
@@ -32,9 +25,6 @@ exports[`Example localize/dynamic-text/App.svelte > should render 1`] = `
   <button>
     Say hello
   </button>
-  <!--&lt;Component&gt;-->
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
@@ -43,9 +33,6 @@ exports[`Example localize/static-text/App.svelte > should render 1`] = `
   <button>
     Say hello
   </button>
-  <!--&lt;Component&gt;-->
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
@@ -64,10 +51,6 @@ exports[`Example localized/attributes/App.svelte > should render 1`] = `
       Cancel
     </button>
   </div>
-  <!--&lt;Localized&gt;-->
-  <!--&lt;Component&gt;-->
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
@@ -86,37 +69,25 @@ exports[`Example localized/attributes-with-variables/App.svelte > should render 
       Cancel
     </button>
   </div>
-  <!--&lt;Localized&gt;-->
-  <!--&lt;Component&gt;-->
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
 exports[`Example localized/dynamic-text/App.svelte > should render 1`] = `
 <div>
   You have ⁨10⁩ unread emails.
-  <!--&lt;Localized&gt;-->
-  <!--&lt;Component&gt;-->
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
 exports[`Example localized/static-text/App.svelte > should render 1`] = `
 <div>
   Hello, world!
-  <!--&lt;Localized&gt;-->
-  <!--&lt;Component&gt;-->
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
 exports[`Example overlay/dynamic-text/App.svelte > should render 1`] = `
 <div>
   <div
-    class="s-inkqtEk9hetm"
+    class="svelte-1igvztv"
   >
     You can download "⁨Example Product⁩" by clicking
 on the 
@@ -135,17 +106,13 @@ the
     </a>
      to learn more.
   </div>
-  <!--&lt;Overlay&gt;-->
-  <!--&lt;Component&gt;-->
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
 exports[`Example overlay/static-text/App.svelte > should render 1`] = `
 <div>
   <div
-    class="s-inkqtEk9hetm"
+    class="svelte-1igvztv"
   >
     Read the 
     <a
@@ -156,20 +123,12 @@ exports[`Example overlay/static-text/App.svelte > should render 1`] = `
     </a>
      for more information.
   </div>
-  <!--&lt;Overlay&gt;-->
-  <!--&lt;Component&gt;-->
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
 exports[`Example provider/App.svelte > should render 1`] = `
 <div>
   Hello, world!
-  <!--&lt;Localized&gt;-->
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;Component&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
@@ -185,36 +144,24 @@ exports[`Example tutorial/attributes/App.svelte > should render 1`] = `
       type="email"
     />
   </label>
-  <!--&lt;Localized&gt;-->
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
 exports[`Example tutorial/first-steps/App.svelte > should render 1`] = `
 <div>
   Hello, world!
-  <!--&lt;Localized&gt;-->
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
 exports[`Example tutorial/interpolation/App.svelte > should render 1`] = `
 <div>
   Hello, ⁨everyone⁩!
-  <!--&lt;Localized&gt;-->
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
 exports[`Example tutorial/interpolation-custom-functions/App.svelte > should render 1`] = `
 <div>
   Weekday ⁨2⁩ is ⁨Tuesday⁩
-  <!--&lt;Localized&gt;-->
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
@@ -222,37 +169,26 @@ exports[`Example tutorial/interpolation-formatting/App.svelte > should render 1`
 <div>
   <div>
     Your DPI ratio is ⁨1.778⁩
-    <!--&lt;Localized&gt;-->
   </div>
    
   <div>
     Your account balance is ⁨$1,234.56⁩
-    <!--&lt;Localized&gt;-->
   </div>
    
   <div>
     Today is ⁨September 13, 2022⁩
-    <!--&lt;Localized&gt;-->
   </div>
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
 exports[`Example tutorial/multi-language/App.svelte > should render 1`] = `
 <div>
   Hello, world!
-  <!--&lt;Localized&gt;-->
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
 
 exports[`Example tutorial/translation-files/App.svelte > should render 1`] = `
 <div>
   Hello, world!
-  <!--&lt;Localized&gt;-->
-  <!--&lt;FluentProvider&gt;-->
-  <!--&lt;App&gt;-->
 </div>
 `;
