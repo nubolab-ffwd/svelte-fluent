@@ -9,14 +9,21 @@ import rehypeHeadings from './utils/rehype-headings.js';
 // escape curlies, backtick, \t, \r, \n to avoid breaking output of {@html `here`} in .svelte
 /**
  *
- * @param str string
- * @returns string
+ * @param {string} str
+ * @returns {string}
  */
-export const escape_svelty = (str) =>
-	str
+function escape_svelty(str) {
+	return str
 		.replace(/[{}`]/g, (c) => ({ '{': '&#123;', '}': '&#125;', '`': '&#96;' })[c])
 		.replace(/\\([trn])/g, '&#92;$1');
+}
 
+/**
+ *
+ * @param {string} code
+ * @param {string} lang
+ * @returns {Promise<string>}
+ */
 async function code_highlight(code, lang) {
 	const highlighted = await highlight(code, lang);
 	return `{@html \`${escape_svelty(highlighted)}\`}`;

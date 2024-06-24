@@ -1,20 +1,45 @@
 <script lang="ts">
-	export let menu: { text: string; href: string }[];
-	import { page } from '$app/stores';
+	import type { Item, TopLeveltem } from './SidebarMenu.svelte';
 
-	$: currentIdx = menu.findIndex((x) => $page.url.pathname.startsWith(x.href));
-	$: prev = currentIdx > 0 ? menu[currentIdx - 1] : null;
-	$: next = menu.length > currentIdx + 1 ? menu[currentIdx + 1] : null;
+	let {
+		menu,
+		activeMenuItem,
+		activeSubmenuItem
+	}: { menu: TopLeveltem[]; activeMenuItem?: TopLeveltem; activeSubmenuItem?: Item } = $props();
+
+	let currentMenu = $derived(activeSubmenuItem ? activeMenuItem?.submenu ?? [] : menu);
+	let parentMenu = $derived(activeSubmenuItem && menu);
+
+	let currentItem = $derived(activeSubmenuItem ?? activeMenuItem);
+	let parentItem = $derived(activeSubmenuItem && activeMenuItem);
+
+	let currentItemIdx = $derived(currentItem ? currentMenu.indexOf(currentItem) : 0);
+	let parentItemIdx = $derived(parentItem && parentMenu ? parentMenu.indexOf(parentItem) : 0);
+
+	let prev = $derived(
+		currentItemIdx > 0
+			? currentMenu[currentItemIdx - 1]
+			: parentMenu && parentItemIdx > 0
+				? parentMenu[parentItemIdx - 1]
+				: null
+	);
+	let next = $derived(
+		currentMenu.length > currentItemIdx + 1
+			? currentMenu[currentItemIdx + 1]
+			: parentMenu && parentMenu.length > parentItemIdx + 1
+				? parentMenu[parentItemIdx + 1]
+				: null
+	);
 </script>
 
 <div class="prev-next">
 	{#if prev}
 		<a class="prev" href={prev?.href}>
-			<span class="desc"><strong>Previous page</strong></span>
+			<span class="desc">Previous page</span>
 			<span class="text">{prev?.text}</span>
 		</a>
 	{:else}
-		<div />
+		<div></div>
 	{/if}
 	{#if next}
 		<a class="next" href={next?.href}>
@@ -22,7 +47,7 @@
 			<span class="text">{next?.text}</span>
 		</a>
 	{:else}
-		<div />
+		<div></div>
 	{/if}
 </div>
 

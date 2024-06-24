@@ -1,6 +1,6 @@
 <script>
 	import { Overlay } from '@nubolab-ffwd/svelte-fluent';
-	export let productName = 'Example Product';
+	let { productName = 'Example Product' } = $props();
 </script>
 
 <Overlay id="info" args={{ productName }}>

@@ -1,13 +1,12 @@
 <script>
-	import { FluentBundle, FluentResource } from '@fluent/bundle';
-	import { FluentProvider, Localized } from '@nubolab-ffwd/svelte-fluent';
-	import translationsEn from './en.ftl?raw';
+	import { FluentBundle } from '@fluent/bundle';
+	import { createSvelteFluent, initFluentContext, Localized } from '@nubolab-ffwd/svelte-fluent';
+	import resourceEn from './en.ftl';
 
-	const resource = new FluentResource(translationsEn);
 	const bundle = new FluentBundle('en');
-	bundle.addResource(resource);
+	bundle.addResource(resourceEn);
+
+	initFluentContext(() => createSvelteFluent([bundle]));
 </script>
 
-<FluentProvider bundles={[bundle]}>
-	<Localized id="hello" />
-</FluentProvider>
+<Localized id="hello" />

@@ -7,8 +7,22 @@ import { defineConfig } from 'vite';
 import ssrResolvePlugin from './src/site/plugin';
 import highlightPlugin from './utils/highlight-plugin';
 import semver from 'semver';
+import { svelteTesting } from '@testing-library/svelte/vite';
 
 const svelteMajor = semver.major(sveltePackage.version);
+const isSsrTest = process.env.TEST_SSR === '1';
+
+/** @type {Partial<import('vite').UserConfig['test']>} */
+const testConfigDom = {
+	environment: 'jsdom',
+	include: ['src/tests/dom/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}']
+};
+
+/** @type {Partial<import('vite').UserConfig['test']>} */
+const testConfigSsr = {
+	environment: 'node',
+	include: ['src/tests/ssr/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}']
+};
 
 export default defineConfig({
 	plugins: [
@@ -18,20 +32,17 @@ export default defineConfig({
 		Icons({
 			compiler: 'svelte',
 			autoInstall: true
-		})
-	],
+		}),
+		isSsrTest ? undefined : svelteTesting()
+	].filter(Boolean),
 	test: {
-		environmentMatchGlobs: [
-			['src/tests/dom/**', 'jsdom'],
-			['src/tests/ssr/**', 'node']
-		],
-		include: ['src/tests/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
 		setupFiles: 'src/tests/setup.js',
 		resolveSnapshotPath: (testPath, snapExtension) => {
 			return join(
 				join(dirname(testPath), '__snapshots__', `svelte@${svelteMajor}`),
 				`${basename(testPath)}${snapExtension}`
 			);
-		}
+		},
+		...(isSsrTest ? testConfigSsr : testConfigDom)
 	}
 });

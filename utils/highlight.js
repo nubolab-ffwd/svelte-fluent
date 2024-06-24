@@ -4,11 +4,18 @@ import { createHighlighter } from 'shiki';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const fluentGrammar = JSON.parse(readFileSync(resolve(__dirname, './fluent.tmLanguage.json')));
+const fluentGrammar = JSON.parse(
+	readFileSync(resolve(__dirname, './fluent.tmLanguage.json')).toString()
+);
 
 const theme = 'dark-plus';
 const themes = [theme];
-const langs = ['shellscript', 'svelte', { name: 'ftl', scopeName: 'source.ftl', ...fluentGrammar }];
+const langs = [
+	'diff',
+	'shellscript',
+	'svelte',
+	{ name: 'ftl', scopeName: 'source.ftl', ...fluentGrammar }
+];
 
 const defaultHighlighter = createHighlighter({ themes, langs });
 
@@ -16,9 +23,9 @@ const defaultHighlighter = createHighlighter({ themes, langs });
  *
  * @param {string} code
  * @param {string} lang
- * @returns {string}
+ * @returns {Promise<string>}
  */
 export async function highlight(code, lang) {
 	const hl = await defaultHighlighter;
-	return hl.codeToHtml(code, { lang, theme, langs });
+	return hl.codeToHtml(code, { lang, theme });
 }

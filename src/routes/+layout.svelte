@@ -9,11 +9,14 @@
 	import '../app.postcss';
 	import Header from './Header.svelte';
 	import { page } from '$app/stores';
+	import type { Snippet } from 'svelte';
 
-	$: seo = {
+	let { children }: { children: Snippet } = $props();
+
+	let seo = $derived({
 		...$page.data.seo,
 		title: [$page.data.seo?.title, 'svelte-fluent'].filter(Boolean).join(' | ')
-	};
+	});
 </script>
 
 <svelte:head>
@@ -26,7 +29,7 @@
 <Header />
 
 <div class="content">
-	<slot />
+	{@render children()}
 </div>
 
 <style lang="postcss">

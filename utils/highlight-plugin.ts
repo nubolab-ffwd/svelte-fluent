@@ -27,6 +27,8 @@ function detectLanguage(name: string): string {
 		return 'svelte';
 	} else if (name.endsWith('.ftl')) {
 		return 'ftl';
+	} else if (name.endsWith('.patch')) {
+		return 'diff';
 	}
 	throw new Error(`Unsupported language for ${name}`);
 }

@@ -1,0 +1,6 @@
+ <script lang="ts">
+        import { Localized } from '@nubolab-ffwd/svelte-fluent';
++       import type { ActionData } from './$types';
++
++       let { form }: { form: ActionData } = $props();
+ </script>

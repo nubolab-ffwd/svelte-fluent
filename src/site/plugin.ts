@@ -1,24 +1,18 @@
-import type { ResolvedId } from 'rollup';
+import svelteFluentPlugin from '../lib/vite';
 import type { Plugin as VitePlugin } from 'vite';
 
-// this basically does the same as $lib/rollup-plugin.js but with different paths
+// this basically does the same as $lib/vite.ts but with different paths
 const ssrResolvePlugin: () => VitePlugin = () => {
-	let resolveResult: Promise<ResolvedId | null>;
+	const plugin = svelteFluentPlugin();
 
 	return {
-		name: 'ssr-resolve',
-		enforce: 'pre',
-
-		async resolveId(source, _, opts) {
-			if (!opts.ssr) {
-				return;
-			}
+		...plugin,
+		resolveId(source, ...args) {
+			// override source from local dev server
 			if (source === '/src/lib/index.ts') {
-				if (!resolveResult) {
-					resolveResult = this.resolve('/src/lib/ssr.ts');
-				}
-				return await resolveResult;
+				source = '@nubolab-ffwd/svelte-fluent';
 			}
+			return plugin.resolveId.call(this, source, ...args);
 		}
 	};
 };

@@ -1,7 +1,8 @@
 <script>
-	import { localize } from '@nubolab-ffwd/svelte-fluent';
+	import { getFluentContext } from '@nubolab-ffwd/svelte-fluent';
+	const { localize } = getFluentContext();
 </script>
 
-<button on:click={() => window.prompt($localize('prompt'), $localize('prompt.default'))}>
+<button onclick={() => window.prompt(localize('prompt'), localize('prompt.default'))}>
 	Show prompt
 </button>

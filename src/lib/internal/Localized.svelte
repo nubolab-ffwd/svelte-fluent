@@ -1,13 +1,24 @@
 <script lang="ts">
 	import type { FluentVariable } from '@fluent/bundle';
-	import { getTranslation } from './stores';
+	import { getInternalFluentContext } from './context.svelte';
+	import type { Snippet } from 'svelte';
 
-	export let id: string;
-	export let args: Record<string, FluentVariable> | undefined = undefined;
+	const { getTranslation } = getInternalFluentContext();
 
-	$: translation = $getTranslation(id, args);
+	let {
+		id,
+		args,
+		children
+	}: {
+		id: string;
+		args?: Record<string, FluentVariable> | undefined;
+		children?: Snippet<[{ text: string; attrs: Record<string, string> }]>;
+	} = $props();
+	let translation = $derived(getTranslation(id, args, true));
 </script>
 
-<slot text={translation.value} attrs={translation.attributes}>
+{#if children}
+	{@render children({ text: translation.value, attrs: translation.attributes })}
+{:else}
 	{translation.value}
-</slot>
+{/if}

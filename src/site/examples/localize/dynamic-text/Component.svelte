@@ -1,6 +1,7 @@
 <script>
-	import { localize } from '@nubolab-ffwd/svelte-fluent';
+	import { getFluentContext } from '@nubolab-ffwd/svelte-fluent';
+	const { localize } = getFluentContext();
 	const name = 'World';
 </script>
 
-<button on:click={() => window.alert($localize('hello', { name }))}>Say hello</button>
+<button onclick={() => window.alert(localize('hello', { name }))}>Say hello</button>

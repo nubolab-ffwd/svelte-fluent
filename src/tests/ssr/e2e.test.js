@@ -1,4 +1,5 @@
 import { describe, it, expect, vi } from 'vitest';
+import { render } from 'svelte/server';
 
 vi.stubGlobal('navigator', { languages: [] });
 
@@ -13,7 +14,7 @@ for (const test of tests) {
 	describe(`E2E test ${test.name}`, () => {
 		it('should render', async () => {
 			const component = (await test.module()).default;
-			const res = component.render();
+			const res = render(component, { props: {}, context: new Map() });
 			expect(res).toMatchSnapshot();
 		});
 	});

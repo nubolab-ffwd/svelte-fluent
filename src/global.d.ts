@@ -1,3 +1,5 @@
+import { ImageMetadata } from 'imagetools-core';
+
 declare module '*.svelte.md' {
 	const component: SvelteComponentTyped;
 	export const metadata: unknown;
@@ -9,4 +11,14 @@ declare module '*.svelte.md' {
 declare module '*?raw&highlight' {
 	const src: string;
 	export default src;
+}
+
+declare module '*&as=metadata&imagetools' {
+	const outputs: ImageMetadata;
+	export default outputs;
+}
+
+declare module '*&imagetools' {
+	const outputs: string;
+	export default outputs;
 }

@@ -1,58 +1,68 @@
 <script lang="ts">
 	import type { FluentVariable } from '@fluent/bundle';
-	import { onMount } from 'svelte';
-	import { getTranslation, type Translation } from './stores';
+	import { type Snippet } from 'svelte';
+	import { getInternalFluentContext } from './context.svelte';
 	import { translateElement } from './utils';
+	import type { Action } from 'svelte/action';
+	import type { Translation } from './translation';
 
-	// props are also consumed in `../Overlay.js`. Changes made here need to be reflected there
-	export let id: string;
-	export let args: Record<string, FluentVariable> | undefined = undefined;
+	// props are also consumed in `../OverlaySSR.ts`. Changes made here need to be reflected there
+	let {
+		id,
+		args,
+		children
+	}: {
+		id: string;
+		args?: Record<string, FluentVariable> | undefined;
+		children?: Snippet;
+	} = $props();
 
-	let root: HTMLElement;
-	let translatedRoot: HTMLElement;
+	const { getTranslation } = getInternalFluentContext();
 
-	$: translation = $getTranslation(id, args);
-	$: update(translation);
+	const applyTranslation: Action<HTMLDivElement, Translation> = (
+		node,
+		translation: Translation
+	) => {
+		let translatedNode: typeof node = node;
 
-	function update(t: Translation) {
-		if (t && root) {
-			const newRoot = root.cloneNode(true) as typeof root;
-			translateElement(newRoot, t);
-			if (translatedRoot?.parentNode) {
-				translatedRoot.parentNode.replaceChild(newRoot, translatedRoot);
+		function update(translation: Translation) {
+			if (translation) {
+				const newNode = node.cloneNode(true) as typeof node;
+				translateElement(newNode, translation);
+				if (translatedNode?.parentNode) {
+					translatedNode.parentNode.replaceChild(newNode, translatedNode);
+				}
+				translatedNode = newNode;
 			}
-			translatedRoot = newRoot;
 		}
-	}
+		update(translation);
 
-	onMount(() => {
 		const observer = new MutationObserver(() => {
 			update(translation);
 		});
-		if (root && translation) {
-			translatedRoot = root.cloneNode(true) as typeof root;
-			translateElement(translatedRoot, translation);
-			if (root?.parentNode) {
-				root.parentNode.replaceChild(translatedRoot, root);
-			}
-			observer.observe(root, {
-				attributes: true,
-				characterData: true,
-				childList: true,
-				subtree: true
-			});
-		}
-		return () => {
-			observer.disconnect();
-			if (translatedRoot?.parentNode) {
-				translatedRoot.parentNode.replaceChild(root, translatedRoot);
+		observer.observe(node, {
+			attributes: true,
+			characterData: true,
+			childList: true,
+			subtree: true
+		});
+
+		return {
+			update,
+			destroy: () => {
+				observer.disconnect();
+				if (node && translatedNode?.parentNode) {
+					translatedNode.parentNode.replaceChild(node, translatedNode);
+				}
 			}
 		};
-	});
+	};
 </script>
 
-<div bind:this={root}>
-	<slot />
+<div use:applyTranslation={getTranslation(id, args, true)}>
+	{#if children}
+		{@render children()}
+	{/if}
 </div>
 
 <style>

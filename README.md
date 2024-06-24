@@ -20,7 +20,7 @@ Documentation can be found at https://nubolab-ffwd.github.io/svelte-fluent/
 ```svelte
 <script>
 	import { FluentBundle, FluentResource } from '@fluent/bundle';
-	import { FluentProvider, Localized } from '@nubolab-ffwd/svelte-fluent';
+	import { Localized, setLocalization } from '@nubolab-ffwd/svelte-fluent';
 
 	export let userName = 'Anna';
 	export let userGender = 'female';
@@ -43,12 +43,12 @@ shared-photos =
 `;
 	const bundle = new FluentBundle('en');
 	bundle.addResource(new FluentResource(translations));
+
+	initFluentContext(() => createSvelteFluent([bundle]));
 </script>
 
-<FluentProvider bundles={[bundle]}>
-	<strong><Localized id="hello-user" args={{ userName }} /></strong>
-	<p>
-		<Localized id="shared-photos" args={{ userName, userGender, photoCount }} />
-	</p>
-</FluentProvider>
+<strong><Localized id="hello-user" args={{ userName }} /></strong>
+<p>
+	<Localized id="shared-photos" args={{ userName, userGender, photoCount }} />
+</p>
 ```

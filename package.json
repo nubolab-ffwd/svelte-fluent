@@ -14,10 +14,11 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
+		"build:preview": "BUILD_PREVIEW=1 vite build",
 		"package": "run-s package:sync package:pkg package:rollup package:lint",
 		"package:sync": "svelte-kit sync",
 		"package:pkg": "svelte-package",
-		"package:rollup": "rollup --file dist/rollup-plugin.cjs --format cjs dist/rollup-plugin.js",
+		"package:rollup": "rollup --file dist/rollup.cjs --format cjs dist/rollup.js",
 		"package:lint": "publint",
 		"preview": "vite preview",
 		"prepare": "husky install && svelte-kit sync",
@@ -25,12 +26,15 @@
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"test": "vitest",
+		"test": "run-s test:*",
+		"test:dom": "vitest run",
+		"test:ssr": "TEST_SSR=1 vitest run",
 		"prepublishOnly": "npm run package"
 	},
 	"dependencies": {
 		"@fluent/dom": "^0.9.0",
 		"@fluent/sequence": "^0.8.0",
+		"@rollup/pluginutils": "^5.1.0",
 		"cached-iterable": "^0.3.0"
 	},
 	"devDependencies": {
@@ -40,6 +44,7 @@
 		"@fluent/langneg": "0.7.0",
 		"@fontsource-variable/manrope": "5.0.20",
 		"@iconify-json/mdi": "1.1.67",
+		"@sveltejs/adapter-auto": "3.2.1",
 		"@sveltejs/adapter-static": "3.0.2",
 		"@sveltejs/kit": "2.5.17",
 		"@sveltejs/package": "2.3.2",
@@ -78,7 +83,7 @@
 		"rehype-wrap-all": "1.1.0",
 		"semver": "7.6.2",
 		"shiki": "1.9.0",
-		"svelte": "4.2.18",
+		"svelte": "5.0.0-next.165",
 		"svelte-check": "3.8.2",
 		"svelte2tsx": "0.7.11",
 		"tslib": "2.6.3",
@@ -86,12 +91,14 @@
 		"typescript-eslint": "7.14.1",
 		"unist-util-visit": "5.0.0",
 		"unplugin-icons": "0.19.0",
+		"vite": "5.2.11",
 		"vitest": "1.6.0"
 	},
 	"peerDependencies": {
+		"@fluent/bundle": "^0.18.0",
 		"jsdom": "^20.0.0 || ^21.0.0 || ^22.0.0 || ^23.0.0 || ^24.0.0",
 		"rollup": "^4.0.0",
-		"svelte": "^3.55.0 || ^4.0.0",
+		"svelte": "^5.0.0",
 		"vite": "^5.0.12"
 	},
 	"lint-staged": {
@@ -108,14 +115,26 @@
 			"svelte": "./dist/index.js",
 			"default": "./dist/index.js"
 		},
-		"./rollup-plugin": {
-			"types": "./dist/rollup-plugin.d.ts",
-			"require": "./dist/rollup-plugin.cjs",
-			"default": "./dist/rollup-plugin.js"
+		"./legacy": {
+			"types": "./dist/legacy/index.d.ts",
+			"svelte": "./dist/legacy/index.js",
+			"default": "./dist/legacy/index.js"
+		},
+		"./rollup": {
+			"types": "./dist/rollup.d.ts",
+			"require": "./dist/rollup.cjs",
+			"default": "./dist/rollup.js"
 		},
 		"./ssr": {
 			"types": "./dist/ssr.d.ts",
 			"default": "./dist/ssr.js"
+		},
+		"./types": {
+			"types": "./dist/types/index.d.ts"
+		},
+		"./vite": {
+			"types": "./dist/vite.d.ts",
+			"default": "./dist/vite.js"
 		}
 	},
 	"files": [
@@ -126,11 +145,20 @@
 	"types": "./dist/index.d.ts",
 	"typesVersions": {
 		">4.0": {
-			"rollup-plugin": [
-				"./dist/rollup-plugin.d.ts"
+			"legacy": [
+				"./dist/legacy/index.d.ts"
+			],
+			"rollup": [
+				"./dist/rollup.d.ts"
 			],
 			"ssr": [
 				"./dist/ssr.d.ts"
+			],
+			"types": [
+				"./dist/types/index.d.ts"
+			],
+			"vite": [
+				"./dist/vite.d.ts"
 			]
 		}
 	},

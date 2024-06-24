@@ -1,30 +1,29 @@
 import type { FluentVariable } from '@fluent/bundle';
 import { JSDOM } from 'jsdom';
-import { get } from 'svelte/store';
 import Overlay from './Overlay.svelte';
-import { getTranslation } from './stores';
 import { translateElement } from './utils';
+import { getInternalFluentContext } from './context.svelte';
 
 type Props = {
 	id: string;
 	args?: Record<string, FluentVariable>;
 };
 
-const OverlaySSR = {
-	...Overlay,
-	$$render(result: unknown, props: Props, ...rest: unknown[]) {
-		// @ts-expect-error resolved type for Overlay misses $$render which is only present in SSR code generation
-		const html = Overlay.$$render.call(this, result, props, ...rest);
-		const { id, args } = props;
-		const $getLocalizedMessage = get(getTranslation);
-		const translation = $getLocalizedMessage(id, args);
-		const frag = JSDOM.fragment(html);
-		const rootNode = frag.firstElementChild;
-		if (rootNode) {
-			translateElement(rootNode, translation);
-		}
-		return rootNode?.outerHTML ?? '';
+function OverlaySSR($$payload: { out: string; [x: string]: unknown }, $$props: Props) {
+	const savedOut = $$payload.out;
+	$$payload.out = '';
+	// @ts-expect-error Overlay is resolved to the non-SSR type
+	const res = Overlay($$payload, $$props);
+	const { id, args } = $$props;
+	const { getTranslation } = getInternalFluentContext();
+	const translation = getTranslation(id, args, true);
+	const frag = JSDOM.fragment($$payload.out);
+	const rootNode = frag.firstElementChild;
+	if (rootNode) {
+		translateElement(rootNode, translation);
 	}
-};
+	$$payload.out = savedOut + (rootNode?.outerHTML ?? '');
+	return res;
+}
 
 export default OverlaySSR;

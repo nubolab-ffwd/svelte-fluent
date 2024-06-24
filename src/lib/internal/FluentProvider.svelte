@@ -1,9 +1,9 @@
 <script lang="ts">
 	import type { FluentBundle } from '@fluent/bundle';
 	import { CachedSyncIterable } from 'cached-iterable';
-	import { writable } from 'svelte/store';
 	import { createEventDispatcher, tick } from 'svelte';
-	import { initStores } from './stores';
+	import { initFluentContext } from './context.svelte';
+	import { createSvelteFluent } from './fluent';
 
 	// Wrapper class that prevents an exception in svelte-devtools
 	// It hides the CachedSyncIterable in a non-enumerable property
@@ -21,20 +21,23 @@
 		}
 	}
 
-	export let bundles: Iterable<FluentBundle> = [];
+	let { bundles }: { bundles: Iterable<FluentBundle> } = $props();
 
 	const initialTick = tick();
 	const dispatch = createEventDispatcher<{ error: string }>();
 
-	$: cachedBundles = new CachedSyncIterableWrapper(CachedSyncIterable.from(bundles));
+	let cachedBundles = $derived(new CachedSyncIterableWrapper(CachedSyncIterable.from(bundles)));
+	let fluent = $derived(
+		createSvelteFluent([...cachedBundles], {
+			async onError(msg) {
+				await initialTick;
+				dispatch('error', msg);
+			}
+		})
+	);
 
-	const bundlesStore = writable(cachedBundles);
-	$: $bundlesStore = cachedBundles;
-
-	initStores(bundlesStore, async (msg) => {
-		await initialTick;
-		dispatch('error', msg);
-	});
+	initFluentContext(() => fluent);
 </script>
 
+<!-- svelte-ignore slot_element_deprecated -->
 <slot />

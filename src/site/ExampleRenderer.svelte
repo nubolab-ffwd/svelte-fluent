@@ -1,17 +1,25 @@
 <script lang="ts">
-	import type { SvelteComponent } from 'svelte';
+	import type { Snippet } from 'svelte';
 
 	type SourceEntry = { code: string; html: boolean };
 
-	export let sources: Record<string, string | SourceEntry>;
-	export let component: typeof SvelteComponent;
-	export let componentArgs: Record<string, unknown> = {};
+	let {
+		sources,
+		children,
+		controls
+	}: {
+		sources: Record<string, string | SourceEntry>;
+		children: Snippet;
+		controls?: Snippet;
+	} = $props();
 
-	$: normalizedSources = Object.fromEntries(
-		Object.entries(sources).map(([name, entry]) => [
-			name,
-			typeof entry === 'string' ? { code: entry, html: false } : entry
-		]) ?? []
+	let normalizedSources = $derived(
+		Object.fromEntries(
+			Object.entries(sources).map(([name, entry]) => [
+				name,
+				typeof entry === 'string' ? { code: entry, html: false } : entry
+			]) ?? []
+		)
 	);
 </script>
 
@@ -31,14 +39,14 @@
 	{/each}
 
 	<div>Result:</div>
-	<div class="stack" class:box={$$slots.controls}>
+	<div class="stack" class:box={!!controls}>
 		<div class="box rendered">
-			<svelte:component this={component} {...componentArgs} />
+			{@render children()}
 		</div>
 
-		{#if $$slots.controls}
+		{#if controls}
 			<div class="controls">
-				<slot name="controls" />
+				{@render controls()}
 			</div>
 		{/if}
 	</div>

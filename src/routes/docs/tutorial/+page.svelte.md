@@ -1,4 +1,6 @@
 <script>
+	import {base} from '$app/paths'
+	import ReferenceLink from '$site/ReferenceLink.svelte'
 	import ExampleFirstSteps from '$site/examples/tutorial/first-steps/Example.svelte'
 	import ExampleTranslationFiles from '$site/examples/tutorial/translation-files/Example.svelte'
 	import ExampleMultiLanguage from '$site/examples/tutorial/multi-language/Example.svelte'
@@ -11,7 +13,8 @@
 
 ## First steps
 
-You need to provide your translations to `svelte-fluent` by adding the `FluentProvider` component in your component hierarchy.
+You need to provide your translations to `svelte-fluent` by creating a <ReferenceLink name="SvelteFluent" /> object
+and initializing the <ReferenceLink name="FluentContext" />.
 
 In the most basic setup those translations can be defined directly in the code like this:
 
@@ -22,19 +25,12 @@ In the most basic setup those translations can be defined directly in the code l
 Managing translations directly in the code can get messy.
 A better way is to load translations from `.ftl` files.
 
-> The bundler must support importing `.ftl` files as strings:
->
-> - For [Vite](https://vitejs.dev/) you can add `?raw` to your import like in the example below.
-> - For [Rollup](https://rollupjs.org/) you can add [rollup-plugin-string](https://www.npmjs.com/package/rollup-plugin-string)
->   to your configuration.
-
 <ExampleTranslationFiles />
 
 ## Multiple languages
 
-With the basics in place we can now extend this to multiple languages.
-This example shows selection of the desired language and provides a fallback to
-the auto-detected language from the browser.
+We can now extend this to multiple languages. Let's add a selection for the
+desired language and fallback to the auto-detected language of the browser.
 
 > This example will fail when used with server-side rendering (SSR) because during
 > SSR the component cannot use browser-only globals like `navigator.languages`.
@@ -42,6 +38,8 @@ the auto-detected language from the browser.
 > As an alternative that works in SSR you can parse the
 > [HTTP Accept-Language header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language)
 > and replace `navigator.languages` with the resulting list of locale identifiers.
+>
+> Check out the [SvelteKit integration guide]({base}/docs/integration#sveltekit) for an example how to do this.
 
 <ExampleMultiLanguage />
 
@@ -49,7 +47,7 @@ the auto-detected language from the browser.
 
 You can insert variables into your translated text by using
 [Fluent Placeables](https://projectfluent.org/fluent/guide/placeables.html).
-Values for those variables are provided via the `args` prop of the `Localized` and `Overlay` components.
+Values for those variables are provided via the `args` prop of the <ReferenceLink name="Localized" /> and <ReferenceLink name="Overlay" /> components.
 
 <ExampleInterpolation />
 

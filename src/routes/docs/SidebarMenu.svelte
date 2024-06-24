@@ -2,19 +2,19 @@
 	export type Item = {
 		text: string;
 		href?: string;
-		submenu?: Item[];
 	};
+	export type TopLeveltem = Item & { submenu?: Item[] };
 </script>
 
 <script lang="ts">
-	export let items: Item[];
+	export let items: TopLeveltem[];
 </script>
 
 <ul>
 	{#each items as { text, href, submenu }}
 		<li>
 			<span class="item">
-				{#if href && !submenu}<a {href}>{text}</a>{:else}{text}{/if}
+				{#if href}<a {href}>{text}</a>{:else}{text}{/if}
 			</span>
 			{#if submenu}
 				<svelte:self items={submenu} />
@@ -33,12 +33,16 @@
 		justify-content: flex-start;
 		& > li:has(ul) {
 			& + li {
-				margin-block-start: var(--s2, 1rem);
+				margin-block-start: var(--s1);
 			}
 			& > .item {
 				text-transform: uppercase;
 				font-variation-settings: 'wght' 570;
 				letter-spacing: 0.1em;
+				& a {
+					all: inherit;
+					cursor: pointer;
+				}
 			}
 		}
 		& .item {

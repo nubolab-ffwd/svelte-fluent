@@ -152,7 +152,7 @@ table {
 	inline-size: 100%;
 	border-collapse: collapse;
 	& td,
-	th {
+	& th {
 		border-width: var(--border-thin);
 		border-style: solid;
 		padding: var(--s-1);
@@ -160,10 +160,14 @@ table {
 	}
 	& th {
 		font-variation-settings: 'wght' 570;
-	}
-	& th,
-	code {
 		white-space: nowrap;
+	}
+	& pre {
+		padding: 0;
+	}
+	& pre,
+	& code {
+		white-space: pre;
 	}
 }
 

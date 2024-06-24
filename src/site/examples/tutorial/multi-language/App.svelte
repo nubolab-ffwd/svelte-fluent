@@ -1,23 +1,24 @@
 <script>
-	import { FluentBundle, FluentResource } from '@fluent/bundle';
-	import { FluentProvider, Localized } from '@nubolab-ffwd/svelte-fluent';
+	import { FluentBundle } from '@fluent/bundle';
+	import { createSvelteFluent, initFluentContext, Localized } from '@nubolab-ffwd/svelte-fluent';
 	import { negotiateLanguages } from '@fluent/langneg';
-	import translationsEn from './en.ftl?raw';
-	import translationsDe from './de.ftl?raw';
-	import translationsFr from './fr.ftl?raw';
+	import resourceEn from './en.ftl';
+	import resourceDe from './de.ftl';
+	import resourceFr from './fr.ftl';
 
 	// this could be stored in a user profile or browser localStorage
-	export let selectedLocale = '';
+	let { selectedLocale = '' } = $props();
 
 	const defaultLocale = 'en';
 	const resources = {
-		en: new FluentResource(translationsEn),
-		fr: new FluentResource(translationsFr),
-		de: new FluentResource(translationsDe)
+		en: resourceEn,
+		fr: resourceFr,
+		de: resourceDe
 	};
 	const supportedLocales = Object.keys(resources);
 
-	function generateBundles(userLocales) {
+	const bundles = $derived.by(() => {
+		const userLocales = selectedLocale ? [selectedLocale] : navigator.languages;
 		// Choose locales that are best for the user.
 		const selectedLocales = negotiateLanguages(userLocales, supportedLocales, {
 			defaultLocale,
@@ -29,9 +30,8 @@
 			bundle.addResource(resources[locale]);
 			return bundle;
 		});
-	}
+	});
+	initFluentContext(() => createSvelteFluent(bundles));
 </script>
 
-<FluentProvider bundles={generateBundles(selectedLocale ? [selectedLocale] : navigator.languages)}>
-	<Localized id="hello" />
-</FluentProvider>
+<Localized id="hello" />

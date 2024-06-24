@@ -1,12 +1,13 @@
 <script lang="ts">
 	import ExampleRenderer from '$site/ExampleRenderer.svelte';
-	import appComponent from './App.svelte';
-	import componentSource from './Component.svelte?raw&highlight';
+	import App from './App.svelte';
+	import appSource from './App.svelte?raw&highlight';
 </script>
 
 <ExampleRenderer
 	sources={{
-		'Component.svelte': { code: componentSource, html: true }
+		'App.svelte': { code: appSource, html: true }
 	}}
-	component={appComponent}
-/>
+>
+	<App />
+</ExampleRenderer>

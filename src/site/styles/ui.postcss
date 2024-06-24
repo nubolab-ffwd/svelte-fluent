@@ -30,9 +30,11 @@
 }
 
 .center {
+	--max: var(--measure);
+
 	box-sizing: content-box;
 	margin-inline: auto;
-	max-inline-size: var(--measure);
+	max-inline-size: var(--max);
 
 	&.text {
 		text-align: center;
