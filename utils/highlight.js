@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 import { dirname, resolve } from 'path';
-import { getHighlighter } from 'shiki';
+import { createHighlighter } from 'shiki';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -10,7 +10,7 @@ const theme = 'dark-plus';
 const themes = [theme];
 const langs = ['shellscript', 'svelte', { name: 'ftl', scopeName: 'source.ftl', ...fluentGrammar }];
 
-const defaultHighlighter = getHighlighter({ themes, langs });
+const defaultHighlighter = createHighlighter({ themes, langs });
 
 /**
  *
