@@ -7,7 +7,7 @@ that enables you to integrate translations using Mozilla's natural-sounding Flue
 ## Installation
 
 ```
-npm install --save-dev @nubolab-ffwd/svelte-fluent
+npm install --save-dev @nubolab-ffwd/svelte-fluent@next
 npm install --save jsdom
 ```
 

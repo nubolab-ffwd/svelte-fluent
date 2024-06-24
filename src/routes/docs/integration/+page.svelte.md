@@ -39,7 +39,7 @@ npm install
 Now install `svelte-fluent`:
 
 ```sh
-npm install --save-dev @nubolab-ffwd/svelte-fluent
+npm install --save-dev @nubolab-ffwd/svelte-fluent@next
 npm install --save jsdom
 ```
 
