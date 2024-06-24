@@ -94,7 +94,7 @@ importers:
         specifier: 10.4.2
         version: 10.4.2
       globals:
-        specifier: ^15.3.0
+        specifier: 15.3.0
         version: 15.3.0
       hast-util-heading-rank:
         specifier: 3.0.0
@@ -175,7 +175,7 @@ importers:
         specifier: 5.4.5
         version: 5.4.5
       typescript-eslint:
-        specifier: ^7.10.0
+        specifier: 7.10.0
         version: 7.10.0(eslint@9.5.0)(typescript@5.4.5)
       unist-util-visit:
         specifier: 5.0.0
