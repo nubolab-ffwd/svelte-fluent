@@ -105,11 +105,11 @@ exports[`Example localized/static-text/App.svelte > should render 1`] = `
 exports[`Example overlay/dynamic-text/App.svelte > should render 1`] = `
 {
   "css": {
-    "code": "div.s-inkqtEk9hetm{display:contents}.s-inkqtEk9hetm{}",
+    "code": "div.svelte-1igvztv{display:contents}",
     "map": null,
   },
   "head": "",
-  "html": "<div class="s-inkqtEk9hetm">You can download "⁨Example Product⁩" by clicking
+  "html": "<div class="svelte-1igvztv">You can download "⁨Example Product⁩" by clicking
 on the <strong>Download</strong> button or read
 the <a data-l10n-name="release-notes" href="https://example.com/" target="_blank" rel="noreferrer">release notes</a> to learn more.</div>",
 }
@@ -118,11 +118,11 @@ the <a data-l10n-name="release-notes" href="https://example.com/" target="_blank
 exports[`Example overlay/static-text/App.svelte > should render 1`] = `
 {
   "css": {
-    "code": "div.s-inkqtEk9hetm{display:contents}.s-inkqtEk9hetm{}",
+    "code": "div.svelte-1igvztv{display:contents}",
     "map": null,
   },
   "head": "",
-  "html": "<div class="s-inkqtEk9hetm">Read the <a data-l10n-name="link" href="https://example.com/">documentation</a> for more information.</div>",
+  "html": "<div class="svelte-1igvztv">Read the <a data-l10n-name="link" href="https://example.com/">documentation</a> for more information.</div>",
 }
 `;
 
