@@ -15,6 +15,7 @@ jobs:
           token: ${{ secrets.RELEASE_PLEASE_GITHUB_TOKEN }}
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
+          target-branch: ${{ github.ref_name }}
       # The logic below handles the npm publication:
       - uses: actions/checkout@v4.1.7
         # these if statements ensure that a publication only occurs when
