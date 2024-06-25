@@ -1,5 +1,9 @@
 # Svelte Fluent [![Documentation](https://img.shields.io/badge/-Documentation-blue)](https://svelte-fluent-svelte-5-preview.netlify.app/) [![npm (scoped)](https://img.shields.io/npm/v/@nubolab-ffwd/svelte-fluent)](https://www.npmjs.com/package/@nubolab-ffwd/svelte-fluent) ![Tests](https://github.com/nubolab-ffwd/svelte-fluent/workflows/Tests/badge.svg) [![svelte-v3](https://img.shields.io/badge/svelte-v3-blueviolet.svg)](https://svelte.dev)
 
+> [!IMPORTANT]
+> This branch contains a **preview version** of `svelte-fluent` with support for svelte 5.
+> If you're looking for the stable version, switch to the `main` branch.
+
 `svelte-fluent` is a powerful localization library for
 [Svelte](https://svelte.dev/) and [SvelteKit](https://kit.svelte.dev/)
 that enables you to integrate translations using Mozilla's natural-sounding Fluent syntax easily.
