@@ -32,7 +32,8 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       - run: pnpm install --frozen-lockfile --strict-peer-dependencies
         if: ${{ steps.release.outputs.release_created }}
-      - run: pnpm publish --no-git-checks
+      - run: pnpm publish --no-git-checks --tag $NPM_TAG
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TAG: ${{ github.ref == 'refs/heads/main' && 'latest' || 'next' }}
         if: ${{ steps.release.outputs.release_created }}
