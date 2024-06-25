@@ -23,14 +23,14 @@ Documentation can be found at https://svelte-fluent-svelte-5-preview.netlify.app
 
 ```svelte
 <script>
-	import { FluentBundle, FluentResource } from '@fluent/bundle';
-	import { Localized, setLocalization } from '@nubolab-ffwd/svelte-fluent';
+  import { FluentBundle, FluentResource } from '@fluent/bundle';
+  import { Localized, initFluentContext, createSvelteFluent } from '@nubolab-ffwd/svelte-fluent';
 
-	export let userName = 'Anna';
-	export let userGender = 'female';
-	export let photoCount = 3;
+  export let userName = 'Anna';
+  export let userGender = 'female';
+  export let photoCount = 3;
 
-	const translations = `
+  const translations = `
 # Simple things are simple.
 hello-user = Hello, {$userName}!
 
@@ -45,14 +45,14 @@ shared-photos =
        *[other] their stream
     }.
 `;
-	const bundle = new FluentBundle('en');
-	bundle.addResource(new FluentResource(translations));
+  const bundle = new FluentBundle('en');
+  bundle.addResource(new FluentResource(translations));
 
-	initFluentContext(() => createSvelteFluent([bundle]));
+  initFluentContext(() => createSvelteFluent([bundle]));
 </script>
 
 <strong><Localized id="hello-user" args={{ userName }} /></strong>
 <p>
-	<Localized id="shared-photos" args={{ userName, userGender, photoCount }} />
+  <Localized id="shared-photos" args={{ userName, userGender, photoCount }} />
 </p>
 ```
