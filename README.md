@@ -1,4 +1,4 @@
-# Svelte Fluent [![Documentation](https://img.shields.io/badge/-Documentation-blue)](https://svelte-fluent-svelte-5-preview.netlify.app/) [![npm (scoped)](https://img.shields.io/npm/v/@nubolab-ffwd/svelte-fluent)](https://www.npmjs.com/package/@nubolab-ffwd/svelte-fluent) ![Tests](https://github.com/nubolab-ffwd/svelte-fluent/workflows/Tests/badge.svg) [![svelte-v3](https://img.shields.io/badge/svelte-v3-blueviolet.svg)](https://svelte.dev)
+# Svelte Fluent [![Documentation](https://img.shields.io/badge/-Documentation-blue)](https://svelte-fluent-svelte-5-preview.netlify.app/) [![svelte-fluent on npm](https://img.shields.io/npm/v/@nubolab-ffwd/svelte-fluent)](https://www.npmjs.com/package/@nubolab-ffwd/svelte-fluent) ![Tests](https://github.com/nubolab-ffwd/svelte-fluent/workflows/Tests/badge.svg) [![Svelte v5](https://img.shields.io/badge/svelte-v5-blueviolet?logo=svelte)](https://svelte.dev)
 
 > [!IMPORTANT]
 > This branch contains a **preview version** of `svelte-fluent` with support for svelte 5.
@@ -23,14 +23,14 @@ Documentation can be found at https://svelte-fluent-svelte-5-preview.netlify.app
 
 ```svelte
 <script>
-  import { FluentBundle, FluentResource } from '@fluent/bundle';
-  import { Localized, initFluentContext, createSvelteFluent } from '@nubolab-ffwd/svelte-fluent';
+	import { FluentBundle, FluentResource } from '@fluent/bundle';
+	import { Localized, initFluentContext, createSvelteFluent } from '@nubolab-ffwd/svelte-fluent';
 
-  export let userName = 'Anna';
-  export let userGender = 'female';
-  export let photoCount = 3;
+	export let userName = 'Anna';
+	export let userGender = 'female';
+	export let photoCount = 3;
 
-  const translations = `
+	const translations = `
 # Simple things are simple.
 hello-user = Hello, {$userName}!
 
@@ -45,14 +45,14 @@ shared-photos =
        *[other] their stream
     }.
 `;
-  const bundle = new FluentBundle('en');
-  bundle.addResource(new FluentResource(translations));
+	const bundle = new FluentBundle('en');
+	bundle.addResource(new FluentResource(translations));
 
-  initFluentContext(() => createSvelteFluent([bundle]));
+	initFluentContext(() => createSvelteFluent([bundle]));
 </script>
 
 <strong><Localized id="hello-user" args={{ userName }} /></strong>
 <p>
-  <Localized id="shared-photos" args={{ userName, userGender, photoCount }} />
+	<Localized id="shared-photos" args={{ userName, userGender, photoCount }} />
 </p>
 ```
