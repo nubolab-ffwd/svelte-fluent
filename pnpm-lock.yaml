@@ -94,8 +94,8 @@ importers:
         specifier: 10.4.2
         version: 10.4.2
       globals:
-        specifier: 15.6.0
-        version: 15.6.0
+        specifier: 15.9.0
+        version: 15.9.0
       hast-util-heading-rank:
         specifier: 3.0.0
         version: 3.0.0
@@ -1746,8 +1746,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@15.6.0:
-    resolution: {integrity: sha512-UzcJi88Hw//CurUIRa9Jxb0vgOCcuD/MNjwmXp633cyaRKkCWACkoqHCtfZv43b1kqXGg/fpOa8bwgacCeXsVg==}
+  globals@15.9.0:
+    resolution: {integrity: sha512-SmSKyLLKFbSr6rptvP8izbyxJL4ILwqO9Jg23UA0sDlGlu58V59D1//I3vlc0KJphVdUR7vMjHIplYnzBxorQA==}
     engines: {node: '>=18'}
 
   globalyzer@0.1.0:
@@ -4987,7 +4987,7 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@15.6.0: {}
+  globals@15.9.0: {}
 
   globalyzer@0.1.0: {}
 
