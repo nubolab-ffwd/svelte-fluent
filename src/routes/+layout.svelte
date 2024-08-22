@@ -1,4 +1,4 @@
-<script lang="ts" context="module">
+<script lang="ts" module>
 	// navigator.languages is used in some examples, needs to be "polyfilled" for SSR
 	if (!('navigator' in globalThis)) {
 		globalThis['navigator'] = { languages: [] } as unknown as Navigator;
