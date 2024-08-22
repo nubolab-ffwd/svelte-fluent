@@ -62,7 +62,7 @@
 		"husky": "9.0.11",
 		"lint-staged": "15.2.7",
 		"mdsvex": "0.11.2",
-		"npm-run-all2": "6.2.0",
+		"npm-run-all2": "6.2.2",
 		"pathe": "1.1.2",
 		"postcss": "8.4.41",
 		"postcss-load-config": "6.0.1",
