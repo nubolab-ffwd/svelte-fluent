@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths'
 	import Example from '$site/examples/frontpage/Example.svelte';
+	import ReferenceLink from '$site/ReferenceLink.svelte'
 </script>
 
 # Getting started
@@ -25,10 +26,17 @@ npm install --save-dev @nubolab-ffwd/svelte-fluent@next
 npm install --save jsdom
 ```
 
+| Note: the `jsdom` dependency is for the server-side rendering of the <ReferenceLink name="Overlay" /> component. It will not increase your frontend bundle size.
+
 ## Configure bundler
 
 You need to add the `svelte-fluent` plugin to your bundler configuration for all features to work.
 Currently vite and rollup are supported.
+
+The plugin serves 2 functions:
+
+- It provides SSR support for the Overlay component.
+- It allows you to import `.ftl` files via `import resources from 'path/to/messages.ftl'`, directly providing you a `FluentResource` instance instead of having to constructing your own from a string imported via Vite's `?raw` syntax.
 
 ### SvelteKit
 
