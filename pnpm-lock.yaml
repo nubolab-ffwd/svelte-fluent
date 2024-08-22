@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@fluent/dom':
-        specifier: ^0.9.0
-        version: 0.9.0
+        specifier: ^0.10.0
+        version: 0.10.0
       '@fluent/sequence':
         specifier: ^0.8.0
         version: 0.8.0(@fluent/bundle@0.18.0)
@@ -693,9 +693,9 @@ packages:
     resolution: {integrity: sha512-8Wfwu9q8F9g2FNnv82g6Ch/E1AW1wwljsUOolH5NEtdJdv0sZTuWvfCM7c3teB9dzNaJA8rn4khpidpozHWYEA==}
     engines: {node: '>=14.0.0', npm: '>=7.0.0'}
 
-  '@fluent/dom@0.9.0':
-    resolution: {integrity: sha512-KElkUkHhFuliHeQaL4bDMin3MEJlXm3Mgh1lDE5JdmdO+5VW1bFZGjxpFS1qNzz8XZtsa71lL5zDPVg5vOgYtQ==}
-    engines: {node: '>=14.0.0', npm: '>=7.0.0'}
+  '@fluent/dom@0.10.0':
+    resolution: {integrity: sha512-31a+GJRg6Xhpw9IQ8yNiHhegd10g1DvC30TMSO52bFpjJVJqfQHTuLKFSORNR5xI1oyP4RU4lGLho9+HaC/pVQ==}
+    engines: {node: '>=18.0.0', npm: '>=7.0.0'}
 
   '@fluent/langneg@0.7.0':
     resolution: {integrity: sha512-StAM0vgsD1QK+nFikaKs9Rxe3JGNipiXrpmemNGwM4gWERBXPe9gjzsBoKjgBgq1Vyiy+xy/C652QIWY+MPyYw==}
@@ -3853,7 +3853,7 @@ snapshots:
 
   '@fluent/bundle@0.18.0': {}
 
-  '@fluent/dom@0.9.0':
+  '@fluent/dom@0.10.0':
     dependencies:
       cached-iterable: 0.3.0
 
