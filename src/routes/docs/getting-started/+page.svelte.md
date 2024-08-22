@@ -34,8 +34,8 @@ Currently vite and rollup are supported.
 
 The plugin serves 2 functions:
 
-* It provides SSR support for the Overlay component.
-* It allows you to import `.ftl` files via `import resources from 'path/to/messages.ftl'`, directly providing you a `FluentResource` instance instead of having to constructing your own from a string imported via Vite's `?raw` syntax.
+- It provides SSR support for the Overlay component.
+- It allows you to import `.ftl` files via `import resources from 'path/to/messages.ftl'`, directly providing you a `FluentResource` instance instead of having to constructing your own from a string imported via Vite's `?raw` syntax.
 
 ### SvelteKit
 
