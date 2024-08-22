@@ -42,7 +42,7 @@
 		"@iconify-json/mdi": "1.1.68",
 		"@sveltejs/adapter-static": "3.0.2",
 		"@sveltejs/kit": "2.5.24",
-		"@sveltejs/package": "2.3.2",
+		"@sveltejs/package": "2.3.4",
 		"@sveltejs/vite-plugin-svelte": "3.1.1",
 		"@testing-library/svelte": "5.1.0",
 		"@types/hast": "3.0.4",
