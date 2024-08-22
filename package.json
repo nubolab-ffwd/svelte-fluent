@@ -59,7 +59,7 @@
 		"globals": "15.9.0",
 		"hast-util-heading-rank": "3.0.0",
 		"hast-util-to-string": "3.0.0",
-		"husky": "9.0.11",
+		"husky": "9.1.5",
 		"lint-staged": "15.2.9",
 		"mdsvex": "0.11.2",
 		"npm-run-all2": "6.2.2",
