@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths'
 	import Example from '$site/examples/frontpage/Example.svelte';
+	import ReferenceLink from '$site/ReferenceLink.svelte'
 </script>
 
 # Getting started
@@ -25,7 +26,7 @@ npm install --save-dev @nubolab-ffwd/svelte-fluent@next
 npm install --save jsdom
 ```
 
-| Note: the `jsdom` dependency is for the server-side rendering of the [Overlay](/docs/reference/Overlay/) component. It will not increase your frontend bundle size.
+| Note: the `jsdom` dependency is for the server-side rendering of the <ReferenceLink name="Overlay" /> component. It will not increase your frontend bundle size.
 
 ## Configure bundler
 
