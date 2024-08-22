@@ -2,28 +2,28 @@
 
 exports[`E2E test localize-store/Test.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[--><div id="plain">Test
+  "body": "<!--[--><div id="plain">Test
 	Attribute</div> <div id="with-vars">Test ⁨with variables⁩
-	Attribute ⁨with variables⁩</div><!--]--><!--]-->",
+	Attribute ⁨with variables⁩</div><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[--><div id="plain">Test
+  "html": "<!--[--><div id="plain">Test
 	Attribute</div> <div id="with-vars">Test ⁨with variables⁩
-	Attribute ⁨with variables⁩</div><!--]--><!--]-->",
+	Attribute ⁨with variables⁩</div><!--]-->",
 }
 `;
 
 exports[`E2E test readme-example/Test.svelte > should render 1`] = `
 {
-  "body": "<!--[--><strong><!--[--><!--[-->Hello, ⁨Anna⁩!<!--]!--><!--]--></strong> <p><!--[--><!--[-->⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.<!--]!--><!--]--></p><!--]-->",
+  "body": "<!--[--><strong><!--[!-->Hello, ⁨Anna⁩!<!--]--><!----></strong> <p><!--[!-->⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.<!--]--><!----></p><!--]-->",
   "head": "",
-  "html": "<!--[--><strong><!--[--><!--[-->Hello, ⁨Anna⁩!<!--]!--><!--]--></strong> <p><!--[--><!--[-->⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.<!--]!--><!--]--></p><!--]-->",
+  "html": "<!--[--><strong><!--[!-->Hello, ⁨Anna⁩!<!--]--><!----></strong> <p><!--[!-->⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.<!--]--><!----></p><!--]-->",
 }
 `;
 
 exports[`E2E test regression-tests/empty-pattern-with-attributes/Test.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[--><!--[--><!--[-->Some text<!--]--><!--]--><!--]--><!--]-->",
+  "body": "<!--[--><!--[--><!---->Some text<!----><!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[--><!--[--><!--[-->Some text<!--]--><!--]--><!--]--><!--]-->",
+  "html": "<!--[--><!--[--><!---->Some text<!----><!--]--><!--]-->",
 }
 `;

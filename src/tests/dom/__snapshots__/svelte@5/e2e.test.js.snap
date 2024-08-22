@@ -16,19 +16,20 @@ exports[`E2E test localize-store/Test.svelte > should render 1`] = `
 	Attribute ⁨with variables⁩
   </div>
   
-  
 </div>
 `;
 
 exports[`E2E test readme-example/Test.svelte > should render 1`] = `
 <div>
   <strong>
+    <!---->
     Hello, ⁨Anna⁩!
     
     <!---->
   </strong>
    
   <p>
+    <!---->
     ⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.
     
     <!---->
@@ -39,8 +40,9 @@ exports[`E2E test readme-example/Test.svelte > should render 1`] = `
 
 exports[`E2E test regression-tests/empty-pattern-with-attributes/Test.svelte > should render 1`] = `
 <div>
+  <!---->
+  <!---->
   Some text
-  
   
   
   

@@ -3,12 +3,14 @@
 exports[`Example frontpage/App.svelte > should render 1`] = `
 <div>
   <strong>
+    <!---->
     Hello, ⁨Anna⁩!
     
     <!---->
   </strong>
    
   <p>
+    <!---->
     ⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.
     
     <!---->
@@ -23,7 +25,6 @@ exports[`Example localize/attributes/App.svelte > should render 1`] = `
     Show prompt
   </button>
   
-  
 </div>
 `;
 
@@ -32,7 +33,6 @@ exports[`Example localize/dynamic-text/App.svelte > should render 1`] = `
   <button>
     Say hello
   </button>
-  
   
 </div>
 `;
@@ -43,12 +43,13 @@ exports[`Example localize/static-text/App.svelte > should render 1`] = `
     Say hello
   </button>
   
-  
 </div>
 `;
 
 exports[`Example localized/attributes/App.svelte > should render 1`] = `
 <div>
+  <!---->
+  <!---->
   <div>
     Please confirm the action.
   </div>
@@ -65,13 +66,13 @@ exports[`Example localized/attributes/App.svelte > should render 1`] = `
   
   
   
-  
-  
 </div>
 `;
 
 exports[`Example localized/attributes-with-variables/App.svelte > should render 1`] = `
 <div>
+  <!---->
+  <!---->
   <div>
     Please confirm the action for ⁨20⁩ items.
   </div>
@@ -88,16 +89,13 @@ exports[`Example localized/attributes-with-variables/App.svelte > should render 
   
   
   
-  
-  
 </div>
 `;
 
 exports[`Example localized/dynamic-text/App.svelte > should render 1`] = `
 <div>
+  <!---->
   You have ⁨10⁩ unread emails.
-  
-  
   
   
 </div>
@@ -105,9 +103,8 @@ exports[`Example localized/dynamic-text/App.svelte > should render 1`] = `
 
 exports[`Example localized/static-text/App.svelte > should render 1`] = `
 <div>
+  <!---->
   Hello, world!
-  
-  
   
   
 </div>
@@ -115,6 +112,9 @@ exports[`Example localized/static-text/App.svelte > should render 1`] = `
 
 exports[`Example localized-legacy/attributes/App.svelte > should render 1`] = `
 <div>
+  <!---->
+  <!---->
+  <!---->
   <div>
     Please confirm the action.
   </div>
@@ -128,9 +128,6 @@ exports[`Example localized-legacy/attributes/App.svelte > should render 1`] = `
       Cancel
     </button>
   </div>
-  
-  
-  
   
   
   
@@ -161,8 +158,6 @@ the
      to learn more.
   </div>
   
-  
-  
 </div>
 `;
 
@@ -181,16 +176,14 @@ exports[`Example overlay/static-text/App.svelte > should render 1`] = `
      for more information.
   </div>
   
-  
-  
 </div>
 `;
 
 exports[`Example provider/App.svelte > should render 1`] = `
 <div>
+  <!---->
+  <!---->
   Hello, world!
-  
-  
   
   
   
@@ -199,6 +192,8 @@ exports[`Example provider/App.svelte > should render 1`] = `
 
 exports[`Example tutorial/attributes/App.svelte > should render 1`] = `
 <div>
+  <!---->
+  <!---->
   <label>
     Login 
     <input
@@ -211,14 +206,13 @@ exports[`Example tutorial/attributes/App.svelte > should render 1`] = `
   
   
   
-  
 </div>
 `;
 
 exports[`Example tutorial/first-steps/App.svelte > should render 1`] = `
 <div>
+  <!---->
   Hello, world!
-  
   
   
 </div>
@@ -226,8 +220,8 @@ exports[`Example tutorial/first-steps/App.svelte > should render 1`] = `
 
 exports[`Example tutorial/interpolation/App.svelte > should render 1`] = `
 <div>
+  <!---->
   Hello, ⁨everyone⁩!
-  
   
   
 </div>
@@ -236,12 +230,14 @@ exports[`Example tutorial/interpolation/App.svelte > should render 1`] = `
 exports[`Example tutorial/interpolation-custom-functions/App.svelte > should render 1`] = `
 <div>
   <div>
+    <!---->
     Weekday ⁨2⁩ is ⁨Tuesday⁩
     
     <!---->
   </div>
    
   <div>
+    <!---->
     Weekday of ⁨2/6/2024⁩ is ⁨Tuesday⁩
     
     <!---->
@@ -253,18 +249,21 @@ exports[`Example tutorial/interpolation-custom-functions/App.svelte > should ren
 exports[`Example tutorial/interpolation-formatting/App.svelte > should render 1`] = `
 <div>
   <div>
+    <!---->
     Your DPI ratio is ⁨1.778⁩
     
     <!---->
   </div>
    
   <div>
+    <!---->
     Your account balance is ⁨$1,234.56⁩
     
     <!---->
   </div>
    
   <div>
+    <!---->
     Today is ⁨September 13, 2022⁩
     
     <!---->
@@ -275,8 +274,8 @@ exports[`Example tutorial/interpolation-formatting/App.svelte > should render 1`
 
 exports[`Example tutorial/multi-language/App.svelte > should render 1`] = `
 <div>
+  <!---->
   Hello, world!
-  
   
   
 </div>
@@ -284,8 +283,8 @@ exports[`Example tutorial/multi-language/App.svelte > should render 1`] = `
 
 exports[`Example tutorial/translation-files/App.svelte > should render 1`] = `
 <div>
+  <!---->
   Hello, world!
-  
   
   
 </div>
