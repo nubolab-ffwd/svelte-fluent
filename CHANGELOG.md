@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.8.1](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v0.8.0...svelte-fluent-v0.8.1) (2024-08-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @fluent/dom to ^0.10.0 ([34e5126](https://github.com/nubolab-ffwd/svelte-fluent/commit/34e5126e90ea9f955f225037a377862b8a6f51d2))
+
 ## [0.8.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v0.7.0...svelte-fluent-v0.8.0) (2024-02-23)
 
 
