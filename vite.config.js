@@ -1,15 +1,22 @@
 /// <reference types="vitest" />
 import { sveltekit } from '@sveltejs/kit/vite';
 import { basename, dirname, join } from 'pathe';
-import sveltePackage from 'svelte/package.json' assert { type: 'json' };
 import Icons from 'unplugin-icons/vite';
 import { defineConfig } from 'vite';
 import ssrResolvePlugin from './src/site/plugin';
 import highlightPlugin from './utils/highlight-plugin';
 import semver from 'semver';
 import { svelteTesting } from '@testing-library/svelte/vite';
+import { createRequire } from 'node:module';
+import * as fs from 'node:fs';
 
-const svelteMajor = semver.major(sveltePackage.version);
+function getSvelteMajor() {
+	const require = createRequire(import.meta.url);
+	const sveltePackage = JSON.parse(fs.readFileSync(require.resolve('svelte/package.json')));
+	return semver.major(sveltePackage.version);
+}
+
+const svelteMajor = getSvelteMajor();
 const isSsrTest = process.env.TEST_SSR === '1';
 
 /** @type {Partial<import('vite').UserConfig['test']>} */
