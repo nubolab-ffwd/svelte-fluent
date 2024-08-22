@@ -45,9 +45,6 @@ importers:
       '@iconify-json/mdi':
         specifier: 1.1.68
         version: 1.1.68
-      '@sveltejs/adapter-auto':
-        specifier: 3.2.1
-        version: 3.2.1(@sveltejs/kit@2.5.24(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.165)(vite@5.2.11(@types/node@20.5.1)))(svelte@5.0.0-next.165)(vite@5.2.11(@types/node@20.5.1)))
       '@sveltejs/adapter-static':
         specifier: 3.0.4
         version: 3.0.4(@sveltejs/kit@2.5.24(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.165)(vite@5.2.11(@types/node@20.5.1)))(svelte@5.0.0-next.165)(vite@5.2.11(@types/node@20.5.1)))
@@ -925,11 +922,6 @@ packages:
 
   '@shikijs/core@1.14.1':
     resolution: {integrity: sha512-KyHIIpKNaT20FtFPFjCQB5WVSTpLR/n+jQXhWHWVUMm9MaOaG9BGOG0MSyt7yA4+Lm+4c9rTc03tt3nYzeYSfw==}
-
-  '@sveltejs/adapter-auto@3.2.1':
-    resolution: {integrity: sha512-/3xx8ZFCD5UBc/7AbyXkFF3HNCzWAp2xncH8HA4doGjoGQEN7PmwiRx4Y9nOzi4mqDqYYUic0gaIAE2khWWU4Q==}
-    peerDependencies:
-      '@sveltejs/kit': ^2.0.0
 
   '@sveltejs/adapter-static@3.0.4':
     resolution: {integrity: sha512-Qm4GAHCnRXwfWG9/AtnQ7mqjyjTs7i0Opyb8H2KH9rMR7fLxqiPx/tXeoE6HHo66+72CjyOb4nFH3lrejY4vzA==}
@@ -3974,11 +3966,6 @@ snapshots:
   '@shikijs/core@1.14.1':
     dependencies:
       '@types/hast': 3.0.4
-
-  '@sveltejs/adapter-auto@3.2.1(@sveltejs/kit@2.5.24(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.165)(vite@5.2.11(@types/node@20.5.1)))(svelte@5.0.0-next.165)(vite@5.2.11(@types/node@20.5.1)))':
-    dependencies:
-      '@sveltejs/kit': 2.5.24(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.165)(vite@5.2.11(@types/node@20.5.1)))(svelte@5.0.0-next.165)(vite@5.2.11(@types/node@20.5.1))
-      import-meta-resolve: 4.1.0
 
   '@sveltejs/adapter-static@3.0.4(@sveltejs/kit@2.5.24(@sveltejs/vite-plugin-svelte@3.1.2(svelte@5.0.0-next.165)(vite@5.2.11(@types/node@20.5.1)))(svelte@5.0.0-next.165)(vite@5.2.11(@types/node@20.5.1)))':
     dependencies:
