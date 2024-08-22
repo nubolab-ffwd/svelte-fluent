@@ -4,6 +4,10 @@
 > This branch contains a **preview version** of `svelte-fluent` with support for svelte 5.
 > If you're looking for the stable version, switch to the `main` branch.
 
+| :zap: Svelte 5                                                                                                                                                                                                                         |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| A preview version of svelte-fluent 1.0.0 with svelte 5 support is available on the `next` branch. Check out the branch and the [preview documentation site](https://svelte-fluent-svelte-5-preview.netlify.app/) for more information. |
+
 `svelte-fluent` is a powerful localization library for
 [Svelte](https://svelte.dev/) and [SvelteKit](https://kit.svelte.dev/)
 that enables you to integrate translations using Mozilla's natural-sounding Fluent syntax easily.

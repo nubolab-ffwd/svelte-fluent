@@ -7,7 +7,7 @@
 		activeSubmenuItem
 	}: { menu: TopLeveltem[]; activeMenuItem?: TopLeveltem; activeSubmenuItem?: Item } = $props();
 
-	let currentMenu = $derived(activeSubmenuItem ? activeMenuItem?.submenu ?? [] : menu);
+	let currentMenu = $derived(activeSubmenuItem ? (activeMenuItem?.submenu ?? []) : menu);
 	let parentMenu = $derived(activeSubmenuItem && menu);
 
 	let currentItem = $derived(activeSubmenuItem ?? activeMenuItem);
