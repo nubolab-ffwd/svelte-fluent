@@ -82,8 +82,8 @@
 		"semver": "7.6.3",
 		"shiki": "1.14.1",
 		"svelte": "5.0.0-next.233",
-		"svelte-check": "3.8.5",
-		"svelte2tsx": "0.7.15",
+		"svelte-check": "3.8.6",
+		"svelte2tsx": "0.7.16",
 		"tslib": "2.6.3",
 		"typescript": "5.5.4",
 		"typescript-eslint": "8.2.0",
@@ -160,5 +160,5 @@
 			]
 		}
 	},
-	"packageManager": "pnpm@9.7.1"
+	"packageManager": "pnpm@9.8.0"
 }
