@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0-next.2](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v1.0.0-next.1...svelte-fluent-v1.0.0-next.2) (2024-08-23)
+
+
+### Features
+
+* add helpful error message if the bundler plugin detects that jsdom is missing in dependencies ([c0daaeb](https://github.com/nubolab-ffwd/svelte-fluent/commit/c0daaeb653296898d8927f3d147bb07f3fbe2179))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @fluent/dom to ^0.10.0 ([34e5126](https://github.com/nubolab-ffwd/svelte-fluent/commit/34e5126e90ea9f955f225037a377862b8a6f51d2))
+
+
+### Miscellaneous Chores
+
+* release as 1.0.0-next.2 ([f8310d5](https://github.com/nubolab-ffwd/svelte-fluent/commit/f8310d5174b61fe3773a69aa5828105c43a5aa34))
+
 ## [1.0.0-next.1](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v0.8.0...svelte-fluent-v1.0.0-next.1) (2024-06-25)
 
 
