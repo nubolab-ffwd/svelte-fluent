@@ -15,12 +15,6 @@ const defaultOptions = {
 	skipJsdomCheck: false
 } satisfies PluginOptions;
 
-function debug(...args: unknown[]) {
-	if (process.env.DEBUG) {
-		console.debug(...args);
-	}
-}
-
 export default (options: Partial<PluginOptions> = defaultOptions) => {
 	const opts = { ...defaultOptions, ...options };
 	let resolveResult: Promise<ResolvedId | null>;
@@ -54,12 +48,11 @@ export default (options: Partial<PluginOptions> = defaultOptions) => {
 				}
 				try {
 					const resolved = await resolveResult;
-					debug('resolved @nubolab-ffwd/svelte-fluent to @nubolab-ffwd/svelte-fluent/ssr');
+					this.debug('resolved @nubolab-ffwd/svelte-fluent to @nubolab-ffwd/svelte-fluent/ssr');
 					return resolved;
 				} catch (err) {
-					debug(
-						'failed to resolve @nubolab-ffwd/svelte-fluent to @nubolab-ffwd/svelte-fluent/ssr',
-						err
+					this.warn(
+						`failed to resolve @nubolab-ffwd/svelte-fluent to @nubolab-ffwd/svelte-fluent/ssr: ${err}`
 					);
 					return null; // returning null here leads to @nubolab-ffwd/svelte-fluent getting resolved regularly
 				}
