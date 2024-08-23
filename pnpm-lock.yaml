@@ -163,8 +163,8 @@ importers:
         specifier: 3.8.5
         version: 3.8.5(postcss-load-config@6.0.1(jiti@1.21.0)(postcss@8.4.41)(yaml@2.5.0))(postcss@8.4.41)(svelte@4.2.18)
       svelte2tsx:
-        specifier: 0.7.15
-        version: 0.7.15(svelte@4.2.18)(typescript@5.5.4)
+        specifier: 0.7.16
+        version: 0.7.16(svelte@4.2.18)(typescript@5.5.4)
       tslib:
         specifier: 2.6.3
         version: 2.6.3
@@ -2952,8 +2952,8 @@ packages:
       typescript:
         optional: true
 
-  svelte2tsx@0.7.15:
-    resolution: {integrity: sha512-91RbLJI448FR1UEZqXSS3ucVMERuWo8ACOhxfkBPK1CL2ocGMOC5bwc8tzFvb/Ji8NqZ7wmSGfvRebcUsiauKA==}
+  svelte2tsx@0.7.16:
+    resolution: {integrity: sha512-faI3t1N5I7RkrXGMLfUdfWg6DTPi8RisfES/00QzXh+faU2pQ3r/W2dUD0ENGh+qNzltIcjbfCW9PES9JkaSXg==}
     peerDependencies:
       svelte: ^3.55 || ^4.0.0-next.0 || ^4.0 || ^5.0.0-next.0
       typescript: ^4.9.4 || ^5.0.0
@@ -4009,7 +4009,7 @@ snapshots:
       sade: 1.8.1
       semver: 7.6.3
       svelte: 4.2.18
-      svelte2tsx: 0.7.15(svelte@4.2.18)(typescript@5.5.4)
+      svelte2tsx: 0.7.16(svelte@4.2.18)(typescript@5.5.4)
     transitivePeerDependencies:
       - typescript
 
@@ -6166,7 +6166,7 @@ snapshots:
       postcss-load-config: 6.0.1(jiti@1.21.0)(postcss@8.4.41)(yaml@2.5.0)
       typescript: 5.5.4
 
-  svelte2tsx@0.7.15(svelte@4.2.18)(typescript@5.5.4):
+  svelte2tsx@0.7.16(svelte@4.2.18)(typescript@5.5.4):
     dependencies:
       dedent-js: 1.0.1
       pascal-case: 3.1.2
