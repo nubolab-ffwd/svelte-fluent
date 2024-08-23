@@ -3,7 +3,7 @@ import type { Plugin as VitePlugin } from 'vite';
 
 // this basically does the same as $lib/vite.ts but with different paths
 const ssrResolvePlugin: () => VitePlugin = () => {
-	const plugin = svelteFluentPlugin();
+	const plugin = svelteFluentPlugin({ skipJsdomCheck: true });
 
 	return {
 		...plugin,

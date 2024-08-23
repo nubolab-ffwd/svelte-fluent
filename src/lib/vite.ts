@@ -1,15 +1,18 @@
 import { createFilter, type FilterPattern } from '@rollup/pluginutils';
 import type { ResolvedId } from 'rollup';
 import type { Plugin as VitePlugin } from 'vite';
+import { readFileSync } from 'node:fs';
 
 export type PluginOptions = {
 	include?: FilterPattern;
 	exclude?: FilterPattern;
 	resourceExtensions: string[];
+	skipJsdomCheck: boolean;
 };
 
 const defaultOptions = {
-	resourceExtensions: ['.ftl']
+	resourceExtensions: ['.ftl'],
+	skipJsdomCheck: false
 } satisfies PluginOptions;
 
 function debug(...args: unknown[]) {
@@ -18,14 +21,28 @@ function debug(...args: unknown[]) {
 	}
 }
 
-export default (options: PluginOptions = defaultOptions) => {
-	options = { ...defaultOptions, ...options };
+export default (options: Partial<PluginOptions> = defaultOptions) => {
+	const opts = { ...defaultOptions, ...options };
 	let resolveResult: Promise<ResolvedId | null>;
 	const filter = createFilter(options.include, options.exclude);
 
 	return {
 		name: 'svelte-fluent',
 		enforce: 'pre',
+
+		buildStart() {
+			if (opts.skipJsdomCheck) {
+				return;
+			}
+			const pkg = JSON.parse(readFileSync('package.json', 'utf8'));
+			const deps = pkg.dependencies ?? {};
+			if (!Object.prototype.hasOwnProperty.call(deps, 'jsdom')) {
+				this.error(
+					'The svelte-fluent plugin requires jsdom in your package.json dependencies. ' +
+						'Please add it with e.g. `npm install --save jsdom`.'
+				);
+			}
+		},
 
 		async resolveId(source, importer, opts) {
 			const ssr = opts?.ssr;
@@ -53,7 +70,7 @@ export default (options: PluginOptions = defaultOptions) => {
 			if (!filter(id)) {
 				return null;
 			}
-			if (!options.resourceExtensions.some((ext) => id.toLocaleLowerCase().endsWith(ext))) {
+			if (!opts.resourceExtensions.some((ext) => id.toLocaleLowerCase().endsWith(ext))) {
 				return null;
 			}
 			const code = [
