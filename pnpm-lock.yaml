@@ -166,8 +166,8 @@ importers:
         specifier: 0.7.16
         version: 0.7.16(svelte@4.2.19)(typescript@5.5.4)
       tslib:
-        specifier: 2.6.3
-        version: 2.6.3
+        specifier: 2.7.0
+        version: 2.7.0
       typescript:
         specifier: 5.5.4
         version: 5.5.4
@@ -2976,8 +2976,8 @@ packages:
     peerDependencies:
       typescript: '>=4.2.0'
 
-  tslib@2.6.3:
-    resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
+  tslib@2.7.0:
+    resolution: {integrity: sha512-gLXCKdN1/j47AiHiOkJN69hJmcbGTHI0ImLmbYLHykhgeN0jVGola9yVjFgzCUklsZQMW55o+dW7IXv3RCXDzA==}
 
   type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
@@ -5244,7 +5244,7 @@ snapshots:
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   lz-string@1.5.0: {}
 
@@ -5337,7 +5337,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   node-releases@2.0.18: {}
 
@@ -5459,7 +5459,7 @@ snapshots:
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.3
+      tslib: 2.7.0
 
   path-exists@4.0.0: {}
 
@@ -6149,7 +6149,7 @@ snapshots:
     dependencies:
       typescript: 5.5.4
 
-  tslib@2.6.3: {}
+  tslib@2.7.0: {}
 
   type-check@0.4.0:
     dependencies:
