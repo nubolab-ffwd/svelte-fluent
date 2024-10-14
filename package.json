@@ -81,7 +81,7 @@
 		"svelte-check": "4.0.5",
 		"svelte2tsx": "0.7.22",
 		"tslib": "2.7.0",
-		"typescript": "5.5.4",
+		"typescript": "5.6.3",
 		"typescript-eslint": "8.8.1",
 		"unist-util-visit": "5.0.0",
 		"unplugin-icons": "0.19.3",
