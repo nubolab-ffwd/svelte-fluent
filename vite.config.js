@@ -8,6 +8,7 @@ import highlightPlugin from './utils/highlight-plugin';
 import semver from 'semver';
 import { createRequire } from 'node:module';
 import * as fs from 'node:fs';
+import { svelteTesting } from '@testing-library/svelte/vite';
 
 function getSvelteMajor() {
 	const require = createRequire(import.meta.url);
@@ -25,7 +26,8 @@ export default defineConfig({
 		Icons({
 			compiler: 'svelte',
 			autoInstall: true
-		})
+		}),
+		svelteTesting()
 	],
 	test: {
 		environmentMatchGlobs: [
