@@ -18,7 +18,7 @@ importers:
         specifier: ^0.3.0
         version: 0.3.0
       jsdom:
-        specifier: ^20.0.0 || ^21.0.0 || ^22.0.0 || ^23.0.0 || ^24.0.0
+        specifier: ^20.0.0 || ^21.0.0 || ^22.0.0 || ^23.0.0 || ^24.0.0 || ^25.0.0
         version: 24.0.0
       rollup:
         specifier: ^4.0.0
@@ -1400,15 +1400,6 @@ packages:
   data-urls@5.0.0:
     resolution: {integrity: sha512-ZYP5VBHshaDAiVZxjbRVcFJpc+4xGgT0bK3vzy1HLN8jTO975HEbuYzZJcHoQEY5K1a0z8YayJkyVETa08eNTg==}
     engines: {node: '>=18'}
-
-  debug@4.3.4:
-    resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
-    engines: {node: '>=6.0'}
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
 
   debug@4.3.6:
     resolution: {integrity: sha512-O/09Bd4Z1fBrU4VzkhFqVgpPzaGbw6Sm9FEkBT1A/YBXQFGuuSxa1dN2nxgxS34JmKXqYx8CZAwEVoJFImUXIg==}
@@ -4453,10 +4444,6 @@ snapshots:
       whatwg-mimetype: 4.0.0
       whatwg-url: 14.0.0
 
-  debug@4.3.4:
-    dependencies:
-      ms: 2.1.2
-
   debug@4.3.6:
     dependencies:
       ms: 2.1.2
@@ -4929,14 +4916,14 @@ snapshots:
   http-proxy-agent@7.0.0:
     dependencies:
       agent-base: 7.1.0
-      debug: 4.3.4
+      debug: 4.3.6
     transitivePeerDependencies:
       - supports-color
 
   https-proxy-agent@7.0.2:
     dependencies:
       agent-base: 7.1.0
-      debug: 4.3.4
+      debug: 4.3.6
     transitivePeerDependencies:
       - supports-color
 
