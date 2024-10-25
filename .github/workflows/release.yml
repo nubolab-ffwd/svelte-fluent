@@ -17,14 +17,14 @@ jobs:
           manifest-file: .release-please-manifest.json
           target-branch: ${{ github.ref_name }}
       # The logic below handles the npm publication:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4.2.2
         # these if statements ensure that a publication only occurs when
         # a new release is created:
         if: ${{ steps.release.outputs.release_created }}
       # Setup .npmrc file to publish to npm
       - uses: pnpm/action-setup@v4.0.0
         if: ${{ steps.release.outputs.release_created }}
-      - uses: actions/setup-node@v4.0.3
+      - uses: actions/setup-node@v4.1.0
         with:
           node-version: 20.x
           cache: 'pnpm'

@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4.2.2
       - uses: pnpm/action-setup@v4.0.0
-      - uses: actions/setup-node@v4.0.3
+      - uses: actions/setup-node@v4.1.0
         with:
           node-version: 20.x
           cache: 'pnpm'
@@ -31,10 +31,10 @@ jobs:
         node-version: [18.x, 20.x, 22.x]
 
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4.2.2
       - uses: pnpm/action-setup@v4.0.0
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4.0.3
+        uses: actions/setup-node@v4.1.0
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
@@ -53,10 +53,12 @@ jobs:
           - jsdom@^21.0.0
           - jsdom@^22.0.0
           - jsdom@^23.0.0
+          - jsdom@^24.0.0
+          - jsdom@^25.0.0
     steps:
-      - uses: actions/checkout@v4.1.7
+      - uses: actions/checkout@v4.2.2
       - uses: pnpm/action-setup@v4.0.0
-      - uses: actions/setup-node@v4.0.3
+      - uses: actions/setup-node@v4.1.0
         with:
           node-version: 20.x
           cache: 'pnpm'
