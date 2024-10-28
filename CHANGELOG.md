@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v1.0.0-next.2...svelte-fluent-v1.0.0) (2024-10-28)
+
+
+### Miscellaneous Chores
+
+* release as 1.0.0 ([66036e3](https://github.com/nubolab-ffwd/svelte-fluent/commit/66036e3d41b0719c1a5359c85b2166385adb014c))
+
 ## [1.0.0-next.2](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v1.0.0-next.1...svelte-fluent-v1.0.0-next.2) (2024-08-23)
 
 
