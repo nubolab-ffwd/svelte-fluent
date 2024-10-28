@@ -3,10 +3,9 @@ import mdsvexConfig from './mdsvex.config.js';
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-const isPreview = process.env.BUILD_PREVIEW === '1';
 const isProdBuild = process.env.NODE_ENV === 'production';
 
-const base = isProdBuild && !isPreview ? '/svelte-fluent' : '';
+const base = isProdBuild ? '/svelte-fluent' : '';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

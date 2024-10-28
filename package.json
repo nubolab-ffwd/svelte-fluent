@@ -14,7 +14,6 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"build:preview": "BUILD_PREVIEW=1 vite build",
 		"package": "run-s package:sync package:pkg package:rollup package:lint",
 		"package:sync": "svelte-kit sync",
 		"package:pkg": "svelte-package",
