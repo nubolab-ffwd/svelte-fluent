@@ -1,4 +1,4 @@
-# Svelte Fluent [![Documentation](https://img.shields.io/badge/-Documentation-blue)](https://svelte-fluent-svelte-5-preview.netlify.app/) [![svelte-fluent on npm](https://img.shields.io/npm/v/@nubolab-ffwd/svelte-fluent)](https://www.npmjs.com/package/@nubolab-ffwd/svelte-fluent) ![Tests](https://github.com/nubolab-ffwd/svelte-fluent/workflows/Tests/badge.svg) [![Svelte v5](https://img.shields.io/badge/svelte-v5-blueviolet?logo=svelte)](https://svelte.dev)
+# Svelte Fluent [![Documentation](https://img.shields.io/badge/-Documentation-blue)](https://nubolab-ffwd.github.io/svelte-fluent/) [![svelte-fluent on npm](https://img.shields.io/npm/v/@nubolab-ffwd/svelte-fluent)](https://www.npmjs.com/package/@nubolab-ffwd/svelte-fluent) ![Tests](https://github.com/nubolab-ffwd/svelte-fluent/workflows/Tests/badge.svg) [![Svelte v5](https://img.shields.io/badge/svelte-v5-blueviolet?logo=svelte)](https://svelte.dev)
 
 `svelte-fluent` is a powerful localization library for
 [Svelte](https://svelte.dev/) and [SvelteKit](https://kit.svelte.dev/)
