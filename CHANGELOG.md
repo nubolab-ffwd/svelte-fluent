@@ -2,12 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-## [1.0.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v1.0.0-next.2...svelte-fluent-v1.0.0) (2024-10-28)
+## [1.0.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v0.8.1...svelte-fluent-v1.0.0) (2024-10-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* the `$localized` store was removed
+* the import path of the bundler plugin changed
+* svelte version 5 is now required
+
+### Features
+
+* add helpful error message if the bundler plugin detects that jsdom is missing in dependencies ([c0daaeb](https://github.com/nubolab-ffwd/svelte-fluent/commit/c0daaeb653296898d8927f3d147bb07f3fbe2179))
+* integrate `.ftl` loading into bundler plugin ([052f72a](https://github.com/nubolab-ffwd/svelte-fluent/commit/052f72ac020c40bce9146a64bf23a48d03569667))
+* server-side translation api ([052f72a](https://github.com/nubolab-ffwd/svelte-fluent/commit/052f72ac020c40bce9146a64bf23a48d03569667))
+* svelte 5 support ([052f72a](https://github.com/nubolab-ffwd/svelte-fluent/commit/052f72ac020c40bce9146a64bf23a48d03569667))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @fluent/dom to ^0.10.0 ([34e5126](https://github.com/nubolab-ffwd/svelte-fluent/commit/34e5126e90ea9f955f225037a377862b8a6f51d2))
 
 
 ### Miscellaneous Chores
 
 * release as 1.0.0 ([66036e3](https://github.com/nubolab-ffwd/svelte-fluent/commit/66036e3d41b0719c1a5359c85b2166385adb014c))
+
+
+### Code Refactoring
+
+* remove localized store ([052f72a](https://github.com/nubolab-ffwd/svelte-fluent/commit/052f72ac020c40bce9146a64bf23a48d03569667))
 
 ## [1.0.0-next.2](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v1.0.0-next.1...svelte-fluent-v1.0.0-next.2) (2024-08-23)
 
