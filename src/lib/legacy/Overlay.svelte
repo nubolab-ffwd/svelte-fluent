@@ -13,7 +13,6 @@
 
 <Overlay {id} {args}>
 	{#snippet children()}
-		<!-- svelte-ignore slot_element_deprecated -->
 		<slot />
 	{/snippet}
 </Overlay>

@@ -13,7 +13,6 @@
 
 <Localized {id} {args}>
 	{#snippet children({ text, attrs })}
-		<!-- svelte-ignore slot_element_deprecated -->
 		<slot {text} {attrs}>{text}</slot>
 	{/snippet}
 </Localized>
