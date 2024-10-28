@@ -22,7 +22,7 @@ the [Fluent](https://projectfluent.org/) localization system by Mozilla.
 Install `svelte-fluent` with your package manager of choice.
 
 ```
-npm install --save-dev @nubolab-ffwd/svelte-fluent@next
+npm install --save-dev @nubolab-ffwd/svelte-fluent
 npm install --save jsdom
 ```
 
