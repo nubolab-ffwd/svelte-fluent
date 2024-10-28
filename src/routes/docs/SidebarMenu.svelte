@@ -7,17 +7,18 @@
 </script>
 
 <script lang="ts">
-	export let items: TopLeveltem[];
+	import SidebarMenu from './SidebarMenu.svelte';
+	let { items }: { items: TopLeveltem[] } = $props();
 </script>
 
 <ul>
 	{#each items as { text, href, submenu }}
-		<li>
+		<li class:has-submenu={!!submenu}>
 			<span class="item">
 				{#if href}<a {href}>{text}</a>{:else}{text}{/if}
 			</span>
 			{#if submenu}
-				<svelte:self items={submenu} />
+				<SidebarMenu items={submenu} />
 			{/if}
 		</li>
 	{/each}
@@ -31,7 +32,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		& > li:has(ul) {
+		& > li.has-submenu {
 			& + li {
 				margin-block-start: var(--s1);
 			}
