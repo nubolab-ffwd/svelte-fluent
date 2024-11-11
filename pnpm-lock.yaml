@@ -178,8 +178,8 @@ importers:
         specifier: 5.0.0
         version: 5.0.0
       unplugin-icons:
-        specifier: 0.20.0
-        version: 0.20.0(svelte@5.1.9)
+        specifier: 0.20.1
+        version: 0.20.1(svelte@5.1.9)
       vite:
         specifier: 5.4.10
         version: 5.4.10(@types/node@22.5.0)
@@ -2918,8 +2918,8 @@ packages:
     resolution: {integrity: sha512-CJ1QgKmNg3CwvAv/kOFmtnEN05f0D/cn9QntgNOQlQF9dgvVTHj3t+8JPdjqawCHk7V/KA+fbUqzZ9XWhcqPUg==}
     engines: {node: '>= 4.0.0'}
 
-  unplugin-icons@0.20.0:
-    resolution: {integrity: sha512-817iCV6AMADLHHcs9R15XII5Jaz++thnaQRzXbd0IZDcxi43iekoKENpuxqZN3k3+aOqJfqxcZ6I8POJ35UCEA==}
+  unplugin-icons@0.20.1:
+    resolution: {integrity: sha512-0z5sYGx07Q69ZrJB4kjmx7a5LYLNSWwyq95Ox9OuSG2y/sbhJaHUapRPOJcKmKhOAyToDVRdy9P7gxJ05lYipw==}
     peerDependencies:
       '@svgr/core': '>=7.0.0'
       '@svgx/core': ^1.0.1
@@ -5945,7 +5945,7 @@ snapshots:
 
   universalify@0.2.0: {}
 
-  unplugin-icons@0.20.0(svelte@5.1.9):
+  unplugin-icons@0.20.1(svelte@5.1.9):
     dependencies:
       '@antfu/install-pkg': 0.4.1
       '@antfu/utils': 0.7.10
