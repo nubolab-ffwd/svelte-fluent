@@ -68,7 +68,7 @@
 		"pathe": "1.1.2",
 		"postcss": "8.4.48",
 		"postcss-load-config": "6.0.1",
-		"postcss-preset-env": "10.0.9",
+		"postcss-preset-env": "10.1.1",
 		"prettier": "3.3.3",
 		"prettier-plugin-svelte": "3.2.7",
 		"publint": "0.2.12",
