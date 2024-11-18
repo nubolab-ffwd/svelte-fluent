@@ -82,7 +82,7 @@
 		"shiki": "1.23.1",
 		"svelte": "5.1.13",
 		"svelte-check": "4.0.6",
-		"svelte2tsx": "0.7.23",
+		"svelte2tsx": "0.7.26",
 		"tslib": "2.8.1",
 		"typescript": "5.6.3",
 		"typescript-eslint": "8.13.0",
