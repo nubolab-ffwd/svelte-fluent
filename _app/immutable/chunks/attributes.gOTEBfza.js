@@ -1,0 +1,1 @@
+import{e as o}from"./escaping.CsChSfdw.js";const n={translate:new Map([[!0,"yes"],[!1,"no"]])};function f(s,t,r=!1){if(t==null||!t&&r||t===""&&s==="class")return"";const e=s in n&&n[s].get(t)||t,c=r?"":`="${o(e,!0)}"`;return` ${s}${c}`}export{f as a};
