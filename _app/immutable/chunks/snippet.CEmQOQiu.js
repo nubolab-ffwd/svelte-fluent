@@ -1,0 +1,1 @@
+import{q as o,E as f,u as i,v as p,h as c,w as h}from"./disclose-version.Glus66My.js";import{n as d}from"./equality.BKhFfLg7.js";function v(s,t,...e){var n=s,r=d,a;o(()=>{r!==(r=t())&&(a&&(p(a),a=null),a=i(()=>r(n,...e)))},f),c&&(n=h)}export{v as s};

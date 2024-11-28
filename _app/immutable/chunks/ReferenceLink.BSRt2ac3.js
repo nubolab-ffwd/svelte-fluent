@@ -1,0 +1,1 @@
+import{t as s,a as m,c as o,d as f,r as c}from"./disclose-version.Glus66My.js";import{s as i}from"./render.DkEkR4h5.js";import{s as n}from"./attributes.BtEooUSB.js";import{b as l}from"./paths.BGZctEfm.js";var p=o("<a> </a>");function x(t,a){var e=p(),r=f(e,!0);c(e),s(()=>{n(e,"href",l+"/docs/"+(a.legacy?"legacy":"reference")+"/"+a.name),i(r,a.name)}),m(t,e)}export{x as R};
