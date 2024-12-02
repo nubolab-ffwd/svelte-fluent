@@ -15,7 +15,7 @@ const defaultOptions = {
 	skipJsdomCheck: false
 } satisfies PluginOptions;
 
-export default (options: Partial<PluginOptions> = defaultOptions) => {
+export default (options: Partial<PluginOptions> = defaultOptions): VitePlugin => {
 	const opts = { ...defaultOptions, ...options };
 	let resolveResult: Promise<ResolvedId | null>;
 	const filter = createFilter(options.include, options.exclude);
@@ -76,5 +76,5 @@ export default (options: Partial<PluginOptions> = defaultOptions) => {
 				map: { mappings: '' }
 			};
 		}
-	} satisfies VitePlugin;
+	};
 };
