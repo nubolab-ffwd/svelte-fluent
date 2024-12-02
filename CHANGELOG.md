@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.1](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v1.0.0...svelte-fluent-v1.0.1) (2024-12-02)
+
+
+### Bug Fixes
+
+* prevent svelte hydration error when using Overlay and message contains markup ([795c66b](https://github.com/nubolab-ffwd/svelte-fluent/commit/795c66bf8367bbf677787165886e3de8254efb00))
+
 ## [1.0.0](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v0.8.1...svelte-fluent-v1.0.0) (2024-10-28)
 
 
