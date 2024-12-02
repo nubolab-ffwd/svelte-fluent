@@ -76,8 +76,8 @@ importers:
         specifier: 8.16.0
         version: 8.16.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)
       '@vitest/ui':
-        specifier: 2.1.7
-        version: 2.1.7(vitest@2.1.8)
+        specifier: 2.1.8
+        version: 2.1.8(vitest@2.1.8)
       autoprefixer:
         specifier: 10.4.20
         version: 10.4.20(postcss@8.4.49)
@@ -185,7 +185,7 @@ importers:
         version: 6.0.2(@types/node@22.5.0)(jiti@1.21.6)(yaml@2.5.0)
       vitest:
         specifier: 2.1.8
-        version: 2.1.8(@types/node@22.5.0)(@vitest/ui@2.1.7)(jsdom@24.1.1)
+        version: 2.1.8(@types/node@22.5.0)(@vitest/ui@2.1.8)(jsdom@24.1.1)
 
 packages:
 
@@ -1230,9 +1230,6 @@ packages:
       vite:
         optional: true
 
-  '@vitest/pretty-format@2.1.7':
-    resolution: {integrity: sha512-HoqRIyfQlXPrRDB43h0lC8eHPUDPwFweMaD6t+psOvwClCC+oZZim6wPMjuoMnRdiFxXqbybg/QbuewgTwK1vA==}
-
   '@vitest/pretty-format@2.1.8':
     resolution: {integrity: sha512-9HiSZ9zpqNLKlbIDRWOnAWqgcA7xu+8YxXSekhr0Ykab7PAYFkhkwoqVArPOtJhPmYeE2YHgKZlj3CP36z2AJQ==}
 
@@ -1245,13 +1242,10 @@ packages:
   '@vitest/spy@2.1.8':
     resolution: {integrity: sha512-5swjf2q95gXeYPevtW0BLk6H8+bPlMb4Vw/9Em4hFxDcaOxS+e0LOX4yqNxoHzMR2akEB2xfpnWUzkZokmgWDg==}
 
-  '@vitest/ui@2.1.7':
-    resolution: {integrity: sha512-0QUttW85GkdG9d11sEa3HHtNiKLYNMl9YXaho33W6lAy9Pu0n1U6BU09aZmxez/b6YzX9GXHF0MuhvMZl2tjdw==}
+  '@vitest/ui@2.1.8':
+    resolution: {integrity: sha512-5zPJ1fs0ixSVSs5+5V2XJjXLmNzjugHRyV11RqxYVR+oMcogZ9qTuSfKW+OcTV0JeFNznI83BNylzH6SSNJ1+w==}
     peerDependencies:
-      vitest: 2.1.7
-
-  '@vitest/utils@2.1.7':
-    resolution: {integrity: sha512-7gUdvIzCCuIrMZu0WHTvDJo8C1NsUtOqmwmcS3bRHUcfHemj29wmkzLVNuWQD7WHoBD/+I7WIgrnzt7kxR54ow==}
+      vitest: 2.1.8
 
   '@vitest/utils@2.1.8':
     resolution: {integrity: sha512-dwSoui6djdwbfFmIgbIjX2ZhIoG7Ex/+xpxyiEgIGzjliY8xGkcpITKTlp6B4MgtGkF2ilvm97cPM96XZaAgcA==}
@@ -4150,7 +4144,7 @@ snapshots:
       svelte: 5.4.0
     optionalDependencies:
       vite: 6.0.2(@types/node@22.5.0)(jiti@1.21.6)(yaml@2.5.0)
-      vitest: 2.1.8(@types/node@22.5.0)(@vitest/ui@2.1.7)(jsdom@24.1.1)
+      vitest: 2.1.8(@types/node@22.5.0)(@vitest/ui@2.1.8)(jsdom@24.1.1)
 
   '@types/aria-query@5.0.4': {}
 
@@ -4291,10 +4285,6 @@ snapshots:
     optionalDependencies:
       vite: 5.4.11(@types/node@22.5.0)
 
-  '@vitest/pretty-format@2.1.7':
-    dependencies:
-      tinyrainbow: 1.2.0
-
   '@vitest/pretty-format@2.1.8':
     dependencies:
       tinyrainbow: 1.2.0
@@ -4314,22 +4304,16 @@ snapshots:
     dependencies:
       tinyspy: 3.0.2
 
-  '@vitest/ui@2.1.7(vitest@2.1.8)':
+  '@vitest/ui@2.1.8(vitest@2.1.8)':
     dependencies:
-      '@vitest/utils': 2.1.7
+      '@vitest/utils': 2.1.8
       fflate: 0.8.2
       flatted: 3.3.1
       pathe: 1.1.2
       sirv: 3.0.0
       tinyglobby: 0.2.10
       tinyrainbow: 1.2.0
-      vitest: 2.1.8(@types/node@22.5.0)(@vitest/ui@2.1.7)(jsdom@24.1.1)
-
-  '@vitest/utils@2.1.7':
-    dependencies:
-      '@vitest/pretty-format': 2.1.7
-      loupe: 3.1.2
-      tinyrainbow: 1.2.0
+      vitest: 2.1.8(@types/node@22.5.0)(@vitest/ui@2.1.8)(jsdom@24.1.1)
 
   '@vitest/utils@2.1.8':
     dependencies:
@@ -6324,7 +6308,7 @@ snapshots:
     optionalDependencies:
       vite: 6.0.2(@types/node@22.5.0)(jiti@1.21.6)(yaml@2.5.0)
 
-  vitest@2.1.8(@types/node@22.5.0)(@vitest/ui@2.1.7)(jsdom@24.1.1):
+  vitest@2.1.8(@types/node@22.5.0)(@vitest/ui@2.1.8)(jsdom@24.1.1):
     dependencies:
       '@vitest/expect': 2.1.8
       '@vitest/mocker': 2.1.8(vite@5.4.11(@types/node@22.5.0))
@@ -6348,7 +6332,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.5.0
-      '@vitest/ui': 2.1.7(vitest@2.1.8)
+      '@vitest/ui': 2.1.8(vitest@2.1.8)
       jsdom: 24.1.1
     transitivePeerDependencies:
       - less
