@@ -5,7 +5,7 @@
 	"homepage": "https://github.com/nubolab-ffwd/svelte-fluent",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/nubolab-ffwd/svelte-fluent.git"
+		"url": "git+https://github.com/nubolab-ffwd/svelte-fluent.git"
 	},
 	"type": "module",
 	"publishConfig": {
