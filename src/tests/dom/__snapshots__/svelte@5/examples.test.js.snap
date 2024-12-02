@@ -138,7 +138,7 @@ exports[`Example localized-legacy/attributes/App.svelte > should render 1`] = `
 exports[`Example overlay/dynamic-text/App.svelte > should render 1`] = `
 <div>
   <div
-    class="svelte-1igvztv"
+    style="display: contents;"
   >
     You can download "⁨Example Product⁩" by clicking
 on the 
@@ -164,7 +164,7 @@ the
 exports[`Example overlay/static-text/App.svelte > should render 1`] = `
 <div>
   <div
-    class="svelte-1igvztv"
+    style="display: contents;"
   >
     Read the 
     <a

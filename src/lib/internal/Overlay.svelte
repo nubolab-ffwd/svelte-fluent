@@ -17,56 +17,62 @@
 		children?: Snippet;
 	} = $props();
 
+	let templateElem: HTMLTemplateElement | undefined = $state();
+
 	const { getTranslation } = getInternalFluentContext();
 
-	const applyTranslation: Action<HTMLDivElement, Translation> = (
-		node,
-		translation: Translation
-	) => {
-		let translatedNode: typeof node = node;
+	const applyTranslation: Action<
+		HTMLDivElement,
+		{ translation: Translation; templateNode?: HTMLTemplateElement }
+	> = (node, { translation, templateNode }) => {
+		const observer = new MutationObserver(() => updateContent(translation, templateNode));
+		let observedTemplateNode: HTMLTemplateElement | undefined;
 
-		function update(translation: Translation) {
-			if (translation) {
-				const newNode = node.cloneNode(true) as typeof node;
-				translateElement(newNode, translation);
-				if (translatedNode?.parentNode) {
-					translatedNode.parentNode.replaceChild(newNode, translatedNode);
-				}
-				translatedNode = newNode;
+		function updateObserver(templateNode?: HTMLTemplateElement) {
+			const changed = observedTemplateNode !== templateNode;
+			if (changed) {
+				observer.disconnect();
+			}
+			if (changed && templateNode) {
+				observer.observe(templateNode.content, {
+					attributes: true,
+					characterData: true,
+					childList: true,
+					subtree: true
+				});
+			}
+			observedTemplateNode = templateNode;
+		}
+
+		function updateContent(translation: Translation, templateNode?: HTMLTemplateElement) {
+			if (translation && templateNode) {
+				node.innerHTML = '';
+				node.appendChild(templateNode.content.cloneNode(true));
+				translateElement(node, translation);
 			}
 		}
-		update(translation);
 
-		const observer = new MutationObserver(() => {
-			update(translation);
-		});
-		observer.observe(node, {
-			attributes: true,
-			characterData: true,
-			childList: true,
-			subtree: true
-		});
+		function update(newParams: { translation: Translation; templateNode?: HTMLTemplateElement }) {
+			translation = newParams.translation;
+			templateNode = newParams.templateNode;
+			updateObserver(templateNode);
+			updateContent(translation, templateNode);
+		}
+
+		update({ translation, templateNode });
 
 		return {
 			update,
-			destroy: () => {
-				observer.disconnect();
-				if (node && translatedNode?.parentNode) {
-					translatedNode.parentNode.replaceChild(node, translatedNode);
-				}
-			}
+			destroy: () => observer.disconnect()
 		};
 	};
 </script>
 
-<div use:applyTranslation={getTranslation(id, args, true)}>
-	{#if children}
-		{@render children()}
-	{/if}
-</div>
+<svelte:head>
+	<template bind:this={templateElem}>{@render children?.()}</template>
+</svelte:head>
 
-<style>
-	div {
-		display: contents;
-	}
-</style>
+<div
+	style:display="contents"
+	use:applyTranslation={{ translation: getTranslation(id, args, true), templateNode: templateElem }}
+></div>
