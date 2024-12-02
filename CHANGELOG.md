@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.2](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v1.0.1...svelte-fluent-v1.0.2) (2024-12-02)
+
+
+### Bug Fixes
+
+* **package:** add return type to vite plugin to fix type generation ([c3c30c6](https://github.com/nubolab-ffwd/svelte-fluent/commit/c3c30c620ef129e745273db863b1c36c34cacb83))
+
 ## [1.0.1](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v1.0.0...svelte-fluent-v1.0.1) (2024-12-02)
 
 
