@@ -22,7 +22,7 @@
 	const { getTranslation } = getInternalFluentContext();
 
 	const applyTranslation: Action<
-		HTMLDivElement,
+		HTMLElement,
 		{ translation: Translation; templateNode?: HTMLTemplateElement }
 	> = (node, { translation, templateNode }) => {
 		const observer = new MutationObserver(() => updateContent(translation, templateNode));
@@ -72,7 +72,7 @@
 	<template bind:this={templateElem}>{@render children?.()}</template>
 </svelte:head>
 
-<div
+<svelte-fluent-overlay
 	style:display="contents"
 	use:applyTranslation={{ translation: getTranslation(id, args, true), templateNode: templateElem }}
-></div>
+></svelte-fluent-overlay>

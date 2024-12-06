@@ -137,7 +137,7 @@ exports[`Example localized-legacy/attributes/App.svelte > should render 1`] = `
 
 exports[`Example overlay/dynamic-text/App.svelte > should render 1`] = `
 <div>
-  <div
+  <svelte-fluent-overlay
     style="display: contents;"
   >
     You can download "⁨Example Product⁩" by clicking
@@ -156,14 +156,14 @@ the
       release notes
     </a>
      to learn more.
-  </div>
+  </svelte-fluent-overlay>
   
 </div>
 `;
 
 exports[`Example overlay/static-text/App.svelte > should render 1`] = `
 <div>
-  <div
+  <svelte-fluent-overlay
     style="display: contents;"
   >
     Read the 
@@ -174,7 +174,7 @@ exports[`Example overlay/static-text/App.svelte > should render 1`] = `
       documentation
     </a>
      for more information.
-  </div>
+  </svelte-fluent-overlay>
   
 </div>
 `;
