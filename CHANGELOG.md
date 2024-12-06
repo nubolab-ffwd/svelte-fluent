@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.3](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v1.0.2...svelte-fluent-v1.0.3) (2024-12-06)
+
+
+### Bug Fixes
+
+* prevent hydration error for overlays in elements not allowing `&lt;div&gt;` children ([06b7b57](https://github.com/nubolab-ffwd/svelte-fluent/commit/06b7b57761403db0c8b1b015104d6040b95426e6))
+
 ## [1.0.2](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v1.0.1...svelte-fluent-v1.0.2) (2024-12-02)
 
 
