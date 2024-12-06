@@ -31,7 +31,7 @@ function OverlaySSR($$payload: Payload, $$props: Props) {
 	const headFragment = JSDOM.fragment($$payload.head.out);
 	const bodyFragment = JSDOM.fragment($$payload.out);
 	const templateNode = headFragment.firstElementChild as HTMLTemplateElement | null;
-	const rootNode = bodyFragment.firstElementChild as HTMLDivElement | null;
+	const rootNode = bodyFragment.firstElementChild as HTMLElement | null;
 	if (templateNode && rootNode && translation) {
 		rootNode.innerHTML = '';
 		rootNode.appendChild(templateNode.content.cloneNode(true));
