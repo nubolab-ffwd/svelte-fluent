@@ -62,7 +62,7 @@
 		"hast-util-heading-rank": "3.0.0",
 		"hast-util-to-string": "3.0.1",
 		"husky": "9.1.7",
-		"lint-staged": "15.2.10",
+		"lint-staged": "15.4.3",
 		"mdsvex": "0.12.3",
 		"npm-run-all2": "7.0.2",
 		"pathe": "1.1.2",
