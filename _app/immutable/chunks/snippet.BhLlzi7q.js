@@ -1,1 +1,0 @@
-import{A as o,E as f,B as i,y as p,C as c,h,D as d}from"./runtime.CIss1fFT.js";function E(e,n,...t){var s=e,r=p,a;o(()=>{r!==(r=n())&&(a&&(c(a),a=null),a=i(()=>r(s,...t)))},f),h&&(s=d)}export{E as s};
