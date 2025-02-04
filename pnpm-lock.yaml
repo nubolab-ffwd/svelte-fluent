@@ -109,8 +109,8 @@ importers:
         specifier: 0.12.3
         version: 0.12.3(svelte@5.19.7)
       npm-run-all2:
-        specifier: 7.0.1
-        version: 7.0.1
+        specifier: 7.0.2
+        version: 7.0.2
       pathe:
         specifier: 1.1.2
         version: 1.1.2
@@ -2325,8 +2325,8 @@ packages:
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
     hasBin: true
 
-  npm-run-all2@7.0.1:
-    resolution: {integrity: sha512-Adbv+bJQ8UTAM03rRODqrO5cx0YU5KCG2CvHtSURiadvdTjjgGJXdbc1oQ9CXBh9dnGfHSoSB1Web/0Dzp6kOQ==}
+  npm-run-all2@7.0.2:
+    resolution: {integrity: sha512-7tXR+r9hzRNOPNTvXegM+QzCuMjzUIIq66VDunL6j60O4RrExx32XUhlrS7UK4VcdGw5/Wxzb3kfNcFix9JKDA==}
     engines: {node: ^18.17.0 || >=20.5.0, npm: '>= 9'}
     hasBin: true
 
@@ -5411,10 +5411,10 @@ snapshots:
       npm-bundled: 2.0.1
       npm-normalize-package-bin: 2.0.0
 
-  npm-run-all2@7.0.1:
+  npm-run-all2@7.0.2:
     dependencies:
       ansi-styles: 6.2.1
-      cross-spawn: 7.0.5
+      cross-spawn: 7.0.6
       memorystream: 0.3.1
       minimatch: 9.0.4
       pidtree: 0.6.0
