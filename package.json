@@ -1,0 +1,37 @@
+{
+	"name": "svelte-fluent-monorepo",
+	"version": "0.0.1",
+	"description": "monorepo for @nubolab-ffwd/svelte-fluent",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write .",
+		"prepare": "husky",
+		"test": "pnpm -r test"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "19.7.1",
+		"@commitlint/config-conventional": "19.7.1",
+		"eslint": "9.19.0",
+		"eslint-config-prettier": "10.0.1",
+		"eslint-plugin-svelte": "2.46.1",
+		"globals": "15.14.0",
+		"husky": "9.1.7",
+		"lint-staged": "15.4.3",
+		"prettier": "3.4.2",
+		"prettier-plugin-svelte": "3.3.3",
+		"typescript-eslint": "^8.0.0"
+	},
+	"packageManager": "pnpm@9.15.5",
+	"lint-staged": {
+		"*.{cjs,js,ts,svelte}": [
+			"eslint --cache --fix",
+			"prettier --write"
+		],
+		"*.{md,json,yaml}": "prettier --write"
+	},
+	"dependencies": {
+		"@eslint/compat": "^1.2.6"
+	}
+}

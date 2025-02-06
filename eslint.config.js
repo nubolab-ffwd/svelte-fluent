@@ -1,11 +1,15 @@
+import { includeIgnoreFile } from '@eslint/compat';
 import js from '@eslint/js';
 import ts from 'typescript-eslint';
 import svelte from 'eslint-plugin-svelte';
 import prettier from 'eslint-config-prettier';
 import globals from 'globals';
+import { fileURLToPath } from 'node:url';
+const gitignorePath = fileURLToPath(new URL('./.gitignore', import.meta.url));
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
 export default [
+	includeIgnoreFile(gitignorePath),
 	js.configs.recommended,
 	...ts.configs.recommended,
 	...svelte.configs['flat/recommended'],
@@ -29,23 +33,5 @@ export default [
 				parser: ts.parser
 			}
 		}
-	},
-	{
-		ignores: [
-			'.DS_Store',
-			'node_modules',
-			'build',
-			'.svelte-kit',
-			'dist',
-			'.env',
-			'.env.*',
-			'!.env.example',
-			'storybook-static',
-			'.eslintcache',
-			// Ignore files for PNPM, NPM and YARN
-			'pnpm-lock.yaml',
-			'package-lock.json',
-			'yarn.lock'
-		]
 	}
 ];
