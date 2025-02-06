@@ -1,5 +1,5 @@
 import type { FluentBundle, FluentVariable } from '@fluent/bundle';
-import { getTranslation } from './translation';
+import { getTranslation } from './translation.js';
 
 type Options = {
 	onError?: (msg: string) => void;

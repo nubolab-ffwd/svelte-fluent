@@ -3,7 +3,7 @@
 	import { CachedSyncIterable } from 'cached-iterable';
 	import { createEventDispatcher, tick } from 'svelte';
 	import { initFluentContext } from './context.svelte';
-	import { createSvelteFluent } from './fluent';
+	import { createSvelteFluent } from './fluent.js';
 
 	// Wrapper class that prevents an exception in svelte-devtools
 	// It hides the CachedSyncIterable in a non-enumerable property

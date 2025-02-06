@@ -1,2 +1,2 @@
-export * from './common';
-export { default as Overlay } from './internal/OverlaySSR';
+export * from './common.js';
+export { default as Overlay } from './internal/OverlaySSR.js';

@@ -18,9 +18,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		alias: {
-			$site: 'src/site',
-			'@nubolab-ffwd/svelte-fluent': 'src/lib', // used in examples so that import look more like real-world usage
-			'@nubolab-ffwd/svelte-fluent/legacy': 'src/lib/legacy' // used in examples so that import look more like real-world usage
+			$site: 'src/site'
 		},
 		paths: {
 			base,

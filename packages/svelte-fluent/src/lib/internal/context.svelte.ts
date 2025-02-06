@@ -1,6 +1,6 @@
-import type { SvelteFluent } from './fluent';
+import type { SvelteFluent } from './fluent.js';
 import { getContext, setContext } from 'svelte';
-import { getTranslation } from './translation';
+import { getTranslation } from './translation.js';
 
 const CONTEXT_KEY = Symbol('svelte-fluent');
 

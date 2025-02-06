@@ -5,6 +5,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
+		"dev": "pnpm -r --parallel dev",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"prepare": "husky",

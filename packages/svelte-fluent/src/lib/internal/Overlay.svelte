@@ -2,9 +2,9 @@
 	import type { FluentVariable } from '@fluent/bundle';
 	import { type Snippet } from 'svelte';
 	import { getInternalFluentContext } from './context.svelte';
-	import { translateElement } from './utils';
+	import { translateElement } from './utils.js';
 	import type { Action } from 'svelte/action';
-	import type { Translation } from './translation';
+	import type { Translation } from './translation.js';
 
 	// props are also consumed in `../OverlaySSR.ts`. Changes made here need to be reflected there
 	let {

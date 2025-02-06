@@ -1,5 +1,5 @@
 import type { Plugin as RollupPlugin } from 'rollup';
-import svelteFluentVite, { type PluginOptions as VitePluginOptions } from './vite';
+import svelteFluentVite, { type PluginOptions as VitePluginOptions } from './vite.js';
 
 export type PluginOptions = VitePluginOptions & {
 	ssr?: boolean;

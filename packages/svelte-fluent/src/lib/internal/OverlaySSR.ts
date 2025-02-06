@@ -1,7 +1,7 @@
 import type { FluentVariable } from '@fluent/bundle';
 import { JSDOM } from 'jsdom';
 import Overlay from './Overlay.svelte';
-import { translateElement } from './utils';
+import { translateElement } from './utils.js';
 import { getInternalFluentContext } from './context.svelte';
 
 type Props = {

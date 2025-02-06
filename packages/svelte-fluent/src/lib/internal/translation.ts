@@ -1,6 +1,6 @@
 import type { FluentVariable } from '@fluent/bundle';
 import { mapBundleSync } from '@fluent/sequence';
-import type { SvelteFluent } from './fluent';
+import type { SvelteFluent } from './fluent.js';
 
 export type Translation = {
 	value: string;
