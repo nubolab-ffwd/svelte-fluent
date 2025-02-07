@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Example from '$site/examples/frontpage/Example.svelte';
+	import { FrontpageExample } from '$lib/rendered-examples';
 	import Hero from './Hero.svelte';
 </script>
 
@@ -23,7 +23,7 @@
 			gender, plurals, and others that are important to many languages but difficult to handle with
 			traditional localization systems.
 		</p>
-		<Example />
+		<FrontpageExample />
 	</div>
 </div>
 

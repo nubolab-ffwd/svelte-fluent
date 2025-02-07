@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths'
-	import Example from '$site/examples/frontpage/Example.svelte';
 	import ReferenceLink from '$site/ReferenceLink.svelte'
+	import { FrontpageExample } from '$lib/rendered-examples';
 </script>
 
 # Getting started
@@ -13,7 +13,7 @@ the [Fluent](https://projectfluent.org/) localization system by Mozilla.
 
 ### Example
 
-<Example />
+<FrontpageExample />
 
 ## Installation
 

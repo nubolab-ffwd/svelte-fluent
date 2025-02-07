@@ -1,12 +1,14 @@
 <script>
-	import {base} from '$app/paths'
+	import { base } from '$app/paths'
 	import ReferenceLink from '$site/ReferenceLink.svelte'
-	import ExampleFirstSteps from '$site/examples/tutorial/first-steps/Example.svelte'
-	import ExampleTranslationFiles from '$site/examples/tutorial/translation-files/Example.svelte'
-	import ExampleMultiLanguage from '$site/examples/tutorial/multi-language/Example.svelte'
-	import ExampleInterpolation from '$site/examples/tutorial/interpolation/Example.svelte'
-	import ExampleInterpolationFormatting from '$site/examples/tutorial/interpolation-formatting/Example.svelte'
-	import ExampleInterpolationCustomFunctions from '$site/examples/tutorial/interpolation-custom-functions/Example.svelte'
+	import {
+		TutorialFirstStepsExample,
+		TutorialInterpolationCustomFunctionsExample,
+		TutorialInterpolationExample,
+		TutorialInterpolationFormattingExample,
+		TutorialMultiLanguageExample,
+		TutorialTranslationFilesExample
+	} from '$lib/rendered-examples';
 </script>
 
 # Tutorial
@@ -18,14 +20,14 @@ and initializing the <ReferenceLink name="FluentContext" />.
 
 In the most basic setup those translations can be defined directly in the code like this:
 
-<ExampleFirstSteps />
+<TutorialFirstStepsExample />
 
 ## Load translations from files
 
 Managing translations directly in the code can get messy.
 A better way is to load translations from `.ftl` files.
 
-<ExampleTranslationFiles />
+<TutorialTranslationFilesExample />
 
 ## Multiple languages
 
@@ -41,7 +43,7 @@ desired language and fallback to the auto-detected language of the browser.
 >
 > Check out the [SvelteKit integration guide]({base}/docs/integration#sveltekit) for an example how to do this.
 
-<ExampleMultiLanguage />
+<TutorialMultiLanguageExample />
 
 ## Interpolation
 
@@ -49,7 +51,7 @@ You can insert variables into your translated text by using
 [Fluent Placeables](https://projectfluent.org/fluent/guide/placeables.html).
 Values for those variables are provided via the `args` prop of the <ReferenceLink name="Localized" /> and <ReferenceLink name="Overlay" /> components.
 
-<ExampleInterpolation />
+<TutorialInterpolationExample />
 
 ## Interpolation formatting
 
@@ -62,7 +64,7 @@ files or in the JS source.
 
 Parameters listed in "Developer parameters" can only be set in JS code.
 
-<ExampleInterpolationFormatting />
+<TutorialInterpolationFormattingExample />
 
 ## Custom functions
 
@@ -73,4 +75,4 @@ You can also check out the
 [code of the built-in Fluent Functions](https://github.com/projectfluent/fluent.js/blob/master/fluent-bundle/src/builtins.ts)
 for more examples.
 
-<ExampleInterpolationCustomFunctions />
+<TutorialInterpolationCustomFunctionsExample />

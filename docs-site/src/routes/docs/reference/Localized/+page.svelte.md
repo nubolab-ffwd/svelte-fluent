@@ -3,10 +3,12 @@ title: Localized
 ---
 
 <script>
-	import ExampleLocalizedStaticText from '$site/examples/localized/static-text/Example.svelte'
-	import ExampleLocalizedDynamicText from '$site/examples/localized/dynamic-text/Example.svelte'
-	import ExampleLocalizedAttributes from '$site/examples/localized/attributes/Example.svelte'
-	import ExampleLocalizedAttributesWithVariables from '$site/examples/localized/attributes-with-variables/Example.svelte'
+	import {
+		LocalizedAttributesExample,
+		LocalizedAttributesWithVariablesExample,
+		LocalizedDynamicTextExample,
+		LocalizedStaticTextExample
+	} from '$lib/rendered-examples';
 
 	const localizedChildrenSnippetType = [
 	'Snippet<{',
@@ -36,16 +38,16 @@ The output can be customized by overriding the default slot of the component.
 
 ## Static text example
 
-<ExampleLocalizedStaticText />
+<LocalizedStaticTextExample />
 
 ## Dynamic text with variables example
 
-<ExampleLocalizedDynamicText />
+<LocalizedDynamicTextExample />
 
 ## Attributes example
 
-<ExampleLocalizedAttributes />
+<LocalizedAttributesExample />
 
 ## Attributes with variables example
 
-<ExampleLocalizedAttributesWithVariables />
+<LocalizedAttributesWithVariablesExample />

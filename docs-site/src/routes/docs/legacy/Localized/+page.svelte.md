@@ -5,7 +5,7 @@ menuTitle: Localized
 
 <script>
 	import ReferenceLink from '$site/ReferenceLink.svelte'
-	import ExampleLocalizedLegacyAttributes from '$site/examples/localized-legacy/attributes/Example.svelte'
+	import { LocalizedLegacyAttributesExample } from '$lib/rendered-examples'
 </script>
 
 # {title}
@@ -35,4 +35,4 @@ Slots are provided for backwards compatibility. New code should opt to use snipp
 
 ## Example
 
-<ExampleLocalizedLegacyAttributes />
+<LocalizedLegacyAttributesExample />

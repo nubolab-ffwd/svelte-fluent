@@ -4,8 +4,7 @@ menuTitle: Overlay
 ---
 
 <script>
-	import ExampleOverlayStaticText from '$site/examples/overlay/static-text/Example.svelte'
-	import ExampleOverlayDynamicText from '$site/examples/overlay/dynamic-text/Example.svelte'
+	import { OverlayDynamicTextExample, OverlayStaticTextExample } from '$lib/rendered-examples';
 </script>
 
 # {title}
@@ -36,11 +35,11 @@ to the [limitations listed in the @fluent/dom wiki](https://github.com/projectfl
 
 ## Static text example
 
-<ExampleOverlayStaticText />
+<OverlayStaticTextExample />
 
 ## Dynamic text with variables example
 
-<ExampleOverlayDynamicText />
+<OverlayDynamicTextExample />
 
 ## Props
 

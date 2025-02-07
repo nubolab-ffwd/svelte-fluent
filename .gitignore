@@ -17,6 +17,16 @@ Thumbs.db
 !.env.example
 !.env.test
 
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+/examples/.svelte-kit
+/examples/build
+
+/docs-site/.svelte-kit
+/docs-site/build
+
 /packages/svelte-fluent/.svelte-kit
 /packages/svelte-fluent/build
 /packages/svelte-fluent/dist

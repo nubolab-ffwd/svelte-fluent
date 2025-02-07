@@ -4,9 +4,11 @@ title: FluentContext
 
 <script>
 	import ReferenceLink from '$site/ReferenceLink.svelte'
-	import ExampleLocalizeStaticText from '$site/examples/localize/static-text/Example.svelte'
-	import ExampleLocalizeDynamicText from '$site/examples/localize/dynamic-text/Example.svelte'
-	import ExampleLocalizeAttributes from '$site/examples/localize/attributes/Example.svelte'
+	import {
+		LocalizeAttributesExample,
+		LocalizeDynamicTextExample,
+		LocalizeStaticTextExample
+	} from '$lib/rendered-examples';
 </script>
 
 # {title}
@@ -43,11 +45,11 @@ The localized message as a `string`.
 
 ### Static text example
 
-<ExampleLocalizeStaticText />
+<LocalizeStaticTextExample />
 
 ### Dynamic text with variables example
 
-<ExampleLocalizeDynamicText />
+<LocalizeDynamicTextExample />
 
 ### Attributes example
 
@@ -56,4 +58,4 @@ The localized message as a `string`.
 > In the example below this is done for the `.default` attribute of the `prompt` message by
 > calling `localize` with `'prompt.default'` as the message identifier.
 
-<ExampleLocalizeAttributes />
+<LocalizeAttributesExample />

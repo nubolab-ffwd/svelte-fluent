@@ -4,7 +4,7 @@ menuTitle: FluentProvider
 ---
 
 <script>
-	import ExampleProvider from '$site/examples/provider/Example.svelte'
+	import { ProviderExample } from '$lib/rendered-examples';
 </script>
 
 # {title}
@@ -28,7 +28,7 @@ The `FluentProvider` component also emits `error` events whenever a translation 
 
 ## Example
 
-<ExampleProvider />
+<ProviderExample />
 
 ## Props
 
