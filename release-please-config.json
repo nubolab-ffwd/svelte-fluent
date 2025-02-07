@@ -1,6 +1,6 @@
 {
 	"packages": {
-		".": {
+		"packages/svelte-fluent": {
 			"release-type": "node",
 			"package-name": "@nubolab-ffwd/svelte-fluent",
 			"bootstrap-sha": "4cb551f03363b033dd34a1be8afaaeadbe8186d4",
