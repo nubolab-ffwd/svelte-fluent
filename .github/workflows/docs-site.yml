@@ -18,8 +18,9 @@ jobs:
           cache: 'pnpm'
       - run: pnpm install --frozen-lockfile --strict-peer-dependencies
       - run: pnpm build
+        working-directory: ./docs-site
       - name: Deploy to GH Pages
         uses: peaceiris/actions-gh-pages@v4.0.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./docs-site/build
