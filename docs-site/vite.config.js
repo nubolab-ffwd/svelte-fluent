@@ -15,6 +15,6 @@ export default defineConfig({
 		})
 	],
 	ssr: {
-		noExternal: ['@nubolab-ffwd/svelte-fluent']
+		noExternal: ['svelte-fluent-examples', '@nubolab-ffwd/svelte-fluent']
 	}
 });

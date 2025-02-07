@@ -191,12 +191,6 @@ importers:
       autoprefixer:
         specifier: 10.4.20
         version: 10.4.20(postcss@8.5.1)
-      npm-run-all2:
-        specifier: 7.0.2
-        version: 7.0.2
-      pathe:
-        specifier: 2.0.2
-        version: 2.0.2
       postcss:
         specifier: 8.5.1
         version: 8.5.1
@@ -206,9 +200,6 @@ importers:
       postcss-preset-env:
         specifier: 10.1.3
         version: 10.1.3(postcss@8.5.1)
-      semver:
-        specifier: 7.7.1
-        version: 7.7.1
       svelte:
         specifier: 5.19.7
         version: 5.19.7
@@ -224,9 +215,6 @@ importers:
       typescript:
         specifier: 5.7.3
         version: 5.7.3
-      unplugin-icons:
-        specifier: 22.0.0
-        version: 22.0.0(svelte@5.19.7)
       vite:
         specifier: 6.0.11
         version: 6.0.11(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.7.0)
@@ -261,18 +249,73 @@ importers:
       '@fluent/langneg':
         specifier: 0.7.0
         version: 0.7.0
-      '@sveltejs/kit':
-        specifier: 2.17.1
-        version: 2.17.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.19.7)(vite@6.0.11(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.7.0)))(svelte@5.19.7)(vite@6.0.11(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.7.0))
       '@sveltejs/package':
         specifier: 2.3.10
         version: 2.3.10(svelte@5.19.7)(typescript@5.7.3)
       '@sveltejs/vite-plugin-svelte':
         specifier: 5.0.3
         version: 5.0.3(svelte@5.19.7)(vite@6.0.11(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.7.0))
+      autoprefixer:
+        specifier: 10.4.20
+        version: 10.4.20(postcss@8.5.1)
+      npm-run-all2:
+        specifier: 7.0.2
+        version: 7.0.2
+      postcss:
+        specifier: 8.5.1
+        version: 8.5.1
+      postcss-load-config:
+        specifier: 6.0.1
+        version: 6.0.1(jiti@2.4.2)(postcss@8.5.1)(yaml@2.7.0)
+      postcss-preset-env:
+        specifier: 10.1.3
+        version: 10.1.3(postcss@8.5.1)
+      publint:
+        specifier: 0.3.2
+        version: 0.3.2
+      semver:
+        specifier: 7.7.1
+        version: 7.7.1
+      svelte:
+        specifier: 5.19.7
+        version: 5.19.7
+      svelte-check:
+        specifier: 4.1.4
+        version: 4.1.4(picomatch@4.0.2)(svelte@5.19.7)(typescript@5.7.3)
+      svelte2tsx:
+        specifier: 0.7.34
+        version: 0.7.34(svelte@5.19.7)(typescript@5.7.3)
+      tslib:
+        specifier: 2.8.1
+        version: 2.8.1
+      typescript:
+        specifier: 5.7.3
+        version: 5.7.3
+      vite:
+        specifier: 6.0.11
+        version: 6.0.11(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.7.0)
+
+  testsuite:
+    dependencies:
+      jsdom:
+        specifier: ^24.1.1
+        version: 24.1.1
+    devDependencies:
+      '@fluent/bundle':
+        specifier: 0.18.0
+        version: 0.18.0
+      '@nubolab-ffwd/svelte-fluent':
+        specifier: workspace:^
+        version: link:../packages/svelte-fluent
+      '@sveltejs/vite-plugin-svelte':
+        specifier: 5.0.3
+        version: 5.0.3(svelte@5.19.7)(vite@6.0.11(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.7.0))
       '@testing-library/svelte':
         specifier: 5.2.6
         version: 5.2.6(svelte@5.19.7)(vite@6.0.11(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.7.0))(vitest@3.0.5)
+      '@types/jsdom':
+        specifier: 21.1.7
+        version: 21.1.7
       '@vitest/ui':
         specifier: 3.0.5
         version: 3.0.5(vitest@3.0.5)
@@ -294,21 +337,18 @@ importers:
       postcss-preset-env:
         specifier: 10.1.3
         version: 10.1.3(postcss@8.5.1)
-      publint:
-        specifier: 0.3.2
-        version: 0.3.2
       semver:
         specifier: 7.7.1
         version: 7.7.1
-      shiki:
-        specifier: 2.3.0
-        version: 2.3.0
       svelte:
         specifier: 5.19.7
         version: 5.19.7
       svelte-check:
         specifier: 4.1.4
         version: 4.1.4(picomatch@4.0.2)(svelte@5.19.7)(typescript@5.7.3)
+      svelte-fluent-examples:
+        specifier: workspace:^
+        version: link:../examples
       svelte2tsx:
         specifier: 0.7.34
         version: 0.7.34(svelte@5.19.7)(typescript@5.7.3)

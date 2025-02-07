@@ -12,18 +12,13 @@
 		"access": "public"
 	},
 	"scripts": {
-		"dev": "svelte-package -w",
-		"package": "run-s package:sync package:pkg package:rollup package:lint",
-		"package:sync": "svelte-kit sync",
-		"package:pkg": "svelte-package",
+		"dev": "svelte-package -i src -w",
+		"package": "run-s package:pkg package:rollup package:lint",
+		"package:pkg": "svelte-package -i src",
 		"package:rollup": "rollup --file dist/rollup.cjs --format cjs dist/rollup.js",
 		"package:lint": "publint",
-		"prepare": "svelte-kit sync",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-		"test": "run-s test:*",
-		"test:dom": "vitest run",
-		"test:ssr": "TEST_SSR=1 vitest run",
 		"prepublishOnly": "npm run package"
 	},
 	"dependencies": {
@@ -35,27 +30,21 @@
 	"devDependencies": {
 		"@fluent/bundle": "0.18.0",
 		"@fluent/langneg": "0.7.0",
-		"@sveltejs/kit": "2.17.1",
 		"@sveltejs/package": "2.3.10",
 		"@sveltejs/vite-plugin-svelte": "5.0.3",
-		"@testing-library/svelte": "5.2.6",
-		"@vitest/ui": "3.0.5",
 		"autoprefixer": "10.4.20",
 		"npm-run-all2": "7.0.2",
-		"pathe": "2.0.2",
 		"postcss": "8.5.1",
 		"postcss-load-config": "6.0.1",
 		"postcss-preset-env": "10.1.3",
 		"publint": "0.3.2",
 		"semver": "7.7.1",
-		"shiki": "2.3.0",
 		"svelte": "5.19.7",
 		"svelte-check": "4.1.4",
 		"svelte2tsx": "0.7.34",
 		"tslib": "2.8.1",
 		"typescript": "5.7.3",
-		"vite": "6.0.11",
-		"vitest": "3.0.5"
+		"vite": "6.0.11"
 	},
 	"peerDependencies": {
 		"@fluent/bundle": "^0.18.0",
@@ -95,7 +84,7 @@
 	},
 	"files": [
 		"dist",
-		"src/lib"
+		"src"
 	],
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
