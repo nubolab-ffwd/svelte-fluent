@@ -1,11 +1,32 @@
-# everything added here should also be added to .eslintignore and .prettierignore
-.DS_Store
 node_modules
-/build
-/.svelte-kit
-/dist
+.eslintcache
+
+# Output
+.output
+.vercel
+.netlify
+.wrangler
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
 .env
 .env.*
 !.env.example
-storybook-static
-.eslintcache
+!.env.test
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+/examples/.svelte-kit
+/examples/build
+
+/docs-site/.svelte-kit
+/docs-site/build
+
+/packages/svelte-fluent/.svelte-kit
+/packages/svelte-fluent/build
+/packages/svelte-fluent/dist

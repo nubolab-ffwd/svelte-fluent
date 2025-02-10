@@ -1,0 +1,68 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Case test empty-pattern-with-attributes/Test.svelte > should render 1`] = `
+<div>
+  <!---->
+  <!---->
+  Some text
+  
+  
+  
+</div>
+`;
+
+exports[`Case test localize-store/Test.svelte > should render 1`] = `
+<div>
+  <div
+    id="plain"
+  >
+    Test
+	Attribute
+  </div>
+   
+  <div
+    id="with-vars"
+  >
+    Test ⁨with variables⁩
+	Attribute ⁨with variables⁩
+  </div>
+  
+</div>
+`;
+
+exports[`Case test overlay-rendering/Test.svelte > should render 1`] = `
+<div>
+  <svelte-fluent-overlay
+    style="display: contents;"
+  >
+    This 
+    <a
+      data-l10n-name="link"
+      href="https://example.com/"
+    >
+      link
+    </a>
+     is rendered with Overlay.
+  </svelte-fluent-overlay>
+  
+</div>
+`;
+
+exports[`Case test readme-example/Test.svelte > should render 1`] = `
+<div>
+  <strong>
+    <!---->
+    Hello, ⁨Anna⁩!
+    
+    <!---->
+  </strong>
+   
+  <p>
+    <!---->
+    ⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.
+    
+    <!---->
+  </p>
+  
+</div>
+`;

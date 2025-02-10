@@ -1,0 +1,112 @@
+{
+	"name": "@nubolab-ffwd/svelte-fluent",
+	"version": "1.0.3",
+	"license": "MIT",
+	"homepage": "https://github.com/nubolab-ffwd/svelte-fluent",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nubolab-ffwd/svelte-fluent.git"
+	},
+	"type": "module",
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"dev": "svelte-package -i src -w",
+		"package": "run-s package:pkg package:rollup package:lint",
+		"package:pkg": "svelte-package -i src",
+		"package:rollup": "rollup --file dist/rollup.cjs --format cjs dist/rollup.js",
+		"package:lint": "publint",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"prepublishOnly": "npm run package"
+	},
+	"dependencies": {
+		"@fluent/dom": "^0.10.0",
+		"@fluent/sequence": "^0.8.0",
+		"@rollup/pluginutils": "^5.1.3",
+		"cached-iterable": "^0.3.0"
+	},
+	"devDependencies": {
+		"@fluent/bundle": "0.18.0",
+		"@fluent/langneg": "0.7.0",
+		"@sveltejs/package": "2.3.10",
+		"@sveltejs/vite-plugin-svelte": "5.0.3",
+		"@types/jsdom": "21.1.7",
+		"autoprefixer": "10.4.20",
+		"npm-run-all2": "7.0.2",
+		"postcss": "8.5.1",
+		"postcss-load-config": "6.0.1",
+		"postcss-preset-env": "10.1.3",
+		"publint": "0.3.2",
+		"semver": "7.7.1",
+		"svelte": "5.19.7",
+		"svelte-check": "4.1.4",
+		"svelte2tsx": "0.7.34",
+		"tslib": "2.8.1",
+		"typescript": "5.7.3",
+		"vite": "6.0.11"
+	},
+	"peerDependencies": {
+		"@fluent/bundle": "^0.18.0",
+		"jsdom": "^20.0.0 || ^21.0.0 || ^22.0.0 || ^23.0.0 || ^24.0.0 || ^25.0.0 || ^26.0.0",
+		"rollup": "^4.0.0",
+		"svelte": "^5.0.0",
+		"vite": "^5.0.12 || ^6.0.0"
+	},
+	"exports": {
+		"./package.json": "./package.json",
+		".": {
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js",
+			"default": "./dist/index.js"
+		},
+		"./legacy": {
+			"types": "./dist/legacy/index.d.ts",
+			"svelte": "./dist/legacy/index.js",
+			"default": "./dist/legacy/index.js"
+		},
+		"./rollup": {
+			"types": "./dist/rollup.d.ts",
+			"require": "./dist/rollup.cjs",
+			"default": "./dist/rollup.js"
+		},
+		"./ssr": {
+			"types": "./dist/ssr.d.ts",
+			"default": "./dist/ssr.js"
+		},
+		"./types": {
+			"types": "./dist/types/index.d.ts"
+		},
+		"./vite": {
+			"types": "./dist/vite.d.ts",
+			"default": "./dist/vite.js"
+		}
+	},
+	"files": [
+		"dist",
+		"src"
+	],
+	"svelte": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"typesVersions": {
+		">4.0": {
+			"legacy": [
+				"./dist/legacy/index.d.ts"
+			],
+			"rollup": [
+				"./dist/rollup.d.ts"
+			],
+			"ssr": [
+				"./dist/ssr.d.ts"
+			],
+			"types": [
+				"./dist/types/index.d.ts"
+			],
+			"vite": [
+				"./dist/vite.d.ts"
+			]
+		}
+	},
+	"packageManager": "pnpm@9.15.5"
+}
