@@ -35,6 +35,6 @@
 		"vitest": "3.0.5"
 	},
 	"dependencies": {
-		"jsdom": "^24.1.1"
+		"jsdom": "^26.0.0"
 	}
 }
