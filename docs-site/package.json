@@ -48,7 +48,7 @@
 		"typescript-eslint": "8.23.0",
 		"unist-util-visit": "5.0.0",
 		"unplugin-icons": "22.0.0",
-		"vite": "6.0.11"
+		"vite": "6.1.0"
 	},
 	"dependencies": {
 		"jsdom": "^26.0.0"
