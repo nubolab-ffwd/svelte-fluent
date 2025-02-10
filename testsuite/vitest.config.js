@@ -9,7 +9,9 @@ import { svelte } from '@sveltejs/vite-plugin-svelte';
 
 function getSvelteMajor() {
 	const require = createRequire(import.meta.url);
-	const sveltePackage = JSON.parse(fs.readFileSync(require.resolve('svelte/package.json')));
+	const sveltePackage = JSON.parse(
+		fs.readFileSync(require.resolve('svelte/package.json')).toString()
+	);
 	return semver.major(sveltePackage.version);
 }
 
