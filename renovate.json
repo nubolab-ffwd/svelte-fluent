@@ -1,3 +1,14 @@
 {
-	"extends": ["config:js-lib"]
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["config:js-lib"],
+	"packageRules": [
+		{
+			"matchFileNames": [
+				"docs-site/package.json",
+				"examples/package.json",
+				"testsuite/package.json"
+			],
+			"extends": [":semanticPrefixChore"]
+		}
+	]
 }
