@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { FluentVariable } from '@fluent/bundle';
-	import { Overlay } from '..';
+	import { Overlay } from '../index.js';
 
 	let {
 		id,

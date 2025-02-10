@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { FluentVariable } from '@fluent/bundle';
-	import { Localized } from '..';
+	import { Localized } from '../index.js';
 
 	let {
 		id,
