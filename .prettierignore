@@ -5,3 +5,6 @@ yarn.lock
 
 # Ignore auto-generated files
 CHANGELOG.md
+
+# ignore symlinked README
+/README.md

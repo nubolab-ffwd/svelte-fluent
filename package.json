@@ -30,7 +30,7 @@
 			"eslint --cache --fix",
 			"prettier --write"
 		],
-		"*.{md,json,yaml}": "prettier --write"
+		"*.{md,json,yaml}": "prettier --no-error-on-unmatched-pattern --write"
 	},
 	"dependencies": {
 		"@eslint/compat": "^1.2.6"
