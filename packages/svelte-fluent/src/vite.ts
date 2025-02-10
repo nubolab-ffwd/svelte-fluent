@@ -2,6 +2,7 @@ import { createFilter, type FilterPattern } from '@rollup/pluginutils';
 import type { ResolvedId } from 'rollup';
 import type { Plugin as VitePlugin } from 'vite';
 import { readFileSync } from 'node:fs';
+import type { HookFunction, Satisfy } from './utils.js';
 
 export type PluginOptions = {
 	include?: FilterPattern;
@@ -10,12 +11,19 @@ export type PluginOptions = {
 	skipJsdomCheck: boolean;
 };
 
+export type SvelteFluentVitePlugin = Satisfy<
+	VitePlugin,
+	Required<Pick<VitePlugin, 'name' | 'enforce'>> & {
+		[K in 'buildStart' | 'resolveId' | 'transform']: HookFunction<NonNullable<VitePlugin[K]>>;
+	}
+>;
+
 const defaultOptions = {
 	resourceExtensions: ['.ftl'],
 	skipJsdomCheck: false
 } satisfies PluginOptions;
 
-export default (options: Partial<PluginOptions> = defaultOptions): VitePlugin => {
+export default (options: Partial<PluginOptions> = defaultOptions): SvelteFluentVitePlugin => {
 	const opts = { ...defaultOptions, ...options };
 	let resolveResult: Promise<ResolvedId | null>;
 	const filter = createFilter(options.include, options.exclude);
