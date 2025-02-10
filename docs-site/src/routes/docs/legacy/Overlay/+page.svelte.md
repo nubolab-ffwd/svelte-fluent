@@ -4,7 +4,7 @@ menuTitle: Overlay
 ---
 
 <script>
-	import ReferenceLink from '$site/ReferenceLink.svelte'
+	import ReferenceLink from '$lib/ReferenceLink.svelte'
 </script>
 
 # {title}

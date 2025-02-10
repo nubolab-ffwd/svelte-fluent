@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ReferenceLink from '$site/ReferenceLink.svelte'
+	import ReferenceLink from '$lib/ReferenceLink.svelte'
 	import screenshot from './screenshot.png?w=500;900;1200&avif&metadata'
 	import screenshotBonus from './screenshot-bonus.png'
 

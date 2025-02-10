@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ExampleRenderer from '$site/ExampleRenderer.svelte';
+	import ExampleRenderer from '$lib/ExampleRenderer.svelte';
 	import App from 'svelte-fluent-examples/src/frontpage/App.svelte';
 	import appSource from 'svelte-fluent-examples/src/frontpage/App.svelte?raw&highlight';
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ExampleRenderer from '$site/ExampleRenderer.svelte';
+	import ExampleRenderer from '$lib/ExampleRenderer.svelte';
 	import App from 'svelte-fluent-examples/src/tutorial/interpolation-custom-functions/App.svelte';
 	import appSource from 'svelte-fluent-examples/src/tutorial/interpolation-custom-functions/App.svelte?raw&highlight';
 	import enFtlSource from 'svelte-fluent-examples/src/tutorial/interpolation-custom-functions/en.ftl?raw&highlight';

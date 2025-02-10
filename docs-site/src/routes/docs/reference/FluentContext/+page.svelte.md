@@ -3,7 +3,7 @@ title: FluentContext
 ---
 
 <script>
-	import ReferenceLink from '$site/ReferenceLink.svelte'
+	import ReferenceLink from '$lib/ReferenceLink.svelte'
 	import {
 		LocalizeAttributesExample,
 		LocalizeDynamicTextExample,

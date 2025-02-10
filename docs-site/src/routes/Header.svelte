@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import Logo from '$site/logo.svelte';
+	import Logo from '$lib/logo.svelte';
 	import IconGitHub from '~icons/mdi/github';
 </script>
 

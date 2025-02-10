@@ -4,7 +4,7 @@ menuTitle: Localized
 ---
 
 <script>
-	import ReferenceLink from '$site/ReferenceLink.svelte'
+	import ReferenceLink from '$lib/ReferenceLink.svelte'
 	import { LocalizedLegacyAttributesExample } from '$lib/rendered-examples'
 </script>
 
