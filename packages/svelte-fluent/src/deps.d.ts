@@ -15,3 +15,8 @@ declare module 'cached-iterable' {
 		touchNext(count: number): Promise<IteratorResult<T>>;
 	}
 }
+
+declare module '@fluent/dom/esm/overlay' {
+	export { default } from '@fluent/dom/esm/overlay.ts';
+	export * from '@fluent/dom/esm/overlay.ts';
+}

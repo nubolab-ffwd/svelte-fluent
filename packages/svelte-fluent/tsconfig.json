@@ -19,15 +19,6 @@
 		"sourceMap": true,
 		"strict": true
 	},
-	"include": [
-		"src/**/*.js",
-		"src/**/*.ts",
-		"src/**/*.svelte",
-		"tests/**/*.js",
-		"tests/**/*.ts",
-		"tests/**/*.svelte",
-		"../../testsuite/tests/dom/e2e.test.js",
-		"../../testsuite/tests/ssr/e2e.test.js"
-	],
+	"include": ["src/**/*.js", "src/**/*.ts", "src/**/*.svelte"],
 	"exclude": ["node_modules/**"]
 }
