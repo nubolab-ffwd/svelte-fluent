@@ -20,8 +20,6 @@
 		"strict": true
 	},
 	"include": [
-		"vitest.config.js",
-		"vitest.config.ts",
 		"src/**/*.js",
 		"src/**/*.ts",
 		"src/**/*.svelte",
