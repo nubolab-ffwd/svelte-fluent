@@ -20,7 +20,7 @@
 		"@vitest/ui": "3.0.5",
 		"autoprefixer": "10.4.20",
 		"npm-run-all2": "7.0.2",
-		"pathe": "2.0.2",
+		"pathe": "2.0.3",
 		"postcss": "8.5.1",
 		"postcss-load-config": "6.0.1",
 		"postcss-preset-env": "10.1.3",
