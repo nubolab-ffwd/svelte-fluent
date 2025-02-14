@@ -182,8 +182,8 @@ importers:
         specifier: 5.0.3
         version: 5.0.3(svelte@5.19.7)(vite@6.0.11(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.7.0))
       '@testing-library/svelte':
-        specifier: 5.2.6
-        version: 5.2.6(svelte@5.19.7)(vite@6.0.11(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.7.0))(vitest@3.0.5)
+        specifier: 5.2.7
+        version: 5.2.7(svelte@5.19.7)(vite@6.0.11(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.7.0))(vitest@3.0.5)
       '@types/jsdom':
         specifier: 21.1.7
         version: 21.1.7
@@ -1273,19 +1273,6 @@ packages:
   '@testing-library/dom@10.4.0':
     resolution: {integrity: sha512-pemlzrSESWbdAloYml3bAJMEfNh1Z7EduzqPKprCH5S341frlpYnUEW0H72dLxa6IsYr+mPno20GiSm+h9dEdQ==}
     engines: {node: '>=18'}
-
-  '@testing-library/svelte@5.2.6':
-    resolution: {integrity: sha512-1Y8cEg/BtV4J6g9irkY0ksz+ueDFYLiikjTLiqvQPkOUeDzR4gg2zECBf8yrOrCy3e2TAOYMcaysFa0bQMyk1w==}
-    engines: {node: '>= 10'}
-    peerDependencies:
-      svelte: ^3 || ^4 || ^5 || ^5.0.0-next.0
-      vite: '*'
-      vitest: '*'
-    peerDependenciesMeta:
-      vite:
-        optional: true
-      vitest:
-        optional: true
 
   '@testing-library/svelte@5.2.7':
     resolution: {integrity: sha512-aGhUaFmEXEVost4QOsbHUUbHLwi7ZZRRxAHFDO2Cmr0BZD3/3+XvaYEPq70Rdw0NRNjdqZHdARBEcrCOkPuAqw==}
@@ -4599,7 +4586,7 @@ snapshots:
       lz-string: 1.5.0
       pretty-format: 27.5.1
 
-  '@testing-library/svelte@5.2.6(svelte@5.19.7)(vite@6.0.11(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.7.0))(vitest@3.0.5)':
+  '@testing-library/svelte@5.2.7(svelte@5.19.7)(vite@6.0.11(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.7.0))(vitest@3.0.5)':
     dependencies:
       '@testing-library/dom': 10.4.0
       svelte: 5.19.7
