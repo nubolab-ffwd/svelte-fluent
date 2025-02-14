@@ -1,6 +1,23 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": ["config:js-lib"],
+	"ignorePaths": [
+		"**/node_modules/**",
+		"**/bower_components/**",
+		"**/vendor/**",
+		"**/__tests__/**",
+		"**/test/**",
+		"**/tests/**",
+		"**/__fixtures__/**"
+	],
+	"nuget": {
+		"ignorePaths": [
+			"**/node_modules/**",
+			"**/bower_components/**",
+			"**/vendor/**",
+			"**/__fixtures__/**"
+		]
+	},
 	"packageRules": [
 		{
 			"matchFileNames": [
