@@ -28,7 +28,7 @@
 		"hast-util-heading-rank": "3.0.0",
 		"hast-util-to-string": "3.0.1",
 		"mdsvex": "0.12.3",
-		"postcss": "8.5.2",
+		"postcss": "8.5.3",
 		"postcss-load-config": "6.0.1",
 		"postcss-preset-env": "10.1.4",
 		"rehype-add-classes": "1.0.0",
