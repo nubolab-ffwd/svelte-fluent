@@ -1,9 +1,11 @@
-import autoprefixer from 'autoprefixer';
 import presetEnv from 'postcss-preset-env';
+import postcssGlobalData from '@csstools/postcss-global-data';
 
 export default {
 	plugins: [
-		autoprefixer,
+		postcssGlobalData({
+			files: ['./src/lib/styles/global.postcss']
+		}),
 		presetEnv({
 			features: {
 				'nesting-rules': true,

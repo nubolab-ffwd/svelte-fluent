@@ -8,14 +8,14 @@
 <script lang="ts">
 	import '../app.postcss';
 	import Header from './Header.svelte';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import type { Snippet } from 'svelte';
 
 	let { children }: { children: Snippet } = $props();
 
 	let seo = $derived({
-		...$page.data.seo,
-		title: [$page.data.seo?.title, 'svelte-fluent'].filter(Boolean).join(' | ')
+		...page.data.seo,
+		title: [page.data.seo?.title, 'svelte-fluent'].filter(Boolean).join(' | ')
 	});
 </script>
 
@@ -26,13 +26,19 @@
 	{/if}
 </svelte:head>
 
-<Header />
-
-<div class="content">
-	{@render children()}
+<div class="stack" style:--gap="var(--s2)">
+	<div class="header">
+		<Header />
+	</div>
+	<div class="content">
+		{@render children()}
+	</div>
 </div>
 
 <style lang="postcss">
+	.header {
+		z-index: 1;
+	}
 	.content {
 		margin-block-end: var(--s5);
 	}

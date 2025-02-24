@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Item, TopLeveltem } from './SidebarMenu.svelte';
+	import type { Item, TopLeveltem } from './Menu.svelte';
 
 	let {
 		menu,

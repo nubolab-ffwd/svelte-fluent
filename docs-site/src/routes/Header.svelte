@@ -31,7 +31,6 @@
 	header {
 		padding: var(--space);
 		box-shadow: 0 0 var(--s-5) #aaa;
-		margin-block-end: var(--s2);
 
 		& .logo {
 			display: flex;

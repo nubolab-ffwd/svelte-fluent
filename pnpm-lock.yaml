@@ -54,6 +54,9 @@ importers:
         specifier: ^26.0.0
         version: 26.0.0
     devDependencies:
+      '@csstools/postcss-global-data':
+        specifier: ^3.0.0
+        version: 3.0.0(postcss@8.5.3)
       '@fluent/bundle':
         specifier: 0.18.0
         version: 0.18.0
@@ -572,6 +575,12 @@ packages:
 
   '@csstools/postcss-gamut-mapping@2.0.8':
     resolution: {integrity: sha512-/K8u9ZyGMGPjmwCSIjgaOLKfic2RIGdFHHes84XW5LnmrvdhOTVxo255NppHi3ROEvoHPW7MplMJgjZK5Q+TxA==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      postcss: ^8.4
+
+  '@csstools/postcss-global-data@3.0.0':
+    resolution: {integrity: sha512-3dR5+RDhPW1uqPWZUyTBSVn03gGbxzoSyCEpXugy9UMtXeyKjrB84dX3V8eggzooCsX8wcraKehzdouNO+MlsA==}
     engines: {node: '>=18'}
     peerDependencies:
       postcss: ^8.4
@@ -3738,6 +3747,10 @@ snapshots:
       '@csstools/css-color-parser': 3.0.8(@csstools/css-parser-algorithms@3.0.4(@csstools/css-tokenizer@3.0.3))(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-parser-algorithms': 3.0.4(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-tokenizer': 3.0.3
+      postcss: 8.5.3
+
+  '@csstools/postcss-global-data@3.0.0(postcss@8.5.3)':
+    dependencies:
       postcss: 8.5.3
 
   '@csstools/postcss-gradients-interpolation-method@5.0.8(postcss@8.5.3)':
