@@ -40,7 +40,7 @@
 		"rehype-wrap-all": "1.1.0",
 		"semver": "7.7.1",
 		"shiki": "3.0.0",
-		"svelte": "5.20.2",
+		"svelte": "5.20.4",
 		"svelte-check": "4.1.4",
 		"svelte-fluent-examples": "workspace:^",
 		"svelte2tsx": "0.7.34",
