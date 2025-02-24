@@ -44,7 +44,7 @@
 </div>
 
 <style lang="postcss">
-	@media (--viewport-sm) {
+	@media (--viewport-max-sm) {
 		.menu:is(:not(.toplevel)) {
 			display: none;
 		}
@@ -54,23 +54,31 @@
 		padding: 0;
 		list-style: none;
 
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: calc(0.5 * var(--space));
+
 		@media (--viewport-sm) {
-			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
-			gap: calc(0.5 * var(--space));
+			display: block;
 		}
 	}
 	.menu.toplevel > ul > li + li {
-		margin-block-start: var(--s1);
+		margin-block-start: 0;
 		@media (--viewport-sm) {
-			margin-block-start: 0;
+			margin-block-start: var(--s1);
 		}
 	}
 	.item {
 		color: var(--theme-color-gray-dark);
+		border-bottom: 1px solid transparent;
 		& a {
 			color: inherit;
+			display: block;
+			padding: calc(0.5 * var(--space)) var(--space);
+		}
+		&.active {
+			border-bottom-color: var(--theme-color-text);
 		}
 		&.active,
 		&.active a {
@@ -89,13 +97,10 @@
 			}
 		}
 		@media (--viewport-sm) {
+			border-bottom: none;
 			& a {
-				display: block;
-				padding: calc(0.5 * var(--space)) var(--space);
-			}
-			border-bottom: 1px solid transparent;
-			&.active {
-				border-bottom-color: var(--theme-color-text);
+				display: inline;
+				padding: 0;
 			}
 		}
 	}

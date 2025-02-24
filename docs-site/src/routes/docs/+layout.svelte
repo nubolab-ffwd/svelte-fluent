@@ -36,13 +36,16 @@
 		justify-content: start;
 		column-gap: var(--s4);
 		row-gap: var(--s3);
-		grid-template-columns: auto minmax(0px, 60rem);
-		padding-inline: var(--s2);
+
+		grid-template-columns: minmax(0px, 100%);
+		& > * {
+			padding-inline: var(--space);
+		}
 		@media (--viewport-sm) {
-			grid-template-columns: minmax(0px, 100%);
-			padding-inline: 0;
+			grid-template-columns: auto minmax(0px, 60rem);
+			padding-inline: var(--s2);
 			& > * {
-				padding-inline: var(--space);
+				padding-inline: 0;
 			}
 		}
 	}
@@ -75,19 +78,22 @@
 		top: 0;
 		align-self: start;
 		background-color: var(--theme-color-background);
-		margin-block-start: calc(-1 * var(--space));
+
+		margin-block-start: calc(-1 * var(--s2));
+		border-block-end: 1px solid var(--theme-separator-color);
 		padding-block-start: var(--space);
 
-		@media (--viewport-sm) {
+		@supports (animation-timeline: scroll()) {
 			--shadow: hsla(0 0% 0% / 0.13) 0 0.5rem 1rem;
-			margin-block-start: calc(-1 * var(--s2));
-			border-block-end: 1px solid var(--theme-separator-color);
+			animation: scroll-shadow linear both;
+			animation-timeline: scroll();
+			animation-range: 0rem 10rem;
+		}
 
-			@supports (animation-timeline: scroll()) {
-				animation: scroll-shadow linear both;
-				animation-timeline: scroll();
-				animation-range: 0rem 10rem;
-			}
+		@media (--viewport-sm) {
+			margin-block-start: calc(-1 * var(--space));
+			border-block-end: none;
+			animation: none;
 		}
 	}
 	@keyframes scroll-shadow {
@@ -99,7 +105,7 @@
 		}
 	}
 	/* compensate for sticky nav on small viewports */
-	@media (--viewport-sm) {
+	@media (--viewport-max-sm) {
 		:global(html, body) {
 			scroll-padding-top: 10rem;
 		}
