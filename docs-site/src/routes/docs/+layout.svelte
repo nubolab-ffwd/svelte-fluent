@@ -8,8 +8,6 @@
 
 	let { data, children }: { data: LayoutData; children: Snippet } = $props();
 	let activeMenu = $derived(findActiveMenuItem(data.menu, page.url.pathname, page.url.hash));
-
-	$inspect('page:', page.url.pathname + page.url.hash);
 </script>
 
 <div class="docs">
