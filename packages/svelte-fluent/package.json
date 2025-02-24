@@ -37,7 +37,7 @@
 		"npm-run-all2": "7.0.2",
 		"postcss": "8.5.3",
 		"postcss-load-config": "6.0.1",
-		"postcss-preset-env": "10.1.4",
+		"postcss-preset-env": "10.1.5",
 		"publint": "0.3.5",
 		"semver": "7.7.1",
 		"svelte": "5.20.2",
