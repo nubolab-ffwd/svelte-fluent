@@ -13,7 +13,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
 	},
 	"devDependencies": {
-		"@csstools/postcss-global-data": "^3.0.0",
+		"@csstools/postcss-global-data": "3.0.0",
 		"@fluent/bundle": "0.18.0",
 		"@fluent/langneg": "0.7.0",
 		"@fontsource-variable/manrope": "5.1.1",
