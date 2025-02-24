@@ -1,1 +1,0 @@
-import{t as m,a as s}from"./CjQ-kR8O.js";import{t as o,c as f,r as c}from"./HSyAO-bR.js";import{s as i}from"./BQU2vslW.js";import{s as n}from"./CCwkyCgE.js";import{b as p}from"./7dXofw3W.js";var l=m("<a> </a>");function _(a,t){var e=l(),r=f(e,!0);c(e),o(()=>{n(e,"href",p+"/docs/"+(t.legacy?"legacy":"reference")+"/"+t.name),i(r,t.name)}),s(a,e)}export{_ as R};
