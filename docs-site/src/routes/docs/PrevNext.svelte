@@ -1,35 +1,68 @@
 <script lang="ts">
+	import type { MenuPath } from './menu';
 	import type { Item, TopLeveltem } from './Menu.svelte';
 
-	let {
-		menu,
-		activeMenuItem,
-		activeSubmenuItem
-	}: { menu: TopLeveltem[]; activeMenuItem?: TopLeveltem; activeSubmenuItem?: Item } = $props();
+	interface Props {
+		menu: TopLeveltem[];
+		activeMenuPath?: MenuPath;
+		activeSubmenuItem?: Item;
+	}
+	let { menu, activeMenuPath }: Props = $props();
 
-	let currentMenu = $derived(activeSubmenuItem ? (activeMenuItem?.submenu ?? []) : menu);
-	let parentMenu = $derived(activeSubmenuItem && menu);
+	let flatMenu = $derived(flattenMenu(menu));
+	let activeFlatMenuPath = $derived.by(() => {
+		const [activeTopIdx, activeSubIdx] = activeMenuPath ?? [];
+		if (activeTopIdx === undefined) {
+			return undefined;
+		}
+		return menu.entries().reduce((prev, [currentIdx, currentItem]) => {
+			if (currentIdx < activeTopIdx) {
+				prev += 1;
+			}
+			if (currentIdx < activeTopIdx && currentItem.submenu) {
+				prev += currentItem.submenu.length;
+			}
+			if (currentIdx === activeTopIdx && activeSubIdx !== undefined && currentItem.submenu) {
+				prev += 1;
+				prev += activeSubIdx;
+			}
+			return prev;
+		}, 0);
+	});
 
-	let currentItem = $derived(activeSubmenuItem ?? activeMenuItem);
-	let parentItem = $derived(activeSubmenuItem && activeMenuItem);
-
-	let currentItemIdx = $derived(currentItem ? currentMenu.indexOf(currentItem) : 0);
-	let parentItemIdx = $derived(parentItem && parentMenu ? parentMenu.indexOf(parentItem) : 0);
-
-	let prev = $derived(
-		currentItemIdx > 0
-			? currentMenu[currentItemIdx - 1]
-			: parentMenu && parentItemIdx > 0
-				? parentMenu[parentItemIdx - 1]
-				: null
+	let prevIdx = $derived(
+		activeFlatMenuPath !== undefined ? findPrevIndex(flatMenu, activeFlatMenuPath) : undefined
 	);
-	let next = $derived(
-		currentMenu.length > currentItemIdx + 1
-			? currentMenu[currentItemIdx + 1]
-			: parentMenu && parentMenu.length > parentItemIdx + 1
-				? parentMenu[parentItemIdx + 1]
-				: null
+	let nextIdx = $derived(
+		activeFlatMenuPath !== undefined ? findNextIndex(flatMenu, activeFlatMenuPath) : undefined
 	);
+
+	let prev = $derived(prevIdx !== undefined ? flatMenu.at(prevIdx) : undefined);
+	let next = $derived(nextIdx !== undefined ? flatMenu.at(nextIdx) : undefined);
+
+	function flattenMenu(menu: TopLeveltem[] | Item[]): Item[] {
+		return menu.flatMap((item) => {
+			if ('submenu' in item && item.submenu) {
+				const newItem = { ...item };
+				delete newItem.submenu;
+				return [newItem, ...flattenMenu(item.submenu)];
+			}
+			return [item];
+		});
+	}
+
+	function findPrevIndex(menu: Item[], current: number): number | undefined {
+		const res = menu
+			.slice(0, current)
+			.reverse()
+			.findIndex((item) => item.href && !item.inPage);
+		return res >= 0 ? current - 1 - res : undefined;
+	}
+
+	function findNextIndex(menu: Item[], current: number): number | undefined {
+		const res = menu.slice(current + 1).findIndex((item) => item.href && !item.inPage);
+		return res >= 0 ? current + 1 + res : undefined;
+	}
 </script>
 
 <div class="prev-next">

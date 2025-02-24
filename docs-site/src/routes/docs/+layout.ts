@@ -7,9 +7,9 @@ import { submenu as referenceSubmenu } from './reference/menu';
 import { submenu as legacySubmenu } from './legacy/menu';
 import type { Item as MenuItem, TopLeveltem as TopLevelMenultem } from './Menu.svelte';
 import { base } from '$app/paths';
+import { findActiveMenuItem, type Menu } from './menu';
 
 type Heading = { text: string; id: string; rank: number };
-type Menu = (TopLevelMenultem & { title?: string; submenu?: (MenuItem & { title?: string })[] })[];
 
 function buildMenu(
 	ev: LayoutLoadEvent,
@@ -34,55 +34,38 @@ function buildHeadingSubmenu(baseHref: string, headings: Heading[], rank: number
 			return {
 				text: h.text,
 				href,
-				active: false
+				inPage: true
 			};
 		});
 }
 
 export const load = (async (ev) => {
 	const menu: Menu = [
-		buildMenu(ev, base + '/docs/getting-started', gettingStartedHeadings, 1),
-		buildMenu(ev, base + '/docs/version-1', version1Headings, 1),
-		buildMenu(ev, base + '/docs/tutorial', tutorialHeadings, 1),
-		buildMenu(ev, base + '/docs/integration', integrationHeadings, 1),
+		buildMenu(ev, base + '/docs/getting-started/', gettingStartedHeadings, 1),
+		buildMenu(ev, base + '/docs/version-1/', version1Headings, 1),
+		buildMenu(ev, base + '/docs/tutorial/', tutorialHeadings, 1),
+		buildMenu(ev, base + '/docs/integration/', integrationHeadings, 1),
 		{
 			text: 'Reference',
-			href: base + '/docs/reference',
+			href: base + '/docs/reference/',
 			submenu: referenceSubmenu
 		},
 		{
 			text: 'Legacy',
-			href: base + '/docs/legacy',
+			href: base + '/docs/legacy/',
 			submenu: legacySubmenu
 		}
 	];
-	let activeMenuItem;
-	let activeSubmenuItem;
-	for (const item of menu) {
-		if (item.href === ev.url.pathname) {
-			activeMenuItem = item;
-		}
-		for (const subitem of item.submenu ?? []) {
-			if (subitem.href === ev.url.pathname) {
-				activeMenuItem = item;
-				activeSubmenuItem = subitem;
-			}
-		}
-		if (activeMenuItem) {
-			break;
-		}
-	}
-
+	const active = findActiveMenuItem(menu, ev.url.pathname);
 	const title =
-		activeSubmenuItem?.title ??
-		activeSubmenuItem?.text ??
-		activeMenuItem?.title ??
-		activeMenuItem?.text ??
+		active.submenu?.title ??
+		active.submenu?.text ??
+		active.menu?.title ??
+		active.menu?.text ??
 		'Documentation';
+
 	return {
 		menu,
-		activeMenuItem,
-		activeSubmenuItem,
 		seo: { title, description: title }
 	};
 }) satisfies LayoutLoad;

@@ -3,15 +3,20 @@
 	import type { LayoutData } from './$types';
 	import PrevNext from './PrevNext.svelte';
 	import Menu from './Menu.svelte';
+	import { page } from '$app/state';
+	import { findActiveMenuItem } from './menu';
 
 	let { data, children }: { data: LayoutData; children: Snippet } = $props();
+	let activeMenu = $derived(findActiveMenuItem(data.menu, page.url.pathname, page.url.hash));
+
+	$inspect('page:', page.url.pathname + page.url.hash);
 </script>
 
 <div class="docs">
 	<div class="navigation">
 		<nav aria-label="Docs">
 			<!--eslint-disable-next-line svelte/valid-compile -- https://github.com/sveltejs/eslint-plugin-svelte/issues/652 -->
-			<Menu items={data.menu} />
+			<Menu items={data.menu} activeMenuPath={activeMenu.path} />
 		</nav>
 	</div>
 	<div class="content">
@@ -20,11 +25,7 @@
 			<hr />
 			<nav>
 				<!--eslint-disable-next-line svelte/valid-compile -- https://github.com/sveltejs/eslint-plugin-svelte/issues/652 -->
-				<PrevNext
-					menu={data.menu}
-					activeMenuItem={data.activeMenuItem}
-					activeSubmenuItem={data.activeSubmenuItem}
-				/>
+				<PrevNext menu={data.menu} activeMenuPath={activeMenu.path} />
 			</nav>
 		</div>
 	</div>

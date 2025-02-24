@@ -17,5 +17,5 @@ export const pages = Object.fromEntries(
 export const submenu = Object.entries(pages).map(([path, metadata]) => ({
 	text: metadata?.menuTitle ?? metadata?.title,
 	title: metadata?.title,
-	href: base + '/docs/legacy/' + path
+	href: base + '/docs/legacy/' + path + '/'
 }));

@@ -2,24 +2,41 @@
 	export type Item = {
 		text: string;
 		href?: string;
+		inPage?: boolean;
 	};
 	export type TopLeveltem = Item & { submenu?: Item[] };
 </script>
 
 <script lang="ts">
+	import type { MenuPath } from './menu';
+
 	import Menu from './Menu.svelte';
-	let { items, toplevel = true }: { items: TopLeveltem[]; toplevel?: boolean } = $props();
+	interface Props {
+		items: TopLeveltem[];
+		activeMenuPath?: MenuPath;
+		toplevel?: boolean;
+	}
+	let { items, activeMenuPath, toplevel = true }: Props = $props();
+	let activeIdx = $derived(activeMenuPath?.at(0));
 </script>
 
 <div class="menu" class:toplevel>
 	<ul>
-		{#each items as { text, href, submenu }}
+		{#each items as item, idx}
 			<li>
-				<div class="item" class:has-submenu={!!submenu}>
-					{#if href}<a {href}>{text}</a>{:else}{text}{/if}
+				<div class="item" class:has-submenu={!!item.submenu} class:active={idx == activeIdx}>
+					{#if item.href}
+						<a href={item.href}>{item.text}</a>
+					{:else}
+						{item.text}
+					{/if}
 				</div>
-				{#if submenu}
-					<Menu items={submenu} toplevel={false} />
+				{#if item.submenu}
+					<Menu
+						items={item.submenu}
+						activeMenuPath={idx == activeIdx ? activeMenuPath?.slice(1) : undefined}
+						toplevel={false}
+					/>
 				{/if}
 			</li>
 		{/each}
