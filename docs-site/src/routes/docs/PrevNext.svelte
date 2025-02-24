@@ -5,7 +5,6 @@
 	interface Props {
 		menu: TopLeveltem[];
 		activeMenuPath?: MenuPath;
-		activeSubmenuItem?: Item;
 	}
 	let { menu, activeMenuPath }: Props = $props();
 
@@ -15,7 +14,7 @@
 		if (activeTopIdx === undefined) {
 			return undefined;
 		}
-		return menu.entries().reduce((prev, [currentIdx, currentItem]) => {
+		return [...menu.entries()].reduce((prev, [currentIdx, currentItem]) => {
 			if (currentIdx < activeTopIdx) {
 				prev += 1;
 			}
