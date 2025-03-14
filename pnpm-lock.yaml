@@ -64,8 +64,8 @@ importers:
         specifier: 0.7.0
         version: 0.7.0
       '@fontsource-variable/manrope':
-        specifier: 5.1.1
-        version: 5.1.1
+        specifier: 5.2.5
+        version: 5.2.5
       '@iconify-json/mdi':
         specifier: 1.2.3
         version: 1.2.3
@@ -968,8 +968,8 @@ packages:
     peerDependencies:
       '@fluent/bundle': '>= 0.13.0'
 
-  '@fontsource-variable/manrope@5.1.1':
-    resolution: {integrity: sha512-bJTED5u+nlztikeRJwCgK3ij3qMVsivP4xTxpcrfQ15crvZuW9hjM5f61CgYF3ryL0rJwkjzOpZjB4CwL/pnBw==}
+  '@fontsource-variable/manrope@5.2.5':
+    resolution: {integrity: sha512-6Mo3ldtgAhxvSSyy+bLbFRjkiYhVo6RLcasJfj9Du5k2nX16/RwjQdBbZJfvsofVt6GqQ+O6AVkazmS3Xw5R9A==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -4038,7 +4038,7 @@ snapshots:
     dependencies:
       '@fluent/bundle': 0.18.0
 
-  '@fontsource-variable/manrope@5.1.1': {}
+  '@fontsource-variable/manrope@5.2.5': {}
 
   '@humanfs/core@0.19.1': {}
 
