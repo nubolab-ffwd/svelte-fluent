@@ -54,5 +54,5 @@
 	"dependencies": {
 		"jsdom": "^26.0.0"
 	},
-	"packageManager": "pnpm@10.6.3"
+	"packageManager": "pnpm@10.6.5"
 }
