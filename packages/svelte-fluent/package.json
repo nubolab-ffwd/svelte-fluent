@@ -28,7 +28,7 @@
 		"cached-iterable": "^0.3.0"
 	},
 	"devDependencies": {
-		"@fluent/bundle": "0.18.0",
+		"@fluent/bundle": "0.19.0",
 		"@fluent/langneg": "0.7.0",
 		"@sveltejs/package": "2.3.10",
 		"@sveltejs/vite-plugin-svelte": "5.0.3",
@@ -48,7 +48,7 @@
 		"vite": "6.2.2"
 	},
 	"peerDependencies": {
-		"@fluent/bundle": "^0.18.0",
+		"@fluent/bundle": "^0.18.0 || ^0.19.0",
 		"jsdom": "^20.0.0 || ^21.0.0 || ^22.0.0 || ^23.0.0 || ^24.0.0 || ^25.0.0 || ^26.0.0",
 		"rollup": "^4.0.0",
 		"svelte": "^5.0.0",

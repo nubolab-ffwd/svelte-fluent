@@ -12,7 +12,7 @@
 		"test:ssr": "TEST_SSR=1 vitest run"
 	},
 	"devDependencies": {
-		"@fluent/bundle": "0.18.0",
+		"@fluent/bundle": "0.19.0",
 		"@nubolab-ffwd/svelte-fluent": "workspace:^",
 		"@sveltejs/vite-plugin-svelte": "5.0.3",
 		"@testing-library/svelte": "5.2.7",
