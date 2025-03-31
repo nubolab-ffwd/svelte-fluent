@@ -5,7 +5,7 @@
 <h1>Legacy</h1>
 
 <ul>
-	{#each submenu as item}
+	{#each submenu as item (item)}
 		<li>
 			<a href={item.href}>{item.text}</a>
 		</li>

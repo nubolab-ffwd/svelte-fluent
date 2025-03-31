@@ -22,7 +22,7 @@
 
 <div class="menu" class:toplevel>
 	<ul>
-		{#each items as item, idx}
+		{#each items as item, idx (item)}
 			<li>
 				<div class="item" class:has-submenu={!!item.submenu} class:active={idx == activeIdx}>
 					{#if item.href}
