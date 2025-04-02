@@ -10,7 +10,7 @@
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
 	},
 	"devDependencies": {
-		"@fluent/bundle": "0.19.0",
+		"@fluent/bundle": "0.19.1",
 		"@fluent/langneg": "0.7.0",
 		"@nubolab-ffwd/svelte-fluent": "workspace:^",
 		"@sveltejs/vite-plugin-svelte": "5.0.3",
