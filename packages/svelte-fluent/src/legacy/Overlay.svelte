@@ -12,7 +12,5 @@
 </script>
 
 <Overlay {id} {args}>
-	{#snippet children()}
-		<slot />
-	{/snippet}
+	<slot />
 </Overlay>

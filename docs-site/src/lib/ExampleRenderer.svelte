@@ -24,7 +24,7 @@
 </script>
 
 <div class="stack" aria-label="Code example">
-	{#each Object.entries(normalizedSources) as [name, entry], idx}
+	{#each Object.entries(normalizedSources) as [name, entry], idx (name)}
 		<div class="code-block stack">
 			{#if idx !== 0}
 				<span class="filepath">{name}</span>
