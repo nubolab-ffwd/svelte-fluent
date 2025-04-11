@@ -1,18 +1,19 @@
 import 'unplugin-icons/types/svelte';
 
-// See https://kit.svelte.dev/docs/types#app
+// See https://svelte.dev/docs/kit/types#app.d.ts
 // for information about these interfaces
-// and what to do when importing types
-declare namespace App {
-	// interface Locals {}
-	// interface Platform {}
-	// interface Session {}
-	// interface Stuff {}
-	interface PageData {
-		seo?: {
-			title?: string;
-			description?: string;
-		};
+declare global {
+	namespace App {
+		// interface Error {}
+		// interface Locals {}
+		interface PageData {
+			seo?: {
+				title?: string;
+				description?: string;
+			};
+		}
+		// interface PageState {}
+		// interface Platform {}
 	}
 }
 
