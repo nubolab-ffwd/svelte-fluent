@@ -19,7 +19,7 @@
 		"@types/jsdom": "21.1.7",
 		"@vitest/ui": "3.1.1",
 		"autoprefixer": "10.4.21",
-		"npm-run-all2": "7.0.2",
+		"npm-run-all2": "8.0.4",
 		"pathe": "2.0.3",
 		"postcss": "8.5.3",
 		"postcss-load-config": "6.0.1",
