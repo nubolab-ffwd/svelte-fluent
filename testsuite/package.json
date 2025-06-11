@@ -23,7 +23,7 @@
 		"pathe": "2.0.3",
 		"postcss": "8.5.3",
 		"postcss-load-config": "6.0.1",
-		"postcss-preset-env": "10.1.5",
+		"postcss-preset-env": "10.2.3",
 		"semver": "7.7.1",
 		"svelte": "5.25.12",
 		"svelte-check": "4.2.1",
