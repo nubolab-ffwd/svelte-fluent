@@ -24,7 +24,7 @@
 		"lint-staged": "16.1.2",
 		"prettier": "3.5.3",
 		"prettier-plugin-svelte": "3.4.0",
-		"typescript-eslint": "8.33.1"
+		"typescript-eslint": "8.34.1"
 	},
 	"packageManager": "pnpm@10.12.1",
 	"lint-staged": {
