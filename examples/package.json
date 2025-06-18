@@ -13,7 +13,7 @@
 		"@fluent/bundle": "0.19.1",
 		"@fluent/langneg": "0.7.0",
 		"@nubolab-ffwd/svelte-fluent": "workspace:^",
-		"@sveltejs/vite-plugin-svelte": "5.0.3",
+		"@sveltejs/vite-plugin-svelte": "5.1.0",
 		"@testing-library/svelte": "5.2.8",
 		"@types/jsdom": "21.1.7",
 		"@vitest/ui": "3.2.3",
