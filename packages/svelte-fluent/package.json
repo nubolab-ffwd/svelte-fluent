@@ -39,7 +39,7 @@
 		"postcss-load-config": "6.0.1",
 		"postcss-preset-env": "10.2.3",
 		"publint": "0.3.12",
-		"semver": "7.7.1",
+		"semver": "7.7.2",
 		"svelte": "5.25.12",
 		"svelte-check": "4.2.1",
 		"svelte2tsx": "0.7.39",

@@ -130,8 +130,8 @@ importers:
         specifier: 1.1.0
         version: 1.1.0
       semver:
-        specifier: 7.7.1
-        version: 7.7.1
+        specifier: 7.7.2
+        version: 7.7.2
       shiki:
         specifier: 3.4.2
         version: 3.4.2
@@ -282,8 +282,8 @@ importers:
         specifier: 0.3.12
         version: 0.3.12
       semver:
-        specifier: 7.7.1
-        version: 7.7.1
+        specifier: 7.7.2
+        version: 7.7.2
       svelte:
         specifier: 5.25.12
         version: 5.25.12
@@ -346,8 +346,8 @@ importers:
         specifier: 10.2.3
         version: 10.2.3(postcss@8.5.3)
       semver:
-        specifier: 7.7.1
-        version: 7.7.1
+        specifier: 7.7.2
+        version: 7.7.2
       svelte:
         specifier: 5.25.12
         version: 5.25.12
@@ -2986,6 +2986,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.7.2:
+    resolution: {integrity: sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   set-cookie-parser@2.6.0:
     resolution: {integrity: sha512-RVnVQxTXuerk653XfuliOxBP81Sf0+qfQE73LIYKcyMYHG94AuH0kgrQpRDuTZnSmjpysHmzxJXKNfa6PjFhyQ==}
 
@@ -3577,7 +3582,7 @@ snapshots:
   '@commitlint/is-ignored@19.8.1':
     dependencies:
       '@commitlint/types': 19.8.1
-      semver: 7.7.1
+      semver: 7.7.2
 
   '@commitlint/lint@19.8.1':
     dependencies:
@@ -4315,7 +4320,7 @@ snapshots:
       chokidar: 4.0.3
       kleur: 4.1.5
       sade: 1.8.1
-      semver: 7.7.1
+      semver: 7.7.2
       svelte: 5.25.12
       svelte2tsx: 0.7.39(svelte@5.25.12)(typescript@5.8.3)
     transitivePeerDependencies:
@@ -4476,7 +4481,7 @@ snapshots:
       fast-glob: 3.3.2
       is-glob: 4.0.3
       minimatch: 9.0.4
-      semver: 7.7.1
+      semver: 7.7.2
       ts-api-utils: 2.1.0(typescript@5.8.3)
       typescript: 5.8.3
     transitivePeerDependencies:
@@ -6154,6 +6159,8 @@ snapshots:
       xmlchars: 2.2.0
 
   semver@7.7.1: {}
+
+  semver@7.7.2: {}
 
   set-cookie-parser@2.6.0: {}
 
