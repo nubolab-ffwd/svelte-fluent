@@ -102,9 +102,9 @@ exports[`Example provider/App.svelte > should render 1`] = `
 
 exports[`Example tutorial/attributes/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[--><label>Login <input type="email" placeholder="email@example.com" title="Type your login email" aria-label="Login input value"></label><!----><!--]--><!--]-->",
+  "body": "<!--[--><!--[--><label>Login <input type="email" placeholder="email@example.com" title="Type your login email" aria-label="Login input value"/></label><!----><!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[--><label>Login <input type="email" placeholder="email@example.com" title="Type your login email" aria-label="Login input value"></label><!----><!--]--><!--]-->",
+  "html": "<!--[--><!--[--><label>Login <input type="email" placeholder="email@example.com" title="Type your login email" aria-label="Login input value"/></label><!----><!--]--><!--]-->",
 }
 `;
 
