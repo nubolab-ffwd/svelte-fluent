@@ -43,7 +43,7 @@ export default function rehypeHeadings() {
 		} else {
 			moduleScriptNode = {
 				type: 'raw',
-				value: `<script module>\n\t${scriptText}\n</script>`
+				value: `<script context="module">\n\t${scriptText}\n</script>`
 			};
 			tree.children = [moduleScriptNode, ...tree.children];
 		}
