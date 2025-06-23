@@ -139,8 +139,8 @@ importers:
         specifier: 5.34.7
         version: 5.34.7
       svelte-check:
-        specifier: 4.2.1
-        version: 4.2.1(picomatch@4.0.2)(svelte@5.34.7)(typescript@5.8.3)
+        specifier: 4.2.2
+        version: 4.2.2(picomatch@4.0.2)(svelte@5.34.7)(typescript@5.8.3)
       svelte-fluent-examples:
         specifier: workspace:^
         version: link:../examples
@@ -209,8 +209,8 @@ importers:
         specifier: 5.34.7
         version: 5.34.7
       svelte-check:
-        specifier: 4.2.1
-        version: 4.2.1(picomatch@4.0.2)(svelte@5.34.7)(typescript@5.8.3)
+        specifier: 4.2.2
+        version: 4.2.2(picomatch@4.0.2)(svelte@5.34.7)(typescript@5.8.3)
       svelte2tsx:
         specifier: 0.7.40
         version: 0.7.40(svelte@5.34.7)(typescript@5.8.3)
@@ -288,8 +288,8 @@ importers:
         specifier: 5.34.7
         version: 5.34.7
       svelte-check:
-        specifier: 4.2.1
-        version: 4.2.1(picomatch@4.0.2)(svelte@5.34.7)(typescript@5.8.3)
+        specifier: 4.2.2
+        version: 4.2.2(picomatch@4.0.2)(svelte@5.34.7)(typescript@5.8.3)
       svelte2tsx:
         specifier: 0.7.40
         version: 0.7.40(svelte@5.34.7)(typescript@5.8.3)
@@ -352,8 +352,8 @@ importers:
         specifier: 5.34.7
         version: 5.34.7
       svelte-check:
-        specifier: 4.2.1
-        version: 4.2.1(picomatch@4.0.2)(svelte@5.34.7)(typescript@5.8.3)
+        specifier: 4.2.2
+        version: 4.2.2(picomatch@4.0.2)(svelte@5.34.7)(typescript@5.8.3)
       svelte-fluent-examples:
         specifier: workspace:^
         version: link:../examples
@@ -1987,14 +1987,6 @@ packages:
   fastq@1.15.0:
     resolution: {integrity: sha512-wBrocU2LCXXa+lWBt8RoIRD89Fi8OdABODa/kEnyeyjS5aZO5/GNvI5sEINADqP/h8M29UHTHUb53sUu5Ihqdw==}
 
-  fdir@6.4.3:
-    resolution: {integrity: sha512-PMXmW2y1hDDfTSRc9gaXIuCCRpuoz3Kaz8cUelp3smouvfT632ozg2vrT6lJsHKKOF59YLbOGfAWGUcKEfRMQw==}
-    peerDependencies:
-      picomatch: ^3 || ^4
-    peerDependenciesMeta:
-      picomatch:
-        optional: true
-
   fdir@6.4.5:
     resolution: {integrity: sha512-4BG7puHpVsIYxZUbiUE3RqGloLaSSwzYie5jvasC4LWuBWzZawynvYouhjbQKw2JuIGYdm0DzIxl8iVidKlUEw==}
     peerDependencies:
@@ -3080,8 +3072,8 @@ packages:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
 
-  svelte-check@4.2.1:
-    resolution: {integrity: sha512-e49SU1RStvQhoipkQ/aonDhHnG3qxHSBtNfBRb9pxVXoa+N7qybAo32KgA9wEb2PCYFNaDg7bZCdhLD1vHpdYA==}
+  svelte-check@4.2.2:
+    resolution: {integrity: sha512-1+31EOYZ7NKN0YDMKusav2hhEoA51GD9Ws6o//0SphMT0ve9mBTsTUEX7OmDMadUP3KjNHsSKtJrqdSaD8CrGQ==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
     peerDependencies:
@@ -5060,10 +5052,6 @@ snapshots:
     dependencies:
       reusify: 1.0.4
 
-  fdir@6.4.3(picomatch@4.0.2):
-    optionalDependencies:
-      picomatch: 4.0.2
-
   fdir@6.4.5(picomatch@4.0.2):
     optionalDependencies:
       picomatch: 4.0.2
@@ -6251,11 +6239,11 @@ snapshots:
     dependencies:
       has-flag: 4.0.0
 
-  svelte-check@4.2.1(picomatch@4.0.2)(svelte@5.34.7)(typescript@5.8.3):
+  svelte-check@4.2.2(picomatch@4.0.2)(svelte@5.34.7)(typescript@5.8.3):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       chokidar: 4.0.3
-      fdir: 6.4.3(picomatch@4.0.2)
+      fdir: 6.4.5(picomatch@4.0.2)
       picocolors: 1.1.1
       sade: 1.8.1
       svelte: 5.34.7
