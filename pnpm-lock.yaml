@@ -100,8 +100,8 @@ importers:
         specifier: 3.0.1
         version: 3.0.1
       mdsvex:
-        specifier: 0.12.3
-        version: 0.12.3(svelte@5.34.7)
+        specifier: 0.12.6
+        version: 0.12.6(svelte@5.34.7)
       postcss:
         specifier: 8.5.6
         version: 8.5.6
@@ -2414,8 +2414,8 @@ packages:
   mdast-util-to-hast@13.2.0:
     resolution: {integrity: sha512-QGYKEuUsYT9ykKBCMOEDLsU5JRObWQusAolFMeko/tYPufNkRffBAQjIE+99jbA87xv6FgmjLtwjh9wBWajwAA==}
 
-  mdsvex@0.12.3:
-    resolution: {integrity: sha512-C/uIJamjNo5PHHnR3JHqsBPoLcfUBpzRmAEB6FLMXI/s7XHOceswjDMKqSPEW2WHmYpKm0taZ3U20GSyhMridA==}
+  mdsvex@0.12.6:
+    resolution: {integrity: sha512-pupx2gzWh3hDtm/iDW4WuCpljmyHbHi34r7ktOqpPGvyiM4MyfNgdJ3qMizXdgCErmvYC9Nn/qyjePy+4ss9Wg==}
     peerDependencies:
       svelte: ^3.56.0 || ^4.0.0 || ^5.0.0-next.120
 
@@ -5545,12 +5545,14 @@ snapshots:
       unist-util-visit: 5.0.0
       vfile: 6.0.1
 
-  mdsvex@0.12.3(svelte@5.34.7):
+  mdsvex@0.12.6(svelte@5.34.7):
     dependencies:
+      '@types/mdast': 4.0.4
       '@types/unist': 2.0.6
       prism-svelte: 0.4.7
       prismjs: 1.29.0
       svelte: 5.34.7
+      unist-util-visit: 2.0.3
       vfile-message: 2.0.4
 
   memorystream@0.3.1: {}
