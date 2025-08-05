@@ -1,10 +1,12 @@
 {
+	"$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
 	"packages": {
 		"packages/svelte-fluent": {
 			"release-type": "node",
 			"package-name": "@nubolab-ffwd/svelte-fluent",
 			"bootstrap-sha": "4cb551f03363b033dd34a1be8afaaeadbe8186d4",
-			"prerelease-type": "next"
+			"prerelease-type": "next",
+			"changelog-path": "/CHANGELOG.md"
 		}
 	}
 }
