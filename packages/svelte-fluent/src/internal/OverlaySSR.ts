@@ -23,6 +23,8 @@ const createEmptyOutput = (orig: PayloadOutput): PayloadOutput =>
 	typeof orig === 'string' ? '' : [];
 const getOutputAsString = (out: PayloadOutput): string =>
 	typeof out === 'string' ? out : out.join('');
+const replaceOutput = (out: PayloadOutput, content: string): PayloadOutput =>
+	typeof out === 'string' ? content : [content];
 const concatOutputs = (a: PayloadOutput, b: PayloadOutput): PayloadOutput => {
 	if (typeof a === 'string') {
 		return a + b;
@@ -48,7 +50,7 @@ function OverlaySSR($$payload: Payload, $$props: Props) {
 		rootNode.innerHTML = '';
 		rootNode.appendChild(templateNode.content.cloneNode(true));
 		translateElement(rootNode, translation);
-		$$payload.out = rootNode.outerHTML;
+		$$payload.out = replaceOutput($$payload.out, rootNode.outerHTML);
 	}
 	$$payload.out = concatOutputs(savedOut, $$payload.out);
 	$$payload.head.out = concatOutputs(savedHeadOut, $$payload.head.out);
