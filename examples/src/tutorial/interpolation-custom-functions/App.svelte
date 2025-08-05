@@ -12,6 +12,7 @@
 		}
 
 		if (arg instanceof FluentNumber) {
+			// eslint-disable-next-line svelte/prefer-svelte-reactivity
 			const date = new Date(Date.now());
 			const offset = arg.valueOf() - date.getDay();
 			date.setDate(date.getDate() + offset);
