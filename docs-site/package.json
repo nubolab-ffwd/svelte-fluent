@@ -19,7 +19,7 @@
 		"@fontsource-variable/manrope": "5.2.6",
 		"@iconify-json/mdi": "1.2.3",
 		"@nubolab-ffwd/svelte-fluent": "workspace:^",
-		"@sveltejs/adapter-static": "3.0.8",
+		"@sveltejs/adapter-static": "3.0.9",
 		"@sveltejs/kit": "2.27.0",
 		"@sveltejs/package": "2.4.0",
 		"@sveltejs/vite-plugin-svelte": "6.1.0",
