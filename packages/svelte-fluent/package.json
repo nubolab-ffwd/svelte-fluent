@@ -45,7 +45,7 @@
 		"svelte2tsx": "0.7.42",
 		"tslib": "2.8.1",
 		"typescript": "5.9.2",
-		"vite": "7.0.6"
+		"vite": "7.1.5"
 	},
 	"peerDependencies": {
 		"@fluent/bundle": "^0.18.0 || ^0.19.0",
