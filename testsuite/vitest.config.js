@@ -7,16 +7,24 @@ import { createRequire } from 'node:module';
 import * as fs from 'node:fs';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
 
-function getSvelteMajor() {
+const isSsrTest = process.env.TEST_SSR === '1';
+
+function getSvelteVersion() {
 	const require = createRequire(import.meta.url);
 	const sveltePackage = JSON.parse(
 		fs.readFileSync(require.resolve('svelte/package.json')).toString()
 	);
-	return semver.major(sveltePackage.version);
+	return sveltePackage.version;
 }
 
-const svelteMajor = getSvelteMajor();
-const isSsrTest = process.env.TEST_SSR === '1';
+function getSnapshotDir() {
+	const svelteVersion = getSvelteVersion();
+	const svelteMajor = semver.major(svelteVersion);
+	if (isSsrTest && semver.satisfies(svelteVersion, '<5.39.0')) {
+		return `svelte@${svelteMajor}-pre-async`;
+	}
+	return `svelte@${svelteMajor}`;
+}
 
 /** @type {Partial<import('vite').UserConfig['test']>} */
 const testConfigDom = {
@@ -36,7 +44,7 @@ export default defineConfig({
 		setupFiles: 'tests/setup.js',
 		resolveSnapshotPath: (testPath, snapExtension) => {
 			return join(
-				join(dirname(testPath), '__snapshots__', `svelte@${svelteMajor}`),
+				join(dirname(testPath), '__snapshots__', getSnapshotDir()),
 				`${basename(testPath)}${snapExtension}`
 			);
 		},
