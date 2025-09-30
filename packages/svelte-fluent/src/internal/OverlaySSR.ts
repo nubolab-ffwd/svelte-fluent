@@ -33,6 +33,10 @@ const concatOutputs = (a: PayloadOutput, b: PayloadOutput): PayloadOutput => {
 };
 
 function OverlaySSR($$payload: Payload, $$props: Props) {
+	if (!('out' in $$payload) || !('head' in $$payload)) {
+		// currently we have no way to SSR render Overlays with the new svelte async renderer architecture
+		return Overlay($$payload as unknown as Parameters<typeof Overlay>[0], $$props);
+	}
 	const savedOut = $$payload.out;
 	const savedHeadOut = $$payload.head.out;
 	$$payload.out = createEmptyOutput($$payload.out);
