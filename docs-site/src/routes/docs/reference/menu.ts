@@ -1,4 +1,5 @@
-import { base } from '$app/paths';
+import { resolve } from '$app/paths';
+import type { RouteId } from '$app/types';
 
 const stripPrefix = (str: string, prefix: string) =>
 	str.startsWith(prefix) ? str.slice(prefix.length) : str;
@@ -17,5 +18,5 @@ export const pages = Object.fromEntries(
 export const submenu = Object.entries(pages).map(([path, metadata]) => ({
 	text: metadata?.menuTitle ?? metadata?.title,
 	title: metadata?.title,
-	href: base + '/docs/reference/' + path + '/'
+	href: resolve(`/docs/reference/${path}/` as RouteId)
 }));

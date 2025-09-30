@@ -26,6 +26,7 @@
 			<li>
 				<div class="item" class:has-submenu={!!item.submenu} class:active={idx == activeIdx}>
 					{#if item.href}
+						<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 						<a href={item.href}>{item.text}</a>
 					{:else}
 						{item.text}

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Logo from '$lib/logo.svelte';
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 </script>
 
 <div class="hero with-sidebar right wrap-reverse" style:--content-min="50%">
@@ -11,7 +11,7 @@
 			<p class="tagline">Describe translations with Mozilla's natural-sounding Fluent syntax</p>
 		</div>
 		<div class="buttons">
-			<a class="button primary" href="{base}/docs/getting-started">Get started</a>
+			<a class="button primary" href={resolve('/docs/getting-started')}>Get started</a>
 			<a
 				class="button"
 				href="https://github.com/nubolab-ffwd/svelte-fluent"

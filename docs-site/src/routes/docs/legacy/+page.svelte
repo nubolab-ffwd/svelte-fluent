@@ -7,6 +7,7 @@
 <ul>
 	{#each submenu as item (item)}
 		<li>
+			<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 			<a href={item.href}>{item.text}</a>
 		</li>
 	{/each}
