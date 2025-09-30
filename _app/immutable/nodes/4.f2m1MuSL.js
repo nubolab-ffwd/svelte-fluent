@@ -1,1 +1,0 @@
-import{b as o}from"../chunks/L14Agd2A.js";import{R as r}from"../chunks/D0iwhpLH.js";function n(e,t){throw new r(e,t.toString())}const a=()=>{n(302,o+"/docs/getting-started")},c=Object.freeze(Object.defineProperty({__proto__:null,load:a},Symbol.toStringTag,{value:"Module"}));export{c as universal};
