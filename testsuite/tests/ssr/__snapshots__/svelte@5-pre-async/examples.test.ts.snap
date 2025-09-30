@@ -66,33 +66,37 @@ exports[`Example localized/static-text/App.svelte > should render 1`] = `
 
 exports[`Example localized-legacy/attributes/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[--><!--[--><div>Please confirm the action.</div> <div><button>Ok</button> <button>Cancel</button></div><!--]--><!----><!--]--><!--]-->",
+  "body": "<!--[--><!--[--><!----><div>Please confirm the action.</div> <div><button>Ok</button> <button>Cancel</button></div><!----><!----><!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[--><!--[--><div>Please confirm the action.</div> <div><button>Ok</button> <button>Cancel</button></div><!--]--><!----><!--]--><!--]-->",
+  "html": "<!--[--><!--[--><!----><div>Please confirm the action.</div> <div><button>Ok</button> <button>Cancel</button></div><!----><!----><!--]--><!--]-->",
 }
 `;
 
 exports[`Example overlay/dynamic-text/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><svelte-fluent-overlay style="display: contents;"></svelte-fluent-overlay><!--]-->",
+  "body": "<!--[--><svelte-fluent-overlay style="display: contents;">You can download "⁨Example Product⁩" by clicking
+on the <strong>Download</strong> button or read
+the <a data-l10n-name="release-notes" href="https://example.com/" target="_blank" rel="noreferrer">release notes</a> to learn more.</svelte-fluent-overlay><!--]-->",
   "head": "<!--[--><template><a data-l10n-name="release-notes" href="https://example.com/" target="_blank" rel="noreferrer"></a><!----></template><!--]-->",
-  "html": "<!--[--><svelte-fluent-overlay style="display: contents;"></svelte-fluent-overlay><!--]-->",
+  "html": "<!--[--><svelte-fluent-overlay style="display: contents;">You can download "⁨Example Product⁩" by clicking
+on the <strong>Download</strong> button or read
+the <a data-l10n-name="release-notes" href="https://example.com/" target="_blank" rel="noreferrer">release notes</a> to learn more.</svelte-fluent-overlay><!--]-->",
 }
 `;
 
 exports[`Example overlay/static-text/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><svelte-fluent-overlay style="display: contents;"></svelte-fluent-overlay><!--]-->",
+  "body": "<!--[--><svelte-fluent-overlay style="display: contents;">Read the <a data-l10n-name="link" href="https://example.com/">documentation</a> for more information.</svelte-fluent-overlay><!--]-->",
   "head": "<!--[--><template><a data-l10n-name="link" href="https://example.com/"></a><!----></template><!--]-->",
-  "html": "<!--[--><svelte-fluent-overlay style="display: contents;"></svelte-fluent-overlay><!--]-->",
+  "html": "<!--[--><svelte-fluent-overlay style="display: contents;">Read the <a data-l10n-name="link" href="https://example.com/">documentation</a> for more information.</svelte-fluent-overlay><!--]-->",
 }
 `;
 
 exports[`Example provider/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[--><!--[!-->Hello, world!<!--]--><!--]--><!--]-->",
+  "body": "<!--[--><!----><!--[!-->Hello, world!<!--]--><!----><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[--><!--[!-->Hello, world!<!--]--><!--]--><!--]-->",
+  "html": "<!--[--><!----><!--[!-->Hello, world!<!--]--><!----><!--]-->",
 }
 `;
 

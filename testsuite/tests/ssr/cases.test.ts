@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest';
-import { render } from 'svelte/server';
 import type { ComponentModule } from '../utils';
+import { renderSync } from './render';
 
 vi.stubGlobal('navigator', { languages: [] });
 
@@ -15,7 +15,7 @@ for (const test of tests) {
 	describe(`Case ${test.name}`, () => {
 		it('should render', async () => {
 			const component = ((await test.module()) as ComponentModule).default;
-			const res = render(component, { props: {}, context: new Map() });
+			const res = renderSync(component, { props: {}, context: new Map() });
 			expect(res).toMatchSnapshot();
 		});
 	});
