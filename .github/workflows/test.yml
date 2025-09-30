@@ -58,6 +58,7 @@ jobs:
           - jsdom@^25.0.0
           - jsdom@^26.0.0
           - svelte@5.36.7
+          - svelte@5.38.10
     steps:
       - uses: actions/checkout@v4.2.2
       - uses: pnpm/action-setup@v4.1.0
