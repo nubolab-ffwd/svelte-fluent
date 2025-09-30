@@ -9,6 +9,15 @@ menuTitle: Overlay
 
 # {title}
 
+> **Server-side rendering**
+>
+> Due to changes in Svelte's internal rendering architecture that support async rendering,
+> server-side rendering is currently disabled when using Svelte `5.39.0` and later versions.
+> In these versions the server-side output of Overlays will be an empty element.
+>
+> It's currently uncertain whether SSR functionality for Overlays can be restored once
+> Svelte's internal rendering API stabilizes.
+
 The experimental Overlay component uses [fluent.js DOM Overlays](https://github.com/projectfluent/fluent.js/wiki/DOM-Overlays)
 to render translation messages that contain HTML markup.
 
