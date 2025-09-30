@@ -14,7 +14,7 @@
 	"devDependencies": {
 		"@fluent/bundle": "0.19.1",
 		"@nubolab-ffwd/svelte-fluent": "workspace:^",
-		"@sveltejs/vite-plugin-svelte": "6.1.0",
+		"@sveltejs/vite-plugin-svelte": "6.2.1",
 		"@testing-library/svelte": "5.2.8",
 		"@types/jsdom": "21.1.7",
 		"@types/semver": "7.7.1",
