@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { resolve } from '$app/paths';
 	import Logo from '$lib/logo.svelte';
 	import IconGitHub from '~icons/mdi/github';
 </script>
@@ -7,12 +7,12 @@
 <header>
 	<nav aria-label="Primary" class="cluster" style:--justify="space-between">
 		<div class="cluster">
-			<a class="logo" href="{base}/">
+			<a class="logo" href={resolve('/')}>
 				<Logo /> svelte-fluent
 			</a>
 		</div>
 		<div class="cluster">
-			<a href="{base}/docs">Docs</a>
+			<a href={resolve('/docs')}>Docs</a>
 			<a
 				href="https://github.com/nubolab-ffwd/svelte-fluent"
 				target="_blank"

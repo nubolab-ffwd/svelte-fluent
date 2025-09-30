@@ -66,6 +66,7 @@
 
 <div class="prev-next">
 	{#if prev}
+		<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 		<a class="prev" href={prev?.href}>
 			<span class="desc">Previous page</span>
 			<span class="text">{prev?.text}</span>
@@ -74,6 +75,7 @@
 		<div></div>
 	{/if}
 	{#if next}
+		<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 		<a class="next" href={next?.href}>
 			<span class="desc">Next page</span>
 			<span class="text">{next?.text}</span>
