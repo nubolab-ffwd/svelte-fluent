@@ -26,7 +26,7 @@
 		"postcss-load-config": "6.0.1",
 		"postcss-preset-env": "10.4.0",
 		"semver": "7.7.2",
-		"svelte": "5.39.6",
+		"svelte": "5.39.8",
 		"svelte-check": "4.3.2",
 		"svelte-fluent-examples": "workspace:^",
 		"svelte2tsx": "0.7.44",
