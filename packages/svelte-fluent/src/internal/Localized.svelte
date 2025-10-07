@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { FluentVariable } from '@fluent/bundle';
-	import { getInternalFluentContext } from './context.svelte.js';
+	import { useSvelteFluent } from './context.svelte.js';
 	import type { Snippet } from 'svelte';
 	import LocalizedTag from './LocalizedTag.svelte';
 	import { ComponentElement, TagElement } from './elements.js';
@@ -58,7 +58,7 @@
 		  };
 	type Content = ContentItem[];
 
-	const ctx = getInternalFluentContext();
+	const fluent = useSvelteFluent();
 
 	interface Props {
 		id: string;
@@ -72,12 +72,12 @@
 	let {
 		id,
 		args,
-		tag = 'div',
+		tag = 'span',
 		attributes,
 		elements: propElements = {},
 		outputTag
 	}: Props = $props();
-	let translation = $derived(getTranslation(ctx.fluent, id, args, true));
+	let translation = $derived(getTranslation(fluent.current, id, args, true));
 
 	let elementConfigs = $derived(new Map(Object.entries(propElements)));
 
@@ -153,7 +153,7 @@
 
 	function getContent(source: string) {
 		const content: Content = [];
-		ctx.fluent.markupParser.parse(source, makeParserHandlers(content));
+		fluent.current.markupParser.parse(source, makeParserHandlers(content));
 		return content;
 	}
 </script>
