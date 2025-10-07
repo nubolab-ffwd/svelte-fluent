@@ -1,5 +1,5 @@
 <script>
-	import { Overlay } from '@nubolab-ffwd/svelte-fluent';
+	import { Localized as Overlay } from '@nubolab-ffwd/svelte-fluent';
 	let { productName = 'Example Product' } = $props();
 </script>
 

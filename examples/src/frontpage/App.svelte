@@ -25,7 +25,6 @@ shared-photos =
 	initFluentContext(() => createSvelteFluent([bundle]));
 </script>
 
-<strong><Localized id="hello-user" args={{ userName }} /></strong>
-<p>
-	<Localized id="shared-photos" args={{ userName, userGender, photoCount }} />
-</p>
+<Localized id="hello-user" args={{ userName }} tag="strong" />
+
+<Localized id="shared-photos" args={{ userName, userGender, photoCount }} tag="p" />

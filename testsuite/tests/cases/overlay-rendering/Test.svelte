@@ -1,5 +1,5 @@
 <script>
-	import { Overlay } from '@nubolab-ffwd/svelte-fluent';
+	import { Localized as Overlay } from '@nubolab-ffwd/svelte-fluent';
 	import { FluentBundle, FluentResource } from '@fluent/bundle';
 	import { createSvelteFluent, initFluentContext } from '@nubolab-ffwd/svelte-fluent';
 

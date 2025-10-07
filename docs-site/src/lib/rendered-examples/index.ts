@@ -6,10 +6,8 @@ export { default as LocalizedAttributesExample } from './localized/LocalizedAttr
 export { default as LocalizedAttributesWithVariablesExample } from './localized/LocalizedAttributesWithVariablesExample.svelte';
 export { default as LocalizedDynamicTextExample } from './localized/LocalizedDynamicTextExample.svelte';
 export { default as LocalizedStaticTextExample } from './localized/LocalizedStaticTextExample.svelte';
-export { default as LocalizedLegacyAttributesExample } from './localized-legacy/LocalizedLegacyAttributesExample.svelte';
 export { default as OverlayDynamicTextExample } from './overlay/OverlayDynamicTextExample.svelte';
 export { default as OverlayStaticTextExample } from './overlay/OverlayStaticTextExample.svelte';
-export { default as ProviderExample } from './provider/ProviderExample.svelte';
 export { default as TutorialAttributesExample } from './tutorial/TutorialAttributesExample.svelte';
 export { default as TutorialFirstStepsExample } from './tutorial/TutorialFirstStepsExample.svelte';
 export { default as TutorialInterpolationCustomFunctionsExample } from './tutorial/TutorialInterpolationCustomFunctionsExample.svelte';

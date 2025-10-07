@@ -4,7 +4,6 @@ import { headings as tutorialHeadings } from './tutorial/+page.svelte.md';
 import { headings as version1Headings } from './version-1/+page.svelte.md';
 import { headings as integrationHeadings } from './integration/+page.svelte.md';
 import { submenu as referenceSubmenu } from './reference/menu';
-import { submenu as legacySubmenu } from './legacy/menu';
 import type { Item as MenuItem, TopLeveltem as TopLevelMenultem } from './Menu.svelte';
 import { base } from '$app/paths';
 import { findActiveMenuItem, type Menu } from './menu';
@@ -49,11 +48,6 @@ export const load = (async (ev) => {
 			text: 'Reference',
 			href: base + '/docs/reference/',
 			submenu: referenceSubmenu
-		},
-		{
-			text: 'Legacy',
-			href: base + '/docs/legacy/',
-			submenu: legacySubmenu
 		}
 	];
 	const active = findActiveMenuItem(menu, ev.url.pathname);
