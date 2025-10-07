@@ -68,11 +68,6 @@
 			"svelte": "./dist/index.js",
 			"default": "./dist/index.js"
 		},
-		"./legacy": {
-			"types": "./dist/legacy/index.d.ts",
-			"svelte": "./dist/legacy/index.js",
-			"default": "./dist/legacy/index.js"
-		},
 		"./rollup": {
 			"types": "./dist/rollup.d.ts",
 			"require": "./dist/rollup.cjs",
@@ -93,9 +88,6 @@
 	"types": "./dist/client.d.ts",
 	"typesVersions": {
 		">4.0": {
-			"legacy": [
-				"./dist/legacy/index.d.ts"
-			],
 			"rollup": [
 				"./dist/rollup.d.ts"
 			],
