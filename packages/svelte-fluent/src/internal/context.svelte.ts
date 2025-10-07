@@ -1,30 +1,23 @@
 import type { SvelteFluent } from './fluent.js';
 import { getContext, setContext } from 'svelte';
-import { getTranslation } from './translation.js';
 
 const CONTEXT_KEY = Symbol('svelte-fluent');
-
-// utility type to get all args except first of getTranslation function
-type getTranslationArgs = typeof getTranslation extends (
-	fluent: SvelteFluent,
-	...rest: infer R
-) => unknown
-	? R
-	: never;
 
 export type FluentContext = {
 	localize: SvelteFluent['localize'];
 };
 
 type FluentContextInternal = {
-	getTranslation: (...args: getTranslationArgs) => ReturnType<typeof getTranslation>;
+	fluent: SvelteFluent;
 	public: FluentContext;
 };
 
 export function initFluentContext(fn: () => SvelteFluent): FluentContext {
 	const fluent = $derived(fn());
 	const ctx: FluentContextInternal = {
-		getTranslation: (...args) => getTranslation(fluent, ...args),
+		get fluent() {
+			return fluent;
+		},
 		public: {
 			localize: (...args) => fluent.localize(...args)
 		}

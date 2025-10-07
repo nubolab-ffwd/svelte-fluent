@@ -54,6 +54,13 @@
 		"svelte": "^5.0.0",
 		"vite": "^5.0.12 || ^6.0.0 || ^7.0.0"
 	},
+	"imports": {
+		"#markup-parser": {
+			"types": "./dist/markup-parser/client.d.ts",
+			"browser": "./dist/markup-parser/client.js",
+			"default": "./dist/markup-parser/server.js"
+		}
+	},
 	"exports": {
 		"./package.json": "./package.json",
 		".": {
@@ -71,10 +78,6 @@
 			"require": "./dist/rollup.cjs",
 			"default": "./dist/rollup.js"
 		},
-		"./ssr": {
-			"types": "./dist/ssr.d.ts",
-			"default": "./dist/ssr.js"
-		},
 		"./types": {
 			"types": "./dist/types/index.d.ts"
 		},
@@ -87,8 +90,7 @@
 		"dist",
 		"src"
 	],
-	"svelte": "./dist/index.js",
-	"types": "./dist/index.d.ts",
+	"types": "./dist/client.d.ts",
 	"typesVersions": {
 		">4.0": {
 			"legacy": [
@@ -96,9 +98,6 @@
 			],
 			"rollup": [
 				"./dist/rollup.d.ts"
-			],
-			"ssr": [
-				"./dist/ssr.d.ts"
 			],
 			"types": [
 				"./dist/types/index.d.ts"

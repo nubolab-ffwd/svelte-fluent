@@ -1,5 +1,4 @@
 import { createFilter, type FilterPattern } from '@rollup/pluginutils';
-import type { ResolvedId } from 'rollup';
 import type { Plugin as VitePlugin } from 'vite';
 import { readFileSync } from 'node:fs';
 import type { HookFunction, Satisfy } from './utils.js';
@@ -14,7 +13,7 @@ export type PluginOptions = {
 export type SvelteFluentVitePlugin = Satisfy<
 	VitePlugin,
 	Required<Pick<VitePlugin, 'name' | 'enforce'>> & {
-		[K in 'buildStart' | 'resolveId' | 'transform']: HookFunction<NonNullable<VitePlugin[K]>>;
+		[K in 'buildStart' | 'transform']: HookFunction<NonNullable<VitePlugin[K]>>;
 	}
 >;
 
@@ -25,7 +24,6 @@ const defaultOptions = {
 
 export default (options: Partial<PluginOptions> = defaultOptions): SvelteFluentVitePlugin => {
 	const opts = { ...defaultOptions, ...options };
-	let resolveResult: Promise<ResolvedId | null>;
 	const filter = createFilter(options.include, options.exclude);
 
 	return {
@@ -43,27 +41,6 @@ export default (options: Partial<PluginOptions> = defaultOptions): SvelteFluentV
 					'The svelte-fluent plugin requires jsdom in your package.json dependencies. ' +
 						'Please add it with e.g. `npm install --save jsdom`.'
 				);
-			}
-		},
-
-		async resolveId(source, importer, opts) {
-			const ssr = opts?.ssr;
-			if (ssr && source === '@nubolab-ffwd/svelte-fluent') {
-				if (!resolveResult) {
-					resolveResult = this.resolve('@nubolab-ffwd/svelte-fluent/ssr', importer, {
-						skipSelf: true
-					});
-				}
-				try {
-					const resolved = await resolveResult;
-					this.debug('resolved @nubolab-ffwd/svelte-fluent to @nubolab-ffwd/svelte-fluent/ssr');
-					return resolved;
-				} catch (err) {
-					this.warn(
-						`failed to resolve @nubolab-ffwd/svelte-fluent to @nubolab-ffwd/svelte-fluent/ssr: ${err}`
-					);
-					return null; // returning null here leads to @nubolab-ffwd/svelte-fluent getting resolved regularly
-				}
 			}
 		},
 

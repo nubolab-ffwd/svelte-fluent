@@ -5,6 +5,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
+		"predev": "pnpm run --dir packages/svelte-fluent package:pkg",
 		"dev": "pnpm -r --parallel dev",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
