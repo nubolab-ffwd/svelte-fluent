@@ -5,12 +5,12 @@ const CONTEXT_KEY = Symbol('svelte-fluent');
 
 type Localize = SvelteFluent['localize'];
 
-export type FluentContext = {
+type FluentContext = {
 	readonly fluent: SvelteFluent;
 	readonly localize: Localize;
 };
 
-export function initFluentContext(fn: () => SvelteFluent): FluentContext {
+export function initFluentContext(fn: () => SvelteFluent) {
 	const fluent = $derived(fn());
 	const ctx: FluentContext = {
 		get fluent() {
@@ -18,10 +18,10 @@ export function initFluentContext(fn: () => SvelteFluent): FluentContext {
 		},
 		localize: (...args) => fluent.localize(...args)
 	};
-	return setContext(CONTEXT_KEY, ctx);
+	setContext(CONTEXT_KEY, ctx);
 }
 
-export function getFluentContext(): FluentContext {
+function getFluentContext(): FluentContext {
 	const ctx = getContext<FluentContext>(CONTEXT_KEY);
 	if (!ctx) {
 		throw new Error('[svelte-fluent] FluentContext was not initialized');
@@ -30,12 +30,12 @@ export function getFluentContext(): FluentContext {
 }
 
 export function useLocalize(): Localize {
-	const ctx = getContext<FluentContext>(CONTEXT_KEY);
+	const ctx = getFluentContext();
 	return ctx.localize;
 }
 
 export function useSvelteFluent(): { readonly current: SvelteFluent } {
-	const ctx = getContext<FluentContext>(CONTEXT_KEY);
+	const ctx = getFluentContext();
 	return {
 		get current() {
 			return ctx.fluent;
