@@ -9,7 +9,7 @@ export const createDomParseImpl =
 	(dom: DOM): Parser['parse'] =>
 	(source, rootHandlers) => {
 		const walk = (nodes: NodeListOf<ChildNode>, handlers: typeof rootHandlers) => {
-			for (const node of nodes)
+			for (const node of nodes) {
 				switch (node.nodeType) {
 					case dom.Node.TEXT_NODE: {
 						handlers.textNode(node as Text & { nodeName: '#text' });
@@ -23,6 +23,7 @@ export const createDomParseImpl =
 						break;
 					}
 				}
+			}
 		};
 
 		const templateElement = dom.document.createElement('template');

@@ -10,14 +10,16 @@ type Options = {
 export type SvelteFluent = {
 	readonly bundles: FluentBundle[];
 	readonly markupParser: MarkupParser;
-	readonly onError?: (msg: string) => void;
+	readonly onError: (msg: string) => void;
 	localize: (id: string, args?: Record<string, FluentVariable>) => string;
 };
+
+const logError = (msg: string) => console.error(`[svelte-fluent] ${msg}`);
 
 export function createSvelteFluent(bundles: FluentBundle[], options: Options = {}): SvelteFluent {
 	const fluent: SvelteFluent = {
 		bundles,
-		onError: options.onError,
+		onError: options.onError ?? logError,
 		markupParser: options.markupParser ?? createParser(),
 		localize: (id, args) => {
 			return getTranslation(fluent, id, args, false).value;
