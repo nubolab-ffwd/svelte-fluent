@@ -17,7 +17,7 @@ the [Fluent](https://projectfluent.org/) localization system by Mozilla.
 
 ## Installation
 
-> Using SvelteKit? Check out the [SvelteKit integration guide]({base}/docs/integration#sveltekit)!
+> Using SvelteKit? Check out the [SvelteKit framework guide]({base}/docs/frameworks#sveltekit)!
 
 Install `svelte-fluent` with your package manager of choice.
 

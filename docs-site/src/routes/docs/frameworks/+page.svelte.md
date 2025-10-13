@@ -19,7 +19,7 @@
 	}
 </style>
 
-# Integration
+# Frameworks
 
 ## SvelteKit
 

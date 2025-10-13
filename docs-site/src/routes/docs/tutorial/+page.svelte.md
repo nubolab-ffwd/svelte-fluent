@@ -41,7 +41,7 @@ desired language and fallback to the auto-detected language of the browser.
 > [HTTP Accept-Language header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language)
 > and replace `navigator.languages` with the resulting list of locale identifiers.
 >
-> Check out the [SvelteKit integration guide]({base}/docs/integration#sveltekit) for an example how to do this.
+> Check out the [SvelteKit framework guide]({base}/docs/frameworks#sveltekit) for an example how to do this.
 
 <TutorialMultiLanguageExample />
 
