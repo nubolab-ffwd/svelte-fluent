@@ -15,3 +15,4 @@ export { default as TutorialInterpolationExample } from './tutorial/TutorialInte
 export { default as TutorialInterpolationFormattingExample } from './tutorial/TutorialInterpolationFormattingExample.svelte';
 export { default as TutorialMultiLanguageExample } from './tutorial/TutorialMultiLanguageExample.svelte';
 export { default as TutorialTranslationFilesExample } from './tutorial/TutorialTranslationFilesExample.svelte';
+export { default as TutorialChangeWrapperExample } from './tutorial/TutorialChangeWrapperExample.svelte';

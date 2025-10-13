@@ -3,7 +3,8 @@
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
 	import {
 		TutorialFirstStepsExample,
-		TutorialInterpolationCustomFunctionsExample,
+		TutorialAttributesExample,
+		TutorialChangeWrapperExample,
 		TutorialInterpolationExample,
 		TutorialInterpolationFormattingExample,
 		TutorialMultiLanguageExample,
@@ -45,11 +46,23 @@ desired language and fallback to the auto-detected language of the browser.
 
 <TutorialMultiLanguageExample />
 
+### Changing the wrapper element
+
+By default, `<Localized>` renders a `<span>` element to wrap your translation. You can easily change this to any other HTML tag using the `tag` prop.
+
+<TutorialChangeWrapperExample />
+
+## Localizable Attributes
+
+Fluent messages can have attributes, which are useful for providing extra information like `aria-label` or `title` for an element. In `svelte-fluent`, these attributes are automatically applied to the wrapper element rendered by the `<Localized>` component.
+
+<TutorialAttributesExample />
+
 ## Interpolation
 
 You can insert variables into your translated text by using
 [Fluent Placeables](https://projectfluent.org/fluent/guide/placeables.html).
-Values for those variables are provided via the `args` prop of the <ReferenceLink name="Localized" /> and <ReferenceLink name="Overlay" /> components.
+Values for those variables are provided via the `args` prop of the <ReferenceLink name="Localized" /> component.
 
 <TutorialInterpolationExample />
 
@@ -65,3 +78,14 @@ files or in the JS source.
 Parameters listed in "Developer parameters" can only be set in JS code.
 
 <TutorialInterpolationFormattingExample />
+
+---
+
+Congratulations\! You've now covered the core features of `svelte-fluent` and can handle the most common localization tasks.
+
+When you're ready to tackle more complex scenarios, the library offers more powerful features. Our **[Advanced Features guide]({base}/docs/advanced)** is the perfect next step to learn about topics like:
+
+- **Svelte Component Injection:** Seamlessly embed your own interactive Svelte components directly inside your translations.
+- **Custom Functions:** Extend Fluent's capabilities with your own custom formatting logic for variables.
+
+Check out the advanced guide to unlock the full potential of `svelte-fluent`.

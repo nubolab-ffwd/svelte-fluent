@@ -3,12 +3,19 @@
 	import { createSvelteFluent, initFluentContext, Localized } from '@nubolab-ffwd/svelte-fluent';
 	import resourceEn from './en.ftl';
 
-	const id = $props.id();
 	const bundle = new FluentBundle('en');
 	bundle.addResource(resourceEn);
 
 	initFluentContext(() => createSvelteFluent([bundle]));
 </script>
 
-<Localized id="login-label" tag={['label', { for: id }]} />
-<Localized id="login-input" tag={['input', { id, type: 'email' }]} />
+<p>
+	<Localized id="important-notice" tag="strong" />
+</p>
+
+<p>
+	<Localized
+		id="privacy-policy"
+		tag={['a', { href: '/privacy', rel: 'external', target: '_blank' }]}
+	/>
+</p>
