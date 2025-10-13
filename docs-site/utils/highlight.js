@@ -12,6 +12,7 @@ const theme = 'dark-plus';
 const themes = [theme];
 const langs = [
 	'diff',
+	'html',
 	'shellscript',
 	'svelte',
 	{ name: 'ftl', scopeName: 'source.ftl', ...fluentGrammar }
