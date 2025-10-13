@@ -1,6 +1,7 @@
 import type { LayoutLoad, LayoutLoadEvent } from './$types';
 import { headings as gettingStartedHeadings } from './getting-started/+page.svelte.md';
 import { headings as tutorialHeadings } from './tutorial/+page.svelte.md';
+import { headings as advancedHeadings } from './advanced/+page.svelte.md';
 import { headings as version2Headings } from './version-2/+page.svelte.md';
 import { headings as integrationHeadings } from './integration/+page.svelte.md';
 import { submenu as referenceSubmenu } from './reference/menu';
@@ -43,6 +44,7 @@ export const load = (async (ev) => {
 		buildMenu(ev, base + '/docs/getting-started/', gettingStartedHeadings, 1),
 		buildMenu(ev, base + '/docs/version-2/', version2Headings, 1),
 		buildMenu(ev, base + '/docs/tutorial/', tutorialHeadings, 1),
+		buildMenu(ev, base + '/docs/advanced/', advancedHeadings, 1),
 		buildMenu(ev, base + '/docs/integration/', integrationHeadings, 1),
 		{
 			text: 'Reference',
