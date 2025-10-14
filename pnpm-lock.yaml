@@ -66,6 +66,9 @@ importers:
       '@fontsource-variable/manrope':
         specifier: 5.2.8
         version: 5.2.8
+      '@iconify-json/logos':
+        specifier: ^1.2.5
+        version: 1.2.5
       '@iconify-json/mdi':
         specifier: 1.2.3
         version: 1.2.3
@@ -220,6 +223,9 @@ importers:
       typescript:
         specifier: 5.9.2
         version: 5.9.2
+      unplugin-icons:
+        specifier: 22.3.0
+        version: 22.3.0(svelte@5.39.6)
       vite:
         specifier: 7.1.7
         version: 7.1.7(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)
@@ -1011,6 +1017,9 @@ packages:
   '@humanwhocodes/retry@0.4.2':
     resolution: {integrity: sha512-xeO57FpIu4p1Ri3Jq/EXq4ClRm86dVF2z/+kvFnyqVYRavTZmaFaUBbWCOuuTh0o/g7DSsk6kc2vrS4Vl5oPOQ==}
     engines: {node: '>=18.18'}
+
+  '@iconify-json/logos@1.2.5':
+    resolution: {integrity: sha512-WR8+9kFwx1tIR+hWpKYC+rpVkAuzHyaVxZRfhGGIjqCfgbodK7rS4+OZhktdKtZKKcdmhpLZKvlmRm4IA4dKRg==}
 
   '@iconify-json/mdi@1.2.3':
     resolution: {integrity: sha512-O3cLwbDOK7NNDf2ihaQOH5F9JglnulNDFV7WprU2dSoZu3h3cWH//h74uQAB87brHmvFVxIOkuBX2sZSzYhScg==}
@@ -3959,6 +3968,10 @@ snapshots:
   '@humanwhocodes/retry@0.3.1': {}
 
   '@humanwhocodes/retry@0.4.2': {}
+
+  '@iconify-json/logos@1.2.5':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify-json/mdi@1.2.3':
     dependencies:

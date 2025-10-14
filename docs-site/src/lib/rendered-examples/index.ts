@@ -16,3 +16,5 @@ export { default as TutorialInterpolationFormattingExample } from './tutorial/Tu
 export { default as TutorialMultiLanguageExample } from './tutorial/TutorialMultiLanguageExample.svelte';
 export { default as TutorialTranslationFilesExample } from './tutorial/TutorialTranslationFilesExample.svelte';
 export { default as TutorialChangeWrapperExample } from './tutorial/TutorialChangeWrapperExample.svelte';
+export { default as TutorialComponentInjectionSimpleExample } from './tutorial/TutorialComponentInjectionSimpleExample.svelte';
+export { default as TutorialComponentInjectionComplexExample } from './tutorial/TutorialComponentInjectionComplexExample.svelte';

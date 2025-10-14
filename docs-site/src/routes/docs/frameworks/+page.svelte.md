@@ -21,11 +21,15 @@
 
 # Frameworks
 
+While svelte-fluent is framework-agnostic, these guides provide step-by-step instructions and best practices for integrating it seamlessly with your favorite frameworks.
+
 ## SvelteKit
+
+Follow this guide to integrate `svelte-fluent` into a SvelteKit project, covering initial setup, server-side language negotiation, and a complete form validation example.
 
 ### Initialize a SvelteKit app
 
-Use `npm create` to initialize an new SvelteKit project called `svelte-fluent-sveltekit`.
+Use `npm create` to initialize a new SvelteKit project called `svelte-fluent-sveltekit`.
 
 - Select "Skeleton project" when asked for the template
 - Select "Yes, using TypeScript syntax" when asked for typescript type checking
@@ -126,9 +130,6 @@ export function negotiateLocale(ev: RequestEvent): string {
 }
 ```
 
-Typescript will complain about the imports of the `.ftl` files.
-Don't worry, we'll fix this in a moment.
-
 ### Add server hook
 
 We need to add a [SvelteKit server hook](https://kit.svelte.dev/docs/hooks#server-hooks)
@@ -151,35 +152,43 @@ export const handle: Handle = async ({ event, resolve }) => {
 };
 ```
 
-Now Typescript will complain about `event.locals.locale` and `event.locals.fluent`.
-To fix this we need to modify our `src/app.d.ts`:
+At this point, TypeScript will report an error for `event.locals.locale`
+and `event.locals.fluent`. To fix this we need to modify our `src/app.d.ts`:
 
-```diff
-+import '@nubolab-ffwd/svelte-fluent/types';
-+import { SvelteFluent } from '@nubolab-ffwd/svelte-fluent';
-+
- // See https://kit.svelte.dev/docs/types#app
- // for information about these interfaces
- declare global {
-        namespace App {
-                // interface Error {}
--               // interface Locals {}
-+               interface Locals {
-+                       locale: string;
-+                       fluent: SvelteFluent;
-+               }
-                // interface PageData {}
-                // interface PageState {}
-                // interface Platform {}
+```ts
+// src/app.d.ts
+
+import '@nubolab-ffwd/svelte-fluent/types';
+import { SvelteFluent } from '@nubolab-ffwd/svelte-fluent';
+
+// See https://kit.svelte.dev/docs/types#app
+// for information about these interfaces
+declare global {
+	namespace App {
+		// interface Error {}
+		interface Locals {
+			locale: string;
+			fluent: SvelteFluent;
+		}
+		// interface PageData {}
+		// interface PageState {}
+		// interface Platform {}
+	}
+}
+
+export {};
 ```
+
+By adding `import '@nubolab-ffwd/svelte-fluent/types';`;, you also provide TypeScript with the necessary definitions to
+understand `.ftl` file imports, which will resolve any errors you may have seen in your editor.
 
 ### Client integration
 
-On the client side, it's impossible to access `event.locals.locale` and
-`event.locals.fluent` that we added in the server hook. We need some additional
-code to bridge the gap.
+On the client side, it's impossible to access the `fluent` instance we created in the server hook.
+We need to pass the _locale_ that was negotiated on the server to the client, and then re-create
+the `fluent` instance in the browser.
 
-Let's start by adding a `src/routes/+layout.server.ts`:
+Let's start by exposing the `locale` from the server in `src/routes/+layout.server.ts`:
 
 ```ts
 // src/routes/+layout.server.ts
@@ -190,8 +199,8 @@ export function load(event) {
 }
 ```
 
-This exposes `event.locals.locale` as `event.data.locale` on the client.
-We also need the <ReferenceLink name="SvelteFluent" /> object which we can create in `src/routes/+layout.ts`:
+Now that the locale is available on the client as `data.locale`, we can create a new `SvelteFluent`
+instance in `src/routes/+layout.ts`:
 
 ```ts
 // src/routes/+layout.ts
@@ -201,15 +210,14 @@ import { createSvelteFluent } from '@nubolab-ffwd/svelte-fluent';
 
 export function load(event) {
 	return {
-		...event.data,
 		fluent: createSvelteFluent(generateBundles(event.data.locale))
 	};
 }
 ```
 
-Now we can access the <ReferenceLink name="SvelteFluent" /> object via `event.data.fluent` and
-use it to initialize the <ReferenceLink name="FluentContext" /> in `src/routes/+layout.svelte` which
-is required for using the <ReferenceLink name="Localized" /> and <ReferenceLink name="Overlay" /> components.
+Finally, we can access the `fluent` object via `data.fluent` and use it to initialize the context
+in `src/routes/+layout.svelte`, which is required for using the `<Localized>` component and
+`useLocalize` helper.
 
 {@html snippets['./snippets/client-integration-layout.svelte']}
 
@@ -239,67 +247,49 @@ and generate localized error messages if validation fails.
 
 Let's start by adding some additional messages to our translation files:
 
-```diff
- # src/translations/en.ftl
+**In `src/translations/en.ftl`:**
 
+```diff
  welcome = Welcome to svelte-fluent!
 +
-+example-form =
-+  .heading = Example form
-+  .name-field-label = Name
-+  .submit-label = Submit
-+  .name-required-error = Name must not be empty
-+  .success-message = Form was submitted successfully!
++example-form-heading = Example form
++example-form-name-field-label = Name
++example-form-submit-button = Submit
++  .aria-label = Submit form
++
++example-form-name-required-error = Name must not be empty
++example-form-success-message = Form was submitted successfully!
 ```
 
-```diff
- # src/translations/de.ftl
+**In `src/translations/de.ftl`:**
 
+```diff
  welcome = Willkommen bei svelte-fluent!
 +
-+example-form =
-+  .heading = Beispielformular
-+  .name-field-label = Name
-+  .submit-label = Absenden
-+  .name-required-error = Name darf nicht leer sein
-+  .success-message = Formular wurde erfolgreich abgeschickt!
-```
-
-Next we add a form to `src/routes/+page.svelte`:
-
-```diff
- </script>
-
- <h1><Localized id="welcome" /></h1>
++example-form-heading = Beispielformular
++example-form-name-field-label = Name
++example-form-submit-button = Absenden
++  .aria-label = Formular absenden
 +
-+<Localized id="example-form">
-+       {#snippet children({ attrs })}
-+               <h2>{attrs.heading}</h2>
-+               <form method="POST">
-+                       <label>
-+                               {attrs['name-field-label']}
-+                               <input name="name" />
-+                       </label>
-+                       <button>{attrs['submit-label']}</button>
-+               </form>
-+       {/snippet}
-+</Localized>
++example-form-name-required-error = Name darf nicht leer sein
++example-form-success-message = Formular wurde erfolgreich abgeschickt!
 ```
 
-Also we need to add a [SvelteKit form action](https://kit.svelte.dev/docs/form-actions)
-to `src/routes/+page.server.ts`:
+Next, we need a form action in `src/routes/+page.server.ts` to handle the logic.
 
 ```ts
+// src/routes/+page.server.ts
+
 import { fail } from '@sveltejs/kit';
 import type { Actions } from './$types';
 
 export const actions = {
-	default: async ({ request, locals: { fluent } }) => {
+	default: async ({ request, locals }) => {
 		const data = await request.formData();
 		const name = data.get('name');
 		if (!name || !name.toString().trim()) {
-			// render the localized error message
-			const error = fluent.localize('example-form.name-required-error');
+			// render the localized error message using the fluent instance from the hook
+			const error = locals.fluent.localize('example-form-name-required-error');
 			return fail(400, { name, error });
 		}
 		return { success: true };
@@ -307,28 +297,35 @@ export const actions = {
 } satisfies Actions;
 ```
 
-And finally, we need to handle the response from the action in our form in `src/routes/+page.svelte`:
+Finally, we update our page in `src/routes/+page.svelte`. By leveraging the `<Localized>` component, we can
+declaratively build our form using the messages defined in our translation files. This keeps the markup clean
+and readable while ensuring all text and attributes are correctly localized.
 
-{@html snippets['./snippets/final-props.patch']}
+```svelte
+<script lang="ts">
+	import { Localized } from '@nubolab-ffwd/svelte-fluent';
+	import type { ActionData } from './$types';
 
-```diff
- <Localized id="example-form">
-        {#snippet children({ attrs })}
-                <h2>{attrs.heading}</h2>
-+
-+               {#if form?.success}
-+                       <p>{attrs['success-message']}</p>
-+               {/if}
-+
-                <form method="POST">
-+                       {#if form?.error}<p class="error">{form.error}</p>{/if}
-                        <label>
-                                {attrs['name-field-label']}
--                               <input name="name" />
-+                               <input name="name" value={form?.name ?? ''} />
-                        </label>
-                        <button>{attrs['submit-label']}</button>
-                </form>
+	let { form }: { form: ActionData } = $props();
+	const nameInputId = $props.id();
+</script>
+
+<h1><Localized id="welcome" /></h1>
+
+<h2><Localized id="example-form-heading" /></h2>
+
+{#if form?.success}
+	<p><Localized id="example-form-success-message" /></p>
+{/if}
+
+<form method="POST">
+	{#if form?.error}<p class="error">{form.error}</p>{/if}
+
+	<Localized id="example-form-name-field-label" tag={['label', { for: nameInputId }]} />
+	<input id={nameInputId} name="name" value={form?.name ?? ''} />
+
+	<Localized id="example-form-submit-button" tag="button" />
+</form>
 ```
 
 Now open your browser and go to [http://localhost:5173](http://localhost:5173) and you should see
@@ -340,4 +337,6 @@ the new form that displays localized error messages when you submit it.
 
 You now have a fully functional application where you can localize messages with `svelte-fluent`.
 
-You can learn more about how to use `svelte-fluent` in the [Tutorial](../tutorial) or check out the [Reference](../reference) for API documentation.
+You can learn more about how to use `svelte-fluent` in the [Tutorial](../tutorial),
+explore more powerful features in the [Advanced Features guide](../advanced),
+or check out the [Reference](../reference) for API documentation.

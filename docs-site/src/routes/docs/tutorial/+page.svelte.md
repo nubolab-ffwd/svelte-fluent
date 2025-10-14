@@ -14,6 +14,8 @@
 
 # Tutorial
 
+This tutorial will guide you through the fundamental concepts of `svelte-fluent`. Starting with the basics of setting up your project and displaying your first translation, you will learn how to handle multiple languages, variables, and advanced value formatting.
+
 ## First steps
 
 You need to provide your translations to `svelte-fluent` by creating a <ReferenceLink name="SvelteFluent" /> object
