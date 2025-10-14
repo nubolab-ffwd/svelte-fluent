@@ -1,24 +1,23 @@
-<script lang="ts" generics="TagName extends keyof SvelteHTMLElements & string">
+<script lang="ts">
 	import type { FluentVariable } from '@fluent/bundle';
 	import { useSvelteFluent } from './context.svelte.js';
 	import type { Snippet } from 'svelte';
-	import LocalizedTag from './LocalizedTag.svelte';
 	import { ComponentElement, TagElement } from './elements.js';
 	import { type Handlers } from '#markup-parser';
 	import { getTranslation } from './fluent.js';
-	import type { SvelteHTMLElements } from 'svelte/elements';
 	import {
 		ALLOWED_ELEMENTS,
 		COMPONENT_TAG,
 		REGEX_OVERLAY,
 		REGEX_SELF_CLOSING_COMPONENT_TAG
 	} from './definitions.js';
+	import { filterLocalizableAttributes } from './utils.js';
 
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	type ElementConfig = TagElement<string> | ComponentElement<any>;
 	type OutputTagOptions = {
 		tag: string;
-		attributes: Attrs;
+		untrustedAttributes: Attrs;
 		trustedAttributes?: Attrs;
 		allowAttributes?: string[];
 		children: Snippet;
@@ -35,34 +34,30 @@
 		  };
 	type Content = ContentItem[];
 
-	type TagAttrs = SvelteHTMLElements[TagName];
-	type TagOptions = { allowAttributes?: string[] };
-
-	const fluent = useSvelteFluent();
-
 	interface Props {
 		id: string;
 		args?: Record<string, FluentVariable>;
-		tag?: TagName | [TagName, TagAttrs?, TagOptions?];
+		tag?: string;
+		allowAttributes?: string[];
 		elements?: Record<string, ElementConfig>;
 		outputTag?: Snippet<[OutputTagOptions]>;
-		lead?: Snippet;
-		trail?: Snippet;
+		children?: Snippet<[{ attributes: Record<string, string>; translatedContent: Snippet }]>;
 	}
 
 	let {
 		id,
 		args,
-		tag: tagProp,
+		tag = 'span',
+		allowAttributes,
 		elements: elementsProp = {},
 		outputTag = defaultOutputTag,
-		lead,
-		trail
+		children
 	}: Props = $props();
+
+	const fluent = useSvelteFluent();
 
 	let translation = $derived(getTranslation(fluent.current, id, args, true));
 	let elementConfigs = $derived(new Map(Object.entries(elementsProp)));
-	let [tag, tagAttributes, tagOptions] = Array.isArray(tagProp) ? tagProp : [tagProp ?? 'span'];
 
 	function validateElement(
 		tag: string,
@@ -166,16 +161,13 @@
 			{#snippet children()}{@render outputContent(item.content)}{/snippet}
 			{#if item.config instanceof ComponentElement}
 				{@const [Component, props] = item.config.resolve(item.attributes)}
-				<LocalizedTag
-					tag={COMPONENT_TAG}
-					attributes={item.attributes}
-					trustedAttributes={{ style: 'display: contents;' }}
-					allowAttributes={['data-element']}><Component {...props} {children} /></LocalizedTag
-				>
+				<svelte:element this={COMPONENT_TAG} data-element={item.attributes['data-element']}>
+					<Component {...props} {children} />
+				</svelte:element>
 			{:else}
 				{@render outputTag({
 					tag: item.tag,
-					attributes: item.attributes,
+					untrustedAttributes: item.attributes,
 					trustedAttributes: item.config?.attributes,
 					allowAttributes: item.config?.allowAttributes,
 					children
@@ -187,24 +179,32 @@
 
 {#snippet defaultOutputTag({
 	tag,
-	attributes,
+	untrustedAttributes,
 	trustedAttributes,
 	allowAttributes,
 	children
 }: OutputTagOptions)}
-	<LocalizedTag {tag} {attributes} {trustedAttributes} {allowAttributes} {children} />
+	{@const attributes = {
+		...filterLocalizableAttributes(tag, untrustedAttributes, allowAttributes),
+		...trustedAttributes
+	}}
+	<svelte:element this={tag} {...attributes}>{@render children()}</svelte:element>
 {/snippet}
 
-{#snippet children()}
-	{@render lead?.()}
+{#snippet translatedContent()}
 	{@render outputContent(getContent(translation.value) ?? [])}
-	{@render trail?.()}
 {/snippet}
 
-{@render outputTag({
-	tag,
-	attributes: translation.attributes,
-	trustedAttributes: tagAttributes,
-	allowAttributes: tagOptions?.allowAttributes,
-	children
-})}
+{#if children}
+	{@render children({
+		attributes: filterLocalizableAttributes(tag, translation.attributes, allowAttributes),
+		translatedContent
+	})}
+{:else}
+	{@render outputTag({
+		tag,
+		untrustedAttributes: translation.attributes,
+		allowAttributes,
+		children: translatedContent
+	})}
+{/if}
