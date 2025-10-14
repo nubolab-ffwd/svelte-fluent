@@ -8,7 +8,8 @@ export { default as LocalizedDynamicTextExample } from './localized/LocalizedDyn
 export { default as LocalizedStaticTextExample } from './localized/LocalizedStaticTextExample.svelte';
 export { default as OverlayDynamicTextExample } from './overlay/OverlayDynamicTextExample.svelte';
 export { default as OverlayStaticTextExample } from './overlay/OverlayStaticTextExample.svelte';
-export { default as TutorialAttributesExample } from './tutorial/TutorialAttributesExample.svelte';
+export { default as TutorialAttributesSimpleExample } from './tutorial/TutorialAttributesSimpleExample.svelte';
+export { default as TutorialAttributesComplexExample } from './tutorial/TutorialAttributesComplexExample.svelte';
 export { default as TutorialFirstStepsExample } from './tutorial/TutorialFirstStepsExample.svelte';
 export { default as TutorialInterpolationCustomFunctionsExample } from './tutorial/TutorialInterpolationCustomFunctionsExample.svelte';
 export { default as TutorialInterpolationExample } from './tutorial/TutorialInterpolationExample.svelte';

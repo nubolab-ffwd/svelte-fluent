@@ -9,16 +9,8 @@
 	initFluentContext(() => createSvelteFluent([bundle]));
 </script>
 
-<p>
-	<Localized id="important-notice" tag="strong" />
-</p>
-
-<p>
-	<Localized id="privacy-policy" tag="a">
-		{#snippet children({ attributes, translatedContent })}
-			<a {...attributes} href="/privacy" rel="external" target="_blank">
-				{@render translatedContent()}
-			</a>
-		{/snippet}
-	</Localized>
-</p>
+<Localized id="search-input" tag="input">
+	{#snippet children({ attributes })}
+		<input type="search" {...attributes} />
+	{/snippet}
+</Localized>

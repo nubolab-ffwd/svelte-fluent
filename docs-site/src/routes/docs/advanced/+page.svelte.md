@@ -37,6 +37,19 @@ In this example, we define an `Outline` component. The `ComponentElement` is con
 
 <TutorialComponentInjectionComplexExample />
 
+## Formatting interpolations
+
+Fluent outputs interpolations in a human readable format appropriate to the currently used locale.
+You can customize the formatting by using [Fluent Functions](https://projectfluent.org/fluent/guide/functions.html).
+
+Formatting parameters listed in "Parameters" in the
+[Fluent Functions](https://projectfluent.org/fluent/guide/functions.html) documentation can be set both in the `.ftl`
+files or in the JS source.
+
+Parameters listed in "Developer parameters" can only be set in JS code.
+
+<TutorialInterpolationFormattingExample />
+
 ## Custom Functions
 
 You can extend the default [Fluent Functions](https://projectfluent.org/fluent/guide/functions.html)

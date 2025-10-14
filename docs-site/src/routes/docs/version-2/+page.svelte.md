@@ -18,31 +18,40 @@ In previous versions, the `children` snippet received the translated text and at
 
 The new `<Localized>` component now always renders a wrapper element, which you can customize using the `tag` prop (e.g., as a `<span>` or `<button>`). The primary purpose of this wrapper is to provide a home for attributes defined directly in your Fluent messages. By default, a list of safe attributes (including `title` and `aria-label`) are automatically applied, while any other attributes not on this default list must be explicitly allowed through tag options.
 
-This also allows for more advanced use cases, such as combining attributes from both your component props and your translations. For example, you can provide a static `href` in your component while a dynamic, accessible `aria-label` comes from your translation.
+For example, here is how you would create a localized message, showing both a simple and an advanced pattern.
 
 **In your `.ftl` file:**
 
 ```ftl
-read-more = more
-    .aria-label = read more about '{$headline}'
+important-notice = Important Notice
+    .title = This is an important notice
+
+read-more = Read more
+    .aria-label = Read more about our new features
 ```
 
 **In your Svelte component:**
 
 ```svelte
-<Localized
-  id="read-more"
-  args={{ headline: 'headline of article x' }}
-  tag={['a', { href: '/article-x' }]}
-/>
+<Localized id="important-notice" tag="strong" />
+
+<Localized id="read-more">
+	{#snippet children({ attributes, translatedContent })}
+		<a href="/new-features" {...attributes}>
+			{@render translatedContent()}
+		</a>
+	{/snippet}
+</Localized>
 ```
 
 **Resulting HTML:**
 
-The code above will render a clean, accessible HTML link, merging the props from both sources:
+The code above will render the following HTML output:
 
 ```html
-<a href="/article-x" aria-label="read more about 'headline of article x'">more</a>
+<strong title="This is an important notice">Important Notice</strong>
+
+<a href="/new-features" aria-label="Read more about our new features">Read more</a>
 ```
 
 **New Feature: Svelte Component Injection**
@@ -55,16 +64,16 @@ For instance, you can inject an `Icon` component into a login button:
 
 ```svelte
 <script lang="ts">
-  import { Localized, ComponentElement } from '@nubolab-ffwd/svelte-fluent';
-  import GoogleIcon from './GoogleIcon.svelte';
+	import { Localized, ComponentElement } from '@nubolab-ffwd/svelte-fluent';
+	import GoogleIcon from './GoogleIcon.svelte';
 </script>
 
 <Localized
-  id="google-login-button"
-  tag="button"
-  elements={{
-    'google-icon': new ComponentElement(GoogleIcon)
-  }}
+	id="google-login-button"
+	tag="button"
+	elements={{
+		'google-icon': new ComponentElement(GoogleIcon)
+	}}
 />
 ```
 
@@ -102,15 +111,15 @@ To simplify the library, the `FluentProvider`, `Overlay`, and legacy `Localized`
 
 Here is a scannable checklist of all breaking changes.
 
-  * **Components:**
-      * The `<Localized>` component's `children` snippet no longer receives the translated content as arguments.
-      * The `<Localized>` component now always renders a wrapper element (defaults to `<span>`).
-      * The `<Overlay>` component has been removed (functionality is now in `<Localized>`).
-      * The `<FluentProvider>` component has been removed.
-  * **API & Types:**
-      * The `getFluentContext` function has been removed (use `useLocalize` or `useSvelteFluent`).
-      * `initFluentContext` no longer returns a value.
-      * The `FluentContext` type is no longer exported.
+- **Components:**
+  - The `<Localized>` component's `children` snippet no longer receives the translated content as arguments.
+  - The `<Localized>` component now always renders a wrapper element (defaults to `<span>`).
+  - The `<Overlay>` component has been removed (functionality is now in `<Localized>`).
+  - The `<FluentProvider>` component has been removed.
+- **API & Types:**
+  - The `getFluentContext` function has been removed (use `useLocalize` or `useSvelteFluent`).
+  - `initFluentContext` no longer returns a value.
+  - The `FluentContext` type is no longer exported.
 
 ## Migration Guide
 
@@ -134,11 +143,11 @@ You used `<Overlay>` and `data-l10n-name` to map HTML elements.
 
 ```svelte
 <script>
-  import { Overlay } from "@nubolab-ffwd/svelte-fluent";
+	import { Overlay } from '@nubolab-ffwd/svelte-fluent';
 </script>
 
 <Overlay id="info">
-  <a data-l10n-name="link" href="https://example.com/"></a>
+	<a data-l10n-name="link" href="https://example.com/"></a>
 </Overlay>
 ```
 
@@ -156,14 +165,14 @@ Now, you use `<Localized>`, define elements in the `elements` prop, and use `dat
 
 ```svelte
 <script>
-  import { Localized, TagElement } from "@nubolab-ffwd/svelte-fluent";
+	import { Localized, TagElement } from '@nubolab-ffwd/svelte-fluent';
 </script>
 
 <Localized
-  id="info"
-  elements={{
-    link: new TagElement("a", { href: "https://example.com/" }),
-  }}
+	id="info"
+	elements={{
+		link: new TagElement('a', { href: 'https://example.com/' })
+	}}
 />
 ```
 
@@ -185,7 +194,7 @@ The `children` snippet was used with `let:` directives to access the translated 
 
 ```svelte
 <Localized id="greeting" let:text>
-  <strong>{text}</strong>
+	<strong>{text}</strong>
 </Localized>
 ```
 
@@ -197,7 +206,7 @@ To wrap a translation in an element, use the built-in `tag` prop. The `children`
 <Localized id="greeting" tag="strong" />
 
 <Localized id="login-button" tag="button">
-  <Icon />
+	<Icon />
 </Localized>
 ```
 
@@ -219,17 +228,17 @@ You used the `children` snippet with `let:text` and `let:attrs` to build your UI
 
 ```svelte
 <script>
-  import { Localized } from '@nubolab-ffwd/svelte-fluent';
+	import { Localized } from '@nubolab-ffwd/svelte-fluent';
 </script>
 
 <Localized id="confirm">
-  {#snippet children({ text, attrs })}
-    <div>{text}</div>
-    <div>
-      <button onclick={() => alert('OK clicked')}>{attrs.ok}</button>
-      <button onclick={() => alert('Cancel clicked')}>{attrs.cancel}</button>
-    </div>
-  {/snippet}
+	{#snippet children({ text, attrs })}
+		<div>{text}</div>
+		<div>
+			<button onclick={() => alert('OK clicked')}>{attrs.ok}</button>
+			<button onclick={() => alert('Cancel clicked')}>{attrs.cancel}</button>
+		</div>
+	{/snippet}
 </Localized>
 ```
 
@@ -239,14 +248,14 @@ You now use the `useLocalize` helper to get the main translation and each attrib
 
 ```svelte
 <script>
-  import { useLocalize } from '@nubolab-ffwd/svelte-fluent';
-  const localize = useLocalize()
+	import { useLocalize } from '@nubolab-ffwd/svelte-fluent';
+	const localize = useLocalize();
 </script>
 
 <div>{localize('confirm')}</div>
 <div>
-  <button onclick={() => alert('OK clicked')}>{localize('confirm.ok')}</button>
-  <button onclick={() => alert('Cancel clicked')}>{localize('confirm.cancel')}</button>
+	<button onclick={() => alert('OK clicked')}>{localize('confirm.ok')}</button>
+	<button onclick={() => alert('Cancel clicked')}>{localize('confirm.cancel')}</button>
 </div>
 ```
 
@@ -300,9 +309,9 @@ You used `getFluentContext` to access the reactive `localize` helper.
 
 ```svelte
 <script>
-  import { getFluentContext } from '@nubolab-ffwd/svelte-fluent';
-  const { localize } = getFluentContext();
-  let title = $derived(localize('my-title'));
+	import { getFluentContext } from '@nubolab-ffwd/svelte-fluent';
+	const { localize } = getFluentContext();
+	let title = $derived(localize('my-title'));
 </script>
 ```
 
@@ -312,8 +321,8 @@ The `getFluentContext` function has been replaced by the `useLocalize` helper. C
 
 ```svelte
 <script>
-  import { useLocalize } from '@nubolab-ffwd/svelte-fluent';
-  const localize = useLocalize();
-  let title = $derived(localize('my-title'));
+	import { useLocalize } from '@nubolab-ffwd/svelte-fluent';
+	const localize = useLocalize();
+	let title = $derived(localize('my-title'));
 </script>
 ```

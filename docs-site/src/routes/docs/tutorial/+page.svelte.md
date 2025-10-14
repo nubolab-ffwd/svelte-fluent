@@ -3,7 +3,8 @@
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
 	import {
 		TutorialFirstStepsExample,
-		TutorialAttributesExample,
+		TutorialAttributesSimpleExample,
+		TutorialAttributesComplexExample,
 		TutorialChangeWrapperExample,
 		TutorialInterpolationExample,
 		TutorialInterpolationFormattingExample,
@@ -48,38 +49,38 @@ desired language and fallback to the auto-detected language of the browser.
 
 <TutorialMultiLanguageExample />
 
-### Changing the wrapper element
+## Customize wrapper element
 
 By default, `<Localized>` renders a `<span>` element to wrap your translation. You can easily change this to any other HTML tag using the `tag` prop.
 
 <TutorialChangeWrapperExample />
 
-## Localizable Attributes
+## Localizable attributes
 
-Fluent messages can have attributes, which are useful for providing extra information like `aria-label` or `title` for an element. In `svelte-fluent`, these attributes are automatically applied to the wrapper element rendered by the `<Localized>` component.
+Fluent messages can have attributes, which are useful for providing extra information like `aria-label` or `title`. The `<Localized>` component can automatically apply these to the wrapper element. For security, only safe attributes are allowed based on the `tag` prop. You can allow additional attributes using the `allowAttributes` prop.
 
-<TutorialAttributesExample />
+<TutorialAttributesSimpleExample />
 
-## Interpolation
+### Advanced customization with the `children` snippet
+
+For full control over the output, you can use the `children` snippet. The snippet receives two arguments:
+
+- `attributes`: A record containing the attributes from the Fluent message.
+- `translatedContent`: A snippet that renders the translated text.
+
+This pattern is ideal for advanced cases where you need to render a specific element, like an `<input>`, and apply localized attributes to it. By using the `children` snippet, you can take complete control over the final HTML while still sourcing attributes from your translation files.
+
+It's important to note that the `attributes` passed to the snippet are still filtered based on the security rules of the `tag` and `allowAttributes` props to prevent unwanted attributes from being passed through.
+
+<TutorialAttributesComplexExample />
+
+## Interpolate variables
 
 You can insert variables into your translated text by using
 [Fluent Placeables](https://projectfluent.org/fluent/guide/placeables.html).
 Values for those variables are provided via the `args` prop of the <ReferenceLink name="Localized" /> component.
 
 <TutorialInterpolationExample />
-
-## Interpolation formatting
-
-Fluent outputs interpolations in a human readable format appropriate to the currently used locale.
-You can customize the formatting by using [Fluent Functions](https://projectfluent.org/fluent/guide/functions.html).
-
-Formatting parameters listed in "Parameters" in the
-[Fluent Functions](https://projectfluent.org/fluent/guide/functions.html) documentation can be set both in the `.ftl`
-files or in the JS source.
-
-Parameters listed in "Developer parameters" can only be set in JS code.
-
-<TutorialInterpolationFormattingExample />
 
 ---
 
@@ -88,6 +89,7 @@ Congratulations\! You've now covered the core features of `svelte-fluent` and ca
 When you're ready to tackle more complex scenarios, the library offers more powerful features. Our **[Advanced Features guide]({base}/docs/advanced)** is the perfect next step to learn about topics like:
 
 - **Svelte Component Injection:** Seamlessly embed your own interactive Svelte components directly inside your translations.
+  **Formatting Interpolations:** Take control over how numbers, dates, and other variables are displayed.
 - **Custom Functions:** Extend Fluent's capabilities with your own custom formatting logic for variables.
 
 Check out the advanced guide to unlock the full potential of `svelte-fluent`.
