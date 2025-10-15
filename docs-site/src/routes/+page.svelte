@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { FrontpageExample } from '$lib/rendered-examples';
+	import FrontpageExample from '$lib/rendered-examples/FrontpageExample.svelte';
 	import Hero from './Hero.svelte';
 </script>
 

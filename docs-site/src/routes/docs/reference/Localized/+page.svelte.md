@@ -3,12 +3,10 @@ title: Localized
 ---
 
 <script>
-	import {
-		LocalizedAttributesExample,
-		LocalizedAttributesWithVariablesExample,
-		LocalizedDynamicTextExample,
-		LocalizedStaticTextExample
-	} from '$lib/rendered-examples';
+	import LocalizedAttributesExample from '$lib/rendered-examples/LocalizedAttributesExample.svelte'
+	import LocalizedAttributesWithVariablesExample from '$lib/rendered-examples/LocalizedAttributesWithVariablesExample.svelte'
+	import LocalizedDynamicTextExample from '$lib/rendered-examples/LocalizedDynamicTextExample.svelte'
+	import LocalizedStaticTextExample from '$lib/rendered-examples/LocalizedStaticTextExample.svelte'
 
 	const localizedChildrenSnippetType = [
 	'Snippet<{',

@@ -1,16 +1,14 @@
 <script>
 	import { base } from '$app/paths'
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
-	import {
-		TutorialFirstStepsExample,
-		TutorialAttributesSimpleExample,
-		TutorialAttributesComplexExample,
-		TutorialChangeWrapperExample,
-		TutorialInterpolationExample,
-		TutorialInterpolationFormattingExample,
-		TutorialMultiLanguageExample,
-		TutorialTranslationFilesExample
-	} from '$lib/rendered-examples';
+	import TutorialFirstStepsExample from '$lib/rendered-examples/TutorialFirstStepsExample.svelte'
+	import TutorialAttributesSimpleExample from '$lib/rendered-examples/TutorialAttributesSimpleExample.svelte'
+	import TutorialAttributesComplexExample from '$lib/rendered-examples/TutorialAttributesComplexExample.svelte'
+	import TutorialChangeWrapperExample from '$lib/rendered-examples/TutorialChangeWrapperExample.svelte'
+	import TutorialInterpolationExample from '$lib/rendered-examples/TutorialInterpolationExample.svelte'
+	import TutorialInterpolationFormattingExample from '$lib/rendered-examples/TutorialInterpolationFormattingExample.svelte'
+	import TutorialMultiLanguageExample from '$lib/rendered-examples/TutorialMultiLanguageExample.svelte'
+	import TutorialTranslationFilesExample from '$lib/rendered-examples/TutorialTranslationFilesExample.svelte'
 </script>
 
 # Tutorial

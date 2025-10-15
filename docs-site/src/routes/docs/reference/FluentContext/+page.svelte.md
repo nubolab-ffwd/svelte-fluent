@@ -4,11 +4,9 @@ title: FluentContext
 
 <script>
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
-	import {
-		LocalizeAttributesExample,
-		LocalizeDynamicTextExample,
-		LocalizeStaticTextExample
-	} from '$lib/rendered-examples';
+	import LocalizeAttributesExample from '$lib/rendered-examples/LocalizeAttributesExample.svelte'
+	import LocalizeDynamicTextExample from '$lib/rendered-examples/LocalizeDynamicTextExample.svelte'
+	import LocalizeStaticTextExample from '$lib/rendered-examples/LocalizeStaticTextExample.svelte'
 </script>
 
 # {title}

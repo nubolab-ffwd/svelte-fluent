@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths'
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
-	import { FrontpageExample } from '$lib/rendered-examples';
+	import FrontpageExample from '$lib/rendered-examples/FrontpageExample.svelte';
 </script>
 
 # Getting started

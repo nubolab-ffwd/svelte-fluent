@@ -7,11 +7,6 @@ title: SvelteKit
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
 	import screenshot from './screenshot.png?w=500;900;1200&avif&metadata'
 	import screenshotBonus from './screenshot-bonus.png'
-	import {
-		TutorialFirstStepsExample,
-		TutorialTranslationFilesExample,
-		TutorialMultiLanguageExample
-	} from '$lib/rendered-examples';
 
 	const snippets = import.meta.glob('./snippets/*.{svelte,patch}', {
 		eager: true,

@@ -5,11 +5,9 @@ title: Generic Svelte
 <script lang="ts">
 	import { base } from '$app/paths'
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
-	import {
-		TutorialFirstStepsExample,
-		TutorialTranslationFilesExample,
-		TutorialMultiLanguageExample
-	} from '$lib/rendered-examples';
+	import TutorialFirstStepsExample from '$lib/rendered-examples/TutorialFirstStepsExample.svelte'
+	import TutorialTranslationFilesExample from '$lib/rendered-examples/TutorialTranslationFilesExample.svelte'
+	import TutorialMultiLanguageExample from '$lib/rendered-examples/TutorialMultiLanguageExample.svelte'
 </script>
 
 # {title}

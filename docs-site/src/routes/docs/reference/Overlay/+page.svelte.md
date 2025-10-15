@@ -4,7 +4,8 @@ menuTitle: Overlay
 ---
 
 <script>
-	import { OverlayDynamicTextExample, OverlayStaticTextExample } from '$lib/rendered-examples';
+	import OverlayDynamicTextExample from '$lib/rendered-examples/OverlayDynamicTextExample.svelte'
+	import OverlayStaticTextExample from '$lib/rendered-examples/OverlayStaticTextExample.svelte'
 </script>
 
 # {title}

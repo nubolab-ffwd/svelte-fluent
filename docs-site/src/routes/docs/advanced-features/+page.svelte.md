@@ -1,12 +1,10 @@
 <script>
 	import { base } from '$app/paths'
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
-	import {
-		TutorialComponentInjectionSimpleExample,
-		TutorialComponentInjectionComplexExample,
-		TutorialInterpolationFormattingExample,
-		TutorialInterpolationCustomFunctionsExample
-	} from '$lib/rendered-examples';
+	import TutorialComponentInjectionSimpleExample from '$lib/rendered-examples/TutorialComponentInjectionSimpleExample.svelte'
+	import TutorialComponentInjectionComplexExample from '$lib/rendered-examples/TutorialComponentInjectionComplexExample.svelte'
+	import TutorialInterpolationFormattingExample from '$lib/rendered-examples/TutorialInterpolationFormattingExample.svelte'
+	import TutorialInterpolationCustomFunctionsExample from '$lib/rendered-examples/TutorialInterpolationCustomFunctionsExample.svelte'
 </script>
 
 # Advanced features
