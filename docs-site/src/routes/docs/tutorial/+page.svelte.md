@@ -17,37 +17,13 @@
 
 This tutorial will guide you through the fundamental concepts of `svelte-fluent`. Starting with the basics of setting up your project and displaying your first translation, you will learn how to handle multiple languages, variables, and advanced value formatting.
 
-## First steps
+## Interpolate variables
 
-You need to provide your translations to `svelte-fluent` by creating a <ReferenceLink name="SvelteFluent" /> object
-and initializing the <ReferenceLink name="FluentContext" />.
+You can insert variables into your translated text by using
+[Fluent Placeables](https://projectfluent.org/fluent/guide/placeables.html).
+Values for those variables are provided via the `args` prop of the <ReferenceLink name="Localized" /> component.
 
-In the most basic setup those translations can be defined directly in the code like this:
-
-<TutorialFirstStepsExample />
-
-## Load translations from files
-
-Managing translations directly in the code can get messy.
-A better way is to load translations from `.ftl` files.
-
-<TutorialTranslationFilesExample />
-
-## Multiple languages
-
-We can now extend this to multiple languages. Let's add a selection for the
-desired language and fallback to the auto-detected language of the browser.
-
-> This example will fail when used with server-side rendering (SSR) because during
-> SSR the component cannot use browser-only globals like `navigator.languages`.
->
-> As an alternative that works in SSR you can parse the
-> [HTTP Accept-Language header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language)
-> and replace `navigator.languages` with the resulting list of locale identifiers.
->
-> Check out the [SvelteKit framework guide]({base}/docs/frameworks#sveltekit) for an example how to do this.
-
-<TutorialMultiLanguageExample />
+<TutorialInterpolationExample />
 
 ## Customize wrapper element
 
@@ -73,14 +49,6 @@ This pattern is ideal for advanced cases where you need to render a specific ele
 It's important to note that the `attributes` passed to the snippet are still filtered based on the security rules of the `tag` and `allowAttributes` props to prevent unwanted attributes from being passed through.
 
 <TutorialAttributesComplexExample />
-
-## Interpolate variables
-
-You can insert variables into your translated text by using
-[Fluent Placeables](https://projectfluent.org/fluent/guide/placeables.html).
-Values for those variables are provided via the `args` prop of the <ReferenceLink name="Localized" /> component.
-
-<TutorialInterpolationExample />
 
 ---
 

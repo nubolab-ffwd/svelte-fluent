@@ -17,16 +17,21 @@ the [Fluent](https://projectfluent.org/) localization system by Mozilla.
 
 ## Installation
 
-> Using SvelteKit? Check out the [SvelteKit framework guide]({base}/docs/frameworks#sveltekit)!
+Install `svelte-fluent` and its peer dependency `jsdom` with your package manager of choice.
 
-Install `svelte-fluent` with your package manager of choice.
-
-```
+```sh
 npm install --save-dev @nubolab-ffwd/svelte-fluent
 npm install --save jsdom
 ```
 
-| Note: the `jsdom` dependency is used for the server-side rendering of the <ReferenceLink name="Localized" /> component. It will not increase your frontend bundle size.
+> **Note:** The `jsdom` dependency is used for the server-side rendering of the `<Localized>` component. It will not increase your frontend bundle size.
+
+### Next Steps: Integration Guides
+
+Now that you have the library installed, the next step is to integrate it into your project. Please follow the guide that matches your setup:
+
+- **[SvelteKit Guide →]({base}/docs/frameworks#sveltekit):** A comprehensive, step-by-step guide for SvelteKit projects, covering server-side rendering and language negotiation. **This is the recommended path for most users.**
+- **[Generic Svelte Setup →]({base}/docs/frameworks#generic-svelte):** For projects using Svelte with Vite directly, or other bundlers.
 
 ## Configure bundler
 

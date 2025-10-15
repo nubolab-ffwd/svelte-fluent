@@ -4,6 +4,7 @@
 	import {
 		TutorialComponentInjectionSimpleExample,
 		TutorialComponentInjectionComplexExample,
+		TutorialInterpolationFormattingExample,
 		TutorialInterpolationCustomFunctionsExample
 	} from '$lib/rendered-examples';
 </script>

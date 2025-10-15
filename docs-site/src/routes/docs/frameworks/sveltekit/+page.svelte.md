@@ -1,7 +1,17 @@
+---
+title: SvelteKit
+---
+
 <script lang="ts">
+	import { base } from '$app/paths'
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
 	import screenshot from './screenshot.png?w=500;900;1200&avif&metadata'
 	import screenshotBonus from './screenshot-bonus.png'
+	import {
+		TutorialFirstStepsExample,
+		TutorialTranslationFilesExample,
+		TutorialMultiLanguageExample
+	} from '$lib/rendered-examples';
 
 	const snippets = import.meta.glob('./snippets/*.{svelte,patch}', {
 		eager: true,
@@ -19,49 +29,23 @@
 	}
 </style>
 
-# Frameworks
-
-While svelte-fluent is framework-agnostic, these guides provide step-by-step instructions and best practices for integrating it seamlessly with your favorite frameworks.
-
-## SvelteKit
+# {title}
 
 Follow this guide to integrate `svelte-fluent` into a SvelteKit project, covering initial setup, server-side language negotiation, and a complete form validation example.
 
-### Initialize a SvelteKit app
+> This guide assumes you have already created a SvelteKit project with TypeScript support and have installed `svelte-fluent` as shown on the **[Getting Started]({base}/docs/getting-started#installation)** page.
 
-Use `npm create` to initialize a new SvelteKit project called `svelte-fluent-sveltekit`.
+## Install Additional Dependencies
 
-- Select "Skeleton project" when asked for the template
-- Select "Yes, using TypeScript syntax" when asked for typescript type checking
-
-```sh
-npm create svelte@latest svelte-fluent-sveltekit
-cd svelte-fluent-sveltekit
-npm install
-```
-
-Now install `svelte-fluent`:
+First, we need to install a few packages from the Fluent ecosystem that this guide relies on for features like language negotiation.
 
 ```sh
-npm install --save-dev @nubolab-ffwd/svelte-fluent
-npm install --save jsdom
+npm install --save-dev @fluent/bundle @fluent/langneg
 ```
 
-We also need `@fluent/bundle` to parse the `.ftl` files:
+## Configure Vite Plugin
 
-```sh
-npm install --save-dev @fluent/bundle
-```
-
-We will be using `@fluent/langneg` for selecting the displayed language based on
-the browser's `Accept-Language` header. Let's install it with:
-
-```sh
-npm install --save-dev @fluent/langneg
-```
-
-Some features of `svelte-fluent` require a vite plugin to function.
-Let's add it to `vite.config.ts`:
+Some features of `svelte-fluent` require a vite plugin to function. Let's add it to `vite.config.ts`:
 
 ```diff
  import { sveltekit } from '@sveltejs/kit/vite';
@@ -72,10 +56,9 @@ Let's add it to `vite.config.ts`:
 -       plugins: [sveltekit()]
 +       plugins: [svelteFluent(), sveltekit()]
  });
-
 ```
 
-### Create translation files
+## Create translation files
 
 Let's create some translation files that we can use in our application:
 
@@ -91,7 +74,7 @@ welcome = Welcome to svelte-fluent!
 welcome = Willkommen bei svelte-fluent!
 ```
 
-### Load translations and select language
+## Load translations and select language
 
 Now that we have some translation files, we can load them.
 We also want our app to respect the browser language settings of our visitors.
@@ -130,7 +113,7 @@ export function negotiateLocale(ev: RequestEvent): string {
 }
 ```
 
-### Add server hook
+## Add server hook
 
 We need to add a [SvelteKit server hook](https://kit.svelte.dev/docs/hooks#server-hooks)
 that selects the appropriate locale and creates the <ReferenceLink name="SvelteFluent" /> object.
@@ -182,7 +165,7 @@ export {};
 By adding `import '@nubolab-ffwd/svelte-fluent/types';`;, you also provide TypeScript with the necessary definitions to
 understand `.ftl` file imports, which will resolve any errors you may have seen in your editor.
 
-### Client integration
+## Client integration
 
 On the client side, it's impossible to access the `fluent` instance we created in the server hook.
 We need to pass the _locale_ that was negotiated on the server to the client, and then re-create
@@ -221,14 +204,14 @@ in `src/routes/+layout.svelte`, which is required for using the `<Localized>` co
 
 {@html snippets['./snippets/client-integration-layout.svelte']}
 
-### Render your first localized message
+## Render your first localized message
 
 With all the setup work complete, it's finally time to render your first
 localized message in `src/routes/+page.svelte`:
 
 {@html snippets['./snippets/first-localized-page.svelte']}
 
-### Launch the app
+## Launch the app
 
 Now we have all the pieces in place and can open the app. Run this in a terminal:
 
@@ -240,7 +223,7 @@ Open your browser and go to [http://localhost:5173](http://localhost:5173) and y
 
 [![Screenshot of the opened browser window]({screenshot})]({screenshot})
 
-### Bonus: server-side localization
+## Bonus: server-side localization
 
 We want to extend our application with a form. The form should validate inputs
 and generate localized error messages if validation fails.
@@ -333,10 +316,10 @@ the new form that displays localized error messages when you submit it.
 
 [![Screenshot of the opened browser window]({screenshotBonus})]({screenshotBonus})
 
-### What's next?
+## What's next?
 
 You now have a fully functional application where you can localize messages with `svelte-fluent`.
 
-You can learn more about how to use `svelte-fluent` in the [Tutorial](../tutorial),
-explore more powerful features in the [Advanced Features guide](../advanced),
-or check out the [Reference](../reference) for API documentation.
+You can learn more about how to use `svelte-fluent` in the [Tutorial]({base}/docs/tutorial),
+explore more powerful features in the [Advanced Features guide]({base}/docs/advanced),
+or check out the [Reference]({base}/docs/reference) for API documentation.
