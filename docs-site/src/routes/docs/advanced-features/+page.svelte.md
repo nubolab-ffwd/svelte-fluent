@@ -1,10 +1,10 @@
 <script>
 	import { base } from '$app/paths'
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
-	import TutorialComponentInjectionSimpleExample from '$lib/rendered-examples/TutorialComponentInjectionSimpleExample.svelte'
-	import TutorialComponentInjectionComplexExample from '$lib/rendered-examples/TutorialComponentInjectionComplexExample.svelte'
-	import TutorialInterpolationFormattingExample from '$lib/rendered-examples/TutorialInterpolationFormattingExample.svelte'
-	import TutorialInterpolationCustomFunctionsExample from '$lib/rendered-examples/TutorialInterpolationCustomFunctionsExample.svelte'
+	import AdvancedComponentInjectionSimpleExample from '$lib/rendered-examples/AdvancedComponentInjectionSimpleExample.svelte'
+	import AdvancedComponentInjectionComplexExample from '$lib/rendered-examples/AdvancedComponentInjectionComplexExample.svelte'
+	import AdvancedInterpolationFormattingExample from '$lib/rendered-examples/AdvancedInterpolationFormattingExample.svelte'
+	import AdvancedCustomFunctionsExample from '$lib/rendered-examples/AdvancedCustomFunctionsExample.svelte'
 </script>
 
 # Advanced features
@@ -21,7 +21,7 @@ The most straightforward use case is injecting a simple component, like an icon,
 
 You configure your components using the `elements` prop of the <ReferenceLink name="Localized" /> component. Use the <ReferenceLink name="ComponentElement" /> class to wrap your Svelte component.
 
-<TutorialComponentInjectionSimpleExample />
+<AdvancedComponentInjectionSimpleExample />
 
 ### Passing Props to Components
 
@@ -34,7 +34,7 @@ In this example, we define an `Outline` component. The `ComponentElement` is con
 > - **Security (XSS):** Avoid mapping attributes directly to `style` props or event handlers (`onclick`), as this could allow for Cross-Site Scripting (XSS) attacks.
 > - **Privacy:** Be cautious with attributes like `src` on images or scripts. Allowing a translator to change a `src` attribute could enable them to insert tracking pixels or malicious scripts, potentially compromising user privacy and data.
 
-<TutorialComponentInjectionComplexExample />
+<AdvancedComponentInjectionComplexExample />
 
 ## Formatting interpolations
 
@@ -47,7 +47,7 @@ files or in the JS source.
 
 Parameters listed in "Developer parameters" can only be set in JS code.
 
-<TutorialInterpolationFormattingExample />
+<AdvancedInterpolationFormattingExample />
 
 ## Custom Functions
 
@@ -58,4 +58,4 @@ You can also check out the
 [code of the built-in Fluent Functions](https://github.com/projectfluent/fluent.js/blob/master/fluent-bundle/src/builtins.ts)
 for more examples.
 
-<TutorialInterpolationCustomFunctionsExample />
+<AdvancedCustomFunctionsExample />

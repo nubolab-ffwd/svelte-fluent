@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ExampleRenderer from '$lib/ExampleRenderer.svelte';
-	import App from '$lib/examples/tutorial-first-steps/App.svelte';
-	import appSource from '$lib/examples/tutorial-first-steps/App.svelte?raw&highlight';
+	import App from '$lib/examples/generic-svelte-first-steps/App.svelte';
+	import appSource from '$lib/examples/generic-svelte-first-steps/App.svelte?raw&highlight';
 </script>
 
 <ExampleRenderer

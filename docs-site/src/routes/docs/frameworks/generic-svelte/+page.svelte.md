@@ -5,9 +5,9 @@ title: Generic Svelte
 <script lang="ts">
 	import { base } from '$app/paths'
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
-	import TutorialFirstStepsExample from '$lib/rendered-examples/TutorialFirstStepsExample.svelte'
-	import TutorialTranslationFilesExample from '$lib/rendered-examples/TutorialTranslationFilesExample.svelte'
-	import TutorialMultiLanguageExample from '$lib/rendered-examples/TutorialMultiLanguageExample.svelte'
+	import GenericSvelteFirstStepsExample from '$lib/rendered-examples/GenericSvelteFirstStepsExample.svelte'
+	import GenericSvelteTranslationFilesExample from '$lib/rendered-examples/GenericSvelteTranslationFilesExample.svelte'
+	import GenericSvelteMultiLanguageExample from '$lib/rendered-examples/GenericSvelteMultiLanguageExample.svelte'
 </script>
 
 # {title}
@@ -57,13 +57,13 @@ You need to provide your translations to `svelte-fluent` by creating a <Referenc
 
 In the most basic setup, translations can be defined directly in the code like this:
 
-<TutorialFirstStepsExample />
+<GenericSvelteFirstStepsExample />
 
 ## Load translations from files
 
 Managing translations directly in the code can get messy. A better way is to load translations from `.ftl` files.
 
-<TutorialTranslationFilesExample />
+<GenericSvelteTranslationFilesExample />
 
 ## Multiple languages
 
@@ -72,7 +72,7 @@ We can now extend this to multiple languages. Let's add a selection for the desi
 > **Server-Side Rendering (SSR):** This example uses the browser's `navigator.languages` API, which is not available on the server.
 > For SSR, you should instead parse the `Accept-Language` HTTP header to determine the user's locale.
 
-<TutorialMultiLanguageExample />
+<GenericSvelteMultiLanguageExample />
 
 ## What's next?
 
