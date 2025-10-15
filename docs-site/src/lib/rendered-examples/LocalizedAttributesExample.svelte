@@ -1,8 +1,8 @@
 <script lang="ts">
 	import ExampleRenderer from '$lib/ExampleRenderer.svelte';
-	import App from '$lib/examples/localized/attributes/App.svelte';
-	import componentSource from '$lib/examples/localized/attributes/Component.svelte?raw&highlight';
-	import enFtlSource from '$lib/examples/localized/attributes/en.ftl?raw&highlight';
+	import App from '$lib/examples/localized-attributes/App.svelte';
+	import componentSource from '$lib/examples/localized-attributes/Component.svelte?raw&highlight';
+	import enFtlSource from '$lib/examples/localized-attributes/en.ftl?raw&highlight';
 </script>
 
 <ExampleRenderer
