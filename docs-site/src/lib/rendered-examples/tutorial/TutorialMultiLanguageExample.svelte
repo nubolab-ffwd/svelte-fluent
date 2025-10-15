@@ -1,10 +1,10 @@
 <script lang="ts">
 	import ExampleRenderer from '$lib/ExampleRenderer.svelte';
-	import App from 'svelte-fluent-examples/src/tutorial/multi-language/App.svelte';
-	import appSource from 'svelte-fluent-examples/src/tutorial/multi-language/App.svelte?raw&highlight';
-	import enFtlSource from 'svelte-fluent-examples/src/tutorial/multi-language/en.ftl?raw&highlight';
-	import frFtlSource from 'svelte-fluent-examples/src/tutorial/multi-language/fr.ftl?raw&highlight';
-	import deFtlSource from 'svelte-fluent-examples/src/tutorial/multi-language/de.ftl?raw&highlight';
+	import App from '$lib/examples/tutorial/multi-language/App.svelte';
+	import appSource from '$lib/examples/tutorial/multi-language/App.svelte?raw&highlight';
+	import enFtlSource from '$lib/examples/tutorial/multi-language/en.ftl?raw&highlight';
+	import frFtlSource from '$lib/examples/tutorial/multi-language/fr.ftl?raw&highlight';
+	import deFtlSource from '$lib/examples/tutorial/multi-language/de.ftl?raw&highlight';
 
 	const args = { selectedLocale: '' };
 </script>

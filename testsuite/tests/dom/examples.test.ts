@@ -1,6 +1,6 @@
 import { render, act, cleanup } from '@testing-library/svelte/svelte5';
 import { describe, it, expect, afterEach } from 'vitest';
-import { allExamples } from 'svelte-fluent-examples';
+import { allExamples } from 'svelte-fluent-docs-site/examples';
 import type { ComponentModule } from '../utils';
 
 afterEach(async () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest';
-import { allExamples } from 'svelte-fluent-examples';
+import { allExamples } from 'svelte-fluent-docs-site/examples';
 import type { ComponentModule } from '../utils';
 import { renderSync } from './render';
 

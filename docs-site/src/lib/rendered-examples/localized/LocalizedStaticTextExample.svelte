@@ -1,8 +1,8 @@
 <script lang="ts">
 	import ExampleRenderer from '$lib/ExampleRenderer.svelte';
-	import App from 'svelte-fluent-examples/src/localized/static-text/App.svelte';
-	import componentSource from 'svelte-fluent-examples/src/localized/static-text/Component.svelte?raw&highlight';
-	import enFtlSource from 'svelte-fluent-examples/src/localized/static-text/en.ftl?raw&highlight';
+	import App from '$lib/examples/localized/static-text/App.svelte';
+	import componentSource from '$lib/examples/localized/static-text/Component.svelte?raw&highlight';
+	import enFtlSource from '$lib/examples/localized/static-text/en.ftl?raw&highlight';
 </script>
 
 <ExampleRenderer

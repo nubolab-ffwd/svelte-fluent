@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ExampleRenderer from '$lib/ExampleRenderer.svelte';
-	import App from 'svelte-fluent-examples/src/frontpage/App.svelte';
-	import appSource from 'svelte-fluent-examples/src/frontpage/App.svelte?raw&highlight';
+	import App from '$lib/examples/frontpage/App.svelte';
+	import appSource from '$lib/examples/frontpage/App.svelte?raw&highlight';
 
 	const args = {
 		userName: 'Anna',

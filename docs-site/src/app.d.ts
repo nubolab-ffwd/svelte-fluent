@@ -1,4 +1,5 @@
 import 'unplugin-icons/types/svelte';
+import '@nubolab-ffwd/svelte-fluent/types';
 
 // See https://svelte.dev/docs/kit/types#app.d.ts
 // for information about these interfaces
