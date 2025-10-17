@@ -11,14 +11,13 @@ const context = `(?:\\s{0,1}context)=(?:"){0,1}module(?:"){0,1}`;
 const RE_MODULE_SCRIPT = new RegExp(`^(<script` + attrs + context + attrs + `>)`);
 
 /**
- *
  * @type {import('unified').Plugin<Array<void>, Root>}
  */
 export default function rehypeHeadings() {
 	return (tree, vFile) => {
 		const headings = [];
-		visit(tree, (node) => {
-			if (headingRank(node) && node.properties) {
+		visit(tree, 'element', (node) => {
+			if (headingRank(node)) {
 				headings.push({
 					rank: headingRank(node),
 					text: toString(node),

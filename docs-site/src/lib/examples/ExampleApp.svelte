@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { FluentBundle, FluentResource } from '@fluent/bundle';
 	import { createSvelteFluent, initFluentContext } from '@nubolab-ffwd/svelte-fluent';
+	import type { Snippet } from 'svelte';
 
 	interface Props {
 		resource: FluentResource;
@@ -18,4 +19,6 @@
 	initFluentContext(() => createSvelteFluent([bundle]));
 </script>
 
-{@render children?.()}
+<div class="stack">
+	{@render children?.()}
+</div>

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
 
-	type SourceEntry = { code: string; html: boolean };
+	type SourceEntry = { code: string; html: boolean; collapsed?: boolean };
 
 	let {
 		sources,
@@ -25,17 +25,29 @@
 
 <div class="stack" aria-label="Code example">
 	{#each Object.entries(normalizedSources) as [name, entry], idx (name)}
-		<div class="code-block stack">
-			{#if idx !== 0}
-				<span class="filepath">{name}</span>
-			{/if}
-			{#if entry.html}
-				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-				{@html entry.code}
-			{:else}
-				<pre class="box"><code>{entry.code}</code></pre>
-			{/if}
-		</div>
+		{#if entry.collapsed}
+			<details>
+				<summary><span class="filepath">{name}</span></summary>
+				{#if entry.html}
+					<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+					{@html entry.code}
+				{:else}
+					<pre class="box"><code>{entry.code}</code></pre>
+				{/if}
+			</details>
+		{:else}
+			<div class="code-block stack">
+				{#if idx !== 0}
+					<span class="filepath">{name}</span>
+				{/if}
+				{#if entry.html}
+					<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+					{@html entry.code}
+				{:else}
+					<pre class="box"><code>{entry.code}</code></pre>
+				{/if}
+			</div>
+		{/if}
 	{/each}
 
 	<div>Result:</div>
@@ -53,6 +65,9 @@
 </div>
 
 <style lang="postcss">
+	details {
+		max-width: none;
+	}
 	.rendered {
 		& :global(input),
 		& :global(select),
