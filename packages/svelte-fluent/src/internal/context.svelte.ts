@@ -15,8 +15,8 @@ class FluentContext {
 	readonly localize: Localize = (...args) => this.fluent.localize(...args);
 }
 
-export function initFluentContext(getter: () => SvelteFluent) {
-	setContext(CONTEXT_KEY, new FluentContext(getter));
+export function initFluentContext(getFluent: () => SvelteFluent) {
+	setContext(CONTEXT_KEY, new FluentContext(getFluent));
 }
 
 function getFluentContext(): FluentContext {

@@ -8,9 +8,9 @@ type Options = {
 };
 
 export type SvelteFluent = {
-	readonly bundles: FluentBundle[];
-	readonly markupParser: MarkupParser;
-	readonly onError: (msg: string) => void;
+	readonly _bundles: FluentBundle[];
+	readonly _markupParser: MarkupParser;
+	readonly _onError: (msg: string) => void;
 	localize: (id: string, args?: Record<string, FluentVariable>) => string;
 };
 
@@ -18,9 +18,9 @@ const logError = (msg: string) => console.error(`[svelte-fluent] ${msg}`);
 
 export function createSvelteFluent(bundles: FluentBundle[], options: Options = {}): SvelteFluent {
 	const fluent: SvelteFluent = {
-		bundles,
-		onError: options.onError ?? logError,
-		markupParser: options.markupParser ?? createParser(),
+		_bundles: bundles,
+		_onError: options.onError ?? logError,
+		_markupParser: options.markupParser ?? createParser(),
 		localize: (id, args) => {
 			return getTranslation(fluent, id, args, false).value;
 		}
@@ -40,19 +40,19 @@ export function getTranslation(
 	formatAttributes = true
 ): Translation {
 	const [msgId, attrId] = id.split('.', 2);
-	const bundle = mapBundleSync(fluent.bundles, msgId);
+	const bundle = mapBundleSync(fluent._bundles, msgId);
 	if (bundle === null) {
-		fluent.onError?.(`Localization missing: "${id}"`);
+		fluent._onError?.(`Localization missing: "${id}"`);
 		return { value: id, attributes: {} };
 	}
 	const msg = bundle.getMessage(msgId);
 	if (!msg) {
-		fluent.onError?.(`Localization missing: "${id}"`);
+		fluent._onError?.(`Localization missing: "${id}"`);
 		return { value: id, attributes: {} };
 	}
 	const pattern = attrId ? msg.attributes[attrId] : msg.value;
 	if (attrId && pattern === null) {
-		fluent.onError?.(`Localization missing: "${id}"`);
+		fluent._onError?.(`Localization missing: "${id}"`);
 		return { value: id, attributes: {} };
 	}
 	const errors: Error[] = [];
@@ -67,7 +67,7 @@ export function getTranslation(
 				)
 			: {};
 	for (const err of errors) {
-		fluent.onError?.(`Localization error in "${id}": ${err}`);
+		fluent._onError?.(`Localization error in "${id}": ${err}`);
 	}
 	return { value, attributes };
 }

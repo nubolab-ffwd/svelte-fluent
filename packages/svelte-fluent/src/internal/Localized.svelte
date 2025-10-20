@@ -40,7 +40,6 @@
 		tag?: string;
 		allowAttributes?: string[];
 		elements?: Record<string, ElementConfig>;
-		outputTag?: Snippet<[OutputTagOptions]>;
 		children?: Snippet<[{ attributes: Record<string, string>; translatedContent: Snippet }]>;
 	}
 
@@ -50,7 +49,6 @@
 		tag = 'span',
 		allowAttributes,
 		elements: elementsProp = {},
-		outputTag = defaultOutputTag,
 		children
 	}: Props = $props();
 
@@ -65,31 +63,31 @@
 		config: ElementConfig | undefined
 	): boolean {
 		if (!ALLOWED_ELEMENTS.includes(tag) && !name) {
-			fluent.current.onError(
+			fluent.current._onError(
 				`An element of forbidden type "${tag}" was found in the translation. ` +
 					'Only safe text-level elements and elements with "data-element" attribute are allowed.'
 			);
 			return false;
 		}
 		if (name && !config) {
-			fluent.current.onError(`An element named "${name}" wasn't found in the configuration.`);
+			fluent.current._onError(`An element named "${name}" wasn't found in the configuration.`);
 			return false;
 		}
 		if (tag === COMPONENT_TAG && (!name || !(config instanceof ComponentElement))) {
-			fluent.current.onError(
+			fluent.current._onError(
 				`The "${COMPONENT_TAG}" tag must reference a component element with "data-element".`
 			);
 			return false;
 		}
 		if (tag !== COMPONENT_TAG && config instanceof ComponentElement) {
-			fluent.current.onError(
+			fluent.current._onError(
 				`A component element named "${name}" was found in the translation using ` +
 					`forbidden type ${tag}. Component elements must use the "${COMPONENT_TAG}" tag.`
 			);
 			return false;
 		}
 		if (config instanceof TagElement && config.tag !== tag) {
-			fluent.current.onError(
+			fluent.current._onError(
 				`An element named "${name}" was found in the translation ` +
 					`but its type ${tag} didn't match the ` +
 					`element found in the configuration (${config.tag}).`
@@ -105,7 +103,7 @@
 			// The full matched string, e.g., '<fluent-component data-element="icon" />'
 			const fullMatch = match[0];
 
-			fluent.current.onError(
+			fluent.current._onError(
 				`Detected component element using self-closing syntax: \`${fullMatch}\`. ` +
 					'This can lead to unexpected results. Use a regular closing tag like ' +
 					`\`<${COMPONENT_TAG} data-element="example"></${COMPONENT_TAG}>\` instead.`
@@ -150,7 +148,7 @@
 		}
 		const content: Content = [];
 		warnOnSelfClosingComponentElement(source);
-		fluent.current.markupParser.parse(source, makeParserHandlers(content));
+		fluent.current._markupParser.parse(source, makeParserHandlers(content));
 		return content;
 	}
 </script>
@@ -177,7 +175,7 @@
 	{/each}
 {/snippet}
 
-{#snippet defaultOutputTag({
+{#snippet outputTag({
 	tag,
 	untrustedAttributes,
 	trustedAttributes,

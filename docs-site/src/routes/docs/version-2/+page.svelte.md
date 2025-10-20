@@ -1,3 +1,7 @@
+<script>
+	import { base } from '$app/paths'
+</script>
+
 # Version 2
 
 We're thrilled to release version 2 of `svelte-fluent`\! This is a major update focused on simplifying the API, unlocking powerful new features like Svelte component injection, and embracing modern, reactive Svelte patterns for a better developer experience.
@@ -10,13 +14,20 @@ This page provides an overview of the most important changes, new features, and 
 
 To streamline the API, the old `Localized` and `Overlay` components have been merged into a single, more powerful `<Localized>` component. This single component is now the primary way to render translations in your markup and unlocks several powerful new capabilities.
 
-**Breaking Change: `<Localized>` children Snippet Behavior**
+**Breaking Change: New `<Localized>` children Snippet API**
 
-In previous versions, the `children` snippet received the translated text and attributes as slot props. In version 2.0, to simplify the API and provide a more robust composition model, the `children` snippet no longer receives any arguments. Its sole purpose is now to provide override content for the component, which is ideal for cases like accessible icon buttons.
+The arguments passed to the `<Localized>` component's `children` snippet have been updated. This change was necessary to support new features in version 2, such as the improved SSR implementation and Svelte component injection.
 
-**New Feature: Wrapper Element with localizable Attributes**
+Here are the differences from version 1:
 
-The new `<Localized>` component now always renders a wrapper element, which you can customize using the `tag` prop (e.g., as a `<span>` or `<button>`). The primary purpose of this wrapper is to provide a home for attributes defined directly in your Fluent messages. By default, a list of safe attributes (including `title` and `aria-label`) are automatically applied, while any other attributes not on this default list must be explicitly allowed through tag options.
+- The `attrs` argument (a record of attributes) has been renamed to `attributes`.
+- The `text` argument (a string) has been replaced by `translatedContent` (a renderable snippet).
+
+This new structure allows you to place the translated content exactly where you need it within your custom markup. For more details, see the **[Custom Rendering]({base}/docs/advanced-features#custom-rendering)** section in our advanced features guide.
+
+**New Feature: Wrapper Element with localizable attributes**
+
+The new `<Localized>` component now always renders a wrapper element, which you can customize using the `tag` prop (e.g., as a `<span>` or `<button>`). The primary purpose of this wrapper is to provide a home for attributes defined directly in your Fluent messages. By default, a list of safe attributes (including `title` and `aria-label`) are automatically applied, while any other attributes not on this default list must be explicitly allowed through the `allowAttributes` prop.
 
 For example, here is how you would create a localized message, showing both a simple and an advanced pattern.
 
@@ -54,11 +65,11 @@ The code above will render the following HTML output:
 <a href="/new-features" aria-label="Read more about our new features">Read more</a>
 ```
 
-**New Feature: Svelte Component Injection**
+**New Feature: Svelte Component Insertion**
 
-For the first time, you can now embed your own Svelte components directly inside your translation strings, allowing for richer, more interactive localized content. You can now define your components in your localization config and reference them directly in your `.ftl` files for seamless integration.
+For the first time, you can now insert your own Svelte components directly inside your translation strings, allowing for richer, more interactive localized content. You can now define your components in your localization config and reference them directly in your `.ftl` files for seamless integration.
 
-For instance, you can inject an `Icon` component into a login button:
+For instance, you can insert an `Icon` component into a login button:
 
 **In your Svelte component:**
 
@@ -97,11 +108,14 @@ google-login-button =
 
 **Robust and Reliable SSR**
 
-While `svelte-fluent` v1 supported SSR, its reliance on internal Svelte APIs proved to be fragile. Recent Svelte updates changed these internal APIs, which broke the SSR functionality of the `Overlay` component for many users. Version 2 resolves this by re-implementing this functionality in the new `<Localized>` component **without using any internal Svelte APIs,** providing a robust and future-proof solution.
+While `svelte-fluent` v1 supported SSR, its reliance on internal Svelte APIs proved to be problematic.
+Recent Svelte updates changed these internal APIs, which broke the SSR functionality of the `Overlay` component.
+The new `<Localized>` component in version 2 now use a new approach for SSR which doesn't rely on internal Svelte APIs, providing a robust and future-proof solution.
 
 ### 2\. New Reactive API: `useLocalize` and `useSvelteFluent`
 
-The `FluentContext` API has been replaced by two new reactive helpers: `useLocalize` and `useSvelteFluent`. `useLocalize` is a reactive store for accessing translations, while `useSvelteFluent` provides access to the full `SvelteFluent` instance. As a result, `getFluentContext`, `initFluentContext`'s return value, and the `FluentContext` type are no longer part of the public API.
+The `FluentContext` API has been replaced by two new reactive utilities: `useLocalize` and `useSvelteFluent`. `useLocalize` is a reactive function for accessing translations, while `useSvelteFluent` provides access to the full `SvelteFluent` instance.
+As a result, `getFluentContext`, `initFluentContext`'s return value, and the `FluentContext` type are no longer part of the public API.
 
 ### 3\. Housekeeping: Component Removals
 
@@ -190,29 +204,39 @@ The behavior of the `children` snippet has changed. It no longer receives argume
 
 **Before (v1):**
 
-The `children` snippet was used with `let:` directives to access the translated text.
+The `children` snippet was passed the translated text to access the translated text.
 
 ```svelte
 <Localized id="greeting" let:text>
-	<strong>{text}</strong>
+	{#snippet children({ text })}
+		<strong>{text}</strong>
+	{/snippet}
 </Localized>
 ```
 
 **After (v2):**
 
-To wrap a translation in an element, use the built-in `tag` prop. The `children` snippet is now only for replacing the translated content entirely (e.g., for an icon button).
+To wrap a translation in an element, use the built-in `tag` prop. You can also override the `children` snippet for full control over the rendered markup.
+
+TODO: add links to relevant tutorial and advanced features guide sections.
 
 ```svelte
 <Localized id="greeting" tag="strong" />
 
 <Localized id="login-button" tag="button">
-	<Icon />
+	{#snippet children({ attributes })}
+		<button {...attributes}>
+			<Icon />
+		</button>
+	{/snippet}
 </Localized>
 ```
 
 **Example 2: Complex Layouts with Attributes**
 
-For more complex layouts, where the `children` snippet was previously used to access a message's attributes, the new approach is to use the `useLocalize` helper directly in your markup.
+For more complex uses, where the `children` snippet was previously used to access a message's attributes.
+The new `<Localized>` component uses attributes to enhance the DOM element. If you don't want to migrate to the
+new `<Localized>` component, you can instead use the reactive `localize` function directly in your markup.
 
 **In your `.ftl` file:**
 
@@ -224,7 +248,7 @@ confirm = Please confirm the action.
 
 **Before (v1):**
 
-You used the `children` snippet with `let:text` and `let:attrs` to build your UI.
+You used the `children` snippet `text` and `attrs` arguments to build your UI.
 
 ```svelte
 <script>
@@ -244,7 +268,7 @@ You used the `children` snippet with `let:text` and `let:attrs` to build your UI
 
 **After (v2):**
 
-You now use the `useLocalize` helper to get the main translation and each attribute individually. This pattern is no longer handled by the `<Localized>` component.
+You now use the reative `localize` function to get the main translation and each attribute individually.
 
 ```svelte
 <script>
@@ -305,7 +329,7 @@ The method for accessing translations in your `<script>` block has been updated 
 
 **Before (v1):**
 
-You used `getFluentContext` to access the reactive `localize` helper.
+You used `getFluentContext` and destructuring to access the reactive `localize` function.
 
 ```svelte
 <script>
@@ -317,7 +341,8 @@ You used `getFluentContext` to access the reactive `localize` helper.
 
 **After (v2):**
 
-The `getFluentContext` function has been replaced by the `useLocalize` helper. Calling this function now gives you direct access to the reactive `localize` helper.
+The `getFluentContext` function has been replaced by the `useLocalize` utility.
+Using this utility now gives you direct access to the reactive `localize` function.
 
 ```svelte
 <script>

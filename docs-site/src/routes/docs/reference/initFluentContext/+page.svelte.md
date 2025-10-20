@@ -4,23 +4,21 @@ title: initFluentContext
 
 <script>
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
+	import PropDescription from '$lib/PropDescription.svelte'
 </script>
 
 # {title}
 
-Initializes a new <ReferenceLink name="FluentContext" /> with the given <ReferenceLink name="SvelteFluent" /> object
-and adds it to the svelte context.
+Initializes the svelte component context for the utitilies and components provided by `svelte-fluent`.
 
 ```ts
-initFluentContext(() => fluent);
+function initFluentContext(getFluent: () => SvelteFluent): void;
 ```
 
-## Parameters
+## Arguments
 
-| Name | Type                 | Description                                                         |
-| :--- | :------------------- | :------------------------------------------------------------------ |
-| `fn` | `() => SvelteFluent` | Defines the <ReferenceLink name="SvelteFluent" /> object to be used |
+<PropDescription name="getFluent" type="() => SvelteFluent">
 
-## Return value
+Defines the <ReferenceLink name="SvelteFluent" /> object that components and utilities should use.
 
-The <ReferenceLink name="FluentContext" /> object.
+</PropDescription>
