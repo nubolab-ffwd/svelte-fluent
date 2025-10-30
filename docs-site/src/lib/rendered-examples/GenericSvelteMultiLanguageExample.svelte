@@ -19,12 +19,20 @@
 >
 	<App {...args} />
 	{#snippet controls()}
-		<dl>
+		<dl
+			class="grid grid-cols-[auto_minmax(min-content,20rem)] place-content-start items-center gap-4"
+		>
 			<dt>
-				<label for="selected-locale">selectedLocale</label>
+				<label class="label font-mono" for="selected-locale">
+					<span class="label-text">selectedLocale</span>
+				</label>
 			</dt>
 			<dd>
-				<select id="selected-locale" bind:value={args.selectedLocale}>
+				<select
+					class="select ring-surface-600"
+					id="selected-locale"
+					bind:value={args.selectedLocale}
+				>
 					<option value="">auto</option>
 					<option value="de">de</option>
 					<option value="en">en</option>
@@ -34,12 +42,3 @@
 		</dl>
 	{/snippet}
 </ExampleRenderer>
-
-<style lang="postcss">
-	dl {
-		display: grid;
-		grid-template-rows: auto;
-		grid-template-columns: 1fr 2fr;
-		align-items: start;
-	}
-</style>

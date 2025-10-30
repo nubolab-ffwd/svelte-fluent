@@ -14,12 +14,17 @@
 >
 	<App {...args} />
 	{#snippet controls()}
-		<dl>
+		<dl
+			class="grid grid-cols-[auto_minmax(min-content,20rem)] place-content-start items-center gap-4"
+		>
 			<dt>
-				<label for="localized-dynamic-text-unread-emails">unreadEmails</label>
+				<label class="label font-mono" for="localized-dynamic-text-unread-emails">
+					<span class="label-text">unreadEmails</span>
+				</label>
 			</dt>
 			<dd>
 				<input
+					class="input ring-surface-600"
 					id="localized-dynamic-text-unread-emails"
 					type="number"
 					bind:value={args.unreadEmails}

@@ -4,6 +4,6 @@
 	let { name, legacy }: { name: string; legacy?: boolean } = $props();
 </script>
 
-<a href={resolve(`/docs/${legacy ? 'legacy' : 'reference'}/${name}/` as RouteId)}>
+<a class="anchor" href={resolve(`/docs/${legacy ? 'legacy' : 'reference'}/${name}/` as RouteId)}>
 	{name}
 </a>

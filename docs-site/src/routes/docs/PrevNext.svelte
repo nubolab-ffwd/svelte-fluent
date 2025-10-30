@@ -64,58 +64,31 @@
 	}
 </script>
 
-<div class="prev-next">
+{#snippet link(title: string, text: string, href?: string, align: 'start' | 'end' = 'start')}
+	<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+	<a
+		{href}
+		class={[
+			'border-surface-200-800 hover:border-surface-400-600 flex flex-col gap-0 rounded border px-4 py-2',
+			align === 'start' ? 'items-start' : 'items-end'
+		]}
+	>
+		<span>{title}</span>
+		<span class="text-(--anchor-font-color) dark:text-(--anchor-font-color-dark) font-semibold"
+			>{text}</span
+		>
+	</a>
+{/snippet}
+
+<div class="grid grid-cols-2 gap-4">
 	{#if prev}
-		<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-		<a class="prev" href={prev?.href}>
-			<span class="desc">Previous page</span>
-			<span class="text">{prev?.text}</span>
-		</a>
+		{@render link('Previous page', prev.text, prev.href)}
 	{:else}
 		<div></div>
 	{/if}
 	{#if next}
-		<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-		<a class="next" href={next?.href}>
-			<span class="desc">Next page</span>
-			<span class="text">{next?.text}</span>
-		</a>
+		{@render link('Next page', next.text, next.href, 'end')}
 	{:else}
 		<div></div>
 	{/if}
 </div>
-
-<style lang="postcss">
-	.prev-next {
-		display: flex;
-		gap: var(--space);
-		& * {
-			max-inline-size: none;
-		}
-		& > * {
-			flex: 1 1 50%;
-			&:last-child {
-				text-align: end;
-			}
-		}
-		& a {
-			border: 1px solid var(--theme-color-gray-light);
-			padding: var(--space);
-			border-radius: var(--s-2);
-
-			&:hover {
-				border-color: var(--theme-color-secondary-dark);
-			}
-			& .desc,
-			& .text {
-				display: block;
-			}
-			& .desc {
-				color: var(--theme-color-gray-dark);
-			}
-			& .text {
-				font-variation-settings: 'wght' 570;
-			}
-		}
-	}
-</style>

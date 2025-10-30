@@ -12,29 +12,22 @@
 </script>
 
 <div class="props-description">
-	<div class="stack" style:--gap="var(--s-3)">
-		<header>
-			<div>
-				<span class="name">{name}</span>
-				<code class="badge">{type}</code>
-				{#if required}<span class="required">required</span>{/if}
+	<div class="space-y-4">
+		<header class="space-y-1">
+			<div class="flex items-center gap-2">
+				<span class="dark:text-primary-500 text-primary-700 font-mono font-bold">{name}</span>
+				<code class="code" title="TypeScript type">{type}</code>
 			</div>
 		</header>
-		{#if defaultValue}<div>Default: <code>{defaultValue}</code></div>{/if}
 		{@render children()}
+		{#if defaultValue}
+			<div class="flex items-center gap-2">
+				Default:
+				<code class="code">{defaultValue}</code>
+			</div>
+		{/if}
+		{#if required}
+			<span class="text-error-600-400 font-mono">required</span>
+		{/if}
 	</div>
 </div>
-
-<style lang="postcss">
-	header {
-		display: flex;
-		flex-direction: row;
-		gap: var(--s-2);
-	}
-	.name {
-		color: var(--theme-color-primary);
-	}
-	.required {
-		color: red;
-	}
-</style>

@@ -1,5 +1,6 @@
 <script>
 	import { base } from '$app/paths'
+	import Callout from '$lib/Callout.svelte'
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
 	import AdvancedInsertElementExample from '$lib/rendered-examples/AdvancedInsertElementExample.svelte'
 	import AdvancedInsertElementAttributesExample from '$lib/rendered-examples/AdvancedInsertElementAttributesExample.svelte'
@@ -30,10 +31,14 @@ A powerful pattern is to combine attributes set in your component with attribute
 
 In the example below, the `href` is set in the component's `TagElement`, while the `rel` and `target` attributes are provided by the translator in the `.ftl` file.
 
-> **Security Note:** You should carefully consider which attributes your translators should control. Directly mapping translator-controlled values to potentially dangerous attributes can create security vulnerabilities.
->
->   * **Security (XSS):** Avoid allowing attributes like `style` or event handlers (`onclick`), as this could allow for Cross-Site Scripting (XSS) attacks.
->   * **Privacy:** Be cautious with attributes like `src` on images or the `rel` attribute on links. Allowing a translator to change these could enable them to insert tracking pixels or compromise user privacy.
+<Callout type="warning" title="Security Note">
+
+You should carefully consider which attributes your translators should control. Directly mapping translator-controlled values to potentially dangerous attributes can create security vulnerabilities.
+
+- **Security (XSS):** Avoid allowing attributes like `style` or event handlers (`onclick`), as this could allow for Cross-Site Scripting (XSS) attacks.
+- **Privacy:** Be cautious with attributes like `src` on images or the `rel` attribute on links. Allowing a translator to change these could enable them to insert tracking pixels or compromise user privacy.
+
+</Callout>
 
 <AdvancedInsertElementAttributesExample />
 
@@ -55,10 +60,14 @@ You can also pass props to your injected components. This can be done by providi
 
 In this example, we define an `Outline` component. The `ComponentElement` is configured with a function that takes the attributes from the `<fluent-component>` tag in the translation and passes them as props to the `Outline` component. This allows the translator to control the component's props directly from the `.ftl` file.
 
-> **Security Note:** You should always be careful how attributes from a translation are used in your components. Directly mapping translator-controlled values to potentially dangerous props can create security vulnerabilities.
->
-> - **Security (XSS):** Avoid mapping attributes directly to `style` props or event handlers (`onclick`), as this could allow for Cross-Site Scripting (XSS) attacks.
-> - **Privacy:** Be cautious with attributes like `src` on images or scripts. Allowing a translator to change a `src` attribute could enable them to insert tracking pixels or malicious scripts, potentially compromising user privacy and data.
+<Callout type="warning" title="Security Note">
+
+You should always be careful how attributes from a translation are used in your components. Directly mapping translator-controlled values to potentially dangerous props can create security vulnerabilities.
+
+- **Security (XSS):** Avoid mapping attributes directly to `style` props or event handlers (`onclick`), as this could allow for Cross-Site Scripting (XSS) attacks.
+- **Privacy:** Be cautious with attributes like `src` on images or scripts. Allowing a translator to change a `src` attribute could enable them to insert tracking pixels or malicious scripts, potentially compromising user privacy and data.
+
+</Callout>
 
 <AdvancedInsertComponentComplexExample />
 

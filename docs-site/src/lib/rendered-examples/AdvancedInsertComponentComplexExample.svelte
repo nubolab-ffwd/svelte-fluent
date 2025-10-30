@@ -9,7 +9,7 @@
 <ExampleRenderer
 	sources={{
 		'Component.svelte': { code: componentSource, html: true },
-		'Outline.svelte': { code: outlineSource, html: true },
+		'Outline.svelte': { code: outlineSource, html: true, collapsed: true },
 		'en.ftl': { code: enFtlSource, html: true }
 	}}
 >

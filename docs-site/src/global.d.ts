@@ -4,8 +4,10 @@ declare module '*.svelte.md' {
 	const component: Component;
 	export default component;
 
-	export const metadata: Record<string, unknown>;
-	export const headings: { rank: number; text: string; id: string }[];
+	export const metadata: {
+		headings: { rank: number; text: string; id: string }[];
+		[k: string]: unknown;
+	};
 }
 
 declare module '*?raw&highlight' {

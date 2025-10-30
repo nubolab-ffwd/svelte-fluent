@@ -3,3 +3,6 @@ packages:
   - docs-site
   - examples
   - testsuite
+onlyBuiltDependencies:
+  - esbuild
+  - '@tailwindcss/oxide'

@@ -13,20 +13,46 @@
 <ExampleRenderer sources={{ 'App.svelte': { code: appSource, html: true } }}>
 	<App {...args} />
 	{#snippet controls()}
-		<dl style:--space="var(--s-2)">
-			<dt><label for="frontpage-username">userName</label></dt>
-			<dd><input id="frontpage-username" type="text" bind:value={args.userName} /></dd>
-			<dt><label for="frontpage-usergender">userGender</label></dt>
+		<dl
+			class="grid grid-cols-[auto_minmax(min-content,20rem)] place-content-start items-center gap-4"
+		>
+			<dt>
+				<label class="label font-mono" for="frontpage-username">
+					<span class="label-text">userName</span>
+				</label>
+			</dt>
 			<dd>
-				<select id="frontpage-usergender" bind:value={args.userGender}>
+				<input
+					class="input ring-surface-600"
+					id="frontpage-username"
+					type="text"
+					bind:value={args.userName}
+				/>
+			</dd>
+			<dt>
+				<label class="label font-mono" for="frontpage-usergender">
+					<span class="label-text">userGender</span>
+				</label>
+			</dt>
+			<dd>
+				<select
+					class="select ring-surface-600"
+					id="frontpage-usergender"
+					bind:value={args.userGender}
+				>
 					<option value="male">male</option>
 					<option value="female">female</option>
 					<option value="unspecified">unspecified</option>
 				</select>
 			</dd>
-			<dt><label for="frontpage-photocount">photoCount</label></dt>
+			<dt>
+				<label class="label font-mono" for="frontpage-photocount">
+					<span class="label-text">photoCount</span>
+				</label>
+			</dt>
 			<dd>
 				<input
+					class="input accent-surface-50!"
 					id="frontpage-photocount"
 					type="range"
 					min="1"

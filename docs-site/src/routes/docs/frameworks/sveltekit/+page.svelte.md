@@ -4,31 +4,21 @@ title: SvelteKit
 
 <script lang="ts">
 	import { base } from '$app/paths'
+	import Callout from '$lib/Callout.svelte'
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
-	import screenshot from './screenshot.png?w=500;900;1200&avif&metadata'
-	import screenshotBonus from './screenshot-bonus.png'
-
-	const snippets = import.meta.glob('./snippets/*.{svelte,patch}', {
-		eager: true,
-		query: '?raw&highlight',
-		import: 'default'
-	})
+	import screenshot from './screenshot.png?w=500;900;1200&webp&metadata'
+	import screenshotBonus from './screenshot-bonus.png?w=500;900;1200&webp&metadata'
 </script>
-
-<style lang="postcss">
-	img {
-		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-		border-radius: calc(var(--s0) / 4);
-		margin-inline: auto;
-		max-width: 100%;
-	}
-</style>
 
 # {title}
 
 Follow this guide to integrate `svelte-fluent` into a SvelteKit project, covering initial setup, server-side language negotiation, and a complete form validation example.
 
-> This guide assumes you have already created a SvelteKit project with TypeScript support and have installed `svelte-fluent` as shown on the **[Getting Started]({base}/docs/getting-started#installation)** page.
+<Callout title="Project setup required">
+
+This guide assumes you have already created a SvelteKit project with TypeScript support and have installed `svelte-fluent` as shown on the **[Getting Started]({base}/docs/getting-started#installation)** page.
+
+</Callout>
 
 ## Install Additional Dependencies
 
@@ -42,7 +32,7 @@ npm install --save-dev @fluent/bundle @fluent/langneg
 
 Some features of `svelte-fluent` require a vite plugin to function. Let's add it to `vite.config.ts`:
 
-```diff
+```diff title="vite.config.ts"
  import { sveltekit } from '@sveltejs/kit/vite';
  import { defineConfig } from 'vite';
 +import svelteFluent from '@nubolab-ffwd/svelte-fluent/vite';
@@ -57,15 +47,11 @@ Some features of `svelte-fluent` require a vite plugin to function. Let's add it
 
 Let's create some translation files that we can use in our application:
 
-```ftl
-# src/translations/en.ftl
-
+```ftl title="src/translations/en.ftl"
 welcome = Welcome to svelte-fluent!
 ```
 
-```ftl
-# src/translations/de.ftl
-
+```ftl title="src/translations/de.ftl"
 welcome = Willkommen bei svelte-fluent!
 ```
 
@@ -75,9 +61,7 @@ Now that we have some translation files, we can load them.
 We also want our app to respect the browser language settings of our visitors.
 Let's create some helpers for that in `src/lib/fluent.ts`:
 
-```ts
-// src/lib/fluent.ts
-
+```ts title="src/lib/fluent.ts"
 import { FluentBundle, FluentResource } from '@fluent/bundle';
 import { acceptedLanguages, negotiateLanguages } from '@fluent/langneg';
 import type { RequestEvent } from '@sveltejs/kit';
@@ -115,9 +99,7 @@ that selects the appropriate locale and creates the <ReferenceLink name="SvelteF
 
 Let's use the new helpers we created to build the hook:
 
-```ts
-// src/hooks.server.ts
-
+```ts title="src/hooks.server.ts"
 import { generateBundles, negotiateLocale } from '$lib/fluent';
 import type { Handle } from '@sveltejs/kit';
 import { createSvelteFluent } from '@nubolab-ffwd/svelte-fluent';
@@ -133,9 +115,7 @@ export const handle: Handle = async ({ event, resolve }) => {
 At this point, TypeScript will report an error for `event.locals.locale`
 and `event.locals.fluent`. To fix this we need to modify our `src/app.d.ts`:
 
-```ts
-// src/app.d.ts
-
+```ts title="src/app.d.ts"
 import '@nubolab-ffwd/svelte-fluent/types';
 import { SvelteFluent } from '@nubolab-ffwd/svelte-fluent';
 
@@ -168,9 +148,7 @@ the `fluent` instance in the browser.
 
 Let's start by exposing the `locale` from the server in `src/routes/+layout.server.ts`:
 
-```ts
-// src/routes/+layout.server.ts
-
+```ts title="src/routes/+layout.server.ts"
 export function load(event) {
 	// expose selected locale from hook to client
 	return { locale: event.locals.locale };
@@ -180,9 +158,7 @@ export function load(event) {
 Now that the locale is available on the client as `data.locale`, we can create a new `SvelteFluent`
 instance in `src/routes/+layout.ts`:
 
-```ts
-// src/routes/+layout.ts
-
+```ts title="src/routes/+layout.ts"
 import { generateBundles } from '$lib/fluent';
 import { createSvelteFluent } from '@nubolab-ffwd/svelte-fluent';
 
@@ -197,14 +173,31 @@ Finally, we can access the `fluent` object via `data.fluent` and use it to initi
 in `src/routes/+layout.svelte`, which is required for using the `<Localized>` component and
 `useLocalize` helper.
 
-{@html snippets['./snippets/client-integration-layout.svelte']}
+```svelte title="src/routes/+layout.svelte"
+<script lang="ts">
+	import { initFluentContext } from '@nubolab-ffwd/svelte-fluent';
+	import type { PageData } from './$types';
+	import type { Snippet } from 'svelte';
+
+	let { data, children }: { data: PageData; children: Snippet } = $props();
+	initFluentContext(() => data.fluent);
+</script>
+
+{@render children()}
+```
 
 ## Render your first localized message
 
 With all the setup work complete, it's finally time to render your first
 localized message in `src/routes/+page.svelte`:
 
-{@html snippets['./snippets/first-localized-page.svelte']}
+```svelte title="src/routes/+page.svelte"
+<script lang="ts">
+	import { Localized } from '@nubolab-ffwd/svelte-fluent';
+</script>
+
+<h1><Localized id="welcome" /></h1>
+```
 
 ## Launch the app
 
@@ -227,7 +220,7 @@ Let's start by adding some additional messages to our translation files:
 
 **In `src/translations/en.ftl`:**
 
-```diff
+```diff title="src/translations/en.ftl"
  welcome = Welcome to svelte-fluent!
 +
 +example-form-heading = Example form
@@ -241,7 +234,7 @@ Let's start by adding some additional messages to our translation files:
 
 **In `src/translations/de.ftl`:**
 
-```diff
+```diff title="src/translations/de.ftl"
  welcome = Willkommen bei svelte-fluent!
 +
 +example-form-heading = Beispielformular
@@ -255,9 +248,7 @@ Let's start by adding some additional messages to our translation files:
 
 Next, we need a form action in `src/routes/+page.server.ts` to handle the logic.
 
-```ts
-// src/routes/+page.server.ts
-
+```ts title="src/routes/+page.server.ts"
 import { fail } from '@sveltejs/kit';
 import type { Actions } from './$types';
 
@@ -279,7 +270,7 @@ Finally, we update our page in `src/routes/+page.svelte`. By leveraging the `<Lo
 declaratively build our form using the messages defined in our translation files. This keeps the markup clean
 and readable while ensuring all text and attributes are correctly localized.
 
-```svelte
+```svelte title="src/routes/+page.svelte"
 <script lang="ts">
 	import { Localized } from '@nubolab-ffwd/svelte-fluent';
 	import type { ActionData } from './$types';

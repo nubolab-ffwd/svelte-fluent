@@ -1,54 +1,34 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
+	import LightSwitch from '$lib/LightSwitch.svelte';
 	import Logo from '$lib/logo.svelte';
 	import IconGitHub from '~icons/mdi/github';
 </script>
 
-<header>
-	<nav aria-label="Primary" class="cluster" style:--justify="space-between">
-		<div class="cluster">
-			<a class="logo" href={resolve('/')}>
-				<Logo /> svelte-fluent
-			</a>
-		</div>
-		<div class="cluster">
-			<a href={resolve('/docs')}>Docs</a>
-			<a
-				href="https://github.com/nubolab-ffwd/svelte-fluent"
-				target="_blank"
-				rel="noreferrer noopener"
-				title="View on GitHub"
-			>
-				<div class="icon">
+<header class="header">
+	<nav aria-label="Primary">
+		<div class="flex justify-between">
+			<div>
+				<a href={resolve('/')} class="flex items-center justify-center gap-2">
+					<div class="inline-block w-16">
+						<Logo />
+					</div>
+					<span class="font-bold">svelte-fluent</span>
+				</a>
+			</div>
+			<div class="flex items-center justify-center gap-1">
+				<a class="btn hover:preset-tonal" href={resolve('/docs')}>Docs</a>
+				<LightSwitch />
+				<a
+					class="btn-icon hover:preset-tonal"
+					href="https://github.com/nubolab-ffwd/svelte-fluent"
+					target="_blank"
+					rel="noreferrer noopener"
+					title="View on GitHub"
+				>
 					<IconGitHub />
-				</div>
-			</a>
+				</a>
+			</div>
 		</div>
 	</nav>
 </header>
-
-<style lang="postcss">
-	header {
-		padding: var(--space);
-		box-shadow: 0 0 var(--s-5) #aaa;
-
-		& .logo {
-			display: flex;
-			align-items: center;
-			gap: var(--space);
-			font-variant-ligatures: none;
-			font-variation-settings: 'wght' 570;
-
-			& :global(svg) {
-				width: 4rem;
-			}
-		}
-		& .icon {
-			display: flex;
-			justify-content: baseline;
-		}
-		& a {
-			color: inherit;
-		}
-	}
-</style>

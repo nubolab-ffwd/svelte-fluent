@@ -19,6 +19,6 @@
 	initFluentContext(() => createSvelteFluent([bundle]));
 </script>
 
-<div class="stack">
+<div class="space-y-2">
 	{@render children?.()}
 </div>

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { base } from '$app/paths'
+	import Callout from '$lib/Callout.svelte'
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
 	import FrontpageExample from '$lib/rendered-examples/FrontpageExample.svelte';
 </script>
@@ -24,9 +25,11 @@ npm install --save-dev @nubolab-ffwd/svelte-fluent
 npm install --save jsdom
 ```
 
-<!--rehype:style=color:pink;-->
+<Callout>
 
-> **Note:** The `jsdom` dependency is used for the server-side rendering of the `<Localized>` component. It will not increase your frontend bundle size.
+The `jsdom` dependency is used for the server-side rendering of the `<Localized>` component. It will not increase your frontend bundle size.
+
+</Callout>
 
 ### Next Steps: Integration Guides
 

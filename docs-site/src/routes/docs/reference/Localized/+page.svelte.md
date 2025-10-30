@@ -47,7 +47,7 @@ An explicit list of attribute names from the Fluent message that should be allow
 
 ---
 
-<PropDescription name="elements" type="Record<string, TagElement | ComponentElement>" default={'{}'}>
+<PropDescription name="elements" type="Record<string, TagElement | ComponentElement>">
 
 A configuration object for securely injecting HTML elements (using `TagElement`) or Svelte components (using `ComponentElement`) into placeholders within the Fluent message. See the [Advanced Features guide]({base}/docs/advanced-features) for details.
 

@@ -1,8 +1,8 @@
 import type { LayoutLoad, LayoutLoadEvent } from './$types';
-import { headings as gettingStartedHeadings } from './getting-started/+page.svelte.md';
-import { headings as tutorialHeadings } from './tutorial/+page.svelte.md';
-import { headings as advancedFeaturesHeadings } from './advanced-features/+page.svelte.md';
-import { headings as version2Headings } from './version-2/+page.svelte.md';
+import { metadata as gettingStartedMeta } from './getting-started/+page.svelte.md';
+import { metadata as tutorialMeta } from './tutorial/+page.svelte.md';
+import { metadata as advancedFeaturesMeta } from './advanced-features/+page.svelte.md';
+import { metadata as version2Meta } from './version-2/+page.svelte.md';
 import { submenu as frameworksSubmenu } from './frameworks/menu';
 import { submenu as referenceSubmenu } from './reference/menu';
 import type { Item as MenuItem, TopLeveltem as TopLevelMenultem } from './Menu.svelte';
@@ -41,15 +41,15 @@ function buildHeadingSubmenu(baseHref: string, headings: Heading[], rank: number
 
 export const load = (async (ev) => {
 	const menu: Menu = [
-		buildMenu(ev, base + '/docs/getting-started/', gettingStartedHeadings, 1),
+		buildMenu(ev, base + '/docs/getting-started/', gettingStartedMeta?.headings ?? [], 1),
 		{
 			text: 'Frameworks',
 			href: base + '/docs/frameworks/',
 			submenu: frameworksSubmenu
 		},
-		buildMenu(ev, base + '/docs/version-2/', version2Headings, 1),
-		buildMenu(ev, base + '/docs/tutorial/', tutorialHeadings, 1),
-		buildMenu(ev, base + '/docs/advanced-features/', advancedFeaturesHeadings, 1),
+		buildMenu(ev, base + '/docs/version-2/', version2Meta?.headings ?? [], 1),
+		buildMenu(ev, base + '/docs/tutorial/', tutorialMeta?.headings ?? [], 1),
+		buildMenu(ev, base + '/docs/advanced-features/', advancedFeaturesMeta?.headings ?? [], 1),
 		{
 			text: 'Reference',
 			href: base + '/docs/reference/',

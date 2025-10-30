@@ -1,5 +1,6 @@
 <script>
 	import { base } from '$app/paths'
+	import Callout from '$lib/Callout.svelte'
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
 	import TutorialBasicMessageExample from '$lib/rendered-examples/TutorialBasicMessageExample.svelte'
 	import TutorialInlineFormattingExample from '$lib/rendered-examples/TutorialInlineFormattingExample.svelte'
@@ -40,9 +41,13 @@ By default, `<Localized>` renders a `<span>` element to wrap your translation. Y
 
 <TutorialChangeWrapperExample />
 
-> **Note:** For more advanced use cases, such as adding your own attributes to the wrapper element,
-> please see the **[Custom Rendering]({base}/docs/advanced-features#custom-rendering)** section in our
-> advanced features guide.
+<Callout>
+
+For more advanced use cases, such as adding your own attributes to the wrapper element,
+please see the **[Custom Rendering]({base}/docs/advanced-features#custom-rendering)** section in our
+advanced features guide.
+
+</Callout>
 
 ## Localizable attributes
 
@@ -72,9 +77,9 @@ Congratulations\! You've now covered the core features of `svelte-fluent` and ca
 
 When you're ready to tackle more complex scenarios, the library offers more powerful features. Our **[Advanced Features guide]({base}/docs/advanced)** is the perfect next step to learn about topics like:
 
-	* **Inserting HTML Elements and Svelte Components:** Seamlessly embed rich, interactive content directly inside your translations.
-	* **Formatting Interpolations:** Take control over how numbers, dates, and other variables are displayed.
-	* **Custom Functions:** Extend Fluent's capabilities with your own custom formatting logic for variables.
-	* **Custom Rendering:** Take full control over the final HTML output for complex use cases.
+* **Inserting HTML Elements and Svelte Components:** Seamlessly embed rich, interactive content directly inside your translations.
+* **Formatting Interpolations:** Take control over how numbers, dates, and other variables are displayed.
+* **Custom Functions:** Extend Fluent's capabilities with your own custom formatting logic for variables.
+* **Custom Rendering:** Take full control over the final HTML output for complex use cases.
 
 Check out the advanced guide to unlock the full potential of `svelte-fluent`.

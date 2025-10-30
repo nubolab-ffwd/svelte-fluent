@@ -3,6 +3,7 @@ title: useLocalize
 ---
 
 <script>
+	import Callout from '$lib/Callout.svelte'
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
 	import PropDescription from '$lib/PropDescription.svelte'
 	import LocalizeAttributesExample from '$lib/rendered-examples/LocalizeAttributesExample.svelte'
@@ -28,9 +29,13 @@ function localize(id: string, args?: Record<string, FluentVariable>): string;
 The reactive `localize` function allows you to get localized strings in component scripts. This can be useful when interacting
 with browser APIs or third-party libraries.
 
-> Using the `<Localized>` component is the preferred way to localize your application with `svelte-fluent`.
-> The `localize` function provides additional flexibility in situations where using the component would not be
-> feasible.
+<Callout>
+
+Using the `<Localized>` component is the preferred way to localize your application with `svelte-fluent`.
+The `localize` function provides additional flexibility in situations where using the component would not be
+feasible.
+
+</Callout>
 
 ```ts
 const localize = useLocalize();
@@ -71,9 +76,13 @@ The localized content as a `string`.
 
 ### Reference fluent message attributes
 
-> You can reference attributes of a Fluent message by calling `localize` with both identifiers joined with a period.
->
-> In the example below this is done for the `.default` attribute of the `prompt` message by
-> calling `localize` with `'prompt.default'` as the message identifier.
+<Callout>
+
+You can reference attributes of a Fluent message by calling `localize` with both identifiers joined with a period.
+
+In the example below this is done for the `.default` attribute of the `prompt` message by
+calling `localize` with `'prompt.default'` as the message identifier.
+
+</Callout>
 
 <LocalizeAttributesExample />

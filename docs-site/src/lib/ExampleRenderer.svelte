@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Snippet } from 'svelte';
+	import CodeBox from './CodeBox.svelte';
 
 	type SourceEntry = { code: string; html: boolean; collapsed?: boolean };
 
@@ -23,76 +24,54 @@
 	);
 </script>
 
-<div class="stack" aria-label="Code example">
-	{#each Object.entries(normalizedSources) as [name, entry], idx (name)}
-		{#if entry.collapsed}
-			<details>
-				<summary><span class="filepath">{name}</span></summary>
-				{#if entry.html}
-					<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-					{@html entry.code}
-				{:else}
-					<pre class="box"><code>{entry.code}</code></pre>
-				{/if}
-			</details>
-		{:else}
-			<div class="code-block stack">
-				{#if idx !== 0}
-					<span class="filepath">{name}</span>
-				{/if}
-				{#if entry.html}
-					<!-- eslint-disable-next-line svelte/no-at-html-tags -->
-					{@html entry.code}
-				{:else}
-					<pre class="box"><code>{entry.code}</code></pre>
-				{/if}
-			</div>
-		{/if}
+<div class="space-y-4" aria-label="Code example">
+	{#each Object.entries(normalizedSources) as [name, entry] (name)}
+		<CodeBox title={name} collapsible={entry.collapsed} defaultCollapsed={entry.collapsed}>
+			{#if entry.html}
+				<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+				{@html entry.code}
+			{:else}
+				<pre><code>{entry.code}</code></pre>
+			{/if}
+		</CodeBox>
 	{/each}
 
-	<div>Result:</div>
-	<div class="stack" class:box={!!controls}>
-		<div class="box rendered">
+	<figure class="card bg-surface-900 text-surface-contrast-900 scheme-dark preview">
+		<figcaption class="border-surface-700 text-surface-contrast-900/70 border-b-2 px-4 py-2">
+			Preview
+		</figcaption>
+		<div class="preview-content p-4">
 			{@render children()}
 		</div>
+	</figure>
 
-		{#if controls}
-			<div class="controls">
+	{#if controls}
+		<div class="card bg-surface-900 text-surface-contrast-900 scheme-dark">
+			<header class="border-surface-700 text-surface-contrast-900/70 border-b-2 px-4 py-2">
+				Controls
+			</header>
+			<div class="p-4">
 				{@render controls()}
 			</div>
-		{/if}
-	</div>
+		</div>
+	{/if}
 </div>
 
 <style lang="postcss">
-	details {
-		max-width: none;
+	@reference '../app.css';
+
+	.preview {
+		--anchor-font-color: var(--anchor-font-color-dark);
 	}
-	.rendered {
-		& :global(input),
-		& :global(select),
+	.preview-content {
 		& :global(button) {
-			color: initial;
+			@apply btn preset-outlined;
 		}
 		& :global(a) {
-			text-decoration: underline;
+			@apply anchor;
 		}
-	}
-	.controls {
-		& :global(dl) {
-			display: grid;
-			grid-template-rows: auto;
-			grid-template-columns: min-content minmax(min-content, calc(var(--measure) / 3));
-			align-items: start;
-			gap: var(--s-2);
-			align-items: center;
-		}
-		& :global(dl > dt) {
-			font-family: Mensch;
-			font-size: var(--font-size-code);
-		}
-		& :global(dl > dd > *) {
-			inline-size: 100%;
+		& :global(input) {
+			@apply input ring-surface-600 w-auto;
 		}
 	}
 </style>

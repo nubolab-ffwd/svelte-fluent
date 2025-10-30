@@ -1,0 +1,83 @@
+@import '@fontsource-variable/manrope';
+
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton-svelte';
+
+@import './theme.css';
+
+@custom-variant dark (&:where([data-mode="dark"], [data-mode="dark"] *));
+
+@font-face {
+	font-family: 'Mensch';
+	src:
+		url('$lib/fonts/Mensch-Regular.woff2') format('woff2'),
+		url('$lib/fonts/Mensch-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@theme {
+	--font-mono:
+		'Mensch', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+		'Courier New', monospace;
+}
+
+:root {
+	--header-height: --spacing(18);
+}
+
+.breakout-grid {
+	--max-content-width: 50ch;
+	--breakout-difference: 0.2;
+
+	/*  Compute total allowed grid width to `--breakout-difference`
+      larger than content area  */
+	--breakout-grid-width: calc(
+		var(--max-content-width) + (var(--max-content-width) * var(--breakout-difference))
+	);
+
+	display: grid;
+	grid-template-columns:
+		[grid-start] 1fr
+		[content-start] minmax(min(100%, var(--max-content-width)), 1fr)
+		[content-end] 1fr
+		[grid-end];
+	width: min(100%, var(--breakout-grid-width));
+	margin-inline: auto;
+
+	& > *:not(.breakout) {
+		grid-column: content;
+	}
+
+	& > .breakout {
+		grid-column: grid;
+	}
+}
+
+@utility code {
+	@variant not-in-[pre] {
+		@apply bg-surface-100! text-surface-contrast-100!;
+		@variant dark {
+			@apply bg-surface-800! text-surface-contrast-800!;
+		}
+		@variant in-[h1,h2,h3,h4,h5,h6] {
+			@apply text-[0.9em]!;
+		}
+	}
+}
+
+@utility scrollbar-dark {
+	scrollbar-color: var(--color-surface-700) var(--color-surface-900);
+}
+
+@utility scrollbar-light {
+	scrollbar-color: var(--color-surface-300) var(--color-surface-100);
+}
+
+@utility scrollbar-auto {
+	scrollbar-color: var(--color-surface-300-700) var(--color-surface-100-900);
+}

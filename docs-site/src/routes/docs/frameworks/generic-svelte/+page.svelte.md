@@ -4,6 +4,7 @@ title: Generic Svelte
 
 <script lang="ts">
 	import { base } from '$app/paths'
+	import Callout from '$lib/Callout.svelte'
 	import ReferenceLink from '$lib/ReferenceLink.svelte'
 	import GenericSvelteFirstStepsExample from '$lib/rendered-examples/GenericSvelteFirstStepsExample.svelte'
 	import GenericSvelteTranslationFilesExample from '$lib/rendered-examples/GenericSvelteTranslationFilesExample.svelte'
@@ -14,7 +15,11 @@ title: Generic Svelte
 
 This guide covers how to set up `svelte-fluent` in a generic Svelte project, for example one created with `npm create vite@latest` and the Svelte template.
 
-> This guide assumes you have already created a Svelte project and installed `svelte-fluent` and its dependencies as shown on the **[Getting Started]({base}/docs/getting-started#installation)** page.
+<Callout title="Project setup required">
+
+This guide assumes you have already created a Svelte project and installed `svelte-fluent` and its dependencies as shown on the **[Getting Started]({base}/docs/getting-started#installation)** page.
+
+</Callout>
 
 ## Configure bundler
 
@@ -69,8 +74,12 @@ Managing translations directly in the code can get messy. A better way is to loa
 
 We can now extend this to multiple languages. Let's add a selection for the desired language and fallback to the auto-detected language of the browser.
 
-> **Server-Side Rendering (SSR):** This example uses the browser's `navigator.languages` API, which is not available on the server.
-> For SSR, you should instead parse the `Accept-Language` HTTP header to determine the user's locale.
+<Callout type="warning" title="Server-Side Rendering (SSR)">
+
+This example uses the browser's `navigator.languages` API, which is not available on the server.
+For SSR, you should instead parse the `Accept-Language` HTTP header to determine the user's locale.
+
+</Callout>
 
 <GenericSvelteMultiLanguageExample />
 
