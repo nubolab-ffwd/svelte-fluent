@@ -6,6 +6,7 @@ import { svelteTesting } from '@testing-library/svelte/vite';
 import { createRequire } from 'node:module';
 import * as fs from 'node:fs';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
+import Icons from 'unplugin-icons/vite';
 
 const isSsrTest = process.env.TEST_SSR === '1';
 
@@ -20,9 +21,6 @@ function getSvelteVersion() {
 function getSnapshotDir() {
 	const svelteVersion = getSvelteVersion();
 	const svelteMajor = semver.major(svelteVersion);
-	if (isSsrTest && semver.satisfies(svelteVersion, '<5.39.0')) {
-		return `svelte@${svelteMajor}-pre-async`;
-	}
 	return `svelte@${svelteMajor}`;
 }
 
@@ -39,7 +37,12 @@ const testConfigSsr = {
 };
 
 export default defineConfig({
-	plugins: [svelteFluent(), svelte(), isSsrTest ? undefined : svelteTesting()].filter(Boolean),
+	plugins: [
+		svelteFluent(),
+		svelte(),
+		Icons({ compiler: 'svelte', autoInstall: true }),
+		isSsrTest ? undefined : svelteTesting()
+	].filter(Boolean),
 	test: {
 		setupFiles: 'tests/setup.js',
 		resolveSnapshotPath: (testPath, snapExtension) => {

@@ -1,153 +1,185 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
+exports[`Example advanced-custom-functions/App.svelte > should render 1`] = `
+{
+  "body": "<!--[--><div><!--[!--><!----><span><!--[--><!--[-->Weekday ⁨2⁩ is ⁨Tuesday⁩<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div> <div><!--[!--><!----><span><!--[--><!--[-->Weekday of ⁨2/6/2024⁩ is ⁨Tuesday⁩<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div><!--]-->",
+  "head": "",
+  "html": "<!--[--><div><!--[!--><!----><span><!--[--><!--[-->Weekday ⁨2⁩ is ⁨Tuesday⁩<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div> <div><!--[!--><!----><span><!--[--><!--[-->Weekday of ⁨2/6/2024⁩ is ⁨Tuesday⁩<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div><!--]-->",
+}
+`;
+
+exports[`Example advanced-insert-component-complex/App.svelte > should render 1`] = `
+{
+  "body": "<!--[--><div class="space-y-2"><p><!--[!--><!----><span><!--[--><!--[-->This text has a <!--]--><!--[!--><!--[--><!----><fluent-component data-element="outline"><!----><span style="border-style: solid; border-width: 2px; border-color: grey; padding: 2px 4px;"><!--[--><!--[-->default outline<!--]--><!--]--><!----></span><!----><!----></fluent-component><!----><!--]--><!--]--><!--[-->.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p> <p><!--[!--><!----><span><!--[--><!--[-->This text has a <!--]--><!--[!--><!--[--><!----><fluent-component data-element="outline"><!----><span style="border-style: solid; border-width: 2px; border-color: blue; padding: 2px 4px;"><!--[--><!--[-->blue outline<!--]--><!--]--><!----></span><!----><!----></fluent-component><!----><!--]--><!--]--><!--[-->.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!----></div><!--]-->",
+  "head": "",
+  "html": "<!--[--><div class="space-y-2"><p><!--[!--><!----><span><!--[--><!--[-->This text has a <!--]--><!--[!--><!--[--><!----><fluent-component data-element="outline"><!----><span style="border-style: solid; border-width: 2px; border-color: grey; padding: 2px 4px;"><!--[--><!--[-->default outline<!--]--><!--]--><!----></span><!----><!----></fluent-component><!----><!--]--><!--]--><!--[-->.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p> <p><!--[!--><!----><span><!--[--><!--[-->This text has a <!--]--><!--[!--><!--[--><!----><fluent-component data-element="outline"><!----><span style="border-style: solid; border-width: 2px; border-color: blue; padding: 2px 4px;"><!--[--><!--[-->blue outline<!--]--><!--]--><!----></span><!----><!----></fluent-component><!----><!--]--><!--]--><!--[-->.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!----></div><!--]-->",
+}
+`;
+
+exports[`Example advanced-insert-component-simple/App.svelte > should render 1`] = `
+{
+  "body": "<!--[--><div class="space-y-2"><!--[!--><!----><button><!--[--><!--[!--><!--[--><!----><fluent-component data-element="google-icon"><!----><svg viewBox="0 0 256 262" width="1.18em" height="1.2em"><path fill="#4285F4" d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622l38.755 30.023l2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"></path><path fill="#34A853" d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055c-34.523 0-63.824-22.773-74.269-54.25l-1.531.13l-40.298 31.187l-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"></path><path fill="#FBBC05" d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82c0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602z"></path><path fill="#EB4335" d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0C79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"></path></svg><!----><!----></fluent-component><!----><!--]--><!--]--><!--[--> Login with Google<!--]--><!--]--><!----><!----></button><!----><!--]--><!----></div><!--]-->",
+  "head": "",
+  "html": "<!--[--><div class="space-y-2"><!--[!--><!----><button><!--[--><!--[!--><!--[--><!----><fluent-component data-element="google-icon"><!----><svg viewBox="0 0 256 262" width="1.18em" height="1.2em"><path fill="#4285F4" d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622l38.755 30.023l2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"></path><path fill="#34A853" d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055c-34.523 0-63.824-22.773-74.269-54.25l-1.531.13l-40.298 31.187l-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"></path><path fill="#FBBC05" d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82c0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602z"></path><path fill="#EB4335" d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0C79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"></path></svg><!----><!----></fluent-component><!----><!--]--><!--]--><!--[--> Login with Google<!--]--><!--]--><!----><!----></button><!----><!--]--><!----></div><!--]-->",
+}
+`;
+
+exports[`Example advanced-insert-element/App.svelte > should render 1`] = `
+{
+  "body": "<!--[--><div class="space-y-2"><p><!--[!--><!----><span><!--[--><!--[-->Please accept the <!--]--><!--[!--><!--[!--><!----><a href="/terms" target="_blank" rel="noopener noreferrer"><!--[--><!--[-->Terms of Service<!--]--><!--]--><!----><!----></a><!----><!--]--><!--]--><!--[--> to continue.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!----></div><!--]-->",
+  "head": "",
+  "html": "<!--[--><div class="space-y-2"><p><!--[!--><!----><span><!--[--><!--[-->Please accept the <!--]--><!--[!--><!--[!--><!----><a href="/terms" target="_blank" rel="noopener noreferrer"><!--[--><!--[-->Terms of Service<!--]--><!--]--><!----><!----></a><!----><!--]--><!--]--><!--[--> to continue.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!----></div><!--]-->",
+}
+`;
+
+exports[`Example advanced-insert-element-attributes/App.svelte > should render 1`] = `
+{
+  "body": "<!--[--><div class="space-y-2"><p><!--[!--><!----><span><!--[--><!--[-->Click the <!--]--><!--[!--><!--[!--><!----><a rel="noopener noreferrer" target="_blank" href="https://example.com"><!--[--><!--[-->link<!--]--><!--]--><!----><!----></a><!----><!--]--><!--]--><!--[--> to learn more.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!----></div><!--]-->",
+  "head": "",
+  "html": "<!--[--><div class="space-y-2"><p><!--[!--><!----><span><!--[--><!--[-->Click the <!--]--><!--[!--><!--[!--><!----><a rel="noopener noreferrer" target="_blank" href="https://example.com"><!--[--><!--[-->link<!--]--><!--]--><!----><!----></a><!----><!--]--><!--]--><!--[--> to learn more.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!----></div><!--]-->",
+}
+`;
+
+exports[`Example advanced-interpolation-formatting/App.svelte > should render 1`] = `
+{
+  "body": "<!--[--><div class="space-y-2"><div><!--[!--><!----><span><!--[--><!--[-->Your DPI ratio is ⁨1.778⁩<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div> <div><!--[!--><!----><span><!--[--><!--[-->Your account balance is ⁨$1,234.56⁩<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div> <div><!--[!--><!----><span><!--[--><!--[-->Today is ⁨September 13, 2022⁩<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div><!----></div><!--]-->",
+  "head": "",
+  "html": "<!--[--><div class="space-y-2"><div><!--[!--><!----><span><!--[--><!--[-->Your DPI ratio is ⁨1.778⁩<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div> <div><!--[!--><!----><span><!--[--><!--[-->Your account balance is ⁨$1,234.56⁩<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div> <div><!--[!--><!----><span><!--[--><!--[-->Today is ⁨September 13, 2022⁩<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div><!----></div><!--]-->",
+}
+`;
+
+exports[`Example advanced-override-children/App.svelte > should render 1`] = `
+{
+  "body": "<!--[--><div class="space-y-2"><p><!--[--><input type="search" placeholder="Search" aria-label="Type to search something"/><!----><!--]--><!----></p> <p><!--[--><a href="/privacy" rel="external" target="_blank"><!--[--><!--[-->Read our privacy policy.<!--]--><!--]--><!----></a><!----><!--]--><!----></p><!----></div><!--]-->",
+  "head": "",
+  "html": "<!--[--><div class="space-y-2"><p><!--[--><input type="search" placeholder="Search" aria-label="Type to search something"/><!----><!--]--><!----></p> <p><!--[--><a href="/privacy" rel="external" target="_blank"><!--[--><!--[-->Read our privacy policy.<!--]--><!--]--><!----></a><!----><!--]--><!----></p><!----></div><!--]-->",
+}
+`;
+
 exports[`Example frontpage/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><strong><!--[!-->Hello, ⁨Anna⁩!<!--]--><!----></strong> <p><!--[!-->⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.<!--]--><!----></p><!--]-->",
+  "body": "<!--[--><strong><!--[!--><!----><span><!--[--><!--[-->Hello, ⁨Anna⁩!<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></strong> <p><!--[!--><!----><span><!--[--><!--[-->⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!--]-->",
   "head": "",
-  "html": "<!--[--><strong><!--[!-->Hello, ⁨Anna⁩!<!--]--><!----></strong> <p><!--[!-->⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.<!--]--><!----></p><!--]-->",
+  "html": "<!--[--><strong><!--[!--><!----><span><!--[--><!--[-->Hello, ⁨Anna⁩!<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></strong> <p><!--[!--><!----><span><!--[--><!--[-->⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!--]-->",
 }
 `;
 
-exports[`Example localize/attributes/App.svelte > should render 1`] = `
+exports[`Example generic-svelte-first-steps/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><button>Show prompt</button><!--]-->",
+  "body": "<!--[--><!--[!--><!----><span><!--[--><!--[-->Hello, world!<!--]--><!--]--><!----><!----></span><!----><!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><button>Show prompt</button><!--]-->",
+  "html": "<!--[--><!--[!--><!----><span><!--[--><!--[-->Hello, world!<!--]--><!--]--><!----><!----></span><!----><!--]--><!--]-->",
 }
 `;
 
-exports[`Example localize/dynamic-text/App.svelte > should render 1`] = `
+exports[`Example generic-svelte-multi-language/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><button>Say hello</button><!--]-->",
+  "body": "<!--[--><!--[!--><!----><span><!--[--><!--[-->Hello, world!<!--]--><!--]--><!----><!----></span><!----><!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><button>Say hello</button><!--]-->",
+  "html": "<!--[--><!--[!--><!----><span><!--[--><!--[-->Hello, world!<!--]--><!--]--><!----><!----></span><!----><!--]--><!--]-->",
 }
 `;
 
-exports[`Example localize/static-text/App.svelte > should render 1`] = `
+exports[`Example generic-svelte-translation-files/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><button>Say hello</button><!--]-->",
+  "body": "<!--[--><!--[!--><!----><span><!--[--><!--[-->Hello, world!<!--]--><!--]--><!----><!----></span><!----><!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><button>Say hello</button><!--]-->",
+  "html": "<!--[--><!--[!--><!----><span><!--[--><!--[-->Hello, world!<!--]--><!--]--><!----><!----></span><!----><!--]--><!--]-->",
 }
 `;
 
-exports[`Example localized/attributes/App.svelte > should render 1`] = `
+exports[`Example localize-attributes/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[--><div>Please confirm the action.</div> <div><button>Ok</button> <button>Cancel</button></div><!----><!--]--><!--]-->",
+  "body": "<!--[--><div class="space-y-2"><button>Show prompt</button><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[--><div>Please confirm the action.</div> <div><button>Ok</button> <button>Cancel</button></div><!----><!--]--><!--]-->",
+  "html": "<!--[--><div class="space-y-2"><button>Show prompt</button><!----></div><!--]-->",
 }
 `;
 
-exports[`Example localized/attributes-with-variables/App.svelte > should render 1`] = `
+exports[`Example localize-dynamic-text/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[--><div>Please confirm the action for ⁨20⁩ items.</div> <div><button>Yes, perform action for ⁨20⁩ items</button> <button>Cancel</button></div><!----><!--]--><!--]-->",
+  "body": "<!--[--><div class="space-y-2"><button>Say hello</button><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[--><div>Please confirm the action for ⁨20⁩ items.</div> <div><button>Yes, perform action for ⁨20⁩ items</button> <button>Cancel</button></div><!----><!--]--><!--]-->",
+  "html": "<!--[--><div class="space-y-2"><button>Say hello</button><!----></div><!--]-->",
 }
 `;
 
-exports[`Example localized/dynamic-text/App.svelte > should render 1`] = `
+exports[`Example localize-static-text/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[!-->You have ⁨10⁩ unread emails.<!--]--><!--]-->",
+  "body": "<!--[--><div class="space-y-2"><button>Say hello</button><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[!-->You have ⁨10⁩ unread emails.<!--]--><!--]-->",
+  "html": "<!--[--><div class="space-y-2"><button>Say hello</button><!----></div><!--]-->",
 }
 `;
 
-exports[`Example localized/static-text/App.svelte > should render 1`] = `
+exports[`Example localized-dynamic-text/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[!-->Hello, world!<!--]--><!--]-->",
+  "body": "<!--[--><div class="space-y-2"><!--[!--><!----><span><!--[--><!--[-->You have ⁨10⁩ unread emails.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[!-->Hello, world!<!--]--><!--]-->",
+  "html": "<!--[--><div class="space-y-2"><!--[!--><!----><span><!--[--><!--[-->You have ⁨10⁩ unread emails.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div><!--]-->",
 }
 `;
 
-exports[`Example localized-legacy/attributes/App.svelte > should render 1`] = `
+exports[`Example localized-static-text/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[--><!--[--><div>Please confirm the action.</div> <div><button>Ok</button> <button>Cancel</button></div><!--]--><!----><!--]--><!--]-->",
+  "body": "<!--[--><div class="space-y-2"><!--[!--><!----><span><!--[--><!--[-->Hello, world!<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[--><!--[--><div>Please confirm the action.</div> <div><button>Ok</button> <button>Cancel</button></div><!--]--><!----><!--]--><!--]-->",
+  "html": "<!--[--><div class="space-y-2"><!--[!--><!----><span><!--[--><!--[-->Hello, world!<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div><!--]-->",
 }
 `;
 
-exports[`Example overlay/dynamic-text/App.svelte > should render 1`] = `
+exports[`Example tutorial-attributes-simple/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><svelte-fluent-overlay style="display: contents;"></svelte-fluent-overlay><!--]-->",
-  "head": "<!--[--><template><a data-l10n-name="release-notes" href="https://example.com/" target="_blank" rel="noreferrer"></a><!----></template><!--]-->",
-  "html": "<!--[--><svelte-fluent-overlay style="display: contents;"></svelte-fluent-overlay><!--]-->",
-}
-`;
-
-exports[`Example overlay/static-text/App.svelte > should render 1`] = `
-{
-  "body": "<!--[--><svelte-fluent-overlay style="display: contents;"></svelte-fluent-overlay><!--]-->",
-  "head": "<!--[--><template><a data-l10n-name="link" href="https://example.com/"></a><!----></template><!--]-->",
-  "html": "<!--[--><svelte-fluent-overlay style="display: contents;"></svelte-fluent-overlay><!--]-->",
-}
-`;
-
-exports[`Example provider/App.svelte > should render 1`] = `
-{
-  "body": "<!--[--><!--[--><!--[!-->Hello, world!<!--]--><!--]--><!--]-->",
+  "body": "<!--[--><div class="space-y-2"><!--[!--><!----><strong title="This is an important notice"><!--[--><!--[-->Important Notice<!--]--><!--]--><!----><!----></strong><!----><!--]--><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[--><!--[!-->Hello, world!<!--]--><!--]--><!--]-->",
+  "html": "<!--[--><div class="space-y-2"><!--[!--><!----><strong title="This is an important notice"><!--[--><!--[-->Important Notice<!--]--><!--]--><!----><!----></strong><!----><!--]--><!----></div><!--]-->",
 }
 `;
 
-exports[`Example tutorial/attributes/App.svelte > should render 1`] = `
+exports[`Example tutorial-basic-message/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[--><label>Login <input type="email" placeholder="email@example.com" title="Type your login email" aria-label="Login input value"/></label><!----><!--]--><!--]-->",
+  "body": "<!--[--><div class="space-y-2"><!--[!--><!----><span><!--[--><!--[-->Hello, world!<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[--><label>Login <input type="email" placeholder="email@example.com" title="Type your login email" aria-label="Login input value"/></label><!----><!--]--><!--]-->",
+  "html": "<!--[--><div class="space-y-2"><!--[!--><!----><span><!--[--><!--[-->Hello, world!<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div><!--]-->",
 }
 `;
 
-exports[`Example tutorial/first-steps/App.svelte > should render 1`] = `
+exports[`Example tutorial-change-wrapper/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[!-->Hello, world!<!--]--><!--]-->",
+  "body": "<!--[--><div class="space-y-2"><p><!--[!--><!----><strong><!--[--><!--[-->This is an important notice.<!--]--><!--]--><!----><!----></strong><!----><!--]--><!----></p><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[!-->Hello, world!<!--]--><!--]-->",
+  "html": "<!--[--><div class="space-y-2"><p><!--[!--><!----><strong><!--[--><!--[-->This is an important notice.<!--]--><!--]--><!----><!----></strong><!----><!--]--><!----></p><!----></div><!--]-->",
 }
 `;
 
-exports[`Example tutorial/interpolation/App.svelte > should render 1`] = `
+exports[`Example tutorial-inline-formatting/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[!-->Hello, ⁨everyone⁩!<!--]--><!--]-->",
+  "body": "<!--[--><div class="space-y-2"><p><!--[!--><!----><span><!--[--><!--[-->This message contains <!--]--><!--[!--><!--[!--><!----><strong><!--[--><!--[-->strong<!--]--><!--]--><!----><!----></strong><!----><!--]--><!--]--><!--[--> and <!--]--><!--[!--><!--[!--><!----><em><!--[--><!--[-->emphasized<!--]--><!--]--><!----><!----></em><!----><!--]--><!--]--><!--[--> text.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[!-->Hello, ⁨everyone⁩!<!--]--><!--]-->",
+  "html": "<!--[--><div class="space-y-2"><p><!--[!--><!----><span><!--[--><!--[-->This message contains <!--]--><!--[!--><!--[!--><!----><strong><!--[--><!--[-->strong<!--]--><!--]--><!----><!----></strong><!----><!--]--><!--]--><!--[--> and <!--]--><!--[!--><!--[!--><!----><em><!--[--><!--[-->emphasized<!--]--><!--]--><!----><!----></em><!----><!--]--><!--]--><!--[--> text.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!----></div><!--]-->",
 }
 `;
 
-exports[`Example tutorial/interpolation-custom-functions/App.svelte > should render 1`] = `
+exports[`Example tutorial-interpolation/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><div><!--[!-->Weekday ⁨2⁩ is ⁨Tuesday⁩<!--]--><!----></div> <div><!--[!-->Weekday of ⁨2/6/2024⁩ is ⁨Tuesday⁩<!--]--><!----></div><!--]-->",
+  "body": "<!--[--><div class="space-y-2"><!--[!--><!----><span><!--[--><!--[-->Hello, ⁨everyone⁩!<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><div><!--[!-->Weekday ⁨2⁩ is ⁨Tuesday⁩<!--]--><!----></div> <div><!--[!-->Weekday of ⁨2/6/2024⁩ is ⁨Tuesday⁩<!--]--><!----></div><!--]-->",
+  "html": "<!--[--><div class="space-y-2"><!--[!--><!----><span><!--[--><!--[-->Hello, ⁨everyone⁩!<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></div><!--]-->",
 }
 `;
 
-exports[`Example tutorial/interpolation-formatting/App.svelte > should render 1`] = `
+exports[`Example tutorial-localize-derived/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><div><!--[!-->Your DPI ratio is ⁨1.778⁩<!--]--><!----></div> <div><!--[!-->Your account balance is ⁨$1,234.56⁩<!--]--><!----></div> <div><!--[!-->Today is ⁨September 13, 2022⁩<!--]--><!----></div><!--]-->",
+  "body": "<!--[--><p>Message with <code>$derived</code>: <strong>This is the english message!</strong></p> <p>Message without <code>$derived</code>: <strong>This is the english message!</strong></p><!--]-->",
   "head": "",
-  "html": "<!--[--><div><!--[!-->Your DPI ratio is ⁨1.778⁩<!--]--><!----></div> <div><!--[!-->Your account balance is ⁨$1,234.56⁩<!--]--><!----></div> <div><!--[!-->Today is ⁨September 13, 2022⁩<!--]--><!----></div><!--]-->",
+  "html": "<!--[--><p>Message with <code>$derived</code>: <strong>This is the english message!</strong></p> <p>Message without <code>$derived</code>: <strong>This is the english message!</strong></p><!--]-->",
 }
 `;
 
-exports[`Example tutorial/multi-language/App.svelte > should render 1`] = `
+exports[`Example tutorial-localize-script/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[!-->Hello, world!<!--]--><!--]-->",
+  "body": "<!--[--><div class="space-y-2"><button>Add to Cart</button> <div class="toast-container svelte-xtg016"><!--[--><!--]--></div><!----><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[!-->Hello, world!<!--]--><!--]-->",
-}
-`;
-
-exports[`Example tutorial/translation-files/App.svelte > should render 1`] = `
-{
-  "body": "<!--[--><!--[!-->Hello, world!<!--]--><!--]-->",
-  "head": "",
-  "html": "<!--[--><!--[!-->Hello, world!<!--]--><!--]-->",
+  "html": "<!--[--><div class="space-y-2"><button>Add to Cart</button> <div class="toast-container svelte-xtg016"><!--[--><!--]--></div><!----><!----></div><!--]-->",
 }
 `;

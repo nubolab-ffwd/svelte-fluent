@@ -13,6 +13,7 @@
 	},
 	"devDependencies": {
 		"@fluent/bundle": "0.19.1",
+		"@iconify-json/logos": "1.2.5",
 		"@nubolab-ffwd/svelte-fluent": "workspace:^",
 		"@sveltejs/vite-plugin-svelte": "6.2.1",
 		"@testing-library/svelte": "5.2.8",
@@ -32,6 +33,7 @@
 		"svelte2tsx": "0.7.44",
 		"tslib": "2.8.1",
 		"typescript": "5.9.2",
+		"unplugin-icons": "22.3.0",
 		"vite": "7.1.7",
 		"vitest": "3.2.4"
 	},

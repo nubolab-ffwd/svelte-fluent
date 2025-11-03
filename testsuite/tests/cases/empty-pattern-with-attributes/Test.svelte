@@ -1,6 +1,6 @@
 <script>
 	import { FluentBundle, FluentResource } from '@fluent/bundle';
-	import { createSvelteFluent, setSvelteFluent, Localized } from '@nubolab-ffwd/svelte-fluent';
+	import { createSvelteFluent, setSvelteFluent, useLocalize } from '@nubolab-ffwd/svelte-fluent';
 
 	const translations = `
 empty =
@@ -10,10 +10,8 @@ empty =
 	bundle.addResource(new FluentResource(translations));
 
 	setSvelteFluent(() => createSvelteFluent([bundle]));
+
+	const localize = useLocalize();
 </script>
 
-<Localized id="empty">
-	{#snippet children({ attrs })}
-		{attrs.text}
-	{/snippet}
-</Localized>
+{localize('empty.text')}

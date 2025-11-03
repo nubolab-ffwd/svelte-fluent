@@ -287,6 +287,9 @@ importers:
       '@fluent/bundle':
         specifier: 0.19.1
         version: 0.19.1
+      '@iconify-json/logos':
+        specifier: 1.2.5
+        version: 1.2.5
       '@nubolab-ffwd/svelte-fluent':
         specifier: workspace:^
         version: link:../packages/svelte-fluent
@@ -344,6 +347,9 @@ importers:
       typescript:
         specifier: 5.9.2
         version: 5.9.2
+      unplugin-icons:
+        specifier: 22.3.0
+        version: 22.3.0(svelte@5.39.6)
       vite:
         specifier: 7.1.7
         version: 7.1.7(@types/node@22.5.0)(jiti@2.6.1)(lightningcss@1.30.2)(yaml@2.8.1)
