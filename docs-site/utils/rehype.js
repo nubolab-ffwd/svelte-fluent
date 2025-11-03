@@ -33,25 +33,13 @@ export function rehypeHeadings() {
 export function rehypeUnescapeSvelte() {
 	return (tree) => {
 		visit(tree, 'element', (node) => {
-			if (
-				node.tagName === 'a' &&
-				node.properties &&
-				typeof node.properties.href === 'string'
-			) {
-				node.properties.href = node.properties.href
-					.replace(/%7B/g, '{')
-					.replace(/%7D/g, '}');
+			if (node.tagName === 'a' && node.properties && typeof node.properties.href === 'string') {
+				node.properties.href = node.properties.href.replace(/%7B/g, '{').replace(/%7D/g, '}');
 			}
 
-			if (
-				node.tagName === 'img' &&
-				node.properties &&
-				typeof node.properties.src === 'string'
-			) {
-				node.properties.src = node.properties.src
-					.replace(/%7B/g, '{')
-					.replace(/%7D/g, '}');
+			if (node.tagName === 'img' && node.properties && typeof node.properties.src === 'string') {
+				node.properties.src = node.properties.src.replace(/%7B/g, '{').replace(/%7D/g, '}');
 			}
 		});
-	}
+	};
 }

@@ -10,4 +10,4 @@ export function escape_svelty(str) {
 		.replace(/\\([trn])/g, '&#92;$1');
 }
 
-export const symbolIsHighlightedCode = Symbol('isHighlightedCode')
+export const symbolIsHighlightedCode = Symbol('isHighlightedCode');

@@ -14,15 +14,14 @@ const fluentGrammar = JSON.parse(
  */
 function parseMetaTitleString(meta) {
 	if (!meta) {
-		return null
+		return null;
 	}
-	const match = meta.match(/title="([^"]*)"/)
+	const match = meta.match(/title="([^"]*)"/);
 	if (!match) {
-		return null
+		return null;
 	}
-	return match[1]
+	return match[1];
 }
-
 
 export const theme = 'dark-plus';
 const themes = [theme];
@@ -39,12 +38,12 @@ export const defaultTransformers = [
 	{
 		name: 'svelte-fluent-docs:title',
 		pre(elem) {
-			const title = parseMetaTitleString(this.options.meta?.__raw)
-			elem.properties['data-title'] = title
-			delete elem.properties.style
-		},
+			const title = parseMetaTitleString(this.options.meta?.__raw);
+			elem.properties['data-title'] = title;
+			delete elem.properties.style;
+		}
 	}
-]
+];
 
 export const defaultHighlighter = createHighlighter({ themes, langs });
 
