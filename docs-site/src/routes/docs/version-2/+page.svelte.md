@@ -126,7 +126,8 @@ To simplify the library, the `FluentProvider`, `Overlay`, and legacy `Localized`
 Here is a scannable checklist of all breaking changes.
 
 - **Components:**
-  - The `<Localized>` component's `children` snippet no longer receives the translated content as arguments.
+  - The `<Localized>` component's `children` snippet arguments have changed.
+    The v1 `({ text, attrs })` arguments are replaced by `({ attributes, translatedContent })`, and `translatedContent` is now a renderable snippet, not a string.
   - The `<Localized>` component now always renders a wrapper element (defaults to `<span>`).
   - The `<Overlay>` component has been removed (functionality is now in `<Localized>`).
   - The `<FluentProvider>` component has been removed.
@@ -198,7 +199,8 @@ info = Read the <a data-element="link">documentation</a> for more information.
 
 #### B. Update the `children` Snippet
 
-The behavior of the `children` snippet has changed. It no longer receives arguments and is now used only to provide override content.
+The `children` snippet arguments have changed from `({ text, attrs })` to `({ attributes, translatedContent })`.
+Note that `translatedContent` is now a renderable snippet, not a string.
 
 **Example 1: Wrapping Content**
 
@@ -218,8 +220,6 @@ The `children` snippet was passed the translated text to access the translated t
 
 To wrap a translation in an element, use the built-in `tag` prop. You can also override the `children` snippet for full control over the rendered markup.
 
-TODO: add links to relevant tutorial and advanced features guide sections.
-
 ```svelte
 <Localized id="greeting" tag="strong" />
 
@@ -232,18 +232,24 @@ TODO: add links to relevant tutorial and advanced features guide sections.
 </Localized>
 ```
 
+To wrap a translation in an element, use the built-in `tag` prop, as shown in the `Tutorial`'s **[Change wrapper element]({base}/docs/tutorial#change-wrapper-element)** section.
+
+For full control over the rendered markup (like in the `<button>` example above), see the **[Custom Rendering]({base}/docs/advanced-features#custom-rendering)** section in the advanced guide.
+
 **Example 2: Complex Layouts with Attributes**
 
-For more complex uses, where the `children` snippet was previously used to access a message's attributes.
-The new `<Localized>` component uses attributes to enhance the DOM element. If you don't want to migrate to the
-new `<Localized>` component, you can instead use the reactive `localize` function directly in your markup.
+For v1 code that used the `children` snippet to access `text` and `attrs` for UI logic (e.g., `onclick` handlers) or to group widget messages:
+
+The v2 `<Localized>` component is not a direct replacement. It **always** renders a wrapper element and would attempt to apply the message's attributes to the DOM, which could have unexpected results.
+
+The correct v2 migration is to replace the `<Localized>` component entirely with the reactive `localize` function from the `useLocalize` utility. This allows you to fetch the raw strings directly for your logic, just as the v1 snippet did.
 
 **In your `.ftl` file:**
 
 ```ftl
-confirm = Please confirm the action.
-  .ok     = Ok
-  .cancel = Cancel
+confirm-prompt = Are you sure you want to proceed?
+  .alert-ok = Action confirmed!
+  .alert-cancel = Action cancelled.
 ```
 
 **Before (v1):**
@@ -255,12 +261,12 @@ You used the `children` snippet `text` and `attrs` arguments to build your UI.
 	import { Localized } from '@nubolab-ffwd/svelte-fluent';
 </script>
 
-<Localized id="confirm">
+<Localized id="confirm-prompt">
 	{#snippet children({ text, attrs })}
 		<div>{text}</div>
 		<div>
-			<button onclick={() => alert('OK clicked')}>{attrs.ok}</button>
-			<button onclick={() => alert('Cancel clicked')}>{attrs.cancel}</button>
+			<button onclick={() => alert(attrs['alert-ok'])}>Ok</button>
+			<button onclick={() => alert(attrs['alert-cancel'])}>Cancel</button>
 		</div>
 	{/snippet}
 </Localized>
@@ -276,10 +282,10 @@ You now use the reative `localize` function to get the main translation and each
 	const localize = useLocalize();
 </script>
 
-<div>{localize('confirm')}</div>
+<div>{localize('confirm-prompt')}</div>
 <div>
-	<button onclick={() => alert('OK clicked')}>{localize('confirm.ok')}</button>
-	<button onclick={() => alert('Cancel clicked')}>{localize('confirm.cancel')}</button>
+	<button onclick={() => alert(localize('confirm-prompt.alert-ok'))}>Ok</button>
+	<button onclick={() => alert(localize('confirm-prompt.alert-cancel'))}>Cancel</button>
 </div>
 ```
 
