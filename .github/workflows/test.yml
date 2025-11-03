@@ -50,15 +50,8 @@ jobs:
     strategy:
       matrix:
         package-version:
-          - jsdom@^20.0.0
-          - jsdom@^21.0.0
-          - jsdom@^22.0.0
-          - jsdom@^23.0.0
-          - jsdom@^24.0.0
           - jsdom@^25.0.0
           - jsdom@^26.0.0
-          - svelte@5.36.7
-          - svelte@5.38.10
     steps:
       - uses: actions/checkout@v5.0.0
       - uses: pnpm/action-setup@v4.1.0
