@@ -15,14 +15,16 @@ class FluentContext {
 	readonly localize: Localize = (...args) => this.fluent.localize(...args);
 }
 
-export function initFluentContext(getFluent: () => SvelteFluent) {
+export function setSvelteFluent(getFluent: () => SvelteFluent) {
 	setContext(CONTEXT_KEY, new FluentContext(getFluent));
 }
 
 function getFluentContext(): FluentContext {
 	const ctx = getContext<FluentContext>(CONTEXT_KEY);
 	if (!ctx) {
-		throw new Error('[svelte-fluent] FluentContext was not initialized');
+		throw new Error(
+			'[svelte-fluent] Svelte context was not initialized. Did you call setSvelteFluent()?'
+		);
 	}
 	return ctx;
 }

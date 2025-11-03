@@ -1,6 +1,6 @@
 <script>
 	import { FluentBundle, FluentResource } from '@fluent/bundle';
-	import { createSvelteFluent, initFluentContext } from '@nubolab-ffwd/svelte-fluent';
+	import { createSvelteFluent, setSvelteFluent } from '@nubolab-ffwd/svelte-fluent';
 	import Content from './Content.svelte';
 
 	const translations = `
@@ -12,7 +12,7 @@ with-vars = Test {$name}
 	const bundle = new FluentBundle('en');
 	bundle.addResource(new FluentResource(translations));
 
-	initFluentContext(() => createSvelteFluent([bundle]));
+	setSvelteFluent(() => createSvelteFluent([bundle]));
 </script>
 
 <Content />

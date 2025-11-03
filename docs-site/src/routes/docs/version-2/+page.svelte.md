@@ -114,8 +114,12 @@ The new `<Localized>` component in version 2 now use a new approach for SSR whic
 
 ### 2\. New Reactive API: `useLocalize` and `useSvelteFluent`
 
-The `FluentContext` API has been replaced by two new reactive utilities: `useLocalize` and `useSvelteFluent`. `useLocalize` is a reactive function for accessing translations, while `useSvelteFluent` provides access to the full `SvelteFluent` instance.
-As a result, `getFluentContext`, `initFluentContext`'s return value, and the `FluentContext` type are no longer part of the public API.
+The `FluentContext` API has been replaced by two new reactive utilities: `useLocalize` and `useSvelteFluent`.
+`useLocalize` is a reactive function for accessing translations, while `useSvelteFluent` provides access to the full `SvelteFluent` instance.
+
+To further clarify the new API, the `initFluentContext` function has been renamed to `setSvelteFluent`. This new name better reflects its action: setting the `SvelteFluent` instance that the new utilities consume.
+
+As a result, `getFluentContext`, `setSvelteFluent`'s (formerly `initFluentContext`'s) return value, and the `FluentContext` type are no longer part of the public API.
 
 ### 3\. Housekeeping: Component Removals
 
@@ -132,8 +136,9 @@ Here is a scannable checklist of all breaking changes.
   - The `<Overlay>` component has been removed (functionality is now in `<Localized>`).
   - The `<FluentProvider>` component has been removed.
 - **API & Types:**
+  - The `initFluentContext` function has been renamed to `setSvelteFluent`.
   - The `getFluentContext` function has been removed (use `useLocalize` or `useSvelteFluent`).
-  - `initFluentContext` no longer returns a value.
+  - `setSvelteFluent` (formerly `initFluentContext`) no longer returns a value.
   - The `FluentContext` type is no longer exported.
 
 ## Migration Guide
@@ -291,7 +296,7 @@ You now use the reative `localize` function to get the main translation and each
 
 #### C. Remove the Deprecated `<FluentProvider>` Component
 
-The `<FluentProvider>` component was deprecated in a previous version and has now been removed. You should replace it by initializing the context directly with `createSvelteFluent` and `initFluentContext`.
+The `<FluentProvider>` component was deprecated in a previous version and has now been removed. You should replace it by initializing the context directly with `createSvelteFluent` and `setSvelteFluent`.
 
 **Before (v1)**
 
@@ -315,13 +320,13 @@ The `<FluentProvider>` component was deprecated in a previous version and has no
 ```svelte
 <script>
 	import { FluentBundle, FluentResource } from '@fluent/bundle';
-	import { createSvelteFluent, initFluentContext, Localized } from '@nubolab-ffwd/svelte-fluent';
+	import { createSvelteFluent, setSvelteFluent, Localized } from '@nubolab-ffwd/svelte-fluent';
 
 	const translations = 'hello = Hello, world!';
 	const bundle = new FluentBundle('en');
 	bundle.addResource(new FluentResource(translations));
 
-	initFluentContext(() => createSvelteFluent([bundle]));
+	setSvelteFluent(() => createSvelteFluent([bundle]));
 </script>
 
 <Localized id="hello" />

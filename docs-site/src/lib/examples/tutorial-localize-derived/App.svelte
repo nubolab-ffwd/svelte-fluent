@@ -1,6 +1,6 @@
 <script>
 	import { FluentBundle } from '@fluent/bundle';
-	import { createSvelteFluent, initFluentContext, Localized } from '@nubolab-ffwd/svelte-fluent';
+	import { createSvelteFluent, setSvelteFluent } from '@nubolab-ffwd/svelte-fluent';
 	import resourceEn from './en.ftl';
 	import resourceDe from './de.ftl';
 	import Component from './Component.svelte';
@@ -18,7 +18,7 @@
 		return bundle;
 	});
 
-	initFluentContext(() => createSvelteFluent([bundle]));
+	setSvelteFluent(() => createSvelteFluent([bundle]));
 </script>
 
 <Component />

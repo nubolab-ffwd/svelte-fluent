@@ -1,7 +1,7 @@
 <script>
 	import { Localized as Overlay } from '@nubolab-ffwd/svelte-fluent';
 	import { FluentBundle, FluentResource } from '@fluent/bundle';
-	import { createSvelteFluent, initFluentContext } from '@nubolab-ffwd/svelte-fluent';
+	import { createSvelteFluent, setSvelteFluent } from '@nubolab-ffwd/svelte-fluent';
 
 	const resource = new FluentResource(`
 test = This <a data-l10n-name="link">link</a> is rendered with Overlay.
@@ -10,7 +10,7 @@ test = This <a data-l10n-name="link">link</a> is rendered with Overlay.
 	const bundle = new FluentBundle('en');
 	bundle.addResource(resource);
 
-	initFluentContext(() => createSvelteFluent([bundle]));
+	setSvelteFluent(() => createSvelteFluent([bundle]));
 </script>
 
 <Overlay id="test">

@@ -1,6 +1,6 @@
 <script>
 	import { FluentBundle, FluentResource } from '@fluent/bundle';
-	import { Localized, initFluentContext, createSvelteFluent } from '@nubolab-ffwd/svelte-fluent';
+	import { Localized, setSvelteFluent, createSvelteFluent } from '@nubolab-ffwd/svelte-fluent';
 
 	export let userName = 'Anna';
 	export let userGender = 'female';
@@ -24,7 +24,7 @@ shared-photos =
 	const bundle = new FluentBundle('en');
 	bundle.addResource(new FluentResource(translations));
 
-	initFluentContext(() => createSvelteFluent([bundle]));
+	setSvelteFluent(() => createSvelteFluent([bundle]));
 </script>
 
 <strong><Localized id="hello-user" args={{ userName }} /></strong>

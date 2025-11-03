@@ -175,12 +175,12 @@ in `src/routes/+layout.svelte`, which is required for using the `<Localized>` co
 
 ```svelte title="src/routes/+layout.svelte"
 <script lang="ts">
-	import { initFluentContext } from '@nubolab-ffwd/svelte-fluent';
+	import { setSvelteFluent } from '@nubolab-ffwd/svelte-fluent';
 	import type { PageData } from './$types';
 	import type { Snippet } from 'svelte';
 
 	let { data, children }: { data: PageData; children: Snippet } = $props();
-	initFluentContext(() => data.fluent);
+	setSvelteFluent(() => data.fluent);
 </script>
 
 {@render children()}

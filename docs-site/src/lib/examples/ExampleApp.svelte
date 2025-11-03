@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { FluentBundle, FluentResource } from '@fluent/bundle';
-	import { createSvelteFluent, initFluentContext } from '@nubolab-ffwd/svelte-fluent';
+	import { createSvelteFluent, setSvelteFluent } from '@nubolab-ffwd/svelte-fluent';
 	import type { Snippet } from 'svelte';
 
 	interface Props {
@@ -16,7 +16,7 @@
 		return bundle;
 	});
 
-	initFluentContext(() => createSvelteFluent([bundle]));
+	setSvelteFluent(() => createSvelteFluent([bundle]));
 </script>
 
 <div class="space-y-2">

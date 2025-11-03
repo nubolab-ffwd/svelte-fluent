@@ -1,5 +1,5 @@
 ---
-title: initFluentContext
+title: setSvelteFluent
 ---
 
 <script>
@@ -9,10 +9,12 @@ title: initFluentContext
 
 # {title}
 
-Initializes the svelte component context for the utitilies and components provided by `svelte-fluent`.
+Makes the <ReferenceLink name="SvelteFluent" /> instance available to all `svelte-fluent`
+components and utilities (like <ReferenceLink name="useLocalize" /> and <ReferenceLink name="Localized" />)
+via the Svelte context.
 
 ```ts
-function initFluentContext(getFluent: () => SvelteFluent): void;
+function setSvelteFluent(getFluent: () => SvelteFluent): void;
 ```
 
 ## Arguments

@@ -1,6 +1,6 @@
 <script>
 	import { FluentBundle } from '@fluent/bundle';
-	import { createSvelteFluent, initFluentContext, Localized } from '@nubolab-ffwd/svelte-fluent';
+	import { createSvelteFluent, setSvelteFluent, Localized } from '@nubolab-ffwd/svelte-fluent';
 	import { negotiateLanguages } from '@fluent/langneg';
 	import resourceEn from './en.ftl';
 	import resourceDe from './de.ftl';
@@ -31,7 +31,7 @@
 			return bundle;
 		});
 	});
-	initFluentContext(() => createSvelteFluent(bundles));
+	setSvelteFluent(() => createSvelteFluent(bundles));
 </script>
 
 <Localized id="hello" />

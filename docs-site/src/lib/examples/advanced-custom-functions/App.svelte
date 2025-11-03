@@ -1,6 +1,6 @@
 <script>
 	import { FluentBundle, FluentDateTime, FluentNone, FluentNumber } from '@fluent/bundle';
-	import { createSvelteFluent, initFluentContext, Localized } from '@nubolab-ffwd/svelte-fluent';
+	import { createSvelteFluent, setSvelteFluent, Localized } from '@nubolab-ffwd/svelte-fluent';
 	import resourceEn from './en.ftl';
 
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -33,7 +33,7 @@
 	const bundle = new FluentBundle('en', { functions: { WEEKDAY } });
 	bundle.addResource(resourceEn);
 
-	initFluentContext(() => createSvelteFluent([bundle]));
+	setSvelteFluent(() => createSvelteFluent([bundle]));
 </script>
 
 <div>
