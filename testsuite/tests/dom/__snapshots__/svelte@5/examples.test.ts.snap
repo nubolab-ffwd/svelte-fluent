@@ -217,7 +217,7 @@ exports[`Example advanced-insert-element/App.svelte > should render 1`] = `
         <!---->
         <!---->
         <a
-          href="/terms"
+          href="https://example.com/terms"
           rel="noopener noreferrer"
           target="_blank"
         >

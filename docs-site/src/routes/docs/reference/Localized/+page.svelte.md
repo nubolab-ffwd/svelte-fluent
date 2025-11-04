@@ -4,9 +4,13 @@ title: Localized
 
 <script>
 	import { base } from '$app/paths'
+	import Callout from '$lib/Callout.svelte'
 	import PropDescription from '$lib/PropDescription.svelte'
+	import ReferenceLink from '$lib/ReferenceLink.svelte'
 	import LocalizedDynamicTextExample from '$lib/rendered-examples/LocalizedDynamicTextExample.svelte'
 	import LocalizedStaticTextExample from '$lib/rendered-examples/LocalizedStaticTextExample.svelte'
+	import AdvancedInsertElementExample from '$lib/rendered-examples/AdvancedInsertElementExample.svelte'
+	import AdvancedInsertComponentSimpleExample from '$lib/rendered-examples/AdvancedInsertComponentSimpleExample.svelte'
 </script>
 
 # {title}
@@ -49,7 +53,9 @@ An explicit list of attribute names from the Fluent message that should be allow
 
 <PropDescription name="elements" type="Record<string, TagElement | ComponentElement>">
 
-A configuration object for securely injecting HTML elements (using `TagElement`) or Svelte components (using `ComponentElement`) into placeholders within the Fluent message. See the [Advanced Features guide]({base}/docs/advanced-features) for details.
+A configuration object for securely injecting HTML elements (using `TagElement`) or Svelte components (using `ComponentElement`) into placeholders within the Fluent message.
+
+See the [Configuring the `elements` Prop](#configuring-the-elements-prop) section below for details.
 
 </PropDescription>
 
@@ -62,6 +68,34 @@ The `children` snippet allows for full control over the output.
 </PropDescription>
 
 ---
+
+## Configuring the `elements` Prop
+
+The `elements` prop allows you to insert rich content into your translations. You configure it using the `TagElement` and `ComponentElement` classes.
+
+### Using `TagElement`
+
+The `TagElement` class is used to securely insert standard HTML elements into a translation. This allows you to define interactive elements like anchors (`<a>`) in your code, while letting translators control the surrounding text.
+
+<AdvancedInsertElementExample />
+
+<Callout>
+
+For more detailed examples, see the **[Insert HTML Elements]({base}/docs/advanced-features#insert-html-elements)** section in our advanced features guide.
+
+</Callout>
+
+### Using `ComponentElement`
+
+The `ComponentElement` class is used to securely insert Svelte components directly into a translation. This is a powerful feature that allows you to create rich, interactive content (like icons or buttons) while giving translators control over their placement.
+
+<AdvancedInsertComponentSimpleExample />
+
+<Callout>
+
+For more detailed examples, see the **[Insert Svelte Component]({base}/docs/advanced-features#insert-svelte-component)** section in our advanced features guide.
+
+</Callout>
 
 ## Snippet arguments
 

@@ -26,9 +26,9 @@ exports[`Example advanced-insert-component-simple/App.svelte > should render 1`]
 
 exports[`Example advanced-insert-element/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><div class="space-y-2"><p><!--[!--><!----><span><!--[--><!--[-->Please accept the <!--]--><!--[!--><!--[!--><!----><a href="/terms" target="_blank" rel="noopener noreferrer"><!--[--><!--[-->Terms of Service<!--]--><!--]--><!----><!----></a><!----><!--]--><!--]--><!--[--> to continue.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!----></div><!--]-->",
+  "body": "<!--[--><div class="space-y-2"><p><!--[!--><!----><span><!--[--><!--[-->Please accept the <!--]--><!--[!--><!--[!--><!----><a href="https://example.com/terms" target="_blank" rel="noopener noreferrer"><!--[--><!--[-->Terms of Service<!--]--><!--]--><!----><!----></a><!----><!--]--><!--]--><!--[--> to continue.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><div class="space-y-2"><p><!--[!--><!----><span><!--[--><!--[-->Please accept the <!--]--><!--[!--><!--[!--><!----><a href="/terms" target="_blank" rel="noopener noreferrer"><!--[--><!--[-->Terms of Service<!--]--><!--]--><!----><!----></a><!----><!--]--><!--]--><!--[--> to continue.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!----></div><!--]-->",
+  "html": "<!--[--><div class="space-y-2"><p><!--[!--><!----><span><!--[--><!--[-->Please accept the <!--]--><!--[!--><!--[!--><!----><a href="https://example.com/terms" target="_blank" rel="noopener noreferrer"><!--[--><!--[-->Terms of Service<!--]--><!--]--><!----><!----></a><!----><!--]--><!--]--><!--[--> to continue.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!----></div><!--]-->",
 }
 `;
 

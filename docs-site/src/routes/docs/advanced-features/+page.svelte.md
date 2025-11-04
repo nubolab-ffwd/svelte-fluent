@@ -50,7 +50,7 @@ One of the most powerful features of `svelte-fluent` is the ability to inject yo
 
 The most straightforward use case is injecting a simple component, like an icon, without any props.
 
-You configure your components using the `elements` prop of the <ReferenceLink name="Localized" /> component. Use the <ReferenceLink name="ComponentElement" /> class to wrap your Svelte component.
+You configure your components using the `elements` prop of the <ReferenceLink name="Localized" /> component. Use the `ComponentElement` class to wrap your Svelte component.
 
 <AdvancedInsertComponentSimpleExample />
 

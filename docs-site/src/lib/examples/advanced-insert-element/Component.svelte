@@ -7,7 +7,7 @@
 		id="terms-of-service"
 		elements={{
 			'tos-link': new TagElement('a', {
-				href: '/terms',
+				href: 'https://example.com/terms',
 				target: '_blank',
 				rel: 'noopener noreferrer'
 			})

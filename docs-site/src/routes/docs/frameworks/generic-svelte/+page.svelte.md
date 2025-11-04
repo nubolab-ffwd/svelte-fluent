@@ -88,5 +88,5 @@ For SSR, you should instead parse the `Accept-Language` HTTP header to determine
 You now have a solid foundation for using `svelte-fluent` in a client-side Svelte project.
 
 You can learn more about how to use `svelte-fluent` in the [Tutorial]({base}/docs/tutorial),
-explore more powerful features in the [Advanced Features guide]({base}/docs/advanced),
+explore more powerful features in the [Advanced Features guide]({base}/docs/advanced-features),
 or check out the [Reference]({base}/docs/reference) for API documentation.

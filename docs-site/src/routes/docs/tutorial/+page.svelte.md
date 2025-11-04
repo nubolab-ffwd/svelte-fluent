@@ -75,7 +75,7 @@ In the example below, try switching languages to see how only the variable creat
 
 Congratulations\! You've now covered the core features of `svelte-fluent` and can handle the most common localization tasks.
 
-When you're ready to tackle more complex scenarios, the library offers more powerful features. Our **[Advanced Features guide]({base}/docs/advanced)** is the perfect next step to learn about topics like:
+When you're ready to tackle more complex scenarios, the library offers more powerful features. Our **[Advanced Features guide]({base}/docs/advanced-features)** is the perfect next step to learn about topics like:
 
 - **Inserting HTML Elements and Svelte Components:** Seamlessly embed rich, interactive content directly inside your translations.
 - **Formatting Interpolations:** Take control over how numbers, dates, and other variables are displayed.
