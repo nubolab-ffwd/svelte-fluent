@@ -13,9 +13,8 @@
 	},
 	"scripts": {
 		"dev": "svelte-package -i src -w",
-		"package": "run-s package:pkg package:rollup package:lint",
+		"package": "run-s package:pkg package:lint",
 		"package:pkg": "svelte-package -i src",
-		"package:rollup": "rollup --file dist/rollup.cjs --format cjs dist/rollup.js",
 		"package:lint": "publint",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -70,7 +69,6 @@
 		},
 		"./rollup": {
 			"types": "./dist/rollup.d.ts",
-			"require": "./dist/rollup.cjs",
 			"default": "./dist/rollup.js"
 		},
 		"./types": {
