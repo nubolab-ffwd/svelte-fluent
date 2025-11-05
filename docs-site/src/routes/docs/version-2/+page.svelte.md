@@ -21,9 +21,9 @@ The arguments passed to the `<Localized>` component's `children` snippet have be
 Here are the differences from version 1:
 
 - The `attrs` argument (a record of attributes) has been renamed to `attributes`.
-- The `text` argument (a string) has been replaced by `translatedContent` (a renderable snippet).
+- The `text` argument (a string) has been replaced by `content` (a renderable snippet).
 
-This new structure allows you to place the translated content exactly where you need it within your custom markup. For more details, see the **[Custom Rendering]({base}/docs/advanced-features#custom-rendering)** section in our advanced features guide.
+For more details, see the **[Custom Rendering]({base}/docs/advanced-features#custom-rendering)** section in our advanced features guide.
 
 **New Feature: Wrapper Element with localizable attributes**
 
@@ -47,9 +47,9 @@ read-more = Read more
 <Localized id="important-notice" tag="strong" />
 
 <Localized id="read-more">
-	{#snippet children({ attributes, translatedContent })}
+	{#snippet children({ attributes, content })}
 		<a href="/new-features" {...attributes}>
-			{@render translatedContent()}
+			{@render content()}
 		</a>
 	{/snippet}
 </Localized>
@@ -131,7 +131,7 @@ Here is a scannable checklist of all breaking changes.
 
 - **Components:**
   - The `<Localized>` component's `children` snippet arguments have changed.
-    The v1 `({ text, attrs })` arguments are replaced by `({ attributes, translatedContent })`, and `translatedContent` is now a renderable snippet, not a string.
+    The v1 `({ text, attrs })` arguments are replaced by `({ attributes, content })`, and `content` is now a renderable snippet, not a string.
   - The `<Localized>` component now always renders a wrapper element (defaults to `<span>`).
   - The `<Overlay>` component has been removed (functionality is now in `<Localized>`).
   - The `<FluentProvider>` component has been removed.
@@ -204,8 +204,8 @@ info = Read the <a data-element="link">documentation</a> for more information.
 
 #### B. Update the `children` Snippet
 
-The `children` snippet arguments have changed from `({ text, attrs })` to `({ attributes, translatedContent })`.
-Note that `translatedContent` is now a renderable snippet, not a string.
+The `children` snippet arguments have changed from `({ text, attrs })` to `({ attributes, content })`.
+Note that `content` is now a renderable snippet, not a string.
 
 **Example 1: Wrapping Content**
 

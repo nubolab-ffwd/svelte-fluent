@@ -100,7 +100,7 @@ for more examples.
 For full control over the output, you can use the `children` snippet. The snippet receives two arguments:
 
 - `attributes`: A record containing the attributes from the Fluent message.
-- `translatedContent`: A snippet that renders the translated text.
+- `content`: A snippet that renders the translated content.
 
 This pattern is ideal for advanced cases where you need to render a specific element, like an `<input>`, and apply localized attributes to it. By using the `children` snippet, you can take complete control over the final HTML while still sourcing attributes from your translation files.
 

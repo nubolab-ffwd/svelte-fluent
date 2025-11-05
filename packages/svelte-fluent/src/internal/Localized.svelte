@@ -40,7 +40,7 @@
 		tag?: string;
 		allowAttributes?: string[];
 		elements?: Record<string, ElementConfig>;
-		children?: Snippet<[{ attributes: Record<string, string>; translatedContent: Snippet }]>;
+		children?: Snippet<[{ attributes: Record<string, string>; content: Snippet }]>;
 	}
 
 	let {
@@ -189,20 +189,20 @@
 	<svelte:element this={tag} {...attributes}>{@render children()}</svelte:element>
 {/snippet}
 
-{#snippet translatedContent()}
+{#snippet contentSnippet()}
 	{@render outputContent(getContent(translation.value) ?? [])}
 {/snippet}
 
 {#if children}
 	{@render children({
 		attributes: filterLocalizableAttributes(tag, translation.attributes, allowAttributes),
-		translatedContent
+		content: contentSnippet
 	})}
 {:else}
 	{@render outputTag({
 		tag,
 		untrustedAttributes: translation.attributes,
 		allowAttributes,
-		children: translatedContent
+		children: contentSnippet
 	})}
 {/if}

@@ -109,7 +109,7 @@ Filtered attributes defined in the Fluent message based on the `tag` and `allowA
 
 ---
 
-<PropDescription name="translatedContent" type="Snippet">
+<PropDescription name="content" type="Snippet">
 
 A snippet that can be used to render the translated content of the Fluent message.
 
