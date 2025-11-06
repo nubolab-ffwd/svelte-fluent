@@ -139,8 +139,8 @@ importers:
         specifier: 5.39.6
         version: 5.39.6
       svelte-check:
-        specifier: 4.3.2
-        version: 4.3.2(picomatch@4.0.3)(svelte@5.39.6)(typescript@5.9.2)
+        specifier: 4.3.3
+        version: 4.3.3(picomatch@4.0.3)(svelte@5.39.6)(typescript@5.9.2)
       svelte-fluent-examples:
         specifier: workspace:^
         version: link:../examples
@@ -209,8 +209,8 @@ importers:
         specifier: 5.39.6
         version: 5.39.6
       svelte-check:
-        specifier: 4.3.2
-        version: 4.3.2(picomatch@4.0.3)(svelte@5.39.6)(typescript@5.9.2)
+        specifier: 4.3.3
+        version: 4.3.3(picomatch@4.0.3)(svelte@5.39.6)(typescript@5.9.2)
       svelte2tsx:
         specifier: 0.7.44
         version: 0.7.44(svelte@5.39.6)(typescript@5.9.2)
@@ -288,8 +288,8 @@ importers:
         specifier: 5.39.6
         version: 5.39.6
       svelte-check:
-        specifier: 4.3.2
-        version: 4.3.2(picomatch@4.0.3)(svelte@5.39.6)(typescript@5.9.2)
+        specifier: 4.3.3
+        version: 4.3.3(picomatch@4.0.3)(svelte@5.39.6)(typescript@5.9.2)
       svelte2tsx:
         specifier: 0.7.44
         version: 0.7.44(svelte@5.39.6)(typescript@5.9.2)
@@ -355,8 +355,8 @@ importers:
         specifier: 5.39.6
         version: 5.39.6
       svelte-check:
-        specifier: 4.3.2
-        version: 4.3.2(picomatch@4.0.3)(svelte@5.39.6)(typescript@5.9.2)
+        specifier: 4.3.3
+        version: 4.3.3(picomatch@4.0.3)(svelte@5.39.6)(typescript@5.9.2)
       svelte-fluent-examples:
         specifier: workspace:^
         version: link:../examples
@@ -3045,8 +3045,8 @@ packages:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
 
-  svelte-check@4.3.2:
-    resolution: {integrity: sha512-71udP5w2kaSTcX8iV0hn3o2FWlabQHhJTJLIQrCqMsrcOeDUO2VhCQKKCA8AMVHSPwdxLEWkUWh9OKxns5PD9w==}
+  svelte-check@4.3.3:
+    resolution: {integrity: sha512-RYP0bEwenDXzfv0P1sKAwjZSlaRyqBn0Fz1TVni58lqyEiqgwztTpmodJrGzP6ZT2aHl4MbTvWP6gbmQ3FOnBg==}
     engines: {node: '>= 18.0.0'}
     hasBin: true
     peerDependencies:
@@ -6159,11 +6159,11 @@ snapshots:
     dependencies:
       has-flag: 4.0.0
 
-  svelte-check@4.3.2(picomatch@4.0.3)(svelte@5.39.6)(typescript@5.9.2):
+  svelte-check@4.3.3(picomatch@4.0.3)(svelte@5.39.6)(typescript@5.9.2):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
       chokidar: 4.0.3
-      fdir: 6.4.6(picomatch@4.0.3)
+      fdir: 6.5.0(picomatch@4.0.3)
       picocolors: 1.1.1
       sade: 1.8.1
       svelte: 5.39.6
