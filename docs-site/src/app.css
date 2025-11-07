@@ -70,6 +70,33 @@
 	}
 }
 
+.shiki {
+	@apply bg-surface-900 min-w-fit px-4;
+	& code {
+		@apply block;
+	}
+	& .line {
+		&.highlighted {
+			@apply bg-surface-800/80 w-full box-content inline-block -mx-4 px-4;
+		}
+		@variant in-[.has-diff] {
+			@apply ms-4;
+			&::before {
+				@apply bg-surface-900 absolute left-0 block w-8 text-center content-['_'];
+			}
+			&.add::before {
+				@apply text-success-400 content-['+'];
+			}
+			&.remove {
+				@apply opacity-70;
+			}
+			&.remove::before {
+				@apply text-error-400 content-['-'];
+			}
+		}
+	}
+}
+
 @utility scrollbar-dark {
 	scrollbar-color: var(--color-surface-700) var(--color-surface-900);
 }

@@ -2,6 +2,7 @@ import { readFileSync } from 'fs';
 import { dirname, resolve } from 'path';
 import { createHighlighter } from 'shiki';
 import { fileURLToPath } from 'url';
+import { transformerNotationDiff, transformerNotationHighlight } from '@shikijs/transformers';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const fluentGrammar = JSON.parse(
@@ -35,11 +36,22 @@ const langs = [
 
 /** @type {import('shiki').ShikiTransformer[]} */
 export const defaultTransformers = [
+	transformerNotationDiff({
+		matchAlgorithm: 'v3'
+	}),
+	transformerNotationHighlight({
+		matchAlgorithm: 'v3'
+	}),
 	{
 		name: 'svelte-fluent-docs:title',
 		pre(elem) {
 			const title = parseMetaTitleString(this.options.meta?.__raw);
 			elem.properties['data-title'] = title;
+		}
+	},
+	{
+		name: 'svelte-fluent-docs:remove-bg-color',
+		pre(elem) {
 			delete elem.properties.style;
 		}
 	}

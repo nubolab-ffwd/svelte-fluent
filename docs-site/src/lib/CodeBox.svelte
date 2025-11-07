@@ -68,11 +68,11 @@
 			{/if}
 		{/if}
 		{#if collapsible}
-			<Collapsible.Content class="row-3 col-span-full p-4">
+			<Collapsible.Content class="row-3 col-span-full py-4">
 				{@render code()}
 			</Collapsible.Content>
 		{:else}
-			<div class="row-3 col-span-full p-4">
+			<div class="row-3 relative col-span-full py-4">
 				{@render code()}
 			</div>
 		{/if}
