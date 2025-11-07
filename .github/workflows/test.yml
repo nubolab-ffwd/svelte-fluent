@@ -17,7 +17,7 @@ jobs:
       - uses: pnpm/action-setup@v4.2.0
       - uses: actions/setup-node@v6.0.0
         with:
-          node-version: 22.x
+          node-version: 24.x
           cache: 'pnpm'
       - run: pnpm install --frozen-lockfile --strict-peer-dependencies
       - run: pnpm lint
@@ -64,7 +64,7 @@ jobs:
       - uses: pnpm/action-setup@v4.2.0
       - uses: actions/setup-node@v6.0.0
         with:
-          node-version: 22.x
+          node-version: 24.x
           cache: 'pnpm'
       - run: pnpm install --frozen-lockfile --strict-peer-dependencies
       - name: Install ${{ matrix.package-version }}
