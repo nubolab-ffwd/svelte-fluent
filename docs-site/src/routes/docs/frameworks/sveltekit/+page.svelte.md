@@ -32,15 +32,15 @@ npm install --save-dev @fluent/bundle @fluent/langneg
 
 Some features of `svelte-fluent` require a vite plugin to function. Let's add it to `vite.config.ts`:
 
-```diff title="vite.config.ts"
- import { sveltekit } from '@sveltejs/kit/vite';
- import { defineConfig } from 'vite';
-+import svelteFluent from '@nubolab-ffwd/svelte-fluent/vite';
+```ts title="vite.config.ts"
+import { sveltekit } from '@sveltejs/kit/vite';
+import { defineConfig } from 'vite';
+import svelteFluent from '@nubolab-ffwd/svelte-fluent/vite'; // [!code ++]
 
- export default defineConfig({
--       plugins: [sveltekit()]
-+       plugins: [svelteFluent(), sveltekit()]
- });
+export default defineConfig({
+	plugins: [sveltekit()] // [!code --]
+	plugins: [svelteFluent(), sveltekit()] // [!code ++]
+});
 ```
 
 ## Create translation files
@@ -124,6 +124,7 @@ import { SvelteFluent } from '@nubolab-ffwd/svelte-fluent';
 declare global {
 	namespace App {
 		// interface Error {}
+		// [!code highlight:4]
 		interface Locals {
 			locale: string;
 			fluent: SvelteFluent;
@@ -220,30 +221,34 @@ Let's start by adding some additional messages to our translation files:
 
 **In `src/translations/en.ftl`:**
 
-```diff title="src/translations/en.ftl"
- welcome = Welcome to svelte-fluent!
-+
-+example-form-heading = Example form
-+example-form-name-field-label = Name
-+example-form-submit-button = Submit
-+  .aria-label = Submit form
-+
-+example-form-name-required-error = Name must not be empty
-+example-form-success-message = Form was submitted successfully!
+```ftl title="src/translations/en.ftl"
+welcome = Welcome to svelte-fluent!
+
+# [!code ++:4]
+example-form-heading = Example form
+example-form-name-field-label = Name
+example-form-submit-button = Submit
+  .aria-label = Submit form
+
+# [!code ++:2]
+example-form-name-required-error = Name must not be empty
+example-form-success-message = Form was submitted successfully!
 ```
 
 **In `src/translations/de.ftl`:**
 
-```diff title="src/translations/de.ftl"
- welcome = Willkommen bei svelte-fluent!
-+
-+example-form-heading = Beispielformular
-+example-form-name-field-label = Name
-+example-form-submit-button = Absenden
-+  .aria-label = Formular absenden
-+
-+example-form-name-required-error = Name darf nicht leer sein
-+example-form-success-message = Formular wurde erfolgreich abgeschickt!
+```ftl title="src/translations/de.ftl"
+welcome = Willkommen bei svelte-fluent!
+
+# [!code ++:4]
+example-form-heading = Beispielformular
+example-form-name-field-label = Name
+example-form-submit-button = Absenden
+  .aria-label = Formular absenden
+
+# [!code ++:2]
+example-form-name-required-error = Name darf nicht leer sein
+example-form-success-message = Formular wurde erfolgreich abgeschickt!
 ```
 
 Next, we need a form action in `src/routes/+page.server.ts` to handle the logic.

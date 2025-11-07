@@ -35,5 +35,5 @@ The `jsdom` dependency is used for the server-side rendering of the `<Localized>
 
 Now that you have the library installed, the next step is to integrate it into your project. Please follow the guide that matches your setup:
 
-- **[SvelteKit Guide →]({base}/docs/frameworks#sveltekit):** A comprehensive, step-by-step guide for SvelteKit projects, covering server-side rendering and language negotiation. **This is the recommended path for most users.**
-- **[Generic Svelte Setup →]({base}/docs/frameworks#generic-svelte):** For projects using Svelte with Vite directly, or other bundlers.
+- **[SvelteKit Guide →]({base}/docs/frameworks/sveltekit):** A comprehensive, step-by-step guide for SvelteKit projects, covering server-side rendering and language negotiation. **This is the recommended path for most users.**
+- **[Generic Svelte Setup →]({base}/docs/frameworks/generic-svelte):** For projects using Svelte with Vite directly, or other bundlers.

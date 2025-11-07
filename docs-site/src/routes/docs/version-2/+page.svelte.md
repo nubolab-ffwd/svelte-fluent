@@ -145,8 +145,6 @@ Here is a scannable checklist of all breaking changes.
 
 This guide will help you upgrade your project from `svelte-fluent` v1.x to v2.0. Version 2 introduces a unified `<Localized>` component and a new reactive API, which will require some updates to your existing code.
 
-We recommend following these steps in order.
-
 ### Step 1: Update Component Usage
 
 The most significant changes are related to the components. The old `<Overlay>` and legacy `<Localized>` components have been removed in favor of a single, unified `<Localized>` component with a more powerful and consistent API.
@@ -344,6 +342,7 @@ You used `getFluentContext` and destructuring to access the reactive `localize` 
 
 ```svelte
 <script>
+	// [!code highlight:2]
 	import { getFluentContext } from '@nubolab-ffwd/svelte-fluent';
 	const { localize } = getFluentContext();
 	let title = $derived(localize('my-title'));
@@ -357,6 +356,7 @@ Using this utility now gives you direct access to the reactive `localize` functi
 
 ```svelte
 <script>
+	// [!code highlight:2]
 	import { useLocalize } from '@nubolab-ffwd/svelte-fluent';
 	const localize = useLocalize();
 	let title = $derived(localize('my-title'));
