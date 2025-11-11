@@ -42,7 +42,7 @@ Define a custom function for handling errors. By default errors are logged to th
 
 **Experimental:** Override the default markup parser.
 
-By default, `svelte-fluent` uses `jsdom` on the server and the browser's native DOMParser on the client. Use with caution.
+TODO: By default, `svelte-fluent` uses `jsdom` on the server and the browser's native DOMParser on the client. Use with caution.
 
 </PropDescription>
 

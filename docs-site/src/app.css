@@ -71,18 +71,19 @@
 }
 
 .shiki {
-	@apply bg-surface-900 min-w-fit px-4;
+	@apply bg-surface-900 w-max min-w-full px-4;
+	/* reset some user-agent styles for semantic elements we use */
+	& :is(ins, del, mark) {
+		@apply bg-none text-inherit no-underline;
+	}
 	& code {
 		@apply block;
 	}
-	& .line {
-		&.highlighted {
-			@apply bg-surface-800/80 w-full box-content inline-block -mx-4 px-4;
-		}
-		@variant in-[.has-diff] {
-			@apply ms-4;
+	&.has-diff {
+		@apply ps-0;
+		& .line {
 			&::before {
-				@apply bg-surface-900 absolute left-0 block w-8 text-center content-['_'];
+				@apply bg-surface-900 sticky start-0 inline-block w-8 text-center align-middle content-['\a0'];
 			}
 			&.add::before {
 				@apply text-success-400 content-['+'];
@@ -93,6 +94,12 @@
 			&.remove::before {
 				@apply text-error-400 content-['-'];
 			}
+		}
+	}
+	&.has-highlighted {
+		& .line.highlighted {
+			@apply bg-surface-800/80 border-primary-500 relative box-content inline-block;
+			@apply start-[2px] -mx-4 w-[calc(100%-2px)] border-s-2 pe-4 ps-[calc(--spacing(4)-4px)];
 		}
 	}
 }

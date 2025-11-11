@@ -3,16 +3,17 @@
 
 	const localize = useLocalize();
 
-	// This variable is reactive. It will update when the language changes.
-	const messageWithDerived = $derived(localize('message'));
-
 	// This variable is NOT reactive. It is only set once when the component initializes.
 	const messageWithoutDerived = localize('message');
+
+	// This variable is reactive. It will update when the language changes.
+	const messageWithDerived = $derived(localize('message'));
 </script>
 
 <p>
-	Message with <code>$derived</code>: <strong>{messageWithDerived}</strong>
+	❌ Message without <code>$derived</code>: <strong>{messageWithoutDerived}</strong>
 </p>
+
 <p>
-	Message without <code>$derived</code>: <strong>{messageWithoutDerived}</strong>
+	✅ Message with <code>$derived</code>: <strong>{messageWithDerived}</strong>
 </p>

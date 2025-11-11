@@ -106,12 +106,4 @@
 				/ auto minmax(0, 1fr);
 		}
 	}
-
-	/* :global(html):has(.docs-layout) {
-		scroll-padding-top: calc(var(--header-height) + --spacing(4));
-	} */
-
-	/* .docs-layout :global([id]) {
-		scroll-margin-top: calc(var(--header-height) + --spacing(4));
-	} */
 </style>

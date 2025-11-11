@@ -39,6 +39,7 @@
 <div>
 	<Localized id="weekday-number" args={{ weekday: 2 }} />
 </div>
+
 <div>
 	<Localized id="weekday-date" args={{ date: new Date(2024, 1, 6) }} />
 </div>

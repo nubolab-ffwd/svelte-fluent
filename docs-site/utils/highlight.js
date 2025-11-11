@@ -54,6 +54,25 @@ export const defaultTransformers = [
 		pre(elem) {
 			delete elem.properties.style;
 		}
+	},
+	{
+		name: 'svelte-fluent-docs:a11y',
+		code(code) {
+			const lines = code.children.filter((i) => i.type === 'element');
+			for (const line of lines) {
+				const classes =
+					typeof line.properties?.class === 'string'
+						? line.properties.class.split(/\s+/g)
+						: (line.properties.class ?? []);
+				if (classes.includes('diff') && classes.includes('add')) {
+					line.tagName = 'ins';
+				} else if (classes.includes('diff') && classes.includes('remove')) {
+					line.tagName = 'del';
+				} else if (classes.includes('highlighted')) {
+					line.tagName = 'mark';
+				}
+			}
+		}
 	}
 ];
 

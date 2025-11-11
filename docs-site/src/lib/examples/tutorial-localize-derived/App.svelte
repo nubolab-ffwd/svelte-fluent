@@ -21,4 +21,6 @@
 	setSvelteFluent(() => createSvelteFluent([bundle]));
 </script>
 
-<Component />
+<div class="space-y-2">
+	<Component />
+</div>

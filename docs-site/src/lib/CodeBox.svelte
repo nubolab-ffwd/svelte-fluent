@@ -38,7 +38,7 @@
 
 {#snippet content()}
 	<figure
-		class="card bg-surface-900 text-surface-contrast-900 scheme-dark grid max-w-full grid-cols-[auto_minmax(0,1fr)_auto] font-mono text-xs"
+		class="card bg-surface-900 text-surface-contrast-900 scheme-dark isolate grid max-w-full grid-cols-[auto_minmax(0,1fr)_auto] font-mono text-xs"
 		bind:this={container}
 	>
 		{#if title}
@@ -77,7 +77,7 @@
 			</div>
 		{/if}
 
-		<div class={['justify-self-end p-2', title ? 'row-1 col-3' : 'row-3 col-span-full']}>
+		<div class={['z-10 justify-self-end p-2', title ? 'row-1 col-3' : 'row-3 col-span-full']}>
 			<button
 				class={[
 					'btn-icon hover:preset-tonal text-surface-contrast-900/70',

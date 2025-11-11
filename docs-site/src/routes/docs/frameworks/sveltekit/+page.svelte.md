@@ -116,6 +116,7 @@ At this point, TypeScript will report an error for `event.locals.locale`
 and `event.locals.fluent`. To fix this we need to modify our `src/app.d.ts`:
 
 ```ts title="src/app.d.ts"
+// [!code highlight:2]
 import '@nubolab-ffwd/svelte-fluent/types';
 import { SvelteFluent } from '@nubolab-ffwd/svelte-fluent';
 
@@ -138,7 +139,7 @@ declare global {
 export {};
 ```
 
-By adding `import '@nubolab-ffwd/svelte-fluent/types';`;, you also provide TypeScript with the necessary definitions to
+By adding `import '@nubolab-ffwd/svelte-fluent/types';`, you also provide TypeScript with the necessary definitions to
 understand `.ftl` file imports, which will resolve any errors you may have seen in your editor.
 
 ## Client integration
