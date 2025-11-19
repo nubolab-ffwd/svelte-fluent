@@ -5,7 +5,7 @@
 
 	const args = {
 		userName: 'Anna',
-		userGender: 'female',
+		collection: 'public',
 		photoCount: 3
 	};
 </script>
@@ -30,18 +30,18 @@
 				/>
 			</dd>
 			<dt>
-				<label class="label font-mono" for="frontpage-usergender">
-					<span class="label-text">userGender</span>
+				<label class="label font-mono" for="frontpage-collection">
+					<span class="label-text">collection</span>
 				</label>
 			</dt>
 			<dd>
 				<select
 					class="select ring-surface-600"
-					id="frontpage-usergender"
-					bind:value={args.userGender}
+					id="frontpage-collection"
+					bind:value={args.collection}
 				>
-					<option value="male">male</option>
-					<option value="female">female</option>
+					<option value="public">public</option>
+					<option value="private">private</option>
 					<option value="unspecified">unspecified</option>
 				</select>
 			</dd>

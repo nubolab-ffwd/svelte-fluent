@@ -3,7 +3,7 @@
 	import { Localized, setSvelteFluent, createSvelteFluent } from '@nubolab-ffwd/svelte-fluent';
 
 	export let userName = 'Anna';
-	export let userGender = 'female';
+	export let collection = 'public';
 	export let photoCount = 3;
 
 	const translations = `
@@ -15,10 +15,10 @@ shared-photos =
     {$userName} {$photoCount ->
         [one] added a new photo
        *[other] added {$photoCount} new photos
-    } to {$userGender ->
-        [male] his stream
-        [female] her stream
-       *[other] their stream
+    } to {$collection ->
+        [public] the public stream
+        [private] a private album
+       *[other] the shared collection
     }.
 `;
 	const bundle = new FluentBundle('en');
@@ -29,5 +29,5 @@ shared-photos =
 
 <strong><Localized id="hello-user" args={{ userName }} /></strong>
 <p>
-	<Localized id="shared-photos" args={{ userName, userGender, photoCount }} />
+	<Localized id="shared-photos" args={{ userName, collection, photoCount }} />
 </p>

@@ -2,7 +2,7 @@
 	import { FluentBundle, FluentResource } from '@fluent/bundle';
 	import { createSvelteFluent, setSvelteFluent, Localized } from '@nubolab-ffwd/svelte-fluent';
 
-	let { userName = 'Anna', userGender = 'female', photoCount = 3 } = $props();
+	let { userName = 'Anna', collection = 'public', photoCount = 3 } = $props();
 
 	const translations = `
 # Simple things are simple.
@@ -13,10 +13,10 @@ shared-photos =
     {$userName} {$photoCount ->
         [one] added a new photo
        *[other] added {$photoCount} new photos
-    } to {$userGender ->
-        [male] his stream
-        [female] her stream
-       *[other] their stream
+    } to {$collection ->
+        [public] the public stream
+        [private] a private album
+       *[other] the shared collection
     }.
 `;
 	const bundle = new FluentBundle('en');
@@ -30,5 +30,5 @@ shared-photos =
 </strong>
 
 <p>
-	<Localized id="shared-photos" args={{ userName, userGender, photoCount }} />
+	<Localized id="shared-photos" args={{ userName, collection, photoCount }} />
 </p>
