@@ -221,23 +221,13 @@ The `children` snippet was passed the translated text to access the translated t
 
 **After (v2):**
 
-To wrap a translation in an element, use the built-in `tag` prop. You can also override the `children` snippet for full control over the rendered markup.
+For simple wrapping, the preferred method is to use the new `tag` prop.
 
 ```svelte
 <Localized id="greeting" tag="strong" />
-
-<Localized id="login-button" tag="button">
-	{#snippet children({ attributes })}
-		<button {...attributes}>
-			<Icon />
-		</button>
-	{/snippet}
-</Localized>
 ```
 
-To wrap a translation in an element, use the built-in `tag` prop, as shown in the `Tutorial`'s **[Change wrapper element]({base}/docs/tutorial#change-wrapper-element)** section.
-
-For full control over the rendered markup (like in the `<button>` example above), see the **[Custom Rendering]({base}/docs/advanced-features#custom-rendering)** section in the advanced guide.
+If you need manual control over the rendered markup (equivalent to the v1 snippet logic), please refer to the **[Custom Rendering]({base}/docs/advanced-features#custom-rendering)** section in the advanced features guide.
 
 **Example 2: Complex Layouts with Attributes**
 
