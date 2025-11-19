@@ -5,7 +5,7 @@ import { mdsxConfig } from './mdsx.config.js';
 
 const isProdBuild = process.env.NODE_ENV === 'production';
 
-const base = isProdBuild ? '/svelte-fluent' : '';
+const base = process.env.SVELTEKIT_BASE ?? (isProdBuild ? '/svelte-fluent' : '');
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

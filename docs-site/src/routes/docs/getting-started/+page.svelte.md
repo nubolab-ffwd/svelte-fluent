@@ -21,7 +21,7 @@ the [Fluent](https://projectfluent.org/) localization system by Mozilla.
 Install `svelte-fluent` and its peer dependency `jsdom` with your package manager of choice.
 
 ```sh
-npm install --save-dev @nubolab-ffwd/svelte-fluent
+npm install --save-dev @nubolab-ffwd/svelte-fluent@next
 npm install --save jsdom
 ```
 

@@ -7,6 +7,7 @@
 		"dev": "vite dev",
 		"prebuild": "pnpm run --dir ../packages/svelte-fluent package",
 		"build": "vite build",
+		"build:preview": "SVELTEKIT_BASE='' vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
