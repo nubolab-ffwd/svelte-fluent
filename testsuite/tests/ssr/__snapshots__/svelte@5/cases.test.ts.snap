@@ -23,7 +23,7 @@ exports[`Case localize-store/Test.svelte > should render 1`] = `
 exports[`Case overlay-rendering/Test.svelte > should render 1`] = `
 {
   "body": "<!--[--><svelte-fluent-overlay style="display: contents;"></svelte-fluent-overlay><!--]-->",
-  "head": "<!--[--><template><a data-l10n-name="link" href="https://example.com/"></a><!----></template><!--]-->",
+  "head": "<!--[hash removed]--><template><a data-l10n-name="link" href="https://example.com/"></a><!----></template><!---->",
   "html": "<!--[--><svelte-fluent-overlay style="display: contents;"></svelte-fluent-overlay><!--]-->",
 }
 `;

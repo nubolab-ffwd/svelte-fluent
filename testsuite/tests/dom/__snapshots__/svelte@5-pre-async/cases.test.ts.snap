@@ -8,7 +8,6 @@ exports[`Case test empty-pattern-with-attributes/Test.svelte > should render 1`]
   
   
   
-  
 </div>
 `;
 
@@ -28,7 +27,6 @@ exports[`Case test localize-store/Test.svelte > should render 1`] = `
 	Attribute ⁨with variables⁩
   </div>
   
-  
 </div>
 `;
 
@@ -46,7 +44,6 @@ exports[`Case test overlay-rendering/Test.svelte > should render 1`] = `
     </a>
      is rendered with Overlay.
   </svelte-fluent-overlay>
-  
   
 </div>
 `;
@@ -66,7 +63,6 @@ exports[`Case test readme-example/Test.svelte > should render 1`] = `
     
     <!---->
   </p>
-  
   
 </div>
 `;
