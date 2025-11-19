@@ -27,6 +27,7 @@
 					class="input ring-surface-600"
 					id="localized-dynamic-text-unread-emails"
 					type="number"
+					min="0"
 					bind:value={args.unreadEmails}
 				/>
 			</dd>
