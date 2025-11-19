@@ -1,0 +1,291 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Example frontpage/App.svelte > should render 1`] = `
+<div>
+  <strong>
+    <!---->
+    Hello, ⁨Anna⁩!
+    
+    <!---->
+  </strong>
+   
+  <p>
+    <!---->
+    ⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.
+    
+    <!---->
+  </p>
+  
+</div>
+`;
+
+exports[`Example localize/attributes/App.svelte > should render 1`] = `
+<div>
+  <button>
+    Show prompt
+  </button>
+  
+</div>
+`;
+
+exports[`Example localize/dynamic-text/App.svelte > should render 1`] = `
+<div>
+  <button>
+    Say hello
+  </button>
+  
+</div>
+`;
+
+exports[`Example localize/static-text/App.svelte > should render 1`] = `
+<div>
+  <button>
+    Say hello
+  </button>
+  
+</div>
+`;
+
+exports[`Example localized/attributes/App.svelte > should render 1`] = `
+<div>
+  <!---->
+  <!---->
+  <div>
+    Please confirm the action.
+  </div>
+   
+  <div>
+    <button>
+      Ok
+    </button>
+     
+    <button>
+      Cancel
+    </button>
+  </div>
+  
+  
+  
+</div>
+`;
+
+exports[`Example localized/attributes-with-variables/App.svelte > should render 1`] = `
+<div>
+  <!---->
+  <!---->
+  <div>
+    Please confirm the action for ⁨20⁩ items.
+  </div>
+   
+  <div>
+    <button>
+      Yes, perform action for ⁨20⁩ items
+    </button>
+     
+    <button>
+      Cancel
+    </button>
+  </div>
+  
+  
+  
+</div>
+`;
+
+exports[`Example localized/dynamic-text/App.svelte > should render 1`] = `
+<div>
+  <!---->
+  You have ⁨10⁩ unread emails.
+  
+  
+</div>
+`;
+
+exports[`Example localized/static-text/App.svelte > should render 1`] = `
+<div>
+  <!---->
+  Hello, world!
+  
+  
+</div>
+`;
+
+exports[`Example localized-legacy/attributes/App.svelte > should render 1`] = `
+<div>
+  <!---->
+  <!---->
+  <!---->
+  <div>
+    Please confirm the action.
+  </div>
+   
+  <div>
+    <button>
+      Ok
+    </button>
+     
+    <button>
+      Cancel
+    </button>
+  </div>
+  
+  
+  
+  
+</div>
+`;
+
+exports[`Example overlay/dynamic-text/App.svelte > should render 1`] = `
+<div>
+  <svelte-fluent-overlay
+    style="display: contents;"
+  >
+    You can download "⁨Example Product⁩" by clicking
+on the 
+    <strong>
+      Download
+    </strong>
+     button or read
+the 
+    <a
+      data-l10n-name="release-notes"
+      href="https://example.com/"
+      rel="noreferrer"
+      target="_blank"
+    >
+      release notes
+    </a>
+     to learn more.
+  </svelte-fluent-overlay>
+  
+</div>
+`;
+
+exports[`Example overlay/static-text/App.svelte > should render 1`] = `
+<div>
+  <svelte-fluent-overlay
+    style="display: contents;"
+  >
+    Read the 
+    <a
+      data-l10n-name="link"
+      href="https://example.com/"
+    >
+      documentation
+    </a>
+     for more information.
+  </svelte-fluent-overlay>
+  
+</div>
+`;
+
+exports[`Example provider/App.svelte > should render 1`] = `
+<div>
+  <!---->
+  <!---->
+  Hello, world!
+  
+  
+  
+</div>
+`;
+
+exports[`Example tutorial/attributes/App.svelte > should render 1`] = `
+<div>
+  <!---->
+  <!---->
+  <label>
+    Login 
+    <input
+      aria-label="Login input value"
+      placeholder="email@example.com"
+      title="Type your login email"
+      type="email"
+    />
+  </label>
+  
+  
+  
+</div>
+`;
+
+exports[`Example tutorial/first-steps/App.svelte > should render 1`] = `
+<div>
+  <!---->
+  Hello, world!
+  
+  
+</div>
+`;
+
+exports[`Example tutorial/interpolation/App.svelte > should render 1`] = `
+<div>
+  <!---->
+  Hello, ⁨everyone⁩!
+  
+  
+</div>
+`;
+
+exports[`Example tutorial/interpolation-custom-functions/App.svelte > should render 1`] = `
+<div>
+  <div>
+    <!---->
+    Weekday ⁨2⁩ is ⁨Tuesday⁩
+    
+    <!---->
+  </div>
+   
+  <div>
+    <!---->
+    Weekday of ⁨2/6/2024⁩ is ⁨Tuesday⁩
+    
+    <!---->
+  </div>
+  
+</div>
+`;
+
+exports[`Example tutorial/interpolation-formatting/App.svelte > should render 1`] = `
+<div>
+  <div>
+    <!---->
+    Your DPI ratio is ⁨1.778⁩
+    
+    <!---->
+  </div>
+   
+  <div>
+    <!---->
+    Your account balance is ⁨$1,234.56⁩
+    
+    <!---->
+  </div>
+   
+  <div>
+    <!---->
+    Today is ⁨September 13, 2022⁩
+    
+    <!---->
+  </div>
+  
+</div>
+`;
+
+exports[`Example tutorial/multi-language/App.svelte > should render 1`] = `
+<div>
+  <!---->
+  Hello, world!
+  
+  
+</div>
+`;
+
+exports[`Example tutorial/translation-files/App.svelte > should render 1`] = `
+<div>
+  <!---->
+  Hello, world!
+  
+  
+</div>
+`;

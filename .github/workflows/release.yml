@@ -17,24 +17,24 @@ jobs:
           manifest-file: .release-please-manifest.json
           target-branch: ${{ github.ref_name }}
       # The logic below handles the npm publication:
-      - uses: actions/checkout@v5.0.0
+      - uses: actions/checkout@v5.0.1
         # these if statements ensure that a publication only occurs when
         # a new release is created:
-        if: ${{ steps.release.outputs.releases_created }}
+        if: ${{ steps.release.outputs.releases_created == 'true' }}
       # Setup .npmrc file to publish to npm
-      - uses: pnpm/action-setup@v4.1.0
-        if: ${{ steps.release.outputs.releases_created }}
-      - uses: actions/setup-node@v5.0.0
+      - uses: pnpm/action-setup@v4.2.0
+        if: ${{ steps.release.outputs.releases_created == 'true' }}
+      - uses: actions/setup-node@v6.0.0
         with:
-          node-version: 22.x
+          node-version: 24.x
           cache: 'pnpm'
           registry-url: 'https://registry.npmjs.org'
-        if: ${{ steps.release.outputs.releases_created }}
+        if: ${{ steps.release.outputs.releases_created == 'true' }}
       - run: pnpm install --frozen-lockfile --strict-peer-dependencies
-        if: ${{ steps.release.outputs.releases_created }}
+        if: ${{ steps.release.outputs.releases_created == 'true' }}
       - run: pnpm publish --no-git-checks --tag $NPM_TAG
         working-directory: ./packages/svelte-fluent
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TAG: ${{ github.ref == 'refs/heads/main' && 'latest' || 'next' }}
-        if: ${{ steps.release.outputs.releases_created }}
+        if: ${{ steps.release.outputs.releases_created == 'true' }}

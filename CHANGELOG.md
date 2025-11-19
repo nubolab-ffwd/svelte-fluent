@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.0.5](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v1.0.4...svelte-fluent-v1.0.5) (2025-09-30)
+
+
+### Bug Fixes
+
+* disable overlay SSR handling for svelte versions with incompatible internal api ([760cc81](https://github.com/nubolab-ffwd/svelte-fluent/commit/760cc81ff91b9e43991d45f00e291e662e5e50f0))
+
 ## [1.0.4](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v1.0.3...svelte-fluent-v1.0.4) (2025-08-05)
 
 

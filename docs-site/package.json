@@ -28,8 +28,8 @@
 		"@shikijs/transformers": "^3.15.0",
 		"@skeletonlabs/skeleton": "4.1.0",
 		"@skeletonlabs/skeleton-svelte": "4.1.0",
-		"@sveltejs/adapter-static": "3.0.9",
-		"@sveltejs/kit": "2.43.5",
+		"@sveltejs/adapter-static": "3.0.10",
+		"@sveltejs/kit": "2.48.5",
 		"@sveltejs/package": "2.5.4",
 		"@sveltejs/vite-plugin-svelte": "6.2.1",
 		"@tailwindcss/forms": "0.5.10",
@@ -37,7 +37,7 @@
 		"@types/hast": "3.0.4",
 		"@types/jsdom": "27.0.0",
 		"@types/mdast": "4.0.4",
-		"autoprefixer": "10.4.21",
+		"autoprefixer": "10.4.22",
 		"hast-util-heading-rank": "3.0.0",
 		"hast-util-to-string": "3.0.1",
 		"mdsvex": "0.12.6",
@@ -52,22 +52,22 @@
 		"rehype-pretty-code": "0.14.1",
 		"rehype-slug": "6.0.0",
 		"rehype-wrap-all": "1.1.0",
-		"semver": "7.7.2",
-		"shiki": "3.13.0",
-		"svelte": "5.39.6",
-		"svelte-check": "4.3.2",
-		"svelte2tsx": "0.7.44",
+		"semver": "7.7.3",
+		"shiki": "3.15.0",
+		"svelte-check": "4.3.4",
+		"svelte": "5.43.12",
+		"svelte2tsx": "0.7.45",
 		"tailwindcss": "4.1.13",
 		"tslib": "2.8.1",
-		"typescript": "5.9.2",
-		"typescript-eslint": "8.45.0",
+		"typescript-eslint": "8.47.0",
+		"typescript": "5.9.3",
 		"unified": "11.0.3",
 		"unist-util-visit": "5.0.0",
-		"unplugin-icons": "22.3.0",
-		"vite": "7.1.7"
+		"unplugin-icons": "22.5.0",
+		"vite": "7.2.2"
 	},
 	"dependencies": {
 		"jsdom": "27.0.0"
 	},
-	"packageManager": "pnpm@10.17.1"
+	"packageManager": "pnpm@10.22.0"
 }

@@ -13,11 +13,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v5.0.0
-      - uses: pnpm/action-setup@v4.1.0
-      - uses: actions/setup-node@v5.0.0
+      - uses: actions/checkout@v5.0.1
+      - uses: pnpm/action-setup@v4.2.0
+      - uses: actions/setup-node@v6.0.0
         with:
-          node-version: 22.x
+          node-version: 24.x
           cache: 'pnpm'
       - run: pnpm install --frozen-lockfile --strict-peer-dependencies
       - run: pnpm lint
@@ -31,10 +31,10 @@ jobs:
         node-version: [20.x, 22.x, 24.x]
 
     steps:
-      - uses: actions/checkout@v5.0.0
-      - uses: pnpm/action-setup@v4.1.0
+      - uses: actions/checkout@v5.0.1
+      - uses: pnpm/action-setup@v4.2.0
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v5.0.0
+        uses: actions/setup-node@v6.0.0
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
@@ -53,11 +53,11 @@ jobs:
           - jsdom@^25.0.0
           - jsdom@^26.0.0
     steps:
-      - uses: actions/checkout@v5.0.0
-      - uses: pnpm/action-setup@v4.1.0
-      - uses: actions/setup-node@v5.0.0
+      - uses: actions/checkout@v5.0.1
+      - uses: pnpm/action-setup@v4.2.0
+      - uses: actions/setup-node@v6.0.0
         with:
-          node-version: 22.x
+          node-version: 24.x
           cache: 'pnpm'
       - run: pnpm install --frozen-lockfile --strict-peer-dependencies
       - name: Install ${{ matrix.package-version }}
