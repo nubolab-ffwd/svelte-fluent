@@ -20,7 +20,7 @@ function getSvelteVersion() {
 function getSnapshotDir() {
 	const svelteVersion = getSvelteVersion();
 	const svelteMajor = semver.major(svelteVersion);
-	if (isSsrTest && semver.satisfies(svelteVersion, '<5.39.0')) {
+	if (semver.satisfies(svelteVersion, '<5.39.0')) {
 		return `svelte@${svelteMajor}-pre-async`;
 	}
 	return `svelte@${svelteMajor}`;

@@ -75,7 +75,7 @@ exports[`Example localized-legacy/attributes/App.svelte > should render 1`] = `
 exports[`Example overlay/dynamic-text/App.svelte > should render 1`] = `
 {
   "body": "<!--[--><svelte-fluent-overlay style="display: contents;"></svelte-fluent-overlay><!--]-->",
-  "head": "<!--[--><template><a data-l10n-name="release-notes" href="https://example.com/" target="_blank" rel="noreferrer"></a><!----></template><!--]-->",
+  "head": "<!--[hash removed]--><template><a data-l10n-name="release-notes" href="https://example.com/" target="_blank" rel="noreferrer"></a><!----></template><!---->",
   "html": "<!--[--><svelte-fluent-overlay style="display: contents;"></svelte-fluent-overlay><!--]-->",
 }
 `;
@@ -83,7 +83,7 @@ exports[`Example overlay/dynamic-text/App.svelte > should render 1`] = `
 exports[`Example overlay/static-text/App.svelte > should render 1`] = `
 {
   "body": "<!--[--><svelte-fluent-overlay style="display: contents;"></svelte-fluent-overlay><!--]-->",
-  "head": "<!--[--><template><a data-l10n-name="link" href="https://example.com/"></a><!----></template><!--]-->",
+  "head": "<!--[hash removed]--><template><a data-l10n-name="link" href="https://example.com/"></a><!----></template><!---->",
   "html": "<!--[--><svelte-fluent-overlay style="display: contents;"></svelte-fluent-overlay><!--]-->",
 }
 `;

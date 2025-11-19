@@ -15,7 +15,11 @@ export function renderSync<
 	const res = render<Comp, Props>(...args);
 	return {
 		body: res.body,
-		head: res.head,
+		head: rewriteSvelteHash(res.head),
 		html: res.html
 	};
+}
+
+function rewriteSvelteHash(str: string) {
+	return str.replace(/^<!--[a-z0-9]+-->/, '<!--[hash removed]-->');
 }
