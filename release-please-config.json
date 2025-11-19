@@ -5,6 +5,7 @@
 			"always-update": true,
 			"release-type": "node",
 			"package-name": "@nubolab-ffwd/svelte-fluent",
+			"prerelease": true,
 			"prerelease-type": "next",
 			"changelog-path": "/CHANGELOG.md"
 		}
