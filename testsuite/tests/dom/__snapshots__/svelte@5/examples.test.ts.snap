@@ -387,7 +387,7 @@ exports[`Example advanced-override-children/App.svelte > should render 1`] = `
       <!---->
       <!---->
       <a
-        href="/privacy"
+        href="https://example.com/privacy"
         rel="external"
         target="_blank"
       >
@@ -435,7 +435,7 @@ exports[`Example frontpage/App.svelte > should render 1`] = `
       <!---->
       <!---->
       <!---->
-      ⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.
+      ⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨the public stream⁩.
       
       
       
@@ -774,27 +774,32 @@ exports[`Example tutorial-interpolation/App.svelte > should render 1`] = `
 
 exports[`Example tutorial-localize-derived/App.svelte > should render 1`] = `
 <div>
-  <p>
-    Message with 
-    <code>
-      $derived
-    </code>
-    : 
-    <strong>
-      This is the english message!
-    </strong>
-  </p>
-   
-  <p>
-    Message without 
-    <code>
-      $derived
-    </code>
-    : 
-    <strong>
-      This is the english message!
-    </strong>
-  </p>
+  <div
+    class="space-y-2"
+  >
+    <p>
+      ❌ Message without 
+      <code>
+        $derived
+      </code>
+      : 
+      <strong>
+        This is the english message!
+      </strong>
+    </p>
+     
+    <p>
+      ✅ Message with 
+      <code>
+        $derived
+      </code>
+      : 
+      <strong>
+        This is the english message!
+      </strong>
+    </p>
+    <!---->
+  </div>
   
 </div>
 `;

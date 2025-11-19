@@ -50,17 +50,17 @@ exports[`Example advanced-interpolation-formatting/App.svelte > should render 1`
 
 exports[`Example advanced-override-children/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><div class="space-y-2"><p><!--[--><input type="search" placeholder="Search" aria-label="Type to search something"/><!----><!--]--><!----></p> <p><!--[--><a href="/privacy" rel="external" target="_blank"><!--[--><!--[-->Read our privacy policy.<!--]--><!--]--><!----></a><!----><!--]--><!----></p><!----></div><!--]-->",
+  "body": "<!--[--><div class="space-y-2"><p><!--[--><input type="search" placeholder="Search" aria-label="Type to search something"/><!----><!--]--><!----></p> <p><!--[--><a href="https://example.com/privacy" rel="external" target="_blank"><!--[--><!--[-->Read our privacy policy.<!--]--><!--]--><!----></a><!----><!--]--><!----></p><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><div class="space-y-2"><p><!--[--><input type="search" placeholder="Search" aria-label="Type to search something"/><!----><!--]--><!----></p> <p><!--[--><a href="/privacy" rel="external" target="_blank"><!--[--><!--[-->Read our privacy policy.<!--]--><!--]--><!----></a><!----><!--]--><!----></p><!----></div><!--]-->",
+  "html": "<!--[--><div class="space-y-2"><p><!--[--><input type="search" placeholder="Search" aria-label="Type to search something"/><!----><!--]--><!----></p> <p><!--[--><a href="https://example.com/privacy" rel="external" target="_blank"><!--[--><!--[-->Read our privacy policy.<!--]--><!--]--><!----></a><!----><!--]--><!----></p><!----></div><!--]-->",
 }
 `;
 
 exports[`Example frontpage/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><strong><!--[!--><!----><span><!--[--><!--[-->Hello, ⁨Anna⁩!<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></strong> <p><!--[!--><!----><span><!--[--><!--[-->⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!--]-->",
+  "body": "<!--[--><strong><!--[!--><!----><span><!--[--><!--[-->Hello, ⁨Anna⁩!<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></strong> <p><!--[!--><!----><span><!--[--><!--[-->⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨the public stream⁩.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!--]-->",
   "head": "",
-  "html": "<!--[--><strong><!--[!--><!----><span><!--[--><!--[-->Hello, ⁨Anna⁩!<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></strong> <p><!--[!--><!----><span><!--[--><!--[-->⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!--]-->",
+  "html": "<!--[--><strong><!--[!--><!----><span><!--[--><!--[-->Hello, ⁨Anna⁩!<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></strong> <p><!--[!--><!----><span><!--[--><!--[-->⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨the public stream⁩.<!--]--><!--]--><!----><!----></span><!----><!--]--><!----></p><!--]-->",
 }
 `;
 
@@ -170,9 +170,9 @@ exports[`Example tutorial-interpolation/App.svelte > should render 1`] = `
 
 exports[`Example tutorial-localize-derived/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><p>Message with <code>$derived</code>: <strong>This is the english message!</strong></p> <p>Message without <code>$derived</code>: <strong>This is the english message!</strong></p><!--]-->",
+  "body": "<!--[--><div class="space-y-2"><p>❌ Message without <code>$derived</code>: <strong>This is the english message!</strong></p> <p>✅ Message with <code>$derived</code>: <strong>This is the english message!</strong></p><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><p>Message with <code>$derived</code>: <strong>This is the english message!</strong></p> <p>Message without <code>$derived</code>: <strong>This is the english message!</strong></p><!--]-->",
+  "html": "<!--[--><div class="space-y-2"><p>❌ Message without <code>$derived</code>: <strong>This is the english message!</strong></p> <p>✅ Message with <code>$derived</code>: <strong>This is the english message!</strong></p><!----></div><!--]-->",
 }
 `;
 
