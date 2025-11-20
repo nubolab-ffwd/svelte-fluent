@@ -4,6 +4,14 @@
 [Svelte](https://svelte.dev/) and [SvelteKit](https://kit.svelte.dev/)
 that enables you to integrate translations using Mozilla's natural-sounding Fluent syntax easily.
 
+## Upcoming v2 Release
+
+We are working on the next major release which we aim to release in the beginning of 2026.
+
+- **Preview:** Try the new API in the [`next`](https://github.com/nubolab-ffwd/svelte-fluent/tree/next) branch.
+- **Changes:** Expect breaking changes as we streamline the API and adopt Svelte 5 runes.
+- **Feedback:** Please report issues or share your thoughts on GitHub.
+
 ## Installation
 
 ```
