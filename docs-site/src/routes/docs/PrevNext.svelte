@@ -64,8 +64,9 @@
 	}
 </script>
 
+<!-- eslint-disable svelte/no-navigation-without-resolve -->
+
 {#snippet link(title: string, text: string, href?: string, align: 'start' | 'end' = 'start')}
-	<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 	<a
 		{href}
 		class={[
