@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0-next.1](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v1.0.5...svelte-fluent-v2.0.0-next.1) (2025-11-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** drop jsdom versions < 25.0.0 from peer dependencies
+* rename `initFluentContext` to `setSvelteFluent`
+* remove `FluentContext` type and `getFluentContext` from public api
+* remove deprecated `FluentProvider` component
+* remove deprecated legacy `Localized` and `Overlay` components
+* Localized component interface changed and the Overlay component was dropped
+
+### Features
+
+* add `useLocalized` and `useSvelteFluent` runes ([11666ef](https://github.com/nubolab-ffwd/svelte-fluent/commit/11666ef37a6d1f8576061b449ed48ac4f3c61952))
+* new unified Localize component ([854b4f0](https://github.com/nubolab-ffwd/svelte-fluent/commit/854b4f0f23f7de97bf1139e9953a99d73263ac35))
+
+
+### Miscellaneous Chores
+
+* **deps:** drop jsdom versions &lt; 25.0.0 from peer dependencies ([f83aedb](https://github.com/nubolab-ffwd/svelte-fluent/commit/f83aedba49e1cea0133d95f95eefe4dda6868e97))
+* release as 2.0.0-next.1 ([f3b28ed](https://github.com/nubolab-ffwd/svelte-fluent/commit/f3b28eda35c5f55702674dc8033f04814488de89))
+* remove `FluentContext` type and `getFluentContext` from public api ([fd718ae](https://github.com/nubolab-ffwd/svelte-fluent/commit/fd718aec038b20eecb42b0693db4a1990aca4b40))
+* remove deprecated `FluentProvider` component ([30d3b9d](https://github.com/nubolab-ffwd/svelte-fluent/commit/30d3b9d1a2d8c11a5d45441a3ff335400dae7f10))
+* remove deprecated legacy `Localized` and `Overlay` components ([d3ba54a](https://github.com/nubolab-ffwd/svelte-fluent/commit/d3ba54a5751056ebebba5ae7ea75bc439fa383e7))
+* rename `initFluentContext` to `setSvelteFluent` ([b3871aa](https://github.com/nubolab-ffwd/svelte-fluent/commit/b3871aa8c64eaeee93257303542b5782ed309f6b))
+
 ## [1.0.5](https://github.com/nubolab-ffwd/svelte-fluent/compare/svelte-fluent-v1.0.4...svelte-fluent-v1.0.5) (2025-09-30)
 
 
