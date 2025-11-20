@@ -39,7 +39,11 @@ const testConfigSsr = {
 export default defineConfig({
 	plugins: [
 		svelteFluent(),
-		svelte(),
+		svelte({
+			compilerOptions: {
+				cssHash: ({ hash, css }) => `svelte-${hash(css)}`
+			}
+		}),
 		Icons({ compiler: 'svelte', autoInstall: true }),
 		isSsrTest ? undefined : svelteTesting()
 	].filter(Boolean),

@@ -178,8 +178,8 @@ exports[`Example tutorial-localize-derived/App.svelte > should render 1`] = `
 
 exports[`Example tutorial-localize-script/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><div class="space-y-2"><button>Add to Cart</button> <div class="toast-container svelte-xtg016"><!--[--><!--]--></div><!----><!----></div><!--]-->",
+  "body": "<!--[--><div class="space-y-2"><button>Add to Cart</button> <div class="toast-container svelte-166jqou"><!--[--><!--]--></div><!----><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><div class="space-y-2"><button>Add to Cart</button> <div class="toast-container svelte-xtg016"><!--[--><!--]--></div><!----><!----></div><!--]-->",
+  "html": "<!--[--><div class="space-y-2"><button>Add to Cart</button> <div class="toast-container svelte-166jqou"><!--[--><!--]--></div><!----><!----></div><!--]-->",
 }
 `;
