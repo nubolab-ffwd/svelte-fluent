@@ -64,7 +64,8 @@ exports[`Example advanced-insert-component-complex/App.svelte > should render 1`
         >
           <!---->
           <span
-            style="padding: 2px 4px; border-width: 2px; border-style: solid; border-color: grey;"
+            class="svelte-1emockp"
+            style="border-color: grey;"
           >
             <!---->
             <!---->
@@ -108,7 +109,8 @@ exports[`Example advanced-insert-component-complex/App.svelte > should render 1`
         >
           <!---->
           <span
-            style="padding: 2px 4px; border-width: 2px; border-style: solid; border-color: blue;"
+            class="svelte-1emockp"
+            style="border-color: blue;"
           >
             <!---->
             <!---->

@@ -4,11 +4,14 @@
 	let { color = 'grey', children }: { color?: string; children: Snippet } = $props();
 </script>
 
-<span
-	style:border-style="solid"
-	style:border-width="2px"
-	style:border-color={color}
-	style:padding="2px 4px"
->
+<span style:border-color={color}>
 	{@render children()}
 </span>
+
+<style>
+	span {
+		border-style: solid;
+		border-width: 2px;
+		padding: 2px 4px;
+	}
+</style>
