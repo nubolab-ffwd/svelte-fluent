@@ -16,7 +16,7 @@
 		"@sveltejs/vite-plugin-svelte": "6.2.1",
 		"@testing-library/svelte": "5.2.9",
 		"@types/jsdom": "27.0.0",
-		"@vitest/ui": "4.0.10",
+		"@vitest/ui": "4.0.18",
 		"autoprefixer": "10.4.22",
 		"postcss": "8.5.6",
 		"postcss-load-config": "6.0.1",
@@ -27,7 +27,7 @@
 		"tslib": "2.8.1",
 		"typescript": "5.9.3",
 		"vite": "7.2.2",
-		"vitest": "4.0.10"
+		"vitest": "4.0.18"
 	},
 	"dependencies": {
 		"jsdom": "^27.0.0"
