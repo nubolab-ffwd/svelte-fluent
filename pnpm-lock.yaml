@@ -145,8 +145,8 @@ importers:
         specifier: workspace:^
         version: link:../examples
       svelte2tsx:
-        specifier: 0.7.45
-        version: 0.7.45(svelte@5.50.3)(typescript@5.9.3)
+        specifier: 0.7.47
+        version: 0.7.47(svelte@5.50.3)(typescript@5.9.3)
       tslib:
         specifier: 2.8.1
         version: 2.8.1
@@ -212,8 +212,8 @@ importers:
         specifier: 4.3.4
         version: 4.3.4(picomatch@4.0.3)(svelte@5.50.3)(typescript@5.9.3)
       svelte2tsx:
-        specifier: 0.7.45
-        version: 0.7.45(svelte@5.50.3)(typescript@5.9.3)
+        specifier: 0.7.47
+        version: 0.7.47(svelte@5.50.3)(typescript@5.9.3)
       tslib:
         specifier: 2.8.1
         version: 2.8.1
@@ -291,8 +291,8 @@ importers:
         specifier: 4.3.4
         version: 4.3.4(picomatch@4.0.3)(svelte@5.50.3)(typescript@5.9.3)
       svelte2tsx:
-        specifier: 0.7.45
-        version: 0.7.45(svelte@5.50.3)(typescript@5.9.3)
+        specifier: 0.7.47
+        version: 0.7.47(svelte@5.50.3)(typescript@5.9.3)
       tslib:
         specifier: 2.8.1
         version: 2.8.1
@@ -361,8 +361,8 @@ importers:
         specifier: workspace:^
         version: link:../examples
       svelte2tsx:
-        specifier: 0.7.45
-        version: 0.7.45(svelte@5.50.3)(typescript@5.9.3)
+        specifier: 0.7.47
+        version: 0.7.47(svelte@5.50.3)(typescript@5.9.3)
       tslib:
         specifier: 2.8.1
         version: 2.8.1
@@ -3009,8 +3009,8 @@ packages:
       svelte:
         optional: true
 
-  svelte2tsx@0.7.45:
-    resolution: {integrity: sha512-cSci+mYGygYBHIZLHlm/jYlEc1acjAHqaQaDFHdEBpUueM9kSTnPpvPtSl5VkJOU1qSJ7h1K+6F/LIUYiqC8VA==}
+  svelte2tsx@0.7.47:
+    resolution: {integrity: sha512-1aw/MFKVPM96OBevJdC12do2an9t5Zwr3Va9amLgTLpJje36ibD1iIHpuqCYWUrdR9vw6g6btKGQPmsqE8ZYCw==}
     peerDependencies:
       svelte: ^3.55 || ^4.0.0-next.0 || ^4.0 || ^5.0.0-next.0
       typescript: ^4.9.4 || ^5.0.0
@@ -4241,7 +4241,7 @@ snapshots:
       sade: 1.8.1
       semver: 7.7.3
       svelte: 5.50.3
-      svelte2tsx: 0.7.45(svelte@5.50.3)(typescript@5.9.3)
+      svelte2tsx: 0.7.47(svelte@5.50.3)(typescript@5.9.3)
     transitivePeerDependencies:
       - typescript
 
@@ -6067,7 +6067,7 @@ snapshots:
     optionalDependencies:
       svelte: 5.50.3
 
-  svelte2tsx@0.7.45(svelte@5.50.3)(typescript@5.9.3):
+  svelte2tsx@0.7.47(svelte@5.50.3)(typescript@5.9.3):
     dependencies:
       dedent-js: 1.0.1
       scule: 1.3.0
