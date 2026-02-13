@@ -157,8 +157,8 @@ importers:
         specifier: 8.55.0
         version: 8.55.0(eslint@9.39.1(jiti@2.4.2))(typescript@5.9.3)
       unist-util-visit:
-        specifier: 5.0.0
-        version: 5.0.0
+        specifier: 5.1.0
+        version: 5.1.0
       unplugin-icons:
         specifier: 23.0.1
         version: 23.0.1(svelte@5.50.3)
@@ -3124,8 +3124,8 @@ packages:
   unist-util-visit@2.0.3:
     resolution: {integrity: sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q==}
 
-  unist-util-visit@5.0.0:
-    resolution: {integrity: sha512-MR04uvD+07cwl/yhVuVWAtw+3GOR/knlL55Nd/wAdblk27GCVt3lqpTivy/tkJcZoNPzTwS1Y+KMojlLDhoTzg==}
+  unist-util-visit@5.1.0:
+    resolution: {integrity: sha512-m+vIdyeCOpdr/QeQCu2EzxX/ohgS8KbnPDgFni4dQsfSCtpz8UqDyY5GjRru8PDKuYn7Fq19j1CQ+nJSsGKOzg==}
 
   unplugin-icons@23.0.1:
     resolution: {integrity: sha512-rv0XEJepajKzDLvRUWASM8K+8+/CCfZn2jtogXqg6RIp7kpatRc/aFrVJn8ANQA09e++lPEEv9yX8cC9enc+QQ==}
@@ -5040,7 +5040,7 @@ snapshots:
     dependencies:
       '@types/hast': 3.0.4
       hast-util-heading-rank: 3.0.0
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
 
   hast-util-to-html@9.0.5:
     dependencies:
@@ -5278,7 +5278,7 @@ snapshots:
       micromark-util-sanitize-uri: 2.0.0
       trim-lines: 3.0.1
       unist-util-position: 5.0.0
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
       vfile: 6.0.1
 
   mdn-data@2.12.2: {}
@@ -5798,7 +5798,7 @@ snapshots:
       hast-util-heading-rank: 3.0.0
       hast-util-is-element: 3.0.0
       unified: 11.0.3
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
 
   rehype-external-links@3.0.0:
     dependencies:
@@ -5807,7 +5807,7 @@ snapshots:
       hast-util-is-element: 3.0.0
       is-absolute-url: 4.0.1
       space-separated-tokens: 2.0.2
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
 
   rehype-shift-heading@2.0.0:
     dependencies:
@@ -5820,7 +5820,7 @@ snapshots:
       github-slugger: 2.0.0
       hast-util-heading-rank: 3.0.0
       hast-util-to-string: 3.0.1
-      unist-util-visit: 5.0.0
+      unist-util-visit: 5.1.0
 
   rehype-wrap-all@1.1.0:
     dependencies:
@@ -6155,7 +6155,7 @@ snapshots:
       unist-util-is: 4.1.0
       unist-util-visit-parents: 3.1.1
 
-  unist-util-visit@5.0.0:
+  unist-util-visit@5.1.0:
     dependencies:
       '@types/unist': 3.0.0
       unist-util-is: 6.0.0
