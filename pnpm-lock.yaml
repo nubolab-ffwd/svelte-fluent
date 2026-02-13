@@ -185,8 +185,8 @@ importers:
         specifier: 6.2.1
         version: 6.2.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))
       '@testing-library/svelte':
-        specifier: 5.2.9
-        version: 5.2.9(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))(vitest@4.0.18)
+        specifier: 5.3.1
+        version: 5.3.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))(vitest@4.0.18)
       '@types/jsdom':
         specifier: 27.0.0
         version: 27.0.0
@@ -319,8 +319,8 @@ importers:
         specifier: 6.2.1
         version: 6.2.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))
       '@testing-library/svelte':
-        specifier: 5.2.9
-        version: 5.2.9(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))(vitest@4.0.18)
+        specifier: 5.3.1
+        version: 5.3.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))(vitest@4.0.18)
       '@types/jsdom':
         specifier: 27.0.0
         version: 27.0.0
@@ -1370,8 +1370,14 @@ packages:
     resolution: {integrity: sha512-pemlzrSESWbdAloYml3bAJMEfNh1Z7EduzqPKprCH5S341frlpYnUEW0H72dLxa6IsYr+mPno20GiSm+h9dEdQ==}
     engines: {node: '>=18'}
 
-  '@testing-library/svelte@5.2.9':
-    resolution: {integrity: sha512-p0Lg/vL1iEsEasXKSipvW9nBCtItQGhYvxL8OZ4w7/IDdC+LGoSJw4mMS5bndVFON/gWryitEhMr29AlO4FvBg==}
+  '@testing-library/svelte-core@1.0.0':
+    resolution: {integrity: sha512-VkUePoLV6oOYwSUvX6ShA8KLnJqZiYMIbP2JW2t0GLWLkJxKGvuH5qrrZBV/X7cXFnLGuFQEC7RheYiZOW68KQ==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      svelte: ^3 || ^4 || ^5 || ^5.0.0-next.0
+
+  '@testing-library/svelte@5.3.1':
+    resolution: {integrity: sha512-8Ez7ZOqW5geRf9PF5rkuopODe5RGy3I9XR+kc7zHh26gBiktLaxTfKmhlGaSHYUOTQE7wFsLMN9xCJVCszw47w==}
     engines: {node: '>= 10'}
     peerDependencies:
       svelte: ^3 || ^4 || ^5 || ^5.0.0-next.0
@@ -4255,9 +4261,14 @@ snapshots:
       lz-string: 1.5.0
       pretty-format: 27.5.1
 
-  '@testing-library/svelte@5.2.9(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))(vitest@4.0.18)':
+  '@testing-library/svelte-core@1.0.0(svelte@5.50.3)':
+    dependencies:
+      svelte: 5.50.3
+
+  '@testing-library/svelte@5.3.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))(vitest@4.0.18)':
     dependencies:
       '@testing-library/dom': 10.4.0
+      '@testing-library/svelte-core': 1.0.0(svelte@5.50.3)
       svelte: 5.50.3
     optionalDependencies:
       vite: 7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)
