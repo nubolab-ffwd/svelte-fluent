@@ -55,8 +55,8 @@ importers:
         version: 28.0.0
     devDependencies:
       '@csstools/postcss-global-data':
-        specifier: 3.1.0
-        version: 3.1.0(postcss@8.5.6)
+        specifier: 4.0.0
+        version: 4.0.0(postcss@8.5.6)
       '@fluent/bundle':
         specifier: 0.19.1
         version: 0.19.1
@@ -593,9 +593,9 @@ packages:
     peerDependencies:
       postcss: ^8.4
 
-  '@csstools/postcss-global-data@3.1.0':
-    resolution: {integrity: sha512-qfS0bUxBukuyxEyxTTZG+px2xwAQPf7Qk6B7lFdjWnovb/O6h0t3sxrVY81nJLh7z0KvEMhjxTURNtEmOrADpQ==}
-    engines: {node: '>=18'}
+  '@csstools/postcss-global-data@4.0.0':
+    resolution: {integrity: sha512-mPKrL3Tzt8k1V+hTkU8XTH6JKRekB97oKHv/MekC9nfmRa+gMf1swlHRt8YK722sYN4xOipl17FZst99jsScLA==}
+    engines: {node: '>=20.19.0'}
     peerDependencies:
       postcss: ^8.4
 
@@ -3620,7 +3620,7 @@ snapshots:
       '@csstools/css-tokenizer': 4.0.0
       postcss: 8.5.6
 
-  '@csstools/postcss-global-data@3.1.0(postcss@8.5.6)':
+  '@csstools/postcss-global-data@4.0.0(postcss@8.5.6)':
     dependencies:
       postcss: 8.5.6
 
