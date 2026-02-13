@@ -74,10 +74,10 @@ importers:
         version: link:../packages/svelte-fluent
       '@sveltejs/adapter-static':
         specifier: 3.0.10
-        version: 3.0.10(@sveltejs/kit@2.49.5(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)))(svelte@5.50.3)(typescript@5.9.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)))
+        version: 3.0.10(@sveltejs/kit@2.51.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)))(svelte@5.50.3)(typescript@5.9.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)))
       '@sveltejs/kit':
-        specifier: 2.49.5
-        version: 2.49.5(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)))(svelte@5.50.3)(typescript@5.9.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))
+        specifier: 2.51.0
+        version: 2.51.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)))(svelte@5.50.3)(typescript@5.9.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))
       '@sveltejs/package':
         specifier: 2.5.4
         version: 2.5.4(svelte@5.50.3)(typescript@5.9.3)
@@ -1329,8 +1329,8 @@ packages:
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
-  '@sveltejs/kit@2.49.5':
-    resolution: {integrity: sha512-dCYqelr2RVnWUuxc+Dk/dB/SjV/8JBndp1UovCyCZdIQezd8TRwFLNZctYkzgHxRJtaNvseCSRsuuHPeUgIN/A==}
+  '@sveltejs/kit@2.51.0':
+    resolution: {integrity: sha512-BkcfxVVYmfxHGYLugemb7TWW+y/MNZbxXHXJ141lyyi2ozq0Q4kbqoV0cBGlh7F0vNtCMvfr7UPnxIaBjcP9gg==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
@@ -2891,8 +2891,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  set-cookie-parser@2.6.0:
-    resolution: {integrity: sha512-RVnVQxTXuerk653XfuliOxBP81Sf0+qfQE73LIYKcyMYHG94AuH0kgrQpRDuTZnSmjpysHmzxJXKNfa6PjFhyQ==}
+  set-cookie-parser@3.0.1:
+    resolution: {integrity: sha512-n7Z7dXZhJbwuAHhNzkTti6Aw9QDDjZtm3JTpTGATIdNzdQz5GuFs22w90BcvF4INfnrL5xrX3oGsuqO5Dx3A1Q==}
 
   shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
@@ -4192,11 +4192,11 @@ snapshots:
     dependencies:
       acorn: 8.15.0
 
-  '@sveltejs/adapter-static@3.0.10(@sveltejs/kit@2.49.5(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)))(svelte@5.50.3)(typescript@5.9.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)))':
+  '@sveltejs/adapter-static@3.0.10(@sveltejs/kit@2.51.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)))(svelte@5.50.3)(typescript@5.9.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)))':
     dependencies:
-      '@sveltejs/kit': 2.49.5(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)))(svelte@5.50.3)(typescript@5.9.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))
+      '@sveltejs/kit': 2.51.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)))(svelte@5.50.3)(typescript@5.9.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))
 
-  '@sveltejs/kit@2.49.5(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)))(svelte@5.50.3)(typescript@5.9.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))':
+  '@sveltejs/kit@2.51.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)))(svelte@5.50.3)(typescript@5.9.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))':
     dependencies:
       '@standard-schema/spec': 1.0.0
       '@sveltejs/acorn-typescript': 1.0.5(acorn@8.15.0)
@@ -4210,7 +4210,7 @@ snapshots:
       magic-string: 0.30.21
       mrmime: 2.0.0
       sade: 1.8.1
-      set-cookie-parser: 2.6.0
+      set-cookie-parser: 3.0.1
       sirv: 3.0.2
       svelte: 5.50.3
       vite: 7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)
@@ -5890,7 +5890,7 @@ snapshots:
 
   semver@7.7.3: {}
 
-  set-cookie-parser@2.6.0: {}
+  set-cookie-parser@3.0.1: {}
 
   shebang-command@2.0.0:
     dependencies:
