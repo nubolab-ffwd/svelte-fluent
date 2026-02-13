@@ -19,7 +19,7 @@
 		"@types/jsdom": "27.0.0",
 		"@types/semver": "7.7.1",
 		"@vitest/ui": "4.0.18",
-		"autoprefixer": "10.4.22",
+		"autoprefixer": "10.4.24",
 		"npm-run-all2": "8.0.4",
 		"pathe": "2.0.3",
 		"postcss": "8.5.6",
