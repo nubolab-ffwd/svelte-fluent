@@ -79,8 +79,8 @@ importers:
         specifier: 2.51.0
         version: 2.51.0(@sveltejs/vite-plugin-svelte@6.2.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1)))(svelte@5.50.3)(typescript@5.9.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))
       '@sveltejs/package':
-        specifier: 2.5.4
-        version: 2.5.4(svelte@5.50.3)(typescript@5.9.3)
+        specifier: 2.5.7
+        version: 2.5.7(svelte@5.50.3)(typescript@5.9.3)
       '@sveltejs/vite-plugin-svelte':
         specifier: 6.2.1
         version: 6.2.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))
@@ -255,8 +255,8 @@ importers:
         specifier: 0.7.0
         version: 0.7.0
       '@sveltejs/package':
-        specifier: 2.5.4
-        version: 2.5.4(svelte@5.50.3)(typescript@5.9.3)
+        specifier: 2.5.7
+        version: 2.5.7(svelte@5.50.3)(typescript@5.9.3)
       '@sveltejs/vite-plugin-svelte':
         specifier: 6.2.1
         version: 6.2.1(svelte@5.50.3)(vite@7.2.2(@types/node@22.5.0)(jiti@2.4.2)(yaml@2.8.1))
@@ -1345,8 +1345,8 @@ packages:
       typescript:
         optional: true
 
-  '@sveltejs/package@2.5.4':
-    resolution: {integrity: sha512-8+1hccAt0M3PPkHVPKH54Wc+cc1PNxRqCrICZiv/hEEto8KwbQVRghxNgTB4htIPyle+4CIB8RayTQH5zRQh9A==}
+  '@sveltejs/package@2.5.7':
+    resolution: {integrity: sha512-qqD9xa9H7TDiGFrF6rz7AirOR8k15qDK/9i4MIE8te4vWsv5GEogPks61rrZcLy+yWph+aI6pIj2MdoK3YI8AQ==}
     engines: {node: ^16.14 || >=18}
     hasBin: true
     peerDependencies:
@@ -1682,6 +1682,10 @@ packages:
   chokidar@4.0.3:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
     engines: {node: '>= 14.16.0'}
+
+  chokidar@5.0.0:
+    resolution: {integrity: sha512-TQMmc3w+5AxjpL8iIiwebF73dRDF4fBIieAqGn9RGCWaEVwQ6Fb2cGe31Yns0RRIzii5goJ1Y7xbMwo1TxMplw==}
+    engines: {node: '>= 20.19.0'}
 
   cli-cursor@5.0.0:
     resolution: {integrity: sha512-aCj4O5wKyszjMmDT4tZj93kxyydN/K5zPWSCe6/0AV/AA1pqe5ZBIw0a2ZfPQV7lL5/yb5HsUreJ6UFAF1tEQw==}
@@ -2810,6 +2814,10 @@ packages:
   readdirp@4.0.2:
     resolution: {integrity: sha512-yDMz9g+VaZkqBYS/ozoBJwaBhTbZo3UNYQHNRw1D3UFQB8oHB4uS/tAODO+ZLjGWmUbKnIlOWO+aaIiAxrUWHA==}
     engines: {node: '>= 14.16.0'}
+
+  readdirp@5.0.0:
+    resolution: {integrity: sha512-9u/XQ1pvrQtYyMpZe7DXKv2p5CNvyVwzUB6uhLAnQwHMSgKMBR62lc7AHljaeteeHXn11XTAaLLUVZYVZyuRBQ==}
+    engines: {node: '>= 20.19.0'}
 
   regenerator-runtime@0.14.1:
     resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
@@ -4217,9 +4225,9 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  '@sveltejs/package@2.5.4(svelte@5.50.3)(typescript@5.9.3)':
+  '@sveltejs/package@2.5.7(svelte@5.50.3)(typescript@5.9.3)':
     dependencies:
-      chokidar: 4.0.3
+      chokidar: 5.0.0
       kleur: 4.1.5
       sade: 1.8.1
       semver: 7.7.3
@@ -4594,6 +4602,10 @@ snapshots:
   chokidar@4.0.3:
     dependencies:
       readdirp: 4.0.2
+
+  chokidar@5.0.0:
+    dependencies:
+      readdirp: 5.0.0
 
   cli-cursor@5.0.0:
     dependencies:
@@ -5759,6 +5771,8 @@ snapshots:
       npm-normalize-package-bin: 4.0.0
 
   readdirp@4.0.2: {}
+
+  readdirp@5.0.0: {}
 
   regenerator-runtime@0.14.1: {}
 
