@@ -1,6 +1,6 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
-	"extends": ["config:js-lib"],
+	"extends": ["config:js-lib", "group:allNonMajor"],
 	"ignorePaths": [
 		"**/node_modules/**",
 		"**/bower_components/**",
