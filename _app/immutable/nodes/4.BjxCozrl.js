@@ -1,0 +1,1 @@
+import{lt as e}from"../chunks/BDal4dA_.js";import{c as t,l as n}from"../chunks/B0LHKSSp.js";function r(e,t){throw new n(e,t.toString())}var i=e({load:()=>a}),a=()=>{r(302,t+`/docs/getting-started`)};export{i as universal};

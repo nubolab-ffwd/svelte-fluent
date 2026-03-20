@@ -1,0 +1,1 @@
+import{$ as e,E as t,H as n,O as r,R as i,T as a,at as o,et as s,p as c}from"./BDal4dA_.js";import{s as l}from"./B0LHKSSp.js";var u=r(`<a> </a>`);function d(r,d){s(d,!0);var f=u(),p=n(f,!0);o(f),i(e=>{c(f,`href`,e),a(p,d.name)},[()=>l(`/docs/${d.legacy?`legacy`:`reference`}/${d.name}/`)]),t(r,f),e()}export{d as t};
