@@ -1,0 +1,1 @@
+import{nt as e}from"./BDal4dA_.js";e();
