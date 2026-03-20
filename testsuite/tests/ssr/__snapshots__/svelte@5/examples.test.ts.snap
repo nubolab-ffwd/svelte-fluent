@@ -2,9 +2,9 @@
 
 exports[`Example frontpage/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><strong><!--[!-->Hello, ⁨Anna⁩!<!--]--><!----></strong> <p><!--[!-->⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.<!--]--><!----></p><!--]-->",
+  "body": "<!--[--><strong><!--[-1-->Hello, ⁨Anna⁩!<!--]--><!----></strong> <p><!--[-1-->⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.<!--]--><!----></p><!--]-->",
   "head": "",
-  "html": "<!--[--><strong><!--[!-->Hello, ⁨Anna⁩!<!--]--><!----></strong> <p><!--[!-->⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.<!--]--><!----></p><!--]-->",
+  "html": "<!--[--><strong><!--[-1-->Hello, ⁨Anna⁩!<!--]--><!----></strong> <p><!--[-1-->⁨Anna⁩ ⁨added ⁨3⁩ new photos⁩ to ⁨her stream⁩.<!--]--><!----></p><!--]-->",
 }
 `;
 
@@ -34,41 +34,41 @@ exports[`Example localize/static-text/App.svelte > should render 1`] = `
 
 exports[`Example localized/attributes/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[--><div>Please confirm the action.</div> <div><button>Ok</button> <button>Cancel</button></div><!----><!--]--><!--]-->",
+  "body": "<!--[--><!--[0--><div>Please confirm the action.</div> <div><button>Ok</button> <button>Cancel</button></div><!----><!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[--><div>Please confirm the action.</div> <div><button>Ok</button> <button>Cancel</button></div><!----><!--]--><!--]-->",
+  "html": "<!--[--><!--[0--><div>Please confirm the action.</div> <div><button>Ok</button> <button>Cancel</button></div><!----><!--]--><!--]-->",
 }
 `;
 
 exports[`Example localized/attributes-with-variables/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[--><div>Please confirm the action for ⁨20⁩ items.</div> <div><button>Yes, perform action for ⁨20⁩ items</button> <button>Cancel</button></div><!----><!--]--><!--]-->",
+  "body": "<!--[--><!--[0--><div>Please confirm the action for ⁨20⁩ items.</div> <div><button>Yes, perform action for ⁨20⁩ items</button> <button>Cancel</button></div><!----><!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[--><div>Please confirm the action for ⁨20⁩ items.</div> <div><button>Yes, perform action for ⁨20⁩ items</button> <button>Cancel</button></div><!----><!--]--><!--]-->",
+  "html": "<!--[--><!--[0--><div>Please confirm the action for ⁨20⁩ items.</div> <div><button>Yes, perform action for ⁨20⁩ items</button> <button>Cancel</button></div><!----><!--]--><!--]-->",
 }
 `;
 
 exports[`Example localized/dynamic-text/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[!-->You have ⁨10⁩ unread emails.<!--]--><!--]-->",
+  "body": "<!--[--><!--[-1-->You have ⁨10⁩ unread emails.<!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[!-->You have ⁨10⁩ unread emails.<!--]--><!--]-->",
+  "html": "<!--[--><!--[-1-->You have ⁨10⁩ unread emails.<!--]--><!--]-->",
 }
 `;
 
 exports[`Example localized/static-text/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[!-->Hello, world!<!--]--><!--]-->",
+  "body": "<!--[--><!--[-1-->Hello, world!<!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[!-->Hello, world!<!--]--><!--]-->",
+  "html": "<!--[--><!--[-1-->Hello, world!<!--]--><!--]-->",
 }
 `;
 
 exports[`Example localized-legacy/attributes/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[--><!--[--><div>Please confirm the action.</div> <div><button>Ok</button> <button>Cancel</button></div><!--]--><!----><!--]--><!--]-->",
+  "body": "<!--[--><!--[0--><!--[--><div>Please confirm the action.</div> <div><button>Ok</button> <button>Cancel</button></div><!--]--><!----><!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[--><!--[--><div>Please confirm the action.</div> <div><button>Ok</button> <button>Cancel</button></div><!--]--><!----><!--]--><!--]-->",
+  "html": "<!--[--><!--[0--><!--[--><div>Please confirm the action.</div> <div><button>Ok</button> <button>Cancel</button></div><!--]--><!----><!--]--><!--]-->",
 }
 `;
 
@@ -90,64 +90,64 @@ exports[`Example overlay/static-text/App.svelte > should render 1`] = `
 
 exports[`Example provider/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[--><!--[!-->Hello, world!<!--]--><!--]--><!--]-->",
+  "body": "<!--[--><!--[--><!--[-1-->Hello, world!<!--]--><!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[--><!--[!-->Hello, world!<!--]--><!--]--><!--]-->",
+  "html": "<!--[--><!--[--><!--[-1-->Hello, world!<!--]--><!--]--><!--]-->",
 }
 `;
 
 exports[`Example tutorial/attributes/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[--><label>Login <input type="email" placeholder="email@example.com" title="Type your login email" aria-label="Login input value"/></label><!----><!--]--><!--]-->",
+  "body": "<!--[--><!--[0--><label>Login <input type="email" placeholder="email@example.com" title="Type your login email" aria-label="Login input value"/></label><!----><!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[--><label>Login <input type="email" placeholder="email@example.com" title="Type your login email" aria-label="Login input value"/></label><!----><!--]--><!--]-->",
+  "html": "<!--[--><!--[0--><label>Login <input type="email" placeholder="email@example.com" title="Type your login email" aria-label="Login input value"/></label><!----><!--]--><!--]-->",
 }
 `;
 
 exports[`Example tutorial/first-steps/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[!-->Hello, world!<!--]--><!--]-->",
+  "body": "<!--[--><!--[-1-->Hello, world!<!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[!-->Hello, world!<!--]--><!--]-->",
+  "html": "<!--[--><!--[-1-->Hello, world!<!--]--><!--]-->",
 }
 `;
 
 exports[`Example tutorial/interpolation/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[!-->Hello, ⁨everyone⁩!<!--]--><!--]-->",
+  "body": "<!--[--><!--[-1-->Hello, ⁨everyone⁩!<!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[!-->Hello, ⁨everyone⁩!<!--]--><!--]-->",
+  "html": "<!--[--><!--[-1-->Hello, ⁨everyone⁩!<!--]--><!--]-->",
 }
 `;
 
 exports[`Example tutorial/interpolation-custom-functions/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><div><!--[!-->Weekday ⁨2⁩ is ⁨Tuesday⁩<!--]--><!----></div> <div><!--[!-->Weekday of ⁨2/6/2024⁩ is ⁨Tuesday⁩<!--]--><!----></div><!--]-->",
+  "body": "<!--[--><div><!--[-1-->Weekday ⁨2⁩ is ⁨Tuesday⁩<!--]--><!----></div> <div><!--[-1-->Weekday of ⁨2/6/2024⁩ is ⁨Tuesday⁩<!--]--><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><div><!--[!-->Weekday ⁨2⁩ is ⁨Tuesday⁩<!--]--><!----></div> <div><!--[!-->Weekday of ⁨2/6/2024⁩ is ⁨Tuesday⁩<!--]--><!----></div><!--]-->",
+  "html": "<!--[--><div><!--[-1-->Weekday ⁨2⁩ is ⁨Tuesday⁩<!--]--><!----></div> <div><!--[-1-->Weekday of ⁨2/6/2024⁩ is ⁨Tuesday⁩<!--]--><!----></div><!--]-->",
 }
 `;
 
 exports[`Example tutorial/interpolation-formatting/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><div><!--[!-->Your DPI ratio is ⁨1.778⁩<!--]--><!----></div> <div><!--[!-->Your account balance is ⁨$1,234.56⁩<!--]--><!----></div> <div><!--[!-->Today is ⁨September 13, 2022⁩<!--]--><!----></div><!--]-->",
+  "body": "<!--[--><div><!--[-1-->Your DPI ratio is ⁨1.778⁩<!--]--><!----></div> <div><!--[-1-->Your account balance is ⁨$1,234.56⁩<!--]--><!----></div> <div><!--[-1-->Today is ⁨September 13, 2022⁩<!--]--><!----></div><!--]-->",
   "head": "",
-  "html": "<!--[--><div><!--[!-->Your DPI ratio is ⁨1.778⁩<!--]--><!----></div> <div><!--[!-->Your account balance is ⁨$1,234.56⁩<!--]--><!----></div> <div><!--[!-->Today is ⁨September 13, 2022⁩<!--]--><!----></div><!--]-->",
+  "html": "<!--[--><div><!--[-1-->Your DPI ratio is ⁨1.778⁩<!--]--><!----></div> <div><!--[-1-->Your account balance is ⁨$1,234.56⁩<!--]--><!----></div> <div><!--[-1-->Today is ⁨September 13, 2022⁩<!--]--><!----></div><!--]-->",
 }
 `;
 
 exports[`Example tutorial/multi-language/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[!-->Hello, world!<!--]--><!--]-->",
+  "body": "<!--[--><!--[-1-->Hello, world!<!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[!-->Hello, world!<!--]--><!--]-->",
+  "html": "<!--[--><!--[-1-->Hello, world!<!--]--><!--]-->",
 }
 `;
 
 exports[`Example tutorial/translation-files/App.svelte > should render 1`] = `
 {
-  "body": "<!--[--><!--[!-->Hello, world!<!--]--><!--]-->",
+  "body": "<!--[--><!--[-1-->Hello, world!<!--]--><!--]-->",
   "head": "",
-  "html": "<!--[--><!--[!-->Hello, world!<!--]--><!--]-->",
+  "html": "<!--[--><!--[-1-->Hello, world!<!--]--><!--]-->",
 }
 `;
