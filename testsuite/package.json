@@ -16,7 +16,7 @@
 		"@nubolab-ffwd/svelte-fluent": "workspace:^",
 		"@sveltejs/vite-plugin-svelte": "6.2.4",
 		"@testing-library/svelte": "5.3.1",
-		"@types/jsdom": "27.0.0",
+		"@types/jsdom": "28.0.1",
 		"@types/semver": "7.7.1",
 		"@vitest/ui": "4.1.0",
 		"autoprefixer": "10.4.27",
