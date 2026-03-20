@@ -88,8 +88,8 @@ importers:
         specifier: 3.0.4
         version: 3.0.4
       '@types/jsdom':
-        specifier: 27.0.0
-        version: 27.0.0
+        specifier: 28.0.1
+        version: 28.0.1
       autoprefixer:
         specifier: 10.4.27
         version: 10.4.27(postcss@8.5.8)
@@ -188,8 +188,8 @@ importers:
         specifier: 5.3.1
         version: 5.3.1(svelte@5.54.0)(vite@8.0.1(@types/node@22.5.0)(esbuild@0.27.3)(jiti@2.4.2)(yaml@2.8.2))(vitest@4.1.0)
       '@types/jsdom':
-        specifier: 27.0.0
-        version: 27.0.0
+        specifier: 28.0.1
+        version: 28.0.1
       '@vitest/ui':
         specifier: 4.1.0
         version: 4.1.0(vitest@4.1.0)
@@ -261,8 +261,8 @@ importers:
         specifier: 6.2.4
         version: 6.2.4(svelte@5.54.0)(vite@8.0.1(@types/node@22.5.0)(esbuild@0.27.3)(jiti@2.4.2)(yaml@2.8.2))
       '@types/jsdom':
-        specifier: 27.0.0
-        version: 27.0.0
+        specifier: 28.0.1
+        version: 28.0.1
       autoprefixer:
         specifier: 10.4.27
         version: 10.4.27(postcss@8.5.8)
@@ -322,8 +322,8 @@ importers:
         specifier: 5.3.1
         version: 5.3.1(svelte@5.54.0)(vite@8.0.1(@types/node@22.5.0)(esbuild@0.27.3)(jiti@2.4.2)(yaml@2.8.2))(vitest@4.1.0)
       '@types/jsdom':
-        specifier: 27.0.0
-        version: 27.0.0
+        specifier: 28.0.1
+        version: 28.0.1
       '@types/semver':
         specifier: 7.7.1
         version: 7.7.1
@@ -1481,8 +1481,8 @@ packages:
   '@types/hast@3.0.4':
     resolution: {integrity: sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==}
 
-  '@types/jsdom@27.0.0':
-    resolution: {integrity: sha512-NZyFl/PViwKzdEkQg96gtnB8wm+1ljhdDay9ahn4hgb+SfVtPCbm3TlmDUFXTA+MGN3CijicnMhG18SI5H3rFw==}
+  '@types/jsdom@28.0.1':
+    resolution: {integrity: sha512-GJq2QE4TAZ5ajSoCasn5DOFm8u1mI3tIFvM5tIq3W5U/RTB6gsHwc6Yhpl91X9VSDOUVblgXmG+2+sSvFQrdlw==}
 
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
@@ -3170,6 +3170,9 @@ packages:
   undici-types@6.19.8:
     resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
 
+  undici-types@7.24.5:
+    resolution: {integrity: sha512-kNh333UBSbgK35OIW7FwJTr9tTfVIG51Fm1tSVT7m8foPHfDVjsb7OIee/q/rs3bB2aV/3qOPgG5mHNWl1odiA==}
+
   undici@7.24.5:
     resolution: {integrity: sha512-3IWdCpjgxp15CbJnsi/Y9TCDE7HWVN19j1hmzVhoAkY/+CJx449tVxT5wZc1Gwg8J+P0LWvzlBzxYRnHJ+1i7Q==}
     engines: {node: '>=20.18.1'}
@@ -4400,11 +4403,12 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.0
 
-  '@types/jsdom@27.0.0':
+  '@types/jsdom@28.0.1':
     dependencies:
       '@types/node': 22.5.0
       '@types/tough-cookie': 4.0.2
       parse5: 7.2.1
+      undici-types: 7.24.5
 
   '@types/json-schema@7.0.15': {}
 
@@ -6204,6 +6208,8 @@ snapshots:
   ufo@1.6.3: {}
 
   undici-types@6.19.8: {}
+
+  undici-types@7.24.5: {}
 
   undici@7.24.5: {}
 
