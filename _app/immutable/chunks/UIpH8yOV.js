@@ -1,0 +1,1 @@
+import{p as r}from"./DR8-l20k.js";import{s as t}from"./D-BpU69D.js";const e={get data(){return r.data},get error(){return r.error},get status(){return r.status},get url(){return r.url}};t.updated.check;const o=e;export{o as p};
