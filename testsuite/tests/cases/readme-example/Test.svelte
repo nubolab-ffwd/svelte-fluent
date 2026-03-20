@@ -1,10 +1,12 @@
+<svelte:options runes={true} />
+
 <script>
 	import { FluentBundle, FluentResource } from '@fluent/bundle';
 	import { Localized, initFluentContext, createSvelteFluent } from '@nubolab-ffwd/svelte-fluent';
 
-	export let userName = 'Anna';
-	export let userGender = 'female';
-	export let photoCount = 3;
+	let userName = 'Anna';
+	let userGender = 'female';
+	let photoCount = 3;
 
 	const translations = `
 # Simple things are simple.
