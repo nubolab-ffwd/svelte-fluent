@@ -14,8 +14,8 @@
 			Fluent is a <a href="https://projectfluent.org/" target="_blank" rel="noopener noreferrer"
 				>localization system developed by Mozilla</a
 			> to address the limitations of traditional localization systems. They designed it to make it easier
-			to create translations of software interfaces and content and to support more complex language
-			structures than traditional localization systems can handle.
+			to create translations of software interfaces and content and to support more complex language structures
+			than traditional localization systems can handle.
 		</p>
 		<p>
 			The example below shows how you can use svelte-fluent and FTL, the format for describing
