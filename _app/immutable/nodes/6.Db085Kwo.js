@@ -1,0 +1,1 @@
+import{t as e}from"../chunks/BISx8_6g.js";export{e as component};
