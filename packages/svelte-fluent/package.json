@@ -34,7 +34,7 @@
 		"@sveltejs/vite-plugin-svelte": "7.0.0",
 		"@types/jsdom": "28.0.1",
 		"autoprefixer": "10.4.27",
-		"npm-run-all2": "8.0.4",
+		"npm-run-all2": "9.0.1",
 		"postcss": "8.5.10",
 		"postcss-load-config": "6.0.1",
 		"postcss-preset-env": "11.2.0",
