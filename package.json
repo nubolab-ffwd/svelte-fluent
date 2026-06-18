@@ -23,7 +23,7 @@
 		"husky": "9.1.7",
 		"lint-staged": "16.4.0",
 		"prettier": "3.8.1",
-		"prettier-plugin-svelte": "3.5.1",
+		"prettier-plugin-svelte": "4.1.1",
 		"typescript-eslint": "8.57.1"
 	},
 	"packageManager": "pnpm@10.32.1",
