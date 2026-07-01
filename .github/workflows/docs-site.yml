@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.3
       - uses: pnpm/action-setup@v5.0.0
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v6.3.0
+        uses: actions/setup-node@v6.4.0
         with:
           node-version: 24.x
           cache: 'pnpm'
@@ -20,7 +20,7 @@ jobs:
       - run: pnpm build
         working-directory: ./docs-site
       - name: Deploy to GH Pages
-        uses: peaceiris/actions-gh-pages@v4.0.0
+        uses: peaceiris/actions-gh-pages@v4.1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs-site/build

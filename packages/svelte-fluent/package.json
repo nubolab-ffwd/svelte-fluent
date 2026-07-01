@@ -30,22 +30,22 @@
 	"devDependencies": {
 		"@fluent/bundle": "0.19.1",
 		"@fluent/langneg": "0.7.0",
-		"@sveltejs/package": "2.5.7",
-		"@sveltejs/vite-plugin-svelte": "7.0.0",
-		"@types/jsdom": "28.0.1",
-		"autoprefixer": "10.4.27",
+		"@sveltejs/package": "2.5.8",
+		"@sveltejs/vite-plugin-svelte": "7.1.2",
+		"@types/jsdom": "28.0.3",
+		"autoprefixer": "10.5.2",
 		"npm-run-all2": "8.0.4",
-		"postcss": "8.5.10",
+		"postcss": "8.5.16",
 		"postcss-load-config": "6.0.1",
-		"postcss-preset-env": "11.2.0",
-		"publint": "0.3.18",
-		"semver": "7.7.4",
-		"svelte": "5.55.7",
-		"svelte-check": "4.4.5",
-		"svelte2tsx": "0.7.52",
+		"postcss-preset-env": "11.3.2",
+		"publint": "0.3.21",
+		"semver": "7.8.5",
+		"svelte": "5.56.4",
+		"svelte-check": "4.7.1",
+		"svelte2tsx": "0.7.57",
 		"tslib": "2.8.1",
 		"typescript": "5.9.3",
-		"vite": "8.0.16"
+		"vite": "8.1.2"
 	},
 	"peerDependencies": {
 		"@fluent/bundle": "^0.18.0 || ^0.19.0",
@@ -108,5 +108,5 @@
 			]
 		}
 	},
-	"packageManager": "pnpm@10.32.1"
+	"packageManager": "pnpm@10.34.4"
 }
