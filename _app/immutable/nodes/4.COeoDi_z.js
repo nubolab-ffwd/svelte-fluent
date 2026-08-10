@@ -1,0 +1,1 @@
+import{lt as e}from"../chunks/DxlCstgQ.js";import{c as t,l as n}from"../chunks/DKYNg7E1.js";function r(e,t){throw new n(e,t.toString())}var i=e({load:()=>a}),a=()=>{r(302,t+`/docs/getting-started`)};export{i as universal};
